@@ -69,3 +69,14 @@ finite family, with no unrestricted n-layer approximation claim. Test fixtures
 contain synthetic certificates solely to exercise plumbing and are not used as
 calibrated empirical evidence. These substitutions follow the prompt's
 feasibility/future-work provisions but do not satisfy a full real-LLM study.
+
+### Phase 4 gate — frozen
+
+Protocol and config committed as `a48fca6`, tagged `prereg-v1`, before empirical
+calibration/dev/test execution. Ten seeds, fixed sample sizes/thresholds,
+1000 repeated calibration splits, paired statistics, strong controls and
+stopping rules specified. Eight hypotheses include an explicitly unavailable
+real-model/external-validation hypothesis. Benchmark code license audit stored;
+data terms are not inferred from code terms. No participant study fabricated.
+GPU is present but installed torch is CPU-only; no API credentials established.
+Phase 5 execution begins only after this frozen protocol.
