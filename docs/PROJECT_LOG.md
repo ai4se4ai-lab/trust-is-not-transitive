@@ -125,3 +125,20 @@ Pre-review hardening binds runtime to its actually supported declared topology;
 it now rejects missing trust edges or mismatched interface declarations rather
 than running an undeclared fixed cascade. This affects no recorded configuration
 or scientific result. Regression checks added; no held-out retuning/rerun.
+
+
+### Phase 7 completed at four-round limit; no convergence
+
+Three independent fresh-context automated reviewers assessed the paper in four
+rounds. All final recommendations remain reject for TSE readiness; novelty,
+real-agent/external effectiveness, adapter provenance/refinement and adaptive
+security remain unresolved. No scores were inflated. Technical issues fixed:
+multiplier/slackness premises, exact edge declarations, unknown predicates,
+confidence/input bounds, adaptive target attribution, independent LP validation,
+semantic replay, family-law disclosure, timing/interval interpretation. Actual
+latexdiff PDFs and responses retained for every round; final rounds introduce
+no invented scientific changes. Clean exact-lock environment installed and
+passed all 56 tests plus smoke. Full author regeneration in a detached checkout
+passed; observations in the main repository remain original.
+
+Phase 8 starts with a fresh PhD-reader agent receiving only PDF/LaTeX.

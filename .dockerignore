@@ -1,0 +1,7 @@
+.git
+.tools
+build
+results/archive
+docs/literature/evidence
+__pycache__
+.pytest_cache
