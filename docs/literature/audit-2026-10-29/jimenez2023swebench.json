@@ -1,0 +1,795 @@
+{
+  "key": "jimenez2023swebench",
+  "original": {
+    "url": "https://arxiv.org/abs/2310.06770",
+    "year": "2023",
+    "howpublished": "arXiv:2310.06770",
+    "title": "{SWE-bench: Can Language Models Resolve Real-World GitHub Issues?}",
+    "author": "Jimenez, Carlos E. and Yang, John and Wettig, Alexander and Yao, Shunyu and Pei, Kexin and Press, Ofir and Narasimhan, Karthik",
+    "ENTRYTYPE": "misc",
+    "ID": "jimenez2023swebench"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2310.06770",
+    "https://api.crossref.org/works?query.title=SWE-bench%3A+Can+Language+Models+Resolve+Real-World+GitHub+Issues%3F&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2310.06770: SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"
+      ],
+      "twitter:description": [
+        "Language models have outpaced our ability to evaluate them effectively, but for their future development it is essential to study the frontier of their capabilities. We find real-world software..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"
+      ],
+      "citation_author": [
+        "Jimenez, Carlos E.",
+        "Yang, John",
+        "Wettig, Alexander",
+        "Yao, Shunyu",
+        "Pei, Kexin",
+        "Press, Ofir",
+        "Narasimhan, Karthik"
+      ],
+      "citation_date": [
+        "2023/10/10"
+      ],
+      "citation_online_date": [
+        "2024/11/11"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2310.06770"
+      ],
+      "citation_arxiv_id": [
+        "2310.06770"
+      ],
+      "citation_abstract": [
+        "Language models have outpaced our ability to evaluate them effectively, but for their future development it is essential to study the frontier of their capabilities. We find real-world software engineering to be a rich, sustainable, and challenging testbed for evaluating the next generation of language models. To this end, we introduce SWE-bench, an evaluation framework consisting of $2,294$ software engineering problems drawn from real GitHub issues and corresponding pull requests across $12$ popular Python repositories. Given a codebase along with a description of an issue to be resolved, a language model is tasked with editing the codebase to address the issue. Resolving issues in SWE-bench frequently requires understanding and coordinating changes across multiple functions, classes, and even files simultaneously, calling for models to interact with execution environments, process extremely long contexts and perform complex reasoning that goes far beyond traditional code generation tasks. Our evaluations show that both state-of-the-art proprietary models and our fine-tuned model SWE-Llama can resolve only the simplest issues. The best-performing model, Claude 2, is able to solve a mere $1.96$% of the issues. Advances on SWE-bench represent steps towards LMs that are more practical, intelligent, and autonomous."
+      ]
+    },
+    "details": {
+      "title": "Title: SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+      "authors": "Authors: Carlos E. Jimenez , John Yang , Alexander Wettig , Shunyu Yao , Kexin Pei , Ofir Press , Karthik Narasimhan",
+      "dateline": "[Submitted on 10 Oct 2023 ( v1 ), last revised 11 Nov 2024 (this version, v3)]",
+      "comments": "Data, code, and leaderboard are available at this https URL ICLR 2024, this https URL",
+      "metatable": "Comments: Data, code, and leaderboard are available at this https URL ICLR 2024, this https URL Subjects: Computation and Language (cs.CL) ; Artificial Intelligence (cs.AI); Software Engineering (cs.SE) Cite as: arXiv:2310.06770 [cs.CL] (or arXiv:2310.06770v3 [cs.CL] for this version) https://doi.org/10.48550/arXiv.2310.06770 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.18653/v1/2025.emnlp-industry.19",
+      "type": "proceedings-article",
+      "title": [
+        "ECom-Bench: Can LLM Agent Resolve Real-World E-commerce Customer Support Issues?"
+      ],
+      "author": [
+        {
+          "given": "Haoxin",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xianhan",
+          "family": "Peng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Huang",
+          "family": "Cheng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yizhe",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ming",
+          "family": "Gong",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chenghan",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yang",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiang",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "276-284",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.emnlp-industry.19",
+      "event": {
+        "name": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+        "location": "Suzhou (China)",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              11
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.622
+    },
+    {
+      "DOI": "10.1145/3759425.3763379",
+      "type": "proceedings-article",
+      "title": [
+        "CG-Bench: Can Language Models Assist Call Graph Construction in the Real World?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0009-2525-4422",
+          "authenticated-orcid": false,
+          "given": "Ting",
+          "family": "Yuan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Huawei Technologies Co., Ltd, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6972-7038",
+          "authenticated-orcid": false,
+          "given": "Wenrui",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Huawei Technologies, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3751-7997",
+          "authenticated-orcid": false,
+          "given": "Dong",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Huawei Technologies, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-9578-883X",
+          "authenticated-orcid": false,
+          "given": "Jie",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Huawei Technologies, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 1st ACM SIGPLAN International Workshop on Language Models and Programming Languages"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "12-20",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            9
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            9
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3759425.3763379",
+      "event": {
+        "name": "LMPL '25: 1st ACM SIGPLAN International Workshop on Language Models and Programming Languages",
+        "location": "Singapore Singapore",
+        "acronym": "LMPL '25",
+        "sponsor": [
+          "SIGPLAN ACM Special Interest Group on Programming Languages",
+          "SIGAda ACM Special Interest Group on Ada Programming Language"
+        ]
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.593
+    },
+    {
+      "DOI": "10.1007/978-3-032-31397-3_41",
+      "type": "book-chapter",
+      "title": [
+        "Merge-Bench: Resolve Merge Conflicts with Large Language Models"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-2885-3067",
+          "authenticated-orcid": false,
+          "given": "Benedikt",
+          "family": "Schesch",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9379-277X",
+          "authenticated-orcid": false,
+          "given": "Michael D.",
+          "family": "Ernst",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Pattern Recognition"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "621-635",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2027
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            5
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Switzerland",
+      "URL": "https://doi.org/10.1007/978-3-032-31397-3_41",
+      "event": null,
+      "ISBN": [
+        "9783032313966",
+        "9783032313973"
+      ],
+      "relation": null,
+      "title_similarity": 0.411
+    },
+    {
+      "DOI": "10.1145/3786167.3788410",
+      "type": "proceedings-article",
+      "title": [
+        "PerfBench: Can Agents Resolve Real-World Performance Bugs?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0009-0140-2785",
+          "authenticated-orcid": false,
+          "given": "Spandan",
+          "family": "Garg",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Microsoft Corporation, Redmond, Washington, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-2268-5897",
+          "authenticated-orcid": false,
+          "given": "Roshanak Zilouchian",
+          "family": "Moghaddam",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft Corporation, Redmond, Washington, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0394-7588",
+          "authenticated-orcid": false,
+          "given": "Neel",
+          "family": "Sundaresan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft Corporation, Redmond, Washington, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 International Workshop on Agentic Engineering"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "165-172",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            12
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            12
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            21
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3786167.3788410",
+      "event": {
+        "name": "AGENT '26: International Workshop on Agentic Engineering",
+        "location": "Rio de Janeiro Brazil",
+        "acronym": "AGENT '26",
+        "sponsor": [
+          "SIGSOFT ACM Special Interest Group on Software Engineering",
+          "IEEE CS",
+          "Faculty of Engineering of University of Porto"
+        ]
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.608
+    },
+    {
+      "DOI": "10.1145/3770855.3818488",
+      "type": "proceedings-article",
+      "title": [
+        "SWE-Bench Mobile: Can Large Language Model Agents Develop Industry-Level Mobile Applications?"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-2659-222X",
+          "authenticated-orcid": false,
+          "given": "Muxin",
+          "family": "Tian",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto, Toronto, ON, Canada and Xiaohongshu Inc., Shanghai, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-1334-036X",
+          "authenticated-orcid": false,
+          "given": "Zhe",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Xiaohongshu Inc., Shanghai, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8742-9146",
+          "authenticated-orcid": false,
+          "given": "Zhenwei",
+          "family": "Tang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Toronto, Toronto, ON, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0001-2120-1384",
+          "authenticated-orcid": false,
+          "given": "Blair",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Coolwei AI Lab, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0009-9107-7401",
+          "authenticated-orcid": false,
+          "given": "Kunlun",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Illinois at Urbana-Champaign, Urbana, Illinois, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-8298-4059",
+          "authenticated-orcid": false,
+          "given": "Honghua",
+          "family": "Dong",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Toronto, Toronto, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0005-9980-028X",
+          "authenticated-orcid": false,
+          "given": "Hanchen",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of California, Berkeley, Berkeley, California, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-5815-1062",
+          "authenticated-orcid": false,
+          "given": "Xinni",
+          "family": "Xie",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Xiaohongshu Inc., Shanghai, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-0736-9094",
+          "authenticated-orcid": false,
+          "given": "Guangjing",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Xiaohongshu Inc., Shanghai, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1812-7598",
+          "authenticated-orcid": false,
+          "given": "Jiaxuan",
+          "family": "You",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Illinois at Urbana-Champaign, Urbana, Illinois, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "8077-8087",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            8
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            9
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            8
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3770855.3818488",
+      "event": {
+        "name": "KDD '26: The 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+        "location": "Jeju Island Republic of Korea",
+        "sponsor": [
+          "SIGMOD ACM Special Interest Group on Management of Data",
+          "SIGKDD ACM Special Interest Group on Knowledge Discovery in Data"
+        ]
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.515
+    }
+  ]
+}

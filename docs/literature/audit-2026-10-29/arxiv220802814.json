@@ -1,0 +1,635 @@
+{
+  "key": "arxiv220802814",
+  "original": {
+    "url": "https://arxiv.org/abs/2208.02814",
+    "howpublished": "arXiv:2208.02814",
+    "year": "2022",
+    "author": "Angelopoulos, Anastasios N. and Bates, Stephen and Fisch, Adam and Lei, Lihua and Schuster, Tal",
+    "title": "{Conformal Risk Control}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv220802814"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2208.02814",
+    "https://api.crossref.org/works?query.title=Conformal+Risk+Control&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2208.02814: Conformal Risk Control"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Conformal Risk Control"
+      ],
+      "twitter:description": [
+        "We extend conformal prediction to control the expected value of any monotone loss function. The algorithm generalizes split conformal prediction together with its coverage guarantee. Like..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Conformal Risk Control"
+      ],
+      "citation_author": [
+        "Angelopoulos, Anastasios N.",
+        "Bates, Stephen",
+        "Fisch, Adam",
+        "Lei, Lihua",
+        "Schuster, Tal"
+      ],
+      "citation_date": [
+        "2022/08/04"
+      ],
+      "citation_online_date": [
+        "2025/06/13"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2208.02814"
+      ],
+      "citation_arxiv_id": [
+        "2208.02814"
+      ],
+      "citation_abstract": [
+        "We extend conformal prediction to control the expected value of any monotone loss function. The algorithm generalizes split conformal prediction together with its coverage guarantee. Like conformal prediction, the conformal risk control procedure is tight up to an $\\mathcal{O}(1/n)$ factor. We also introduce extensions of the idea to distribution shift, quantile risk control, multiple and adversarial risk control, and expectations of U-statistics. Worked examples from computer vision and natural language processing demonstrate the usage of our algorithm to bound the false negative rate, graph distance, and token-level F1-score."
+      ]
+    },
+    "details": {
+      "title": "Title: Conformal Risk Control",
+      "authors": "Authors: Anastasios N. Angelopoulos , Stephen Bates , Adam Fisch , Lihua Lei , Tal Schuster",
+      "dateline": "[Submitted on 4 Aug 2022 ( v1 ), last revised 13 Jun 2025 (this version, v4)]",
+      "comments": "Code available at this https URL",
+      "metatable": "Comments: Code available at this https URL Subjects: Methodology (stat.ME) ; Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Statistics Theory (math.ST); Machine Learning (stat.ML) Cite as: arXiv:2208.02814 [stat.ME] (or arXiv:2208.02814v4 [stat.ME] for this version) https://doi.org/10.48550/arXiv.2208.02814 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.52202/085713-2355",
+      "type": "proceedings-article",
+      "title": [
+        "Conformal Risk Training: End-to-End Optimization of Conformal Risk Control"
+      ],
+      "author": [
+        {
+          "given": "Christopher",
+          "family": "Yeh",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "California Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nicolas",
+          "family": "Christianson",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Stanford University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adam",
+          "family": "Wierman",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Caltech"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yisong",
+          "family": "Yue",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Caltech, Asari AI"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 38"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "78067-78103",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/085713-2355",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 38",
+        "theme": "39th Conference on Neural Information Processing Systems (NeurIPS 2025)",
+        "location": "San Diego, California, USA and Mexico City, Mexico",
+        "acronym": "NeurIPS 2025",
+        "number": "38",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              30
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.482
+    },
+    {
+      "DOI": "10.1109/isit57864.2024.10619172",
+      "type": "proceedings-article",
+      "title": [
+        "Cross-Validation Conformal Risk Control"
+      ],
+      "author": [
+        {
+          "given": "Kfir M.",
+          "family": "Cohen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "King&#x0027;s Communications, Learning, and Information Processing (KCLIP) lab, Centre for Intelligent Information Processing Systems (CIIPS), King&#x0027;s College London,Department of Engineering"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sangwoo",
+          "family": "Park",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "King&#x0027;s Communications, Learning, and Information Processing (KCLIP) lab, Centre for Intelligent Information Processing Systems (CIIPS), King&#x0027;s College London,Department of Engineering"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Osvaldo",
+          "family": "Simeone",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "King&#x0027;s Communications, Learning, and Information Processing (KCLIP) lab, Centre for Intelligent Information Processing Systems (CIIPS), King&#x0027;s College London,Department of Engineering"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shlomo Shamai",
+          "family": "Shitz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Technion-Israel Institute of Technology,Viterbi Faculty of Electrical and Computing Engineering"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2024 IEEE International Symposium on Information Theory (ISIT)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "250-255",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            7
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/isit57864.2024.10619172",
+      "event": {
+        "name": "2024 IEEE International Symposium on Information Theory (ISIT)",
+        "location": "Athens, Greece",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              12
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.727
+    },
+    {
+      "DOI": "10.52202/079017-3514",
+      "type": "proceedings-article",
+      "title": [
+        "Aligning Model Properties via Conformal Risk Control"
+      ],
+      "author": [
+        {
+          "given": "William",
+          "family": "Overman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jacqueline",
+          "family": "Vallon",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohsen",
+          "family": "Bayati",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 37"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "110702-110722",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/079017-3514",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 37",
+        "theme": "38th Conference on Neural Information Processing Systems (NeurIPS 2024)",
+        "location": "Vancouver, BC, Canada",
+        "acronym": "NeurIPS 2024",
+        "number": "37",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              15
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.606
+    },
+    {
+      "DOI": "10.1098/rsta.2025.0068",
+      "type": "journal-article",
+      "title": [
+        "Conformal risk control for non-monotonic losses"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9787-0579",
+          "authenticated-orcid": false,
+          "given": "Anastasios N.",
+          "family": "Angelopoulos",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Arena 1 , San Francisco, CA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences"
+      ],
+      "volume": "384",
+      "issue": "2327",
+      "page": null,
+      "article-number": "20250068",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            27
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            27
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            27
+          ]
+        ]
+      },
+      "publisher": "The Royal Society",
+      "URL": "https://doi.org/10.1098/rsta.2025.0068",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.656
+    },
+    {
+      "DOI": "10.1007/978-3-032-38085-2_11",
+      "type": "book-chapter",
+      "title": [
+        "Conformal 3D Lesion Segmentation with Balanced Risk Control"
+      ],
+      "author": [
+        {
+          "given": "Binyu",
+          "family": "Tan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhiyuan",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jinhao",
+          "family": "Duan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kaidi",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Heng Tao",
+          "family": "Shen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fumin",
+          "family": "Shen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiaoshuang",
+          "family": "Shi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Medical Image Computing and Computer Assisted Intervention – MICCAI 2026"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "112-122",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            27
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2027
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            27
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Switzerland",
+      "URL": "https://doi.org/10.1007/978-3-032-38085-2_11",
+      "event": null,
+      "ISBN": [
+        "9783032380845",
+        "9783032380852"
+      ],
+      "relation": null,
+      "title_similarity": 0.556
+    }
+  ]
+}

@@ -15,10 +15,24 @@
   },
   "resBootstrapCount": {
     "pointer": "/design/bootstrap_replicates",
-    "rendered": "10000",
+    "rendered": "10{,}000",
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 10000
+  },
+  "resCalEquivCompared": {
+    "pointer": "/calibration_equivalence/exploratory/compared",
+    "rendered": "18{,}000",
+    "source": "results/processed/post_review.json",
+    "source_sha256": "486bcff9e7b529a26534acdeafaab1c7b67fe7b4055a8ceeac3a18946ebb51f0",
+    "value": 18000
+  },
+  "resCalEquivDisagree": {
+    "pointer": "/calibration_equivalence/exploratory/disagreements",
+    "rendered": "0",
+    "source": "results/processed/post_review.json",
+    "source_sha256": "486bcff9e7b529a26534acdeafaab1c7b67fe7b4055a8ceeac3a18946ebb51f0",
+    "value": 0
   },
   "resCalibrationCount": {
     "pointer": "/design/n_calibration",
@@ -26,6 +40,55 @@
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 1800
+  },
+  "resCheckerMaxEdges": {
+    "pointer": "/studies/primary/checker/scalability#max-edges",
+    "rendered": "2500",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 2500
+  },
+  "resCheckerMaxMs": {
+    "pointer": "/studies/primary/checker/scalability#max-median-ms",
+    "rendered": "9.7",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 9.7375
+  },
+  "resCheckerScalingFour": {
+    "pointer": "/studies/primary/checker/scalability#layers=4-ms",
+    "rendered": "(5,0.0096) (10,0.0151) (25,0.0463) (50,0.0965) (100,0.3212) (250,1.1452) (500,5.9465)",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": "(5,0.0096) (10,0.0151) (25,0.0463) (50,0.0965) (100,0.3212) (250,1.1452) (500,5.9465)"
+  },
+  "resCheckerScalingSix": {
+    "pointer": "/studies/primary/checker/scalability#layers=6-ms",
+    "rendered": "(5,0.0149) (10,0.0236) (25,0.0791) (50,0.1604) (100,0.5507) (250,1.9620) (500,9.7375)",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": "(5,0.0149) (10,0.0236) (25,0.0791) (50,0.1604) (100,0.5507) (250,1.9620) (500,9.7375)"
+  },
+  "resCheckerScalingTwo": {
+    "pointer": "/studies/primary/checker/scalability#layers=2-ms",
+    "rendered": "(5,0.0093) (10,0.0069) (25,0.0189) (50,0.0353) (100,0.1152) (250,0.3906) (500,1.9906)",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": "(5,0.0093) (10,0.0069) (25,0.0189) (50,0.0353) (100,0.1152) (250,0.3906) (500,1.9906)"
+  },
+  "resCheckerSlope": {
+    "pointer": "/studies/primary/checker/scalability#loglog-slope-vs-edges-policies>=50",
+    "rendered": "1.5",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 1.4971110705488184
+  },
+  "resCheckerSlopeSix": {
+    "pointer": "/studies/primary/checker/scalability#loglog-slope-layers=6-policies>=50",
+    "rendered": "1.7",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 1.729019035712122
   },
   "resConfidenceFailure": {
     "pointer": "/design/delta",
@@ -104,6 +167,13 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 0.1
   },
+  "resDependenceGap": {
+    "pointer": "/studies/primary/correlation/max_absolute_sampling_gap",
+    "rendered": "0.0038",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 0.0038000000000000117
+  },
   "resDependencePoints": {
     "pointer": "/studies/primary/correlation/points",
     "rendered": "(0.00,0.0054) (0.25,0.0326) (0.50,0.0527) (0.75,0.0762) (1.00,0.0994) (0.00,0.0057) (0.25,0.0266) (0.50,0.0538) (0.75,0.0767) (1.00,0.1037) (0.00,0.0057) (0.25,0.0257) (0.50,0.0529) (0.75,0.0752) (1.00,0.0962) (0.00,0.0053) (0.25,0.0300) (0.50,0.0526) (0.75,0.0757) (1.00,0.0990) (0.00,0.0085) (0.25,0.0274) (0.50,0.0508) (0.75,0.0781) (1.00,0.0976) (0.00,0.0059) (0.25,0.0282) (0.50,0.0534) (0.75,0.0774) (1.00,0.1001) (0.00,0.0057) (0.25,0.0299) (0.50,0.0538) (0.75,0.0778) (1.00,0.0986) (0.00,0.0062) (0.25,0.0318) (0.50,0.0511) (0.75,0.0758) (1.00,0.1012) (0.00,0.0071) (0.25,0.0329) (0.50,0.0532) (0.75,0.0761) (1.00,0.1011) (0.00,0.0056) (0.25,0.0326) (0.50,0.0519) (0.75,0.0787) (1.00,0.0992)",
@@ -113,7 +183,7 @@
   },
   "resDependenceSamples": {
     "pointer": "/studies/primary/correlation/samples_per_cell",
-    "rendered": "10000",
+    "rendered": "10{,}000",
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 10000
@@ -230,6 +300,55 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 25.401125234423837
   },
+  "resExploratoryAdaptiveAllSucceed": {
+    "pointer": "/studies/exploratory/adaptive#all-first-query",
+    "rendered": "1",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 1
+  },
+  "resExploratoryAdaptiveQueries": {
+    "pointer": "/studies/exploratory/adaptive/checked_quarantine/queries",
+    "rendered": "10",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 10
+  },
+  "resExploratoryAdaptiveSuccessSeeds": {
+    "pointer": "/studies/exploratory/adaptive/checked_quarantine/successful_seeds",
+    "rendered": "10",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 10
+  },
+  "resExploratoryBoundMax": {
+    "pointer": "/studies/exploratory/selections/*/bounds#max-of-min-percent",
+    "rendered": "13.3",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 13.29697190995276
+  },
+  "resExploratoryBoundMin": {
+    "pointer": "/studies/exploratory/selections/*/bounds#min-percent",
+    "rendered": "10.7",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 10.719617944022906
+  },
+  "resExploratoryCertified": {
+    "pointer": "/studies/exploratory/selections#certified",
+    "rendered": "10",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 10
+  },
+  "resExploratoryCheckedCpuMedian": {
+    "pointer": "/studies/exploratory/metrics/test/checked_quarantine/cpu_p50_us",
+    "rendered": "103.4",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 103.4
+  },
   "resExploratoryCheckedQuarantineCost": {
     "pointer": "/studies/exploratory/metrics/test/checked_quarantine/modeled_cost_units",
     "rendered": "370.67",
@@ -285,6 +404,20 @@
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 66.456283645814
+  },
+  "resExploratoryCheckedReachThree": {
+    "pointer": "/studies/exploratory/metrics/test/checked_quarantine/reach_rates/L3#percent",
+    "rendered": "35.5",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 35.45833333333333
+  },
+  "resExploratoryCheckedReachTwo": {
+    "pointer": "/studies/exploratory/metrics/test/checked_quarantine/reach_rates/L2#percent",
+    "rendered": "75.4",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 75.44999999999999
   },
   "resExploratoryCheckedUncalibratedComparisonA": {
     "pointer": "/studies/exploratory/comparisons#baseline=checked_uncalibrated/A12_lower_risk",
@@ -510,6 +643,13 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 99.1
   },
+  "resExploratoryCoverageCovered": {
+    "pointer": "/studies/exploratory/coverage/true_risk_bound_covered",
+    "rendered": "991",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 991
+  },
   "resExploratoryCoverageHi": {
     "pointer": "/studies/exploratory/coverage/coverage_ci/1#percent",
     "rendered": "99.59",
@@ -628,6 +768,20 @@
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 10.719617944022906
+  },
+  "resExploratoryMissMax": {
+    "pointer": "/studies/exploratory/selections/*/calibration_misses#max",
+    "rendered": "202",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 202
+  },
+  "resExploratoryMissMin": {
+    "pointer": "/studies/exploratory/selections/*/calibration_misses#min",
+    "rendered": "159",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 159
   },
   "resExploratoryNaiveDelegationComparisonA": {
     "pointer": "/studies/exploratory/comparisons#baseline=naive_delegation/A12_lower_risk",
@@ -748,6 +902,13 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 7.704999999999927
   },
+  "resExploratoryNaiveWithSinkCpuMedian": {
+    "pointer": "/studies/exploratory/metrics/test/naive_with_sink/cpu_p50_us",
+    "rendered": "2.1",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 2.1
+  },
   "resExploratoryNaiveWithSinkHard": {
     "pointer": "/studies/exploratory/metrics/test/naive_with_sink/hard_violations",
     "rendered": "0",
@@ -790,9 +951,37 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 66.456283645814
   },
+  "resExploratoryProvCost": {
+    "pointer": "/provenance_control/exploratory/test/modeled_cost_units",
+    "rendered": "1.00",
+    "source": "results/processed/post_review.json",
+    "source_sha256": "486bcff9e7b529a26534acdeafaab1c7b67fe7b4055a8ceeac3a18946ebb51f0",
+    "value": 1.0
+  },
+  "resExploratoryProvRisk": {
+    "pointer": "/provenance_control/exploratory/test/joint_risk#percent",
+    "rendered": "0.00",
+    "source": "results/processed/post_review.json",
+    "source_sha256": "486bcff9e7b529a26534acdeafaab1c7b67fe7b4055a8ceeac3a18946ebb51f0",
+    "value": 0.0
+  },
+  "resExploratoryProvShiftRisk": {
+    "pointer": "/provenance_control/exploratory/shift/joint_risk#percent",
+    "rendered": "0.00",
+    "source": "results/processed/post_review.json",
+    "source_sha256": "486bcff9e7b529a26534acdeafaab1c7b67fe7b4055a8ceeac3a18946ebb51f0",
+    "value": 0.0
+  },
+  "resExploratoryProvUtility": {
+    "pointer": "/provenance_control/exploratory/test/benign_utility#percent",
+    "rendered": "66.46",
+    "source": "results/processed/post_review.json",
+    "source_sha256": "486bcff9e7b529a26534acdeafaab1c7b67fe7b4055a8ceeac3a18946ebb51f0",
+    "value": 66.456283645814
+  },
   "resExploratoryRecords": {
     "pointer": "/studies/exploratory/decision_records",
-    "rendered": "168000",
+    "rendered": "168{,}000",
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 168000
@@ -937,6 +1126,13 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 50
   },
+  "resExploratorySynthLpOk": {
+    "pointer": "/studies/exploratory/synthesis/mismatches#zero",
+    "rendered": "1",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 1
+  },
   "resExploratorySynthMismatches": {
     "pointer": "/studies/exploratory/synthesis/mismatches",
     "rendered": "0",
@@ -946,7 +1142,7 @@
   },
   "resExploratoryTestCount": {
     "pointer": "/studies/exploratory/metrics/test/checked_quarantine/n",
-    "rendered": "12000",
+    "rendered": "12{,}000",
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 12000
@@ -1198,7 +1394,7 @@
   },
   "resFormalInstances": {
     "pointer": "/sanity/instances",
-    "rendered": "10000",
+    "rendered": "10{,}000",
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 10000
@@ -1223,6 +1419,55 @@
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 5
+  },
+  "resPrimaryAdaptiveAllSucceed": {
+    "pointer": "/studies/primary/adaptive#all-first-query",
+    "rendered": "1",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 1
+  },
+  "resPrimaryAdaptiveQueries": {
+    "pointer": "/studies/primary/adaptive/checked_quarantine/queries",
+    "rendered": "10",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 10
+  },
+  "resPrimaryAdaptiveSuccessSeeds": {
+    "pointer": "/studies/primary/adaptive/checked_quarantine/successful_seeds",
+    "rendered": "10",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 10
+  },
+  "resPrimaryBoundMax": {
+    "pointer": "/studies/primary/selections/*/bounds#max-of-min-percent",
+    "rendered": "35.0",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 34.99899101241949
+  },
+  "resPrimaryBoundMin": {
+    "pointer": "/studies/primary/selections/*/bounds#min-percent",
+    "rendered": "31.1",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 31.074291281220777
+  },
+  "resPrimaryCertified": {
+    "pointer": "/studies/primary/selections#certified",
+    "rendered": "0",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 0
+  },
+  "resPrimaryCheckedCpuMedian": {
+    "pointer": "/studies/primary/metrics/test/checked_quarantine/cpu_p50_us",
+    "rendered": "80.3",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 80.3
   },
   "resPrimaryCheckedQuarantineCost": {
     "pointer": "/studies/primary/metrics/test/checked_quarantine/modeled_cost_units",
@@ -1276,6 +1521,20 @@
   "resPrimaryCheckedQuarantineUtility": {
     "pointer": "/studies/primary/metrics/test/checked_quarantine/benign_utility#percent",
     "rendered": "0.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 0.0
+  },
+  "resPrimaryCheckedReachThree": {
+    "pointer": "/studies/primary/metrics/test/checked_quarantine/reach_rates/L3#percent",
+    "rendered": "0.0",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 0.0
+  },
+  "resPrimaryCheckedReachTwo": {
+    "pointer": "/studies/primary/metrics/test/checked_quarantine/reach_rates/L2#percent",
+    "rendered": "0.0",
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 0.0
@@ -1504,6 +1763,13 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 99.6
   },
+  "resPrimaryCoverageCovered": {
+    "pointer": "/studies/primary/coverage/true_risk_bound_covered",
+    "rendered": "996",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 996
+  },
   "resPrimaryCoverageHi": {
     "pointer": "/studies/primary/coverage/coverage_ci/1#percent",
     "rendered": "99.89",
@@ -1622,6 +1888,20 @@
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 31.074291281220777
+  },
+  "resPrimaryMissMax": {
+    "pointer": "/studies/primary/selections/*/calibration_misses#max",
+    "rendered": "577",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 577
+  },
+  "resPrimaryMissMin": {
+    "pointer": "/studies/primary/selections/*/calibration_misses#min",
+    "rendered": "508",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 508
   },
   "resPrimaryNaiveDelegationComparisonA": {
     "pointer": "/studies/primary/comparisons#baseline=naive_delegation/A12_lower_risk",
@@ -1742,6 +2022,13 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 6.0
   },
+  "resPrimaryNaiveWithSinkCpuMedian": {
+    "pointer": "/studies/primary/metrics/test/naive_with_sink/cpu_p50_us",
+    "rendered": "1.7",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 1.7
+  },
   "resPrimaryNaiveWithSinkHard": {
     "pointer": "/studies/primary/metrics/test/naive_with_sink/hard_violations",
     "rendered": "0",
@@ -1784,9 +2071,37 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 66.40783878720652
   },
+  "resPrimaryProvCost": {
+    "pointer": "/provenance_control/primary/test/modeled_cost_units",
+    "rendered": "1.00",
+    "source": "results/processed/post_review.json",
+    "source_sha256": "486bcff9e7b529a26534acdeafaab1c7b67fe7b4055a8ceeac3a18946ebb51f0",
+    "value": 1.0
+  },
+  "resPrimaryProvRisk": {
+    "pointer": "/provenance_control/primary/test/joint_risk#percent",
+    "rendered": "0.00",
+    "source": "results/processed/post_review.json",
+    "source_sha256": "486bcff9e7b529a26534acdeafaab1c7b67fe7b4055a8ceeac3a18946ebb51f0",
+    "value": 0.0
+  },
+  "resPrimaryProvShiftRisk": {
+    "pointer": "/provenance_control/primary/shift/joint_risk#percent",
+    "rendered": "0.00",
+    "source": "results/processed/post_review.json",
+    "source_sha256": "486bcff9e7b529a26534acdeafaab1c7b67fe7b4055a8ceeac3a18946ebb51f0",
+    "value": 0.0
+  },
+  "resPrimaryProvUtility": {
+    "pointer": "/provenance_control/primary/test/benign_utility#percent",
+    "rendered": "66.41",
+    "source": "results/processed/post_review.json",
+    "source_sha256": "486bcff9e7b529a26534acdeafaab1c7b67fe7b4055a8ceeac3a18946ebb51f0",
+    "value": 66.40783878720652
+  },
   "resPrimaryRecords": {
     "pointer": "/studies/primary/decision_records",
-    "rendered": "168000",
+    "rendered": "168{,}000",
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 168000
@@ -1931,6 +2246,13 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 50
   },
+  "resPrimarySynthLpOk": {
+    "pointer": "/studies/primary/synthesis/mismatches#zero",
+    "rendered": "1",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 1
+  },
   "resPrimarySynthMismatches": {
     "pointer": "/studies/primary/synthesis/mismatches",
     "rendered": "0",
@@ -1940,7 +2262,7 @@
   },
   "resPrimaryTestCount": {
     "pointer": "/studies/primary/metrics/test/checked_quarantine/n",
-    "rendered": "12000",
+    "rendered": "12{,}000",
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 12000
@@ -1951,6 +2273,13 @@
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 6
+  },
+  "resReplayDecisions": {
+    "pointer": "/studies/*/decision_records#sum",
+    "rendered": "336{,}000",
+    "source": "results/processed/summary.json",
+    "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
+    "value": 336000
   },
   "resRiskBudget": {
     "pointer": "/design/epsilon",

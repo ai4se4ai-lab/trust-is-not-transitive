@@ -1,0 +1,630 @@
+{
+  "key": "arxiv250307885",
+  "original": {
+    "url": "https://arxiv.org/abs/2503.07885",
+    "howpublished": "arXiv:2503.07885",
+    "year": "2025",
+    "author": "Ravichandran, Zachary and Robey, Alexander and Kumar, Vijay and Pappas, George J. and Hassani, Hamed",
+    "title": "{Safety Guardrails for LLM-Enabled Robots}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250307885"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2503.07885",
+    "https://api.crossref.org/works?query.title=Safety+Guardrails+for+LLM-Enabled+Robots&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2503.07885: Safety Guardrails for LLM-Enabled Robots"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Safety Guardrails for LLM-Enabled Robots"
+      ],
+      "twitter:description": [
+        "Although the integration of large language models (LLMs) into robotics has unlocked transformative capabilities, it has also introduced significant safety concerns, ranging from average-case LLM..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Safety Guardrails for LLM-Enabled Robots"
+      ],
+      "citation_author": [
+        "Ravichandran, Zachary",
+        "Robey, Alexander",
+        "Kumar, Vijay",
+        "Pappas, George J.",
+        "Hassani, Hamed"
+      ],
+      "citation_date": [
+        "2025/03/10"
+      ],
+      "citation_online_date": [
+        "2026/03/03"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2503.07885"
+      ],
+      "citation_arxiv_id": [
+        "2503.07885"
+      ],
+      "citation_abstract": [
+        "Although the integration of large language models (LLMs) into robotics has unlocked transformative capabilities, it has also introduced significant safety concerns, ranging from average-case LLM errors (e.g., hallucinations) to adversarial jailbreaking attacks, which can produce harmful robot behavior in real-world settings. Traditional robot safety approaches do not address the contextual vulnerabilities of LLMs, and current LLM safety approaches overlook the physical risks posed by robots operating in real-world environments. To ensure the safety of LLM-enabled robots, we propose RoboGuard, a two-stage guardrail architecture. RoboGuard first contextualizes pre-defined safety rules by grounding them in the robot's environment using a root-of-trust LLM. This LLM is shielded from malicious prompts and employs chain-of-thought (CoT) reasoning to generate context-dependent safety specifications, such as temporal logic constraints. RoboGuard then resolves conflicts between these contextual safety specifications and potentially unsafe plans using temporal logic control synthesis, ensuring compliance while minimally violating user preferences. In simulation and real-world experiments that consider worst-case jailbreaking attacks, RoboGuard reduces the execution of unsafe plans from over 92% to below 3% without compromising performance on safe plans. We also demonstrate that RoboGuard is resource-efficient, robust against adaptive attacks, and enhanced by its root-of-trust LLM's CoT reasoning. These results demonstrate the potential of RoboGuard to mitigate the safety risks and enhance the reliability of LLM-enabled robots. We provide additional resources at https://robo-guard.github.io/."
+      ]
+    },
+    "details": {
+      "title": "Title: Safety Guardrails for LLM-Enabled Robots",
+      "authors": "Authors: Zachary Ravichandran , Alexander Robey , Vijay Kumar , George J. Pappas , Hamed Hassani",
+      "dateline": "[Submitted on 10 Mar 2025 ( v1 ), last revised 3 Mar 2026 (this version, v2)]",
+      "metatable": "Subjects: Robotics (cs.RO) ; Artificial Intelligence (cs.AI) Cite as: arXiv:2503.07885 [cs.RO] (or arXiv:2503.07885v2 [cs.RO] for this version) https://doi.org/10.48550/arXiv.2503.07885 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1109/lra.2026.3667488",
+      "type": "journal-article",
+      "title": [
+        "Safety Guardrails for LLM-Enabled Robots"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-4380-3212",
+          "authenticated-orcid": false,
+          "given": "Zachary",
+          "family": "Ravichandran",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelpha, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-5693-2819",
+          "authenticated-orcid": false,
+          "given": "Alexander",
+          "family": "Robey",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Carnegie Mellon University, Pittsburgh, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3902-9391",
+          "authenticated-orcid": false,
+          "given": "Vijay",
+          "family": "Kumar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelpha, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9081-0637",
+          "authenticated-orcid": false,
+          "given": "George J.",
+          "family": "Pappas",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelpha, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9448-8750",
+          "authenticated-orcid": false,
+          "given": "Hamed",
+          "family": "Hassani",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelpha, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Robotics and Automation Letters"
+      ],
+      "volume": "11",
+      "issue": "4",
+      "page": "4649-4656",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            4
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/lra.2026.3667488",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.1109/lra.2026.3667488/mm1",
+      "type": "component",
+      "title": [
+        "Safety Guardrails for LLM-Enabled Robots_supp1-3667488.mp4"
+      ],
+      "author": [
+        {
+          "given": "Zachary",
+          "family": "Ravichandran",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": null,
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/lra.2026.3667488/mm1",
+      "event": null,
+      "ISBN": null,
+      "relation": {
+        "is-component-of": [
+          {
+            "id-type": "doi",
+            "id": "10.1109/LRA.2026.3667488",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "title_similarity": 0.824
+    },
+    {
+      "DOI": "10.1109/aimlsystems67835.2025.11331206",
+      "type": "proceedings-article",
+      "title": [
+        "Med-Guard: LLM-Based Diagnostic System with Safety Guardrails"
+      ],
+      "author": [
+        {
+          "given": "Suparshva",
+          "family": "Jain",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "TCS Research,New Delhi,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Kunwar",
+          "family": "Zaid",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "TCS Research,New Delhi,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Amit",
+          "family": "Sangroya",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "TCS Research,New Delhi,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Lovekesh",
+          "family": "Vig",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "TCS Research,New Delhi,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 5th International Conference on AI-ML-Systems (AIMLSystems)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "324-332",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            8
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            8
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/aimlsystems67835.2025.11331206",
+      "event": {
+        "name": "2025 5th International Conference on AI-ML-Systems (AIMLSystems)",
+        "location": "Bangalore, India",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              8
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              11
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.368
+    },
+    {
+      "DOI": "10.1007/s10994-026-07060-8",
+      "type": "journal-article",
+      "title": [
+        "Survey on LLM Safety: Attacks, Defenses, Alignment, Metrics, and Guardrails"
+      ],
+      "author": [
+        {
+          "given": "Pratik",
+          "family": "Jalan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Vadivel",
+          "family": "Abishethvarman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bhavik",
+          "family": "Chandna",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Usman",
+          "family": "Naseem",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Machine Learning"
+      ],
+      "volume": "115",
+      "issue": "6",
+      "page": null,
+      "article-number": "130",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            20
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            6
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            20
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "URL": "https://doi.org/10.1007/s10994-026-07060-8",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.333
+    },
+    {
+      "DOI": "10.18653/2026.emnlp-main.240",
+      "type": "proceedings-article",
+      "title": [
+        "Q-Align: Query-Boundary Multilingual Alignment for LLM Safety Guardrails"
+      ],
+      "author": [
+        {
+          "given": "Jiaqi",
+          "family": "Weng",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Meizhen",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xu",
+          "family": "Guo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Junyu",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jinfeng",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jialing",
+          "family": "Tao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "YueFeng",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hui",
+          "family": "Xue",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "5484-5498",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/2026.emnlp-main.240",
+      "event": {
+        "name": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.33
+    }
+  ]
+}

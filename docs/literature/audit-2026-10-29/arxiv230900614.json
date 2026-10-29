@@ -1,0 +1,572 @@
+{
+  "key": "arxiv230900614",
+  "original": {
+    "url": "https://arxiv.org/abs/2309.00614",
+    "howpublished": "arXiv:2309.00614",
+    "year": "2023",
+    "author": "Jain, Neel and Schwarzschild, Avi and Wen, Yuxin and Somepalli, Gowthami and Kirchenbauer, John and Chiang, Ping-yeh and Goldblum, Micah and Saha, Aniruddha and Geiping, Jonas and Goldstein, Tom",
+    "title": "{Baseline Defenses for Adversarial Attacks Against Aligned Language Models}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv230900614"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2309.00614",
+    "https://api.crossref.org/works?query.title=Baseline+Defenses+for+Adversarial+Attacks+Against+Aligned+Language+Models&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2309.00614: Baseline Defenses for Adversarial Attacks Against Aligned Language Models"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Baseline Defenses for Adversarial Attacks Against Aligned Language Models"
+      ],
+      "twitter:description": [
+        "As Large Language Models quickly become ubiquitous, it becomes critical to understand their security vulnerabilities. Recent work shows that text optimizers can produce jailbreaking prompts that..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Baseline Defenses for Adversarial Attacks Against Aligned Language Models"
+      ],
+      "citation_author": [
+        "Jain, Neel",
+        "Schwarzschild, Avi",
+        "Wen, Yuxin",
+        "Somepalli, Gowthami",
+        "Kirchenbauer, John",
+        "Chiang, Ping-yeh",
+        "Goldblum, Micah",
+        "Saha, Aniruddha",
+        "Geiping, Jonas",
+        "Goldstein, Tom"
+      ],
+      "citation_date": [
+        "2023/09/01"
+      ],
+      "citation_online_date": [
+        "2023/09/04"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2309.00614"
+      ],
+      "citation_arxiv_id": [
+        "2309.00614"
+      ],
+      "citation_abstract": [
+        "As Large Language Models quickly become ubiquitous, it becomes critical to understand their security vulnerabilities. Recent work shows that text optimizers can produce jailbreaking prompts that bypass moderation and alignment. Drawing from the rich body of work on adversarial machine learning, we approach these attacks with three questions: What threat models are practically useful in this domain? How do baseline defense techniques perform in this new domain? How does LLM security differ from computer vision? We evaluate several baseline defense strategies against leading adversarial attacks on LLMs, discussing the various settings in which each is feasible and effective. Particularly, we look at three types of defenses: detection (perplexity based), input preprocessing (paraphrase and retokenization), and adversarial training. We discuss white-box and gray-box settings and discuss the robustness-performance trade-off for each of the defenses considered. We find that the weakness of existing discrete optimizers for text, combined with the relatively high costs of optimization, makes standard adaptive attacks more challenging for LLMs. Future research will be needed to uncover whether more powerful optimizers can be developed, or whether the strength of filtering and preprocessing defenses is greater in the LLMs domain than it has been in computer vision."
+      ]
+    },
+    "details": {
+      "title": "Title: Baseline Defenses for Adversarial Attacks Against Aligned Language Models",
+      "authors": "Authors: Neel Jain , Avi Schwarzschild , Yuxin Wen , Gowthami Somepalli , John Kirchenbauer , Ping-yeh Chiang , Micah Goldblum , Aniruddha Saha , Jonas Geiping , Tom Goldstein",
+      "dateline": "[Submitted on 1 Sep 2023 ( v1 ), last revised 4 Sep 2023 (this version, v2)]",
+      "comments": "12 pages",
+      "metatable": "Comments: 12 pages Subjects: Machine Learning (cs.LG) ; Computation and Language (cs.CL); Cryptography and Security (cs.CR) Cite as: arXiv:2309.00614 [cs.LG] (or arXiv:2309.00614v2 [cs.LG] for this version) https://doi.org/10.48550/arXiv.2309.00614 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1007/978-3-031-76770-8_13",
+      "type": "book-chapter",
+      "title": [
+        "Attacks and Defenses on Aligned Large Language Models"
+      ],
+      "author": [
+        {
+          "given": "Pin-Yu",
+          "family": "Chen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sijia",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Introduction to Foundation Models"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "167-183",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            12
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Switzerland",
+      "URL": "https://doi.org/10.1007/978-3-031-76770-8_13",
+      "event": null,
+      "ISBN": [
+        "9783031767692",
+        "9783031767708"
+      ],
+      "relation": null,
+      "title_similarity": 0.613
+    },
+    {
+      "DOI": "10.1145/3128572.3140449",
+      "type": "proceedings-article",
+      "title": [
+        "Efficient Defenses Against Adversarial Attacks"
+      ],
+      "author": [
+        {
+          "given": "Valentina",
+          "family": "Zantedeschi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Univ Lyon, UJM-Saint-Etienne, CNRS, Saint-Etienne, France &amp; IBM Research Ireland, Dublin, Ireland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Maria-Irina",
+          "family": "Nicolae",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "IBM Research Ireland, Dublin, Ireland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ambrish",
+          "family": "Rawat",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "IBM Research Ireland, Dublin, Ireland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 10th ACM Workshop on Artificial Intelligence and Security"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "39-49",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            11,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2017,
+            11,
+            3
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            11,
+            3
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3128572.3140449",
+      "event": {
+        "name": "CCS '17: 2017 ACM SIGSAC Conference on Computer and Communications Security",
+        "location": "Dallas Texas USA",
+        "acronym": "CCS '17",
+        "sponsor": [
+          "SIGSAC ACM Special Interest Group on Security, Audit, and Control"
+        ]
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.542
+    },
+    {
+      "DOI": "10.36227/techrxiv.19918651.v1",
+      "type": "posted-content",
+      "title": [
+        "Contributor-Aware Defenses Against Adversarial Backdoor Attacks"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5877-5605",
+          "authenticated-orcid": false,
+          "given": "Glenn",
+          "family": "Dawson",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Rowan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5956-7683",
+          "authenticated-orcid": false,
+          "given": "Muhammad",
+          "family": "Umer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2739-4228",
+          "authenticated-orcid": false,
+          "given": "Robi",
+          "family": "Polikar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            31
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.36227/techrxiv.19918651.v1",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.475
+    },
+    {
+      "DOI": "10.36227/techrxiv.19918651",
+      "type": "posted-content",
+      "title": [
+        "Contributor-Aware Defenses Against Adversarial Backdoor Attacks"
+      ],
+      "author": [
+        {
+          "given": "Glenn",
+          "family": "Dawson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5956-7683",
+          "authenticated-orcid": false,
+          "given": "Muhammad",
+          "family": "Umer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2739-4228",
+          "authenticated-orcid": false,
+          "given": "Robi",
+          "family": "Polikar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            31
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.36227/techrxiv.19918651",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.475
+    },
+    {
+      "DOI": "10.1109/csnt60213.2024.10546022",
+      "type": "proceedings-article",
+      "title": [
+        "Designing Explainable Defenses Against Sophisticated Adversarial Attacks"
+      ],
+      "author": [
+        {
+          "given": "Sorabh",
+          "family": "Lakhanpal",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Lovely Professional University,Phagwara"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "KSKN Venkata Ramana",
+          "family": "Devi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Aeronautical Engineering, Dundigal,Hyderabad"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Aravinda",
+          "family": "K",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "New Horizon College of Engineering,Department of Electronics and Communication Engineering,Bangalore"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sachindra Kumar",
+          "family": "Jain",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "IES Insititute of Technology and Management IES University,Department of Mechanical Engineering,Bhopal,M. P.,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Myasar Mundher",
+          "family": "Adnan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The Islamic university,Najaf,Iraq"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ashwani",
+          "family": "Kumar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Lloyd Institute of Engineering &#x0026; Technology,Greater Noida,Uttar Pradesh"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2024 IEEE 13th International Conference on Communication Systems and Network Technologies (CSNT)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "280-285",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/csnt60213.2024.10546022",
+      "event": {
+        "name": "2024 IEEE 13th International Conference on Communication Systems and Network Technologies (CSNT)",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              6
+            ]
+          ]
+        },
+        "location": "Jabalpur, India",
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.473
+    }
+  ]
+}

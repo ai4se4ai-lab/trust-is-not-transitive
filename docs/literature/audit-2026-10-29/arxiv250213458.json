@@ -1,0 +1,451 @@
+{
+  "key": "arxiv250213458",
+  "original": {
+    "url": "https://arxiv.org/abs/2502.13458",
+    "howpublished": "arXiv:2502.13458",
+    "year": "2025",
+    "author": "Wen, Xiaofei and Zhou, Wenxuan and Mo, Wenjie Jacky and Chen, Muhao",
+    "title": "{ThinkGuard: Deliberative Slow Thinking Leads to Cautious Guardrails}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250213458"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2502.13458",
+    "https://api.crossref.org/works?query.title=ThinkGuard%3A+Deliberative+Slow+Thinking+Leads+to+Cautious+Guardrails&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2502.13458: ThinkGuard: Deliberative Slow Thinking Leads to Cautious Guardrails"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "ThinkGuard: Deliberative Slow Thinking Leads to Cautious Guardrails"
+      ],
+      "twitter:description": [
+        "Ensuring the safety of large language models (LLMs) is critical as they are deployed in real-world applications. Existing guardrails rely on rule-based filtering or single-pass classification,..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "ThinkGuard: Deliberative Slow Thinking Leads to Cautious Guardrails"
+      ],
+      "citation_author": [
+        "Wen, Xiaofei",
+        "Zhou, Wenxuan",
+        "Mo, Wenjie Jacky",
+        "Chen, Muhao"
+      ],
+      "citation_date": [
+        "2025/02/19"
+      ],
+      "citation_online_date": [
+        "2025/05/27"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2502.13458"
+      ],
+      "citation_arxiv_id": [
+        "2502.13458"
+      ],
+      "citation_abstract": [
+        "Ensuring the safety of large language models (LLMs) is critical as they are deployed in real-world applications. Existing guardrails rely on rule-based filtering or single-pass classification, limiting their ability to handle nuanced safety violations. To address this, we propose ThinkGuard, a critique-augmented guardrail model that distills knowledge from high-capacity LLMs by generating structured critiques alongside safety labels. Fine-tuned on critique-augmented data, the captured deliberative thinking ability drastically enhances the guardrail's cautiousness and interpretability. Evaluated on multiple safety benchmarks, ThinkGuard achieves the highest average F1 and AUPRC, outperforming all baselines. Compared to LLaMA Guard 3, ThinkGuard improves accuracy by 16.1% and macro F1 by 27.0%. Moreover, it surpasses label-only fine-tuned models, confirming that structured critiques enhance both classification precision and nuanced safety reasoning while maintaining computational efficiency."
+      ]
+    },
+    "details": {
+      "title": "Title: ThinkGuard: Deliberative Slow Thinking Leads to Cautious Guardrails",
+      "authors": "Authors: Xiaofei Wen , Wenxuan Zhou , Wenjie Jacky Mo , Muhao Chen",
+      "dateline": "[Submitted on 19 Feb 2025 ( v1 ), last revised 27 May 2025 (this version, v2)]",
+      "comments": "ACL 2025",
+      "metatable": "Comments: ACL 2025 Subjects: Computation and Language (cs.CL) ; Artificial Intelligence (cs.AI); Cryptography and Security (cs.CR); Machine Learning (cs.LG) Cite as: arXiv:2502.13458 [cs.CL] (or arXiv:2502.13458v2 [cs.CL] for this version) https://doi.org/10.48550/arXiv.2502.13458 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.18653/v1/2025.findings-acl.704",
+      "type": "proceedings-article",
+      "title": [
+        "ThinkGuard: Deliberative Slow Thinking Leads to Cautious Guardrails"
+      ],
+      "author": [
+        {
+          "given": "Xiaofei",
+          "family": "Wen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wenxuan",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wenjie Jacky",
+          "family": "Mo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Muhao",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: ACL 2025"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "13698-13713",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.findings-acl.704",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: ACL 2025",
+        "location": "Vienna, Austria",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.1007/978-3-031-38971-9_173-1",
+      "type": "book-chapter",
+      "title": [
+        "Deliberative Thinking"
+      ],
+      "author": [
+        {
+          "given": "Nathan",
+          "family": "Oesch",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Samson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Encyclopedia of Religious Psychology and Behavior"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-9",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            9
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Switzerland",
+      "URL": "https://doi.org/10.1007/978-3-031-38971-9_173-1",
+      "event": null,
+      "ISBN": [
+        "9783031389719",
+        "9783031389719"
+      ],
+      "relation": null,
+      "title_similarity": 0.506
+    },
+    {
+      "DOI": "10.1108/oxan-es249958",
+      "type": "other",
+      "title": [
+        "Germany’s Merkel leads cautious Russia rapprochement"
+      ],
+      "author": null,
+      "container-title": [
+        "Emerald Expert Briefings"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            1,
+            13
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            1,
+            13
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Emerald",
+      "URL": "https://doi.org/10.1108/oxan-es249958",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.4
+    },
+    {
+      "DOI": "10.1126/science.294.5544.974a",
+      "type": "journal-article",
+      "title": [
+        "Cautious Optimism, But Progress Is Slow"
+      ],
+      "author": [
+        {
+          "given": "Richard",
+          "family": "Stone",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science"
+      ],
+      "volume": "294",
+      "issue": "5544",
+      "page": "974-974",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2001,
+            11,
+            2
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2001,
+            11,
+            2
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "URL": "https://doi.org/10.1126/science.294.5544.974a",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.261
+    },
+    {
+      "DOI": "10.5040/9798881842901.0009",
+      "type": "other",
+      "title": [
+        "Cautious and Slow to Warm Up"
+      ],
+      "author": null,
+      "container-title": [
+        "Big Reactors"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "137-166",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Bloomsbury Publishing Plc",
+      "URL": "https://doi.org/10.5040/9798881842901.0009",
+      "event": null,
+      "ISBN": [
+        "9798881842901",
+        "9798881802820"
+      ],
+      "relation": null,
+      "title_similarity": 0.244
+    },
+    {
+      "DOI": "10.1007/978-981-287-532-7_408-1",
+      "type": "book-chapter",
+      "title": [
+        "Taking Our Time: Slow Learning, Cautious Teaching"
+      ],
+      "author": [
+        {
+          "given": "Richard",
+          "family": "Smith",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Encyclopedia of Educational Philosophy and Theory"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-5",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            23
+          ]
+        ]
+      },
+      "publisher": "Springer Singapore",
+      "URL": "https://doi.org/10.1007/978-981-287-532-7_408-1",
+      "event": null,
+      "ISBN": [
+        "9789812875327"
+      ],
+      "relation": null,
+      "title_similarity": 0.52
+    }
+  ]
+}

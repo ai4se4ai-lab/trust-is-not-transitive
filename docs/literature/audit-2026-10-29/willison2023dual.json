@@ -1,0 +1,527 @@
+{
+  "key": "willison2023dual",
+  "original": {
+    "url": "https://simonwillison.net/2023/Apr/25/dual-llm-pattern/",
+    "month": "April",
+    "year": "2023",
+    "howpublished": "Blog post",
+    "title": "The Dual {LLM} Pattern for Building {AI} Assistants That Can Resist Prompt Injection",
+    "author": "Willison, Simon",
+    "ENTRYTYPE": "misc",
+    "ID": "willison2023dual"
+  },
+  "sources": [
+    "https://api.crossref.org/works?query.title=The+Dual+LLM+Pattern+for+Building+AI+Assistants+That+Can+Resist+Prompt+Injection&rows=5"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.2139/ssrn.7179658",
+      "type": "posted-content",
+      "title": [
+        "LLM-powered SOC Assistants: Prompt Injection Risks in Threat Triage"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-1412-9708",
+          "authenticated-orcid": true,
+          "given": "Tayyeb",
+          "family": "Nadeem Somro",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-0053-3120",
+          "authenticated-orcid": true,
+          "given": "Bilal",
+          "family": "Arshad",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ammara",
+          "family": "Gul",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.2139/ssrn.7179658",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.512
+    },
+    {
+      "DOI": "10.1007/s10015-026-01152-3",
+      "type": "journal-article",
+      "title": [
+        "Bringing the Dual-LLM pattern to practice in Google ADK for deterministic AI agent security against prompt injection"
+      ],
+      "author": [
+        {
+          "given": "Shuo",
+          "family": "Huang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shin-Jie",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Artificial Life and Robotics"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            18
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            18
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "URL": "https://doi.org/10.1007/s10015-026-01152-3",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.527
+    },
+    {
+      "DOI": "10.1109/imns67862.2026.11655283",
+      "type": "proceedings-article",
+      "title": [
+        "Evaluating Prompt Injection Risk and Guardrails in LLM-Enabled Home IoT Assistants"
+      ],
+      "author": [
+        {
+          "given": "Shazid Bin",
+          "family": "Zaman",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "East Carolina University",
+              "department": [
+                "Dept. of Technology Systems"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sohan",
+          "family": "Gyawali",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "East Carolina University",
+              "department": [
+                "Dept. of Technology Systems"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ciprian",
+          "family": "Popoviciu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "East Carolina University",
+              "department": [
+                "Dept. of Technology Systems"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yili",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Georgia State University",
+              "department": [
+                "Dept. of Computer Science"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiaqi",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Central Missouri",
+              "department": [
+                "Dept. of Computer Science and Cybersecurity"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 International Conference on Intelligent Multimedia, Networking, and Security (IMNS)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-6",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            8
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/imns67862.2026.11655283",
+      "event": {
+        "name": "2026 International Conference on Intelligent Multimedia, Networking, and Security (IMNS)",
+        "location": "Atlanta, GA, USA",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              3
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              4
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.317
+    },
+    {
+      "DOI": "10.62643/ijerst.2026.v22.n2(1).pp66-72",
+      "type": "journal-article",
+      "title": [
+        "LLM Prompt Injection Detection Firewall"
+      ],
+      "author": [
+        {
+          "family": "YAJJIPURAPU LAVANYA",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "family": "PILLA RESHMA",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "family": "GEDDADA JYOTHSNA ADITYA",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "family": "MOTURU ABHISHEK DINESH RAJA",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "family": "BANDARU MAHA LAKSHMI",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "International Journal of Engineering Research and Science &amp; Technology"
+      ],
+      "volume": "22",
+      "issue": "2(1)",
+      "page": "66-72",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            6
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            6
+          ]
+        ]
+      },
+      "publisher": "Thomson & Ryberg Publications",
+      "URL": "https://doi.org/10.62643/ijerst.2026.v22.n2(1).pp66-72",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.35
+    },
+    {
+      "DOI": "10.1109/fuzz69877.2026.11626451",
+      "type": "proceedings-article",
+      "title": [
+        "Linguistic Pattern–Enriched Transformers for Prompt Injection Detection in LLM Systems"
+      ],
+      "author": [
+        {
+          "given": "Carmen De",
+          "family": "Maio",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Salerno",
+              "place": [
+                "Fisciano, SA, Italy"
+              ],
+              "department": [
+                "Department of Computer Science"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sabrina",
+          "family": "Senatore",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Salerno",
+              "place": [
+                "Fisciano, SA, Italy"
+              ],
+              "department": [
+                "Department of Information Engineering"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hao",
+          "family": "Fei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shaanxi Normal University",
+              "place": [
+                "Xi’an, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-8",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/fuzz69877.2026.11626451",
+      "event": {
+        "name": "2026 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)",
+        "location": "Maastricht, Netherlands",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              21
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              26
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.389
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 .git
 .tools
 build
+archive/local
 results/archive
 docs/literature/evidence
 __pycache__

@@ -10,7 +10,7 @@ from build_paper import build
 
 
 def main(round_number):
-    directory=ROOT/'reviews'/f'round{round_number}'
+    directory=ROOT/'archive/reviews'/f'round{round_number}'
     executable=shutil.which('latexdiff')
     if not executable:raise RuntimeError('latexdiff not installed')
     environment=os.environ.copy()

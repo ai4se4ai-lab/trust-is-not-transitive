@@ -1,0 +1,623 @@
+{
+  "key": "arxiv241209565",
+  "original": {
+    "url": "https://arxiv.org/abs/2412.09565",
+    "howpublished": "arXiv:2412.09565",
+    "year": "2024",
+    "author": "Bailey, Luke and Serrano, Alex and Sheshadri, Abhay and Seleznyov, Mikhail and Taylor, Jordan and Jenner, Erik and Hilton, Jacob and Casper, Stephen and Guestrin, Carlos and Emmons, Scott",
+    "title": "{Obfuscated Activations Bypass LLM Latent-Space Defenses}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv241209565"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2412.09565",
+    "https://api.crossref.org/works?query.title=Obfuscated+Activations+Bypass+LLM+Latent-Space+Defenses&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2412.09565: Obfuscated Activations Bypass LLM Latent-Space Defenses"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Obfuscated Activations Bypass LLM Latent-Space Defenses"
+      ],
+      "twitter:description": [
+        "Recent latent-space monitoring techniques have shown promise as defenses against LLM attacks. These defenses act as scanners that seek to detect harmful activations before they lead to undesirable..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Obfuscated Activations Bypass LLM Latent-Space Defenses"
+      ],
+      "citation_author": [
+        "Bailey, Luke",
+        "Serrano, Alex",
+        "Sheshadri, Abhay",
+        "Seleznyov, Mikhail",
+        "Taylor, Jordan",
+        "Jenner, Erik",
+        "Hilton, Jacob",
+        "Casper, Stephen",
+        "Guestrin, Carlos",
+        "Emmons, Scott"
+      ],
+      "citation_date": [
+        "2024/12/12"
+      ],
+      "citation_online_date": [
+        "2025/02/08"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2412.09565"
+      ],
+      "citation_arxiv_id": [
+        "2412.09565"
+      ],
+      "citation_abstract": [
+        "Recent latent-space monitoring techniques have shown promise as defenses against LLM attacks. These defenses act as scanners that seek to detect harmful activations before they lead to undesirable actions. This prompts the question: Can models execute harmful behavior via inconspicuous latent states? Here, we study such obfuscated activations. We show that state-of-the-art latent-space defenses -- including sparse autoencoders, representation probing, and latent OOD detection -- are all vulnerable to obfuscated activations. For example, against probes trained to classify harmfulness, our attacks can often reduce recall from 100% to 0% while retaining a 90% jailbreaking rate. However, obfuscation has limits: we find that on a complex task (writing SQL code), obfuscation reduces model performance. Together, our results demonstrate that neural activations are highly malleable: we can reshape activation patterns in a variety of ways, often while preserving a network's behavior. This poses a fundamental challenge to latent-space defenses."
+      ]
+    },
+    "details": {
+      "title": "Title: Obfuscated Activations Bypass LLM Latent-Space Defenses",
+      "authors": "Authors: Luke Bailey , Alex Serrano , Abhay Sheshadri , Mikhail Seleznyov , Jordan Taylor , Erik Jenner , Jacob Hilton , Stephen Casper , Carlos Guestrin , Scott Emmons",
+      "dateline": "[Submitted on 12 Dec 2024 ( v1 ), last revised 8 Feb 2025 (this version, v2)]",
+      "comments": "Project page: this https URL Code: this https URL",
+      "metatable": "Comments: Project page: this https URL Code: this https URL Subjects: Machine Learning (cs.LG) Cite as: arXiv:2412.09565 [cs.LG] (or arXiv:2412.09565v2 [cs.LG] for this version) https://doi.org/10.48550/arXiv.2412.09565 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1109/saci66288.2025.11030191",
+      "type": "proceedings-article",
+      "title": [
+        "Turning LLM Activations Quantization-Friendly"
+      ],
+      "author": [
+        {
+          "given": "Patrik",
+          "family": "Czakó",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Doctoral School of Applied, Informatics and Applied, Mathematics, Obuda University,Budapest,Hungary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gábor",
+          "family": "Kertész",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Obuda University,John von Neumann Faculty of Informatics,Budapest,Hungary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sándor",
+          "family": "Szénási",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Obuda University,John von Neumann Faculty of Informatics,Budapest,Hungary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE 19th International Symposium on Applied Computational Intelligence and Informatics (SACI)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "000211-000216",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            19
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            19
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/saci66288.2025.11030191",
+      "event": {
+        "name": "2025 IEEE 19th International Symposium on Applied Computational Intelligence and Informatics (SACI)",
+        "location": "Timisoara, Romania",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              19
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              24
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.4
+    },
+    {
+      "DOI": "10.1109/acsacw69556.2025.00057",
+      "type": "proceedings-article",
+      "title": [
+        "Attacks &amp; Defenses Against LLM Fingerprinting"
+      ],
+      "author": [
+        {
+          "given": "Kevin",
+          "family": "Kurian",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Oak Ridge National Laboratory"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ethan",
+          "family": "Holland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Oak Ridge National Laboratory"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sean",
+          "family": "Oesch",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Oak Ridge National Laboratory"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 Annual Computer Security Applications Conference Workshops (ACSAC Workshops)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "480-490",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/acsacw69556.2025.00057",
+      "event": {
+        "name": "2025 Annual Computer Security Applications Conference Workshops (ACSAC Workshops)",
+        "location": "Honolulu, HI, USA",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              8
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              9
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.308
+    },
+    {
+      "DOI": "10.1101/2020.07.01.168849",
+      "type": "posted-content",
+      "title": [
+        "Hyperrealistic neural decoding: Reconstructing faces from fMRI activations via the GAN latent space"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4462-4256",
+          "authenticated-orcid": false,
+          "given": "Thirza",
+          "family": "Dado",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yağmur",
+          "family": "Güçlütürk",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Luca",
+          "family": "Ambrogioni",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gabriëlle",
+          "family": "Ras",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sander E.",
+          "family": "Bosch",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Marcel",
+          "family": "van Gerven",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Umut",
+          "family": "Güçlü",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            2
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "openRxiv",
+      "URL": "https://doi.org/10.1101/2020.07.01.168849",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.385
+    },
+    {
+      "DOI": "10.18653/2026.findings-emnlp.612",
+      "type": "proceedings-article",
+      "title": [
+        "NaviRank: LLM-Informed Latent Space Navigation Enhances Reasoning-Intensive Information Retrieval"
+      ],
+      "author": [
+        {
+          "given": "Jinwen",
+          "family": "Pan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Haolin",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hang",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EMNLP 2026"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "12880-12897",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/2026.findings-emnlp.612",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.326
+    },
+    {
+      "DOI": "10.18653/v1/2025.naacl-long.71",
+      "type": "proceedings-article",
+      "title": [
+        "CompAct: Compressed Activations for Memory-Efficient LLM Training"
+      ],
+      "author": [
+        {
+          "given": "Yara",
+          "family": "Shamshoum",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Nitzan",
+          "family": "Hodos",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yuval",
+          "family": "Sieradzki",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Assaf",
+          "family": "Schuster",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1511-1524",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.naacl-long.71",
+      "event": {
+        "name": "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+        "location": "Albuquerque, New Mexico",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.415
+    }
+  ]
+}

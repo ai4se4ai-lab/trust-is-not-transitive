@@ -1,0 +1,618 @@
+{
+  "key": "arxiv251002609",
+  "original": {
+    "url": "https://arxiv.org/abs/2510.02609",
+    "howpublished": "arXiv:2510.02609",
+    "year": "2025",
+    "author": "Guo, Chengquan and Xie, Chulin and Yang, Yu and Chen, Zhaorun and Lin, Zinan and Davies, Xander and Gal, Yarin and Song, Dawn and Li, Bo",
+    "title": "{RedCodeAgent: Automatic Red-teaming Agent against Diverse Code Agents}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv251002609"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2510.02609",
+    "https://api.crossref.org/works?query.title=RedCodeAgent%3A+Automatic+Red-teaming+Agent+against+Diverse+Code+Agents&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2510.02609: RedCodeAgent: Automatic Red-teaming Agent against Diverse Code Agents"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "RedCodeAgent: Automatic Red-teaming Agent against Diverse Code Agents"
+      ],
+      "twitter:description": [
+        "Code agents have gained widespread adoption due to their strong code generation capabilities and integration with code interpreters, enabling dynamic execution, debugging, and interactive..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "RedCodeAgent: Automatic Red-teaming Agent against Diverse Code Agents"
+      ],
+      "citation_author": [
+        "Guo, Chengquan",
+        "Xie, Chulin",
+        "Yang, Yu",
+        "Chen, Zhaorun",
+        "Lin, Zinan",
+        "Davies, Xander",
+        "Gal, Yarin",
+        "Song, Dawn",
+        "Li, Bo"
+      ],
+      "citation_date": [
+        "2025/10/02"
+      ],
+      "citation_online_date": [
+        "2025/11/10"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2510.02609"
+      ],
+      "citation_arxiv_id": [
+        "2510.02609"
+      ],
+      "citation_abstract": [
+        "Code agents have gained widespread adoption due to their strong code generation capabilities and integration with code interpreters, enabling dynamic execution, debugging, and interactive programming capabilities. While these advancements have streamlined complex workflows, they have also introduced critical safety and security risks. Current static safety benchmarks and red-teaming tools are inadequate for identifying emerging real-world risky scenarios, as they fail to cover certain boundary conditions, such as the combined effects of different jailbreak tools. In this work, we propose RedCodeAgent, the first automated red-teaming agent designed to systematically uncover vulnerabilities in diverse code agents. With an adaptive memory module, RedCodeAgent can leverage existing jailbreak knowledge, dynamically select the most effective red-teaming tools and tool combinations in a tailored toolbox for a given input query, thus identifying vulnerabilities that might otherwise be overlooked. For reliable evaluation, we develop simulated sandbox environments to additionally evaluate the execution results of code agents, mitigating potential biases of LLM-based judges that only rely on static code. Through extensive evaluations across multiple state-of-the-art code agents, diverse risky scenarios, and various programming languages, RedCodeAgent consistently outperforms existing red-teaming methods, achieving higher attack success rates and lower rejection rates with high efficiency. We further validate RedCodeAgent on real-world code assistants, e.g., Cursor and Codeium, exposing previously unidentified security risks. By automating and optimizing red-teaming processes, RedCodeAgent enables scalable, adaptive, and effective safety assessments of code agents."
+      ]
+    },
+    "details": {
+      "title": "Title: RedCodeAgent: Automatic Red-teaming Agent against Diverse Code Agents",
+      "authors": "Authors: Chengquan Guo , Chulin Xie , Yu Yang , Zhaorun Chen , Zinan Lin , Xander Davies , Yarin Gal , Dawn Song , Bo Li",
+      "dateline": "[Submitted on 2 Oct 2025 ( v1 ), last revised 10 Nov 2025 (this version, v2)]",
+      "metatable": "Subjects: Software Engineering (cs.SE) Cite as: arXiv:2510.02609 [cs.SE] (or arXiv:2510.02609v2 [cs.SE] for this version) https://doi.org/10.48550/arXiv.2510.02609 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.18653/v1/2025.findings-emnlp.1258",
+      "type": "proceedings-article",
+      "title": [
+        "AGENTVIGIL: Automatic Black-Box Red-teaming for Indirect Prompt Injection against LLM Agents"
+      ],
+      "author": [
+        {
+          "given": "Zhun",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Vincent",
+          "family": "Siu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhe",
+          "family": "Ye",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tianneng",
+          "family": "Shi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuzhou",
+          "family": "Nie",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xuandong",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chenguang",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wenbo",
+          "family": "Guo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dawn",
+          "family": "Song",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EMNLP 2025"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "23159-23172",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.findings-emnlp.1258",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+        "location": "Suzhou, China",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              11
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.576
+    },
+    {
+      "DOI": "10.1109/tifs.2026.3691201",
+      "type": "journal-article",
+      "title": [
+        "Automatic Red Teaming LLM-Based Agents With Model Context Protocol Tools"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0004-9911-7897",
+          "authenticated-orcid": false,
+          "given": "Ping",
+          "family": "He",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "College of Computer Science and Technology, Zhejiang University, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1671-7183",
+          "authenticated-orcid": false,
+          "given": "Changjiang",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Palo Alto Networks, Santa Clara, United States of America"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2025-1291",
+          "authenticated-orcid": false,
+          "given": "Binbin",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Computer Science and Technology, Zhejiang University, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0896-0690",
+          "authenticated-orcid": false,
+          "given": "Tianyu",
+          "family": "Du",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Software Technology, Zhejiang University, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4268-372X",
+          "authenticated-orcid": false,
+          "given": "Shouling",
+          "family": "Ji",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Computer Science and Technology, Zhejiang University, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Information Forensics and Security"
+      ],
+      "volume": "21",
+      "issue": null,
+      "page": "5165-5180",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/tifs.2026.3691201",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.475
+    },
+    {
+      "DOI": "10.18653/v1/2026.findings-eacl.171",
+      "type": "proceedings-article",
+      "title": [
+        "SIRAJ: Diverse and Efficient Red-Teaming for LLM Agents via Distilled Structured Reasoning"
+      ],
+      "author": [
+        {
+          "given": "Kaiwen",
+          "family": "Zhou",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ahmed",
+          "family": "Elgohary",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "A S M",
+          "family": "Iftekhar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Amin",
+          "family": "Saied",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EACL 2026"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "3269-3292",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2026.findings-eacl.171",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EACL 2026",
+        "location": "Rabat, Morocco",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              3
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.35
+    },
+    {
+      "DOI": "10.18653/2026.findings-emnlp.177",
+      "type": "proceedings-article",
+      "title": [
+        "Code Monitor Red Teaming for Public-Test-Passing Code"
+      ],
+      "author": [
+        {
+          "given": "Junchi",
+          "family": "Liao",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiawen",
+          "family": "Deng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fuji",
+          "family": "Ren",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EMNLP 2026"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "3720-3740",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/2026.findings-emnlp.177",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.457
+    },
+    {
+      "DOI": "10.1109/tifs.2026.3691201/mm1",
+      "type": "component",
+      "title": [
+        "Automatic Red Teaming LLM-based Agents with Model Context Protocol Tools_supp1-3691201.pdf"
+      ],
+      "author": [
+        {
+          "given": "Shouling",
+          "family": "Ji",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": null,
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/tifs.2026.3691201/mm1",
+      "event": null,
+      "ISBN": null,
+      "relation": {
+        "is-component-of": [
+          {
+            "id-type": "doi",
+            "id": "10.1109/TIFS.2026.3691201",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "title_similarity": 0.423
+    }
+  ]
+}

@@ -1,0 +1,735 @@
+{
+  "key": "arxiv240618495",
+  "original": {
+    "url": "https://arxiv.org/abs/2406.18495",
+    "howpublished": "arXiv:2406.18495",
+    "year": "2024",
+    "author": "Han, Seungju and Rao, Kavel and Ettinger, Allyson and Jiang, Liwei and Lin, Bill Yuchen and Lambert, Nathan and Choi, Yejin and Dziri, Nouha",
+    "title": "{WildGuard: Open One-Stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv240618495"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2406.18495",
+    "https://api.crossref.org/works?query.title=WildGuard%3A+Open+One-Stop+Moderation+Tools+for+Safety+Risks%2C+Jailbreaks%2C+and+Refusals+of+LLMs&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2406.18495: WildGuard: Open One-Stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "WildGuard: Open One-Stop Moderation Tools for Safety Risks,..."
+      ],
+      "twitter:description": [
+        "We introduce WildGuard -- an open, light-weight moderation tool for LLM safety that achieves three goals: (1) identifying malicious intent in user prompts, (2) detecting safety risks of model..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "WildGuard: Open One-Stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs"
+      ],
+      "citation_author": [
+        "Han, Seungju",
+        "Rao, Kavel",
+        "Ettinger, Allyson",
+        "Jiang, Liwei",
+        "Lin, Bill Yuchen",
+        "Lambert, Nathan",
+        "Choi, Yejin",
+        "Dziri, Nouha"
+      ],
+      "citation_date": [
+        "2024/06/26"
+      ],
+      "citation_online_date": [
+        "2024/12/09"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2406.18495"
+      ],
+      "citation_arxiv_id": [
+        "2406.18495"
+      ],
+      "citation_abstract": [
+        "We introduce WildGuard -- an open, light-weight moderation tool for LLM safety that achieves three goals: (1) identifying malicious intent in user prompts, (2) detecting safety risks of model responses, and (3) determining model refusal rate. Together, WildGuard serves the increasing needs for automatic safety moderation and evaluation of LLM interactions, providing a one-stop tool with enhanced accuracy and broad coverage across 13 risk categories. While existing open moderation tools such as Llama-Guard2 score reasonably well in classifying straightforward model interactions, they lag far behind a prompted GPT-4, especially in identifying adversarial jailbreaks and in evaluating models' refusals, a key measure for evaluating safety behaviors in model responses. To address these challenges, we construct WildGuardMix, a large-scale and carefully balanced multi-task safety moderation dataset with 92K labeled examples that cover vanilla (direct) prompts and adversarial jailbreaks, paired with various refusal and compliance responses. WildGuardMix is a combination of WildGuardTrain, the training data of WildGuard, and WildGuardTest, a high-quality human-annotated moderation test set with 5K labeled items covering broad risk scenarios. Through extensive evaluations on WildGuardTest and ten existing public benchmarks, we show that WildGuard establishes state-of-the-art performance in open-source safety moderation across all the three tasks compared to ten strong existing open-source moderation models (e.g., up to 26.4% improvement on refusal detection). Importantly, WildGuard matches and sometimes exceeds GPT-4 performance (e.g., up to 3.9% improvement on prompt harmfulness identification). WildGuard serves as a highly effective safety moderator in an LLM interface, reducing the success rate of jailbreak attacks from 79.8% to 2.4%."
+      ]
+    },
+    "details": {
+      "title": "Title: WildGuard: Open One-Stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs",
+      "authors": "Authors: Seungju Han , Kavel Rao , Allyson Ettinger , Liwei Jiang , Bill Yuchen Lin , Nathan Lambert , Yejin Choi , Nouha Dziri",
+      "dateline": "[Submitted on 26 Jun 2024 ( v1 ), last revised 9 Dec 2024 (this version, v3)]",
+      "comments": "NeurIPS 2024 Camera Ready. First two authors contributed equally. Third and fourth authors contributed equally",
+      "metatable": "Comments: NeurIPS 2024 Camera Ready. First two authors contributed equally. Third and fourth authors contributed equally Subjects: Computation and Language (cs.CL) Cite as: arXiv:2406.18495 [cs.CL] (or arXiv:2406.18495v3 [cs.CL] for this version) https://doi.org/10.48550/arXiv.2406.18495 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.52202/079017-0261",
+      "type": "proceedings-article",
+      "title": [
+        "WildGuard: Open One-stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs"
+      ],
+      "author": [
+        {
+          "given": "Seungju",
+          "family": "Han",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kavel",
+          "family": "Rao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Allyson",
+          "family": "Ettinger",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Liwei",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bill Yuchen",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nathan",
+          "family": "Lambert",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yejin",
+          "family": "Choi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nouha",
+          "family": "Dziri",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 37"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "8093-8131",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/079017-0261",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 37",
+        "theme": "38th Conference on Neural Information Processing Systems (NeurIPS 2024)",
+        "location": "Vancouver, BC, Canada",
+        "acronym": "NeurIPS 2024",
+        "number": "37",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              15
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.64896/ksuz1737",
+      "type": "report",
+      "title": [
+        "Content Moderation Tools to Stop Extremism"
+      ],
+      "author": [
+        {
+          "given": "Daniel",
+          "family": "Byman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            22
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            22
+          ]
+        ]
+      },
+      "publisher": "Lawfare Institute",
+      "URL": "https://doi.org/10.64896/ksuz1737",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.442
+    },
+    {
+      "DOI": "10.1007/s10994-026-07067-1",
+      "type": "journal-article",
+      "title": [
+        "Progressive Induction-Aware Optimization for LLMs Safety Under Multi-turn Jailbreaks"
+      ],
+      "author": [
+        {
+          "given": "Sijia",
+          "family": "Jing",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hongye",
+          "family": "Cao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Boyan",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jing",
+          "family": "Huo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yang",
+          "family": "Gao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Machine Learning"
+      ],
+      "volume": "115",
+      "issue": "7",
+      "page": null,
+      "article-number": "151",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            18
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            18
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "URL": "https://doi.org/10.1007/s10994-026-07067-1",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.44
+    },
+    {
+      "DOI": "10.1109/mcomstd.2026.3676030",
+      "type": "journal-article",
+      "title": [
+        "The Safety Frontier in LLMs: Risks, Defenses, and Open Challenges"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0007-1500-5444",
+          "authenticated-orcid": false,
+          "given": "Ishika",
+          "family": "Goyal",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science and Engineering, Birla Institute of Technology and Science, Pilani, Pilani Campus, Pilani, Rajasthan, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0927-9370",
+          "authenticated-orcid": false,
+          "given": "Siva",
+          "family": "Sai",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical and Computer Engineering, National University of Singapore, Singapore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-9972-7610",
+          "authenticated-orcid": false,
+          "given": "Aahana",
+          "family": "Gupta",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical and Electronics Engineering, Birla Institute of Technology and Science, Pilani, Goa Campus, Sancoale, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6730-3060",
+          "authenticated-orcid": false,
+          "given": "Vinay",
+          "family": "Chamola",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical and Electronics Engineering, Birla Institute of Technology and Science, Pilani, Pilani Campus, Pilani, Rajasthan, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Communications Standards Magazine"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-9",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/mcomstd.2026.3676030",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.326
+    },
+    {
+      "DOI": "10.1109/cvpr52734.2025.02331",
+      "type": "proceedings-article",
+      "title": [
+        "Immune: Improving Safety Against Jailbreaks in Multi-modal LLMs via Inference-Time Alignment"
+      ],
+      "author": [
+        {
+          "given": "Soumya Suvra",
+          "family": "Ghosal",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Maryland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Souradip",
+          "family": "Chakraborty",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Maryland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Vaibhav",
+          "family": "Singh",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Indian Institute of Technology Bombay"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tianrui",
+          "family": "Guan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Maryland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mengdi",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Princeton University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ahmad",
+          "family": "Beirami",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Maryland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Furong",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Maryland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alvaro",
+          "family": "Velasquez",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Colorado Boulder"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dinesh",
+          "family": "Manocha",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Maryland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Amrit",
+          "family": "Singh Bedi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Central Florida"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "25038-25049",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            10
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/cvpr52734.2025.02331",
+      "event": {
+        "name": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+        "location": "Nashville, TN, USA",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              17
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.426
+    }
+  ]
+}

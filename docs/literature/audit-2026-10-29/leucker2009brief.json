@@ -1,0 +1,84 @@
+{
+  "key": "leucker2009brief",
+  "original": {
+    "doi": "10.1016/j.jlap.2008.08.004",
+    "year": "2009",
+    "pages": "293--303",
+    "number": "5",
+    "volume": "78",
+    "journal": "The Journal of Logic and Algebraic Programming",
+    "title": "A Brief Account of Runtime Verification",
+    "author": "Leucker, Martin and Schallhart, Christian",
+    "ENTRYTYPE": "article",
+    "ID": "leucker2009brief"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1016/j.jlap.2008.08.004"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1016/j.jlap.2008.08.004",
+      "type": "journal-article",
+      "title": [
+        "A brief account of runtime verification"
+      ],
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Leucker",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christian",
+          "family": "Schallhart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Journal of Logic and Algebraic Programming"
+      ],
+      "volume": "78",
+      "issue": "5",
+      "page": "293-303",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2009,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            5
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.1016/j.jlap.2008.08.004",
+      "event": null,
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

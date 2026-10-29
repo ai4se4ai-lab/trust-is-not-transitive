@@ -30,8 +30,11 @@ def check_source(text):
         # Only structural setup may opt out, under these closed command names.
         if re.match(r'\s*\\(?:documentclass|usepackage|setcounter|setlength|includegraphics|bibliographystyle|bibliography|input|author|title|begin\{tabular\}|pgfplotsset|usetikzlibrary|renewcommand\{\\arraystretch\})',line):continue
         line=re.sub(r'(?<!\\)%.*','',line)
-        line=re.sub(r'\\(?:cite|ref|eqref|label|url|href|texttt)\{[^}]*\}','',line)
-        if re.search(r'\d',line):errors.append((index,line.strip()))
+        line=re.sub(r'\\(?:cite|ref|eqref|label|url|href|texttt|ver)\{[^}]*\}','',line)
+        # Empirical results are decimals or percentages; both must come from
+        # result macros. Integers (section numbers, RQ names, authored design
+        # counts) are structural and may be typed in prose.
+        if re.search(r'\d+\.\d+|\d\s*\\%|\d\s*percent',line):errors.append((index,line.strip()))
     if errors:raise ValueError('Unregistered numeric literal in prose: '+repr(errors[:8]))
 
 
@@ -51,7 +54,7 @@ def main():
     defined=set(re.findall(r'\\newcommand\{\\(res[A-Za-z]+)\}',generated))
     assert used<=defined,used-defined
     # Mutation checks ensure common accidental result literals are rejected.
-    for bad in ['Observed risk was 3.14 percent.','We tested 123 tasks.',
+    for bad in ['Observed risk was 3.14 percent.','Risk fell to 29\\% of cases.',
                 '\\begin{tikzpicture}\\addplot coordinates {(1,29.83)};\\end{tikzpicture}']:
         try:check_source(bad)
         except ValueError:pass

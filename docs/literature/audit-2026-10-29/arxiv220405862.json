@@ -1,0 +1,580 @@
+{
+  "key": "arxiv220405862",
+  "original": {
+    "url": "https://arxiv.org/abs/2204.05862",
+    "howpublished": "arXiv:2204.05862",
+    "year": "2022",
+    "author": "Bai, Yuntao and Jones, Andy and Ndousse, Kamal and Askell, Amanda and Chen, Anna and DasSarma, Nova and Drain, Dawn and Fort, Stanislav and Ganguli, Deep and Henighan, Tom and Joseph, Nicholas and Kadavath, Saurav and Kernion, Jackson and Conerly, Tom and El-Showk, Sheer and Elhage, Nelson and Hatfield-Dodds, Zac and Hernandez, Danny and Hume, Tristan and Johnston, Scott and Kravec, Shauna and Lovitt, Liane and Nanda, Neel and Olsson, Catherine and Amodei, Dario and Brown, Tom and Clark, Jack and McCandlish, Sam and Olah, Chris and Mann, Ben and Kaplan, Jared",
+    "title": "{Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv220405862"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2204.05862",
+    "https://api.crossref.org/works?query.title=Training+a+Helpful+and+Harmless+Assistant+with+Reinforcement+Learning+from+Human+Feedback&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2204.05862: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Training a Helpful and Harmless Assistant with Reinforcement..."
+      ],
+      "twitter:description": [
+        "We apply preference modeling and reinforcement learning from human feedback (RLHF) to finetune language models to act as helpful and harmless assistants. We find this alignment training improves..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback"
+      ],
+      "citation_author": [
+        "Bai, Yuntao",
+        "Jones, Andy",
+        "Ndousse, Kamal",
+        "Askell, Amanda",
+        "Chen, Anna",
+        "DasSarma, Nova",
+        "Drain, Dawn",
+        "Fort, Stanislav",
+        "Ganguli, Deep",
+        "Henighan, Tom",
+        "Joseph, Nicholas",
+        "Kadavath, Saurav",
+        "Kernion, Jackson",
+        "Conerly, Tom",
+        "El-Showk, Sheer",
+        "Elhage, Nelson",
+        "Hatfield-Dodds, Zac",
+        "Hernandez, Danny",
+        "Hume, Tristan",
+        "Johnston, Scott",
+        "Kravec, Shauna",
+        "Lovitt, Liane",
+        "Nanda, Neel",
+        "Olsson, Catherine",
+        "Amodei, Dario",
+        "Brown, Tom",
+        "Clark, Jack",
+        "McCandlish, Sam",
+        "Olah, Chris",
+        "Mann, Ben",
+        "Kaplan, Jared"
+      ],
+      "citation_date": [
+        "2022/04/12"
+      ],
+      "citation_online_date": [
+        "2022/04/12"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2204.05862"
+      ],
+      "citation_arxiv_id": [
+        "2204.05862"
+      ],
+      "citation_abstract": [
+        "We apply preference modeling and reinforcement learning from human feedback (RLHF) to finetune language models to act as helpful and harmless assistants. We find this alignment training improves performance on almost all NLP evaluations, and is fully compatible with training for specialized skills such as python coding and summarization. We explore an iterated online mode of training, where preference models and RL policies are updated on a weekly cadence with fresh human feedback data, efficiently improving our datasets and models. Finally, we investigate the robustness of RLHF training, and identify a roughly linear relation between the RL reward and the square root of the KL divergence between the policy and its initialization. Alongside our main results, we perform peripheral analyses on calibration, competing objectives, and the use of OOD detection, compare our models with human writers, and provide samples from our models using prompts appearing in recent related work."
+      ]
+    },
+    "details": {
+      "title": "Title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback",
+      "authors": "Authors: Yuntao Bai , Andy Jones , Kamal Ndousse , Amanda Askell , Anna Chen , Nova DasSarma , Dawn Drain , Stanislav Fort , Deep Ganguli , Tom Henighan , Nicholas Joseph , Saurav Kadavath , Jackson Kernion , Tom Conerly , Sheer El-Showk , Nelson Elhage , Zac Hatfield-Dodds , Danny Hernandez , Tristan Hume , Scott Johnston , Shauna Kravec , Liane Lovitt , Neel Nanda , Catherine Olsson , Dario Amodei , Tom Brown , Jack Clark , Sam McCandlish , Chris Olah , Ben Mann , Jared Kaplan",
+      "dateline": "[Submitted on 12 Apr 2022]",
+      "comments": "Data available at this https URL",
+      "metatable": "Comments: Data available at this https URL Subjects: Computation and Language (cs.CL) ; Machine Learning (cs.LG) Cite as: arXiv:2204.05862 [cs.CL] (or arXiv:2204.05862v1 [cs.CL] for this version) https://doi.org/10.48550/arXiv.2204.05862 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1007/s10676-025-09837-2",
+      "type": "journal-article",
+      "title": [
+        "Helpful, harmless, honest? Sociotechnical limits of AI alignment and safety through Reinforcement Learning from Human Feedback"
+      ],
+      "author": [
+        {
+          "given": "Adam",
+          "family": "Dahlgren Lindström",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Leila",
+          "family": "Methnani",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lea",
+          "family": "Krause",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Petter",
+          "family": "Ericson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Íñigo Martínez",
+          "family": "de Rituerto de Troya",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dimitri",
+          "family": "Coelho Mollo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Roel",
+          "family": "Dobbe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Ethics and Information Technology"
+      ],
+      "volume": "27",
+      "issue": "2",
+      "page": null,
+      "article-number": "28",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            6
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            4
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "URL": "https://doi.org/10.1007/s10676-025-09837-2",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.667
+    },
+    {
+      "DOI": "10.52202/085713-3396",
+      "type": "proceedings-article",
+      "title": [
+        "Strategyproof Reinforcement Learning from Human Feedback"
+      ],
+      "author": [
+        {
+          "given": "Thomas",
+          "family": "Kleine Buening",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "ETH Zurich"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiarui",
+          "family": "Gan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Debmalya",
+          "family": "Mandal",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Warwick"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Marta",
+          "family": "Kwiatkowska",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Oxford"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 38"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "112501-112534",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/085713-3396",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 38",
+        "theme": "39th Conference on Neural Information Processing Systems (NeurIPS 2025)",
+        "location": "San Diego, California, USA and Mexico City, Mexico",
+        "acronym": "NeurIPS 2025",
+        "number": "38",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              30
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.682
+    },
+    {
+      "DOI": "10.1016/b978-0-443-27436-7.00008-4",
+      "type": "book-chapter",
+      "title": [
+        "Human feedback reinforcement learning"
+      ],
+      "author": [
+        {
+          "given": "Ge",
+          "family": "Cheng",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ChatGPT"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "137-156",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier",
+      "URL": "https://doi.org/10.1016/b978-0-443-27436-7.00008-4",
+      "event": null,
+      "ISBN": [
+        "9780443274367"
+      ],
+      "relation": null,
+      "title_similarity": 0.482
+    },
+    {
+      "DOI": "10.32628/ijsrset2411211",
+      "type": "journal-article",
+      "title": [
+        "Reinforcement Learning from Human Feedback - A Review"
+      ],
+      "author": [
+        {
+          "family": "Prof. (Dr) Satya Singh",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science and Applications, M.G. Kashi Vidyapith, Varanasi (U.P.), India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "family": "Ratnesh Kumar Sharma",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science and Applications, M.G. Kashi Vidyapith, Varanasi (U.P.), India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "International Journal of Scientific Research in Science, Engineering and Technology"
+      ],
+      "volume": "11",
+      "issue": "2",
+      "page": "133-141",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            30
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            30
+          ]
+        ]
+      },
+      "publisher": "Technoscience Academy",
+      "URL": "https://doi.org/10.32628/ijsrset2411211",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.618
+    },
+    {
+      "DOI": "10.1515/9783111425078-007",
+      "type": "book-chapter",
+      "title": [
+        "7 Reinforcement Learning from Human Feedback (RLHF)"
+      ],
+      "author": [
+        {
+          "given": "Dawn",
+          "family": "Sivan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "K. Satheesh",
+          "family": "Kumar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Veena",
+          "family": "Raj",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rajan",
+          "family": "Jose",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Generative AI and LLMs"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "135-154",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            9
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "De Gruyter",
+      "URL": "https://doi.org/10.1515/9783111425078-007",
+      "event": null,
+      "ISBN": [
+        "9783111425078"
+      ],
+      "relation": null,
+      "title_similarity": 0.628
+    }
+  ]
+}

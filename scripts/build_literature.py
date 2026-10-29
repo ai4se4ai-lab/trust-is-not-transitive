@@ -28,6 +28,10 @@ def escape(text: str) -> str:
 
 
 def main() -> None:
+    if (ROOT/'docs/literature/audit-2026-10-29/audit.json').exists():
+        print('A reviewed publication audit supersedes the legacy arXiv-only bibliography generator.')
+        print('Preserving references.bib and refs_verification.csv; see docs/literature/REFERENCE_AUDIT.md.')
+        return
     records = json.loads((ROOT/'docs/literature/metadata.json').read_text(encoding='utf-8'))
     paper = ROOT/'paper'
     paper.mkdir(exist_ok=True)

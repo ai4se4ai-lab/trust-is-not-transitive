@@ -1,0 +1,703 @@
+{
+  "key": "tibshirani2019conformal",
+  "original": {
+    "url": "https://arxiv.org/abs/1904.06019",
+    "year": "2019",
+    "howpublished": "arXiv:1904.06019",
+    "title": "{Conformal Prediction Under Covariate Shift}",
+    "author": "Tibshirani, Ryan J. and Barber, Rina Foygel and Cand{\\`e}s, Emmanuel J. and Ramdas, Aaditya",
+    "ENTRYTYPE": "misc",
+    "ID": "tibshirani2019conformal"
+  },
+  "sources": [
+    "https://arxiv.org/abs/1904.06019",
+    "https://api.crossref.org/works?query.title=Conformal+Prediction+Under+Covariate+Shift&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 1904.06019: Conformal Prediction Under Covariate Shift"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Conformal Prediction Under Covariate Shift"
+      ],
+      "twitter:description": [
+        "We extend conformal prediction methodology beyond the case of exchangeable data. In particular, we show that a weighted version of conformal prediction can be used to compute distribution-free..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Conformal Prediction Under Covariate Shift"
+      ],
+      "citation_author": [
+        "Tibshirani, Ryan J.",
+        "Barber, Rina Foygel",
+        "Candes, Emmanuel J.",
+        "Ramdas, Aaditya"
+      ],
+      "citation_date": [
+        "2019/04/12"
+      ],
+      "citation_online_date": [
+        "2020/07/06"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/1904.06019"
+      ],
+      "citation_arxiv_id": [
+        "1904.06019"
+      ],
+      "citation_abstract": [
+        "We extend conformal prediction methodology beyond the case of exchangeable data. In particular, we show that a weighted version of conformal prediction can be used to compute distribution-free prediction intervals for problems in which the test and training covariate distributions differ, but the likelihood ratio between these two distributions is known---or, in practice, can be estimated accurately with access to a large set of unlabeled data (test covariate points). Our weighted extension of conformal prediction also applies more generally, to settings in which the data satisfies a certain weighted notion of exchangeability. We discuss other potential applications of our new conformal methodology, including latent variable and missing data problems."
+      ]
+    },
+    "details": {
+      "title": "Title: Conformal Prediction Under Covariate Shift",
+      "authors": "Authors: Ryan J. Tibshirani , Rina Foygel Barber , Emmanuel J. Candes , Aaditya Ramdas",
+      "dateline": "[Submitted on 12 Apr 2019 ( v1 ), last revised 6 Jul 2020 (this version, v3)]",
+      "comments": "17 pages, 4 figures",
+      "metatable": "Comments: 17 pages, 4 figures Subjects: Methodology (stat.ME) Cite as: arXiv:1904.06019 [stat.ME] (or arXiv:1904.06019v3 [stat.ME] for this version) https://doi.org/10.48550/arXiv.1904.06019 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1080/10618600.2026.2703276",
+      "type": "journal-article",
+      "title": [
+        "Generative Conformal Prediction Under Covariate Shift"
+      ],
+      "author": [
+        {
+          "given": "Cheng",
+          "family": "Li",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Statistics and Data Science, The Chinese University of Hong Kong",
+              "place": [
+                "Hong Kong, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4126-2547",
+          "authenticated-orcid": false,
+          "given": "Siming",
+          "family": "Zheng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Statistics and Data Science, Southeast University",
+              "place": [
+                "Nanjing, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuanyuan",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Statistics and Data Science, The Chinese University of Hong Kong",
+              "place": [
+                "Hong Kong, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Computational and Graphical Statistics"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-9",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            20
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            20
+          ]
+        ]
+      },
+      "publisher": "Informa UK Limited",
+      "URL": "https://doi.org/10.1080/10618600.2026.2703276",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.884
+    },
+    {
+      "DOI": "10.1073/pnas.2204569119",
+      "type": "journal-article",
+      "title": [
+        "Conformal prediction under feedback covariate shift for biomolecular design"
+      ],
+      "author": [
+        {
+          "given": "Clara",
+          "family": "Fannjiang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, CA 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephen",
+          "family": "Bates",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Statistics, University of California, Berkeley, CA 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anastasios N.",
+          "family": "Angelopoulos",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, CA 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jennifer",
+          "family": "Listgarten",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, CA 94720"
+            },
+            {
+              "name": "Center for Computational Biology, University of California, Berkeley, CA 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8935-817X",
+          "authenticated-orcid": false,
+          "given": "Michael I.",
+          "family": "Jordan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, CA 94720"
+            },
+            {
+              "name": "Department of Statistics, University of California, Berkeley, CA 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the National Academy of Sciences"
+      ],
+      "volume": "119",
+      "issue": "43",
+      "page": null,
+      "article-number": "e2204569119",
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            18
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            25
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            18
+          ]
+        ]
+      },
+      "publisher": "National Academy of Sciences",
+      "URL": "https://doi.org/10.1073/pnas.2204569119",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.724
+    },
+    {
+      "DOI": "10.21203/rs.3.rs-9822449/v1",
+      "type": "posted-content",
+      "title": [
+        "Conformal Prediction Sets for Tabular Regression Under Covariate Shift"
+      ],
+      "author": [
+        {
+          "given": "Debarun",
+          "family": "Banerjee",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Independent Researcher"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            27
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Springer Science and Business Media LLC",
+      "URL": "https://doi.org/10.21203/rs.3.rs-9822449/v1",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.76
+    },
+    {
+      "DOI": "10.52202/075280-1641",
+      "type": "proceedings-article",
+      "title": [
+        "CoDrug: Conformal Drug Property Prediction with Density Estimation under Covariate Shift"
+      ],
+      "author": [
+        {
+          "given": "Siddhartha",
+          "family": "Laghuvarapu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhen",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jimeng",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 36"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "37728-37747",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/075280-1641",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 36",
+        "theme": "37th Conference on Neural Information Processing Systems (NeurIPS 2023)",
+        "location": "New Orleans, Louisiana, USA",
+        "acronym": "NeurIPS 2023",
+        "number": "36",
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              16
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.661
+    },
+    {
+      "DOI": "10.1007/s11222-026-10936-3",
+      "type": "journal-article",
+      "title": [
+        "Generative conformal prediction under multiple covariate shifts"
+      ],
+      "author": [
+        {
+          "given": "Meifang",
+          "family": "Lan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tong",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Siming",
+          "family": "Zheng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuanyuan",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Statistics and Computing"
+      ],
+      "volume": "36",
+      "issue": "5",
+      "page": null,
+      "article-number": "205",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            13
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            10
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            13
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "URL": "https://doi.org/10.1007/s11222-026-10936-3",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.8
+    },
+    {
+      "DOI": "10.1109/case58245.2025.11163867",
+      "type": "proceedings-article",
+      "title": [
+        "Quantify Uncertainty Beyond Covariate Shift in RUL Estimation by Conformal Prediction"
+      ],
+      "author": [
+        {
+          "given": "Shiyuan",
+          "family": "Piao",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Hong Kong University of Science and Technology (Guangzhou),Data Science and Analytics Thrust,Guangzhou,China,511453"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ying",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shanghai Jiao Tong University,School of Mechanical Engineering,Department of Industrial Engineering and Management,Shanghai,China,200240"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ruyi",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "City University of Hong Kong,Department of Systems Engineering,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Di",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shanghai Jiao Tong University,School of Mechanical Engineering,Department of Industrial Engineering and Management,Shanghai,China,200240"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fugee",
+          "family": "Tsung",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Hong Kong University of Science and Technology (Guangzhou),Data Science and Analytics Thrust,Guangzhou,China,511453"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE 21st International Conference on Automation Science and Engineering (CASE)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "3197-3202",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            17
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            17
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/case58245.2025.11163867",
+      "event": {
+        "name": "2025 IEEE 21st International Conference on Automation Science and Engineering (CASE)",
+        "location": "Los Angeles, CA, USA",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              17
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              21
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.336
+    }
+  ]
+}

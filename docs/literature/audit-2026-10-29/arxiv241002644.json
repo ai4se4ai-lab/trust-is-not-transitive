@@ -1,0 +1,839 @@
+{
+  "key": "arxiv241002644",
+  "original": {
+    "url": "https://arxiv.org/abs/2410.02644",
+    "howpublished": "arXiv:2410.02644",
+    "year": "2024",
+    "author": "Zhang, Hanrong and Huang, Jingyuan and Mei, Kai and Yao, Yifei and Wang, Zhenting and Zhan, Chenlu and Wang, Hongwei and Zhang, Yongfeng",
+    "title": "{Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv241002644"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2410.02644",
+    "https://api.crossref.org/works?query.title=Agent+Security+Bench+%28ASB%29%3A+Formalizing+and+Benchmarking+Attacks+and+Defenses+in+LLM-based+Agents&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2410.02644: Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Agent Security Bench (ASB): Formalizing and Benchmarking Attacks..."
+      ],
+      "twitter:description": [
+        "Although LLM-based agents, powered by Large Language Models (LLMs), can use external tools and memory mechanisms to solve complex real-world tasks, they may also introduce critical security..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents"
+      ],
+      "citation_author": [
+        "Zhang, Hanrong",
+        "Huang, Jingyuan",
+        "Mei, Kai",
+        "Yao, Yifei",
+        "Wang, Zhenting",
+        "Zhan, Chenlu",
+        "Wang, Hongwei",
+        "Zhang, Yongfeng"
+      ],
+      "citation_date": [
+        "2024/10/03"
+      ],
+      "citation_online_date": [
+        "2025/05/30"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2410.02644"
+      ],
+      "citation_arxiv_id": [
+        "2410.02644"
+      ],
+      "citation_abstract": [
+        "Although LLM-based agents, powered by Large Language Models (LLMs), can use external tools and memory mechanisms to solve complex real-world tasks, they may also introduce critical security vulnerabilities. However, the existing literature does not comprehensively evaluate attacks and defenses against LLM-based agents. To address this, we introduce Agent Security Bench (ASB), a comprehensive framework designed to formalize, benchmark, and evaluate the attacks and defenses of LLM-based agents, including 10 scenarios (e.g., e-commerce, autonomous driving, finance), 10 agents targeting the scenarios, over 400 tools, 27 different types of attack/defense methods, and 7 evaluation metrics. Based on ASB, we benchmark 10 prompt injection attacks, a memory poisoning attack, a novel Plan-of-Thought backdoor attack, 4 mixed attacks, and 11 corresponding defenses across 13 LLM backbones. Our benchmark results reveal critical vulnerabilities in different stages of agent operation, including system prompt, user prompt handling, tool usage, and memory retrieval, with the highest average attack success rate of 84.30\\%, but limited effectiveness shown in current defenses, unveiling important works to be done in terms of agent security for the community. We also introduce a new metric to evaluate the agents' capability to balance utility and security. Our code can be found at https://github.com/agiresearch/ASB."
+      ]
+    },
+    "details": {
+      "title": "Title: Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents",
+      "authors": "Authors: Hanrong Zhang , Jingyuan Huang , Kai Mei , Yifei Yao , Zhenting Wang , Chenlu Zhan , Hongwei Wang , Yongfeng Zhang",
+      "dateline": "[Submitted on 3 Oct 2024 ( v1 ), last revised 30 May 2025 (this version, v4)]",
+      "comments": "Accepted by ICLR 2025",
+      "metatable": "Comments: Accepted by ICLR 2025 Subjects: Cryptography and Security (cs.CR) ; Artificial Intelligence (cs.AI) Cite as: arXiv:2410.02644 [cs.CR] (or arXiv:2410.02644v4 [cs.CR] for this version) https://doi.org/10.48550/arXiv.2410.02644 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1016/j.inffus.2025.103941",
+      "type": "journal-article",
+      "title": [
+        "Security of LLM-based agents regarding attacks, defenses, and applications: A comprehensive survey"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0009-5845-0550",
+          "authenticated-orcid": false,
+          "given": "Yaxin",
+          "family": "Tang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4437-4368",
+          "authenticated-orcid": false,
+          "given": "Yijia",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0009-6595-4546",
+          "authenticated-orcid": false,
+          "given": "Jiahe",
+          "family": "Lan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9697-2108",
+          "authenticated-orcid": false,
+          "given": "Zheng",
+          "family": "Yan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9688-2201",
+          "authenticated-orcid": false,
+          "given": "Erol",
+          "family": "Gelenbe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Information Fusion"
+      ],
+      "volume": "127",
+      "issue": null,
+      "page": "103941",
+      "article-number": "103941",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.1016/j.inffus.2025.103941",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.28
+    },
+    {
+      "DOI": "10.52202/085713-3878",
+      "type": "proceedings-article",
+      "title": [
+        "SEC-bench: Automated Benchmarking of LLM Agents on Real-World Software Security Tasks"
+      ],
+      "author": [
+        {
+          "given": "Hwiwon",
+          "family": "Lee",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Illinois at Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ziqi",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Illinois at Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hanxiao",
+          "family": "Lu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Purdue University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "LINGMING",
+          "family": "ZHANG",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 38"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "128940-128976",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/085713-3878",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 38",
+        "theme": "39th Conference on Neural Information Processing Systems (NeurIPS 2025)",
+        "location": "San Diego, California, USA and Mexico City, Mexico",
+        "acronym": "NeurIPS 2025",
+        "number": "38",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              30
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.458
+    },
+    {
+      "DOI": "10.18653/v1/2025.findings-naacl.395",
+      "type": "proceedings-article",
+      "title": [
+        "Adaptive Attacks Break Defenses Against Indirect Prompt Injection Attacks on LLM Agents"
+      ],
+      "author": [
+        {
+          "given": "Qiusi",
+          "family": "Zhan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Richard",
+          "family": "Fang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Henil Shalin",
+          "family": "Panchal",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Kang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: NAACL 2025"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "7101-7117",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.findings-naacl.395",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: NAACL 2025",
+        "location": "Albuquerque, New Mexico",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.369
+    },
+    {
+      "DOI": "10.64898/2026.05.05.723092",
+      "type": "posted-content",
+      "title": [
+        "PromptBio-Bench: Benchmarking LLM-based Bioinformatics Agents for End-to-End Data Analysis"
+      ],
+      "author": [
+        {
+          "given": "Wenbin",
+          "family": "Guo",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "PromptBio Inc"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Minzhe",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PromptBio Inc"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bowei",
+          "family": "Han",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PromptBio Inc"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Youjia",
+          "family": "Ma",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PromptBio Inc"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yang",
+          "family": "Leng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PromptBio Inc"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shishir",
+          "family": "Hebbar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PromptBio Inc"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiaoyuan",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PromptBio Inc"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wenhao",
+          "family": "Gu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PromptBio Inc"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiao",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PromptBio Inc"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shashi",
+          "family": "Dhar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PromptBio Inc"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            8
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "openRxiv",
+      "URL": "https://doi.org/10.64898/2026.05.05.723092",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.418
+    },
+    {
+      "DOI": "10.1109/dsc65356.2025.11260875",
+      "type": "proceedings-article",
+      "title": [
+        "Adversarial Agents: LLM-Powered Attacks and Defenses for Android Malware Detectors"
+      ],
+      "author": [
+        {
+          "given": "Tianwei",
+          "family": "Lan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Universit&#x00E9; Paris Cit&#x00E9;,France"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Farid",
+          "family": "Nait-Abdesselam",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Universit&#x00E9; Paris Cit&#x00E9;,France"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE Conference on Dependable and Secure Computing (DSC)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-8",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            18
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            18
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/dsc65356.2025.11260875",
+      "event": {
+        "name": "2025 IEEE Conference on Dependable and Secure Computing (DSC)",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              18
+            ]
+          ]
+        },
+        "location": "Taipei, Taiwan",
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              20
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.474
+    },
+    {
+      "DOI": "10.18653/2026.emnlp-main.1996",
+      "type": "proceedings-article",
+      "title": [
+        "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents"
+      ],
+      "author": [
+        {
+          "given": "Zhiyue",
+          "family": "Xu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xukai",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhiyuan",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mingjie",
+          "family": "Zhan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jian",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xu-Yao",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "45456-45476",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/2026.emnlp-main.1996",
+      "event": {
+        "name": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.465
+    }
+  ]
+}

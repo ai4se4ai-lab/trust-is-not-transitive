@@ -1,0 +1,639 @@
+{
+  "key": "arxiv170808611",
+  "original": {
+    "url": "https://arxiv.org/abs/1708.08611",
+    "howpublished": "arXiv:1708.08611",
+    "year": "2017",
+    "author": "Alshiekh, Mohammed and Bloem, Roderick and Ehlers, Ruediger and Könighofer, Bettina and Niekum, Scott and Topcu, Ufuk",
+    "title": "{Safe Reinforcement Learning via Shielding}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv170808611"
+  },
+  "sources": [
+    "https://arxiv.org/abs/1708.08611",
+    "https://api.crossref.org/works?query.title=Safe+Reinforcement+Learning+via+Shielding&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 1708.08611: Safe Reinforcement Learning via Shielding"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Safe Reinforcement Learning via Shielding"
+      ],
+      "twitter:description": [
+        "Reinforcement learning algorithms discover policies that maximize reward, but do not necessarily guarantee safety during learning or execution phases. We introduce a new approach to learn optimal..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Safe Reinforcement Learning via Shielding"
+      ],
+      "citation_author": [
+        "Alshiekh, Mohammed",
+        "Bloem, Roderick",
+        "Ehlers, Ruediger",
+        "Könighofer, Bettina",
+        "Niekum, Scott",
+        "Topcu, Ufuk"
+      ],
+      "citation_date": [
+        "2017/08/29"
+      ],
+      "citation_online_date": [
+        "2017/09/03"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/1708.08611"
+      ],
+      "citation_arxiv_id": [
+        "1708.08611"
+      ],
+      "citation_abstract": [
+        "Reinforcement learning algorithms discover policies that maximize reward, but do not necessarily guarantee safety during learning or execution phases. We introduce a new approach to learn optimal policies while enforcing properties expressed in temporal logic. To this end, given the temporal logic specification that is to be obeyed by the learning system, we propose to synthesize a reactive system called a shield. The shield is introduced in the traditional learning process in two alternative ways, depending on the location at which the shield is implemented. In the first one, the shield acts each time the learning agent is about to make a decision and provides a list of safe actions. In the second way, the shield is introduced after the learning agent. The shield monitors the actions from the learner and corrects them only if the chosen action causes a violation of the specification. We discuss which requirements a shield must meet to preserve the convergence guarantees of the learner. Finally, we demonstrate the versatility of our approach on several challenging reinforcement learning scenarios."
+      ]
+    },
+    "details": {
+      "title": "Title: Safe Reinforcement Learning via Shielding",
+      "authors": "Authors: Mohammed Alshiekh , Roderick Bloem , Ruediger Ehlers , Bettina Könighofer , Scott Niekum , Ufuk Topcu",
+      "dateline": "[Submitted on 29 Aug 2017 ( v1 ), last revised 3 Sep 2017 (this version, v2)]",
+      "metatable": "Subjects: Logic in Computer Science (cs.LO) ; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) Cite as: arXiv:1708.08611 [cs.LO] (or arXiv:1708.08611v2 [cs.LO] for this version) https://doi.org/10.48550/arXiv.1708.08611 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1609/aaai.v32i1.11797",
+      "type": "journal-article",
+      "title": [
+        "Safe Reinforcement Learning via Shielding"
+      ],
+      "author": [
+        {
+          "given": "Mohammed",
+          "family": "Alshiekh",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Roderick",
+          "family": "Bloem",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rüdiger",
+          "family": "Ehlers",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bettina",
+          "family": "Könighofer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Scott",
+          "family": "Niekum",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ufuk",
+          "family": "Topcu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the AAAI Conference on Artificial Intelligence"
+      ],
+      "volume": "32",
+      "issue": "1",
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            29
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            29
+          ]
+        ]
+      },
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "URL": "https://doi.org/10.1609/aaai.v32i1.11797",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.24251/hicss.2023.799",
+      "type": "proceedings-article",
+      "title": [
+        "Safe Reinforcement Learning via Observation Shielding"
+      ],
+      "author": [
+        {
+          "given": "Joe",
+          "family": "Mccalmon",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Tongtong",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Reid",
+          "family": "Goldsmith",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Andrew",
+          "family": "Cyhaniuk",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Talal",
+          "family": "Halabi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sarra",
+          "family": "Alqahtani",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the Annual Hawaii International Conference on System Sciences",
+        "Proceedings of the 56th Hawaii International Conference on System Sciences"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "publisher": "Hawaii International Conference on System Sciences",
+      "URL": "https://doi.org/10.24251/hicss.2023.799",
+      "event": {
+        "name": "Hawaii International Conference on System Sciences",
+        "acronym": "HICSS"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.871
+    },
+    {
+      "DOI": "10.65109/krjr7599",
+      "type": "proceedings-article",
+      "title": [
+        "Safe Multi-Agent Reinforcement Learning via Shielding"
+      ],
+      "author": [
+        {
+          "given": "Ingy",
+          "family": "ElSayed-Aly",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Suda",
+          "family": "Bharadwaj",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christopher",
+          "family": "Amato",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rüdiger",
+          "family": "Ehlers",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ufuk",
+          "family": "Topcu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lu",
+          "family": "Feng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "International Joint Conference on Autonomous Agents and Multiagent Systems",
+        "Proceedings of the Third International Joint Conference on Autonomous Agents and Multiagent Systems - Volume 1"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "483-491",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            5,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            5,
+            3
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE Computer Society",
+      "URL": "https://doi.org/10.65109/krjr7599",
+      "event": {
+        "name": "Proceedings of the Third International Joint Conference on Autonomous Agents and Multiagent Systems - Volume 1",
+        "location": "New York, New York",
+        "acronym": "AAMAS '04"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.881
+    },
+    {
+      "DOI": "10.1109/cai59869.2024.00222",
+      "type": "proceedings-article",
+      "title": [
+        "Safe Multi-Agent Reinforcement Learning via Dynamic Shielding"
+      ],
+      "author": [
+        {
+          "given": "Yunbo",
+          "family": "Qiu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Tsinghua University,Department of Electronic Engineering,Beijing,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yue",
+          "family": "Jin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tsinghua University,Department of Electronic Engineering,Beijing,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lebin",
+          "family": "Yu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tsinghua University,Department of Electronic Engineering,Beijing,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jian",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tsinghua University,Department of Electronic Engineering,Beijing,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xudong",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tsinghua University,Department of Electronic Engineering,Beijing,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2024 IEEE Conference on Artificial Intelligence (CAI)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1254-1257",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            25
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            25
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/cai59869.2024.00222",
+      "event": {
+        "name": "2024 IEEE Conference on Artificial Intelligence (CAI)",
+        "location": "Singapore, Singapore",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              25
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              27
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.813
+    },
+    {
+      "DOI": "10.15607/rss.2021.xvii.026",
+      "type": "proceedings-article",
+      "title": [
+        "Safe Reinforcement Learning via Statistical Model Predictive Shielding"
+      ],
+      "author": [
+        {
+          "given": "Osbert",
+          "family": "Bastani",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shuo",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Robotics: Science and Systems XVII"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            12
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            12
+          ]
+        ]
+      },
+      "publisher": "Robotics: Science and Systems Foundation",
+      "URL": "https://doi.org/10.15607/rss.2021.xvii.026",
+      "event": {
+        "name": "Robotics: Science and Systems 2021",
+        "acronym": "RSS2021"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.74
+    }
+  ]
+}

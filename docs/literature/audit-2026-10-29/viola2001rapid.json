@@ -1,0 +1,73 @@
+{
+  "key": "viola2001rapid",
+  "original": {
+    "doi": "10.1109/CVPR.2001.990517",
+    "year": "2001",
+    "pages": "I-511--I-518",
+    "volume": "1",
+    "booktitle": "Proc. IEEE Computer Society Conf. Computer Vision and Pattern Recognition (CVPR)",
+    "title": "Rapid Object Detection Using a Boosted Cascade of Simple Features",
+    "author": "Viola, Paul and Jones, Michael",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "viola2001rapid"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1109/CVPR.2001.990517"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1109/cvpr.2001.990517",
+      "type": "proceedings-article",
+      "title": [
+        "Rapid object detection using a boosted cascade of simple features"
+      ],
+      "author": [
+        {
+          "given": "P.",
+          "family": "Viola",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "M.",
+          "family": "Jones",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition. CVPR 2001"
+      ],
+      "volume": "1",
+      "issue": null,
+      "page": "I-511-I-518",
+      "article-number": null,
+      "published": null,
+      "published-print": null,
+      "published-online": null,
+      "publisher": "IEEE Comput. Soc",
+      "URL": "https://doi.org/10.1109/cvpr.2001.990517",
+      "event": {
+        "name": "2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition. CVPR 2001",
+        "location": "Kauai, HI, USA",
+        "acronym": "CVPR-01"
+      },
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

@@ -1,0 +1,708 @@
+{
+  "key": "arxiv260918128",
+  "original": {
+    "url": "https://arxiv.org/abs/2609.18128",
+    "howpublished": "arXiv:2609.18128",
+    "year": "2026",
+    "author": "Xiao, Yifeng and Nuzzo, Pierluigi",
+    "title": "{Symbolic Temporal Supervision of LLM Agents Using Contracts}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv260918128"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2609.18128",
+    "https://api.crossref.org/works?query.title=Symbolic+Temporal+Supervision+of+LLM+Agents+Using+Contracts&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2609.18128: Symbolic Temporal Supervision of LLM Agents Using Contracts"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Symbolic Temporal Supervision of LLM Agents Using Contracts"
+      ],
+      "twitter:description": [
+        "Large language model (LLM) agents augmented by tools can automate complex, multi-step tasks, such as web navigation, code generation, and workflow orchestration, by acting on external systems..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Symbolic Temporal Supervision of LLM Agents Using Contracts"
+      ],
+      "citation_author": [
+        "Xiao, Yifeng",
+        "Nuzzo, Pierluigi"
+      ],
+      "citation_date": [
+        "2026/09/16"
+      ],
+      "citation_online_date": [
+        "2026/09/16"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2609.18128"
+      ],
+      "citation_arxiv_id": [
+        "2609.18128"
+      ],
+      "citation_abstract": [
+        "Large language model (LLM) agents augmented by tools can automate complex, multi-step tasks, such as web navigation, code generation, and workflow orchestration, by acting on external systems through tool calls. However, hallucinations, distributional instability, and adversarial manipulations in LLMs, and the irreversible consequences of certain tool calls can lead to harmful outcomes. Existing safeguards either grade recorded trajectories post hoc with stochastic LLM judges or block unsafe actions one call at a time, and no single deterministic artifact supports both roles. We present ContrAgent, a contract-based framework for symbolic temporal supervision of LLM agents. ContrAgent captures an agent's behavior as a sequence of tool calls and formalizes it as a trace over a fixed set of checkable predicates. It then specifies required behaviors using assume-guarantee contracts in linear temporal logic over finite traces (LTLf). Each contract is compiled to a deterministic finite automaton (DFA) that serves two roles: gating agent actions online and evaluating recorded traces offline. A contract library, acting as a reusable knowledge base, is maintained independently of the agent's model and can be applied across different agents within the same task domain. We show the effectiveness of our approach on four benchmarks spanning both roles, where ContrAgent matches state-of-the-art LLM-judge and rule-based guardrail baselines while producing deterministic, reproducible verdicts and, in the online mode, orders-of-magnitude lower per-call latency."
+      ]
+    },
+    "details": {
+      "title": "Title: Symbolic Temporal Supervision of LLM Agents Using Contracts",
+      "authors": "Authors: Yifeng Xiao , Pierluigi Nuzzo",
+      "dateline": "[Submitted on 16 Sep 2026]",
+      "metatable": "Subjects: Artificial Intelligence (cs.AI) ; Logic in Computer Science (cs.LO) Cite as: arXiv:2609.18128 [cs.AI] (or arXiv:2609.18128v1 [cs.AI] for this version) https://doi.org/10.48550/arXiv.2609.18128 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1007/s10515-026-00681-2",
+      "type": "journal-article",
+      "title": [
+        "SE4SC-LLM: an LLM-Augmented symbolic execution framework for smart contracts"
+      ],
+      "author": [
+        {
+          "given": "Tianhuan",
+          "family": "Miao",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yang",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Automated Software Engineering"
+      ],
+      "volume": "33",
+      "issue": "4",
+      "page": null,
+      "article-number": "131",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            16
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            12
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            16
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "URL": "https://doi.org/10.1007/s10515-026-00681-2",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.444
+    },
+    {
+      "DOI": "10.1109/tse.2025.3555622",
+      "type": "journal-article",
+      "title": [
+        "NumScout: Unveiling Numerical Defects in Smart Contracts Using LLM-Pruning Symbolic Execution"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0192-9992",
+          "authenticated-orcid": false,
+          "given": "Jiachi",
+          "family": "Chen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Intelligent Transportation and Information Security Laboratory, Hangzhou Normal University, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0009-2993-7482",
+          "authenticated-orcid": false,
+          "given": "Zhenzhe",
+          "family": "Shao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Software Engineering, Sun Yat-sen University, Zhuhai, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-4919-3138",
+          "authenticated-orcid": false,
+          "given": "Shuo",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Software Engineering, Sun Yat-sen University, Zhuhai, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-9466-6427",
+          "authenticated-orcid": false,
+          "given": "Yiming",
+          "family": "Shen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Software Engineering, Sun Yat-sen University, Zhuhai, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7761-7269",
+          "authenticated-orcid": false,
+          "given": "Yanlin",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Software Engineering, Sun Yat-sen University, Zhuhai, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9165-8331",
+          "authenticated-orcid": false,
+          "given": "Ting",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Computer Science and Engineering, School of Cyber Security, University of Electronic Science and Technology of China, Chengdu, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-0619-1820",
+          "authenticated-orcid": false,
+          "given": "Zhenyu",
+          "family": "Shan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Intelligent Transportation and Information Security Laboratory, Hangzhou Normal University, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7872-7718",
+          "authenticated-orcid": false,
+          "given": "Zibin",
+          "family": "Zheng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Software Engineering, Sun Yat-sen University, Zhuhai, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Software Engineering"
+      ],
+      "volume": "51",
+      "issue": "5",
+      "page": "1538-1553",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            5
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/tse.2025.3555622",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.271
+    },
+    {
+      "DOI": "10.18653/v1/2025.emnlp-main.506",
+      "type": "proceedings-article",
+      "title": [
+        "AgentPro: Enhancing LLM Agents with Automated Process Supervision"
+      ],
+      "author": [
+        {
+          "given": "Yuchen",
+          "family": "Deng",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Shichen",
+          "family": "Fan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Naibo",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Xinkui",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "See-Kiong",
+          "family": "Ng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "9992-10017",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.emnlp-main.506",
+      "event": {
+        "name": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+        "location": "Suzhou, China",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              11
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.312
+    },
+    {
+      "DOI": "10.18653/v1/2025.findings-acl.972",
+      "type": "proceedings-article",
+      "title": [
+        "TReMu: Towards Neuro-Symbolic Temporal Reasoning for LLM-Agents with Memory in Multi-Session Dialogues"
+      ],
+      "author": [
+        {
+          "given": "Yubin",
+          "family": "Ge",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Salvatore",
+          "family": "Romeo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jason",
+          "family": "Cai",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Raphael",
+          "family": "Shu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yassine",
+          "family": "Benajiba",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Monica",
+          "family": "Sunkara",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yi",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: ACL 2025"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "18974-18988",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.findings-acl.972",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: ACL 2025",
+        "location": "Vienna, Austria",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.518
+    },
+    {
+      "DOI": "10.18653/v1/2025.findings-acl.1022",
+      "type": "proceedings-article",
+      "title": [
+        "LLM-Symbolic Integration for Robust Temporal Tabular Reasoning"
+      ],
+      "author": [
+        {
+          "given": "Atharv",
+          "family": "Kulkarni",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Kushagra",
+          "family": "Dixit",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Vivek",
+          "family": "Srikumar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Dan",
+          "family": "Roth",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Vivek",
+          "family": "Gupta",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: ACL 2025"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "19914-19940",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.findings-acl.1022",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: ACL 2025",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        },
+        "location": "Vienna, Austria",
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.411
+    }
+  ]
+}

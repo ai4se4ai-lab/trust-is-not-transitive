@@ -1,0 +1,954 @@
+{
+  "key": "arxiv250217419",
+  "original": {
+    "url": "https://arxiv.org/abs/2502.17419",
+    "howpublished": "arXiv:2502.17419",
+    "year": "2025",
+    "author": "Li, Zhong-Zhi and Zhang, Duzhen and Zhang, Ming-Liang and Zhang, Jiaxin and Liu, Zengyan and Yao, Yuxuan and Xu, Haotian and Zheng, Junhao and Wang, Pei-Jie and Chen, Xiuyi and Zhang, Yingying and Yin, Fei and Dong, Jiahua and Li, Zhiwei and Bi, Bao-Long and Mei, Ling-Rui and Fang, Junfeng and Liang, Xiao and Guo, Zhijiang and Song, Le and Liu, Cheng-Lin",
+    "title": "{From System 1 to System 2: A Survey of Reasoning Large Language Models}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250217419"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2502.17419",
+    "https://api.crossref.org/works?query.title=From+System+1+to+System+2%3A+A+Survey+of+Reasoning+Large+Language+Models&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2502.17419: From System 1 to System 2: A Survey of Reasoning Large Language Models"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "From System 1 to System 2: A Survey of Reasoning Large Language Models"
+      ],
+      "twitter:description": [
+        "Achieving human-level intelligence requires refining the transition from the fast, intuitive System 1 to the slower, more deliberate System 2 reasoning. While System 1 excels in quick, heuristic..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "From System 1 to System 2: A Survey of Reasoning Large Language Models"
+      ],
+      "citation_author": [
+        "Li, Zhong-Zhi",
+        "Zhang, Duzhen",
+        "Zhang, Ming-Liang",
+        "Zhang, Jiaxin",
+        "Liu, Zengyan",
+        "Yao, Yuxuan",
+        "Xu, Haotian",
+        "Zheng, Junhao",
+        "Wang, Pei-Jie",
+        "Chen, Xiuyi",
+        "Zhang, Yingying",
+        "Yin, Fei",
+        "Dong, Jiahua",
+        "Li, Zhiwei",
+        "Bi, Bao-Long",
+        "Mei, Ling-Rui",
+        "Fang, Junfeng",
+        "Liang, Xiao",
+        "Guo, Zhijiang",
+        "Song, Le",
+        "Liu, Cheng-Lin"
+      ],
+      "citation_date": [
+        "2025/02/24"
+      ],
+      "citation_online_date": [
+        "2025/06/25"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2502.17419"
+      ],
+      "citation_arxiv_id": [
+        "2502.17419"
+      ],
+      "citation_abstract": [
+        "Achieving human-level intelligence requires refining the transition from the fast, intuitive System 1 to the slower, more deliberate System 2 reasoning. While System 1 excels in quick, heuristic decisions, System 2 relies on logical reasoning for more accurate judgments and reduced biases. Foundational Large Language Models (LLMs) excel at fast decision-making but lack the depth for complex reasoning, as they have not yet fully embraced the step-by-step analysis characteristic of true System 2 thinking. Recently, reasoning LLMs like OpenAI's o1/o3 and DeepSeek's R1 have demonstrated expert-level performance in fields such as mathematics and coding, closely mimicking the deliberate reasoning of System 2 and showcasing human-like cognitive abilities. This survey begins with a brief overview of the progress in foundational LLMs and the early development of System 2 technologies, exploring how their combination has paved the way for reasoning LLMs. Next, we discuss how to construct reasoning LLMs, analyzing their features, the core methods enabling advanced reasoning, and the evolution of various reasoning LLMs. Additionally, we provide an overview of reasoning benchmarks, offering an in-depth comparison of the performance of representative reasoning LLMs. Finally, we explore promising directions for advancing reasoning LLMs and maintain a real-time \\href{https://github.com/zzli2022/Awesome-Slow-Reason-System}{GitHub Repository} to track the latest developments. We hope this survey will serve as a valuable resource to inspire innovation and drive progress in this rapidly evolving field."
+      ]
+    },
+    "details": {
+      "title": "Title: From System 1 to System 2: A Survey of Reasoning Large Language Models",
+      "authors": "Authors: Zhong-Zhi Li , Duzhen Zhang , Ming-Liang Zhang , Jiaxin Zhang , Zengyan Liu , Yuxuan Yao , Haotian Xu , Junhao Zheng , Pei-Jie Wang , Xiuyi Chen , Yingying Zhang , Fei Yin , Jiahua Dong , Zhiwei Li , Bao-Long Bi , Ling-Rui Mei , Junfeng Fang , Xiao Liang , Zhijiang Guo , Le Song , Cheng-Lin Liu",
+      "dateline": "[Submitted on 24 Feb 2025 ( v1 ), last revised 25 Jun 2025 (this version, v6)]",
+      "comments": "Slow-thinking, Large Language Models, Human-like Reasoning, Decision Making in AI, AGI",
+      "metatable": "Comments: Slow-thinking, Large Language Models, Human-like Reasoning, Decision Making in AI, AGI Subjects: Artificial Intelligence (cs.AI) Cite as: arXiv:2502.17419 [cs.AI] (or arXiv:2502.17419v6 [cs.AI] for this version) https://doi.org/10.48550/arXiv.2502.17419 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1109/tpami.2025.3637037",
+      "type": "journal-article",
+      "title": [
+        "From System 1 to System 2: A Survey of Reasoning Large Language Models"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4280-431X",
+          "authenticated-orcid": false,
+          "given": "Duzhen",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Mohamed bin Zayed University of Artificial Intelligence, Abu Dhabi, UAE"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhong-Zhi",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Automation, Chinese Academy of Sciences, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ming-Liang",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Automation, Chinese Academy of Sciences, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiaxin",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Strathclyde, Glasgow, U.K."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3825-5474",
+          "authenticated-orcid": false,
+          "given": "Zengyan",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "City University of Hong Kong, Kowloon Tong, Hong Kong"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0009-3955-7272",
+          "authenticated-orcid": false,
+          "given": "Yuxuan",
+          "family": "Yao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "City University of Hong Kong, Kowloon Tong, Hong Kong"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Haotian",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Xiaohongshu Inc, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9124-2467",
+          "authenticated-orcid": false,
+          "given": "Junhao",
+          "family": "Zheng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "South China University of Technology, Guangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiuyi",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Automation, Chinese Academy of Sciences, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yingying",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "East China Normal University, Shanghai, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6412-9140",
+          "authenticated-orcid": false,
+          "given": "Fei",
+          "family": "Yin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Automation, Chinese Academy of Sciences, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8545-4447",
+          "authenticated-orcid": false,
+          "given": "Jiahua",
+          "family": "Dong",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Mohamed bin Zayed University of Artificial Intelligence, Abu Dhabi, UAE"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6232-5957",
+          "authenticated-orcid": false,
+          "given": "Zhijiang",
+          "family": "Guo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "City University of Hong Kong, Kowloon Tong, Hong Kong"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0345-9899",
+          "authenticated-orcid": false,
+          "given": "Le",
+          "family": "Song",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Mohamed bin Zayed University of Artificial Intelligence, Abu Dhabi, UAE"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6743-4175",
+          "authenticated-orcid": false,
+          "given": "Cheng-Lin",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Automation, Chinese Academy of Sciences, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+      ],
+      "volume": "48",
+      "issue": "3",
+      "page": "3335-3354",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/tpami.2025.3637037",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.20944/preprints202510.1024.v1",
+      "type": "posted-content",
+      "title": [
+        "Reasoning in Large Language Models: A Survey"
+      ],
+      "author": [
+        {
+          "given": "Yu",
+          "family": "Fu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yongqi",
+          "family": "Kang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yong",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            14
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "MDPI AG",
+      "URL": "https://doi.org/10.20944/preprints202510.1024.v1",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.596
+    },
+    {
+      "DOI": "10.18653/v1/2025.naacl-short.15",
+      "type": "proceedings-article",
+      "title": [
+        "LLM2: Let Large Language Models Harness System 2 Reasoning"
+      ],
+      "author": [
+        {
+          "given": "Cheng",
+          "family": "Yang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Chufan",
+          "family": "Shi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Siheng",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bo",
+          "family": "Shui",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yujiu",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Wai",
+          "family": "Lam",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 2: Short Papers)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "168-177",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.naacl-short.15",
+      "event": {
+        "name": "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 2: Short Papers)",
+        "location": "Albuquerque, New Mexico",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.415
+    },
+    {
+      "DOI": "10.1016/j.patter.2025.101370",
+      "type": "journal-article",
+      "title": [
+        "Toward large reasoning models: A survey of reinforced reasoning with large language models"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5720-4026",
+          "authenticated-orcid": false,
+          "given": "Fengli",
+          "family": "Xu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Qianyue",
+          "family": "Hao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chenyang",
+          "family": "Shao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zefang",
+          "family": "Zong",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yu",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jingwei",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yunke",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jingyi",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiaochong",
+          "family": "Lan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiahui",
+          "family": "Gong",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tianjian",
+          "family": "Ouyang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fanjin",
+          "family": "Meng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuwei",
+          "family": "Yan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Qinglong",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yiwen",
+          "family": "Song",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sijian",
+          "family": "Ren",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xinyuan",
+          "family": "Hu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jie",
+          "family": "Feng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chen",
+          "family": "Gao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yong",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Patterns"
+      ],
+      "volume": "6",
+      "issue": "10",
+      "page": "101370",
+      "article-number": "101370",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.1016/j.patter.2025.101370",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.612
+    },
+    {
+      "DOI": "10.18653/v1/2023.findings-acl.67",
+      "type": "proceedings-article",
+      "title": [
+        "Towards Reasoning in Large Language Models: A Survey"
+      ],
+      "author": [
+        {
+          "given": "Jie",
+          "family": "Huang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kevin Chen-Chuan",
+          "family": "Chang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: ACL 2023"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1049-1065",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2023.findings-acl.67",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: ACL 2023",
+        "location": "Toronto, Canada",
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2023,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.614
+    }
+  ]
+}

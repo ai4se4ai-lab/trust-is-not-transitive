@@ -1,0 +1,99 @@
+{
+  "key": "kwiatkowska2011prism",
+  "original": {
+    "doi": "10.1007/978-3-642-22110-1_47",
+    "publisher": "Springer",
+    "year": "2011",
+    "pages": "585--591",
+    "volume": "6806",
+    "series": "LNCS",
+    "booktitle": "Proc. Int. Conf. Computer Aided Verification (CAV)",
+    "title": "{PRISM} 4.0: Verification of Probabilistic Real-Time Systems",
+    "author": "Kwiatkowska, Marta and Norman, Gethin and Parker, David",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "kwiatkowska2011prism"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1007/978-3-642-22110-1_47"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1007/978-3-642-22110-1_47",
+      "type": "book-chapter",
+      "title": [
+        "PRISM 4.0: Verification of Probabilistic Real-Time Systems"
+      ],
+      "author": [
+        {
+          "given": "Marta",
+          "family": "Kwiatkowska",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gethin",
+          "family": "Norman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Parker",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Computer Aided Verification"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "585-591",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/978-3-642-22110-1_47",
+      "event": null,
+      "ISBN": [
+        "9783642221095",
+        "9783642221101"
+      ],
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

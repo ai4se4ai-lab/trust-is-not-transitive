@@ -1,0 +1,414 @@
+{
+  "key": "arxiv221208073",
+  "original": {
+    "url": "https://arxiv.org/abs/2212.08073",
+    "howpublished": "arXiv:2212.08073",
+    "year": "2022",
+    "author": "Bai, Yuntao and Kadavath, Saurav and Kundu, Sandipan and Askell, Amanda and Kernion, Jackson and Jones, Andy and Chen, Anna and Goldie, Anna and Mirhoseini, Azalia and McKinnon, Cameron and Chen, Carol and Olsson, Catherine and Olah, Christopher and Hernandez, Danny and Drain, Dawn and Ganguli, Deep and Li, Dustin and Tran-Johnson, Eli and Perez, Ethan and Kerr, Jamie and Mueller, Jared and Ladish, Jeffrey and Landau, Joshua and Ndousse, Kamal and Lukosuite, Kamile and Lovitt, Liane and Sellitto, Michael and Elhage, Nelson and Schiefer, Nicholas and Mercado, Noemi and DasSarma, Nova and Lasenby, Robert and Larson, Robin and Ringer, Sam and Johnston, Scott and Kravec, Shauna and Showk, Sheer El and Fort, Stanislav and Lanham, Tamera and Telleen-Lawton, Timothy and Conerly, Tom and Henighan, Tom and Hume, Tristan and Bowman, Samuel R. and Hatfield-Dodds, Zac and Mann, Ben and Amodei, Dario and Joseph, Nicholas and McCandlish, Sam and Brown, Tom and Kaplan, Jared",
+    "title": "{Constitutional AI: Harmlessness from AI Feedback}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv221208073"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2212.08073",
+    "https://api.crossref.org/works?query.title=Constitutional+AI%3A+Harmlessness+from+AI+Feedback&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2212.08073: Constitutional AI: Harmlessness from AI Feedback"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Constitutional AI: Harmlessness from AI Feedback"
+      ],
+      "twitter:description": [
+        "As AI systems become more capable, we would like to enlist their help to supervise other AIs. We experiment with methods for training a harmless AI assistant through self-improvement, without any..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Constitutional AI: Harmlessness from AI Feedback"
+      ],
+      "citation_author": [
+        "Bai, Yuntao",
+        "Kadavath, Saurav",
+        "Kundu, Sandipan",
+        "Askell, Amanda",
+        "Kernion, Jackson",
+        "Jones, Andy",
+        "Chen, Anna",
+        "Goldie, Anna",
+        "Mirhoseini, Azalia",
+        "McKinnon, Cameron",
+        "Chen, Carol",
+        "Olsson, Catherine",
+        "Olah, Christopher",
+        "Hernandez, Danny",
+        "Drain, Dawn",
+        "Ganguli, Deep",
+        "Li, Dustin",
+        "Tran-Johnson, Eli",
+        "Perez, Ethan",
+        "Kerr, Jamie",
+        "Mueller, Jared",
+        "Ladish, Jeffrey",
+        "Landau, Joshua",
+        "Ndousse, Kamal",
+        "Lukosuite, Kamile",
+        "Lovitt, Liane",
+        "Sellitto, Michael",
+        "Elhage, Nelson",
+        "Schiefer, Nicholas",
+        "Mercado, Noemi",
+        "DasSarma, Nova",
+        "Lasenby, Robert",
+        "Larson, Robin",
+        "Ringer, Sam",
+        "Johnston, Scott",
+        "Kravec, Shauna",
+        "Showk, Sheer El",
+        "Fort, Stanislav",
+        "Lanham, Tamera",
+        "Telleen-Lawton, Timothy",
+        "Conerly, Tom",
+        "Henighan, Tom",
+        "Hume, Tristan",
+        "Bowman, Samuel R.",
+        "Hatfield-Dodds, Zac",
+        "Mann, Ben",
+        "Amodei, Dario",
+        "Joseph, Nicholas",
+        "McCandlish, Sam",
+        "Brown, Tom",
+        "Kaplan, Jared"
+      ],
+      "citation_date": [
+        "2022/12/15"
+      ],
+      "citation_online_date": [
+        "2022/12/15"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2212.08073"
+      ],
+      "citation_arxiv_id": [
+        "2212.08073"
+      ],
+      "citation_abstract": [
+        "As AI systems become more capable, we would like to enlist their help to supervise other AIs. We experiment with methods for training a harmless AI assistant through self-improvement, without any human labels identifying harmful outputs. The only human oversight is provided through a list of rules or principles, and so we refer to the method as 'Constitutional AI'. The process involves both a supervised learning and a reinforcement learning phase. In the supervised phase we sample from an initial model, then generate self-critiques and revisions, and then finetune the original model on revised responses. In the RL phase, we sample from the finetuned model, use a model to evaluate which of the two samples is better, and then train a preference model from this dataset of AI preferences. We then train with RL using the preference model as the reward signal, i.e. we use 'RL from AI Feedback' (RLAIF). As a result we are able to train a harmless but non-evasive AI assistant that engages with harmful queries by explaining its objections to them. Both the SL and RL methods can leverage chain-of-thought style reasoning to improve the human-judged performance and transparency of AI decision making. These methods make it possible to control AI behavior more precisely and with far fewer human labels."
+      ]
+    },
+    "details": {
+      "title": "Title: Constitutional AI: Harmlessness from AI Feedback",
+      "authors": "Authors: Yuntao Bai , Saurav Kadavath , Sandipan Kundu , Amanda Askell , Jackson Kernion , Andy Jones , Anna Chen , Anna Goldie , Azalia Mirhoseini , Cameron McKinnon , Carol Chen , Catherine Olsson , Christopher Olah , Danny Hernandez , Dawn Drain , Deep Ganguli , Dustin Li , Eli Tran-Johnson , Ethan Perez , Jamie Kerr , Jared Mueller , Jeffrey Ladish , Joshua Landau , Kamal Ndousse , Kamile Lukosuite , Liane Lovitt , Michael Sellitto , Nelson Elhage , Nicholas Schiefer , Noemi Mercado , Nova DasSarma , Robert Lasenby , Robin Larson , Sam Ringer , Scott Johnston , Shauna Kravec , Sheer El Showk , Stanislav Fort , Tamera Lanham , Timothy Telleen-Lawton , Tom Conerly , Tom Henighan , Tristan Hume , Samuel R. Bowman , Zac Hatfield-Dodds , Ben Mann , Dario Amodei , Nicholas Joseph , Sam McCandlish , Tom Brown , Jared Kaplan",
+      "dateline": "[Submitted on 15 Dec 2022]",
+      "metatable": "Subjects: Computation and Language (cs.CL) ; Artificial Intelligence (cs.AI) Cite as: arXiv:2212.08073 [cs.CL] (or arXiv:2212.08073v1 [cs.CL] for this version) https://doi.org/10.48550/arXiv.2212.08073 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1145/3701716.3715277",
+      "type": "proceedings-article",
+      "title": [
+        "Operationalising Harmlessness in Online AI Systems"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0005-1474-3969",
+          "authenticated-orcid": false,
+          "given": "Hongliang",
+          "family": "Ni",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "The University of Queensland, Brisbane, QLD, Australia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Companion Proceedings of the ACM on Web Conference 2025"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "717-720",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            8
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            8
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            23
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3701716.3715277",
+      "event": {
+        "name": "WWW '25: The ACM Web Conference 2025",
+        "sponsor": [
+          "SIGWEB ACM Special Interest Group on Hypertext, Hypermedia, and Web"
+        ],
+        "location": "Sydney NSW Australia",
+        "acronym": "WWW '25"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.552
+    },
+    {
+      "DOI": "10.2139/ssrn.4874670",
+      "type": "posted-content",
+      "title": [
+        "Public Constitutional AI"
+      ],
+      "author": [
+        {
+          "given": "Gilad",
+          "family": "Abiri",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.2139/ssrn.4874670",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.5
+    },
+    {
+      "DOI": "10.4018/979-8-3373-6420-9.ch012",
+      "type": "book-chapter",
+      "title": [
+        "AI Feedback"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-4021-4455",
+          "authenticated-orcid": true,
+          "given": "Asma Abdullah",
+          "family": "Alshahrani",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "King Khalid University, Saudi Arabia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Computational Intelligence and Robotics",
+        "AI Bots in Applied Linguistics"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "347-370",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            22
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            22
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IGI Global Scientific Publishing",
+      "URL": "https://doi.org/10.4018/979-8-3373-6420-9.ch012",
+      "event": null,
+      "ISBN": [
+        "9798337364209",
+        "9798337364223"
+      ],
+      "relation": null,
+      "title_similarity": 0.385
+    },
+    {
+      "DOI": "10.2139/ssrn.5464597",
+      "type": "posted-content",
+      "title": [
+        "Estimating the Harmlessness-Accuracy Trade-off in AI: Evidence from LLM-based Hiring Audits"
+      ],
+      "author": [
+        {
+          "given": "Yanuo",
+          "family": "Zhou",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.2139/ssrn.5464597",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.437
+    },
+    {
+      "DOI": "10.36948/ijfmr.2025.v07i04.52186",
+      "type": "journal-article",
+      "title": [
+        "Transforming Human-ai Interactions through Reinforcement Learning from Human Feedback and Ai Feedback: a Human-ai Classification Report"
+      ],
+      "author": [
+        {
+          "given": "RATNESH",
+          "family": "SHARMA",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "SATYA",
+          "family": "SINGH",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "International Journal For Multidisciplinary Research"
+      ],
+      "volume": "7",
+      "issue": "4",
+      "page": null,
+      "article-number": "52186",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            13
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            13
+          ]
+        ]
+      },
+      "publisher": "International Journal for Multidisciplinary Research (IJFMR)",
+      "URL": "https://doi.org/10.36948/ijfmr.2025.v07i04.52186",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.314
+    }
+  ]
+}

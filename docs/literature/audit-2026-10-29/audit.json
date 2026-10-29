@@ -1,0 +1,2785 @@
+[
+  {
+    "key": "arxiv260918128",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2609.18128",
+      "howpublished": "arXiv:2609.18128",
+      "year": "2026",
+      "author": "Xiao, Yifeng and Nuzzo, Pierluigi",
+      "title": "{Symbolic Temporal Supervision of LLM Agents Using Contracts}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv260918128"
+    },
+    "entry_sha256": "5841ca1df2b60e4d527736ab0da30a266530e4383d259f4e1b5960946d8720af",
+    "sources": [
+      "https://arxiv.org/abs/2609.18128"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv260918128.json": "df443da4837d6ade7f3476600d0891c2d8a64c56e19ea0fd472e7c6b588e31f4",
+      "arxiv260918128.html": "05ccae026aa6dfd2b0960dca2e6a06a5c719f8d58d136351499510cbd3531b43",
+      "arxiv260918128.crossref.json.gz": "9553390dcdfdb9a45660217a1cdf2c3d1b53079d915338eba7876d1f5ea9caa0"
+    }
+  },
+  {
+    "key": "arxiv260518672",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2605.18672",
+      "howpublished": "arXiv:2605.18672",
+      "year": "2026",
+      "author": "Bensalem, S. and Dong, Y. and Franzle, M. and Huang, X. and Kroger, J. and Nickovic, D. and Nouri, A. and Roy, R. and Wu, C.",
+      "title": "{Position: A Three-Layer Probabilistic Assume-Guarantee Architecture Is Structurally Required for Safe LLM Agent Deployment}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv260518672"
+    },
+    "entry_sha256": "b4a9b0098cd6c23312f4acdb3998b75b2d3a40c1b66fd9fa73c66a6dc2bf77a3",
+    "sources": [
+      "https://arxiv.org/abs/2605.18672"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv260518672.json": "c0a0a676cace8154155d941095dec1281c04f6e78aacb18b48c724f7d3404ddd",
+      "arxiv260518672.html": "ceecc0224b2f5f30508a0dcd46799651bae5ea90d0bf820158dd918b86f2d6a2",
+      "arxiv260518672.crossref.json.gz": "140007becab6ce605a797822fed1cc1b510d1c9c3dd3fff9280664c7a5eac649"
+    }
+  },
+  {
+    "key": "arxiv250600911",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.52202/085713-2364",
+      "doi": "10.52202/085713-2364",
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "year": "2025",
+      "pages": "78334--78366",
+      "booktitle": "Advances in Neural Information Processing Systems 38",
+      "title": "{Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models}",
+      "author": "Overman, William and Bayati, Mohsen",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250600911"
+    },
+    "entry_sha256": "4959dbec8c23c8b59c9a58ba9cc9361e5fe9da3c2ea5340dbfefefe74e715611",
+    "sources": [
+      "https://arxiv.org/abs/2506.00911",
+      "https://api.crossref.org/works/10.52202/085713-2364"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv250600911.json": "54aa2a3eb70e5fce352effcb427c2ea54cae48ae622b71d8f8481fd9c588f5ca",
+      "arxiv250600911.html": "fa172ec0b5188d12cae76a85202afd622c9b358dda5ac20a30bebde870b2ddfe",
+      "arxiv250600911.crossref.json.gz": "2422b4bd508ddb27f006f94d79b12117abff146c5c737f81e0c534873be61623"
+    }
+  },
+  {
+    "key": "arxiv240718370",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/08dabd5345b37fffcbe335bd578b15a0-Abstract-Conference.html",
+      "year": "2025",
+      "pages": "3101--3125",
+      "volume": "2025",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement}",
+      "author": "Jung, Jaehun and Brahman, Faeze and Choi, Yejin",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240718370"
+    },
+    "entry_sha256": "75d54e7daa15013e67ee9e81dc8f6ca0ca66d41dea5d2a0e835211150a93514b",
+    "sources": [
+      "https://arxiv.org/abs/2407.18370",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/08dabd5345b37fffcbe335bd578b15a0-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/500-/bibtex"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv240718370.json": "a4c70f7cf6e63e77ee9eaf2c9c045343f31eaf0f7fa4ff578dfa0ac9b316f6db",
+      "arxiv240718370.html": "3dbfadee52175b184607ddc75b9ff44e94f51c04080d4613216050060bfd8c47",
+      "arxiv240718370.crossref.json.gz": "9190019112c4aa8c9af2b3555d748bd04008f61b59efb8fd2ad260a6647855cd",
+      "arxiv240718370.publication.html": "3ccfcfe019bfa9bf3ba0ce2b25f8be85feada4918d111e191225e6b49a978fea",
+      "arxiv240718370.publication.bib": "4813a41a1cf8f3565c8479a75e9262fe9e14342aa91e42b4599474be1f8cf2dc"
+    }
+  },
+  {
+    "key": "arxiv260215391",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2602.15391",
+      "howpublished": "arXiv:2602.15391",
+      "year": "2026",
+      "author": "Sharma, Ankit and Tapas, Nachiket and Patra, Jyotiprakash",
+      "title": "{Improving LLM Reliability through Hybrid Abstention and Adaptive Detection}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv260215391"
+    },
+    "entry_sha256": "c5167d9fe8b29ce7607b9202874afb5aedb94ea1392f8a318b067743885c4de6",
+    "sources": [
+      "https://arxiv.org/abs/2602.15391"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv260215391.json": "82eaf872d87dc8683eab7386b389bb4dab895374f6d5fdbe54a9ad21a931541b",
+      "arxiv260215391.html": "754e007b43c7b8a68e199c98d51bd683face9936dcec8aaa4c41713971b27a2d",
+      "arxiv260215391.crossref.json.gz": "6613f669a24bd9c14c83621a51bdc00dd813794ee9e08c54b604a1f5596842c3"
+    }
+  },
+  {
+    "key": "arxiv230505176",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://openreview.net/forum?id=cSimKw5p6R",
+      "year": "2024",
+      "journal": "Transactions on Machine Learning Research",
+      "title": "{FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance}",
+      "author": "Chen, Lingjiao and Zaharia, Matei and Zou, James",
+      "ENTRYTYPE": "article",
+      "ID": "arxiv230505176"
+    },
+    "entry_sha256": "b25732e25ccbd9faff46578d19777bf69943a24e101972ac0fbf64bccc930731",
+    "sources": [
+      "https://arxiv.org/abs/2305.05176",
+      "https://lingjiaochen.com/"
+    ],
+    "note": "TMLR 2024 confirmed by the author publication list; OpenReview currently serves a browser challenge. No page range or DOI invented.",
+    "evidence": {
+      "arxiv230505176.json": "1f98df10711c99ad878c76875f26d0918051d04b60b3571829358138e1b1e939",
+      "arxiv230505176.html": "2085cb3d49f91c3e80f045ebd530cd0a25229622adc59d999a30bf73f7455860",
+      "arxiv230505176.crossref.json.gz": "2ebd4b21c6c3e81a4ee6d98dd2a1511bb851405112a5e5e09ed3b52b8f1a0602",
+      "arxiv230505176.author-page.html": "22b6c900b2e6ddeb75762c013d9b99aeceba4ee2aaec4e0b6fd1047c31d1b79e",
+      "supplemental-web-evidence.json": "1162c49ef9b4ee7c745cae8d3fbd27438f4fe33afdc44d2c192a05b24b0de279"
+    }
+  },
+  {
+    "key": "arxiv250503574",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2505.03574",
+      "howpublished": "arXiv:2505.03574",
+      "year": "2025",
+      "author": "Chennabasappa, Sahana and Nikolaidis, Cyrus and Song, Daniel and Molnar, David and Ding, Stephanie and Wan, Shengye and Whitman, Spencer and Deason, Lauren and Doucette, Nicholas and Montilla, Abraham and Gampa, Alekhya and de Paola, Beto and Gabi, Dominik and Crnkovich, James and Testud, Jean-Christophe and He, Kat and Chaturvedi, Rashnil and Zhou, Wu and Saxe, Joshua",
+      "title": "{LlamaFirewall: An open source guardrail system for building secure AI agents}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv250503574"
+    },
+    "entry_sha256": "e1b5cf8e25c7a609eb204d4d7928ff25b8698209c3c20d6a935e98744a032d34",
+    "sources": [
+      "https://arxiv.org/abs/2505.03574"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv250503574.json": "43a9cc0be28e7b9eccd37a9d6a11e9931b90d2b7b239720284fcd421d25c23a9",
+      "arxiv250503574.html": "b99b29b06a28f94331eccfd0073672837ff77695d71853e671c9a74706dc19b8",
+      "arxiv250503574.crossref.json.gz": "b726ee17493887cc989616b13dcbcb52c6f3620fadb4ec6f385ea6162adfb06e"
+    }
+  },
+  {
+    "key": "arxiv231206674",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2312.06674",
+      "howpublished": "arXiv:2312.06674",
+      "year": "2023",
+      "author": "Inan, Hakan and Upasani, Kartikeya and Chi, Jianfeng and Rungta, Rashi and Iyer, Krithika and Mao, Yuning and Tontchev, Michael and Hu, Qing and Fuller, Brian and Testuggine, Davide and Khabsa, Madian",
+      "title": "{Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv231206674"
+    },
+    "entry_sha256": "37fa769e749b53fefe855da454c69a9300edab1ec7cba5e48791a65ac031ad79",
+    "sources": [
+      "https://arxiv.org/abs/2312.06674"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv231206674.json": "abfcf92a30b135dc1c782b3fce4a08b684c71552da8d6c425d865f76e29be9ee",
+      "arxiv231206674.html": "30dbc900cce061d6be7d85da520f3c2368fa66752c9d0c45ec339fa85c030115",
+      "arxiv231206674.crossref.json.gz": "b9e4eb94a5da9deebbc2f973e9208921e90e76748a4fba180406a3952f99341b"
+    }
+  },
+  {
+    "key": "arxiv240618495",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/0f69b4b96a46f284b726fbd70f74fb3b-Abstract-Datasets_and_Benchmarks_Track.html",
+      "doi": "10.52202/079017-0261",
+      "publisher": "Curran Associates, Inc.",
+      "year": "2024",
+      "pages": "8093--8131",
+      "volume": "37",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "title": "{WildGuard: Open One-stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs}",
+      "author": "Han, Seungju and Rao, Kavel and Ettinger, Allyson and Jiang, Liwei and Lin, Bill Yuchen and Lambert, Nathan and Choi, Yejin and Dziri, Nouha",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240618495"
+    },
+    "entry_sha256": "6502a1dccc66a4dd475f17da6137c0750e9534200e5864a6c1a76ba7126a4ac0",
+    "sources": [
+      "https://arxiv.org/abs/2406.18495",
+      "https://api.crossref.org/works/10.52202/079017-0261",
+      "https://proceedings.neurips.cc/paper_files/paper/2024/hash/0f69b4b96a46f284b726fbd70f74fb3b-Abstract-Datasets_and_Benchmarks_Track.html",
+      "https://proceedings.neurips.cc/paper_files/paper/25449-/bibtex"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv240618495.json": "bb1608a646b6664f84820f0e5c92c509df7134665a324efb79cbb20951691fea",
+      "arxiv240618495.html": "195852fe74da67ef1172770ff2cf5e5a27d1f26b85080ee26ae746011f0de59a",
+      "arxiv240618495.crossref.json.gz": "64f0ee6251e0499716aaff03623d5af7a197431da1fd6232b461ff41cbcb9feb",
+      "arxiv240618495.publication.html": "016cd2e9ac7c8be9d5ff1e0677431b2f1b6a4bd5c89b64c94276d4a9304460b1",
+      "arxiv240618495.publication.bib": "b1d65fcb3f9204dad14e98cb70da20febdc1aa323fd030b3a48d6173be26725f"
+    }
+  },
+  {
+    "key": "arxiv250118837",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2501.18837",
+      "howpublished": "arXiv:2501.18837",
+      "year": "2025",
+      "author": "Sharma, Mrinank and Tong, Meg and Mu, Jesse and Wei, Jerry and Kruthoff, Jorrit and Goodfriend, Scott and Ong, Euan and Peng, Alwin and Agarwal, Raj and Anil, Cem and Askell, Amanda and Bailey, Nathan and Benton, Joe and Bluemke, Emma and Bowman, Samuel R. and Christiansen, Eric and Cunningham, Hoagy and Dau, Andy and Gopal, Anjali and Gilson, Rob and Graham, Logan and Howard, Logan and Kalra, Nimit and Lee, Taesung and Lin, Kevin and Lofgren, Peter and Mosconi, Francesco and O'Hara, Clare and Olsson, Catherine and Petrini, Linda and Rajani, Samir and Saxena, Nikhil and Silverstein, Alex and Singh, Tanya and Sumers, Theodore and Tang, Leonard and Troy, Kevin K. and Weisser, Constantin and Zhong, Ruiqi and Zhou, Giulio and Leike, Jan and Kaplan, Jared and Perez, Ethan",
+      "title": "{Constitutional Classifiers: Defending against Universal Jailbreaks across Thousands of Hours of Red Teaming}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv250118837"
+    },
+    "entry_sha256": "cd31022fe864d878bb950bb8dca1dc459e2fe2fbbea3bc67907bc43c37f2a19c",
+    "sources": [
+      "https://arxiv.org/abs/2501.18837"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv250118837.json": "45566b19898fa648557abc5df54267ca09a60786e388d34d1f3af49538f78353",
+      "arxiv250118837.html": "d6a012f9ef56da11c28f7e470dc30435e67e85071e7c6a737281ac7e71008cd2",
+      "arxiv250118837.crossref.json.gz": "5572746922520eb7187057d8a8410b81b3492a261b608f477ef78e01eb536c25"
+    }
+  },
+  {
+    "key": "arxiv250926238",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/5a829e299ebc1c1615ddb09e98fb6ce8-Abstract-Conference.html",
+      "year": "2026",
+      "pages": "55192--55229",
+      "volume": "2026",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{Beyond Linear Probes: Dynamic Safety Monitoring for Language Models}",
+      "author": "Oldfield, James and Torr, Philip and Patras, Ioannis and Bibi, Adel and Barez, Fazl",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250926238"
+    },
+    "entry_sha256": "fc4833b631846792e24fda05577e9a4d40baa10f56056c909a34aa32873e28fd",
+    "sources": [
+      "https://arxiv.org/abs/2509.26238",
+      "https://proceedings.iclr.cc/paper_files/paper/2026/hash/5a829e299ebc1c1615ddb09e98fb6ce8-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/10874-/bibtex"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv250926238.json": "288b2b3a90f8e79ddda070cd13a8fcf43991f279c66298d0b8995e8747c036a7",
+      "arxiv250926238.html": "da593822e25545a00585b8694af0885d81674765f08ec10acb297fbce641d8f6",
+      "arxiv250926238.crossref.json.gz": "6025775b5b13b34d140a1c5c527184aa1e928372f367b58b5487b20e2a6f127c",
+      "arxiv250926238.publication.html": "84c4fc6da7ec0f89d0c583fd66ccbdbde9aa041fce65f9c51a481d810b90a8fa",
+      "arxiv250926238.publication.bib": "564202b2670ee37c9d593662494b67068aa796a4644f4ba21bccf38f92dfd87b"
+    }
+  },
+  {
+    "key": "arxiv231010501",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.18653/v1/2023.emnlp-demo.40",
+      "doi": "10.18653/v1/2023.emnlp-demo.40",
+      "publisher": "Association for Computational Linguistics",
+      "year": "2023",
+      "pages": "431--445",
+      "booktitle": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+      "title": "{NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails}",
+      "author": "Rebedea, Traian and Dinu, Razvan and Sreedhar, Makesh Narsimhan and Parisien, Christopher and Cohen, Jonathan",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv231010501"
+    },
+    "entry_sha256": "4c355184ba46b32ced81e163543db6fbd5ac82dea50dbcef525a53ac359f17ff",
+    "sources": [
+      "https://arxiv.org/abs/2310.10501",
+      "https://api.crossref.org/works/10.18653/v1/2023.emnlp-demo.40"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv231010501.json": "bca526e31f234d0479d4d21171f77f43a8530d7202112c373776abf7e7f02916",
+      "arxiv231010501.html": "ff02f8893e5627f480d047023648473c357429da0298232f7d66cb5225d0d108",
+      "arxiv231010501.crossref.json.gz": "6c6b97fa6329ebf59ce72bd2b8540c93292761af52ad5e8f2841f46c396813a5"
+    }
+  },
+  {
+    "key": "arxiv250213458",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.18653/v1/2025.findings-acl.704",
+      "doi": "10.18653/v1/2025.findings-acl.704",
+      "publisher": "Association for Computational Linguistics",
+      "year": "2025",
+      "pages": "13698--13713",
+      "booktitle": "Findings of the Association for Computational Linguistics: ACL 2025",
+      "title": "{ThinkGuard: Deliberative Slow Thinking Leads to Cautious Guardrails}",
+      "author": "Wen, Xiaofei and Zhou, Wenxuan and Mo, Wenjie Jacky and Chen, Muhao",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250213458"
+    },
+    "entry_sha256": "2ffd4447e55bf58ac157063af0c269d5fd679d35ab5068acaf81af93e3031076",
+    "sources": [
+      "https://arxiv.org/abs/2502.13458",
+      "https://api.crossref.org/works/10.18653/v1/2025.findings-acl.704"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv250213458.json": "cff6dd703d74a38ed43e7019916a477077c762fdf8ffb6fdb883f930e199a983",
+      "arxiv250213458.html": "92f202fd8a2ae6c1a4699277a51c00135f48d248b5de52014bbb76bfeb71f9ce",
+      "arxiv250213458.crossref.json.gz": "355d8b2be5c6cb5fed7cb2140c4dd439e7b3c6b92e0231ada395a920f7d07c74"
+    }
+  },
+  {
+    "key": "arxiv250318666",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.1145/3744916.3764546",
+      "doi": "10.1145/3744916.3764546",
+      "publisher": "ACM",
+      "year": "2026",
+      "pages": "2938--2950",
+      "booktitle": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+      "title": "{AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents}",
+      "author": "Wang, Haoyu and Poskitt, Christopher M. and Sun, Jun",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250318666"
+    },
+    "entry_sha256": "444214b23154724c2678670af5135534abd4dd1a44f8b1efccdc57fae560b6fe",
+    "sources": [
+      "https://arxiv.org/abs/2503.18666",
+      "https://api.crossref.org/works/10.1145/3744916.3764546"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv250318666.json": "72ea74e6dc5d682f45e73dcf652257c32d82c5f85859175ca0cf4469097f1d0c",
+      "arxiv250318666.html": "3f82d283364bd5b54b843e68991c9794766a73c71e2adff379f17f3185487ab8",
+      "arxiv250318666.crossref.json.gz": "7d69f86aac322de01719507d22bf3a5901b3cac9cdfbaa45bbbbe9b99cd4d593"
+    }
+  },
+  {
+    "key": "arxiv250800500",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.1145/3832783.3837413",
+      "doi": "10.1145/3832783.3837413",
+      "publisher": "ACM",
+      "year": "2026",
+      "pages": "1470--1482",
+      "booktitle": "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering",
+      "title": "{ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via Probabilistic Prediction}",
+      "author": "Wang, Haoyu and Poskitt, Christopher M. and Wei, Jiali and Sun, Jun",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250800500"
+    },
+    "entry_sha256": "bbda5b24abb4260c97cac7b64934fb87376639b18c3d13effd8d6ca16998ab7a",
+    "sources": [
+      "https://arxiv.org/abs/2508.00500",
+      "https://api.crossref.org/works/10.1145/3832783.3837413"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv250800500.json": "023577e1a1a4a55d2c799b9d0d3920039a63eab4c3e346831a78886487641c7f",
+      "arxiv250800500.html": "51cd3679aa7809a6be9a361875f5ae9fbb39a820460a1056c0936d10afec4a23",
+      "arxiv250800500.crossref.json.gz": "6a5ed7d5fe4db568ff6836a9551eac90da1c054ff42179ed2b1a7a050459e4ef"
+    }
+  },
+  {
+    "key": "arxiv250318813",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.1109/satml68715.2026.00040",
+      "doi": "10.1109/satml68715.2026.00040",
+      "publisher": "IEEE",
+      "year": "2026",
+      "pages": "587--618",
+      "booktitle": "2026 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)",
+      "title": "{Defeating Prompt Injections by Design}",
+      "author": "Debenedetti, Edoardo and Shumailov, Ilia and Fan, Tianqi and Hayes, Jamie and Carlini, Nicholas and Fabian, Daniel and Kern, Christoph and Shi, Chongyang and Terzis, Andreas and Tram{\\`e}r, Florian",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250318813"
+    },
+    "entry_sha256": "51f046ac37e2d7482ed1d17c8445806dc18255622554acd088e74c2e8cb22f8d",
+    "sources": [
+      "https://arxiv.org/abs/2503.18813",
+      "https://api.crossref.org/works/10.1109/satml68715.2026.00040"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv250318813.json": "b41a9acbf9fb3eac0f89ed04524c6cb4a2295cae513104e147a6ecf24385227a",
+      "arxiv250318813.html": "fb28048553f3376e5d9c783eccdf563db74f1afe0cb1dd0cfbeee785132bd161",
+      "arxiv250318813.crossref.json.gz": "b40328f786fdc12065a076c4ce3a3b2e4fa886489f198b543a89abea4af066e8"
+    }
+  },
+  {
+    "key": "arxiv250523643",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2505.23643",
+      "howpublished": "arXiv:2505.23643",
+      "year": "2025",
+      "author": "Costa, Manuel and Köpf, Boris and Kolluri, Aashish and Paverd, Andrew and Russinovich, Mark and Salem, Ahmed and Tople, Shruti and Wutschitz, Lukas and Zanella-Béguelin, Santiago",
+      "title": "{Securing AI Agents with Information-Flow Control}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv250523643"
+    },
+    "entry_sha256": "529260badcb4d001ebaaac0c4fa33a146ad92528998394ce34fff6db767176d4",
+    "sources": [
+      "https://arxiv.org/abs/2505.23643"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv250523643.json": "c4d263bddbb8f5201e1f70c153b67500fe7424fe88e565decf4bc52577dacfb9",
+      "arxiv250523643.html": "5b5fcb27b69b3b890b7abab795f1ca5b2dc10c3a54e34de6af2edeaa18fb1878",
+      "arxiv250523643.crossref.json.gz": "4e70ca6f1ddb8afe64d5b816a8d0a21f591cf0d0cf483d64dcf6e57668dae987"
+    }
+  },
+  {
+    "key": "arxiv220802814",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/f3549ef9b5ff520a7e41ff3cc306ab2b-Abstract-Conference.html",
+      "year": "2024",
+      "pages": "55198--55218",
+      "volume": "2024",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{Conformal Risk Control}",
+      "author": "Angelopoulos, Anastasios N. and Bates, Stephen and Fisch, Adam and Lei, Lihua and Schuster, Tal",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv220802814"
+    },
+    "entry_sha256": "483097ca6198f9c902d824e87c026766e61b066ea284328cec9b25047fc3563c",
+    "sources": [
+      "https://arxiv.org/abs/2208.02814",
+      "https://proceedings.iclr.cc/paper_files/paper/2024/hash/f3549ef9b5ff520a7e41ff3cc306ab2b-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/5069-/bibtex"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv220802814.json": "b6b67b210a14be4c6186d935fb764f3425a797325563e59e193198ac4781ef30",
+      "arxiv220802814.html": "d7b6cae8a8dbd33eea7929e122a4f758570df66ef95e9533b0e7c9cb0fe9b580",
+      "arxiv220802814.crossref.json.gz": "1d9cadfcf9e74a4f4003052f0ecc263abb44213760670142df07cc7df0bddba2",
+      "arxiv220802814.publication.html": "da3a13280db4a3dac79a4dbfc9c1ca294701f3cd718467cf5ce0830320844638",
+      "arxiv220802814.publication.bib": "b0bdb90a7390f3a0f29588f77acf7ad6afea4c638c1b6f714602f193ef0fbe1a"
+    }
+  },
+  {
+    "key": "arxiv210707511",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.1561/2200000101",
+      "doi": "10.1561/2200000101",
+      "publisher": "Emerald",
+      "year": "2023",
+      "pages": "494--591",
+      "number": "4",
+      "volume": "16",
+      "journal": "Foundations and Trends in Machine Learning",
+      "title": "{Conformal Prediction: A Gentle Introduction}",
+      "author": "Angelopoulos, Anastasios N. and Bates, Stephen",
+      "ENTRYTYPE": "article",
+      "ID": "arxiv210707511"
+    },
+    "entry_sha256": "f8f8086e322e108a10a095a1f7b6571378cf19d517aa3bcadb9e52dfb27e3761",
+    "sources": [
+      "https://arxiv.org/abs/2107.07511",
+      "https://api.crossref.org/works/10.1561/2200000101"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv210707511.json": "835df561104bd8dfaa140e338215a6153c18df21c407c9b9b5606470a5355ecb",
+      "arxiv210707511.html": "0c4c8aa477c12cfd60a737a502379709c6b7dec9e44f345fa0050a9bb30d28ff",
+      "arxiv210707511.crossref.json.gz": "c493bd278d786193462e892970d6027daef708950dc66497dfa87171011d3b70",
+      "arxiv210707511.selected-crossref.json": "66a6582ed2061dfae44bbf7717b2d7a63250002a0de949b576681cd3aaa1869f"
+    }
+  },
+  {
+    "key": "arxiv200602544",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2020/hash/244edd7e85dc81602b7615cd705545f5-Abstract.html",
+      "publisher": "Curran Associates, Inc.",
+      "year": "2020",
+      "pages": "3581--3591",
+      "volume": "33",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "title": "{Classification with Valid and Adaptive Coverage}",
+      "author": "Romano, Yaniv and Sesia, Matteo and Candès, Emmanuel J.",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv200602544"
+    },
+    "entry_sha256": "39085d59b4d40ca3d343ea46feb4b7ff2102047b02019eadc01b081cff7ed26d",
+    "sources": [
+      "https://arxiv.org/abs/2006.02544",
+      "https://proceedings.neurips.cc/paper_files/paper/2020/hash/244edd7e85dc81602b7615cd705545f5-Abstract.html",
+      "https://proceedings.neurips.cc/paper_files/paper/10026-/bibtex"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv200602544.json": "943ab25a8750ade9a9eebfa564f210191acb82aaf1d1ed4d02ffb44e149eff7d",
+      "arxiv200602544.html": "e9dd4af7fcd42d91f86583f5862c30aa09f8092724281c897e464a419381e59b",
+      "arxiv200602544.crossref.json.gz": "7d4335852da4ec44e6923b1472aac29963352d0a4219fd57939176f390fd61c6",
+      "arxiv200602544.publication.html": "381efc2e27399490a10ea4f5b4c7ce49622f0bb9c1e35430d62748c2a3a7cada",
+      "arxiv200602544.publication.bib": "8a55f23648356824efde21ecac0bc9d5110d395bc04cef0dadd23d79e9e0e454"
+    }
+  },
+  {
+    "key": "arxiv210600170",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/0d441de75945e5acbc865406fc9a2559-Abstract.html",
+      "publisher": "Curran Associates, Inc.",
+      "year": "2021",
+      "pages": "1660--1672",
+      "volume": "34",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "title": "{Adaptive Conformal Inference Under Distribution Shift}",
+      "author": "Gibbs, Isaac and Candès, Emmanuel",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv210600170"
+    },
+    "entry_sha256": "6e60ca9db2a0ff6ad7b980695c78928ad47c29c85bbcae5ace3618443ee62828",
+    "sources": [
+      "https://arxiv.org/abs/2106.00170",
+      "https://proceedings.neurips.cc/paper_files/paper/2021/hash/0d441de75945e5acbc865406fc9a2559-Abstract.html",
+      "https://proceedings.neurips.cc/paper_files/paper/11751-/bibtex"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv210600170.json": "a91c9fe3498ca5ae8eced9147dff62d550df4abed0d6e3c36fde3ddcbe135d80",
+      "arxiv210600170.html": "e79a91c4089e6bf63f62c5839b9894ebd2e35320e270ef2cb44d67936788188c",
+      "arxiv210600170.crossref.json.gz": "3761b9fc55f55f2982d42b7c450e960bdc135148537e0b3ad5d26f3676508e43",
+      "arxiv210600170.publication.html": "919affbe583530fa5c1aa4bcfd174b84b45085cf41eeb3970f64dfbf6fbc56ae",
+      "arxiv210600170.publication.bib": "be09b04b7c0181d9a782cd821b947985b6a828cfe095dd98f6e5fc9343df07cd"
+    }
+  },
+  {
+    "key": "arxiv240613352",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/97091a5177d8dc64b1da8bf3e1f6fb54-Abstract-Datasets_and_Benchmarks_Track.html",
+      "doi": "10.52202/079017-2636",
+      "publisher": "Curran Associates, Inc.",
+      "year": "2024",
+      "pages": "82895--82920",
+      "volume": "37",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "title": "{AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents}",
+      "author": "Debenedetti, Edoardo and Zhang, Jie and Balunović, Mislav and Beurer-Kellner, Luca and Fischer, Marc and Tramèr, Florian",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240613352"
+    },
+    "entry_sha256": "5f0c43f6cfb3d1a8c99c52fad41758e7045dfc8e971aa763a475fbb44c1d1a02",
+    "sources": [
+      "https://arxiv.org/abs/2406.13352",
+      "https://api.crossref.org/works/10.52202/079017-2636",
+      "https://proceedings.neurips.cc/paper_files/paper/2024/hash/97091a5177d8dc64b1da8bf3e1f6fb54-Abstract-Datasets_and_Benchmarks_Track.html",
+      "https://proceedings.neurips.cc/paper_files/paper/23699-/bibtex"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv240613352.json": "5fffc7afe4048e8917401ea2a65d318f0e19ebd532d6c08ecf50007438a70918",
+      "arxiv240613352.html": "460a84f9806b3fc55dec0c547595b498fcccd4e41d38ad2c65110e3824821231",
+      "arxiv240613352.crossref.json.gz": "ca8d3ae9c5eb7547a8c45fb8cf2faae8af29155e74834b7e99e77b769bb3f01a",
+      "arxiv240613352.publication.html": "e9b638a82b8306278284e581559ec9e274d49512e68a19e7afd9ed29bace8d56",
+      "arxiv240613352.publication.bib": "c707977512593a4acabb8597748d16e572300b25b5ef35be67a298f354210ca1"
+    }
+  },
+  {
+    "key": "arxiv241009024",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/c493d23af93118975cdbc32cbe7323f5-Abstract-Conference.html",
+      "year": "2025",
+      "pages": "79185--79220",
+      "volume": "2025",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents}",
+      "author": "Andriushchenko, Maksym and Souly, Alexandra and Dziemian, Mateusz and Duenas, Derek and Lin, Maxwell and Wang, Justin and Hendrycks, Dan and Zou, Andy and Kolter, Zico and Fredrikson, Matt  and Gal, Yarin and Davies, Xander",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv241009024"
+    },
+    "entry_sha256": "7d90a0b04320ed2fd742d5183e8d92ec429533c3b3113fcc7bc5af4eff2baf44",
+    "sources": [
+      "https://arxiv.org/abs/2410.09024",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/c493d23af93118975cdbc32cbe7323f5-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/2668-/bibtex"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv241009024.json": "2c2f42d8c53419714f950883e9139110f46bfb51eb053cf77edf1fac551aefac",
+      "arxiv241009024.html": "53fa386f635b1a7585dc28ea42456422cdd286dbd1afc468fa517d65122a44df",
+      "arxiv241009024.crossref.json.gz": "40c2c26f3a44e9e07b94322e5a100f4e96d6d93ffb2871bdf5cdf281bd35b45a",
+      "arxiv241009024.publication.html": "a22977ae5d8de13718c2456b4746f3a9335df8027c1a010aafde6cbaf7ec3469",
+      "arxiv241009024.publication.bib": "2b05c6c88d68eebd4c073fa0a85eb540c2b9334c03b42783d7888f981c8790ec"
+    }
+  },
+  {
+    "key": "arxiv230915817",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/7274ed909a312d4d869cc328ad1c5f04-Abstract-Conference.html",
+      "year": "2024",
+      "pages": "27031--27098",
+      "volume": "2024",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{Identifying the Risks of LM Agents with an LM-Emulated Sandbox}",
+      "author": "Ruan, Yangjun and Dong, Honghua and Wang, Andrew and Pitis, Silviu and Zhou, Yongchao and Ba, Jimmy and Dubois, Yann and Maddison, Chris J. and Hashimoto, Tatsunori",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv230915817"
+    },
+    "entry_sha256": "bb6e7c97e6609415864e08c64e232933225022d5bd8006364ea2fce5ca05ca70",
+    "sources": [
+      "https://arxiv.org/abs/2309.15817",
+      "https://proceedings.iclr.cc/paper_files/paper/2024/hash/7274ed909a312d4d869cc328ad1c5f04-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/4437-/bibtex"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv230915817.json": "933ab5b3dc0430cc6a4a60eaa019e738ee010747b5431b1fb2a01f004ee6d6b9",
+      "arxiv230915817.html": "88bb20b161a8d76c36e4685f19c8f9228afdd91706f9bba17bac394f9cd2ac57",
+      "arxiv230915817.crossref.json.gz": "64bcb9a8fd50c0d3c1e0c03071df9b6dec8f790b089a8df072a4f57cbc1b1cf8",
+      "arxiv230915817.publication.html": "ebe58e0c57114f73cc04de3c79ee7b5ea2f485cb300fdaf223d8c36ae2a11835",
+      "arxiv230915817.publication.bib": "37405a2e56324b1b0698dd6f0e1433759991660b61d01c3a92035637dc315cd0"
+    }
+  },
+  {
+    "key": "arxiv240110019",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.18653/v1/2024.findings-emnlp.79",
+      "doi": "10.18653/v1/2024.findings-emnlp.79",
+      "publisher": "Association for Computational Linguistics",
+      "year": "2024",
+      "pages": "1467--1490",
+      "booktitle": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+      "title": "{R-Judge: Benchmarking Safety Risk Awareness for LLM Agents}",
+      "author": "Yuan, Tongxin and He, Zhiwei and Dong, Lingzhong and Wang, Yiming and Zhao, Ruijie and Xia, Tian and Xu, Lizhen and Zhou, Binglin and Li, Fangqi and Zhang, Zhuosheng and Wang, Rui and Liu, Gongshen",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240110019"
+    },
+    "entry_sha256": "0ae5550f61c097296290a129f9644888350c898a8a35f47b784dd3bccf98a1c9",
+    "sources": [
+      "https://arxiv.org/abs/2401.10019",
+      "https://api.crossref.org/works/10.18653/v1/2024.findings-emnlp.79"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv240110019.json": "9606e8ed94ee2863491c4884e354b6f5613d31ecf90ec11299f376288624fad8",
+      "arxiv240110019.html": "48328e5c2aee1010c43c365f4da36a13699ff00fe52c8042bd1e140946f4e7df",
+      "arxiv240110019.crossref.json.gz": "e5a7922b5eeb8d3934830e9d1abe3b4c92526e6d0ab067373d9be3e36a3a08a7"
+    }
+  },
+  {
+    "key": "arxiv230212173",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.1145/3605764.3623985",
+      "doi": "10.1145/3605764.3623985",
+      "publisher": "ACM",
+      "year": "2023",
+      "pages": "79--90",
+      "booktitle": "Proceedings of the 16th ACM Workshop on Artificial Intelligence and Security",
+      "title": "{Not What You\\textquotesingle ve Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection}",
+      "author": "Greshake, Kai and Abdelnabi, Sahar and Mishra, Shailesh and Endres, Christoph and Holz, Thorsten and Fritz, Mario",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv230212173"
+    },
+    "entry_sha256": "5ec7594e31288d697bc3b54d0fd74b975f4e6bad8de295a446f90f9771dbaa3d",
+    "sources": [
+      "https://arxiv.org/abs/2302.12173",
+      "https://api.crossref.org/works/10.1145/3605764.3623985"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv230212173.json": "5502e5a4901fb630af3ec8a61bc177168771046b603bf27dcee2df07ab9ce658",
+      "arxiv230212173.html": "398802b7cd873c9f02d1ad7b843d503e5538b704f37782d4057c74210d0169b1",
+      "arxiv230212173.crossref.json.gz": "b4595c423883f0801127c8eebe96405e5d0ea0443979bcb94480b49394be3772"
+    }
+  },
+  {
+    "key": "arxiv241002644",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/5750f91d8fb9d5c02bd8ad2c3b44456b-Abstract-Conference.html",
+      "year": "2025",
+      "pages": "35331--35366",
+      "volume": "2025",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents}",
+      "author": "Zhang, Hanrong and Huang, Jingyuan and Mei, Kai and Yao, Yifei and Wang, Zhenting and Zhan, Chenlu and Wang, Hongwei and Zhang, Yongfeng",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv241002644"
+    },
+    "entry_sha256": "8905962a52034c4938666d37788afe71de19c98c1098ef0d3c91ff0ccaa177ec",
+    "sources": [
+      "https://arxiv.org/abs/2410.02644",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/5750f91d8fb9d5c02bd8ad2c3b44456b-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/2898-/bibtex"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv241002644.json": "c76535fb24207d8f237fc638af4af85dec5ec5acce89a6760b6969f651ae041f",
+      "arxiv241002644.html": "985d8c22482017f2369fbca3c0ce17e19b07380e063ce863d633ec6a80b2adbb",
+      "arxiv241002644.crossref.json.gz": "688a0d7e74fe8a4ba3a29d3c66d690d312ca6c5a87602a5f6b3d5effa317a13c",
+      "arxiv241002644.publication.html": "80d6ca34211f1a0401b9301c0be249c5d5a3dc6435f13fefe2115014df4c66c1",
+      "arxiv241002644.publication.bib": "b841163acd4d39f1ea3f4e63e64b804aa50bf1156548b439ef501bcd375ef60c"
+    }
+  },
+  {
+    "key": "arxiv241107781",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/bfd082c452dffb450d5a5202b0419205-Abstract-Datasets_and_Benchmarks_Track.html",
+      "doi": "10.52202/079017-3369",
+      "publisher": "Curran Associates, Inc.",
+      "year": "2024",
+      "pages": "106190--106236",
+      "volume": "37",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "title": "{RedCode: Risky Code Execution and Generation Benchmark for Code Agents}",
+      "author": "Guo, Chengquan and Liu, Xun and Xie, Chulin and Zhou, Andy and Zeng, Yi and Lin, Zinan and Song, Dawn and Li, Bo",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv241107781"
+    },
+    "entry_sha256": "d9cb1adea4c123a556dff038270894c65032cb675495f167960b34cb2b883e21",
+    "sources": [
+      "https://arxiv.org/abs/2411.07781",
+      "https://api.crossref.org/works/10.52202/079017-3369",
+      "https://proceedings.neurips.cc/paper_files/paper/2024/hash/bfd082c452dffb450d5a5202b0419205-Abstract-Datasets_and_Benchmarks_Track.html",
+      "https://proceedings.neurips.cc/paper_files/paper/25350-/bibtex"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv241107781.json": "79afd4fce21b996112e60db63a689c972f9099dd43477144f0ca13fb9fcae0d0",
+      "arxiv241107781.html": "e07263b241f269f9d8dfdb04fb77b7b562008a503e5ba2950576c4229157e07d",
+      "arxiv241107781.crossref.json.gz": "f665f1df403affd3f2f03a616133933659d80c6407db8ffb512964ca8a94a0a9",
+      "arxiv241107781.publication.html": "5427670a580177a84a3a604a4feebe4169ee394595f175c5f53c772acee9dc9e",
+      "arxiv241107781.publication.bib": "5d4a022deb91b54f0aa35483788c2da80cae7650b257d815dd4cd5082201986d"
+    }
+  },
+  {
+    "key": "arxiv230715043",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2307.15043",
+      "howpublished": "arXiv:2307.15043",
+      "year": "2023",
+      "author": "Zou, Andy and Wang, Zifan and Carlini, Nicholas and Nasr, Milad and Kolter, J. Zico and Fredrikson, Matt",
+      "title": "{Universal and Transferable Adversarial Attacks on Aligned Language Models}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv230715043"
+    },
+    "entry_sha256": "82a429d70570449a9d33a5b8d07cebb6a4f2569379cc58cd4a8991c55f06c1ac",
+    "sources": [
+      "https://arxiv.org/abs/2307.15043"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv230715043.json": "18bb3bc4d324858b4eb9d49d2ac564fbf3426d826ed7a72d111a202ed106b9d0",
+      "arxiv230715043.html": "1f527f05797b58f9cec89f7784e209589d5ab51985d00ac041937422726c99bb",
+      "arxiv230715043.crossref.json.gz": "15f62aa127017284e315cc40d288954924bff4b230b168da0d97817d06e653b0"
+    }
+  },
+  {
+    "key": "arxiv241209565",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/ed687a5f52b651b19e7c18f702907b8b-Abstract-Conference.html",
+      "year": "2026",
+      "pages": "146838--146882",
+      "volume": "2026",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{Obfuscated Activations Bypass LLM Latent-Space Defenses}",
+      "author": "Bailey, Luke and Serrano, Alex and Sheshadri, Abhay and Seleznyov, Mikhail and Taylor, Jordan and Jenner, Erik and Hilton, Jacob and Casper, Stephen and Guestrin, Carlos and Emmons, Scott",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv241209565"
+    },
+    "entry_sha256": "85e18eca5328b459db874293432f203884dbae23b81acb7aaebc344623a69612",
+    "sources": [
+      "https://arxiv.org/abs/2412.09565",
+      "https://proceedings.iclr.cc/paper_files/paper/2026/hash/ed687a5f52b651b19e7c18f702907b8b-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/6905-/bibtex"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv241209565.json": "840c74fc2961008775a7f916570136b5939e5e61602846a5d19f023006971a58",
+      "arxiv241209565.html": "b5f3467379a4584d8b10bd21d8543a0908c892381d29622b9689dced3e8e6b15",
+      "arxiv241209565.crossref.json.gz": "dd634bb122d06c378026a3e7391d06992bdde87bfa152689dbb36972d9a9673d",
+      "arxiv241209565.publication.html": "42f1b3ed68ee14016e8062ab8570b9794487b1dba6dbf0b157395ca2a4a2cac4",
+      "arxiv241209565.publication.bib": "d92f44bf3f9d223f8dedcbdf9bb4fb88d544239213c122d634a64baf2712c41f"
+    }
+  },
+  {
+    "key": "arxiv250305264",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2503.05264",
+      "howpublished": "arXiv:2503.05264",
+      "year": "2025",
+      "author": "Russinovich, Mark and Salem, Ahmed",
+      "title": "{Jailbreaking is (Mostly) Simpler Than You Think}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv250305264"
+    },
+    "entry_sha256": "54af65e4b1732cf72bdded460370862d17ce1c991371f532859764891dce7c94",
+    "sources": [
+      "https://arxiv.org/abs/2503.05264"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv250305264.json": "1c608457752bdbcb69874f280bd8ca5c76d56adf82952d75bb8da1302b3e9f27",
+      "arxiv250305264.html": "b76d3e4281207215e5e1cda5fb9c4d01fbef68ff9f78576148e645bee149c42d",
+      "arxiv250305264.crossref.json.gz": "25f6284af4d69f06dec6b41ea54d6673faf7f8af28d43062f4fab7b0c887f6ce"
+    }
+  },
+  {
+    "key": "arxiv250411168",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://aclanthology.org/2025.llmsec-1.8/",
+      "publisher": "Association for Computational Linguistics",
+      "year": "2025",
+      "pages": "101--114",
+      "booktitle": "Proceedings of the First Workshop on {LLM} Security ({LLMSEC})",
+      "title": "{Bypassing {LLM} Guardrails: An Empirical Analysis of Evasion Attacks against Prompt Injection and Jailbreak Detection Systems}",
+      "author": "Hackett, William and Birch, Lewis and Trawicki, Stefan and Suri, Neeraj and Garraghan, Peter",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250411168"
+    },
+    "entry_sha256": "52197eec7068e8afe809859642a2236585afcbd25bc27423bad0759fd282d4c4",
+    "sources": [
+      "https://arxiv.org/abs/2504.11168",
+      "https://aclanthology.org/2025.llmsec-1.8/"
+    ],
+    "note": "ACL Anthology provides no DOI for this workshop paper; none added.",
+    "evidence": {
+      "arxiv250411168.json": "2a42996267b57f28e15899450eb166dc4ec6fa3b65c60d5e87ba6722b7df9cf2",
+      "arxiv250411168.html": "0d9cacef17a49b7ac7ad119817153415958413d4655935a221e77d3d9ac0adb1",
+      "arxiv250411168.crossref.json.gz": "7288828075ae69aba6c3189e2cc1dcf7e75e73ca66ebd2afde76db25751fca26",
+      "arxiv250411168.publication.bib": "f9c8cca80c37738736d1411c7f505af30dea714cf4326f4b01d9a0f182bb625c"
+    }
+  },
+  {
+    "key": "arxiv251002609",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/d51ce6040fe3dafd260411593f05a1fa-Abstract-Conference.html",
+      "year": "2026",
+      "pages": "131116--131151",
+      "volume": "2026",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{RedCodeAgent: Automatic Red-teaming Agent against Diverse Code Agents}",
+      "author": "Guo, Chengquan and Xie, Chulin and Yang, Yu and Chen, Zhaorun and Lin, Zinan and Davies, Xander and Gal, Yarin and Song, Dawn and Li, Bo",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv251002609"
+    },
+    "entry_sha256": "4a34b697ac0477f6c9fe07692b48791874503040fc77bd81bc072095e167dba5",
+    "sources": [
+      "https://arxiv.org/abs/2510.02609",
+      "https://proceedings.iclr.cc/paper_files/paper/2026/hash/d51ce6040fe3dafd260411593f05a1fa-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/10532-/bibtex"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv251002609.json": "3d4176134da0b07e6ed6dd92a64ece6b90b842aee47e00c9dc5b34bb8a46d783",
+      "arxiv251002609.html": "442e7b552b6c5f70b359b1d9c8175f455942044df06fb4cec6c27bbdb4faa820",
+      "arxiv251002609.crossref.json.gz": "bbf2353037f04da04e5ac21af3fd239d7fea33a66cf9163be87f33db7771d06b",
+      "arxiv251002609.publication.html": "4035cdcbadf4bc12f6b9bf7d834f4d1ab3c1855047c8e3024d7f633b38e6fb37",
+      "arxiv251002609.publication.bib": "542108bff948f8ac87eae3851c9e4eaa5bd3e72ea5869a714dc4dd0597638e5f"
+    }
+  },
+  {
+    "key": "arxiv261003585",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2610.03585",
+      "howpublished": "arXiv:2610.03585",
+      "year": "2026",
+      "author": "Karamchandani, Neeraj and Nagasubramaniam, Piyush and Xie, Xinhong and Zhu, Sencun and Wu, Dinghao",
+      "title": "{Threat-Preserving Representation Sensitivity in Agent-Security Benchmarks}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv261003585"
+    },
+    "entry_sha256": "fc641e91b334038d5c59d1ce2db2088c10a56a3dd8875fe2e5f68f8b6b33e073",
+    "sources": [
+      "https://arxiv.org/abs/2610.03585"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv261003585.json": "9fab3b3b7b76925272689fdbd7677c06d0a51ef53d5dab8603bd8b538a0ac907",
+      "arxiv261003585.html": "5fd0eec6ab09abe8c28f16f08bb526cd1e452508d6a309eb300f3806380a3f73",
+      "arxiv261003585.crossref.json.gz": "e9a616e83ef40987aa68afa0e741c0ce16fa71254d422b827708ed5c67e5f8e4"
+    }
+  },
+  {
+    "key": "arxiv250217419",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.1109/tpami.2025.3637037",
+      "doi": "10.1109/tpami.2025.3637037",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "year": "2026",
+      "pages": "3335--3354",
+      "number": "3",
+      "volume": "48",
+      "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "title": "{From System 1 to System 2: A Survey of Reasoning Large Language Models}",
+      "author": "Zhang, Duzhen and Li, Zhong-Zhi and Zhang, Ming-Liang and Zhang, Jiaxin and Liu, Zengyan and Yao, Yuxuan and Xu, Haotian and Zheng, Junhao and Chen, Xiuyi and Zhang, Yingying and Yin, Fei and Dong, Jiahua and Guo, Zhijiang and Song, Le and Liu, Cheng-Lin",
+      "ENTRYTYPE": "article",
+      "ID": "arxiv250217419"
+    },
+    "entry_sha256": "b2bcd37e1aa025d643c4638aa90df14d6f5ea918fa524ac04777f145a4c30a05",
+    "sources": [
+      "https://arxiv.org/abs/2502.17419",
+      "https://api.crossref.org/works/10.1109/tpami.2025.3637037"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv250217419.json": "c4b89ea68337d0965892eb3e6321b645a48b60c4c5de0502cbc5e594a5031c2a",
+      "arxiv250217419.html": "b1ffe401d7f9dbe9be48508b3de31bd0d4b421144575cb69cc68bca0d546324d",
+      "arxiv250217419.crossref.json.gz": "eb9a232d5d8c537b53c7cb2a437b68ec1048e153402ac0ce89f8e594daa5babe"
+    }
+  },
+  {
+    "key": "arxiv150102573",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.1007/978-3-662-46681-0_51",
+      "doi": "10.1007/978-3-662-46681-0_51",
+      "publisher": "Springer Berlin Heidelberg",
+      "year": "2015",
+      "pages": "533--548",
+      "volume": "9035",
+      "series": "Lecture Notes in Computer Science",
+      "booktitle": "Tools and Algorithms for the Construction and Analysis of Systems",
+      "title": "{Shield Synthesis: Runtime Enforcement for Reactive Systems}",
+      "author": "Bloem, Roderick and K{\\\"o}nighofer, Bettina and K{\\\"o}nighofer, Robert and Wang, Chao",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv150102573"
+    },
+    "entry_sha256": "d41031ccc4f45c35fea03f08f1fe02d4c4bdaebbc41fee22bbd741aece9e3dd1",
+    "sources": [
+      "https://arxiv.org/abs/1501.02573",
+      "https://api.crossref.org/works/10.1007/978-3-662-46681-0_51"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv150102573.json": "75cf9fc928f38d759824cb087ccc64645e180236b95c8913efd1e90216dcb1bb",
+      "arxiv150102573.html": "d70c5040e6fc1c29e6037aa4c79bb4febcb0f9a00c0f9c2049f926748895a546",
+      "arxiv150102573.crossref.json.gz": "62f67da9ae9779e916f5a49a7d8ec5974ffad6d27b978fda4b50b40ec8ee80b4",
+      "arxiv150102573.selected-crossref.json": "c461c29840bb77ef6f5a56ba87814144bc6ccd7b7fbca01033bd164ed9b10504"
+    }
+  },
+  {
+    "key": "arxiv170808611",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.1609/aaai.v32i1.11797",
+      "doi": "10.1609/aaai.v32i1.11797",
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "year": "2018",
+      "number": "1",
+      "volume": "32",
+      "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "title": "{Safe Reinforcement Learning via Shielding}",
+      "author": "Alshiekh, Mohammed and Bloem, Roderick and Ehlers, R{\\\"u}diger and K{\\\"o}nighofer, Bettina and Niekum, Scott and Topcu, Ufuk",
+      "ENTRYTYPE": "article",
+      "ID": "arxiv170808611"
+    },
+    "entry_sha256": "5e1c2c03bf04f54b3d1a8458cdc315c92fd4b03e2fa3a489c606e591bcb57398",
+    "sources": [
+      "https://arxiv.org/abs/1708.08611",
+      "https://api.crossref.org/works/10.1609/aaai.v32i1.11797"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv170808611.json": "748affff3ca453dfc8ad8815c44b2ccaf8097260535bd68db7a535cfbae6ea2f",
+      "arxiv170808611.html": "00ec84941f2240aab3cce12f0d724f84b540dbbcf430c1a21503f2202348de7e",
+      "arxiv170808611.crossref.json.gz": "e39b7a903a7c83c526af0b3ad279dd3eb3d6b89d026d8af4240caabc61a1365e"
+    }
+  },
+  {
+    "key": "arxiv190805402",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.23919/fmcad.2019.8894264",
+      "doi": "10.23919/fmcad.2019.8894264",
+      "publisher": "IEEE",
+      "year": "2019",
+      "pages": "129--137",
+      "booktitle": "2019 Formal Methods in Computer Aided Design (FMCAD)",
+      "title": "{Shield Synthesis for Real: Enforcing Safety in Cyber-Physical Systems}",
+      "author": "Wu, Meng and Wang, Jingbo and Deshmukh, Jyotirmoy and Wang, Chao",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv190805402"
+    },
+    "entry_sha256": "592c20f652c6ddd275e2a6b5f82b110c141961a425f75cee600be704e781761d",
+    "sources": [
+      "https://arxiv.org/abs/1908.05402",
+      "https://api.crossref.org/works/10.23919/fmcad.2019.8894264"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv190805402.json": "cbb8f75358c2ebb5a3aa103b73ba16e5fd35806fe92c5f1a8ddc962a2cd76d7a",
+      "arxiv190805402.html": "23f5d55befbb1f8d0326a13ff2e6a4b484dcea839ad5709a784c590c4f24917c",
+      "arxiv190805402.crossref.json.gz": "f27f17e4e824d2346d0cb58086dfbdcea5a502cc3d60c9c35bd04d9b7b2b3bb7"
+    }
+  },
+  {
+    "key": "arxiv240604184",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.1609/aaai.v39i14.33660",
+      "doi": "10.1609/aaai.v39i14.33660",
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "year": "2025",
+      "pages": "15134--15142",
+      "number": "14",
+      "volume": "39",
+      "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "title": "{Shield Synthesis for LTL Modulo Theories}",
+      "author": "Rodr{\\'\\i}guez, Andoni and Amir, Guy and Corsi, Davide and S{\\'a}nchez, C{\\'e}sar and Katz, Guy",
+      "ENTRYTYPE": "article",
+      "ID": "arxiv240604184"
+    },
+    "entry_sha256": "f58ef245bb9b6434b76d14dea716895346e28a7ee667165a358aca36e4d05c83",
+    "sources": [
+      "https://arxiv.org/abs/2406.04184",
+      "https://api.crossref.org/works/10.1609/aaai.v39i14.33660"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv240604184.json": "c8f7101581a1a8c774114cab0812ad8b2e714bae5d9d750a0bbb2388a070f0a5",
+      "arxiv240604184.html": "e3adf21ceac217f081280a2dc9011326de1789d209dbe442df363b3123e0dc59",
+      "arxiv240604184.crossref.json.gz": "2b86f53065bcd95a7ac5203d931c3104ee59c62d048458ceab8e60efcd1243f4"
+    }
+  },
+  {
+    "key": "arxiv250322738",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.mlr.press/v267/chen25ae.html",
+      "publisher": "PMLR",
+      "year": "2025",
+      "pages": "8313--8344",
+      "volume": "267",
+      "series": "Proceedings of Machine Learning Research",
+      "booktitle": "Proceedings of the 42nd International Conference on Machine Learning",
+      "title": "{{S}hield{A}gent: Shielding Agents via Verifiable Safety Policy Reasoning}",
+      "author": "Chen, Zhaorun and Kang, Mintong and Li, Bo",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250322738"
+    },
+    "entry_sha256": "e89992583739e8ef15aececcc03749e11f754e69875ed12785e869ac4863aa65",
+    "sources": [
+      "https://arxiv.org/abs/2503.22738",
+      "https://proceedings.mlr.press/v267/chen25ae.html"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv250322738.json": "eda842b46fdc0fa470babdc9b2f2d92bfd77f9543ce9de91624fb028afac922d",
+      "arxiv250322738.html": "a3f23be8f298628546e8b188be2a90f90d22a46d70bdf6316b0fc0b17bfc281f",
+      "arxiv250322738.crossref.json.gz": "0d0826e53a7c77dc7e6e972155919980a25663ac327bf985e330e9c57d51c2a5",
+      "arxiv250322738.publication.html": "60fd102ec7eaceccb7b5d9a22f432ba668d523babb047bb0b24799ed961ad807",
+      "arxiv250322738.publication.bib": "f0a54b1205c9aed703b3edf9b5def66c9e47cc6c9731beb49e8aa6a042326894"
+    }
+  },
+  {
+    "key": "arxiv251005156",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2510.05156",
+      "howpublished": "arXiv:2510.05156",
+      "year": "2025",
+      "author": "Miculicich, Lesly and Parmar, Mihir and Palangi, Hamid and Dvijotham, Krishnamurthy Dj and Montanari, Mirko and Pfister, Tomas and Le, Long T.",
+      "title": "{VeriGuard: Enhancing LLM Agent Safety via Verified Code Generation}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv251005156"
+    },
+    "entry_sha256": "3dd51dd52d4a334936eab45e4aeaf6321a5f1995779f08404d0bc29c3c59c198",
+    "sources": [
+      "https://arxiv.org/abs/2510.05156",
+      "https://research.google/pubs/veriguard-enhancing-llm-agent-safety-via-verified-code-generation-2/"
+    ],
+    "note": "Google Research lists ACL 2026, but links only to arXiv; no archival proceedings entry located. Retain the verified preprint rather than fabricate publication metadata.",
+    "evidence": {
+      "arxiv251005156.json": "43d53b29b6c5c93b2bf55a0e428cde3db79ba243684999805068f598de8f4a06",
+      "arxiv251005156.html": "0a2e516401d8db6705f067637c8c8c6ba4854de06cdd7344ef7f0171259456da",
+      "arxiv251005156.crossref.json.gz": "06d97c0d6c9565c09887e4c193a7d35eecb940238fc87c4a6e58544359098098",
+      "arxiv251005156.author-page.html": "672a811f4bd42bb7f7b06780c95af9d9723f2a833b8de2a3cea063ee27241c67",
+      "supplemental-web-evidence.json": "1162c49ef9b4ee7c745cae8d3fbd27438f4fe33afdc44d2c192a05b24b0de279"
+    }
+  },
+  {
+    "key": "arxiv260222302",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2602.22302",
+      "howpublished": "arXiv:2602.22302",
+      "year": "2026",
+      "author": "Bhardwaj, Varun Pratap",
+      "title": "{Agent Behavioral Contracts: Formal Specification and Runtime Enforcement for Reliable Autonomous AI Agents}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv260222302"
+    },
+    "entry_sha256": "7e4e64102afa6edb670867c44bb6306c25aae867a2867e14fd2c8525976cedce",
+    "sources": [
+      "https://arxiv.org/abs/2602.22302"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv260222302.json": "b22020b042e5fd6a8838f11306928328081a5fc97341dfaf26d2fdb9a985fa45",
+      "arxiv260222302.html": "0f65776224f0779e9d19d1d673b846f9e68f101f8e01e225ebd34a39f6fa9fb2",
+      "arxiv260222302.crossref.json.gz": "18ee11bd2ae94ec4ee89f7eb14adea31dc0b9d219fc35e5fcc1b008be85be8a2"
+    }
+  },
+  {
+    "key": "arxiv250613028",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2506.13028",
+      "howpublished": "arXiv:2506.13028",
+      "year": "2025",
+      "author": "Gyawali, Bimal Raj and Achalla, Saikrishna and Kallas, Konstantinos and Kumar, Sam",
+      "title": "{NaSh: Guardrails for an LLM-Powered Natural Language Shell}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv250613028"
+    },
+    "entry_sha256": "65993d14c0eeac91be4f83ca7738a39ab7a5ce11431441862f2be147f96c4774",
+    "sources": [
+      "https://arxiv.org/abs/2506.13028"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv250613028.json": "41248f76966420b0f376083fde54f0457c39017c7472c9903145fd002d2ce82b",
+      "arxiv250613028.html": "0722f5cfbc5fdb651e802a7be820119114a6c90790189303999ae32ccc1ac201",
+      "arxiv250613028.crossref.json.gz": "8c8c000f9f76cc1817615fd349987c4e01289680ee207f028afcf4a1056c236b"
+    }
+  },
+  {
+    "key": "arxiv250307885",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.1109/lra.2026.3667488",
+      "doi": "10.1109/lra.2026.3667488",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "year": "2026",
+      "pages": "4649--4656",
+      "number": "4",
+      "volume": "11",
+      "journal": "IEEE Robotics and Automation Letters",
+      "title": "{Safety Guardrails for LLM-Enabled Robots}",
+      "author": "Ravichandran, Zachary and Robey, Alexander and Kumar, Vijay and Pappas, George J. and Hassani, Hamed",
+      "ENTRYTYPE": "article",
+      "ID": "arxiv250307885"
+    },
+    "entry_sha256": "d039a78628122ce7f84918bcc6b18c7861e8661268fe2723b8b64d8b06f102ac",
+    "sources": [
+      "https://arxiv.org/abs/2503.07885",
+      "https://api.crossref.org/works/10.1109/lra.2026.3667488"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv250307885.json": "99742d32d9a5530ad1999e34b691a8732d2fccda1c3acb4eb30820d23b67b51c",
+      "arxiv250307885.html": "27b32d4c4a1cd729d0e44b227ffe4d6a000a5deb15269a39b662812438d2ef7a",
+      "arxiv250307885.crossref.json.gz": "480817e5d2c88942bc259b758ef9c4404a1b178f2ed3462008026f8287245043"
+    }
+  },
+  {
+    "key": "arxiv250300600",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.14778/3749646.3749677",
+      "doi": "10.14778/3749646.3749677",
+      "publisher": "Association for Computing Machinery (ACM)",
+      "year": "2025",
+      "pages": "4073--4080",
+      "number": "11",
+      "volume": "18",
+      "journal": "Proceedings of the VLDB Endowment",
+      "title": "{Semantic Integrity Constraints: Declarative Guardrails for AI-Augmented Data Processing Systems}",
+      "author": "Lee, Alexander W. and Chan, Justin and Fu, Michael and Kim, Nicolas and Mehta, Akshay and Raghavan, Deepti and {\\c C}etintemel, U{\\u g}ur",
+      "ENTRYTYPE": "article",
+      "ID": "arxiv250300600"
+    },
+    "entry_sha256": "587a754e13ea8dd89b274f669b5bab171ecfd47b528bb24d8a64b4f86e650f5e",
+    "sources": [
+      "https://arxiv.org/abs/2503.00600",
+      "https://api.crossref.org/works/10.14778/3749646.3749677"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv250300600.json": "16ea8d2f782f13130fb57ce0980adaf5399640ee2bb6bbf44eea549c32b36d40",
+      "arxiv250300600.html": "8b824ca2b8c0487b944e252b14faa404d0155c01d44eb2dd3a24ffcb213814db",
+      "arxiv250300600.crossref.json.gz": "2499f3e0b2c2824f97f5d87bc0f6c76eeba2fa842c5197d09f384adb01b328f5"
+    }
+  },
+  {
+    "key": "arxiv251005310",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2510.05310",
+      "howpublished": "arXiv:2510.05310",
+      "year": "2025",
+      "author": "She, Yining and Peterson, Daniel W. and Liu, Marianne Menglin and Upadhyay, Vikas and Chaghazardi, Mohammad Hossein and Kang, Eunsuk and Roth, Dan",
+      "title": "{RAG Makes Guardrails Unsafe? Investigating Robustness of Guardrails under RAG-style Contexts}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv251005310"
+    },
+    "entry_sha256": "1e88bf934a8766362176e79e0323ee6e1f5d92377d16c2b8259fb04c5b4a387d",
+    "sources": [
+      "https://arxiv.org/abs/2510.05310"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv251005310.json": "f35f6520f2b23e83963003b763013f2f48f5457ffb86545d4316767b39879ee9",
+      "arxiv251005310.html": "089a8d37b1dbd172a6bc44a581fa62742bec8f9897444c8e24136e750deedb8e",
+      "arxiv251005310.crossref.json.gz": "8a24ee97e1e169b1d7f7f28c7fa167020348f840bd1b9cb3963b3d013fdadcb2"
+    }
+  },
+  {
+    "key": "arxiv250721170",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2507.21170",
+      "howpublished": "arXiv:2507.21170",
+      "year": "2025",
+      "author": "DeLuca, Chad and Gentile, Anna Lisa and Asthana, Shubhi and Zhang, Bing and Chowdhary, Pawan and Cheng, Kellen and Shbita, Basel and Li, Pengyuan and Ren, Guang-Jie and Gopisetty, Sandeep",
+      "title": "{OneShield -- the Next Generation of LLM Guardrails}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv250721170"
+    },
+    "entry_sha256": "e8c59e5a0ae6f646c4ac271cccc9b978f87f1185a59b51920a96d5f03d4f0ac0",
+    "sources": [
+      "https://arxiv.org/abs/2507.21170"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv250721170.json": "b9c69fc77ba0a64909113a4d2634dd029f335a22e1ed434e94eb47afa07bcc2f",
+      "arxiv250721170.html": "3d1490789d7f1ec1f290e9a187d45dacd90c92356052421c3087e42b50a7a743",
+      "arxiv250721170.crossref.json.gz": "ebb3d4b977f94e3e3d3bf2f384aabf929d25c10db3ec5dc085b7ef5731439b1c"
+    }
+  },
+  {
+    "key": "arxiv250315707",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.1109/iros60139.2025.11246041",
+      "doi": "10.1109/iros60139.2025.11246041",
+      "publisher": "IEEE",
+      "year": "2025",
+      "pages": "21024--21031",
+      "booktitle": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "title": "{Safety Aware Task Planning via Large Language Models in Robotics}",
+      "author": "Khan, Azal Ahmad and Andrev, Michael and Murtaza, Muhammad Ali and Aguilera, Sergio and Zhang, Rui and Ding, Jie and Hutchinson, Seth and Anwar, Ali",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250315707"
+    },
+    "entry_sha256": "9cf8fbd6491ecac8b8c0915ea2c9d593ad61a05a940f4dbfd272570aaa1896b0",
+    "sources": [
+      "https://arxiv.org/abs/2503.15707",
+      "https://api.crossref.org/works/10.1109/iros60139.2025.11246041"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv250315707.json": "dec75a01669864aaf780900fd0637fe41904a671e7a32243668924af99244570",
+      "arxiv250315707.html": "36831784f29d736fdc00b957953d0946f61fba691765572b19e403732ae4d696",
+      "arxiv250315707.crossref.json.gz": "616d75b9da36ec240b114b065c86a981d73ad159fbf1f365a8ae95d2bfe77c2a"
+    }
+  },
+  {
+    "key": "arxiv250816481",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2508.16481",
+      "howpublished": "arXiv:2508.16481",
+      "year": "2025",
+      "author": "Nöther, Jonathan and Singla, Adish and Radanovic, Goran",
+      "title": "{Benchmarking the Robustness of Agentic Systems to Adversarially-Induced Harms}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv250816481"
+    },
+    "entry_sha256": "1d6f6f71af9c37a4e53de9622a27100a1db687ea3e8879814f0786dbb706f058",
+    "sources": [
+      "https://arxiv.org/abs/2508.16481",
+      "https://people.mpi-sws.org/~gradanovic/publications.html"
+    ],
+    "note": "Author publication list says to appear at COLM 2026. Secondary indexes disagree (ICLR 2026); retain arXiv until a primary published record is available.",
+    "evidence": {
+      "arxiv250816481.json": "3a1b1b4d5a01854554d45b72d864fa136bc81f2addbe154ab8353627cf0d0676",
+      "arxiv250816481.html": "7b30afc61177ec4f0f5c37596c36d582664c971fcb9e1d696b5ba7d7aa0c2080",
+      "arxiv250816481.crossref.json.gz": "e84e2ccaa3ddca826741f90843b586631c0152563b0566d0b1830aa23f53c917",
+      "arxiv250816481.author-page.html": "d6fcc85ca0b1093e3e6a88cb8e33aa4e140b2a05d901b4071c5500239fd4d2a9",
+      "supplemental-web-evidence.json": "1162c49ef9b4ee7c745cae8d3fbd27438f4fe33afdc44d2c192a05b24b0de279"
+    }
+  },
+  {
+    "key": "arxiv251102164",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2511.02164",
+      "howpublished": "arXiv:2511.02164",
+      "year": "2025",
+      "author": "Vin, Eric and Miller, Kyle A. and Incer, Inigo and Seshia, Sanjit A. and Fremont, Daniel J.",
+      "title": "{ScenicProver: A Framework for Compositional Probabilistic Verification of Learning-Enabled Systems}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv251102164"
+    },
+    "entry_sha256": "33450f6383f88826bfddf7ee969595ef0558e3c3acabbcc581edd3c1f3a1eb2e",
+    "sources": [
+      "https://arxiv.org/abs/2511.02164"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv251102164.json": "48b4eb61bfa495364a494f009d03379293e903c41c05b95e26d55bfddf7c1e62",
+      "arxiv251102164.html": "b800766646a947f0a3bd6ec65f1bc92c86a89210f8ef8177b4341ff9606a00ad",
+      "arxiv251102164.crossref.json.gz": "03f6e8213aced741c47d5b65783f37dcceb91502aed097008892c1dd2611629d"
+    }
+  },
+  {
+    "key": "arxiv251221220",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2512.21220",
+      "howpublished": "arXiv:2512.21220",
+      "year": "2025",
+      "author": "Wang, Le and Ying, Zonghao and Yang, Xiao and Zou, Quanchen and Yin, Zhenfei and Li, Tianlin and Yang, Jian and Yang, Yaodong and Liu, Aishan and Liu, Xianglong",
+      "title": "{RoboSafe: Safeguarding Embodied Agents via Executable Safety Logic}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv251221220"
+    },
+    "entry_sha256": "06c81184bdb0b0d910ee52217deaec0a5d41d076d734e8866c652aabac2c08c7",
+    "sources": [
+      "https://arxiv.org/abs/2512.21220",
+      "https://openreview.net/pdf?id=wyKCkQ2GyO"
+    ],
+    "note": "Search-indexed final PDF reports ICLR 2026 and adds Lu Sheng, but its OpenReview landing page/PDF are challenge-blocked and the official proceedings index has no matching entry. Retain arXiv author list and year pending directly verifiable publication metadata.",
+    "evidence": {
+      "arxiv251221220.json": "a6eb9cce8d4f1edacf3c64697fa9263649da7587bc0ec7bc0b017b6753063527",
+      "arxiv251221220.html": "57005f6774164cd69d18fbce712a779cf427527ec92644c7168e380ed16a606a",
+      "arxiv251221220.crossref.json.gz": "67b605509dc914900d79e8ffd1a0c6a7d43e5fe98dea567de289e24c4fb51603",
+      "supplemental-web-evidence.json": "1162c49ef9b4ee7c745cae8d3fbd27438f4fe33afdc44d2c192a05b24b0de279"
+    }
+  },
+  {
+    "key": "arxiv260223719",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2602.23719",
+      "howpublished": "arXiv:2602.23719",
+      "year": "2026",
+      "author": "Zhao, Wenzhe and Zhao, Yang and Liu, Ganchao and Jiang, Zhiyu and Ma, Dandan and Li, Zihao and Li, Xuelong",
+      "title": "{SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv260223719"
+    },
+    "entry_sha256": "12d10db176970920c8535668832248b99561fa0a7df1d44a39b372fc53b7b6d7",
+    "sources": [
+      "https://arxiv.org/abs/2602.23719"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv260223719.json": "f9c16eb3d9257e77a1b785f30bcb642fe9e89fbe37cb210fb5ff18d5ca1c77fb",
+      "arxiv260223719.html": "e9f59a8b9056e5f26f5f4ca3aef58982994b546b1f6df08db9c5a49446954a39",
+      "arxiv260223719.crossref.json.gz": "9b3b61c657d0f5ba41c0cbac033a042d21540bebcfd9e8fa7f0656e1e8b09948"
+    }
+  },
+  {
+    "key": "arxiv240501563",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2405.01563",
+      "howpublished": "arXiv:2405.01563",
+      "year": "2024",
+      "author": "Yadkori, Yasin Abbasi and Kuzborskij, Ilja and Stutz, David and György, András and Fisch, Adam and Doucet, Arnaud and Beloshapka, Iuliya and Weng, Wei-Hung and Yang, Yao-Yuan and Szepesvári, Csaba and Cemgil, Ali Taylan and Tomasev, Nenad",
+      "title": "{Mitigating LLM Hallucinations via Conformal Abstention}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv240501563"
+    },
+    "entry_sha256": "0270f3e243315d21cd88785f845cdaf7a52236cbc96c650be42357e380cea7e8",
+    "sources": [
+      "https://arxiv.org/abs/2405.01563"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv240501563.json": "b0bb501c9ce117a75009642dbbb8b2ff33a58840c8115e9956d9ac825681cb75",
+      "arxiv240501563.html": "df6652c9700f30b9dcbb20ed806de2bd041415a1501fc0afbb5bc1fdbba1a641",
+      "arxiv240501563.crossref.json.gz": "0f252830363bf1bc6dfbe6fa4924021c21b032a802ee24112e027157cfe45e6b"
+    }
+  },
+  {
+    "key": "arxiv220405862",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2204.05862",
+      "howpublished": "arXiv:2204.05862",
+      "year": "2022",
+      "author": "Bai, Yuntao and Jones, Andy and Ndousse, Kamal and Askell, Amanda and Chen, Anna and DasSarma, Nova and Drain, Dawn and Fort, Stanislav and Ganguli, Deep and Henighan, Tom and Joseph, Nicholas and Kadavath, Saurav and Kernion, Jackson and Conerly, Tom and El-Showk, Sheer and Elhage, Nelson and Hatfield-Dodds, Zac and Hernandez, Danny and Hume, Tristan and Johnston, Scott and Kravec, Shauna and Lovitt, Liane and Nanda, Neel and Olsson, Catherine and Amodei, Dario and Brown, Tom and Clark, Jack and McCandlish, Sam and Olah, Chris and Mann, Ben and Kaplan, Jared",
+      "title": "{Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv220405862"
+    },
+    "entry_sha256": "ffcdcaf94241019a485a90ac9d0f4798afb818da2ce536eb11b7420fdf1f6740",
+    "sources": [
+      "https://arxiv.org/abs/2204.05862"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv220405862.json": "0d8c59fd92c576beed7d3044acbd5fc5af276b1ebc2e2e44999fa791483b33b7",
+      "arxiv220405862.html": "9abe45bffd4492b76f12050bb575a9b727ac50b60cd4846754f77d661fff4d90",
+      "arxiv220405862.crossref.json.gz": "2ecb3bafba202bc8b7f591d57e5fff5f4147fd1470a1c1a608f2225a91d70101"
+    }
+  },
+  {
+    "key": "arxiv221208073",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2212.08073",
+      "howpublished": "arXiv:2212.08073",
+      "year": "2022",
+      "author": "Bai, Yuntao and Kadavath, Saurav and Kundu, Sandipan and Askell, Amanda and Kernion, Jackson and Jones, Andy and Chen, Anna and Goldie, Anna and Mirhoseini, Azalia and McKinnon, Cameron and Chen, Carol and Olsson, Catherine and Olah, Christopher and Hernandez, Danny and Drain, Dawn and Ganguli, Deep and Li, Dustin and Tran-Johnson, Eli and Perez, Ethan and Kerr, Jamie and Mueller, Jared and Ladish, Jeffrey and Landau, Joshua and Ndousse, Kamal and Lukosuite, Kamile and Lovitt, Liane and Sellitto, Michael and Elhage, Nelson and Schiefer, Nicholas and Mercado, Noemi and DasSarma, Nova and Lasenby, Robert and Larson, Robin and Ringer, Sam and Johnston, Scott and Kravec, Shauna and Showk, Sheer El and Fort, Stanislav and Lanham, Tamera and Telleen-Lawton, Timothy and Conerly, Tom and Henighan, Tom and Hume, Tristan and Bowman, Samuel R. and Hatfield-Dodds, Zac and Mann, Ben and Amodei, Dario and Joseph, Nicholas and McCandlish, Sam and Brown, Tom and Kaplan, Jared",
+      "title": "{Constitutional AI: Harmlessness from AI Feedback}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv221208073"
+    },
+    "entry_sha256": "f5ff359bfdf0eb132fe3983e2d7fd98abc443f32b3a79189088d93dafe570936",
+    "sources": [
+      "https://arxiv.org/abs/2212.08073"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv221208073.json": "26e3d01b3965e557a9285d0649247de614faf22bc6f6d2103f2756fe1ffeb135",
+      "arxiv221208073.html": "af4150ec2ab869161437875bfcf97360a5ef01ffe7a09fc7d112a0ac998d0657",
+      "arxiv221208073.crossref.json.gz": "9ac47d7b7a16894d6795f160a9aef5ff16c89ddabf20d4a50f175a3b63977bfe"
+    }
+  },
+  {
+    "key": "arxiv240617819",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.mlr.press/v258/blot25a.html",
+      "publisher": "PMLR",
+      "year": "2025",
+      "pages": "19--27",
+      "volume": "258",
+      "series": "Proceedings of Machine Learning Research",
+      "booktitle": "Proceedings of The 28th International Conference on Artificial Intelligence and Statistics",
+      "title": "{Automatically Adaptive Conformal Risk Control}",
+      "author": "Blot, Vincent and Angelopoulos, Anastasios N and Jordan, Michael I and Brunel, Nicolas J-B",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240617819"
+    },
+    "entry_sha256": "0965c9951d07a947fd0adf00bc7ea9b1ab5d8d871261132ec00ac18741d9cb73",
+    "sources": [
+      "https://arxiv.org/abs/2406.17819",
+      "https://proceedings.mlr.press/v258/blot25a.html"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv240617819.json": "48f439079ce02e557abebf5422a19851b99c2c269e84450b9e65a9e887d70155",
+      "arxiv240617819.html": "4ffab528bf931ed59f9056f653fea014aeefeb5561f1eaa18f800fde1dd19b0d",
+      "arxiv240617819.crossref.json.gz": "e9b31d056b3da48c5436bd29abcd9ac0f474c71ced0eb035b5b1216adfa335f2",
+      "arxiv240617819.publication.html": "f6d7069eb26f97fa6cc429e6be006ecdd6ea82794655b40aacc223a52ffd7826",
+      "arxiv240617819.publication.bib": "74b211f633c4113a69feeea7ed2cb1200cdf3058dd592c257fa22cb2cdd9aee8"
+    }
+  },
+  {
+    "key": "arxiv250220285",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.mlr.press/v267/chen25bd.html",
+      "publisher": "PMLR",
+      "year": "2025",
+      "pages": "8955--8978",
+      "volume": "267",
+      "series": "Proceedings of Machine Learning Research",
+      "booktitle": "Proceedings of the 42nd International Conference on Machine Learning",
+      "title": "{Conformal Tail Risk Control for Large Language Model Alignment}",
+      "author": "Chen, Catherine Yu-Chi and Shen, Jingyan and Deng, Zhun and Lei, Lihua",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250220285"
+    },
+    "entry_sha256": "8ca05a25373a490914068874692cfbd614a89dba60943782b95f48994e4c4c1b",
+    "sources": [
+      "https://arxiv.org/abs/2502.20285",
+      "https://proceedings.mlr.press/v267/chen25bd.html"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv250220285.json": "33f72090ebeccadbc17cbbcadfdea056af34bf2c844e7e92c229d8c6763c750b",
+      "arxiv250220285.html": "842c1026c90f33f5a5c7f0cd1243508ea4980d44d35eef4f0dc34934b8af7001",
+      "arxiv250220285.crossref.json.gz": "64caa20cbdbf125384b8edeef1a1e023ce992a83bf8a55c1cf4044c694594274",
+      "arxiv250220285.publication.html": "6aa43f0d113238d6c57baf2622ad9a4554c3b96fb3a6429cda11bc4e8e3fcd51",
+      "arxiv250220285.publication.bib": "559a2dfccfd111a832fde957b26ba8da96a35890cb4c444e02169aafdf0cf705"
+    }
+  },
+  {
+    "key": "arxiv230518404",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://openreview.net/pdf?id=0yN9RW1Vac",
+      "year": "2023",
+      "booktitle": "ICML 2023 Workshop on Neural Conversational AI (TEACH)",
+      "title": "{Conformal Prediction with Large Language Models for Multi-Choice Question Answering}",
+      "author": "Kumar, Bhawesh and Lu, Charles and Gupta, Gauri and Palepu, Anil and Bellamy, David and Raskar, Ramesh and Beam, Andrew",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv230518404"
+    },
+    "entry_sha256": "28e7d41ea54b5d745f5b0fe5f4bf160ea8b3710a241b219dcc22f7fbcfde40c3",
+    "sources": [
+      "https://arxiv.org/abs/2305.18404",
+      "https://openreview.net/pdf?id=0yN9RW1Vac"
+    ],
+    "note": "Workshop publication confirmed on the author-uploaded paper first page. That directly retrieved PDF spells the first author Bhawesh Kumar and the second Charles Lu; retained these names despite a differing search-index transcription. No formal proceedings pagination located.",
+    "evidence": {
+      "arxiv230518404.json": "199df8bb058348e935d55a0d0d0ff2a0741917a929aef25004ccb14a1236637b",
+      "arxiv230518404.html": "ff7a469f7c9e6b2acae9d7cd7d70915297bf35ea57f3d617adc5d5e88e2a874c",
+      "arxiv230518404.crossref.json.gz": "f602def9e399573efb5bfb701535182dad7e8ca39a7591e1f9ebc416cf688a2c",
+      "arxiv230518404.first-page.txt": "24a5d4aae8ef22224e30f2c908e57aae3339c639bc6651f6bbd8e376a8ea545f",
+      "supplemental-web-evidence.json": "1162c49ef9b4ee7c745cae8d3fbd27438f4fe33afdc44d2c192a05b24b0de279"
+    }
+  },
+  {
+    "key": "arxiv210907958",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.18653/v1/2022.acl-long.229",
+      "doi": "10.18653/v1/2022.acl-long.229",
+      "publisher": "Association for Computational Linguistics",
+      "year": "2022",
+      "pages": "3214--3252",
+      "booktitle": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "title": "{TruthfulQA: Measuring How Models Mimic Human Falsehoods}",
+      "author": "Lin, Stephanie and Hilton, Jacob and Evans, Owain",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv210907958"
+    },
+    "entry_sha256": "ccdfa7add85d329a0cac6579051636d367e9034d07d24a58ba2795e9c755c06e",
+    "sources": [
+      "https://arxiv.org/abs/2109.07958",
+      "https://api.crossref.org/works/10.18653/v1/2022.acl-long.229"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv210907958.json": "2aaab8d08df2efb3ba466ee7327fd250465882b73b4c8ec524e7a0633d006cc6",
+      "arxiv210907958.html": "4815c5a49e4a6931aef83cbb748f0a65f8a0b8889f7d66a371e6ab8e6132944e",
+      "arxiv210907958.crossref.json.gz": "45840715bb878e267d4639ca7dd82a598fae53c8a154db762e5fb9266420db01"
+    }
+  },
+  {
+    "key": "arxiv240210978",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.mlr.press/v235/mohri24a.html",
+      "publisher": "PMLR",
+      "year": "2024",
+      "pages": "36029--36047",
+      "volume": "235",
+      "series": "Proceedings of Machine Learning Research",
+      "booktitle": "Proceedings of the 41st International Conference on Machine Learning",
+      "title": "{Language Models with Conformal Factuality Guarantees}",
+      "author": "Mohri, Christopher and Hashimoto, Tatsunori",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240210978"
+    },
+    "entry_sha256": "07e6937a8fe5a96fe093cdeed2e4be31510a1d3b946428bf60fb3f72b8b01a53",
+    "sources": [
+      "https://arxiv.org/abs/2402.10978",
+      "https://proceedings.mlr.press/v235/mohri24a.html"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv240210978.json": "c8894f6366f8a9056f939335a3bd162d1741ae9710fc675b140f4a9af562370b",
+      "arxiv240210978.html": "91ff17aa4291e5b1209c658a0c8afb59ce159c585412cee951ca1a0505330170",
+      "arxiv240210978.crossref.json.gz": "56ffcb34579035908a592bcebbfde94fe87a54831d42e69e67ff83c5325c7a88",
+      "arxiv240210978.publication.html": "9c90c3892ccc5cf9ccad222972507214fbbc3a968f9cdb044363540699b20876",
+      "arxiv240210978.publication.bib": "ab83f31e1bc09e0f291c1ec1e1613649a23927ed6b657fa673bdf0f106f0144c"
+    }
+  },
+  {
+    "key": "arxiv230610193",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/31421b112e5f7faf4fc577b74e45dab2-Abstract-Conference.html",
+      "year": "2024",
+      "pages": "11654--11681",
+      "volume": "2024",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{Conformal Language Modeling}",
+      "author": "Quach, Victor and Fisch, Adam and Schuster, Tal and Yala, Adam and Sohn, Jae Ho and Jaakkola, Tommi S. and Barzilay, Regina",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv230610193"
+    },
+    "entry_sha256": "6db1986f9e84e2783d0a95146cdef0a3895b2cd977a86c9b58862a456833fa20",
+    "sources": [
+      "https://arxiv.org/abs/2306.10193",
+      "https://proceedings.iclr.cc/paper_files/paper/2024/hash/31421b112e5f7faf4fc577b74e45dab2-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/3967-/bibtex"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv230610193.json": "6147f37df2dc46c0bbc7d50b34b91c735928d74ea9ff04f333f1c59e0c4db947",
+      "arxiv230610193.html": "939a7aa8de8e53ce095d81b9fb41cce87183a38c0a79a9eea117db7af66350e4",
+      "arxiv230610193.crossref.json.gz": "e4d25990d4e3b31608925c32d16b5ec9ae8f16feb7551a46fec0ef45fbc9ee59",
+      "arxiv230610193.publication.html": "4ece50d473b8212a2d54d33cc856d73edd204b417f0c68e685b5de432caecdad",
+      "arxiv230610193.publication.bib": "59dc941df4584f2e2a7b133e37a212d2955ca97242833fc3facdbd5f1dccab28"
+    }
+  },
+  {
+    "key": "arxiv240301216",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.18653/v1/2024.findings-emnlp.54",
+      "doi": "10.18653/v1/2024.findings-emnlp.54",
+      "publisher": "Association for Computational Linguistics",
+      "year": "2024",
+      "pages": "979--995",
+      "booktitle": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+      "title": "{API Is Enough: Conformal Prediction for Large Language Models Without Logit-Access}",
+      "author": "Su, Jiayuan and Luo, Jing and Wang, Hongwei and Cheng, Lu",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240301216"
+    },
+    "entry_sha256": "d474ca1ee6f1d1a15bf56463ce90aaf18867d7689827ac9f9a01c581213d3a8b",
+    "sources": [
+      "https://arxiv.org/abs/2403.01216",
+      "https://api.crossref.org/works/10.18653/v1/2024.findings-emnlp.54"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv240301216.json": "b461fe8e2a1ab89a4b4c86704216aa4abe30ea1a070897b9800a1485dd4f19f6",
+      "arxiv240301216.html": "cd3766cb360dc5e5ebb060c17a304f98ab72e461a6e6dad1b2597860b441f49d",
+      "arxiv240301216.crossref.json.gz": "7c9c13f0610b0d0dd5524619755cd0fadefd8803f3c4dd1435abf3cefa642c6b"
+    }
+  },
+  {
+    "key": "arxiv240314720",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://ceur-ws.org/Vol-3920/paper03.pdf",
+      "year": "2025",
+      "pages": "48--62",
+      "volume": "3920",
+      "series": "CEUR Workshop Proceedings",
+      "booktitle": "Proceedings of the Conference on Applied Machine Learning in Information Security (CAMLIS 2024)",
+      "title": "{Defending Against Indirect Prompt Injection Attacks With Spotlighting}",
+      "author": "Hines, Keegan and Lopez, Gary and Hall, Matthew and Zarfati, Federico and Zunger, Yonatan and Kiciman, Emre",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240314720"
+    },
+    "entry_sha256": "a0d5de374186f7863b8ea55a35f18269135bcd5ab953f2bc6cc09eadde630ead",
+    "sources": [
+      "https://arxiv.org/abs/2403.14720",
+      "https://ceur-ws.org/Vol-3920/"
+    ],
+    "note": "Conference held in 2024; proceedings published 2025-02-09. Bibliographic year uses the proceedings publication year.",
+    "evidence": {
+      "arxiv240314720.json": "d61cd54b6f45679887b4b2d7bf6f97e3cbe97eb5a6f26f0eece81aad03645b45",
+      "arxiv240314720.html": "d6ab0570a3a5156f2c691d1dc45cee4db1ca6be8fa28281d8e942a74818c4a5b",
+      "arxiv240314720.crossref.json.gz": "88aecf61a31c1e487577fde7334da3272f381f71b9e101fa7dbb09e7008ec510",
+      "supplemental-web-evidence.json": "1162c49ef9b4ee7c745cae8d3fbd27438f4fe33afdc44d2c192a05b24b0de279"
+    }
+  },
+  {
+    "key": "arxiv230900614",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2309.00614",
+      "howpublished": "arXiv:2309.00614",
+      "year": "2023",
+      "author": "Jain, Neel and Schwarzschild, Avi and Wen, Yuxin and Somepalli, Gowthami and Kirchenbauer, John and Chiang, Ping-yeh and Goldblum, Micah and Saha, Aniruddha and Geiping, Jonas and Goldstein, Tom",
+      "title": "{Baseline Defenses for Adversarial Attacks Against Aligned Language Models}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv230900614"
+    },
+    "entry_sha256": "37a87ee27f6ba3f7195b7e5f6bea817512081332bd974f224edf22baf7cc0592",
+    "sources": [
+      "https://arxiv.org/abs/2309.00614"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv230900614.json": "f4c6c8642c3695230b1569c60057aff307fbc99ef9b0ad3d8f22086b8450c0fb",
+      "arxiv230900614.html": "6b6be252ddb6b90ab6b33a2a075a06de5a10bbce09341cf373487b6bd41b7a22",
+      "arxiv230900614.crossref.json.gz": "089872b924be1e51fb8f2813fe8f4f2eeab41bfa61800c5db9f0b09080c9deb1"
+    }
+  },
+  {
+    "key": "arxiv241216682",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.18653/v1/2025.acl-long.1435",
+      "doi": "10.18653/v1/2025.acl-long.1435",
+      "publisher": "Association for Computational Linguistics",
+      "year": "2025",
+      "pages": "29680--29697",
+      "booktitle": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "title": "{The Task Shield: Enforcing Task Alignment to Defend Against Indirect Prompt Injection in LLM Agents}",
+      "author": "Jia, Feiran and Wu, Tong and Qin, Xin and Squicciarini, Anna",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv241216682"
+    },
+    "entry_sha256": "195401abf28a1bf5135f0736364efce15840dfd0cc4dc7214efd87a78b128a45",
+    "sources": [
+      "https://arxiv.org/abs/2412.16682",
+      "https://api.crossref.org/works/10.18653/v1/2025.acl-long.1435"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arxiv241216682.json": "a5b919068d16def761e04ee794ee0bb267518b30768d06f75ff4943edcae6773",
+      "arxiv241216682.html": "7ffa2b99e0851ab6ed39a95c2b37b29faa7a15e114887e56930ac4ebdf7c0928",
+      "arxiv241216682.crossref.json.gz": "a6c8e0b7c67ad2231d5d4fb6b0f2985152a0a8646bb2c47f13c14dece7d09510"
+    }
+  },
+  {
+    "key": "arxiv240413208",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2404.13208",
+      "howpublished": "arXiv:2404.13208",
+      "year": "2024",
+      "author": "Wallace, Eric and Xiao, Kai and Leike, Reimar and Weng, Lilian and Heidecke, Johannes and Beutel, Alex",
+      "title": "{The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv240413208"
+    },
+    "entry_sha256": "e55f417e520a43e666772513716c5fa819dd179f7378e8ee324294e8c5a5eb10",
+    "sources": [
+      "https://arxiv.org/abs/2404.13208"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv240413208.json": "4acd24651348c02c68ccb57de81026fa62360989a048e48f0b38a600bb20bd3d",
+      "arxiv240413208.html": "1907aab4ab46e81e9704db3070a89d5c0fab6c69ad6c77450b297b5127cf14b7",
+      "arxiv240413208.crossref.json.gz": "d479ea88da7132a4b9cc1520a3b90b10a626aac30db6e408ee83b921c2a61dc4"
+    }
+  },
+  {
+    "key": "arxiv240801605",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2408.01605",
+      "howpublished": "arXiv:2408.01605",
+      "year": "2024",
+      "author": "Wan, Shengye and Nikolaidis, Cyrus and Song, Daniel and Molnar, David and Crnkovich, James and Grace, Jayson and Bhatt, Manish and Chennabasappa, Sahana and Whitman, Spencer and Ding, Stephanie and Ionescu, Vlad and Li, Yue and Saxe, Joshua",
+      "title": "{CYBERSECEVAL 3: Advancing the Evaluation of Cybersecurity Risks and Capabilities in Large Language Models}",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv240801605"
+    },
+    "entry_sha256": "d7ae4c79223997bc8a7218ae3f17f5f6d2007e1440415c83c55754399795ecbf",
+    "sources": [
+      "https://arxiv.org/abs/2408.01605"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "arxiv240801605.json": "29e3ddf25b38e9daf1a4319847fb5253edade878bdea6a9aa652fffe6e5659c9",
+      "arxiv240801605.html": "37408db33901607940f7410e8e035541dad3321e756abfa086d2d067d078169e",
+      "arxiv240801605.crossref.json.gz": "9e2f7f1b903902edbc4522bfcba24e9217c901ee93ba931771198392a4fda942"
+    }
+  },
+  {
+    "key": "saltzer1975protection",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1109/PROC.1975.9939",
+      "year": "1975",
+      "pages": "1278--1308",
+      "number": "9",
+      "volume": "63",
+      "journal": "Proceedings of the IEEE",
+      "title": "The Protection of Information in Computer Systems",
+      "author": "Saltzer, Jerome H. and Schroeder, Michael D.",
+      "ENTRYTYPE": "article",
+      "ID": "saltzer1975protection"
+    },
+    "entry_sha256": "c386775352e7e8bb2a243b464f2c2e8daf60ab5228ff09cf5220f2956f53be21",
+    "sources": [
+      "https://doi.org/10.1109/PROC.1975.9939"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "saltzer1975protection.json": "d559cbe300ac429c3e0096328fcae6d33fe4c4c635966803b7a2282926a8af46",
+      "saltzer1975protection.crossref.json.gz": "4431a6bad8724a1453fd18eadc8e3f86e1ef46f04e37ee36565cbdf8d2c3b7f7"
+    }
+  },
+  {
+    "key": "anderson1972computer",
+    "checked": "2026-10-29",
+    "status": "techreport",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://conferences.computer.org/sp/pdfs/early/ande72.pdf",
+      "institution": "U.S. Air Force Electronic Systems Division",
+      "year": "1972",
+      "number": "ESD-TR-73-51",
+      "title": "Computer Security Technology Planning Study",
+      "author": "Anderson, James P.",
+      "ENTRYTYPE": "techreport",
+      "ID": "anderson1972computer"
+    },
+    "entry_sha256": "c094883bf0f026c4b7eae2e7852bca5f9d5bdb0b91e9d4070bfdb9619e74ba92",
+    "sources": [
+      "https://conferences.computer.org/sp/pdfs/early/ande72.pdf"
+    ],
+    "note": "Primary scan confirms October 1972 and ESD-TR-73-51 (a two-volume report). The retained URL is the Volume II scan.",
+    "evidence": {
+      "anderson1972computer.json": "0cb39d49f84af32a48de6d06066d78c122e95accbd0b4ef07b6a396d193b2321",
+      "anderson1972computer.crossref.json.gz": "d7031a0ad8c2050030ef4b45ddedf2772aa60ebe8107ea8a4ee7a13504ed7da4",
+      "supplemental-web-evidence.json": "1162c49ef9b4ee7c745cae8d3fbd27438f4fe33afdc44d2c192a05b24b0de279"
+    }
+  },
+  {
+    "key": "denning1976lattice",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1145/360051.360056",
+      "year": "1976",
+      "pages": "236--243",
+      "number": "5",
+      "volume": "19",
+      "journal": "Communications of the ACM",
+      "title": "A Lattice Model of Secure Information Flow",
+      "author": "Denning, Dorothy E.",
+      "ENTRYTYPE": "article",
+      "ID": "denning1976lattice"
+    },
+    "entry_sha256": "53595f8607f61831d2cedcddacf7582ce76ea1ef8cb4c7d458b4bb1d89117333",
+    "sources": [
+      "https://doi.org/10.1145/360051.360056"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "denning1976lattice.json": "b49c77fb4833b663bfdd716a5e53d2a28a25b9c5fb700234854446488ec71884",
+      "denning1976lattice.crossref.json.gz": "5e0bc16c70dd70bee47dc2f9c44549f0be433209da9862de7bfbfa7d8801e6c6"
+    }
+  },
+  {
+    "key": "schneider2000enforceable",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1145/353323.353382",
+      "year": "2000",
+      "pages": "30--50",
+      "number": "1",
+      "volume": "3",
+      "journal": "ACM Transactions on Information and System Security",
+      "title": "Enforceable Security Policies",
+      "author": "Schneider, Fred B.",
+      "ENTRYTYPE": "article",
+      "ID": "schneider2000enforceable"
+    },
+    "entry_sha256": "086b220a4762bc40b25936097cab2e42e1df3ffb819601a79d7dca12daec5bd1",
+    "sources": [
+      "https://doi.org/10.1145/353323.353382"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "schneider2000enforceable.json": "d8e4ab1182da8cd7159524255429e415ede86907df2f7ef21bca6841e67f087a",
+      "schneider2000enforceable.crossref.json.gz": "4752c58e0e2b5c452dd9aaf9d02f7b54b12574568a8d0a415b273faca4ee263d"
+    }
+  },
+  {
+    "key": "sabelfeld2003language",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1109/JSAC.2002.806121",
+      "year": "2003",
+      "pages": "5--19",
+      "number": "1",
+      "volume": "21",
+      "journal": "IEEE Journal on Selected Areas in Communications",
+      "title": "Language-Based Information-Flow Security",
+      "author": "Sabelfeld, Andrei and Myers, Andrew C.",
+      "ENTRYTYPE": "article",
+      "ID": "sabelfeld2003language"
+    },
+    "entry_sha256": "e9b3b79bd238ed6fcf70c212dbe514ebfa97eee97729fa31b74ea6d4e582d2de",
+    "sources": [
+      "https://doi.org/10.1109/JSAC.2002.806121"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "sabelfeld2003language.json": "fadc12479471f09364e99cf41662d44d5f5af5c394246bc6e7d398d372c7936e",
+      "sabelfeld2003language.crossref.json.gz": "f2d9cf92c81ad76f19509660c31434e6c08e91eb16772c6e749209363430ce82"
+    }
+  },
+  {
+    "key": "misra1981proofs",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1109/TSE.1981.230844",
+      "year": "1981",
+      "pages": "417--426",
+      "number": "4",
+      "volume": "SE-7",
+      "journal": "IEEE Transactions on Software Engineering",
+      "title": "Proofs of Networks of Processes",
+      "author": "Misra, Jayadev and Chandy, K. Mani",
+      "ENTRYTYPE": "article",
+      "ID": "misra1981proofs"
+    },
+    "entry_sha256": "29e87907dfcc0fbdfc42a1067eb502b8c768d62f47bcbcd7f1c2f860e8fd5af8",
+    "sources": [
+      "https://doi.org/10.1109/TSE.1981.230844"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "misra1981proofs.json": "c44a7667883689dc63d806143a3bf8a63c6a8b9188e12dda33d7430200f7b563",
+      "misra1981proofs.crossref.json.gz": "39eef23d269c0dbbcc3a0adb6d895b2acadb0bcf3cc4f7a8b15a8f5b4a65236d"
+    }
+  },
+  {
+    "key": "jones1983tentative",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1145/69575.69577",
+      "year": "1983",
+      "pages": "596--619",
+      "number": "4",
+      "volume": "5",
+      "journal": "ACM Transactions on Programming Languages and Systems",
+      "title": "Tentative Steps Toward a Development Method for Interfering Programs",
+      "author": "Jones, Cliff B.",
+      "ENTRYTYPE": "article",
+      "ID": "jones1983tentative"
+    },
+    "entry_sha256": "23eb94a37d07907fee55a861bf04f6a5e73868de5666439fb64f6a0760c5a482",
+    "sources": [
+      "https://doi.org/10.1145/69575.69577"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "jones1983tentative.json": "0f915a878c802f875fb82aff1e84d01011e6acefef5637c68e85334d74388281",
+      "jones1983tentative.crossref.json.gz": "d09a1b14f3537c63804930607172ffadbaa51914dd6cccd98b22394f3fcde57f"
+    }
+  },
+  {
+    "key": "abadi1993composing",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1145/151646.151649",
+      "year": "1993",
+      "pages": "73--132",
+      "number": "1",
+      "volume": "15",
+      "journal": "ACM Transactions on Programming Languages and Systems",
+      "title": "Composing Specifications",
+      "author": "Abadi, Mart{\\'\\i}n and Lamport, Leslie",
+      "ENTRYTYPE": "article",
+      "ID": "abadi1993composing"
+    },
+    "entry_sha256": "18d16baf3fc65d98273ddcbd60a274e6045fe3232121b1ce58488d87d81fd597",
+    "sources": [
+      "https://doi.org/10.1145/151646.151649"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "abadi1993composing.json": "13dcbb13830a90a993e400b5791aff737d4595d93f5807167fa7eeb2d4602b1d",
+      "abadi1993composing.crossref.json.gz": "d1e2d495284729ff826bb42933bd172ac031508519c9cbd8e49591a3a0cf2cb9"
+    }
+  },
+  {
+    "key": "benveniste2018contracts",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1561/1000000053",
+      "year": "2018",
+      "pages": "124--400",
+      "number": "2--3",
+      "volume": "12",
+      "journal": "Foundations and Trends in Electronic Design Automation",
+      "title": "Contracts for System Design",
+      "author": "Benveniste, Albert and Caillaud, Beno{\\^\\i}t and Nickovic, Dejan and Passerone, Roberto and Raclet, Jean-Baptiste and Reinkemeier, Philipp and Sangiovanni-Vincentelli, Alberto and Damm, Werner and Henzinger, Thomas A. and Larsen, Kim G.",
+      "ENTRYTYPE": "article",
+      "ID": "benveniste2018contracts"
+    },
+    "entry_sha256": "e5bb94483b60855514f4dc972dc26943fb8cc20ab0d377e23d595a9e8c6df5c1",
+    "sources": [
+      "https://doi.org/10.1561/1000000053"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "benveniste2018contracts.json": "ecbac5e92c28908476e4ff95ef5b9a5725b98848c9b92e6c1ef12150a60f2c4a",
+      "benveniste2018contracts.crossref.json.gz": "d4548b8fdb7ad1b3367c25852e8d4670ef60d1af2531d8e4a6fe92d22327991a"
+    }
+  },
+  {
+    "key": "meyer1992applying",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1109/2.161279",
+      "year": "1992",
+      "pages": "40--51",
+      "number": "10",
+      "volume": "25",
+      "journal": "Computer",
+      "title": "Applying ``Design by Contract''",
+      "author": "Meyer, Bertrand",
+      "ENTRYTYPE": "article",
+      "ID": "meyer1992applying"
+    },
+    "entry_sha256": "992da0df556eb96962b0c73d3d78677e9e36f344036c0e7dbcd3a7eda875cd6e",
+    "sources": [
+      "https://doi.org/10.1109/2.161279"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "meyer1992applying.json": "0af219c6f598e8676169438c5fa6f31ab54c5e747504d6e36bbaac7c40dc8b91",
+      "meyer1992applying.crossref.json.gz": "e33f720739f9e4be879b5d852cc06c8a5f3fdbe4f747c821d1dfe17d48171873"
+    }
+  },
+  {
+    "key": "leucker2009brief",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1016/j.jlap.2008.08.004",
+      "year": "2009",
+      "pages": "293--303",
+      "number": "5",
+      "volume": "78",
+      "journal": "The Journal of Logic and Algebraic Programming",
+      "title": "A Brief Account of Runtime Verification",
+      "author": "Leucker, Martin and Schallhart, Christian",
+      "ENTRYTYPE": "article",
+      "ID": "leucker2009brief"
+    },
+    "entry_sha256": "3914469e149002cf37013c4ca69c56d69efc4b547339326d58939f4512c98c0e",
+    "sources": [
+      "https://doi.org/10.1016/j.jlap.2008.08.004"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "leucker2009brief.json": "c8c3ee87ef26918cc463032be4662c3e64dd6c2ab6e1c61a12cd4c8a2ebf41d1",
+      "leucker2009brief.crossref.json.gz": "6b49441e223890eb6754b600a15e946942eca21f9a08f9a87e21691a27d174e1"
+    }
+  },
+  {
+    "key": "sha2001using",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1109/MS.2001.936213",
+      "year": "2001",
+      "pages": "20--28",
+      "number": "4",
+      "volume": "18",
+      "journal": "IEEE Software",
+      "title": "Using Simplicity to Control Complexity",
+      "author": "Sha, Lui",
+      "ENTRYTYPE": "article",
+      "ID": "sha2001using"
+    },
+    "entry_sha256": "07ff264346701df8d769f5a53607a1b98bc9bbe75c3cc22a3f596071c90575d1",
+    "sources": [
+      "https://doi.org/10.1109/MS.2001.936213"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "sha2001using.json": "91e3d24ab6d2da20d6f36d7b32d77c26d97c89a8395f24345593e5cad7a898fd",
+      "sha2001using.crossref.json.gz": "5bda48898fee72081e6b7333c6ab3e29e59a8a3fcb9ede600b9cff8481df9369"
+    }
+  },
+  {
+    "key": "kwiatkowska2011prism",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1007/978-3-642-22110-1_47",
+      "publisher": "Springer",
+      "year": "2011",
+      "pages": "585--591",
+      "volume": "6806",
+      "series": "LNCS",
+      "booktitle": "Proc. Int. Conf. Computer Aided Verification (CAV)",
+      "title": "{PRISM} 4.0: Verification of Probabilistic Real-Time Systems",
+      "author": "Kwiatkowska, Marta and Norman, Gethin and Parker, David",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "kwiatkowska2011prism"
+    },
+    "entry_sha256": "56ce78f5df42c210540b4e466c006cb705a0d8d7e4f75ec62a59089f7d0e6dfa",
+    "sources": [
+      "https://doi.org/10.1007/978-3-642-22110-1_47"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "kwiatkowska2011prism.json": "df61130aec334b1025e5c8a96f8d59a313ef02d56d8eaa1864ca1e0fefd78577",
+      "kwiatkowska2011prism.crossref.json.gz": "d16a1152a54c40d353657f6c440dc997fbcdac113302724a5ff5cfedab30d142"
+    }
+  },
+  {
+    "key": "viola2001rapid",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1109/CVPR.2001.990517",
+      "year": "2001",
+      "pages": "I-511--I-518",
+      "volume": "1",
+      "booktitle": "Proc. IEEE Computer Society Conf. Computer Vision and Pattern Recognition (CVPR)",
+      "title": "Rapid Object Detection Using a Boosted Cascade of Simple Features",
+      "author": "Viola, Paul and Jones, Michael",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "viola2001rapid"
+    },
+    "entry_sha256": "046b9bbfa10298348ae60862aca82867c8c76d232488a0aea75dafe3307ec490",
+    "sources": [
+      "https://doi.org/10.1109/CVPR.2001.990517"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "viola2001rapid.json": "c13ad27cf003c9c5a67f90d80f2f5ff47815013fc481293b443211d4367687a1",
+      "viola2001rapid.crossref.json.gz": "851683f7de77c93be6ba436b4af1079c484afd32cba69470b2d46b1adb47b48d"
+    }
+  },
+  {
+    "key": "clopper1934use",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1093/biomet/26.4.404",
+      "year": "1934",
+      "pages": "404--413",
+      "number": "4",
+      "volume": "26",
+      "journal": "Biometrika",
+      "title": "The Use of Confidence or Fiducial Limits Illustrated in the Case of the Binomial",
+      "author": "Clopper, C. J. and Pearson, E. S.",
+      "ENTRYTYPE": "article",
+      "ID": "clopper1934use"
+    },
+    "entry_sha256": "36aa0cc769d57c806e03855738c44a15a447c9dcacd8b793f87569b0b5efb4a1",
+    "sources": [
+      "https://doi.org/10.1093/biomet/26.4.404"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "clopper1934use.json": "d3d44e9935c2c7a1bfb1330627e2c9ad107b77938f8ca1d724a58f61ceb8adf1",
+      "clopper1934use.crossref.json.gz": "15f7c074cad306819ca39565b6d5ac0b58aaf08558015d7670f0adf17d3d71d3"
+    }
+  },
+  {
+    "key": "bates2021distribution",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1145/3478535",
+      "year": "2021",
+      "pages": "1--34",
+      "number": "6",
+      "volume": "68",
+      "journal": "Journal of the ACM",
+      "title": "Distribution-Free, Risk-Controlling Prediction Sets",
+      "author": "Bates, Stephen and Angelopoulos, Anastasios and Lei, Lihua and Malik, Jitendra and Jordan, Michael",
+      "ENTRYTYPE": "article",
+      "ID": "bates2021distribution"
+    },
+    "entry_sha256": "5ba225f20b49799baf749ff137b053bf40ac4c1c91d43962e04e82fe50c30410",
+    "sources": [
+      "https://doi.org/10.1145/3478535"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "bates2021distribution.json": "fef1499294cb220a6d259876086f46947303dc0017c374dc0528a190a752a2bc",
+      "bates2021distribution.crossref.json.gz": "1ada16bfd366a340be4169b4da4a19e337ee16dac57587074de7b07ded20e92b"
+    }
+  },
+  {
+    "key": "angelopoulos2021learn",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://doi.org/10.1214/24-aoas1998",
+      "doi": "10.1214/24-aoas1998",
+      "publisher": "Institute of Mathematical Statistics",
+      "year": "2025",
+      "pages": "1641--1662",
+      "number": "2",
+      "volume": "19",
+      "journal": "The Annals of Applied Statistics",
+      "title": "{Learn then test: Calibrating predictive algorithms to achieve risk control}",
+      "author": "Angelopoulos, Anastasios N. and Bates, Stephen and Cand{\\`e}s, Emmanuel J. and Jordan, Michael I. and Lei, Lihua",
+      "ENTRYTYPE": "article",
+      "ID": "angelopoulos2021learn"
+    },
+    "entry_sha256": "a2b942b5eb23b42912d20bf0144f5d04c11fd36f204c6d7e612798b3f2eb7928",
+    "sources": [
+      "https://arxiv.org/abs/2110.01052",
+      "https://api.crossref.org/works/10.1214/24-aoas1998"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "angelopoulos2021learn.json": "721ac5b10df791f7e0c140321aa8802903a1a9cc099eeabf0bae68e33ffbb38d",
+      "angelopoulos2021learn.html": "969f79135654f15fbbfd4ea65a73696764f6647ce9d26933ce5889e2c114ea7c",
+      "angelopoulos2021learn.crossref.json.gz": "4ff52a9d42406543d637a0593991f1306a0422b7bce77804b5398fe501e8bd09"
+    }
+  },
+  {
+    "key": "tibshirani2019conformal",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2019/hash/8fb21ee7a2207526da55a679f0332de2-Abstract.html",
+      "publisher": "Curran Associates, Inc.",
+      "year": "2019",
+      "pages": "",
+      "volume": "32",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "title": "{Conformal Prediction Under Covariate Shift}",
+      "author": "Tibshirani, Ryan J. and Barber, Rina Foygel and Cand{\\`e}s, Emmanuel J. and Ramdas, Aaditya",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "tibshirani2019conformal"
+    },
+    "entry_sha256": "876011ff6955cf5d1f81569360cdf264cd3f04412a4fe9e4adf776ac9c36c5a9",
+    "sources": [
+      "https://arxiv.org/abs/1904.06019",
+      "https://proceedings.neurips.cc/paper_files/paper/2019/hash/8fb21ee7a2207526da55a679f0332de2-Abstract.html",
+      "https://proceedings.neurips.cc/paper_files/paper/2019/file/8fb21ee7a2207526da55a679f0332de2-Bibtex.bib"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "tibshirani2019conformal.json": "98741434e4fe475e44f6b94f100ec5d5399dead93f35a1b4828b86cf7344c20c",
+      "tibshirani2019conformal.html": "b1eee2715b9567ecc50dca9fd49f551b0515dcf5ac4d1eaa1263c5d62c803c62",
+      "tibshirani2019conformal.crossref.json.gz": "118c1ae7e92264ad2ad0cdd3d35dba7125582b7270fe306ca4e37213cb29c72b",
+      "tibshirani2019conformal.publication.html": "6dad113e3342166b29540ed6dda4ded4fcddc5745b255fc4634d68ef3bb7cf68",
+      "tibshirani2019conformal.publication.bib": "e0a82a9bb41605354fa138cad718fab626078bfbff7d166d3a5dd75ffb111e4f"
+    }
+  },
+  {
+    "key": "jimenez2023swebench",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": true,
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html",
+      "year": "2024",
+      "pages": "54107--54157",
+      "volume": "2024",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{SWE-bench: Can Language Models Resolve Real-world Github Issues?}",
+      "author": "Jimenez, Carlos E. and Yang, John and Wettig, Alexander and Yao, Shunyu and Pei, Kexin and Press, Ofir and Narasimhan, Karthik",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "jimenez2023swebench"
+    },
+    "entry_sha256": "2259e719ee0e9df35875153bea8ff0575a1df471c6a44a9e58557fcf0f854c50",
+    "sources": [
+      "https://arxiv.org/abs/2310.06770",
+      "https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/5227-/bibtex"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "jimenez2023swebench.json": "865c0a3385f726c22ed53bdb32df468e58ff5ba5631745f4177ba3de77b537d9",
+      "jimenez2023swebench.html": "f63bb0ddf0d56bd3e2f27797c41d263c3bcc0d0e62cc7801aaad4dc89172d895",
+      "jimenez2023swebench.crossref.json.gz": "a8cdb0c682fa40e853980d75c723f053c090102da6b66fa57553e40bdfc925cf",
+      "jimenez2023swebench.publication.html": "43dd58a8f7c5a086ba43b6131aea03c54af2877579f863b396d9d5e7d4159f12",
+      "jimenez2023swebench.publication.bib": "6dd0b7838e2f1e65fa481b0295948406d3679f1dd4e92494c4532d9801eee554"
+    }
+  },
+  {
+    "key": "ralph2020empirical",
+    "checked": "2026-10-29",
+    "status": "preprint",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://arxiv.org/abs/2010.03525",
+      "year": "2020",
+      "howpublished": "arXiv:2010.03525",
+      "title": "{Empirical Standards for Software Engineering Research}",
+      "author": "Ralph, Paul and others",
+      "ENTRYTYPE": "misc",
+      "ID": "ralph2020empirical"
+    },
+    "entry_sha256": "26dbfb9ad33b96f638c0d64ce74d39458fbbd942df506b4f9c001bf585314e3f",
+    "sources": [
+      "https://arxiv.org/abs/2010.03525"
+    ],
+    "note": "No published version confirmed; retain the verified arXiv record.",
+    "evidence": {
+      "ralph2020empirical.json": "fb7d5aa8a53a029e4ce79daa5482865d3b8444b1cbfd0832f5503883eeb0014d",
+      "ralph2020empirical.html": "4b48e4b93255f275f8cbeb18391713f0cf3df7fb37912c23f5e417dfedb90fdd",
+      "ralph2020empirical.crossref.json.gz": "72910515758b988901f11b527de23c711f27ca3b17f496c77680eb0838ff05ef"
+    }
+  },
+  {
+    "key": "holm1979simple",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://www.jstor.org/stable/4615733",
+      "year": "1979",
+      "pages": "65--70",
+      "number": "2",
+      "volume": "6",
+      "journal": "Scandinavian Journal of Statistics",
+      "title": "A Simple Sequentially Rejective Multiple Test Procedure",
+      "author": "Holm, Sture",
+      "ENTRYTYPE": "article",
+      "ID": "holm1979simple"
+    },
+    "entry_sha256": "129728bfb52dacf64435426c310e76552e00e6b6c954533b7df158970a38a8cf",
+    "sources": [
+      "https://www.ime.usp.br/~abe/lista/pdf4R8xPVzCnX.pdf",
+      "https://www.jstor.org/stable/4615733"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "holm1979simple.json": "2c3a7101afdbb90ec65bc7ac2508e50c3bfb0d184480b72391b816d07858ce3f",
+      "holm1979simple.crossref.json.gz": "f4d553ad37aa0c35451041636a717f2b55a99981b0f497c665b7517b8c9bf49f",
+      "supplemental-web-evidence.json": "1162c49ef9b4ee7c745cae8d3fbd27438f4fe33afdc44d2c192a05b24b0de279"
+    }
+  },
+  {
+    "key": "wilcoxon1945individual",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.2307/3001968",
+      "year": "1945",
+      "pages": "80--83",
+      "number": "6",
+      "volume": "1",
+      "journal": "Biometrics Bulletin",
+      "title": "Individual Comparisons by Ranking Methods",
+      "author": "Wilcoxon, Frank",
+      "ENTRYTYPE": "article",
+      "ID": "wilcoxon1945individual"
+    },
+    "entry_sha256": "45fa2b65fc4d4ef106e84c2a4a9216da7f06917e27f0f7d77432704184e81d89",
+    "sources": [
+      "https://doi.org/10.2307/3001968"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "wilcoxon1945individual.json": "8982b77d6bf420bf0f19dfea4dc826a6f3810aa470f0487c22f9dc6e39d8d0f9",
+      "wilcoxon1945individual.crossref.json.gz": "6ce0a0e1f010b982dc23d49e00b47d2ed88b81be3cd62e422c83e1455c28e210"
+    }
+  },
+  {
+    "key": "vargha2000critique",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.3102/10769986025002101",
+      "year": "2000",
+      "pages": "101--132",
+      "number": "2",
+      "volume": "25",
+      "journal": "Journal of Educational and Behavioral Statistics",
+      "title": "A Critique and Improvement of the {CL} Common Language Effect Size Statistics of {McGraw} and {Wong}",
+      "author": "Vargha, Andr{\\'a}s and Delaney, Harold D.",
+      "ENTRYTYPE": "article",
+      "ID": "vargha2000critique"
+    },
+    "entry_sha256": "743f3c31d16830defc4a860b273cdb11db7ac1fbdb482e73f4e63fc286433460",
+    "sources": [
+      "https://doi.org/10.3102/10769986025002101"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "vargha2000critique.json": "6b1fa79bd968a05f40aa5dcc689b265f38f18e474ef2b10551729dfc09404e03",
+      "vargha2000critique.crossref.json.gz": "55b15bba3c0436bef1defb4f3ee777c354bb2bb1e97bef9ea79b0b755b33600c"
+    }
+  },
+  {
+    "key": "arcuri2011practical",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1145/1985793.1985795",
+      "year": "2011",
+      "pages": "1--10",
+      "booktitle": "Proc. 33rd Int. Conf. Software Engineering (ICSE)",
+      "title": "A Practical Guide for Using Statistical Tests to Assess Randomized Algorithms in Software Engineering",
+      "author": "Arcuri, Andrea and Briand, Lionel",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arcuri2011practical"
+    },
+    "entry_sha256": "9969ee5363d0995ab8eb6b1e038032b59cf483c864a5e1287370a894c8ee2146",
+    "sources": [
+      "https://doi.org/10.1145/1985793.1985795"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "arcuri2011practical.json": "faf88533e39f63b58cc25da5cb13907b4b0295c53ea61d63c491ad5f88c39799",
+      "arcuri2011practical.crossref.json.gz": "29f8f793fe5e8c5c7b05d55328638ee06470f0a0e69d8c3d639a308e0c9cb2ed"
+    }
+  },
+  {
+    "key": "efron1994introduction",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1201/9780429246593",
+      "year": "1994",
+      "publisher": "Chapman \\& Hall/CRC",
+      "title": "An Introduction to the Bootstrap",
+      "author": "Efron, Bradley and Tibshirani, Robert J.",
+      "ENTRYTYPE": "book",
+      "ID": "efron1994introduction"
+    },
+    "entry_sha256": "e1c4e855975c3b9e9c52d5f0636bdac085c92bbf81f04eca4821550427cca45a",
+    "sources": [
+      "https://doi.org/10.1201/9780429246593"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "efron1994introduction.json": "8659e3789b4ec817bc9e2d2cf5e5f4b8493d04cc1caaee6b180e5ed798e454f0",
+      "efron1994introduction.crossref.json.gz": "1629f379b6d2b6e70aff8f3e374f0ce29113a81c216a80d3caf7b305d572c106"
+    }
+  },
+  {
+    "key": "wohlin2012experimentation",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1007/978-3-642-29044-2",
+      "year": "2012",
+      "publisher": "Springer",
+      "title": "Experimentation in Software Engineering",
+      "author": "Wohlin, Claes and Runeson, Per and H{\\\"o}st, Martin and Ohlsson, Magnus C. and Regnell, Bj{\\\"o}rn and Wessl{\\'e}n, Anders",
+      "ENTRYTYPE": "book",
+      "ID": "wohlin2012experimentation"
+    },
+    "entry_sha256": "cf8903c3b35b51d0989a52f13f6d696e64c410c7a1120870513f4145da96341a",
+    "sources": [
+      "https://doi.org/10.1007/978-3-642-29044-2"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "wohlin2012experimentation.json": "3da53df4c488c5e80785d68aa13a462111e8007c03d70c012dffcf57351417d4",
+      "wohlin2012experimentation.crossref.json.gz": "8ecbc753618187569cd5a37231a29e9183d02c453de51c5502057e7f49bbc42b"
+    }
+  },
+  {
+    "key": "christianson1997why",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1007/3-540-62494-5_16",
+      "publisher": "Springer",
+      "year": "1997",
+      "pages": "171--176",
+      "volume": "1189",
+      "series": "LNCS",
+      "booktitle": "Security Protocols (Proc. Int. Workshop, 1996)",
+      "title": "Why Isn't Trust Transitive?",
+      "author": "Christianson, Bruce and Harbison, William S.",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "christianson1997why"
+    },
+    "entry_sha256": "8ba5fcaf9cc7783153f8758e1aa9e4e48c17a4e31c1805610edcc2ebfc935ad2",
+    "sources": [
+      "https://doi.org/10.1007/3-540-62494-5_16"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "christianson1997why.json": "f6989a16671fe32b5fd5ddef0a5fb7664fec455a86e59085b6ef125a287b4f79",
+      "christianson1997why.crossref.json.gz": "93c0544083fde260fd6ab8628c8a6811313b92f35dae8cbd74297a3dbe3591db"
+    }
+  },
+  {
+    "key": "delahaye2011probabilistic",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1007/s10703-010-0107-8",
+      "year": "2011",
+      "pages": "1--32",
+      "number": "1",
+      "volume": "38",
+      "journal": "Formal Methods in System Design",
+      "title": "Probabilistic Contracts: A Compositional Reasoning Methodology for the Design of Systems with Stochastic and/or Non-Deterministic Aspects",
+      "author": "Delahaye, Beno{\\^\\i}t and Caillaud, Beno{\\^\\i}t and Legay, Axel",
+      "ENTRYTYPE": "article",
+      "ID": "delahaye2011probabilistic"
+    },
+    "entry_sha256": "22df442d0fcfe06c1a2bb21b4b7f6acf805e8ca7c70ee96253a7fe1bad47be8a",
+    "sources": [
+      "https://doi.org/10.1007/s10703-010-0107-8"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "delahaye2011probabilistic.json": "981b2b2a692007549564b2889be98e20d2018773ede8d22013a8ecc2dea071dc",
+      "delahaye2011probabilistic.crossref.json.gz": "0953187e5c6b0dc059a8efc6271e5a3ab6d86c9a9c7414f4597546794ee04dd5"
+    }
+  },
+  {
+    "key": "nuzzo2019stochastic",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1145/3243216",
+      "year": "2019",
+      "pages": "1--26",
+      "number": "1",
+      "volume": "18",
+      "journal": "ACM Transactions on Embedded Computing Systems",
+      "title": "Stochastic Assume-Guarantee Contracts for Cyber-Physical System Design",
+      "author": "Nuzzo, Pierluigi and Li, Jiwei and Sangiovanni-Vincentelli, Alberto L. and Xi, Yugeng and Li, Dewei",
+      "ENTRYTYPE": "article",
+      "ID": "nuzzo2019stochastic"
+    },
+    "entry_sha256": "bae062d07947175e033ff961c49bb7c54531b44253c55827c56cba1a3fa4de3a",
+    "sources": [
+      "https://doi.org/10.1145/3243216"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "nuzzo2019stochastic.json": "f0962103ae76739b0821989425093d8c8886e9a04085edbe1a9e36b7af5ea3cc",
+      "nuzzo2019stochastic.crossref.json.gz": "c220bd2de11bc1a836da1bd8caed21982819e7eeaf47a90d786129f00b3cfbcd"
+    }
+  },
+  {
+    "key": "ligatti2005edit",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1007/s10207-004-0046-8",
+      "year": "2005",
+      "pages": "2--16",
+      "number": "1--2",
+      "volume": "4",
+      "journal": "International Journal of Information Security",
+      "title": "Edit Automata: Enforcement Mechanisms for Run-Time Security Policies",
+      "author": "Ligatti, Jay and Bauer, Lujo and Walker, David",
+      "ENTRYTYPE": "article",
+      "ID": "ligatti2005edit"
+    },
+    "entry_sha256": "1e7da4aee017b665767101bfcd030c804b9450565135100004ad7b55e11f18f9",
+    "sources": [
+      "https://doi.org/10.1007/s10207-004-0046-8"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "ligatti2005edit.json": "004d43f1ee1a4b273eef41f9c03c15555e31e9b19f507d2cfa2829b037cdf0d3",
+      "ligatti2005edit.crossref.json.gz": "2cabf4c8e036371eec1e528153d2e1b1871f6046d59f6663439173a652d054ab"
+    }
+  },
+  {
+    "key": "lindemann2023conformal",
+    "checked": "2026-10-29",
+    "status": "published",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "doi": "10.1145/3576841.3585927",
+      "year": "2023",
+      "pages": "142--153",
+      "booktitle": "Proc. ACM/IEEE 14th Int. Conf. Cyber-Physical Systems (ICCPS)",
+      "title": "Conformal Prediction for {STL} Runtime Verification",
+      "author": "Lindemann, Lars and Qin, Xin and Deshmukh, Jyotirmoy V. and Pappas, George J.",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "lindemann2023conformal"
+    },
+    "entry_sha256": "3b1176fed48eac2d08b5a01517facbcd9d63e3cb878f51871d3725dc89e46b8e",
+    "sources": [
+      "https://doi.org/10.1145/3576841.3585927"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "lindemann2023conformal.json": "5d9ec6fb30b5a0f6665b020a9529ea3c44f55bde64e2a87f1b54fbea5bbb9288",
+      "lindemann2023conformal.crossref.json.gz": "2bfc0adfa77c0d730364d3d55fd60fd4c023610e4cfe454d657e73760ab57512"
+    }
+  },
+  {
+    "key": "willison2023dual",
+    "checked": "2026-10-29",
+    "status": "misc",
+    "upgraded_from_arxiv": false,
+    "entry": {
+      "url": "https://simonwillison.net/2023/Apr/25/dual-llm-pattern/",
+      "month": "April",
+      "year": "2023",
+      "howpublished": "Blog post",
+      "title": "The Dual {LLM} Pattern for Building {AI} Assistants That Can Resist Prompt Injection",
+      "author": "Willison, Simon",
+      "ENTRYTYPE": "misc",
+      "ID": "willison2023dual"
+    },
+    "entry_sha256": "65cccada9d94cdce74d0d9bbdb683ab253f161cafd503d72bddd8dede532898f",
+    "sources": [
+      "https://simonwillison.net/2023/Apr/25/dual-llm-pattern/"
+    ],
+    "note": "Metadata checked against primary bibliographic records.",
+    "evidence": {
+      "willison2023dual.json": "78995565789c08407ae6c2b7658aaa5392649dc3cfa686c3b8a0c5ee5e2de2bb",
+      "willison2023dual.crossref.json.gz": "15fd104f88ce52aa852f63b6ce8a3cf522e10167be64137a48e946ba7d67d0e6",
+      "willison2023dual.author-page.html": "205663767486b2afb1316a6c1e21f9c6e3c12f224549f06aa88e42d3d76e99e7",
+      "supplemental-web-evidence.json": "1162c49ef9b4ee7c745cae8d3fbd27438f4fe33afdc44d2c192a05b24b0de279"
+    }
+  }
+]

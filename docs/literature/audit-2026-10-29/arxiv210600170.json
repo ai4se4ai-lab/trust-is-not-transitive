@@ -1,0 +1,428 @@
+{
+  "key": "arxiv210600170",
+  "original": {
+    "url": "https://arxiv.org/abs/2106.00170",
+    "howpublished": "arXiv:2106.00170",
+    "year": "2021",
+    "author": "Gibbs, Isaac and Candès, Emmanuel",
+    "title": "{Adaptive Conformal Inference Under Distribution Shift}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv210600170"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2106.00170",
+    "https://api.crossref.org/works?query.title=Adaptive+Conformal+Inference+Under+Distribution+Shift&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2106.00170: Adaptive Conformal Inference Under Distribution Shift"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Adaptive Conformal Inference Under Distribution Shift"
+      ],
+      "twitter:description": [
+        "We develop methods for forming prediction sets in an online setting where the data generating distribution is allowed to vary over time in an unknown fashion. Our framework builds on ideas from..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Adaptive Conformal Inference Under Distribution Shift"
+      ],
+      "citation_author": [
+        "Gibbs, Isaac",
+        "Candès, Emmanuel"
+      ],
+      "citation_date": [
+        "2021/06/01"
+      ],
+      "citation_online_date": [
+        "2021/10/28"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2106.00170"
+      ],
+      "citation_arxiv_id": [
+        "2106.00170"
+      ],
+      "citation_abstract": [
+        "We develop methods for forming prediction sets in an online setting where the data generating distribution is allowed to vary over time in an unknown fashion. Our framework builds on ideas from conformal inference to provide a general wrapper that can be combined with any black box method that produces point predictions of the unseen label or estimated quantiles of its distribution. While previous conformal inference methods rely on the assumption that the data points are exchangeable, our adaptive approach provably achieves the desired coverage frequency over long-time intervals irrespective of the true data generating process. We accomplish this by modelling the distribution shift as a learning problem in a single parameter whose optimal value is varying over time and must be continuously re-estimated. We test our method, adaptive conformal inference, on two real world datasets and find that its predictions are robust to visible and significant distribution shifts."
+      ]
+    },
+    "details": {
+      "title": "Title: Adaptive Conformal Inference Under Distribution Shift",
+      "authors": "Authors: Isaac Gibbs , Emmanuel Candès",
+      "dateline": "[Submitted on 1 Jun 2021 ( v1 ), last revised 28 Oct 2021 (this version, v3)]",
+      "comments": "25 pages, 9 figures",
+      "metatable": "Comments: 25 pages, 9 figures Subjects: Methodology (stat.ME) ; Machine Learning (cs.LG); Machine Learning (stat.ML) Cite as: arXiv:2106.00170 [stat.ME] (or arXiv:2106.00170v3 [stat.ME] for this version) https://doi.org/10.48550/arXiv.2106.00170 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1145/3819836.3819892",
+      "type": "proceedings-article",
+      "title": [
+        "Adaptive Quantization Strategies for Robust ML Inference Under Distribution Shift"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0005-0759-6075",
+          "authenticated-orcid": false,
+          "given": "Yinghao",
+          "family": "Sang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelphia, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 5th International Conference on Cyber Security, Artificial Intelligence and Digital Economy"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "362-368",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            13
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            13
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            3
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3819836.3819892",
+      "event": {
+        "name": "CSAIDE 2026: 2026 5th International Conference on Cyber Security, Artificial Intelligence and Digital Economy",
+        "location": "Salamanca Spain",
+        "acronym": "CSAIDE 2026"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.767
+    },
+    {
+      "DOI": "10.20944/preprints202609.2642.v1",
+      "type": "posted-content",
+      "title": [
+        "Regime-Adaptive Conformal Guardrails for Prompt Injection Attacks Under Distribution Shift"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0000-0282-3308",
+          "authenticated-orcid": false,
+          "given": "Sagar Pradip",
+          "family": "Chaudhari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            30
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "MDPI AG",
+      "URL": "https://doi.org/10.20944/preprints202609.2642.v1",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.688
+    },
+    {
+      "DOI": "10.1109/sam68950.2026.11687984",
+      "type": "proceedings-article",
+      "title": [
+        "Robust Wind Power Interval Forecasting via Adaptive Graph Conformal Inference Under Distribution Shifts"
+      ],
+      "author": [
+        {
+          "given": "Yang",
+          "family": "Bian",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Huaiyin Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jie",
+          "family": "Bao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Huaiyin Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Suqun",
+          "family": "Cao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Huaiyin Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rui",
+          "family": "Luo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "City University of Hong Kong",
+              "place": [
+                "Hong Kong, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 IEEE 14th Sensor Array and Multichannel Signal Processing Workshop (SAM)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-5",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/sam68950.2026.11687984",
+      "event": {
+        "name": "2026 IEEE 14th Sensor Array and Multichannel Signal Processing Workshop (SAM)",
+        "location": "Shenzhen, China",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              13
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              16
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.691
+    },
+    {
+      "DOI": "10.58257/ijprems54397",
+      "type": "journal-article",
+      "title": [
+        "Shift-Responsive Conformal Ensembling for Reliable Selective Classification Under Distribution Shift"
+      ],
+      "author": null,
+      "container-title": [
+        "International Journal of Progressive Research in Engineering Management and Science"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            27
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            27
+          ]
+        ]
+      },
+      "publisher": "International Journal of Progressive Research in Engineering Management and Science",
+      "URL": "https://doi.org/10.58257/ijprems54397",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.594
+    },
+    {
+      "DOI": "10.1016/j.patcog.2026.114406",
+      "type": "journal-article",
+      "title": [
+        "Online conformal inference with retrospective adjustment for faster adaptation to distribution shift"
+      ],
+      "author": [
+        {
+          "given": "Jungbin",
+          "family": "Jun",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ilsang",
+          "family": "Ohn",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Pattern Recognition"
+      ],
+      "volume": "180",
+      "issue": null,
+      "page": "114406",
+      "article-number": "114406",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            12
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            12
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.1016/j.patcog.2026.114406",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.599
+    }
+  ]
+}

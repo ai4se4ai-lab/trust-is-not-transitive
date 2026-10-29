@@ -7,7 +7,16 @@ import sys
 ROOT=Path(__file__).resolve().parents[1]
 
 
-def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+TEXT={'.py','.md','.tex','.bib','.toml','.lock','.pm','.pctl','.sh','.txt'}
+
+
+def digest(path):
+    # Source files are hashed with LF line endings so that Windows (autocrlf)
+    # and Linux checkouts agree; recorded data/JSON bytes are hashed as stored.
+    data=path.read_bytes()
+    if path.suffix in TEXT or path.name in {'requirements.lock','requirements-paper.lock'}:
+        data=data.replace(b'\r\n',b'\n')
+    return hashlib.sha256(data).hexdigest()
 
 
 def files():

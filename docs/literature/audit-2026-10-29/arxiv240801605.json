@@ -1,0 +1,580 @@
+{
+  "key": "arxiv240801605",
+  "original": {
+    "url": "https://arxiv.org/abs/2408.01605",
+    "howpublished": "arXiv:2408.01605",
+    "year": "2024",
+    "author": "Wan, Shengye and Nikolaidis, Cyrus and Song, Daniel and Molnar, David and Crnkovich, James and Grace, Jayson and Bhatt, Manish and Chennabasappa, Sahana and Whitman, Spencer and Ding, Stephanie and Ionescu, Vlad and Li, Yue and Saxe, Joshua",
+    "title": "{CYBERSECEVAL 3: Advancing the Evaluation of Cybersecurity Risks and Capabilities in Large Language Models}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv240801605"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2408.01605",
+    "https://api.crossref.org/works?query.title=CYBERSECEVAL+3%3A+Advancing+the+Evaluation+of+Cybersecurity+Risks+and+Capabilities+in+Large+Language+Models&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2408.01605: CYBERSECEVAL 3: Advancing the Evaluation of Cybersecurity Risks and Capabilities in Large Language Models"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "CYBERSECEVAL 3: Advancing the Evaluation of Cybersecurity Risks..."
+      ],
+      "twitter:description": [
+        "We are releasing a new suite of security benchmarks for LLMs, CYBERSECEVAL 3, to continue the conversation on empirically measuring LLM cybersecurity risks and capabilities. CYBERSECEVAL 3..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "CYBERSECEVAL 3: Advancing the Evaluation of Cybersecurity Risks and Capabilities in Large Language Models"
+      ],
+      "citation_author": [
+        "Wan, Shengye",
+        "Nikolaidis, Cyrus",
+        "Song, Daniel",
+        "Molnar, David",
+        "Crnkovich, James",
+        "Grace, Jayson",
+        "Bhatt, Manish",
+        "Chennabasappa, Sahana",
+        "Whitman, Spencer",
+        "Ding, Stephanie",
+        "Ionescu, Vlad",
+        "Li, Yue",
+        "Saxe, Joshua"
+      ],
+      "citation_date": [
+        "2024/08/02"
+      ],
+      "citation_online_date": [
+        "2024/09/06"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2408.01605"
+      ],
+      "citation_arxiv_id": [
+        "2408.01605"
+      ],
+      "citation_abstract": [
+        "We are releasing a new suite of security benchmarks for LLMs, CYBERSECEVAL 3, to continue the conversation on empirically measuring LLM cybersecurity risks and capabilities. CYBERSECEVAL 3 assesses 8 different risks across two broad categories: risk to third parties, and risk to application developers and end users. Compared to previous work, we add new areas focused on offensive security capabilities: automated social engineering, scaling manual offensive cyber operations, and autonomous offensive cyber operations. In this paper we discuss applying these benchmarks to the Llama 3 models and a suite of contemporaneous state-of-the-art LLMs, enabling us to contextualize risks both with and without mitigations in place."
+      ]
+    },
+    "details": {
+      "title": "Title: CYBERSECEVAL 3: Advancing the Evaluation of Cybersecurity Risks and Capabilities in Large Language Models",
+      "authors": "Authors: Shengye Wan , Cyrus Nikolaidis , Daniel Song , David Molnar , James Crnkovich , Jayson Grace , Manish Bhatt , Sahana Chennabasappa , Spencer Whitman , Stephanie Ding , Vlad Ionescu , Yue Li , Joshua Saxe",
+      "dateline": "[Submitted on 2 Aug 2024 ( v1 ), last revised 6 Sep 2024 (this version, v2)]",
+      "metatable": "Subjects: Cryptography and Security (cs.CR) ; Machine Learning (cs.LG) Cite as: arXiv:2408.01605 [cs.CR] (or arXiv:2408.01605v2 [cs.CR] for this version) https://doi.org/10.48550/arXiv.2408.01605 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1109/access.2026.3659205",
+      "type": "journal-article",
+      "title": [
+        "ChatNVD: Advancing Cybersecurity Vulnerability Assessment With Large Language Models"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0003-4001-5610",
+          "authenticated-orcid": false,
+          "given": "Shivansh",
+          "family": "Chopra",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "The University of Adelaide, Adelaide, SA, Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8815-7587",
+          "authenticated-orcid": false,
+          "given": "Hussain",
+          "family": "Ahmad",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The University of Adelaide, Adelaide, SA, Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8212-8793",
+          "authenticated-orcid": false,
+          "given": "Diksha",
+          "family": "Goel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "CSIRO&#x2019;s Data61, Melbourne, VIC, Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2501-1155",
+          "authenticated-orcid": false,
+          "given": "Claudia",
+          "family": "Szabo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The University of Adelaide, Adelaide, SA, Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Access"
+      ],
+      "volume": "14",
+      "issue": null,
+      "page": "18595-18610",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/access.2026.3659205",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.639
+    },
+    {
+      "DOI": "10.70382/caijmasr.v11i9.053",
+      "type": "journal-article",
+      "title": [
+        "ADVANCING REASONING IN LARGE LANGUAGE MODELS (LLMs):  ENHANCING COGNITIVE CAPABILITIES"
+      ],
+      "author": [
+        {
+          "given": "HOSEA",
+          "family": "KOLO",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "FAITH ABIBA",
+          "family": "OGALA",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "International Journal of Modeling and Applied Science Research"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            13
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            13
+          ]
+        ]
+      },
+      "publisher": "Mediterranean Publications and Research International",
+      "URL": "https://doi.org/10.70382/caijmasr.v11i9.053",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.439
+    },
+    {
+      "DOI": "10.4018/979-8-3373-1102-9.ch009",
+      "type": "book-chapter",
+      "title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7909-254X",
+          "authenticated-orcid": true,
+          "given": "Hewa Majeed",
+          "family": "Zangana",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Duhok Polytechnic University, Iraq"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Firas Mahmood",
+          "family": "Mustafa",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Duhok Polytechnic University, Iraq"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shuai",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Oulu, Finland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Information Security, Privacy, and Ethics",
+        "Leveraging Large Language Models for Quantum-Aware Cybersecurity"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "277-300",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            1,
+            17
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            1,
+            17
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IGI Global",
+      "URL": "https://doi.org/10.4018/979-8-3373-1102-9.ch009",
+      "event": null,
+      "ISBN": [
+        "9798337311029",
+        "9798337311043"
+      ],
+      "relation": null,
+      "title_similarity": 0.304
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7",
+      "type": "book",
+      "title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "author": null,
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Nature Switzerland",
+      "URL": "https://doi.org/10.1007/978-3-031-54827-7",
+      "event": null,
+      "ISBN": [
+        "9783031548260",
+        "9783031548277"
+      ],
+      "relation": null,
+      "title_similarity": 0.304
+    },
+    {
+      "DOI": "10.17226/27776",
+      "type": "edited-book",
+      "title": [
+        "Large Language Models and Cybersecurity"
+      ],
+      "author": [
+        {
+          "name": "Forum on Cyber Resilience",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "name": "Computer Science and Telecommunications Board",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "name": "Division on Engineering and Physical Sciences",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "name": "National Academies of Sciences, Engineering, and Medicine",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            6
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            6
+          ]
+        ]
+      },
+      "publisher": "National Academies Press",
+      "URL": "https://doi.org/10.17226/27776",
+      "event": null,
+      "ISBN": [
+        "9780309719353"
+      ],
+      "relation": null,
+      "title_similarity": 0.302
+    },
+    {
+      "DOI": "10.4018/979-8-2600-1970-2.ch009",
+      "type": "book-chapter",
+      "title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6132-1719",
+          "authenticated-orcid": true,
+          "given": "Deepak",
+          "family": "Sharma",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Gujarat Technological University-Institute of Technology and Research, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nancy",
+          "family": "Girdhar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Engineering, Computing, and Mathematics, University of Plymouth, UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4667-4839",
+          "authenticated-orcid": true,
+          "given": "Ankit",
+          "family": "Modi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Gujarat Technological University-Institute of Technology and Research, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Computational Intelligence and Robotics",
+        "Explainable and Responsible AI Security Tools for Trust, Accountability, and Compliance"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "249-270",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            12,
+            28
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            12,
+            28
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IGI Global Scientific Publishing",
+      "URL": "https://doi.org/10.4018/979-8-2600-1970-2.ch009",
+      "event": null,
+      "ISBN": [
+        "9798260019702",
+        "9798260019726"
+      ],
+      "relation": null,
+      "title_similarity": 0.304
+    }
+  ]
+}

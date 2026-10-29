@@ -1,0 +1,880 @@
+{
+  "key": "arxiv241216682",
+  "original": {
+    "url": "https://arxiv.org/abs/2412.16682",
+    "howpublished": "arXiv:2412.16682",
+    "year": "2024",
+    "author": "Jia, Feiran and Wu, Tong and Qin, Xin and Squicciarini, Anna",
+    "title": "{The Task Shield: Enforcing Task Alignment to Defend Against Indirect Prompt Injection in LLM Agents}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv241216682"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2412.16682",
+    "https://api.crossref.org/works?query.title=The+Task+Shield%3A+Enforcing+Task+Alignment+to+Defend+Against+Indirect+Prompt+Injection+in+LLM+Agents&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2412.16682: The Task Shield: Enforcing Task Alignment to Defend Against Indirect Prompt Injection in LLM Agents"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "The Task Shield: Enforcing Task Alignment to Defend Against..."
+      ],
+      "twitter:description": [
+        "Large Language Model (LLM) agents are increasingly being deployed as conversational assistants capable of performing complex real-world tasks through tool integration. This enhanced ability to..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "The Task Shield: Enforcing Task Alignment to Defend Against Indirect Prompt Injection in LLM Agents"
+      ],
+      "citation_author": [
+        "Jia, Feiran",
+        "Wu, Tong",
+        "Qin, Xin",
+        "Squicciarini, Anna"
+      ],
+      "citation_date": [
+        "2024/12/21"
+      ],
+      "citation_online_date": [
+        "2024/12/21"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2412.16682"
+      ],
+      "citation_arxiv_id": [
+        "2412.16682"
+      ],
+      "citation_abstract": [
+        "Large Language Model (LLM) agents are increasingly being deployed as conversational assistants capable of performing complex real-world tasks through tool integration. This enhanced ability to interact with external systems and process various data sources, while powerful, introduces significant security vulnerabilities. In particular, indirect prompt injection attacks pose a critical threat, where malicious instructions embedded within external data sources can manipulate agents to deviate from user intentions. While existing defenses based on rule constraints, source spotlighting, and authentication protocols show promise, they struggle to maintain robust security while preserving task functionality. We propose a novel and orthogonal perspective that reframes agent security from preventing harmful actions to ensuring task alignment, requiring every agent action to serve user objectives. Based on this insight, we develop Task Shield, a test-time defense mechanism that systematically verifies whether each instruction and tool call contributes to user-specified goals. Through experiments on the AgentDojo benchmark, we demonstrate that Task Shield reduces attack success rates (2.07\\%) while maintaining high task utility (69.79\\%) on GPT-4o."
+      ]
+    },
+    "details": {
+      "title": "Title: The Task Shield: Enforcing Task Alignment to Defend Against Indirect Prompt Injection in LLM Agents",
+      "authors": "Authors: Feiran Jia , Tong Wu , Xin Qin , Anna Squicciarini",
+      "dateline": "[Submitted on 21 Dec 2024]",
+      "metatable": "Subjects: Cryptography and Security (cs.CR) ; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG) Cite as: arXiv:2412.16682 [cs.CR] (or arXiv:2412.16682v1 [cs.CR] for this version) https://doi.org/10.48550/arXiv.2412.16682 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.18653/v1/2025.acl-long.1435",
+      "type": "proceedings-article",
+      "title": [
+        "The Task Shield: Enforcing Task Alignment to Defend Against Indirect Prompt Injection in LLM Agents"
+      ],
+      "author": [
+        {
+          "given": "Feiran",
+          "family": "Jia",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tong",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xin",
+          "family": "Qin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anna",
+          "family": "Squicciarini",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "29680-29697",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.acl-long.1435",
+      "event": {
+        "name": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "location": "Vienna, Austria",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.18653/2026.findings-emnlp.808",
+      "type": "proceedings-article",
+      "title": [
+        "IterInject: Indirect Prompt Injection Against LLM Agents via Feedback-Guided Iterative Optimization"
+      ],
+      "author": [
+        {
+          "given": "Zixuan",
+          "family": "Chen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiaxiang",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Li",
+          "family": "Luo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ke",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiaoxiang",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tanfeng",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xinghao",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EMNLP 2026"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "17130-17149",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/2026.findings-emnlp.808",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.48
+    },
+    {
+      "DOI": "10.18653/v1/2025.findings-naacl.395",
+      "type": "proceedings-article",
+      "title": [
+        "Adaptive Attacks Break Defenses Against Indirect Prompt Injection Attacks on LLM Agents"
+      ],
+      "author": [
+        {
+          "given": "Qiusi",
+          "family": "Zhan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Richard",
+          "family": "Fang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Henil Shalin",
+          "family": "Panchal",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Kang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: NAACL 2025"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "7101-7117",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.findings-naacl.395",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: NAACL 2025",
+        "location": "Albuquerque, New Mexico",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.675
+    },
+    {
+      "DOI": "10.18653/v1/2025.findings-emnlp.1258",
+      "type": "proceedings-article",
+      "title": [
+        "AGENTVIGIL: Automatic Black-Box Red-teaming for Indirect Prompt Injection against LLM Agents"
+      ],
+      "author": [
+        {
+          "given": "Zhun",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Vincent",
+          "family": "Siu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhe",
+          "family": "Ye",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tianneng",
+          "family": "Shi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuzhou",
+          "family": "Nie",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xuandong",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chenguang",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wenbo",
+          "family": "Guo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dawn",
+          "family": "Song",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EMNLP 2025"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "23159-23172",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.findings-emnlp.1258",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+        "location": "Suzhou, China",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              11
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.491
+    },
+    {
+      "DOI": "10.1007/978-981-92-6510-7_5",
+      "type": "book-chapter",
+      "title": [
+        "InjectGuard-RAG: Lightweight Defence Against Indirect Prompt Injection in Retrieval-Augmented Small-LLM Agents"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5165-5443",
+          "authenticated-orcid": false,
+          "given": "Daniel Ayo",
+          "family": "Oladele",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7804-364X",
+          "authenticated-orcid": false,
+          "given": "Vincent",
+          "family": "Majanga",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1992-417X",
+          "authenticated-orcid": false,
+          "given": "Prince Yaw Owusu",
+          "family": "Amoako",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3989-5617",
+          "authenticated-orcid": false,
+          "given": "Ernest",
+          "family": "Mnkandla",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5617-768X",
+          "authenticated-orcid": false,
+          "given": "Malusi",
+          "family": "Sibiya",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Multi-disciplinary Trends in Artificial Intelligence"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "56-69",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2027
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            9
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Singapore",
+      "URL": "https://doi.org/10.1007/978-981-92-6510-7_5",
+      "event": null,
+      "ISBN": [
+        "9789819265091",
+        "9789819265107"
+      ],
+      "relation": null,
+      "title_similarity": 0.622
+    },
+    {
+      "DOI": "10.18653/2026.emnlp-main.2303",
+      "type": "proceedings-article",
+      "title": [
+        "Staying on Task: Defending Against Prompt Injection via Task Consistency Checking"
+      ],
+      "author": [
+        {
+          "given": "Feiyue",
+          "family": "Xu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiaming",
+          "family": "Mu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fengting",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bin Benjamin",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hongsheng",
+          "family": "Hu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Qiankun",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shuo",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chaoxiang",
+          "family": "He",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chao",
+          "family": "Feng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "52349-52375",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/2026.emnlp-main.2303",
+      "event": {
+        "name": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.468
+    }
+  ]
+}

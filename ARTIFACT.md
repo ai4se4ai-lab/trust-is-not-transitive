@@ -17,6 +17,13 @@ separately labeled fresh-seed exploratory numeric correction.
 
 ## Setup and offline checks
 
+The active source, protocols, retained data and tool paths remain at the root.
+Development reviews and student reading records have moved to `archive/reviews/`
+and `archive/student_review/`; see [archive/README.md](archive/README.md).
+Old local build products/checkouts and new pytest/coverage caches live under
+ignored `archive/local/`. None is an input to the experiment or paper pipeline.
+The optional local `.tools/` PRISM/Java layout remains in place.
+
 Recorded host: Windows 11, Python 3.13.14, 22 logical CPUs; RTX 2050 with 4096 MiB
 VRAM but CPU-only PyTorch. No paid API call, real model inference, external
 benchmark execution, human study, host-shell action or network tool effect
@@ -36,14 +43,18 @@ Windows host). Scripts add src to Python paths; installing the project itself
 is unnecessary. For an editable installation, use setuptools 80.9.0 and
 `pip install --no-build-isolation --no-deps -e .`.
 
-Smoke takes about five seconds; allow a minute for analysis plus semantic replay;
-paper generation/build normally under a minute on this host. TeX requires
-pdflatex/bibtex (MiKTeX or TeX Live) and ordinary IEEEtran packages. Vendored
-IEEEtran.cls and IEEEtran.bst retain upstream licenses and have hashes in
-paper/template_provenance.json. Template originals are unchanged. The manuscript
-is twelve pages including references, within the conservative twelve-page IEEE
-CS regular-paper budget; authors must verify current journal-specific rules
-before any submission.
+Smoke takes about five to fifteen seconds depending on the host; allow a minute
+for analysis plus semantic replay; paper generation/build normally under a
+minute. TeX requires pdflatex/bibtex (MiKTeX or TeX Live) with the IEEEtran
+class, bibliography style, TikZ/pgfplots and stmaryrd from the TeX
+distribution; the template in docs/TSE/ is the reference and is unchanged.
+The manuscript (rewritten 2026-10-29) is a single `paper/main.tex` with one
+bibliography `paper/references.bib`; the current build is 20 pages including references.
+`scripts/post_review_analysis.py` (Amendment A3) adds descriptive post-review
+analyses of the preserved traces; `verify-results` re-derives them byte for byte.
+The prose-literal check in `verify_numbers.py` flags decimal and percentage
+literals outside result macros; plain integers (section numbers, design counts)
+are treated as structural.
 
 `verify-results` re-derives summary bytes from raw observations, recomputes
 binomial family bounds, checks selection independently and verifies the hash

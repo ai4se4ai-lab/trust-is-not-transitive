@@ -12,8 +12,10 @@ def main():
     # No page cap is imposed for this manuscript; report length for inspection.
     print(len(pdf),'pages (no page limit enforced)')
     assert '??' not in text
-    assert 'Scoped Theory' in text
-    assert 'exploratory' in text.lower() and 'zero benign utility' in text.lower()
+    assert 'Trust Is Not Transitive' in text
+    # PDF extraction inserts line/page breaks inside otherwise intact phrases.
+    normalized=' '.join(text.lower().split())
+    assert 'exploratory' in normalized and 'zero benign utility' in normalized
     log=(ROOT/'paper/main.log').read_text(encoding='utf-8',errors='replace')
     assert not re.search(r'Overfull \\[hv]box',log),'Overfull TeX boxes require layout repair'
     assert 'undefined references' not in log

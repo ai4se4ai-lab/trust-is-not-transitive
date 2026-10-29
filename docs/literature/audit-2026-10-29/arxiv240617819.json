@@ -1,0 +1,558 @@
+{
+  "key": "arxiv240617819",
+  "original": {
+    "url": "https://arxiv.org/abs/2406.17819",
+    "howpublished": "arXiv:2406.17819",
+    "year": "2024",
+    "author": "Blot, Vincent and Angelopoulos, Anastasios N and Jordan, Michael I and Brunel, Nicolas J-B",
+    "title": "{Automatically Adaptive Conformal Risk Control}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv240617819"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2406.17819",
+    "https://api.crossref.org/works?query.title=Automatically+Adaptive+Conformal+Risk+Control&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2406.17819: Automatically Adaptive Conformal Risk Control"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Automatically Adaptive Conformal Risk Control"
+      ],
+      "twitter:description": [
+        "Science and technology have a growing need for effective mechanisms that ensure reliable, controlled performance from black-box machine learning algorithms. These performance guarantees should..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Automatically Adaptive Conformal Risk Control"
+      ],
+      "citation_author": [
+        "Blot, Vincent",
+        "Angelopoulos, Anastasios N",
+        "Jordan, Michael I",
+        "Brunel, Nicolas J-B"
+      ],
+      "citation_date": [
+        "2024/06/25"
+      ],
+      "citation_online_date": [
+        "2025/03/27"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2406.17819"
+      ],
+      "citation_arxiv_id": [
+        "2406.17819"
+      ],
+      "citation_abstract": [
+        "Science and technology have a growing need for effective mechanisms that ensure reliable, controlled performance from black-box machine learning algorithms. These performance guarantees should ideally hold conditionally on the input-that is the performance guarantees should hold, at least approximately, no matter what the input. However, beyond stylized discrete groupings such as ethnicity and gender, the right notion of conditioning can be difficult to define. For example, in problems such as image segmentation, we want the uncertainty to reflect the intrinsic difficulty of the test sample, but this may be difficult to capture via a conditioning event. Building on the recent work of Gibbs et al. [2023], we propose a methodology for achieving approximate conditional control of statistical risks-the expected value of loss functions-by adapting to the difficulty of test samples. Our framework goes beyond traditional conditional risk control based on user-provided conditioning events to the algorithmic, data-driven determination of appropriate function classes for conditioning. We apply this framework to various regression and segmentation tasks, enabling finer-grained control over model performance and demonstrating that by continuously monitoring and adjusting these parameters, we can achieve superior precision compared to conventional risk-control methods."
+      ]
+    },
+    "details": {
+      "title": "Title: Automatically Adaptive Conformal Risk Control",
+      "authors": "Authors: Vincent Blot (LISN, CNRS), Anastasios N Angelopoulos (UC Berkeley), Michael I Jordan (UC Berkeley, Inria), Nicolas J-B Brunel (ENSIIE)",
+      "dateline": "[Submitted on 25 Jun 2024 ( v1 ), last revised 27 Mar 2025 (this version, v4)]",
+      "metatable": "Subjects: Machine Learning (cs.LG) ; Artificial Intelligence (cs.AI) Cite as: arXiv:2406.17819 [cs.LG] (or arXiv:2406.17819v4 [cs.LG] for this version) https://doi.org/10.48550/arXiv.2406.17819 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1109/isit57864.2024.10619172",
+      "type": "proceedings-article",
+      "title": [
+        "Cross-Validation Conformal Risk Control"
+      ],
+      "author": [
+        {
+          "given": "Kfir M.",
+          "family": "Cohen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "King&#x0027;s Communications, Learning, and Information Processing (KCLIP) lab, Centre for Intelligent Information Processing Systems (CIIPS), King&#x0027;s College London,Department of Engineering"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sangwoo",
+          "family": "Park",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "King&#x0027;s Communications, Learning, and Information Processing (KCLIP) lab, Centre for Intelligent Information Processing Systems (CIIPS), King&#x0027;s College London,Department of Engineering"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Osvaldo",
+          "family": "Simeone",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "King&#x0027;s Communications, Learning, and Information Processing (KCLIP) lab, Centre for Intelligent Information Processing Systems (CIIPS), King&#x0027;s College London,Department of Engineering"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shlomo Shamai",
+          "family": "Shitz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Technion-Israel Institute of Technology,Viterbi Faculty of Electrical and Computing Engineering"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2024 IEEE International Symposium on Information Theory (ISIT)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "250-255",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            7
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/isit57864.2024.10619172",
+      "event": {
+        "name": "2024 IEEE International Symposium on Information Theory (ISIT)",
+        "location": "Athens, Greece",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              12
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.632
+    },
+    {
+      "DOI": "10.52202/085713-2355",
+      "type": "proceedings-article",
+      "title": [
+        "Conformal Risk Training: End-to-End Optimization of Conformal Risk Control"
+      ],
+      "author": [
+        {
+          "given": "Christopher",
+          "family": "Yeh",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "California Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nicolas",
+          "family": "Christianson",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Stanford University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adam",
+          "family": "Wierman",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Caltech"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yisong",
+          "family": "Yue",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Caltech, Asari AI"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 38"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "78067-78103",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/085713-2355",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 38",
+        "theme": "39th Conference on Neural Information Processing Systems (NeurIPS 2025)",
+        "location": "San Diego, California, USA and Mexico City, Mexico",
+        "acronym": "NeurIPS 2025",
+        "number": "38",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              30
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.519
+    },
+    {
+      "DOI": "10.2139/ssrn.6086348",
+      "type": "posted-content",
+      "title": [
+        "Adaptive Tolerance Control for Robust Conformal Mesh Stitching"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7177-1625",
+          "authenticated-orcid": true,
+          "given": "Haridev",
+          "family": "Vaikundamoorthy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.2139/ssrn.6086348",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.417
+    },
+    {
+      "DOI": "10.2139/ssrn.6088531",
+      "type": "posted-content",
+      "title": [
+        "Adaptive Tolerance Control for Robust Conformal Mesh Stitching"
+      ],
+      "author": [
+        {
+          "given": "Haridev",
+          "family": "Vaikundamoorthy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.2139/ssrn.6088531",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.417
+    },
+    {
+      "DOI": "10.2139/ssrn.6086326",
+      "type": "posted-content",
+      "title": [
+        "Adaptive Tolerance Control for Robust Conformal Mesh Stitching"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7177-1625",
+          "authenticated-orcid": true,
+          "given": "Haridev",
+          "family": "Vaikundamoorthy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.2139/ssrn.6086326",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.417
+    },
+    {
+      "DOI": "10.52202/079017-3514",
+      "type": "proceedings-article",
+      "title": [
+        "Aligning Model Properties via Conformal Risk Control"
+      ],
+      "author": [
+        {
+          "given": "William",
+          "family": "Overman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jacqueline",
+          "family": "Vallon",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohsen",
+          "family": "Bayati",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 37"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "110702-110722",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/079017-3514",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 37",
+        "theme": "38th Conference on Neural Information Processing Systems (NeurIPS 2024)",
+        "location": "Vancouver, BC, Canada",
+        "acronym": "NeurIPS 2024",
+        "number": "37",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              15
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.575
+    }
+  ]
+}

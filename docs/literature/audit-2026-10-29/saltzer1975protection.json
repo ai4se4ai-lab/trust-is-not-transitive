@@ -1,0 +1,82 @@
+{
+  "key": "saltzer1975protection",
+  "original": {
+    "doi": "10.1109/PROC.1975.9939",
+    "year": "1975",
+    "pages": "1278--1308",
+    "number": "9",
+    "volume": "63",
+    "journal": "Proceedings of the IEEE",
+    "title": "The Protection of Information in Computer Systems",
+    "author": "Saltzer, Jerome H. and Schroeder, Michael D.",
+    "ENTRYTYPE": "article",
+    "ID": "saltzer1975protection"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1109/PROC.1975.9939"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1109/proc.1975.9939",
+      "type": "journal-article",
+      "title": [
+        "The protection of information in computer systems"
+      ],
+      "author": [
+        {
+          "given": "J.H.",
+          "family": "Saltzer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "M.D.",
+          "family": "Schroeder",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the IEEE"
+      ],
+      "volume": "63",
+      "issue": "9",
+      "page": "1278-1308",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1975
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1975
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/proc.1975.9939",
+      "event": null,
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

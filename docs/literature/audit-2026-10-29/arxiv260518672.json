@@ -1,0 +1,562 @@
+{
+  "key": "arxiv260518672",
+  "original": {
+    "url": "https://arxiv.org/abs/2605.18672",
+    "howpublished": "arXiv:2605.18672",
+    "year": "2026",
+    "author": "Bensalem, S. and Dong, Y. and Franzle, M. and Huang, X. and Kroger, J. and Nickovic, D. and Nouri, A. and Roy, R. and Wu, C.",
+    "title": "{Position: A Three-Layer Probabilistic Assume-Guarantee Architecture Is Structurally Required for Safe LLM Agent Deployment}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv260518672"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2605.18672",
+    "https://api.crossref.org/works?query.title=Position%3A+A+Three-Layer+Probabilistic+Assume-Guarantee+Architecture+Is+Structurally+Required+for+Safe+LLM+Agent+Deployment&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2605.18672: Position: A Three-Layer Probabilistic Assume-Guarantee Architecture Is Structurally Required for Safe LLM Agent Deployment"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Position: A Three-Layer Probabilistic Assume-Guarantee..."
+      ],
+      "twitter:description": [
+        "This position paper argues that enforcing LLM agent safety within a single abstraction layer is not merely suboptimal but categorically insufficient for deployed LLM agents -- a structural..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Position: A Three-Layer Probabilistic Assume-Guarantee Architecture Is Structurally Required for Safe LLM Agent Deployment"
+      ],
+      "citation_author": [
+        "Bensalem, S.",
+        "Dong, Y.",
+        "Franzle, M.",
+        "Huang, X.",
+        "Kroger, J.",
+        "Nickovic, D.",
+        "Nouri, A.",
+        "Roy, R.",
+        "Wu, C."
+      ],
+      "citation_date": [
+        "2026/05/18"
+      ],
+      "citation_online_date": [
+        "2026/05/18"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2605.18672"
+      ],
+      "citation_arxiv_id": [
+        "2605.18672"
+      ],
+      "citation_abstract": [
+        "This position paper argues that enforcing LLM agent safety within a single abstraction layer is not merely suboptimal but categorically insufficient for deployed LLM agents -- a structural consequence of how agent execution works, not a contingent limitation of current systems. The three dimensions that jointly constitute safe operation -- semantic intent and policy compliance, environmental validity, and dynamical feasibility -- each depend on a strictly distinct set of information that becomes available at different stages of execution. No single guardrail can certify all three. We argue that the community must respond with a contract-based architecture in which each safety dimension is enforced by an independently certified layer whose probabilistic guarantee satisfies the next layer's assumption. We sketch such an architecture and derive the compositional system-level safety bounds it admits via the chain rule of probability. Three open problems stand between this and a deployable standard: bound estimation from non-i.i.d.\\ traces, graceful degradation of contracts under deployment drift, and extension to multi-agent settings -- the most important unfinished business in LLM agent runtime assurance."
+      ]
+    },
+    "details": {
+      "title": "Title: Position: A Three-Layer Probabilistic Assume-Guarantee Architecture Is Structurally Required for Safe LLM Agent Deployment",
+      "authors": "Authors: S.Bensalem , Y. Dong , M. Franzle , X. Huang , J. Kroger , D. Nickovic , A. Nouri , R. Roy , C. Wu",
+      "dateline": "[Submitted on 18 May 2026]",
+      "metatable": "Subjects: Artificial Intelligence (cs.AI) Cite as: arXiv:2605.18672 [cs.AI] (or arXiv:2605.18672v1 [cs.AI] for this version) https://doi.org/10.48550/arXiv.2605.18672 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1007/978-3-642-12002-2_3",
+      "type": "book-chapter",
+      "title": [
+        "Assume-Guarantee Verification for Probabilistic Systems"
+      ],
+      "author": [
+        {
+          "given": "Marta",
+          "family": "Kwiatkowska",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gethin",
+          "family": "Norman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Parker",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hongyang",
+          "family": "Qu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Tools and Algorithms for the Construction and Analysis of Systems"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "23-37",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/978-3-642-12002-2_3",
+      "event": null,
+      "ISBN": [
+        "9783642120015",
+        "9783642120022"
+      ],
+      "relation": null,
+      "title_similarity": 0.295
+    },
+    {
+      "DOI": "10.1007/978-3-642-31424-7_25",
+      "type": "book-chapter",
+      "title": [
+        "Assume-Guarantee Abstraction Refinement for Probabilistic Systems"
+      ],
+      "author": [
+        {
+          "given": "Anvesh",
+          "family": "Komuravelli",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Corina S.",
+          "family": "Păsăreanu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Edmund M.",
+          "family": "Clarke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Computer Aided Verification"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "310-326",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/978-3-642-31424-7_25",
+      "event": null,
+      "ISBN": [
+        "9783642314230",
+        "9783642314247"
+      ],
+      "relation": null,
+      "title_similarity": 0.352
+    },
+    {
+      "DOI": "10.1007/978-3-642-35861-6_6",
+      "type": "book-chapter",
+      "title": [
+        "Assume-Guarantee Reasoning for Safe Component Behaviours"
+      ],
+      "author": [
+        {
+          "given": "Chris",
+          "family": "Chilton",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bengt",
+          "family": "Jonsson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Marta",
+          "family": "Kwiatkowska",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Formal Aspects of Component Software"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "92-109",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/978-3-642-35861-6_6",
+      "event": null,
+      "ISBN": [
+        "9783642358609",
+        "9783642358616"
+      ],
+      "relation": null,
+      "title_similarity": 0.397
+    },
+    {
+      "DOI": "10.1109/acc.2014.6859441",
+      "type": "proceedings-article",
+      "title": [
+        "Assume-guarantee cooperative satisfaction of multi-agent systems"
+      ],
+      "author": [
+        {
+          "given": "Alireza",
+          "family": "Partovi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Hai",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2014 American Control Conference"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "2053-2058",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2014,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/acc.2014.6859441",
+      "event": {
+        "name": "2014 American Control Conference - ACC 2014",
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              6,
+              4
+            ]
+          ]
+        },
+        "location": "Portland, OR, USA",
+        "end": {
+          "date-parts": [
+            [
+              2014,
+              6,
+              6
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.356
+    },
+    {
+      "DOI": "10.2991/assehr.k.211209.288",
+      "type": "proceedings-article",
+      "title": [
+        "Compositional Stochastic Model Checking Probabilistic Automata via Assume-guarantee Reasoning"
+      ],
+      "author": [
+        {
+          "given": "Yisong",
+          "family": "Tan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Economics, Business and Management Research",
+        "Proceedings of the 2021 3rd International Conference on Economic Management and Cultural Industry (ICEMCI 2021)"
+      ],
+      "volume": "203",
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "publisher": "Atlantis Press",
+      "URL": "https://doi.org/10.2991/assehr.k.211209.288",
+      "event": {
+        "name": "2021 3rd International Conference on Economic Management and Cultural Industry (ICEMCI 2021)",
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              22
+            ]
+          ]
+        },
+        "location": "Guangzhou, China",
+        "end": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              24
+            ]
+          ]
+        },
+        "acronym": "icemci-21"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.484
+    },
+    {
+      "DOI": "10.1109/access.2019.2924639",
+      "type": "journal-article",
+      "title": [
+        "A Probabilistic Assume-Guarantee Reasoning Framework Based on Genetic Algorithm"
+      ],
+      "author": [
+        {
+          "given": "Yan",
+          "family": "Ma",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Zining",
+          "family": "Cao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6647-7950",
+          "authenticated-orcid": false,
+          "given": "Yang",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Access"
+      ],
+      "volume": "7",
+      "issue": null,
+      "page": "83839-83851",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/access.2019.2924639",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.511
+    }
+  ]
+}

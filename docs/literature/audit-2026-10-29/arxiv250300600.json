@@ -1,0 +1,624 @@
+{
+  "key": "arxiv250300600",
+  "original": {
+    "url": "https://arxiv.org/abs/2503.00600",
+    "howpublished": "arXiv:2503.00600",
+    "year": "2025",
+    "author": "Lee, Alexander W. and Chan, Justin and Fu, Michael and Kim, Nicolas and Mehta, Akshay and Raghavan, Deepti and Cetintemel, Ugur",
+    "title": "{Semantic Integrity Constraints: Declarative Guardrails for AI-Augmented Data Processing Systems}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250300600"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2503.00600",
+    "https://api.crossref.org/works?query.title=Semantic+Integrity+Constraints%3A+Declarative+Guardrails+for+AI-Augmented+Data+Processing+Systems&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2503.00600: Semantic Integrity Constraints: Declarative Guardrails for AI-Augmented Data Processing Systems"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Semantic Integrity Constraints: Declarative Guardrails for..."
+      ],
+      "twitter:description": [
+        "AI-augmented data processing systems (DPSs) integrate large language models (LLMs) into query pipelines, allowing powerful semantic operations on structured and unstructured data. However, the..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Semantic Integrity Constraints: Declarative Guardrails for AI-Augmented Data Processing Systems"
+      ],
+      "citation_author": [
+        "Lee, Alexander W.",
+        "Chan, Justin",
+        "Fu, Michael",
+        "Kim, Nicolas",
+        "Mehta, Akshay",
+        "Raghavan, Deepti",
+        "Cetintemel, Ugur"
+      ],
+      "citation_doi": [
+        "10.14778/3749646.3749677"
+      ],
+      "citation_date": [
+        "2025/03/01"
+      ],
+      "citation_online_date": [
+        "2025/08/07"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2503.00600"
+      ],
+      "citation_arxiv_id": [
+        "2503.00600"
+      ],
+      "citation_abstract": [
+        "AI-augmented data processing systems (DPSs) integrate large language models (LLMs) into query pipelines, allowing powerful semantic operations on structured and unstructured data. However, the reliability (a.k.a. trust) of these systems is fundamentally challenged by the potential for LLMs to produce errors, limiting their adoption in critical domains. To help address this reliability bottleneck, we introduce semantic integrity constraints (SICs) -- a declarative abstraction for specifying and enforcing correctness conditions over LLM outputs in semantic queries. SICs generalize traditional database integrity constraints to semantic settings, supporting common types of constraints, such as grounding, soundness, and exclusion, with both reactive and proactive enforcement strategies. We argue that SICs provide a foundation for building reliable and auditable AI-augmented data systems. Specifically, we present a system design for integrating SICs into query planning and runtime execution and discuss its realization in AI-augmented DPSs. To guide and evaluate our vision, we outline several design goals -- covering criteria around expressiveness, runtime semantics, integration, performance, and enterprise-scale applicability -- and discuss how our framework addresses each, along with open research challenges."
+      ]
+    },
+    "details": {
+      "title": "Title: Semantic Integrity Constraints: Declarative Guardrails for AI-Augmented Data Processing Systems",
+      "authors": "Authors: Alexander W. Lee , Justin Chan , Michael Fu , Nicolas Kim , Akshay Mehta , Deepti Raghavan , Ugur Cetintemel",
+      "dateline": "[Submitted on 1 Mar 2025 ( v1 ), last revised 7 Aug 2025 (this version, v3)]",
+      "jref": "PVLDB, 18(11): 4073 - 4080, 2025",
+      "metatable": "Subjects: Databases (cs.DB) ; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) Cite as: arXiv:2503.00600 [cs.DB] (or arXiv:2503.00600v3 [cs.DB] for this version) https://doi.org/10.48550/arXiv.2503.00600 Focus to learn more arXiv-issued DOI via DataCite Journal reference: PVLDB, 18(11): 4073 - 4080, 2025 Related DOI : https://doi.org/10.14778/3749646.3749677 Focus to learn more DOI(s) linking to related resources"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.14778/3749646.3749677",
+      "type": "journal-article",
+      "title": [
+        "Semantic Integrity Constraints: Declarative Guardrails for AI-Augmented Data Processing Systems"
+      ],
+      "author": [
+        {
+          "given": "Alexander W.",
+          "family": "Lee",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Brown University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Justin",
+          "family": "Chan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Brown University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael",
+          "family": "Fu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Brown University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nicolas",
+          "family": "Kim",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Brown University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Akshay",
+          "family": "Mehta",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Brown University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Deepti",
+          "family": "Raghavan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Brown University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Uğur",
+          "family": "Çetintemel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Brown University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the VLDB Endowment"
+      ],
+      "volume": "18",
+      "issue": "11",
+      "page": "4073-4080",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            7
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            4
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "URL": "https://doi.org/10.14778/3749646.3749677",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.1007/978-0-387-34913-8_10",
+      "type": "book-chapter",
+      "title": [
+        "Compiling a Declarative High-Level Language for Semantic Integrity Constraints"
+      ],
+      "author": [
+        {
+          "given": "Suzanne M.",
+          "family": "Embury",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Peter M. D.",
+          "family": "Gray",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IFIP Advances in Information and Communication Technology",
+        "Database Applications Semantics"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "188-226",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1997
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1997
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer US",
+      "URL": "https://doi.org/10.1007/978-0-387-34913-8_10",
+      "event": null,
+      "ISBN": [
+        "9781504129466",
+        "9780387349138"
+      ],
+      "relation": null,
+      "title_similarity": 0.366
+    },
+    {
+      "DOI": "10.1007/978-3-540-89982-2_28",
+      "type": "book-chapter",
+      "title": [
+        "Declarative Semantics for Active Integrity Constraints"
+      ],
+      "author": [
+        {
+          "given": "Luciano",
+          "family": "Caroprese",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Mirosław",
+          "family": "Truszczyński",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Logic Programming"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "269-283",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2008
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2008
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/978-3-540-89982-2_28",
+      "event": null,
+      "ISBN": [
+        "9783540899815",
+        "9783540899822"
+      ],
+      "relation": null,
+      "title_similarity": 0.421
+    },
+    {
+      "DOI": "10.1109/ccwc67433.2026.11393750",
+      "type": "proceedings-article",
+      "title": [
+        "AI-Augmented Block-Sketch Hybrid Compression: Enabling Semantic Query Processing on Compressed Data"
+      ],
+      "author": [
+        {
+          "given": "Srinubabu",
+          "family": "Kilaru",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "OPTUM,USA"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Venkata Subba Rao",
+          "family": "Yarlagadda",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of the Cumberlands,USA"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Madhusudan Bangalore",
+          "family": "Nagaraja",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Esystems Inc,Irving,Texas"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 IEEE 16th Annual Computing and Communication Workshop and Conference (CCWC)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "0966-0972",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            5
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/ccwc67433.2026.11393750",
+      "event": {
+        "name": "2026 IEEE 16th Annual Computing and Communication Workshop and Conference (CCWC)",
+        "location": "Las Vegas, NV, USA",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              5
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.318
+    },
+    {
+      "DOI": "10.1049/icp.2025.4700",
+      "type": "journal-article",
+      "title": [
+        "Enhancing medical data processing with RAG-augmented fine-tuned LLMs and guardrails"
+      ],
+      "author": [
+        {
+          "given": "Aayush",
+          "family": "Shah",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Computer Engineering, SIES Graduate School of Technology, Nerul, Navi Mumbai, India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Dhruv",
+          "family": "Shetty",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Engineering, SIES Graduate School of Technology, Nerul, Navi Mumbai, India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Pranjal",
+          "family": "Patil",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Engineering, SIES Graduate School of Technology, Nerul, Navi Mumbai, India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Purva",
+          "family": "Ambre",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Engineering, SIES Graduate School of Technology, Nerul, Navi Mumbai, India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Suvarna",
+          "family": "Chaure",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Engineering, SIES Graduate School of Technology, Nerul, Navi Mumbai, India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Devesh",
+          "family": "Rajadhyax",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Cere Labs Pvt. Ltd, Mulund West, Mumbai, India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IET Conference Proceedings"
+      ],
+      "volume": "2025",
+      "issue": "43",
+      "page": "65-72",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            2
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institution of Engineering and Technology (IET)",
+      "URL": "https://doi.org/10.1049/icp.2025.4700",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.359
+    }
+  ]
+}

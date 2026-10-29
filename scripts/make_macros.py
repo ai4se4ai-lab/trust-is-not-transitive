@@ -12,9 +12,9 @@ from process_results import read_json,serialize
 BEGIN='% BEGIN GENERATED MACROS'
 END='% END GENERATED MACROS'
 
-LABELS={'rules_only':'Rules only','classifier_only':'Lexical only','judge_only_scripted':'Scripted judge only',
-        'naive_delegation':'Invalid delegation','naive_with_sink':'Naive with sink',
-        'checked_uncalibrated':'Checked, uncalibrated','checked_quarantine':'Checked, calibrated'}
+LABELS={'rules_only':'B1 Gate only','classifier_only':'B2 Scorer only','judge_only_scripted':'B3 Exposed judge only',
+        'naive_delegation':'B4 Invalid delegation','naive_with_sink':'B5 Gate + scorer + exposed judge',
+        'checked_uncalibrated':'B6 TINT without certificate','checked_quarantine':'TINT (full)'}
 
 
 def generate():
@@ -25,6 +25,8 @@ def generate():
 
     def macro(name,value,pointer,fmt='.2f'):
         rendered=format(value,fmt) if isinstance(value,(int,float)) else str(value)
+        if fmt=='d' and isinstance(value,int) and abs(value)>=10000:
+            rendered=format(value,',d').replace(',','{,}')  # IEEE style, safe in text and math
         command='res'+name
         if command in macros:raise ValueError('duplicate macro '+command)
         macros[command]={'value':value,'rendered':rendered,'source':'results/processed/summary.json','pointer':pointer,'source_sha256':source_hash}
@@ -84,6 +86,24 @@ def generate():
                 macro(stem+suffix,comparison[field]*transform,path+'/'+field,fmt)
             for index,suffix in [(0,'Lo'),(1,'Hi')]:
                 macro(stem+suffix,comparison['risk_difference_ci'][index]*100,path+'/risk_difference_ci/'+str(index)+'#percent')
+        checked=s['metrics']['test']['checked_quarantine']
+        for layer,suffix in [('L2','Two'),('L3','Three')]:
+            macro(prefix+'CheckedReach'+suffix,100*checked['reach_rates'][layer],base+'/metrics/test/checked_quarantine/reach_rates/'+layer+'#percent','.1f')
+        macro(prefix+'CheckedCpuMedian',checked['cpu_p50_us'],base+'/metrics/test/checked_quarantine/cpu_p50_us','.1f')
+        macro(prefix+'NaiveWithSinkCpuMedian',s['metrics']['test']['naive_with_sink']['cpu_p50_us'],base+'/metrics/test/naive_with_sink/cpu_p50_us','.1f')
+        macro(prefix+'Certified',sum(x['candidate'] is not None for x in s['selections']),base+'/selections#certified','d')
+        bounds=[x['bounds'] for x in s['selections']]
+        macro(prefix+'BoundMin',100*min(min(b) for b in bounds),base+'/selections/*/bounds#min-percent','.1f')
+        macro(prefix+'BoundMax',100*max(min(b) for b in bounds),base+'/selections/*/bounds#max-of-min-percent','.1f')
+        misses=[min(x['calibration_misses']) for x in s['selections']]
+        macro(prefix+'MissMin',min(misses),base+'/selections/*/calibration_misses#min','d')
+        macro(prefix+'MissMax',max(misses),base+'/selections/*/calibration_misses#max','d')
+        adaptive=s['adaptive']
+        macro(prefix+'AdaptiveSuccessSeeds',adaptive['checked_quarantine']['successful_seeds'],base+'/adaptive/checked_quarantine/successful_seeds','d')
+        macro(prefix+'AdaptiveQueries',adaptive['checked_quarantine']['queries'],base+'/adaptive/checked_quarantine/queries','d')
+        macro(prefix+'AdaptiveAllSucceed',int(all(v['successful_seeds']==len(s['seeds']) and v['queries']==len(s['seeds']) for v in adaptive.values())),base+'/adaptive#all-first-query','d')
+        macro(prefix+'SynthLpOk',int(s['synthesis']['mismatches']==0),base+'/synthesis/mismatches#zero','d')
+        macro(prefix+'CoverageCovered',s['coverage']['true_risk_bound_covered'],base+'/coverage/true_risk_bound_covered','d')
         shifted=s['metrics']['shift']['checked_quarantine']
         macro(prefix+'ShiftRisk',100*shifted['joint_risk'],base+'/metrics/shift/checked_quarantine/joint_risk#percent')
         accepted=s['metrics']['test']['checked_quarantine']['accepted_conditional_risk']
@@ -126,6 +146,38 @@ def generate():
         macro('Dependence'+name,summary['studies']['primary']['correlation']['conditional_miss_rates'][index],f'/studies/primary/correlation/conditional_miss_rates/{index}')
     points=summary['studies']['primary']['correlation']['points']
     macro('DependencePoints',' '.join(f'({x:.2f},{y:.4f})' for x,y in points),'/studies/primary/correlation/points')
+    macro('DependenceGap',summary['studies']['primary']['correlation']['max_absolute_sampling_gap'],'/studies/primary/correlation/max_absolute_sampling_gap','.4f')
+    scaling=summary['studies']['primary']['checker']['scalability']
+    for depth,name in [(2,'Two'),(4,'Four'),(6,'Six')]:
+        pts=sorted((x['policies'],x['median_us']/1000) for x in scaling if x['layers']==depth)
+        macro('CheckerScaling'+name,' '.join(f'({p},{t:.4f})' for p,t in pts),'/studies/primary/checker/scalability#layers='+str(depth)+'-ms')
+    import math
+    xs=[math.log((x['layers']-1)*x['policies']) for x in scaling if x['policies']>=50]
+    ys=[math.log(x['median_us']) for x in scaling if x['policies']>=50]
+    mx,my=sum(xs)/len(xs),sum(ys)/len(ys)
+    slope=sum((a-mx)*(b-my) for a,b in zip(xs,ys))/sum((a-mx)**2 for a in xs)
+    macro('CheckerSlope',slope,'/studies/primary/checker/scalability#loglog-slope-vs-edges-policies>=50','.1f')
+    xs=[math.log(x['policies']) for x in scaling if x['policies']>=50 and x['layers']==6]
+    ys=[math.log(x['median_us']) for x in scaling if x['policies']>=50 and x['layers']==6]
+    mx,my=sum(xs)/len(xs),sum(ys)/len(ys)
+    macro('CheckerSlopeSix',sum((a-mx)*(b-my) for a,b in zip(xs,ys))/sum((a-mx)**2 for a in xs),'/studies/primary/checker/scalability#loglog-slope-layers=6-policies>=50','.1f')
+    post=read_json(ROOT/'results/processed/post_review.json')
+    post_hash=hashlib.sha256((ROOT/'results/processed/post_review.json').read_bytes()).hexdigest()
+    def post_macro(name,value,pointer,fmt):
+        macro(name,value,pointer,fmt)
+        macros['res'+name].update(source='results/processed/post_review.json',source_sha256=post_hash)
+    for study,prefix in [('primary','Primary'),('exploratory','Exploratory')]:
+        pc=post['provenance_control'][study]
+        post_macro(prefix+'ProvRisk',100*pc['test']['joint_risk'],f'/provenance_control/{study}/test/joint_risk#percent','.2f')
+        post_macro(prefix+'ProvUtility',100*pc['test']['benign_utility'],f'/provenance_control/{study}/test/benign_utility#percent','.2f')
+        post_macro(prefix+'ProvShiftRisk',100*pc['shift']['joint_risk'],f'/provenance_control/{study}/shift/joint_risk#percent','.2f')
+        post_macro(prefix+'ProvCost',pc['test']['modeled_cost_units'],f'/provenance_control/{study}/test/modeled_cost_units','.2f')
+    eq=post['calibration_equivalence']['exploratory']
+    post_macro('CalEquivCompared',eq['compared'],'/calibration_equivalence/exploratory/compared','d')
+    post_macro('CalEquivDisagree',eq['disagreements'],'/calibration_equivalence/exploratory/disagreements','d')
+    macro('CheckerMaxEdges',max((x['layers']-1)*x['policies'] for x in scaling),'/studies/primary/checker/scalability#max-edges','d')
+    macro('CheckerMaxMs',max(x['median_us'] for x in scaling)/1000,'/studies/primary/checker/scalability#max-median-ms','.1f')
+    macro('ReplayDecisions',summary['studies']['primary']['decision_records']+summary['studies']['exploratory']['decision_records'],'/studies/*/decision_records#sum','d')
     env=summary['studies']['primary']['environment']
     for name,key in [('EnvPython','python'),('EnvCpuCount','cpu_count'),('EnvPlatform','platform'),('EnvProcessor','processor')]:
         macro(name,env[key],'/studies/primary/environment/'+key,'d')

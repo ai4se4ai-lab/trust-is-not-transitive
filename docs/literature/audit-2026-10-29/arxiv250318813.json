@@ -1,0 +1,622 @@
+{
+  "key": "arxiv250318813",
+  "original": {
+    "url": "https://arxiv.org/abs/2503.18813",
+    "howpublished": "arXiv:2503.18813",
+    "year": "2025",
+    "author": "Debenedetti, Edoardo and Shumailov, Ilia and Fan, Tianqi and Hayes, Jamie and Carlini, Nicholas and Fabian, Daniel and Kern, Christoph and Shi, Chongyang and Terzis, Andreas and Tramèr, Florian",
+    "title": "{Defeating Prompt Injections by Design}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250318813"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2503.18813",
+    "https://api.crossref.org/works?query.title=Defeating+Prompt+Injections+by+Design&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2503.18813: Defeating Prompt Injections by Design"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Defeating Prompt Injections by Design"
+      ],
+      "twitter:description": [
+        "Large Language Models (LLMs) are increasingly deployed in agentic systems that interact with an untrusted environment. However, LLM agents are vulnerable to prompt injection attacks when handling..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Defeating Prompt Injections by Design"
+      ],
+      "citation_author": [
+        "Debenedetti, Edoardo",
+        "Shumailov, Ilia",
+        "Fan, Tianqi",
+        "Hayes, Jamie",
+        "Carlini, Nicholas",
+        "Fabian, Daniel",
+        "Kern, Christoph",
+        "Shi, Chongyang",
+        "Terzis, Andreas",
+        "Tramèr, Florian"
+      ],
+      "citation_date": [
+        "2025/03/24"
+      ],
+      "citation_online_date": [
+        "2025/06/24"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2503.18813"
+      ],
+      "citation_arxiv_id": [
+        "2503.18813"
+      ],
+      "citation_abstract": [
+        "Large Language Models (LLMs) are increasingly deployed in agentic systems that interact with an untrusted environment. However, LLM agents are vulnerable to prompt injection attacks when handling untrusted data. In this paper we propose CaMeL, a robust defense that creates a protective system layer around the LLM, securing it even when underlying models are susceptible to attacks. To operate, CaMeL explicitly extracts the control and data flows from the (trusted) query; therefore, the untrusted data retrieved by the LLM can never impact the program flow. To further improve security, CaMeL uses a notion of a capability to prevent the exfiltration of private data over unauthorized data flows by enforcing security policies when tools are called. We demonstrate effectiveness of CaMeL by solving $77\\%$ of tasks with provable security (compared to $84\\%$ with an undefended system) in AgentDojo. We release CaMeL at https://github.com/google-research/camel-prompt-injection."
+      ]
+    },
+    "details": {
+      "title": "Title: Defeating Prompt Injections by Design",
+      "authors": "Authors: Edoardo Debenedetti , Ilia Shumailov , Tianqi Fan , Jamie Hayes , Nicholas Carlini , Daniel Fabian , Christoph Kern , Chongyang Shi , Andreas Terzis , Florian Tramèr",
+      "dateline": "[Submitted on 24 Mar 2025 ( v1 ), last revised 24 Jun 2025 (this version, v2)]",
+      "comments": "Updated version with newer models and link to the code",
+      "metatable": "Comments: Updated version with newer models and link to the code Subjects: Cryptography and Security (cs.CR) ; Artificial Intelligence (cs.AI) Cite as: arXiv:2503.18813 [cs.CR] (or arXiv:2503.18813v2 [cs.CR] for this version) https://doi.org/10.48550/arXiv.2503.18813 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1109/satml68715.2026.00040",
+      "type": "proceedings-article",
+      "title": [
+        "Defeating Prompt Injections by Design"
+      ],
+      "author": [
+        {
+          "given": "Edoardo",
+          "family": "Debenedetti",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Google"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ilia",
+          "family": "Shumailov",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tianqi",
+          "family": "Fan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jamie",
+          "family": "Hayes",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nicholas",
+          "family": "Carlini",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Fabian",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christoph",
+          "family": "Kern",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chongyang",
+          "family": "Shi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andreas",
+          "family": "Terzis",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Florian",
+          "family": "Tramèr",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "ETH Zurich"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "587-618",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/satml68715.2026.00040",
+      "event": {
+        "name": "2026 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)",
+        "location": "Munich, Germany",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              23
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              25
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.1201/9781003726692-7",
+      "type": "book-chapter",
+      "title": [
+        "Prompt Injections"
+      ],
+      "author": [
+        {
+          "given": "Paul",
+          "family": "Zenker",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "GenAI Security"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "72-89",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            14
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            14
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Chapman and Hall/CRC",
+      "URL": "https://doi.org/10.1201/9781003726692-7",
+      "event": null,
+      "ISBN": [
+        "9781003726692"
+      ],
+      "relation": null,
+      "title_similarity": 0.653
+    },
+    {
+      "DOI": "10.6028/nist.ai.100-2ae2024",
+      "type": "report",
+      "title": [
+        "Taxonomy of Prompt Injections"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4979-5292",
+          "authenticated-orcid": false,
+          "given": "Apostol",
+          "family": "Vassilev",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05xpvk416",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                },
+                {
+                  "id": "https://www.isni.org/000000012158463X",
+                  "id-type": "ISNI",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "National Institute of Standards and Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "publisher": "National Institute of Standards and Technology",
+      "URL": "https://doi.org/10.6028/nist.ai.100-2ae2024",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.576
+    },
+    {
+      "DOI": "10.6028/nist.ai.100-2ae2024.ipd",
+      "type": "report",
+      "title": [
+        "Taxonomy of Prompt Injections"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4979-5292",
+          "authenticated-orcid": false,
+          "given": "Apostol",
+          "family": "Vassilev",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/05xpvk416",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                },
+                {
+                  "id": "https://www.isni.org/000000012158463X",
+                  "id-type": "ISNI",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "National Institute of Standards and Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "publisher": "National Institute of Standards and Technology",
+      "URL": "https://doi.org/10.6028/nist.ai.100-2ae2024.ipd",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.576
+    },
+    {
+      "DOI": "10.21203/rs.3.rs-11047071/v1",
+      "type": "posted-content",
+      "title": [
+        "JailBreakGuard: Defeating Jailbreak Attacks via Dynamic Prompt Perturbation"
+      ],
+      "author": [
+        {
+          "given": "Jun",
+          "family": "Yuan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Sichuan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ziang",
+          "family": "Ruan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Guilin University of Electronic Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Liangguo",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Sichuan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shuyu",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Sichuan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rui",
+          "family": "Tang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Sichuan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hao",
+          "family": "Ren",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Sichuan University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            29
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Springer Science and Business Media LLC",
+      "URL": "https://doi.org/10.21203/rs.3.rs-11047071/v1",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.4
+    }
+  ]
+}

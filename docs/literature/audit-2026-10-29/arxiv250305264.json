@@ -1,0 +1,470 @@
+{
+  "key": "arxiv250305264",
+  "original": {
+    "url": "https://arxiv.org/abs/2503.05264",
+    "howpublished": "arXiv:2503.05264",
+    "year": "2025",
+    "author": "Russinovich, Mark and Salem, Ahmed",
+    "title": "{Jailbreaking is (Mostly) Simpler Than You Think}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250305264"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2503.05264",
+    "https://api.crossref.org/works?query.title=Jailbreaking+is+%28Mostly%29+Simpler+Than+You+Think&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2503.05264: Jailbreaking is (Mostly) Simpler Than You Think"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Jailbreaking is (Mostly) Simpler Than You Think"
+      ],
+      "twitter:description": [
+        "We introduce the Context Compliance Attack (CCA), a novel, optimization-free method for bypassing AI safety mechanisms. Unlike current approaches -- which rely on complex prompt engineering and..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Jailbreaking is (Mostly) Simpler Than You Think"
+      ],
+      "citation_author": [
+        "Russinovich, Mark",
+        "Salem, Ahmed"
+      ],
+      "citation_date": [
+        "2025/03/07"
+      ],
+      "citation_online_date": [
+        "2025/03/07"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2503.05264"
+      ],
+      "citation_arxiv_id": [
+        "2503.05264"
+      ],
+      "citation_abstract": [
+        "We introduce the Context Compliance Attack (CCA), a novel, optimization-free method for bypassing AI safety mechanisms. Unlike current approaches -- which rely on complex prompt engineering and computationally intensive optimization -- CCA exploits a fundamental architectural vulnerability inherent in many deployed AI systems. By subtly manipulating conversation history, CCA convinces the model to comply with a fabricated dialogue context, thereby triggering restricted behavior. Our evaluation across a diverse set of open-source and proprietary models demonstrates that this simple attack can circumvent state-of-the-art safety protocols. We discuss the implications of these findings and propose practical mitigation strategies to fortify AI systems against such elementary yet effective adversarial tactics."
+      ]
+    },
+    "details": {
+      "title": "Title: Jailbreaking is (Mostly) Simpler Than You Think",
+      "authors": "Authors: Mark Russinovich , Ahmed Salem",
+      "dateline": "[Submitted on 7 Mar 2025]",
+      "metatable": "Subjects: Cryptography and Security (cs.CR) ; Artificial Intelligence (cs.AI) Cite as: arXiv:2503.05264 [cs.CR] (or arXiv:2503.05264v1 [cs.CR] for this version) https://doi.org/10.48550/arXiv.2503.05264 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.7748/ns2000.04.14.31.61.c2820",
+      "type": "journal-article",
+      "title": [
+        "Simpler than you think"
+      ],
+      "author": [
+        {
+          "given": "Natalie",
+          "family": "Tidy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Nursing Standard"
+      ],
+      "volume": "14",
+      "issue": "31",
+      "page": "61-61",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2000,
+            4,
+            19
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            4,
+            19
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "RCN Publishing Ltd.",
+      "URL": "https://doi.org/10.7748/ns2000.04.14.31.61.c2820",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.655
+    },
+    {
+      "DOI": "10.5731/pdajpst.2020.012476",
+      "type": "journal-article",
+      "title": [
+        "Recombinant Factor C Validation—Simpler Than You Think!"
+      ],
+      "author": [
+        {
+          "given": "Thomas",
+          "family": "Uhlig",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Kevin L.",
+          "family": "Williams",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Brendan",
+          "family": "Tindall",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "PDA Journal of Pharmaceutical Science and Technology"
+      ],
+      "volume": "75",
+      "issue": "4",
+      "page": "391-393",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2021,
+            2,
+            19
+          ]
+        ]
+      },
+      "publisher": "Parenteral Drug Association, Inc.",
+      "URL": "https://doi.org/10.5731/pdajpst.2020.012476",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.581
+    },
+    {
+      "DOI": "10.33321/cdi.2003.27.5",
+      "type": "journal-article",
+      "title": [
+        "Letter to the Editor: Varicella surveillance: simpler than you think?"
+      ],
+      "author": [
+        {
+          "given": "Rod",
+          "family": "Givney",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Communicable Diseases Intelligence"
+      ],
+      "volume": "27",
+      "issue": null,
+      "page": "100-101",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2003,
+            3,
+            30
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2003,
+            3,
+            30
+          ]
+        ]
+      },
+      "publisher": "Australian Centre for Disease Control",
+      "URL": "https://doi.org/10.33321/cdi.2003.27.5",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.479
+    },
+    {
+      "DOI": "10.64628/aa.697mprt5v",
+      "type": "posted-content",
+      "title": [
+        "Winning at social media is probably simpler than you think"
+      ],
+      "author": [
+        {
+          "given": "Matteo",
+          "family": "Farina",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Flinders University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            1,
+            8
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "The Conversation Media Group Ltd",
+      "URL": "https://doi.org/10.64628/aa.697mprt5v",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.636
+    },
+    {
+      "DOI": "10.1007/s42001-026-00470-7",
+      "type": "journal-article",
+      "title": [
+        "Simpler than you think: the practical dynamics of ranked choice voting"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8331-7921",
+          "authenticated-orcid": false,
+          "given": "Sanyukta",
+          "family": "Deshpande",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nikhil",
+          "family": "Garg",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sheldon",
+          "family": "Jacobson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Computational Social Science"
+      ],
+      "volume": "9",
+      "issue": "2",
+      "page": null,
+      "article-number": "40",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            5
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            7
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "URL": "https://doi.org/10.1007/s42001-026-00470-7",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.388
+    },
+    {
+      "DOI": "10.3982/ecta18756",
+      "type": "journal-article",
+      "title": [
+        "Local Projection Inference Is Simpler and More Robust Than You Think"
+      ],
+      "author": [
+        {
+          "given": "José Luis",
+          "family": "Montiel Olea",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Economics, Columbia University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mikkel",
+          "family": "Plagborg-Møller",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Economics, Princeton University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Econometrica"
+      ],
+      "volume": "89",
+      "issue": "4",
+      "page": "1789-1823",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "publisher": "The Econometric Society",
+      "URL": "https://doi.org/10.3982/ecta18756",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.536
+    }
+  ]
+}

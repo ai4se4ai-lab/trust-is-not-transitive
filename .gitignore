@@ -13,5 +13,8 @@ paper/*.fdb_latexmk
 paper/*.fls
 paper/*.synctex.gz
 build/
+archive/local/
 .tools/
 docs/literature/evidence/*.html
+requirements-paper.lock 
+requirements.lock

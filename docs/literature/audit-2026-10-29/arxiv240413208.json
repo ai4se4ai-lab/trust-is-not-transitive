@@ -1,0 +1,598 @@
+{
+  "key": "arxiv240413208",
+  "original": {
+    "url": "https://arxiv.org/abs/2404.13208",
+    "howpublished": "arXiv:2404.13208",
+    "year": "2024",
+    "author": "Wallace, Eric and Xiao, Kai and Leike, Reimar and Weng, Lilian and Heidecke, Johannes and Beutel, Alex",
+    "title": "{The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv240413208"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2404.13208",
+    "https://api.crossref.org/works?query.title=The+Instruction+Hierarchy%3A+Training+LLMs+to+Prioritize+Privileged+Instructions&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2404.13208: The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "The Instruction Hierarchy: Training LLMs to Prioritize Privileged..."
+      ],
+      "twitter:description": [
+        "Today's LLMs are susceptible to prompt injections, jailbreaks, and other attacks that allow adversaries to overwrite a model's original instructions with their own malicious prompts. In this work,..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions"
+      ],
+      "citation_author": [
+        "Wallace, Eric",
+        "Xiao, Kai",
+        "Leike, Reimar",
+        "Weng, Lilian",
+        "Heidecke, Johannes",
+        "Beutel, Alex"
+      ],
+      "citation_date": [
+        "2024/04/19"
+      ],
+      "citation_online_date": [
+        "2024/04/19"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2404.13208"
+      ],
+      "citation_arxiv_id": [
+        "2404.13208"
+      ],
+      "citation_abstract": [
+        "Today's LLMs are susceptible to prompt injections, jailbreaks, and other attacks that allow adversaries to overwrite a model's original instructions with their own malicious prompts. In this work, we argue that one of the primary vulnerabilities underlying these attacks is that LLMs often consider system prompts (e.g., text from an application developer) to be the same priority as text from untrusted users and third parties. To address this, we propose an instruction hierarchy that explicitly defines how models should behave when instructions of different priorities conflict. We then propose a data generation method to demonstrate this hierarchical instruction following behavior, which teaches LLMs to selectively ignore lower-privileged instructions. We apply this method to GPT-3.5, showing that it drastically increases robustness -- even for attack types not seen during training -- while imposing minimal degradations on standard capabilities."
+      ]
+    },
+    "details": {
+      "title": "Title: The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+      "authors": "Authors: Eric Wallace , Kai Xiao , Reimar Leike , Lilian Weng , Johannes Heidecke , Alex Beutel",
+      "dateline": "[Submitted on 19 Apr 2024]",
+      "metatable": "Subjects: Cryptography and Security (cs.CR) ; Computation and Language (cs.CL); Machine Learning (cs.LG) Cite as: arXiv:2404.13208 [cs.CR] (or arXiv:2404.13208v1 [cs.CR] for this version) https://doi.org/10.48550/arXiv.2404.13208 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.18653/2026.emnlp-main.2153",
+      "type": "proceedings-article",
+      "title": [
+        "Language Shapes Instruction Hierarchy Compliance in Multilingual LLMs"
+      ],
+      "author": [
+        {
+          "given": "Jiwon",
+          "family": "Moon",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yerin",
+          "family": "Hwang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kyomin",
+          "family": "Jung",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "48968-49004",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/2026.emnlp-main.2153",
+      "event": {
+        "name": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.489
+    },
+    {
+      "DOI": "10.1007/springerreference_22103",
+      "type": "reference-entry",
+      "title": [
+        "privileged instruction"
+      ],
+      "author": null,
+      "container-title": [
+        "SpringerReference"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": null,
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Springer-Verlag",
+      "URL": "https://doi.org/10.1007/springerreference_22103",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.467
+    },
+    {
+      "DOI": "10.1007/1-4020-0613-6_14699",
+      "type": "book-chapter",
+      "title": [
+        "privileged instruction"
+      ],
+      "author": [
+        {
+          "given": "Martin H.",
+          "family": "Weik",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Computer Science and Communications Dictionary"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1336-1336",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2000
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2000
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            11,
+            30
+          ]
+        ]
+      },
+      "publisher": "Springer US",
+      "URL": "https://doi.org/10.1007/1-4020-0613-6_14699",
+      "event": null,
+      "ISBN": [
+        "9780792384250",
+        "9781402006135"
+      ],
+      "relation": null,
+      "title_similarity": 0.467
+    },
+    {
+      "DOI": "10.52202/085713-3287",
+      "type": "proceedings-article",
+      "title": [
+        "Beyond Oracle: Verifier-Supervision for Instruction Hierarchy in Reasoning and Instruction-Tuned LLMs"
+      ],
+      "author": [
+        {
+          "given": "Sian-Yao",
+          "family": "Huang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "CyCraft Technology Corporation Taiwan Branch"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Li-Hsien",
+          "family": "Chang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "CyCraft Technology Corporation Taiwan Branch"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Che-Yu",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "CyCraft Technology Corporation"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Cheng-Lin",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "CyCraft AI Lab"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 38"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "109017-109050",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/085713-3287",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 38",
+        "theme": "39th Conference on Neural Information Processing Systems (NeurIPS 2025)",
+        "location": "San Diego, California, USA and Mexico City, Mexico",
+        "acronym": "NeurIPS 2025",
+        "number": "38",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              30
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.51
+    },
+    {
+      "DOI": "10.4324/9781315294933-3",
+      "type": "book-chapter",
+      "title": [
+        "Prioritize and Simplify Curriculum and Instruction"
+      ],
+      "author": [
+        {
+          "given": "Karen A.",
+          "family": "Goeller",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Six Steps to Boost Student Learning"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "69-103",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            8,
+            21
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2017,
+            8,
+            21
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Routledge",
+      "URL": "https://doi.org/10.4324/9781315294933-3",
+      "event": null,
+      "ISBN": [
+        "9781315294933"
+      ],
+      "relation": null,
+      "title_similarity": 0.456
+    },
+    {
+      "DOI": "10.52202/079017-1448",
+      "type": "proceedings-article",
+      "title": [
+        "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions"
+      ],
+      "author": [
+        {
+          "given": "Huanxuan",
+          "family": "Liao",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shizhu",
+          "family": "He",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yao",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuanzhe",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yanchao",
+          "family": "Hao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shengping",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kang",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jun",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 37"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "45552-45577",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/079017-1448",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 37",
+        "theme": "38th Conference on Neural Information Processing Systems (NeurIPS 2024)",
+        "location": "Vancouver, BC, Canada",
+        "acronym": "NeurIPS 2024",
+        "number": "37",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              15
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.514
+    }
+  ]
+}

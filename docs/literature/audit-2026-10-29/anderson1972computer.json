@@ -1,0 +1,309 @@
+{
+  "key": "anderson1972computer",
+  "original": {
+    "year": "1972",
+    "number": "ESD-TR-73-51",
+    "institution": "U.S. Air Force Electronic Systems Division",
+    "title": "Computer Security Technology Planning Study",
+    "author": "Anderson, James P.",
+    "ENTRYTYPE": "techreport",
+    "ID": "anderson1972computer"
+  },
+  "sources": [
+    "https://api.crossref.org/works?query.title=Computer+Security+Technology+Planning+Study&rows=5"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.21236/ad0772806",
+      "type": "report",
+      "title": [
+        "Computer Security Technology Planning Study. Volume 2"
+      ],
+      "author": [
+        {
+          "given": "James P.",
+          "family": "Anderson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1972,
+            10,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1972,
+            10,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Defense Technical Information Center",
+      "URL": "https://doi.org/10.21236/ad0772806",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.918
+    },
+    {
+      "DOI": "10.1016/0306-4573(86)90059-2",
+      "type": "journal-article",
+      "title": [
+        "Computer-security technology"
+      ],
+      "author": [
+        {
+          "given": "Gerald",
+          "family": "Salton",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Information Processing &amp; Management"
+      ],
+      "volume": "22",
+      "issue": "3",
+      "page": "269-270",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1986,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1986,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.1016/0306-4573(86)90059-2",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.8
+    },
+    {
+      "DOI": "10.1016/0142-0496(94)90187-2",
+      "type": "journal-article",
+      "title": [
+        "Fundamentals of computer security technology"
+      ],
+      "author": [
+        {
+          "given": "Peter",
+          "family": "Sommer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Computer Fraud &amp; Security Bulletin"
+      ],
+      "volume": "1994",
+      "issue": "9",
+      "page": "18-19",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1994,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1994,
+            9
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Mark Allen Group",
+      "URL": "https://doi.org/10.1016/0142-0496(94)90187-2",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.658
+    },
+    {
+      "DOI": "10.1007/978-3-319-98776-7_98",
+      "type": "book-chapter",
+      "title": [
+        "Computer Network Security Technology Research"
+      ],
+      "author": [
+        {
+          "given": "Shen",
+          "family": "Wei",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Intelligent Systems and Computing",
+        "International Conference on Applications and Techniques in Cyber Security and Intelligence ATCI 2018"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "824-831",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            11,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2018,
+            11,
+            5
+          ]
+        ]
+      },
+      "publisher": "Springer International Publishing",
+      "URL": "https://doi.org/10.1007/978-3-319-98776-7_98",
+      "event": null,
+      "ISBN": [
+        "9783319987750",
+        "9783319987767"
+      ],
+      "relation": null,
+      "title_similarity": 0.675
+    },
+    {
+      "DOI": "10.21236/ada203261",
+      "type": "report",
+      "title": [
+        "Computer Security Products Technology Overview"
+      ],
+      "author": [
+        {
+          "given": "T. J.",
+          "family": "Bergendahl",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "K. S.",
+          "family": "Smith",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "J. G.",
+          "family": "Sullivan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1988,
+            10,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1988,
+            10,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Defense Technical Information Center",
+      "URL": "https://doi.org/10.21236/ada203261",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.667
+    }
+  ]
+}

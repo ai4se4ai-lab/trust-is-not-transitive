@@ -1,0 +1,693 @@
+{
+  "key": "arxiv250800500",
+  "original": {
+    "url": "https://arxiv.org/abs/2508.00500",
+    "howpublished": "arXiv:2508.00500",
+    "year": "2025",
+    "author": "Wang, Haoyu and Poskitt, Christopher M. and Wei, Jiali and Sun, Jun",
+    "title": "{ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via Probabilistic Prediction}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250800500"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2508.00500",
+    "https://api.crossref.org/works?query.title=ProbGuard%3A+Proactive+Runtime+Monitoring+for+LLM+Agent+Safety+via+Probabilistic+Prediction&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2508.00500: ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via Probabilistic Prediction"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via..."
+      ],
+      "twitter:description": [
+        "Large Language Model (LLM) agents increasingly operate across domains such as robotics, virtual assistants, and web automation. However, their stochastic decision-making introduces safety risks..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via Probabilistic Prediction"
+      ],
+      "citation_author": [
+        "Wang, Haoyu",
+        "Poskitt, Christopher M.",
+        "Wei, Jiali",
+        "Sun, Jun"
+      ],
+      "citation_doi": [
+        "10.1145/3832783.3837413"
+      ],
+      "citation_date": [
+        "2025/08/01"
+      ],
+      "citation_online_date": [
+        "2026/08/03"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2508.00500"
+      ],
+      "citation_arxiv_id": [
+        "2508.00500"
+      ],
+      "citation_abstract": [
+        "Large Language Model (LLM) agents increasingly operate across domains such as robotics, virtual assistants, and web automation. However, their stochastic decision-making introduces safety risks that are difficult to anticipate during execution. Existing runtime monitoring frameworks, such as AgentSpec, primarily rely on reactive safety rules that detect violations only when unsafe behavior is imminent or has already occurred, limiting their ability to handle long-horizon dependencies. We present ProbGuard, a proactive runtime monitoring framework for LLM agents that anticipates safety violations through probabilistic risk prediction. ProbGuard abstracts agent executions into symbolic states and learns a Discrete-Time Markov Chain (DTMC) from execution traces to model behavioral dynamics. At runtime, the monitor estimates the probability that execution will remain safe from the current state, and triggers an intervention when this probability falls below a user-defined threshold. To improve robustness, ProbGuard incorporates semantic validity constraints in the abstraction and admits a PAC-style analysis that characterizes the sample complexity required to certify the learned model under standard assumptions. We evaluate ProbGuard in two safety-critical domains: autonomous driving and embodied household agents. Across evaluated scenarios, ProbGuard consistently predicts traffic law violations and collisions in advance, with warnings up to 15.84 seconds at a threshold yielding no false alarms, and up to 38.66 seconds at stricter thresholds. In embodied agent tasks, ProbGuard's re-prompting intervention mode reduces unsafe behavior by 65.37% relative to the unmonitored baseline while retaining 80.4% of the baseline task completion; a stricter halting configuration reduces unsafe behavior by 93.60% at a larger cost in completion."
+      ]
+    },
+    "details": {
+      "title": "Title: ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via Probabilistic Prediction",
+      "authors": "Authors: Haoyu Wang , Christopher M. Poskitt , Jiali Wei , Jun Sun",
+      "dateline": "[Submitted on 1 Aug 2025 ( v1 ), last revised 3 Aug 2026 (this version, v4)]",
+      "comments": "Accepted by the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE 2026)",
+      "jref": "Proc. ASE'26, pages 1470-1482. ACM, 2026",
+      "metatable": "Comments: Accepted by the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE 2026) Subjects: Artificial Intelligence (cs.AI) ; Software Engineering (cs.SE) Cite as: arXiv:2508.00500 [cs.AI] (or arXiv:2508.00500v4 [cs.AI] for this version) https://doi.org/10.48550/arXiv.2508.00500 Focus to learn more arXiv-issued DOI via DataCite Journal reference: Proc. ASE'26, pages 1470-1482. ACM, 2026 Related DOI : https://doi.org/10.1145/3832783.3837413 Focus to learn more DOI(s) linking to related resources"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1145/3832783.3837413",
+      "type": "proceedings-article",
+      "title": [
+        "ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via Probabilistic Prediction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0000-6379-5312",
+          "authenticated-orcid": false,
+          "given": "Haoyu",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Singapore Management University, Singapore, Singapore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9376-2471",
+          "authenticated-orcid": false,
+          "given": "Christopher M.",
+          "family": "Poskitt",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Singapore Management University, Singapore, Singapore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1842-0196",
+          "authenticated-orcid": false,
+          "given": "Jiali",
+          "family": "Wei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Xi'an Jiaotong University, Xi'an, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3545-1392",
+          "authenticated-orcid": false,
+          "given": "Jun",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Singapore Management University, Singapore, Singapore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1470-1482",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            7
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            7
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3832783.3837413",
+      "event": {
+        "name": "ASE '26: 41st IEEE/ACM International Conference on Automated Software Engineering",
+        "location": "Munich Germany",
+        "acronym": "ASE '26",
+        "sponsor": [
+          "SIGSOFT ACM Special Interest Group on Software Engineering",
+          "SIGAI ACM Special Interest Group on Artificial Intelligence",
+          "IEEE CS"
+        ]
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.1007/978-981-95-9615-7_36",
+      "type": "book-chapter",
+      "title": [
+        "AdventureAgent: Proactive Cognitively-Enhanced LLM Agent for Trekking Safety"
+      ],
+      "author": [
+        {
+          "given": "Shengxu",
+          "family": "Huo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Huigui",
+          "family": "Rong",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daibo",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shijiang",
+          "family": "Yi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Min",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhipan",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Communications in Computer and Information Science",
+        "Wireless Sensor Networks"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "548-562",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            2
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Singapore",
+      "URL": "https://doi.org/10.1007/978-981-95-9615-7_36",
+      "event": null,
+      "ISBN": [
+        "9789819596140",
+        "9789819596157"
+      ],
+      "relation": null,
+      "title_similarity": 0.428
+    },
+    {
+      "DOI": "10.1007/978-3-032-35506-5_53",
+      "type": "book-chapter",
+      "title": [
+        "Runtime Uncertainty Monitoring for LLM-Based Multi-agent Systems Using Bayesian Networks"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0005-7507-4690",
+          "authenticated-orcid": false,
+          "given": "Bart",
+          "family": "Custers",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9318-8177",
+          "authenticated-orcid": false,
+          "given": "Koorosh",
+          "family": "Aslansefat",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Computer Safety, Reliability, and Security. SAFECOMP 2026 Workshops"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "736-748",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2027
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            3
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Switzerland",
+      "URL": "https://doi.org/10.1007/978-3-032-35506-5_53",
+      "event": null,
+      "ISBN": [
+        "9783032355058",
+        "9783032355065"
+      ],
+      "relation": null,
+      "title_similarity": 0.439
+    },
+    {
+      "DOI": "10.18653/v1/2025.acl-long.944",
+      "type": "proceedings-article",
+      "title": [
+        "Tunable LLM-based Proactive Recommendation Agent"
+      ],
+      "author": [
+        {
+          "given": "Mingze",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chongming",
+          "family": "Gao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wenjie",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yangyang",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fuli",
+          "family": "Feng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "19262-19276",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.acl-long.944",
+      "event": {
+        "name": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "location": "Vienna, Austria",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.38
+    },
+    {
+      "DOI": "10.20944/preprints202610.2288.v1",
+      "type": "posted-content",
+      "title": [
+        "Intelligent Runtime Safety Monitoring for Trustworthy Autonomous Multi-Agent Systems"
+      ],
+      "author": [
+        {
+          "given": "Vedika Balasaheb",
+          "family": "Aswale",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            23
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "MDPI AG",
+      "URL": "https://doi.org/10.20944/preprints202610.2288.v1",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.431
+    },
+    {
+      "DOI": "10.18653/v1/2025.findings-acl.784",
+      "type": "proceedings-article",
+      "title": [
+        "Enhancing LLM Agent Safety via Causal Influence Prompting"
+      ],
+      "author": [
+        {
+          "given": "Dongyoon",
+          "family": "Hahm",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Woogyeol",
+          "family": "Jin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "June Suk",
+          "family": "Choi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sungsoo",
+          "family": "Ahn",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Kimin",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: ACL 2025"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "15143-15168",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.findings-acl.784",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: ACL 2025",
+        "location": "Vienna, Austria",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.438
+    }
+  ]
+}

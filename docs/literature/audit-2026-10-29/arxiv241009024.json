@@ -1,0 +1,1022 @@
+{
+  "key": "arxiv241009024",
+  "original": {
+    "url": "https://arxiv.org/abs/2410.09024",
+    "howpublished": "arXiv:2410.09024",
+    "year": "2024",
+    "author": "Andriushchenko, Maksym and Souly, Alexandra and Dziemian, Mateusz and Duenas, Derek and Lin, Maxwell and Wang, Justin and Hendrycks, Dan and Zou, Andy and Kolter, Zico and Fredrikson, Matt and Winsor, Eric and Wynne, Jerome and Gal, Yarin and Davies, Xander",
+    "title": "{AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv241009024"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2410.09024",
+    "https://api.crossref.org/works?query.title=AgentHarm%3A+A+Benchmark+for+Measuring+Harmfulness+of+LLM+Agents&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2410.09024: AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents"
+      ],
+      "twitter:description": [
+        "The robustness of LLMs to jailbreak attacks, where users design prompts to circumvent safety measures and misuse model capabilities, has been studied primarily for LLMs acting as simple chatbots...."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents"
+      ],
+      "citation_author": [
+        "Andriushchenko, Maksym",
+        "Souly, Alexandra",
+        "Dziemian, Mateusz",
+        "Duenas, Derek",
+        "Lin, Maxwell",
+        "Wang, Justin",
+        "Hendrycks, Dan",
+        "Zou, Andy",
+        "Kolter, Zico",
+        "Fredrikson, Matt",
+        "Winsor, Eric",
+        "Wynne, Jerome",
+        "Gal, Yarin",
+        "Davies, Xander"
+      ],
+      "citation_date": [
+        "2024/10/11"
+      ],
+      "citation_online_date": [
+        "2025/04/18"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2410.09024"
+      ],
+      "citation_arxiv_id": [
+        "2410.09024"
+      ],
+      "citation_abstract": [
+        "The robustness of LLMs to jailbreak attacks, where users design prompts to circumvent safety measures and misuse model capabilities, has been studied primarily for LLMs acting as simple chatbots. Meanwhile, LLM agents -- which use external tools and can execute multi-stage tasks -- may pose a greater risk if misused, but their robustness remains underexplored. To facilitate research on LLM agent misuse, we propose a new benchmark called AgentHarm. The benchmark includes a diverse set of 110 explicitly malicious agent tasks (440 with augmentations), covering 11 harm categories including fraud, cybercrime, and harassment. In addition to measuring whether models refuse harmful agentic requests, scoring well on AgentHarm requires jailbroken agents to maintain their capabilities following an attack to complete a multi-step task. We evaluate a range of leading LLMs, and find (1) leading LLMs are surprisingly compliant with malicious agent requests without jailbreaking, (2) simple universal jailbreak templates can be adapted to effectively jailbreak agents, and (3) these jailbreaks enable coherent and malicious multi-step agent behavior and retain model capabilities. To enable simple and reliable evaluation of attacks and defenses for LLM-based agents, we publicly release AgentHarm at https://huggingface.co/datasets/ai-safety-institute/AgentHarm."
+      ]
+    },
+    "details": {
+      "title": "Title: AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents",
+      "authors": "Authors: Maksym Andriushchenko , Alexandra Souly , Mateusz Dziemian , Derek Duenas , Maxwell Lin , Justin Wang , Dan Hendrycks , Andy Zou , Zico Kolter , Matt Fredrikson , Eric Winsor , Jerome Wynne , Yarin Gal , Xander Davies",
+      "dateline": "[Submitted on 11 Oct 2024 ( v1 ), last revised 18 Apr 2025 (this version, v3)]",
+      "comments": "Accepted at ICLR 2025",
+      "metatable": "Comments: Accepted at ICLR 2025 Subjects: Machine Learning (cs.LG) ; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) Cite as: arXiv:2410.09024 [cs.LG] (or arXiv:2410.09024v3 [cs.LG] for this version) https://doi.org/10.48550/arXiv.2410.09024 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1145/3786181.3788708",
+      "type": "proceedings-article",
+      "title": [
+        "Continuous Benchmark Generation for Evaluating Enterprise-scale LLM Agents"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7568-0624",
+          "authenticated-orcid": false,
+          "given": "Divyanshu",
+          "family": "Saxena",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "UT Austin, Austin, Texas, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-4496-0203",
+          "authenticated-orcid": false,
+          "given": "Rishikesh",
+          "family": "Maurya",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft, Bengaluru, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-6667-4321",
+          "authenticated-orcid": false,
+          "given": "Xiaoxuan",
+          "family": "Ou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft, Shanghai, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6949-8685",
+          "authenticated-orcid": false,
+          "given": "Gagan",
+          "family": "Somashekar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft, Redmond, Washington, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1332-690X",
+          "authenticated-orcid": false,
+          "given": "Shachee Mishra",
+          "family": "Gupta",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft, Noida, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7377-7599",
+          "authenticated-orcid": false,
+          "given": "Arun",
+          "family": "Iyer",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft, Bengaluru, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-1735-5876",
+          "authenticated-orcid": false,
+          "given": "Yu",
+          "family": "Kang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft, Shanghai, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0102-8139",
+          "authenticated-orcid": false,
+          "given": "Chetan",
+          "family": "Bansal",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft, Redmond, Washington, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5920-170X",
+          "authenticated-orcid": false,
+          "given": "Aditya",
+          "family": "Akella",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "UT Austin, Austin, Texas, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2019-213X",
+          "authenticated-orcid": false,
+          "given": "Saravan",
+          "family": "Rajmohan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft, Redmond, Washington, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 3rd International Workshop on Large Language Models For Code"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-5",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            12
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            12
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            6
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3786181.3788708",
+      "event": {
+        "name": "LLM4Code '26: 3rd International Workshop on Large Language Models For Code",
+        "location": "Rio de Janeiro Brazil",
+        "acronym": "LLM4Code '26",
+        "sponsor": [
+          "SIGSOFT ACM Special Interest Group on Software Engineering",
+          "IEEE CS",
+          "Faculty of Engineering of University of Porto"
+        ]
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.538
+    },
+    {
+      "DOI": "10.1056/aidbp2500144",
+      "type": "journal-article",
+      "title": [
+        "MedAgentBench: A Virtual EHR Environment to Benchmark Medical LLM Agents"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3569-014X",
+          "authenticated-orcid": false,
+          "given": "Yixing",
+          "family": "Jiang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Biomedical Data Science, Stanford University, Stanford, CA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3696-4050",
+          "authenticated-orcid": false,
+          "given": "Kameron C.",
+          "family": "Black",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Medicine, Stanford University School of Medicine, Stanford, CA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0005-7869-4000",
+          "authenticated-orcid": false,
+          "given": "Gloria",
+          "family": "Geng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering, Stanford University, Stanford, CA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6373-005X",
+          "authenticated-orcid": false,
+          "given": "Danny",
+          "family": "Park",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, Stanford University, Stanford, CA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8880-4764",
+          "authenticated-orcid": false,
+          "given": "James",
+          "family": "Zou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Biomedical Data Science, Stanford University, Stanford, CA"
+            },
+            {
+              "name": "Department of Electrical Engineering, Stanford University, Stanford, CA"
+            },
+            {
+              "name": "Department of Computer Science, Stanford University, Stanford, CA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5547-3196",
+          "authenticated-orcid": false,
+          "given": "Andrew Y.",
+          "family": "Ng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, Stanford University, Stanford, CA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4387-8740",
+          "authenticated-orcid": false,
+          "given": "Jonathan H.",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Biomedical Data Science, Stanford University, Stanford, CA"
+            },
+            {
+              "name": "Stanford Center for Biomedical Informatics Research, Stanford University, Stanford, CA"
+            },
+            {
+              "name": "Division of Hospital Medicine, Stanford University, Stanford, CA"
+            },
+            {
+              "name": "Clinical Excellence Research Center, Stanford University, Stanford, CA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "NEJM AI"
+      ],
+      "volume": "2",
+      "issue": "9",
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            28
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            28
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Massachusetts Medical Society",
+      "URL": "https://doi.org/10.1056/aidbp2500144",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.539
+    },
+    {
+      "DOI": "10.18653/v1/2024.acl-long.478",
+      "type": "proceedings-article",
+      "title": [
+        "Mobile-Bench: An Evaluation Benchmark for LLM-based Mobile Agents"
+      ],
+      "author": [
+        {
+          "given": "Shihan",
+          "family": "Deng",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Weikai",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hongda",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wei",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tao",
+          "family": "Tan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Liujianfeng",
+          "family": "Liujianfeng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ang",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jian",
+          "family": "Luan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bin",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rui",
+          "family": "Yan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shuo",
+          "family": "Shang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "8813-8831",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2024.acl-long.478",
+      "event": {
+        "name": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "location": "Bangkok, Thailand",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              8
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              8
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.481
+    },
+    {
+      "DOI": "10.1609/aaai.v40i2.37113",
+      "type": "journal-article",
+      "title": [
+        "SoMe: A Realistic Benchmark for LLM-based Social Media Agents"
+      ],
+      "author": [
+        {
+          "given": "Dizhan",
+          "family": "Xue",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jing",
+          "family": "Cui",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Shengsheng",
+          "family": "Qian",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Chuanrui",
+          "family": "Hu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Changsheng",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the AAAI Conference on Artificial Intelligence"
+      ],
+      "volume": "40",
+      "issue": "2",
+      "page": "1391-1399",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            14
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            14
+          ]
+        ]
+      },
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "URL": "https://doi.org/10.1609/aaai.v40i2.37113",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.481
+    },
+    {
+      "DOI": "10.56025/ijaresm.141026210",
+      "type": "journal-article",
+      "title": [
+        "Do LLM Agents Actually Improve Protein Design? A Controlled Benchmark Study"
+      ],
+      "author": [
+        {
+          "given": "Aditya",
+          "family": "Agarwal",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "International Journal of All Research Education and Scientific Methods"
+      ],
+      "volume": "14",
+      "issue": "10",
+      "page": "1576-1586",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "publisher": "International Journal of All Research Education and Scientific Methods (IJARESM) Publication",
+      "URL": "https://doi.org/10.56025/ijaresm.141026210",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.325
+    },
+    {
+      "DOI": "10.18653/2026.emnlp-main.469",
+      "type": "proceedings-article",
+      "title": [
+        "MMedAgentBench: A Multi-Stage Benchmark for Evaluating LLM-based Medical Agents"
+      ],
+      "author": [
+        {
+          "given": "Lu",
+          "family": "Sun",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiangyi",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiangyang",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kaiyuan",
+          "family": "Ji",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zijian",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Qiang",
+          "family": "Hu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zicheng",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuan",
+          "family": "Tian",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Guangtao",
+          "family": "Zhai",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "10780-10793",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/2026.emnlp-main.469",
+      "event": {
+        "name": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.595
+    }
+  ]
+}

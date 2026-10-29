@@ -1,0 +1,659 @@
+{
+  "key": "arxiv250613028",
+  "original": {
+    "url": "https://arxiv.org/abs/2506.13028",
+    "howpublished": "arXiv:2506.13028",
+    "year": "2025",
+    "author": "Gyawali, Bimal Raj and Achalla, Saikrishna and Kallas, Konstantinos and Kumar, Sam",
+    "title": "{NaSh: Guardrails for an LLM-Powered Natural Language Shell}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250613028"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2506.13028",
+    "https://api.crossref.org/works?query.title=NaSh%3A+Guardrails+for+an+LLM-Powered+Natural+Language+Shell&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2506.13028: NaSh: Guardrails for an LLM-Powered Natural Language Shell"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "NaSh: Guardrails for an LLM-Powered Natural Language Shell"
+      ],
+      "twitter:description": [
+        "We explore how a shell that uses an LLM to accept natural language input might be designed differently from the shells of today. As LLMs may produce unintended or unexplainable outputs, we argue..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "NaSh: Guardrails for an LLM-Powered Natural Language Shell"
+      ],
+      "citation_author": [
+        "Gyawali, Bimal Raj",
+        "Achalla, Saikrishna",
+        "Kallas, Konstantinos",
+        "Kumar, Sam"
+      ],
+      "citation_date": [
+        "2025/06/16"
+      ],
+      "citation_online_date": [
+        "2025/06/16"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2506.13028"
+      ],
+      "citation_arxiv_id": [
+        "2506.13028"
+      ],
+      "citation_abstract": [
+        "We explore how a shell that uses an LLM to accept natural language input might be designed differently from the shells of today. As LLMs may produce unintended or unexplainable outputs, we argue that a natural language shell should provide guardrails that empower users to recover from such errors. We concretize some ideas for doing so by designing a new shell called NaSh, identify remaining open problems in this space, and discuss research directions to address them."
+      ]
+    },
+    "details": {
+      "title": "Title: NaSh: Guardrails for an LLM-Powered Natural Language Shell",
+      "authors": "Authors: Bimal Raj Gyawali , Saikrishna Achalla , Konstantinos Kallas , Sam Kumar",
+      "dateline": "[Submitted on 16 Jun 2025]",
+      "comments": "7 pages, 3 figures",
+      "metatable": "Comments: 7 pages, 3 figures Subjects: Operating Systems (cs.OS) ; Artificial Intelligence (cs.AI) Cite as: arXiv:2506.13028 [cs.OS] (or arXiv:2506.13028v1 [cs.OS] for this version) https://doi.org/10.48550/arXiv.2506.13028 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1109/robio66223.2025.11377297",
+      "type": "proceedings-article",
+      "title": [
+        "LLM-Powered Surgical Gauze Counting with Natural Language Input"
+      ],
+      "author": [
+        {
+          "given": "Wing Yin",
+          "family": "Ng",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "The Chinese University of Hong Kong,Department of Surgery,Hong Kong"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Wanyu",
+          "family": "Ma",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The Chinese University of Hong Kong,Department of Surgery,Hong Kong"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Zheng",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Chow Yuk Ho Technology Centre for Innovative Medicine, Institute of Health Science and Multi-scale Medical Robotics Centre Ltd., The Chinese University of Hong Kong,Department of Surgery,Hong Kong"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE International Conference on Robotics and Biomimetics (ROBIO)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-6",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            3
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/robio66223.2025.11377297",
+      "event": {
+        "name": "2025 IEEE International Conference on Robotics and Biomimetics (ROBIO)",
+        "location": "Chengdu, China",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              3
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.481
+    },
+    {
+      "DOI": "10.3390/app14135860",
+      "type": "journal-article",
+      "title": [
+        "LLM-Powered Natural Language Text Processing for Ontology Enrichment"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8964-3891",
+          "authenticated-orcid": false,
+          "given": "Assel",
+          "family": "Mukanova",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Higher School of Information Technology and Engineering, Astana International University, 8 Kabanbay Batyr Av., Astana 010000, Kazakhstan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5898-815X",
+          "authenticated-orcid": false,
+          "given": "Marek",
+          "family": "Milosz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, Lublin University of Technology, 36B Nadbystrzycka Str., 20-618 Lublin, Poland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Assem",
+          "family": "Dauletkaliyeva",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Higher School of Information Technology and Engineering, Astana International University, 8 Kabanbay Batyr Av., Astana 010000, Kazakhstan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aizhan",
+          "family": "Nazyrova",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Higher School of Information Technology and Engineering, Astana International University, 8 Kabanbay Batyr Av., Astana 010000, Kazakhstan"
+            },
+            {
+              "name": "Faculty of Information Technologies, L.N. Gumilyov Eurasian National University, 2 Satpayev Str., Astana 010008, Kazakhstan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gaziza",
+          "family": "Yelibayeva",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Faculty of Information Technologies, L.N. Gumilyov Eurasian National University, 2 Satpayev Str., Astana 010008, Kazakhstan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dmitrii",
+          "family": "Kuzin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Higher School of Information Technology and Engineering, Astana International University, 8 Kabanbay Batyr Av., Astana 010000, Kazakhstan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lazzat",
+          "family": "Kussepova",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Higher School of Information Technology and Engineering, Astana International University, 8 Kabanbay Batyr Av., Astana 010000, Kazakhstan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Applied Sciences"
+      ],
+      "volume": "14",
+      "issue": "13",
+      "page": "5860",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            4
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            4
+          ]
+        ]
+      },
+      "publisher": "MDPI AG",
+      "URL": "https://doi.org/10.3390/app14135860",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.514
+    },
+    {
+      "DOI": "10.4208/jml.260208",
+      "type": "journal-article",
+      "title": [
+        "OptimAI: Optimization from Natural Language Using LLM-Powered AI Agents"
+      ],
+      "author": [
+        {
+          "given": "Raghav",
+          "family": "Thind",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047s2c258",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Department of Computer Science, University of Maryland, College Park, MD 20742, United States"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Youran",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047s2c258",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Department of Mathematics, University of Maryland, College Park, MD 20742, United States"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ling",
+          "family": "Liang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047s2c258",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Department of Mathematics, University of Maryland, College Park, MD 20742, United States."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Haizhao",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047s2c258",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Department of Computer Science, University of Maryland, College Park, MD 20742, United States."
+            },
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/047s2c258",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Department of Mathematics, University of Maryland, College Park, MD 20742, United States."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Machine Learning"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            29
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            29
+          ]
+        ]
+      },
+      "publisher": "Global Science Press",
+      "URL": "https://doi.org/10.4208/jml.260208",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.418
+    },
+    {
+      "DOI": "10.2139/ssrn.5704767",
+      "type": "posted-content",
+      "title": [
+        "Toward an LLM-Powered Operating System: A Natural Language-Based Prototype"
+      ],
+      "author": [
+        {
+          "given": "Tamer",
+          "family": "Elserwy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.2139/ssrn.5704767",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.571
+    },
+    {
+      "DOI": "10.1109/vl-hcc65237.2025.00055",
+      "type": "proceedings-article",
+      "title": [
+        "Bridging Natural Language and SQL with an LLM-Powered Visual Interface"
+      ],
+      "author": [
+        {
+          "given": "Supriya",
+          "family": "Kottam",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of North Carolina at Greensboro,Greensboro,NC,USA"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "417-418",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            7
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/vl-hcc65237.2025.00055",
+      "event": {
+        "name": "2025 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              7
+            ]
+          ]
+        },
+        "location": "Raleigh, NC, USA",
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.385
+    },
+    {
+      "DOI": "10.31223/x54z09",
+      "type": "posted-content",
+      "title": [
+        "Bridging Natural Language and Desktop GIS Automation with LLM-Powered GIS Plugins"
+      ],
+      "author": [
+        {
+          "given": "Fehér",
+          "family": "Zsolt Zoltán",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            9
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "California Digital Library (CDL)",
+      "URL": "https://doi.org/10.31223/x54z09",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.353
+    }
+  ]
+}

@@ -1,0 +1,978 @@
+{
+  "key": "arxiv240210978",
+  "original": {
+    "url": "https://arxiv.org/abs/2402.10978",
+    "howpublished": "arXiv:2402.10978",
+    "year": "2024",
+    "author": "Mohri, Christopher and Hashimoto, Tatsunori",
+    "title": "{Language Models with Conformal Factuality Guarantees}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv240210978"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2402.10978",
+    "https://api.crossref.org/works?query.title=Language+Models+with+Conformal+Factuality+Guarantees&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2402.10978: Language Models with Conformal Factuality Guarantees"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Language Models with Conformal Factuality Guarantees"
+      ],
+      "twitter:description": [
+        "Guaranteeing the correctness and factuality of language model (LM) outputs is a major open problem. In this work, we propose conformal factuality, a framework that can ensure high probability..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Language Models with Conformal Factuality Guarantees"
+      ],
+      "citation_author": [
+        "Mohri, Christopher",
+        "Hashimoto, Tatsunori"
+      ],
+      "citation_date": [
+        "2024/02/15"
+      ],
+      "citation_online_date": [
+        "2024/02/15"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2402.10978"
+      ],
+      "citation_arxiv_id": [
+        "2402.10978"
+      ],
+      "citation_abstract": [
+        "Guaranteeing the correctness and factuality of language model (LM) outputs is a major open problem. In this work, we propose conformal factuality, a framework that can ensure high probability correctness guarantees for LMs by connecting language modeling and conformal prediction. We observe that the correctness of an LM output is equivalent to an uncertainty quantification problem, where the uncertainty sets are defined as the entailment set of an LM's output. Using this connection, we show that conformal prediction in language models corresponds to a back-off algorithm that provides high probability correctness guarantees by progressively making LM outputs less specific (and expanding the associated uncertainty sets). This approach applies to any black-box LM and requires very few human-annotated samples. Evaluations of our approach on closed book QA (FActScore, NaturalQuestions) and reasoning tasks (MATH) show that our approach can provide 80-90% correctness guarantees while retaining the majority of the LM's original output."
+      ]
+    },
+    "details": {
+      "title": "Title: Language Models with Conformal Factuality Guarantees",
+      "authors": "Authors: Christopher Mohri , Tatsunori Hashimoto",
+      "dateline": "[Submitted on 15 Feb 2024]",
+      "metatable": "Subjects: Machine Learning (cs.LG) ; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) Cite as: arXiv:2402.10978 [cs.LG] (or arXiv:2402.10978v1 [cs.LG] for this version) https://doi.org/10.48550/arXiv.2402.10978 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.18653/2026.emnlp-main.2585",
+      "type": "proceedings-article",
+      "title": [
+        "IntroConformal: Conformal Factuality Guarantees for Large Vision-Language Models via Introspective Signals"
+      ],
+      "author": [
+        {
+          "given": "Md.",
+          "family": "Atabuzzaman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christian",
+          "family": "Alexander",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chris",
+          "family": "Thomas",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "58747-58764",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/2026.emnlp-main.2585",
+      "event": {
+        "name": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.426
+    },
+    {
+      "DOI": "10.1201/9781003599913-7",
+      "type": "book-chapter",
+      "title": [
+        "Factuality of Large Language Models"
+      ],
+      "author": [
+        {
+          "given": "Baixiang",
+          "family": "Huang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Haoran",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Kai",
+          "family": "Shu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Online Trust and Safety"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "95-111",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            16
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            16
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "CRC Press",
+      "URL": "https://doi.org/10.1201/9781003599913-7",
+      "event": null,
+      "ISBN": [
+        "9781003599913"
+      ],
+      "relation": null,
+      "title_similarity": 0.359
+    },
+    {
+      "DOI": "10.18653/v1/2024.findings-emnlp.404",
+      "type": "proceedings-article",
+      "title": [
+        "ConU: Conformal Uncertainty in Large Language Models with Correctness Coverage Guarantees"
+      ],
+      "author": [
+        {
+          "given": "Zhiyuan",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jinhao",
+          "family": "Duan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lu",
+          "family": "Cheng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yue",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Qingni",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiaoshuang",
+          "family": "Shi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kaidi",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Heng Tao",
+          "family": "Shen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiaofeng",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EMNLP 2024"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "6886-6898",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2024.findings-emnlp.404",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+        "location": "Miami, Florida, USA",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              11
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.544
+    },
+    {
+      "DOI": "10.1007/978-981-92-2856-0_39",
+      "type": "book-chapter",
+      "title": [
+        "MedConf-RAG: Reliable Medical LLMs with Gated Graph Integration and Conformal Factuality Guarantees"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8670-1283",
+          "authenticated-orcid": false,
+          "given": "Xuefei",
+          "family": "Huang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0005-0445-0281",
+          "authenticated-orcid": false,
+          "given": "Yanyan",
+          "family": "Bu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0009-5395-3829",
+          "authenticated-orcid": false,
+          "given": "Na",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0964-1774",
+          "authenticated-orcid": false,
+          "given": "Yingying",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2811-8962",
+          "authenticated-orcid": false,
+          "given": "Sheng",
+          "family": "Hao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1545-1811",
+          "authenticated-orcid": false,
+          "given": "Ying",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Knowledge Science, Engineering and Management"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "547-558",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            12
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2027
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            12
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Singapore",
+      "URL": "https://doi.org/10.1007/978-981-92-2856-0_39",
+      "event": null,
+      "ISBN": [
+        "9789819228553",
+        "9789819228560"
+      ],
+      "relation": null,
+      "title_similarity": 0.617
+    },
+    {
+      "DOI": "10.1145/3742420",
+      "type": "journal-article",
+      "title": [
+        "Survey on Factuality in Large Language Models"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3023-8082",
+          "authenticated-orcid": false,
+          "given": "Cunxiang",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Westlake University",
+              "place": [
+                "Hangzhou, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9726-3397",
+          "authenticated-orcid": false,
+          "given": "Xiaoze",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Purdue University",
+              "place": [
+                "West Lafayette, United States"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-3612-5805",
+          "authenticated-orcid": false,
+          "given": "Yuanhao",
+          "family": "Yue",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Fudan University",
+              "place": [
+                "Shanghai, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8805-8789",
+          "authenticated-orcid": false,
+          "given": "Qipeng",
+          "family": "Guo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shanghai AI Laboratory",
+              "place": [
+                "Shanghai, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-2165-9236",
+          "authenticated-orcid": false,
+          "given": "Xiangkun",
+          "family": "Hu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shanghai Innovation Institute",
+              "place": [
+                "Shanghai, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-2700-4513",
+          "authenticated-orcid": false,
+          "given": "Xiangru",
+          "family": "Tang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Yale University",
+              "place": [
+                "New Haven, United States"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-6234-4409",
+          "authenticated-orcid": false,
+          "given": "Tianhang",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Amazon.com Inc",
+              "place": [
+                "Shanghai, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1140-6084",
+          "authenticated-orcid": false,
+          "given": "Cheng",
+          "family": "Jiayang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "HKUST",
+              "place": [
+                "Hong Kong, Hong Kong"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9458-696X",
+          "authenticated-orcid": false,
+          "given": "Yunzhi",
+          "family": "Yao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Zhejiang University",
+              "place": [
+                "Hangzhou, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6075-4224",
+          "authenticated-orcid": false,
+          "given": "Xuming",
+          "family": "Hu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "HKUST (GZ)",
+              "place": [
+                "Guangzhou, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-5232-9130",
+          "authenticated-orcid": false,
+          "given": "Zehan",
+          "family": "Qi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tsinghua University",
+              "place": [
+                "Beijing, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1143-064X",
+          "authenticated-orcid": false,
+          "given": "Wenyang",
+          "family": "Gao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Westlake University",
+              "place": [
+                "Hangzhou, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-9969-8259",
+          "authenticated-orcid": false,
+          "given": "Yidong",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Westlake University",
+              "place": [
+                "Hangzhou, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0667-7349",
+          "authenticated-orcid": false,
+          "given": "Linyi",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Westlake University",
+              "place": [
+                "Hangzhou, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4833-0880",
+          "authenticated-orcid": false,
+          "given": "Jindong",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "William & Mary",
+              "place": [
+                "Williamsburg, USA"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8608-8482",
+          "authenticated-orcid": false,
+          "given": "Xing",
+          "family": "Xie",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft",
+              "place": [
+                "Seattle, United States"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-2007-2019",
+          "authenticated-orcid": false,
+          "given": "Zheng",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Amazon.com Inc",
+              "place": [
+                "Shanghai, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5214-2268",
+          "authenticated-orcid": false,
+          "given": "Yue",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Westlake University",
+              "place": [
+                "Hangzhou, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ACM Computing Surveys"
+      ],
+      "volume": "58",
+      "issue": "1",
+      "page": "1-37",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            2
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            31
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            2
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "URL": "https://doi.org/10.1145/3742420",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.326
+    }
+  ]
+}

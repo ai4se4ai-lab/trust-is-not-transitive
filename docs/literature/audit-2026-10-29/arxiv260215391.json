@@ -1,0 +1,656 @@
+{
+  "key": "arxiv260215391",
+  "original": {
+    "url": "https://arxiv.org/abs/2602.15391",
+    "howpublished": "arXiv:2602.15391",
+    "year": "2026",
+    "author": "Sharma, Ankit and Tapas, Nachiket and Patra, Jyotiprakash",
+    "title": "{Improving LLM Reliability through Hybrid Abstention and Adaptive Detection}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv260215391"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2602.15391",
+    "https://api.crossref.org/works?query.title=Improving+LLM+Reliability+through+Hybrid+Abstention+and+Adaptive+Detection&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2602.15391: Improving LLM Reliability through Hybrid Abstention and Adaptive Detection"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Improving LLM Reliability through Hybrid Abstention and Adaptive Detection"
+      ],
+      "twitter:description": [
+        "Large Language Models (LLMs) deployed in production environments face a fundamental safety-utility trade-off either a strict filtering mechanisms prevent harmful outputs but often block benign..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Improving LLM Reliability through Hybrid Abstention and Adaptive Detection"
+      ],
+      "citation_author": [
+        "Sharma, Ankit",
+        "Tapas, Nachiket",
+        "Patra, Jyotiprakash"
+      ],
+      "citation_date": [
+        "2026/02/17"
+      ],
+      "citation_online_date": [
+        "2026/02/17"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2602.15391"
+      ],
+      "citation_arxiv_id": [
+        "2602.15391"
+      ],
+      "citation_abstract": [
+        "Large Language Models (LLMs) deployed in production environments face a fundamental safety-utility trade-off either a strict filtering mechanisms prevent harmful outputs but often block benign queries or a relaxed controls risk unsafe content generation. Conventional guardrails based on static rules or fixed confidence thresholds are typically context-insensitive and computationally expensive, resulting in high latency and degraded user experience. To address these limitations, we introduce an adaptive abstention system that dynamically adjusts safety thresholds based on real-time contextual signals such as domain and user history. The proposed framework integrates a multi-dimensional detection architecture composed of five parallel detectors, combined through a hierarchical cascade mechanism to optimize both speed and precision. The cascade design reduces unnecessary computation by progressively filtering queries, achieving substantial latency improvements compared to non-cascaded models and external guardrail systems. Extensive evaluation on mixed and domain-specific workloads demonstrates significant reductions in false positives, particularly in sensitive domains such as medical advice and creative writing. The system maintains high safety precision and near-perfect recall under strict operating modes. Overall, our context-aware abstention framework effectively balances safety and utility while preserving performance, offering a scalable solution for reliable LLM deployment."
+      ]
+    },
+    "details": {
+      "title": "Title: Improving LLM Reliability through Hybrid Abstention and Adaptive Detection",
+      "authors": "Authors: Ankit Sharma , Nachiket Tapas , Jyotiprakash Patra",
+      "dateline": "[Submitted on 17 Feb 2026]",
+      "metatable": "Subjects: Artificial Intelligence (cs.AI) Cite as: arXiv:2602.15391 [cs.AI] (or arXiv:2602.15391v1 [cs.AI] for this version) https://doi.org/10.48550/arXiv.2602.15391 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1609/aies.v8i1.36543",
+      "type": "journal-article",
+      "title": [
+        "Sacred or Synthetic? Evaluating LLM Reliability and Abstention for Religious Questions"
+      ],
+      "author": [
+        {
+          "given": "Farah",
+          "family": "Atif",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nursultan",
+          "family": "Askarbekuly",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kareem",
+          "family": "Darwish",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Monojit",
+          "family": "Choudhury",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society"
+      ],
+      "volume": "8",
+      "issue": "1",
+      "page": "217-226",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            15
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            15
+          ]
+        ]
+      },
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "URL": "https://doi.org/10.1609/aies.v8i1.36543",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.511
+    },
+    {
+      "DOI": "10.1109/tse.2025.3640641",
+      "type": "journal-article",
+      "title": [
+        "Advancing LLM-Generated Code Reliability: A Hybrid Approach for Hallucination Detection"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1928-7526",
+          "authenticated-orcid": false,
+          "given": "Bo",
+          "family": "Yang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "School of Information Science and Technology, Beijing Forestry University, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2319-8078",
+          "authenticated-orcid": false,
+          "given": "Jiayi",
+          "family": "Dang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Information Science and Technology, Beijing Forestry University, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3125-4399",
+          "authenticated-orcid": false,
+          "given": "Huai",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computing Technologies, Swinburne University of Technology, Hawthorn, VIC, Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1087-226X",
+          "authenticated-orcid": false,
+          "given": "Zhi",
+          "family": "Jin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Computer Science, Wuhan University, Wuhan, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Software Engineering"
+      ],
+      "volume": "52",
+      "issue": "2",
+      "page": "578-594",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            2
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/tse.2025.3640641",
+      "event": null,
+      "ISBN": null,
+      "relation": {
+        "has-preprint": [
+          {
+            "id-type": "doi",
+            "id": "10.36227/techrxiv.175393532.27338752/v1",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "title_similarity": 0.549
+    },
+    {
+      "DOI": "10.36227/techrxiv.175393532.27338752/v1",
+      "type": "posted-content",
+      "title": [
+        "Advancing LLM-Generated Code Reliability: A Hybrid Approach for Hallucination Detection"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1928-7526",
+          "authenticated-orcid": false,
+          "given": "Bo",
+          "family": "Yang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiayi",
+          "family": "Dang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Huai",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhi",
+          "family": "Jin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            31
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.36227/techrxiv.175393532.27338752/v1",
+      "event": null,
+      "ISBN": null,
+      "relation": {
+        "is-preprint-of": [
+          {
+            "id-type": "doi",
+            "id": "10.1109/TSE.2025.3640641",
+            "asserted-by": "subject"
+          }
+        ]
+      },
+      "title_similarity": 0.549
+    },
+    {
+      "DOI": "10.1016/j.tourman.2025.105272",
+      "type": "journal-article",
+      "title": [
+        "Improving sentiment analysis in tourism through LLM-enhanced irony detection"
+      ],
+      "author": [
+        {
+          "given": "Wenhui",
+          "family": "Liu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Likang",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3099-4803",
+          "authenticated-orcid": false,
+          "given": "Hongke",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tourism Management"
+      ],
+      "volume": "112",
+      "issue": null,
+      "page": "105272",
+      "article-number": "105272",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            2
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.1016/j.tourman.2025.105272",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.481
+    },
+    {
+      "DOI": "10.1007/978-3-032-02049-9_9",
+      "type": "book-chapter",
+      "title": [
+        "Improving Software Security Through a LLM-Based Vulnerability Detection Model"
+      ],
+      "author": [
+        {
+          "given": "Syeda Sadia",
+          "family": "Alam",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mst Shapna",
+          "family": "Akter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alfredo",
+          "family": "Cuzzocrea",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Database and Expert Systems Applications"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "122-129",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            18
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            18
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Switzerland",
+      "URL": "https://doi.org/10.1007/978-3-032-02049-9_9",
+      "event": null,
+      "ISBN": [
+        "9783032020482",
+        "9783032020499"
+      ],
+      "relation": null,
+      "title_similarity": 0.522
+    },
+    {
+      "DOI": "10.33411/ijist/1623",
+      "type": "journal-article",
+      "title": [
+        "Improving Software Security Through an LLM-Based Vulnerability Detection Model"
+      ],
+      "author": [
+        {
+          "given": "Mohsin",
+          "family": "Sami",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, University of Central Punjab, Lahore, Pakistan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kashif",
+          "family": "Nasr",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, University of Central Punjab, Lahore, Pakistan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Saira",
+          "family": "Gillani",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, University of Central Punjab, Lahore, Pakistan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rabia",
+          "family": "Tehseen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, University of Central Punjab, Lahore, Pakistan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "International Journal of Innovations in Science and Technology"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "2592",
+      "article-number": "1623",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            28
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            28
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            28
+          ]
+        ]
+      },
+      "publisher": "50Sea",
+      "URL": "https://doi.org/10.33411/ijist/1623",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.519
+    }
+  ]
+}

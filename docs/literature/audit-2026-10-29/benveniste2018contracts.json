@@ -1,0 +1,251 @@
+{
+  "key": "benveniste2018contracts",
+  "original": {
+    "doi": "10.1561/1000000053",
+    "year": "2018",
+    "pages": "124--400",
+    "number": "2--3",
+    "volume": "12",
+    "journal": "Foundations and Trends in Electronic Design Automation",
+    "title": "Contracts for System Design",
+    "author": "Benveniste, Albert and Caillaud, Beno{\\^\\i}t and Nickovic, Dejan and Passerone, Roberto and Raclet, Jean-Baptiste and Reinkemeier, Philipp and Sangiovanni-Vincentelli, Alberto and Damm, Werner and Henzinger, Thomas A. and Larsen, Kim G.",
+    "ENTRYTYPE": "article",
+    "ID": "benveniste2018contracts"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1561/1000000053"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1561/1000000053",
+      "type": "journal-article",
+      "title": [
+        "Contracts for System Design"
+      ],
+      "author": [
+        {
+          "given": "Albert",
+          "family": "Benveniste",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "INRIA, Rennes,",
+              "place": [
+                "France"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Benoît",
+          "family": "Caillaud",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "INRIA, Rennes,",
+              "place": [
+                "France"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dejan",
+          "family": "Nickovic",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Austrian Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Roberto",
+          "family": "Passerone",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Trento ,",
+              "place": [
+                "Italy"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jean-Baptiste",
+          "family": "Raclet",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "IRIT , Toulouse,",
+              "place": [
+                "France"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Philipp",
+          "family": "Reinkemeier",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Offis , Oldenburg,",
+              "place": [
+                "Germany"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alberto",
+          "family": "Sangiovanni-Vincentelli",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of California at Berkeley"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Werner",
+          "family": "Damm",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Offis and University of Oldenburg ,",
+              "place": [
+                "Germany"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas A.",
+          "family": "Henzinger",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "IST Austria , Klosterneuburg"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kim G.",
+          "family": "Larsen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Aalborg University ,",
+              "place": [
+                "Denmark"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Foundations and Trends® in Electronic Design Automation"
+      ],
+      "volume": "12",
+      "issue": "2-3",
+      "page": "124-400",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            3,
+            28
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2018,
+            3,
+            28
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2018,
+            3,
+            28
+          ]
+        ]
+      },
+      "publisher": "Emerald",
+      "URL": "https://doi.org/10.1561/1000000053",
+      "event": null,
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

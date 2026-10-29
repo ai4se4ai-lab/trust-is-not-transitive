@@ -1,0 +1,544 @@
+{
+  "key": "arxiv230505176",
+  "original": {
+    "url": "https://arxiv.org/abs/2305.05176",
+    "howpublished": "arXiv:2305.05176",
+    "year": "2023",
+    "author": "Chen, Lingjiao and Zaharia, Matei and Zou, James",
+    "title": "{FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv230505176"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2305.05176",
+    "https://api.crossref.org/works?query.title=FrugalGPT%3A+How+to+Use+Large+Language+Models+While+Reducing+Cost+and+Improving+Performance&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2305.05176: FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "FrugalGPT: How to Use Large Language Models While Reducing Cost..."
+      ],
+      "twitter:description": [
+        "There is a rapidly growing number of large language models (LLMs) that users can query for a fee. We review the cost associated with querying popular LLM APIs, e.g. GPT-4, ChatGPT, J1-Jumbo, and..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance"
+      ],
+      "citation_author": [
+        "Chen, Lingjiao",
+        "Zaharia, Matei",
+        "Zou, James"
+      ],
+      "citation_date": [
+        "2023/05/09"
+      ],
+      "citation_online_date": [
+        "2023/05/09"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2305.05176"
+      ],
+      "citation_arxiv_id": [
+        "2305.05176"
+      ],
+      "citation_abstract": [
+        "There is a rapidly growing number of large language models (LLMs) that users can query for a fee. We review the cost associated with querying popular LLM APIs, e.g. GPT-4, ChatGPT, J1-Jumbo, and find that these models have heterogeneous pricing structures, with fees that can differ by two orders of magnitude. In particular, using LLMs on large collections of queries and text can be expensive. Motivated by this, we outline and discuss three types of strategies that users can exploit to reduce the inference cost associated with using LLMs: 1) prompt adaptation, 2) LLM approximation, and 3) LLM cascade. As an example, we propose FrugalGPT, a simple yet flexible instantiation of LLM cascade which learns which combinations of LLMs to use for different queries in order to reduce cost and improve accuracy. Our experiments show that FrugalGPT can match the performance of the best individual LLM (e.g. GPT-4) with up to 98% cost reduction or improve the accuracy over GPT-4 by 4% with the same cost. The ideas and findings presented here lay a foundation for using LLMs sustainably and efficiently."
+      ]
+    },
+    "details": {
+      "title": "Title: FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance",
+      "authors": "Authors: Lingjiao Chen , Matei Zaharia , James Zou",
+      "dateline": "[Submitted on 9 May 2023]",
+      "metatable": "Subjects: Machine Learning (cs.LG) ; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Software Engineering (cs.SE) Cite as: arXiv:2305.05176 [cs.LG] (or arXiv:2305.05176v1 [cs.LG] for this version) https://doi.org/10.48550/arXiv.2305.05176 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1145/3306446.3340813",
+      "type": "proceedings-article",
+      "title": [
+        "Reducing procrastination while improving performance"
+      ],
+      "author": [
+        {
+          "given": "Antonio",
+          "family": "Balderas",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Cadiz, Puerto Real, Spain"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Andrea",
+          "family": "Capiluppi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Brunel University London, Uxbridge, UK"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Manuel",
+          "family": "Palomo-Duarte",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cadiz, Puerto Real, Spain"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Alessio",
+          "family": "Malizia",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Hertfordshire, Hatfield, Hertfordshire, UK"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Juan Manuel",
+          "family": "Dodero",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cadiz, Puerto Real, Spain"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 15th International Symposium on Open Collaboration"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-10",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            20
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            20
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            20
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3306446.3340813",
+      "event": {
+        "name": "OpenSym '19: The 15th International Symposium on Open Collaboration",
+        "sponsor": [
+          "SIGWEB ACM Special Interest Group on Hypertext, Hypermedia, and Web",
+          "SIGSOFT ACM Special Interest Group on Software Engineering"
+        ],
+        "location": "Skövde Sweden",
+        "acronym": "OpenSym '19"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.532
+    },
+    {
+      "DOI": "10.1002/jcaf.20484",
+      "type": "journal-article",
+      "title": [
+        "How strategic budgeting can control cost while improving performance"
+      ],
+      "author": [
+        {
+          "given": "Audrey",
+          "family": "Taylor",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Corporate Accounting &amp; Finance"
+      ],
+      "volume": "20",
+      "issue": "3",
+      "page": "53-58",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2009,
+            2,
+            20
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            3
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2009,
+            2,
+            20
+          ]
+        ]
+      },
+      "publisher": "Wiley",
+      "URL": "https://doi.org/10.1002/jcaf.20484",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.544
+    },
+    {
+      "DOI": "10.69554/fldq4873",
+      "type": "journal-article",
+      "title": [
+        "Reducing inventories while improving delivery performance"
+      ],
+      "author": [
+        {
+          "given": "Karsten",
+          "family": "Eller",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Beckers Group, Wilh. Becker Holding GmbH",
+              "place": [
+                "Germany"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Supply Chain Management, Logistics and Procurement"
+      ],
+      "volume": "3",
+      "issue": "1",
+      "page": "46",
+      "article-number": "JSCM-vol3-iss1-pg46",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            1
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            1
+          ]
+        ]
+      },
+      "publisher": "Henry Stewart Publications",
+      "URL": "https://doi.org/10.69554/fldq4873",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.469
+    },
+    {
+      "DOI": "10.18653/v1/2025.ijcnlp-long.189",
+      "type": "proceedings-article",
+      "title": [
+        "Improving Multilingual Capabilities with Cultural and Local Knowledge in Large Language Models While Enhancing Native Performance"
+      ],
+      "author": [
+        {
+          "given": "Ram Mohan Rao",
+          "family": "Kadiyala",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Siddartha",
+          "family": "Pullakhandam",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Siddhant",
+          "family": "Gupta",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jebish",
+          "family": "Purbey",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Drishti",
+          "family": "Sharma",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Kanwal",
+          "family": "Mehreen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Muhammad",
+          "family": "Arham",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Suman",
+          "family": "Debnath",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Hamza",
+          "family": "Farooq",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "3618-3641",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "The Asian Federation of Natural Language Processing and The Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.ijcnlp-long.189",
+      "event": {
+        "name": "Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics",
+        "location": "Mumbai, India",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              12
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.568
+    },
+    {
+      "DOI": "10.2139/ssrn.5193150",
+      "type": "posted-content",
+      "title": [
+        "Public Education in Belgium - Improving Outcome While Reducing Cost"
+      ],
+      "author": [
+        {
+          "given": "Jean-Jacques",
+          "family": "Hallaert",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.2139/ssrn.5193150",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.391
+    }
+  ]
+}

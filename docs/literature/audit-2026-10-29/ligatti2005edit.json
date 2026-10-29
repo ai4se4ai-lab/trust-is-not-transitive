@@ -1,0 +1,104 @@
+{
+  "key": "ligatti2005edit",
+  "original": {
+    "doi": "10.1007/s10207-004-0046-8",
+    "year": "2005",
+    "pages": "2--16",
+    "number": "1--2",
+    "volume": "4",
+    "journal": "International Journal of Information Security",
+    "title": "Edit Automata: Enforcement Mechanisms for Run-Time Security Policies",
+    "author": "Ligatti, Jay and Bauer, Lujo and Walker, David",
+    "ENTRYTYPE": "article",
+    "ID": "ligatti2005edit"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1007/s10207-004-0046-8"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1007/s10207-004-0046-8",
+      "type": "journal-article",
+      "title": [
+        "Edit automata: enforcement mechanisms for run-time security policies"
+      ],
+      "author": [
+        {
+          "given": "Jay",
+          "family": "Ligatti",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lujo",
+          "family": "Bauer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Walker",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "International Journal of Information Security"
+      ],
+      "volume": "4",
+      "issue": "1-2",
+      "page": "2-16",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            2
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2005,
+            2
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2005,
+            2,
+            1
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "URL": "https://doi.org/10.1007/s10207-004-0046-8",
+      "event": null,
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

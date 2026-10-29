@@ -1,0 +1,118 @@
+[
+  {
+    "key": "tibshirani2019conformal",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2019/hash/8fb21ee7a2207526da55a679f0332de2-Abstract.html",
+    "bibtex_url": "https://proceedings.neurips.cc/paper_files/paper/2019/file/8fb21ee7a2207526da55a679f0332de2-Bibtex.bib",
+    "bibtex": "@inproceedings{NEURIPS2019_8fb21ee7,\n author = {Tibshirani, Ryan J and Foygel Barber, Rina and Candes, Emmanuel and Ramdas, Aaditya},\n booktitle = {Advances in Neural Information Processing Systems},\n editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\\textquotesingle Alch\\'{e}-Buc and E. Fox and R. Garnett},\n pages = {},\n publisher = {Curran Associates, Inc.},\n title = {Conformal Prediction Under Covariate Shift},\n url = {https://proceedings.neurips.cc/paper_files/paper/2019/file/8fb21ee7a2207526da55a679f0332de2-Paper.pdf},\n volume = {32},\n year = {2019}\n}\n"
+  },
+  {
+    "key": "arxiv200602544",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2020/hash/244edd7e85dc81602b7615cd705545f5-Abstract.html",
+    "bibtex_url": "https://proceedings.neurips.cc/paper_files/paper/10026-/bibtex",
+    "bibtex": "@inproceedings{NEURIPS2020_244edd7e,\n author = {Romano, Yaniv and Sesia, Matteo and Candes, Emmanuel},\n booktitle = {Advances in Neural Information Processing Systems},\n editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},\n pages = {3581--3591},\n publisher = {Curran Associates, Inc.},\n title = {Classification with Valid and Adaptive Coverage},\n url = {https://proceedings.neurips.cc/paper_files/paper/2020/file/244edd7e85dc81602b7615cd705545f5-Paper.pdf},\n volume = {33},\n year = {2020}\n}\n"
+  },
+  {
+    "key": "arxiv210600170",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/0d441de75945e5acbc865406fc9a2559-Abstract.html",
+    "bibtex_url": "https://proceedings.neurips.cc/paper_files/paper/11751-/bibtex",
+    "bibtex": "@inproceedings{NEURIPS2021_0d441de7,\n author = {Gibbs, Isaac and Candes, Emmanuel},\n booktitle = {Advances in Neural Information Processing Systems},\n editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},\n pages = {1660--1672},\n publisher = {Curran Associates, Inc.},\n title = {Adaptive Conformal Inference Under Distribution Shift},\n url = {https://proceedings.neurips.cc/paper_files/paper/2021/file/0d441de75945e5acbc865406fc9a2559-Paper.pdf},\n volume = {34},\n year = {2021}\n}\n"
+  },
+  {
+    "key": "arxiv240618495",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/0f69b4b96a46f284b726fbd70f74fb3b-Abstract-Datasets_and_Benchmarks_Track.html",
+    "bibtex_url": "https://proceedings.neurips.cc/paper_files/paper/25449-/bibtex",
+    "bibtex": "@inproceedings{NEURIPS2024_0f69b4b9,\n author = {Han, Seungju and Rao, Kavel and Ettinger, Allyson and Jiang, Liwei and Lin, Bill Yuchen and Lambert, Nathan and Choi, Yejin and Dziri, Nouha},\n booktitle = {Advances in Neural Information Processing Systems},\n doi = {10.52202/079017-0261},\n editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},\n pages = {8093--8131},\n publisher = {Curran Associates, Inc.},\n title = {WildGuard: Open One-stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs},\n url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/0f69b4b96a46f284b726fbd70f74fb3b-Paper-Datasets_and_Benchmarks_Track.pdf},\n volume = {37},\n year = {2024}\n}\n"
+  },
+  {
+    "key": "arxiv240613352",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/97091a5177d8dc64b1da8bf3e1f6fb54-Abstract-Datasets_and_Benchmarks_Track.html",
+    "bibtex_url": "https://proceedings.neurips.cc/paper_files/paper/23699-/bibtex",
+    "bibtex": "@inproceedings{NEURIPS2024_97091a51,\n author = {Debenedetti, Edoardo and Zhang, Jie and Balunovic, Mislav and Beurer-Kellner, Luca and Fischer, Marc and Tram\\`{e}r, Florian},\n booktitle = {Advances in Neural Information Processing Systems},\n doi = {10.52202/079017-2636},\n editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},\n pages = {82895--82920},\n publisher = {Curran Associates, Inc.},\n title = {AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents},\n url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/97091a5177d8dc64b1da8bf3e1f6fb54-Paper-Datasets_and_Benchmarks_Track.pdf},\n volume = {37},\n year = {2024}\n}\n"
+  },
+  {
+    "key": "arxiv241107781",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/bfd082c452dffb450d5a5202b0419205-Abstract-Datasets_and_Benchmarks_Track.html",
+    "bibtex_url": "https://proceedings.neurips.cc/paper_files/paper/25350-/bibtex",
+    "bibtex": "@inproceedings{NEURIPS2024_bfd082c4,\n author = {Guo, Chengquan and Liu, Xun and Xie, Chulin and Zhou, Andy and Zeng, Yi and Lin, Zinan and Song, Dawn and Li, Bo},\n booktitle = {Advances in Neural Information Processing Systems},\n doi = {10.52202/079017-3369},\n editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},\n pages = {106190--106236},\n publisher = {Curran Associates, Inc.},\n title = {RedCode: Risky Code Execution and Generation Benchmark for Code Agents},\n url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/bfd082c452dffb450d5a5202b0419205-Paper-Datasets_and_Benchmarks_Track.pdf},\n volume = {37},\n year = {2024}\n}\n"
+  },
+  {
+    "key": "arxiv230610193",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/31421b112e5f7faf4fc577b74e45dab2-Abstract-Conference.html",
+    "bibtex_url": "https://proceedings.iclr.cc/paper_files/paper/3967-/bibtex",
+    "bibtex": "@inproceedings{ICLR2024_31421b11,\n author = {Quach, Victor and Fisch, Adam and Schuster, Tal and Yala, Adam and Sohn, Jae Ho and Jaakkola, Tommi and Barzilay, Regina },\n booktitle = {International Conference on Learning Representations},\n editor = {B. Kim and Y. Yue and S. Chaudhuri and K. Fragkiadaki and M. Khan and Y. Sun},\n pages = {11654--11681},\n title = {Conformal Language Modeling},\n url = {https://proceedings.iclr.cc/paper_files/paper/2024/file/31421b112e5f7faf4fc577b74e45dab2-Paper-Conference.pdf},\n volume = {2024},\n year = {2024}\n}\n"
+  },
+  {
+    "key": "arxiv230915817",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/7274ed909a312d4d869cc328ad1c5f04-Abstract-Conference.html",
+    "bibtex_url": "https://proceedings.iclr.cc/paper_files/paper/4437-/bibtex",
+    "bibtex": "@inproceedings{ICLR2024_7274ed90,\n author = {Ruan, Yangjun and Dong, Honghua and Wang, Andrew and Pitis, Silviu and Zhou, Yongchao and Ba, Jimmy and Dubois, Yann and Maddison, Chris and Hashimoto, Tatsunori},\n booktitle = {International Conference on Learning Representations},\n editor = {B. Kim and Y. Yue and S. Chaudhuri and K. Fragkiadaki and M. Khan and Y. Sun},\n pages = {27031--27098},\n title = {Identifying the Risks of LM Agents with an LM-Emulated Sandbox},\n url = {https://proceedings.iclr.cc/paper_files/paper/2024/file/7274ed909a312d4d869cc328ad1c5f04-Paper-Conference.pdf},\n volume = {2024},\n year = {2024}\n}\n"
+  },
+  {
+    "key": "jimenez2023swebench",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html",
+    "bibtex_url": "https://proceedings.iclr.cc/paper_files/paper/5227-/bibtex",
+    "bibtex": "@inproceedings{ICLR2024_edac78c3,\n author = {Jimenez, Carlos E and Yang, John and Wettig, Alexander and Yao, Shunyu and Pei, Kexin and Press, Ofir and Narasimhan, Karthik},\n booktitle = {International Conference on Learning Representations},\n editor = {B. Kim and Y. Yue and S. Chaudhuri and K. Fragkiadaki and M. Khan and Y. Sun},\n pages = {54107--54157},\n title = {SWE-bench: Can Language Models Resolve Real-world Github Issues?},\n url = {https://proceedings.iclr.cc/paper_files/paper/2024/file/edac78c3e300629acfe6cbe9ca88fb84-Paper-Conference.pdf},\n volume = {2024},\n year = {2024}\n}\n"
+  },
+  {
+    "key": "arxiv220802814",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/f3549ef9b5ff520a7e41ff3cc306ab2b-Abstract-Conference.html",
+    "bibtex_url": "https://proceedings.iclr.cc/paper_files/paper/5069-/bibtex",
+    "bibtex": "@inproceedings{ICLR2024_f3549ef9,\n author = {Angelopoulos, Anastasios and Bates, Stephen and Fisch, Adam and Lei, Lihua and Schuster, Tal},\n booktitle = {International Conference on Learning Representations},\n editor = {B. Kim and Y. Yue and S. Chaudhuri and K. Fragkiadaki and M. Khan and Y. Sun},\n pages = {55198--55218},\n title = {Conformal Risk Control},\n url = {https://proceedings.iclr.cc/paper_files/paper/2024/file/f3549ef9b5ff520a7e41ff3cc306ab2b-Paper-Conference.pdf},\n volume = {2024},\n year = {2024}\n}\n"
+  },
+  {
+    "key": "arxiv240718370",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/08dabd5345b37fffcbe335bd578b15a0-Abstract-Conference.html",
+    "bibtex_url": "https://proceedings.iclr.cc/paper_files/paper/500-/bibtex",
+    "bibtex": "@inproceedings{ICLR2025_08dabd53,\n author = {Jung, Jaehun and Brahman, Faeze and Choi, Yejin},\n booktitle = {International Conference on Learning Representations},\n editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},\n pages = {3101--3125},\n title = {Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement},\n url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/08dabd5345b37fffcbe335bd578b15a0-Paper-Conference.pdf},\n volume = {2025},\n year = {2025}\n}\n"
+  },
+  {
+    "key": "arxiv241002644",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/5750f91d8fb9d5c02bd8ad2c3b44456b-Abstract-Conference.html",
+    "bibtex_url": "https://proceedings.iclr.cc/paper_files/paper/2898-/bibtex",
+    "bibtex": "@inproceedings{ICLR2025_5750f91d,\n author = {Zhang, Hanrong and Huang, Jingyuan and Mei, Kai and Yao, Yifei and Wang, Zhenting and Zhan, Chenlu and Wang, Hongwei and Zhang, Yongfeng},\n booktitle = {International Conference on Learning Representations},\n editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},\n pages = {35331--35366},\n title = {Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents},\n url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/5750f91d8fb9d5c02bd8ad2c3b44456b-Paper-Conference.pdf},\n volume = {2025},\n year = {2025}\n}\n"
+  },
+  {
+    "key": "arxiv241009024",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/c493d23af93118975cdbc32cbe7323f5-Abstract-Conference.html",
+    "bibtex_url": "https://proceedings.iclr.cc/paper_files/paper/2668-/bibtex",
+    "bibtex": "@inproceedings{ICLR2025_c493d23a,\n author = {Andriushchenko, Maksym and Souly, Alexandra and Dziemian, Mateusz and Duenas, Derek and Lin, Maxwell and Wang, Justin and Hendrycks, Dan and Zou, Andy and Kolter, Zico and Fredrikson, Matt  and Gal, Yarin and Davies, Xander},\n booktitle = {International Conference on Learning Representations},\n editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},\n pages = {79185--79220},\n title = {AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents},\n url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/c493d23af93118975cdbc32cbe7323f5-Paper-Conference.pdf},\n volume = {2025},\n year = {2025}\n}\n"
+  },
+  {
+    "key": "arxiv250926238",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/5a829e299ebc1c1615ddb09e98fb6ce8-Abstract-Conference.html",
+    "bibtex_url": "https://proceedings.iclr.cc/paper_files/paper/10874-/bibtex",
+    "bibtex": "@inproceedings{ICLR2026_5a829e29,\n author = {Oldfield, James and Torr, Philip and Patras, Ioannis and Bibi, Adel and Barez, Fazl},\n booktitle = {International Conference on Learning Representations},\n editor = {C. Vondrick and B. Hariharan and C. Raffel and L. Pinto and D. Yang and A. Faust},\n pages = {55192--55229},\n title = {Beyond Linear Probes: Dynamic Safety Monitoring for Language Models},\n url = {https://proceedings.iclr.cc/paper_files/paper/2026/file/5a829e299ebc1c1615ddb09e98fb6ce8-Paper-Conference.pdf},\n volume = {2026},\n year = {2026}\n}\n"
+  },
+  {
+    "key": "arxiv251002609",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/d51ce6040fe3dafd260411593f05a1fa-Abstract-Conference.html",
+    "bibtex_url": "https://proceedings.iclr.cc/paper_files/paper/10532-/bibtex",
+    "bibtex": "@inproceedings{ICLR2026_d51ce604,\n author = {Guo, Chengquan and Xie, Chulin and Yang, Yu and Chen, Zhaorun and Lin, Zinan and Davies, Xander and Gal, Yarin and Song, Dawn and Li, Bo},\n booktitle = {International Conference on Learning Representations},\n editor = {C. Vondrick and B. Hariharan and C. Raffel and L. Pinto and D. Yang and A. Faust},\n pages = {131116--131151},\n title = {RedCodeAgent: Automatic Red-teaming Agent against Diverse Code Agents},\n url = {https://proceedings.iclr.cc/paper_files/paper/2026/file/d51ce6040fe3dafd260411593f05a1fa-Paper-Conference.pdf},\n volume = {2026},\n year = {2026}\n}\n"
+  },
+  {
+    "key": "arxiv241209565",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/ed687a5f52b651b19e7c18f702907b8b-Abstract-Conference.html",
+    "bibtex_url": "https://proceedings.iclr.cc/paper_files/paper/6905-/bibtex",
+    "bibtex": "@inproceedings{ICLR2026_ed687a5f,\n author = {Bailey, Luke and Serrano, Alex and Sheshadri, Abhay and Seleznyov, Mikhail and Taylor, Jordan and Jenner, Erik and Hilton, Jacob and Casper, Stephen and Guestrin, Carlos and Emmons, Scott},\n booktitle = {International Conference on Learning Representations},\n editor = {C. Vondrick and B. Hariharan and C. Raffel and L. Pinto and D. Yang and A. Faust},\n pages = {146838--146882},\n title = {Obfuscated Activations Bypass LLM Latent-Space Defenses},\n url = {https://proceedings.iclr.cc/paper_files/paper/2026/file/ed687a5f52b651b19e7c18f702907b8b-Paper-Conference.pdf},\n volume = {2026},\n year = {2026}\n}\n"
+  },
+  {
+    "key": "arxiv240210978",
+    "url": "https://proceedings.mlr.press/v235/mohri24a.html",
+    "bibtex": "@InProceedings{pmlr-v235-mohri24a,\n  title = \t {Language Models with Conformal Factuality Guarantees},\n  author =       {Mohri, Christopher and Hashimoto, Tatsunori},\n  booktitle = \t {Proceedings of the 41st International Conference on Machine Learning},\n  pages = \t {36029--36047},\n  year = \t {2024},\n  editor = \t {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},\n  volume = \t {235},\n  series = \t {Proceedings of Machine Learning Research},\n  month = \t {21--27 Jul},\n  publisher =    {PMLR},\n  pdf = \t {https://raw.githubusercontent.com/mlresearch/v235/main/assets/mohri24a/mohri24a.pdf},\n  url = \t {https://proceedings.mlr.press/v235/mohri24a.html},\n  abstract = \t {Guaranteeing the correctness and factuality of language model (LM) outputs is a major open problem. In this work, we propose conformal factuality, a framework that can ensure high probability correctness guarantees for LMs by connecting language modeling and conformal prediction. Our insight is that the correctness of an LM output is equivalent to an uncertainty quantification problem, where the uncertainty sets are defined as the entailment set of an LM’s output. Using this connection, we show that conformal prediction in language models corresponds to a back-off algorithm that provides high probability correctness guarantees by progressively making LM outputs less specific (and expanding the associated uncertainty sets). This approach applies to any black-box LM and requires very few human-annotated samples. Evaluations of our approach on closed book QA (FActScore, NaturalQuestions) and reasoning tasks (MATH) show that our approach can provide 80-90% correctness guarantees while retaining the majority of the LM’s original output.}\n}\n"
+  },
+  {
+    "key": "arxiv240617819",
+    "url": "https://proceedings.mlr.press/v258/blot25a.html",
+    "bibtex": "@InProceedings{pmlr-v258-blot25a,\n  title = \t {Automatically Adaptive Conformal Risk Control},\n  author =       {Blot, Vincent and Angelopoulos, Anastasios Nikolas and Jordan, Michael and Brunel, Nicolas J-B.},\n  booktitle = \t {Proceedings of The 28th International Conference on Artificial Intelligence and Statistics},\n  pages = \t {19--27},\n  year = \t {2025},\n  editor = \t {Li, Yingzhen and Mandt, Stephan and Agrawal, Shipra and Khan, Emtiyaz},\n  volume = \t {258},\n  series = \t {Proceedings of Machine Learning Research},\n  month = \t {03--05 May},\n  publisher =    {PMLR},\n  pdf = \t {https://raw.githubusercontent.com/mlresearch/v258/main/assets/blot25a/blot25a.pdf},\n  url = \t {https://proceedings.mlr.press/v258/blot25a.html},\n  abstract = \t {Science and technology have a growing need for effective mechanisms that ensure reliable, controlled performance from black-box machine learning algorithms. These performance guarantees should ideally hold conditionally on the input—that is the performance guarantees should hold, at least approximately, no matter what the input. However, beyond stylized discrete groupings such as ethnicity and gender, the right notion of conditioning can be difficult to define. For example, in problems such as image segmentation, we want the uncertainty to reflect the intrinsic difficulty of the test sample, but this may be difficult to capture via a conditioning event. Building on the recent work of Gibbs et al. [2023], we propose a methodology for achieving approximate conditional control of statistical risks—the expected value of loss functions—by adapting to the difficulty of test samples. Our framework goes beyond traditional conditional risk  control based on user-provided conditioning events to the algorithmic, data-driven determination of appropriate function classes for conditioning. We apply this framework to various regression and segmentation tasks, enabling finer-grained control over model performance and demonstrating that by continuously monitoring and adjusting these parameters, we can achieve superior precision compared to conventional risk-control methods.}\n}\n"
+  },
+  {
+    "key": "arxiv250322738",
+    "url": "https://proceedings.mlr.press/v267/chen25ae.html",
+    "bibtex": "@InProceedings{pmlr-v267-chen25ae,\n  title = \t {{S}hield{A}gent: Shielding Agents via Verifiable Safety Policy Reasoning},\n  author =       {Chen, Zhaorun and Kang, Mintong and Li, Bo},\n  booktitle = \t {Proceedings of the 42nd International Conference on Machine Learning},\n  pages = \t {8313--8344},\n  year = \t {2025},\n  editor = \t {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},\n  volume = \t {267},\n  series = \t {Proceedings of Machine Learning Research},\n  month = \t {13--19 Jul},\n  publisher =    {PMLR},\n  pdf = \t {https://raw.githubusercontent.com/mlresearch/v267/main/assets/chen25ae/chen25ae.pdf},\n  url = \t {https://proceedings.mlr.press/v267/chen25ae.html},\n  abstract = \t {Autonomous agents powered by foundation models have seen widespread adoption across various real-world applications. However, they remain highly vulnerable to malicious instructions and attacks, which can result in severe consequences such as privacy breaches and financial losses. More critically, existing guardrails for LLMs are not applicable due to the complex and dynamic nature of agents. To tackle these challenges, we propose ShieldAgent, the first guardrail agent designed to enforce explicit safety policy compliance for the action trajectory of other protected agents through logical reasoning. Specifically, ShieldAgent first constructs a safety policy model by extracting verifiable rules from policy documents and structuring them into a set of action-based probabilistic rule circuits. Given the action trajectory of the protected agent, ShieldAgent retrieves relevant rule circuits and generates a shielding plan, leveraging its comprehensive tool library and executable code for formal verification. In addition, given the lack of guardrail benchmarks for agents, we introduce ShieldAgent-Bench, a dataset with 3K safety-related pairs of agent instructions and action trajectories, collected via SOTA attacks across 6 web environments and 7 risk categories. Experiments show that ShieldAgent achieves SOTA on ShieldAgent-Bench and three existing benchmarks, outperforming prior methods by 11.3% on average with a high recall of 90.1%. Additionally, ShieldAgent reduces API queries by 64.7% and inference time by 58.2%, demonstrating its high precision and efficiency in safeguarding agents. Our project is available and continuously maintained here: https://shieldagent-aiguard.github.io/}\n}\n"
+  },
+  {
+    "key": "arxiv250220285",
+    "url": "https://proceedings.mlr.press/v267/chen25bd.html",
+    "bibtex": "@InProceedings{pmlr-v267-chen25bd,\n  title = \t {Conformal Tail Risk Control for Large Language Model Alignment},\n  author =       {Chen, Catherine and Shen, Jingyan and Deng, Zhun and Lei, Lihua},\n  booktitle = \t {Proceedings of the 42nd International Conference on Machine Learning},\n  pages = \t {8955--8978},\n  year = \t {2025},\n  editor = \t {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},\n  volume = \t {267},\n  series = \t {Proceedings of Machine Learning Research},\n  month = \t {13--19 Jul},\n  publisher =    {PMLR},\n  pdf = \t {https://raw.githubusercontent.com/mlresearch/v267/main/assets/chen25bd/chen25bd.pdf},\n  url = \t {https://proceedings.mlr.press/v267/chen25bd.html},\n  abstract = \t {Recent developments in large language models (LLMs) have led to their widespread usage for various tasks. The prevalence of LLMs in society implores the assurance on the reliability of their performance. In particular, risk-sensitive applications demand meticulous attention to unexpectedly poor outcomes, i.e., tail events, for instance, toxic answers, humiliating language, and offensive outputs. Due to the costly nature of acquiring human annotations, general-purpose scoring models have been created to automate the process of quantifying these tail events. This phenomenon introduces potential human-machine misalignment between the respective scoring mechanisms. In this work, we present a lightweight calibration framework for blackbox models that ensures the alignment of humans and machines with provable guarantees. Our framework provides a rigorous approach to controlling any distortion risk measure that is characterized by a weighted average of quantiles of the loss incurred by the LLM with high confidence. The theoretical foundation of our method relies on the connection between conformal risk control and a traditional family of statistics, i.e., L-statistics. To demonstrate the utility of our framework, we conduct comprehensive experiments that address the issue of human-machine misalignment.}\n}\n"
+  }
+]

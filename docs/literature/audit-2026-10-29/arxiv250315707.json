@@ -1,0 +1,886 @@
+{
+  "key": "arxiv250315707",
+  "original": {
+    "url": "https://arxiv.org/abs/2503.15707",
+    "howpublished": "arXiv:2503.15707",
+    "year": "2025",
+    "author": "Khan, Azal Ahmad and Andrev, Michael and Murtaza, Muhammad Ali and Aguilera, Sergio and Zhang, Rui and Ding, Jie and Hutchinson, Seth and Anwar, Ali",
+    "title": "{Safety Aware Task Planning via Large Language Models in Robotics}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250315707"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2503.15707",
+    "https://api.crossref.org/works?query.title=Safety+Aware+Task+Planning+via+Large+Language+Models+in+Robotics&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2503.15707: Safety Aware Task Planning via Large Language Models in Robotics"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Safety Aware Task Planning via Large Language Models in Robotics"
+      ],
+      "twitter:description": [
+        "The integration of large language models (LLMs) into robotic task planning has unlocked better reasoning capabilities for complex, long-horizon workflows. However, ensuring safety in LLM-driven..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Safety Aware Task Planning via Large Language Models in Robotics"
+      ],
+      "citation_author": [
+        "Khan, Azal Ahmad",
+        "Andrev, Michael",
+        "Murtaza, Muhammad Ali",
+        "Aguilera, Sergio",
+        "Zhang, Rui",
+        "Ding, Jie",
+        "Hutchinson, Seth",
+        "Anwar, Ali"
+      ],
+      "citation_date": [
+        "2025/03/19"
+      ],
+      "citation_online_date": [
+        "2025/03/19"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2503.15707"
+      ],
+      "citation_arxiv_id": [
+        "2503.15707"
+      ],
+      "citation_abstract": [
+        "The integration of large language models (LLMs) into robotic task planning has unlocked better reasoning capabilities for complex, long-horizon workflows. However, ensuring safety in LLM-driven plans remains a critical challenge, as these models often prioritize task completion over risk mitigation. This paper introduces SAFER (Safety-Aware Framework for Execution in Robotics), a multi-LLM framework designed to embed safety awareness into robotic task planning. SAFER employs a Safety Agent that operates alongside the primary task planner, providing safety feedback. Additionally, we introduce LLM-as-a-Judge, a novel metric leveraging LLMs as evaluators to quantify safety violations within generated task plans. Our framework integrates safety feedback at multiple stages of execution, enabling real-time risk assessment, proactive error correction, and transparent safety evaluation. We also integrate a control framework using Control Barrier Functions (CBFs) to ensure safety guarantees within SAFER's task planning. We evaluated SAFER against state-of-the-art LLM planners on complex long-horizon tasks involving heterogeneous robotic agents, demonstrating its effectiveness in reducing safety violations while maintaining task efficiency. We also verify the task planner and safety planner through actual hardware experiments involving multiple robots and a human."
+      ]
+    },
+    "details": {
+      "title": "Title: Safety Aware Task Planning via Large Language Models in Robotics",
+      "authors": "Authors: Azal Ahmad Khan , Michael Andrev , Muhammad Ali Murtaza , Sergio Aguilera , Rui Zhang , Jie Ding , Seth Hutchinson , Ali Anwar",
+      "dateline": "[Submitted on 19 Mar 2025]",
+      "metatable": "Subjects: Robotics (cs.RO) ; Artificial Intelligence (cs.AI) Cite as: arXiv:2503.15707 [cs.RO] (or arXiv:2503.15707v1 [cs.RO] for this version) https://doi.org/10.48550/arXiv.2503.15707 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1109/iros60139.2025.11246041",
+      "type": "proceedings-article",
+      "title": [
+        "Safety Aware Task Planning via Large Language Models in Robotics"
+      ],
+      "author": [
+        {
+          "given": "Azal Ahmad",
+          "family": "Khan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Minnesota &#x2013; Twin Cities"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael",
+          "family": "Andrev",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Minnesota &#x2013; Twin Cities"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Muhammad Ali",
+          "family": "Murtaza",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Georgia Institute of Technology,Institute for Robotics and Intelligent Machines (IRIM),Atlanta"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sergio",
+          "family": "Aguilera",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Pontificia Universidad Cat&#x00F3;lica de Chile,School of Engineering,Department of Mechanical and Metallurgical Engineering,Santiago,Chile"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rui",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Minnesota &#x2013; Twin Cities"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jie",
+          "family": "Ding",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Minnesota &#x2013; Twin Cities"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Seth",
+          "family": "Hutchinson",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Northeastern University,Khoury College of Computer Sciences"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ali",
+          "family": "Anwar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Minnesota &#x2013; Twin Cities"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "21024-21031",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            19
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            19
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/iros60139.2025.11246041",
+      "event": {
+        "name": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+        "location": "Hangzhou, China",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              19
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              25
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.1109/icac70325.2026.11712362",
+      "type": "proceedings-article",
+      "title": [
+        "Energy-Aware Task Planning for Industrial Robots via Large Language Models"
+      ],
+      "author": [
+        {
+          "given": "Shaoyi",
+          "family": "Niu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Harbin Institute of Technology",
+              "place": [
+                "Harbin, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Pengxiang",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Harbin Institute of Technology",
+              "place": [
+                "Harbin, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jihong",
+          "family": "Yan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Harbin Institute of Technology",
+              "place": [
+                "Harbin, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 31st International Conference on Automation and Computing (ICAC)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-6",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            8
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/icac70325.2026.11712362",
+      "event": {
+        "name": "2026 31st International Conference on Automation and Computing (ICAC)",
+        "location": "High Wycombe, Buckinghamshire, United Kingdom",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              26
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              28
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.689
+    },
+    {
+      "DOI": "10.1007/978-3-032-08462-0_28",
+      "type": "book-chapter",
+      "title": [
+        "On-Edge Task Planning with Large Language Models for Service Robotics"
+      ],
+      "author": [
+        {
+          "given": "Alejandro",
+          "family": "González-Cantón",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Miguel A.",
+          "family": "González-Santamarta",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Francisco J.",
+          "family": "Rodriguez Lera",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ángel M.",
+          "family": "Guerrero-Higueras",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Irene",
+          "family": "González-Fernández",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Francisco",
+          "family": "Martín-Rico",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Hybrid Artificial Intelligent Systems"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "354-365",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            14
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            14
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Switzerland",
+      "URL": "https://doi.org/10.1007/978-3-032-08462-0_28",
+      "event": null,
+      "ISBN": [
+        "9783032084613",
+        "9783032084620"
+      ],
+      "relation": null,
+      "title_similarity": 0.754
+    },
+    {
+      "DOI": "10.1109/tcsvt.2025.3637229",
+      "type": "journal-article",
+      "title": [
+        "Robot Active Task Cognition: Situation-Aware Task Planning With Large Language Models"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8982-8223",
+          "authenticated-orcid": false,
+          "given": "Ying",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "School of Electrical Engineering and Hebei Key Laboratory of Intelligent Rehabilitation and Neuroregulation, Yanshan University, Qinhuangdao, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-4452-0389",
+          "authenticated-orcid": false,
+          "given": "Shaohan",
+          "family": "Bian",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electrical Engineering and Hebei Key Laboratory of Intelligent Rehabilitation and Neuroregulation, Yanshan University, Qinhuangdao, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0001-1769-6222",
+          "authenticated-orcid": false,
+          "given": "Jin",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electrical Engineering and Hebei Key Laboratory of Intelligent Rehabilitation and Neuroregulation, Yanshan University, Qinhuangdao, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0001-9027-8406",
+          "authenticated-orcid": false,
+          "given": "Renjie",
+          "family": "Song",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electrical Engineering and Hebei Key Laboratory of Intelligent Rehabilitation and Neuroregulation, Yanshan University, Qinhuangdao, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Danni",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electrical Engineering and Hebei Key Laboratory of Intelligent Rehabilitation and Neuroregulation, Yanshan University, Qinhuangdao, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2275-4578",
+          "authenticated-orcid": false,
+          "given": "Cui-Hua",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electrical Engineering and Hebei Key Laboratory of Intelligent Rehabilitation and Neuroregulation, Yanshan University, Qinhuangdao, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6311-2112",
+          "authenticated-orcid": false,
+          "given": "Changchun",
+          "family": "Hua",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Electrical Engineering and Hebei Key Laboratory of Intelligent Rehabilitation and Neuroregulation, Yanshan University, Qinhuangdao, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Circuits and Systems for Video Technology"
+      ],
+      "volume": "36",
+      "issue": "4",
+      "page": "4722-4733",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            4
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/tcsvt.2025.3637229",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.625
+    },
+    {
+      "DOI": "10.1109/icra57147.2024.10611663",
+      "type": "proceedings-article",
+      "title": [
+        "FLTRNN: Faithful Long-Horizon Task Planning for Robotics with Large Language Models"
+      ],
+      "author": [
+        {
+          "given": "Jiatao",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Zhejiang University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lanling",
+          "family": "Tang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Chinese Academy of Sciences"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yufan",
+          "family": "Song",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Zhejiang University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Qiwei",
+          "family": "Meng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Research Center for Intelligent Robotics, Zhejiang Lab"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Haofu",
+          "family": "Qian",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Zhejiang University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jun",
+          "family": "Shao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Zhejiang University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wei",
+          "family": "Song",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Research Center for Intelligent Robotics, Zhejiang Lab"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shiqiang",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Zhejiang University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jason",
+          "family": "Gu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Research Center for Intelligent Robotics, Zhejiang Lab"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2024 IEEE International Conference on Robotics and Automation (ICRA)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "6680-6686",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            13
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            13
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/icra57147.2024.10611663",
+      "event": {
+        "name": "2024 IEEE International Conference on Robotics and Automation (ICRA)",
+        "location": "Yokohama, Japan",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              13
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              17
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.556
+    }
+  ]
+}

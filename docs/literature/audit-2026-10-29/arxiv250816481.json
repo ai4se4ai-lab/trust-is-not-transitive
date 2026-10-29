@@ -1,0 +1,1020 @@
+{
+  "key": "arxiv250816481",
+  "original": {
+    "url": "https://arxiv.org/abs/2508.16481",
+    "howpublished": "arXiv:2508.16481",
+    "year": "2025",
+    "author": "Nöther, Jonathan and Singla, Adish and Radanovic, Goran",
+    "title": "{Benchmarking the Robustness of Agentic Systems to Adversarially-Induced Harms}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250816481"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2508.16481",
+    "https://api.crossref.org/works?query.title=Benchmarking+the+Robustness+of+Agentic+Systems+to+Adversarially-Induced+Harms&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2508.16481: Benchmarking the Robustness of Agentic Systems to Adversarially-Induced Harms"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Benchmarking the Robustness of Agentic Systems to..."
+      ],
+      "twitter:description": [
+        "Ensuring the safe use of agentic systems requires a thorough understanding of the range of malicious behaviors these systems may exhibit. In this paper, we evaluate the robustness of LLM-based..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Benchmarking the Robustness of Agentic Systems to Adversarially-Induced Harms"
+      ],
+      "citation_author": [
+        "Nöther, Jonathan",
+        "Singla, Adish",
+        "Radanovic, Goran"
+      ],
+      "citation_date": [
+        "2025/08/22"
+      ],
+      "citation_online_date": [
+        "2026/08/07"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2508.16481"
+      ],
+      "citation_arxiv_id": [
+        "2508.16481"
+      ],
+      "citation_abstract": [
+        "Ensuring the safe use of agentic systems requires a thorough understanding of the range of malicious behaviors these systems may exhibit. In this paper, we evaluate the robustness of LLM-based agentic systems against attacks that aim to elicit harmful actions from agents. To this end, we propose a novel taxonomy of harms for agentic systems and a novel benchmark, BAD-ACTS, for studying the security of agentic systems with respect to a wide range of harmful actions. BAD-ACTS consists of five implementations of agentic systems in distinct application environments, as well as a dataset of 238 high-quality examples of harmful actions and an extended dataset containing 699 additional adversarial actions. This enables a comprehensive study of the robustness of agentic systems across a wide range of categories of harmful behaviors, available tools, and inter-agent communication structures. Using this benchmark, we analyze the robustness of agentic systems under an array of attackers attempting to elicit malicious behaviors, including agents acting adversarially and prompt injections. We found that agents are often vulnerable, as indicated by success rates between 40% and 90% depending on the model. We additionally propose an effective defense based on zero-shot message monitoring. We believe that this benchmark provides a diverse testbed for the safety research of agentic systems. Code is available at https://github.com/JNoether/BAD-ACTS."
+      ]
+    },
+    "details": {
+      "title": "Title: Benchmarking the Robustness of Agentic Systems to Adversarially-Induced Harms",
+      "authors": "Authors: Jonathan Nöther , Adish Singla , Goran Radanovic",
+      "dateline": "[Submitted on 22 Aug 2025 ( v1 ), last revised 7 Aug 2026 (this version, v3)]",
+      "metatable": "Subjects: Machine Learning (cs.LG) Cite as: arXiv:2508.16481 [cs.LG] (or arXiv:2508.16481v3 [cs.LG] for this version) https://doi.org/10.48550/arXiv.2508.16481 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1145/3593013.3594033",
+      "type": "proceedings-article",
+      "title": [
+        "Harms from Increasingly Agentic Algorithmic Systems"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7547-3951",
+          "authenticated-orcid": false,
+          "given": "Alan",
+          "family": "Chan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Mila, Université de Montréal, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-9273-8780",
+          "authenticated-orcid": false,
+          "given": "Rebecca",
+          "family": "Salganik",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Mila, Université de Montréal, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-4580-9997",
+          "authenticated-orcid": false,
+          "given": "Alva",
+          "family": "Markelius",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cambridge, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-1061-307X",
+          "authenticated-orcid": false,
+          "given": "Chris",
+          "family": "Pang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cambridge, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8991-0881",
+          "authenticated-orcid": false,
+          "given": "Nitarshan",
+          "family": "Rajkumar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cambridge, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0009-4387-8407",
+          "authenticated-orcid": false,
+          "given": "Dmitrii",
+          "family": "Krasheninnikov",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cambridge, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6868-5304",
+          "authenticated-orcid": false,
+          "given": "Lauro",
+          "family": "Langosco",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cambridge, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0001-5831-8885",
+          "authenticated-orcid": false,
+          "given": "Zhonghao",
+          "family": "He",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cambridge, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5124-1192",
+          "authenticated-orcid": false,
+          "given": "Yawen",
+          "family": "Duan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cambridge, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0716-8071",
+          "authenticated-orcid": false,
+          "given": "Micah",
+          "family": "Carroll",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of California, Berkeley, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-4476-5558",
+          "authenticated-orcid": false,
+          "given": "Michelle",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "McGill University, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2125-9383",
+          "authenticated-orcid": false,
+          "given": "Alex",
+          "family": "Mayhew",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Western Ontario, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7032-716X",
+          "authenticated-orcid": false,
+          "given": "Katherine",
+          "family": "Collins",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cambridge, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-9715-5442",
+          "authenticated-orcid": false,
+          "given": "Maryam",
+          "family": "Molamohammadi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Mila, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7526-0753",
+          "authenticated-orcid": false,
+          "given": "John",
+          "family": "Burden",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Center for the Study of Existential Risk, University of Cambridge, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5390-0585",
+          "authenticated-orcid": false,
+          "given": "Wanru",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cambridge, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5281-2428",
+          "authenticated-orcid": false,
+          "given": "Shalaleh",
+          "family": "Rismani",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "McGill University, Mila, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8453-3557",
+          "authenticated-orcid": false,
+          "given": "Konstantinos",
+          "family": "Voudouris",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cambridge, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4611-1668",
+          "authenticated-orcid": false,
+          "given": "Umang",
+          "family": "Bhatt",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cambridge, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1915-7158",
+          "authenticated-orcid": false,
+          "given": "Adrian",
+          "family": "Weller",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cambridge, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7256-0937",
+          "authenticated-orcid": false,
+          "given": "David",
+          "family": "Krueger",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cambridge, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7370-0978",
+          "authenticated-orcid": false,
+          "given": "Tegan",
+          "family": "Maharaj",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Toronto, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2023 ACM Conference on Fairness Accountability and Transparency"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "651-666",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            12
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            12
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            12
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3593013.3594033",
+      "event": {
+        "name": "FAccT '23: the 2023 ACM Conference on Fairness, Accountability, and Transparency",
+        "location": "Chicago IL USA",
+        "acronym": "FAccT '23"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.351
+    },
+    {
+      "DOI": "10.1007/978-3-032-18070-4_6",
+      "type": "book-chapter",
+      "title": [
+        "Benchmarking Considerations for Agentic AI Systems"
+      ],
+      "author": [
+        {
+          "given": "Ajay",
+          "family": "Dholakia",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sachin Gopal",
+          "family": "Wani",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Ellison",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Miro",
+          "family": "Hodak",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Debojyoti",
+          "family": "Dutta",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shishir",
+          "family": "Nagaraja",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Raj",
+          "family": "Ranjan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Performance Evaluation and Benchmarking"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "89-98",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            1
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Switzerland",
+      "URL": "https://doi.org/10.1007/978-3-032-18070-4_6",
+      "event": null,
+      "ISBN": [
+        "9783032180698",
+        "9783032180704"
+      ],
+      "relation": null,
+      "title_similarity": 0.549
+    },
+    {
+      "DOI": "10.52202/075280-1725",
+      "type": "proceedings-article",
+      "title": [
+        "Robustness Guarantees for Adversarially Trained Neural Networks"
+      ],
+      "author": [
+        {
+          "given": "Poorya",
+          "family": "Mianjy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Raman",
+          "family": "Arora",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 36"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "39703-39718",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/075280-1725",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 36",
+        "theme": "37th Conference on Neural Information Processing Systems (NeurIPS 2023)",
+        "location": "New Orleans, Louisiana, USA",
+        "acronym": "NeurIPS 2023",
+        "number": "36",
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              16
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.56
+    },
+    {
+      "DOI": "10.1103/physrevresearch.5.023186",
+      "type": "journal-article",
+      "title": [
+        "Benchmarking adversarially robust quantum machine learning at scale"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4500-3139",
+          "authenticated-orcid": true,
+          "given": "Maxwell T.",
+          "family": "West",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0885-0643",
+          "authenticated-orcid": true,
+          "given": "Sarah M.",
+          "family": "Erfani",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4388-0517",
+          "authenticated-orcid": true,
+          "given": "Christopher",
+          "family": "Leckie",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4824-101X",
+          "authenticated-orcid": true,
+          "given": "Martin",
+          "family": "Sevior",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lloyd C. L.",
+          "family": "Hollenberg",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3476-2348",
+          "authenticated-orcid": true,
+          "given": "Muhammad",
+          "family": "Usman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Physical Review Research"
+      ],
+      "volume": "5",
+      "issue": "2",
+      "page": null,
+      "article-number": "023186",
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            23
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            23
+          ]
+        ]
+      },
+      "publisher": "American Physical Society (APS)",
+      "URL": "https://doi.org/10.1103/physrevresearch.5.023186",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.484
+    },
+    {
+      "DOI": "10.1145/3843782.3844662",
+      "type": "proceedings-article",
+      "title": [
+        "AgentChaosBench: Benchmarking External Fault Detection and Localization in Agentic Systems"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0004-6481-0050",
+          "authenticated-orcid": false,
+          "given": "Chenkai",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto, Toronto, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4476-016X",
+          "authenticated-orcid": false,
+          "given": "Yiran",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Toronto, Toronto, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8253-2064",
+          "authenticated-orcid": false,
+          "given": "Yifang",
+          "family": "Tian",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Toronto, Toronto, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-9433-2036",
+          "authenticated-orcid": false,
+          "given": "Michail",
+          "family": "Bachras",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Toronto, Toronto, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0813-0101",
+          "authenticated-orcid": false,
+          "given": "Hans-Arno",
+          "family": "Jacobsen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Toronto, Toronto, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 1st International Workshop on Trustworthy and Responsible aUtonomous SysTems"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "75-82",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            8
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            8
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            8
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3843782.3844662",
+      "event": {
+        "name": "TRUST '26: 1st International Workshop on Trustworthy and Responsible aUtonomous SysTems",
+        "location": "Munich Germany",
+        "acronym": "TRUST '26",
+        "sponsor": [
+          "SIGSOFT ACM Special Interest Group on Software Engineering",
+          "SIGAI ACM Special Interest Group on Artificial Intelligence",
+          "IEEE CS"
+        ]
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.432
+    }
+  ]
+}

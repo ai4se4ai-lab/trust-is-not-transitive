@@ -1,0 +1,758 @@
+{
+  "key": "arxiv250322738",
+  "original": {
+    "url": "https://arxiv.org/abs/2503.22738",
+    "howpublished": "arXiv:2503.22738",
+    "year": "2025",
+    "author": "Chen, Zhaorun and Kang, Mintong and Li, Bo",
+    "title": "{ShieldAgent: Shielding Agents via Verifiable Safety Policy Reasoning}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250322738"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2503.22738",
+    "https://api.crossref.org/works?query.title=ShieldAgent%3A+Shielding+Agents+via+Verifiable+Safety+Policy+Reasoning&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2503.22738: ShieldAgent: Shielding Agents via Verifiable Safety Policy Reasoning"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "ShieldAgent: Shielding Agents via Verifiable Safety Policy Reasoning"
+      ],
+      "twitter:description": [
+        "Autonomous agents powered by foundation models have seen widespread adoption across various real-world applications. However, they remain highly vulnerable to malicious instructions and attacks,..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "ShieldAgent: Shielding Agents via Verifiable Safety Policy Reasoning"
+      ],
+      "citation_author": [
+        "Chen, Zhaorun",
+        "Kang, Mintong",
+        "Li, Bo"
+      ],
+      "citation_date": [
+        "2025/03/26"
+      ],
+      "citation_online_date": [
+        "2025/11/27"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2503.22738"
+      ],
+      "citation_arxiv_id": [
+        "2503.22738"
+      ],
+      "citation_abstract": [
+        "Autonomous agents powered by foundation models have seen widespread adoption across various real-world applications. However, they remain highly vulnerable to malicious instructions and attacks, which can result in severe consequences such as privacy breaches and financial losses. More critically, existing guardrails for LLMs are not applicable due to the complex and dynamic nature of agents. To tackle these challenges, we propose ShieldAgent, the first guardrail agent designed to enforce explicit safety policy compliance for the action trajectory of other protected agents through logical reasoning. Specifically, ShieldAgent first constructs a safety policy model by extracting verifiable rules from policy documents and structuring them into a set of action-based probabilistic rule circuits. Given the action trajectory of the protected agent, ShieldAgent retrieves relevant rule circuits and generates a shielding plan, leveraging its comprehensive tool library and executable code for formal verification. In addition, given the lack of guardrail benchmarks for agents, we introduce ShieldAgent-Bench, a dataset with 3K safety-related pairs of agent instructions and action trajectories, collected via SOTA attacks across 6 web environments and 7 risk categories. Experiments show that ShieldAgent achieves SOTA on ShieldAgent-Bench and three existing benchmarks, outperforming prior methods by 11.3% on average with a high recall of 90.1%. Additionally, ShieldAgent reduces API queries by 64.7% and inference time by 58.2%, demonstrating its high precision and efficiency in safeguarding agents."
+      ]
+    },
+    "details": {
+      "title": "Title: ShieldAgent: Shielding Agents via Verifiable Safety Policy Reasoning",
+      "authors": "Authors: Zhaorun Chen , Mintong Kang , Bo Li",
+      "dateline": "[Submitted on 26 Mar 2025 ( v1 ), last revised 27 Nov 2025 (this version, v2)]",
+      "metatable": "Subjects: Machine Learning (cs.LG) ; Cryptography and Security (cs.CR) Cite as: arXiv:2503.22738 [cs.LG] (or arXiv:2503.22738v2 [cs.LG] for this version) https://doi.org/10.48550/arXiv.2503.22738 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.18653/2026.findings-emnlp.691",
+      "type": "proceedings-article",
+      "title": [
+        "Monitorable Chart Reasoning Agents via Verifiable Process Rewards"
+      ],
+      "author": [
+        {
+          "given": "Sanchit",
+          "family": "Sinha",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Oana",
+          "family": "Frunza",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kashif",
+          "family": "Rasul",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aidong",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EMNLP 2026"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "14488-14511",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/2026.findings-emnlp.691",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.492
+    },
+    {
+      "DOI": "10.18653/2026.emnlp-main.1513",
+      "type": "proceedings-article",
+      "title": [
+        "Enhancing Long-Context Reasoning via Verifiable Atomic Skills"
+      ],
+      "author": [
+        {
+          "given": "Yanling",
+          "family": "Xiao",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Huaibing",
+          "family": "Xie",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Guoliang",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shihan",
+          "family": "Dou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nantao",
+          "family": "Zheng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shaolei",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yiting",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Cheng",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Pluto",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhisong",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lemao",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "34516-34532",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/2026.emnlp-main.1513",
+      "event": {
+        "name": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.526
+    },
+    {
+      "DOI": "10.1109/bibm66473.2025.11356264",
+      "type": "proceedings-article",
+      "title": [
+        "Diagno-S: Towards Verifiable Medical Reasoning via Diagnostic Decomposition"
+      ],
+      "author": [
+        {
+          "given": "Xunfei",
+          "family": "Zhu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Sunwoda Electronic Co., Ltd.,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Chenhan",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Jiangnan University,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Shangkeng",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shantou University,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Puyuan",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Swansea University,UK"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Tianxiang",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Peking University,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Kang",
+          "family": "Liang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Sunwoda Electronic Co., Ltd.,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "3412-3417",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            15
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            15
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/bibm66473.2025.11356264",
+      "event": {
+        "name": "2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)",
+        "location": "Wuhan, China",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              15
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              18
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.444
+    },
+    {
+      "DOI": "10.1007/978-3-032-05435-7_13",
+      "type": "book-chapter",
+      "title": [
+        "Conformal Safety Shielding for Imperfect-Perception Agents"
+      ],
+      "author": [
+        {
+          "given": "William",
+          "family": "Scarbro",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Calum",
+          "family": "Imrie",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sinem Getir",
+          "family": "Yaman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kavan",
+          "family": "Fatehi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Corina",
+          "family": "Păsăreanu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Radu",
+          "family": "Calinescu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ravi",
+          "family": "Mangal",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Runtime Verification"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "213-232",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            12
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            12
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Switzerland",
+      "URL": "https://doi.org/10.1007/978-3-032-05435-7_13",
+      "event": null,
+      "ISBN": [
+        "9783032054340",
+        "9783032054357"
+      ],
+      "relation": null,
+      "title_similarity": 0.321
+    },
+    {
+      "DOI": "10.1016/j.neucom.2026.135397",
+      "type": "journal-article",
+      "title": [
+        "MRIF: Verifiable meta-reasoning for risk-controlled tool use in LLM agents"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0009-6018-2612",
+          "authenticated-orcid": false,
+          "given": "Yiyao",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Diksha",
+          "family": "Goel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hussain",
+          "family": "Ahmad",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9403-7140",
+          "authenticated-orcid": false,
+          "given": "Jun",
+          "family": "Shen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Neurocomputing"
+      ],
+      "volume": "710",
+      "issue": null,
+      "page": "135397",
+      "article-number": "135397",
+      "published": {
+        "date-parts": [
+          [
+            2027,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2027,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.1016/j.neucom.2026.135397",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.361
+    }
+  ]
+}

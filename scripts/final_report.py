@@ -17,7 +17,7 @@ def main():
     scores=[]
     for round_number in range(1,5):
         for reviewer in ['R1','R2','R3']:
-            path=ROOT/'reviews'/f'round{round_number}'/(reviewer+'.md')
+            path=ROOT/'archive/reviews'/f'round{round_number}'/(reviewer+'.md')
             found={}
             for line in path.read_text(encoding='utf-8').splitlines():
                 match=re.match(r'\|\s*([^|]+)\|\s*(\d)(?:/5)?\s*\|',line)
@@ -28,12 +28,12 @@ def main():
             assert len(found)==5,(path,found)
             scores.append({'round':round_number,'reviewer':reviewer,**found,'recommendation':'reject',
                            'source':path.relative_to(ROOT).as_posix()})
-    with (ROOT/'reviews/score_history.csv').open('w',newline='',encoding='utf-8') as stream:
+    with (ROOT/'archive/reviews/score_history.csv').open('w',newline='',encoding='utf-8') as stream:
         writer=csv.DictWriter(stream,fieldnames=list(scores[0]))
         writer.writeheader();writer.writerows(scores)
-    reader=(ROOT/'student_review/reading_log.md').read_text(encoding='utf-8')
+    reader=(ROOT/'archive/student_review/reading_log.md').read_text(encoding='utf-8')
     initial=[int(x) for x in re.findall(r'^- \*\*.*?— ([0-3])\.\*\*',reader,re.M)]
-    reassessment=(ROOT/'student_review/reassessment.md').read_text(encoding='utf-8')
+    reassessment=(ROOT/'archive/student_review/reassessment.md').read_text(encoding='utf-8')
     revised=[int(x) for x in re.findall(r'^\d+\. \*\*.*?, ([0-3])\.\*\*',reassessment,re.M)]
     assert len(initial)==103 and len(revised)==28 and max(revised)<=1
     primary=summary['studies']['primary'];exploratory=summary['studies']['exploratory']

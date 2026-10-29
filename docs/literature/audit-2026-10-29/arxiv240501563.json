@@ -1,0 +1,795 @@
+{
+  "key": "arxiv240501563",
+  "original": {
+    "url": "https://arxiv.org/abs/2405.01563",
+    "howpublished": "arXiv:2405.01563",
+    "year": "2024",
+    "author": "Yadkori, Yasin Abbasi and Kuzborskij, Ilja and Stutz, David and György, András and Fisch, Adam and Doucet, Arnaud and Beloshapka, Iuliya and Weng, Wei-Hung and Yang, Yao-Yuan and Szepesvári, Csaba and Cemgil, Ali Taylan and Tomasev, Nenad",
+    "title": "{Mitigating LLM Hallucinations via Conformal Abstention}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv240501563"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2405.01563",
+    "https://api.crossref.org/works?query.title=Mitigating+LLM+Hallucinations+via+Conformal+Abstention&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2405.01563: Mitigating LLM Hallucinations via Conformal Abstention"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Mitigating LLM Hallucinations via Conformal Abstention"
+      ],
+      "twitter:description": [
+        "We develop a principled procedure for determining when a large language model (LLM) should abstain from responding (e.g., by saying \"I don't know\") in a general domain, instead of resorting to..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Mitigating LLM Hallucinations via Conformal Abstention"
+      ],
+      "citation_author": [
+        "Yadkori, Yasin Abbasi",
+        "Kuzborskij, Ilja",
+        "Stutz, David",
+        "György, András",
+        "Fisch, Adam",
+        "Doucet, Arnaud",
+        "Beloshapka, Iuliya",
+        "Weng, Wei-Hung",
+        "Yang, Yao-Yuan",
+        "Szepesvári, Csaba",
+        "Cemgil, Ali Taylan",
+        "Tomasev, Nenad"
+      ],
+      "citation_date": [
+        "2024/04/04"
+      ],
+      "citation_online_date": [
+        "2024/04/04"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2405.01563"
+      ],
+      "citation_arxiv_id": [
+        "2405.01563"
+      ],
+      "citation_abstract": [
+        "We develop a principled procedure for determining when a large language model (LLM) should abstain from responding (e.g., by saying \"I don't know\") in a general domain, instead of resorting to possibly \"hallucinating\" a non-sensical or incorrect answer. Building on earlier approaches that use self-consistency as a more reliable measure of model confidence, we propose using the LLM itself to self-evaluate the similarity between each of its sampled responses for a given query. We then further leverage conformal prediction techniques to develop an abstention procedure that benefits from rigorous theoretical guarantees on the hallucination rate (error rate). Experimentally, our resulting conformal abstention method reliably bounds the hallucination rate on various closed-book, open-domain generative question answering datasets, while also maintaining a significantly less conservative abstention rate on a dataset with long responses (Temporal Sequences) compared to baselines using log-probability scores to quantify uncertainty, while achieveing comparable performance on a dataset with short answers (TriviaQA). To evaluate the experiments automatically, one needs to determine if two responses are equivalent given a question. Following standard practice, we use a thresholded similarity function to determine if two responses match, but also provide a method for calibrating the threshold based on conformal prediction, with theoretical guarantees on the accuracy of the match prediction, which might be of independent interest."
+      ]
+    },
+    "details": {
+      "title": "Title: Mitigating LLM Hallucinations via Conformal Abstention",
+      "authors": "Authors: Yasin Abbasi Yadkori , Ilja Kuzborskij , David Stutz , András György , Adam Fisch , Arnaud Doucet , Iuliya Beloshapka , Wei-Hung Weng , Yao-Yuan Yang , Csaba Szepesvári , Ali Taylan Cemgil , Nenad Tomasev",
+      "dateline": "[Submitted on 4 Apr 2024]",
+      "metatable": "Subjects: Machine Learning (cs.LG) ; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) Cite as: arXiv:2405.01563 [cs.LG] (or arXiv:2405.01563v1 [cs.LG] for this version) https://doi.org/10.48550/arXiv.2405.01563 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.18653/2026.emnlp-main.161",
+      "type": "proceedings-article",
+      "title": [
+        "To Answer or to Abstain: Mitigating Search-Agent Hallucinations via Abstention-Aware Reinforcement Learning"
+      ],
+      "author": [
+        {
+          "given": "Fengji",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tianyu",
+          "family": "Fan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuxiang",
+          "family": "Zheng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xinyao",
+          "family": "Niu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chengen",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jacky",
+          "family": "Keung",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bei",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "3696-3718",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/2026.emnlp-main.161",
+      "event": {
+        "name": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.521
+    },
+    {
+      "DOI": "10.1109/aann66429.2025.11257601",
+      "type": "proceedings-article",
+      "title": [
+        "Mitigating Hallucinations in LLM via Direct Preference Optimization with Induced Negative Samples"
+      ],
+      "author": [
+        {
+          "given": "Hanwen",
+          "family": "Xu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Wenzhou Kean University,Department of Computer Science,Wenzhou,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Zhuohang",
+          "family": "Shi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Wenzhou Kean University,Department of Computer Science,Wenzhou,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 5th International Conference on Advanced Algorithms and Neural Networks (AANN)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "374-377",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            15
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            15
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/aann66429.2025.11257601",
+      "event": {
+        "name": "2025 5th International Conference on Advanced Algorithms and Neural Networks (AANN)",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              15
+            ]
+          ]
+        },
+        "location": "Qingdao, China",
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              17
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.533
+    },
+    {
+      "DOI": "10.3390/info16070517",
+      "type": "journal-article",
+      "title": [
+        "Mitigating LLM Hallucinations Using a Multi-Agent Framework"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0008-6524-247X",
+          "authenticated-orcid": false,
+          "given": "Ahmed M.",
+          "family": "Darwish",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "School of Information Technology and Computer Science, Nile University, Giza 3242020, Egypt"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6571-9807",
+          "authenticated-orcid": false,
+          "given": "Essam A.",
+          "family": "Rashed",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Graduate School of Information Science, University of Hyogo, Kobe 650-0047, Japan"
+            },
+            {
+              "name": "Advanced Medical Engineering Research Institute, University of Hyogo, Himeji 670-0836, Japan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7332-0759",
+          "authenticated-orcid": false,
+          "given": "Ghada",
+          "family": "Khoriba",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Information Technology and Computer Science, Nile University, Giza 3242020, Egypt"
+            },
+            {
+              "name": "Faculty of Computers and Artificial Intelligence, Helwan University, Helwan 4034572, Egypt"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Information"
+      ],
+      "volume": "16",
+      "issue": "7",
+      "page": "517",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            21
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            21
+          ]
+        ]
+      },
+      "publisher": "MDPI AG",
+      "URL": "https://doi.org/10.3390/info16070517",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.653
+    },
+    {
+      "DOI": "10.1109/icse-seip66354.2025.00027",
+      "type": "proceedings-article",
+      "title": [
+        "On Mitigating Code LLM Hallucinations with API Documentation"
+      ],
+      "author": [
+        {
+          "given": "Nihal",
+          "family": "Jain",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Amazon Web Services,USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Robert",
+          "family": "Kwiatkowski",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Amazon Web Services,USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Baishakhi",
+          "family": "Ray",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Amazon Web Services,USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Murali Krishna",
+          "family": "Ramanathan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Amazon Web Services,USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Varun",
+          "family": "Kumar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Amazon Web Services,USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE/ACM 47th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "237-248",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            27
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            27
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/icse-seip66354.2025.00027",
+      "event": {
+        "name": "2025 IEEE/ACM 47th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)",
+        "location": "Ottawa, ON, Canada",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              27
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              3
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.725
+    },
+    {
+      "DOI": "10.1109/aiita69518.2026.11567142",
+      "type": "proceedings-article",
+      "title": [
+        "Mitigating LLM Hallucinations in Cyber Threat Attribution via Attack Pattern-Guided Graph-Constrained Reasoning"
+      ],
+      "author": [
+        {
+          "given": "Changcheng",
+          "family": "Liu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "College of Cryptographic Engineering, PLA Information Engineering University,Zhengzhou,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Changheng",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Cryptographic Engineering, PLA Information Engineering University,Zhengzhou,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jun",
+          "family": "Ma",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Cryptographic Engineering, PLA Information Engineering University,Zhengzhou,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 6th International Conference on Artificial Intelligence and Industrial Technology Applications (AIITA)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "176-182",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            10
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/aiita69518.2026.11567142",
+      "event": {
+        "name": "2026 6th International Conference on Artificial Intelligence and Industrial Technology Applications (AIITA)",
+        "location": "Chongqing, China",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              12
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.476
+    },
+    {
+      "DOI": "10.1109/ichi69079.2026.00243",
+      "type": "proceedings-article",
+      "title": [
+        "TRACE-Med: Policy-based Abstention to Mitigate Hallucinations in LLM-Generated Clinical Case Analysis"
+      ],
+      "author": [
+        {
+          "given": "Sagnik",
+          "family": "Dakshit",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Kennesaw State University",
+              "place": [
+                "Kennesaw, USA"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bhavani",
+          "family": "Suryadevara",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Texas at Tyler",
+              "place": [
+                "Tyler, USA"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lindsey",
+          "family": "Stockton",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Texas at Tyler",
+              "place": [
+                "Tyler, USA"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 IEEE 14th International Conference on Healthcare Informatics (ICHI)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1498-1507",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/ichi69079.2026.00243",
+      "event": {
+        "name": "2026 IEEE 14th International Conference on Healthcare Informatics (ICHI)",
+        "location": "Minneapolis, MN, USA",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              1
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              3
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.471
+    }
+  ]
+}

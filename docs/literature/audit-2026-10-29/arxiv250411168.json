@@ -1,0 +1,868 @@
+{
+  "key": "arxiv250411168",
+  "original": {
+    "url": "https://arxiv.org/abs/2504.11168",
+    "howpublished": "arXiv:2504.11168",
+    "year": "2025",
+    "author": "Hackett, William and Birch, Lewis and Trawicki, Stefan and Suri, Neeraj and Garraghan, Peter",
+    "title": "{Bypassing LLM Guardrails: An Empirical Analysis of Evasion Attacks against Prompt Injection and Jailbreak Detection Systems}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250411168"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2504.11168",
+    "https://api.crossref.org/works?query.title=Bypassing+LLM+Guardrails%3A+An+Empirical+Analysis+of+Evasion+Attacks+against+Prompt+Injection+and+Jailbreak+Detection+Systems&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2504.11168: Bypassing LLM Guardrails: An Empirical Analysis of Evasion Attacks against Prompt Injection and Jailbreak Detection Systems"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Bypassing LLM Guardrails: An Empirical Analysis of Evasion Attacks..."
+      ],
+      "twitter:description": [
+        "Large Language Models (LLMs) guardrail systems are designed to protect against prompt injection and jailbreak attacks. However, they remain vulnerable to evasion techniques. We demonstrate two..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Bypassing LLM Guardrails: An Empirical Analysis of Evasion Attacks against Prompt Injection and Jailbreak Detection Systems"
+      ],
+      "citation_author": [
+        "Hackett, William",
+        "Birch, Lewis",
+        "Trawicki, Stefan",
+        "Suri, Neeraj",
+        "Garraghan, Peter"
+      ],
+      "citation_date": [
+        "2025/04/15"
+      ],
+      "citation_online_date": [
+        "2025/07/14"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2504.11168"
+      ],
+      "citation_arxiv_id": [
+        "2504.11168"
+      ],
+      "citation_abstract": [
+        "Large Language Models (LLMs) guardrail systems are designed to protect against prompt injection and jailbreak attacks. However, they remain vulnerable to evasion techniques. We demonstrate two approaches for bypassing LLM prompt injection and jailbreak detection systems via traditional character injection methods and algorithmic Adversarial Machine Learning (AML) evasion techniques. Through testing against six prominent protection systems, including Microsoft's Azure Prompt Shield and Meta's Prompt Guard, we show that both methods can be used to evade detection while maintaining adversarial utility achieving in some instances up to 100% evasion success. Furthermore, we demonstrate that adversaries can enhance Attack Success Rates (ASR) against black-box targets by leveraging word importance ranking computed by offline white-box models. Our findings reveal vulnerabilities within current LLM protection mechanisms and highlight the need for more robust guardrail systems."
+      ]
+    },
+    "details": {
+      "title": "Title: Bypassing LLM Guardrails: An Empirical Analysis of Evasion Attacks against Prompt Injection and Jailbreak Detection Systems",
+      "authors": "Authors: William Hackett , Lewis Birch , Stefan Trawicki , Neeraj Suri , Peter Garraghan",
+      "dateline": "[Submitted on 15 Apr 2025 ( v1 ), last revised 14 Jul 2025 (this version, v3)]",
+      "comments": "14 pages, 5 figures, 11 tables. To be published in LLMSec 2025",
+      "metatable": "Comments: 14 pages, 5 figures, 11 tables. To be published in LLMSec 2025 Subjects: Cryptography and Security (cs.CR) ; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) ACM classes: I.2.7 Cite as: arXiv:2504.11168 [cs.CR] (or arXiv:2504.11168v3 [cs.CR] for this version) https://doi.org/10.48550/arXiv.2504.11168 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1145/3803628.3807972",
+      "type": "proceedings-article",
+      "title": [
+        "Analysis of LLMs Against Prompt Injection and Jailbreak Attacks"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0003-1563-7645",
+          "authenticated-orcid": false,
+          "given": "Piyush",
+          "family": "Jaiswal",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "NIT Trichy, Tiruchirappalli, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-5402-7056",
+          "authenticated-orcid": false,
+          "given": "Aaditya",
+          "family": "Pratap",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "NCE Chandi, Chandi, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0002-4434-537X",
+          "authenticated-orcid": false,
+          "given": "Shreyansh",
+          "family": "Saraswati",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Bishop Cotton Boys’ School, Bengaluru, Bangalore, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8313-6354",
+          "authenticated-orcid": false,
+          "given": "Harsh",
+          "family": "Kasyap",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "IIT (BHU), Varanasi, Varanasi, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6964-2648",
+          "authenticated-orcid": false,
+          "given": "Somanath",
+          "family": "Tripathy",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Indian Institute of Technology Patna, Patna, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the Workshop on Privacy in Large Language Models (LLM) and Natural Language Processing (NLP) 2026"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "10-21",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            31
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            6
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            31
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3803628.3807972",
+      "event": {
+        "name": "LM-SHIELD '26: Workshop on Privacy in Large Language Models (LLM) and Natural Language Processing (NLP) 2026",
+        "location": "Bangalore India",
+        "acronym": "LM-SHIELD '26",
+        "sponsor": [
+          "SIGSAC ACM Special Interest Group on Security, Audit, and Control"
+        ]
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.593
+    },
+    {
+      "DOI": "10.1109/ijcnn69854.2026.11729999",
+      "type": "proceedings-article",
+      "title": [
+        "Assessing Defenses Against Prompt Injection Attacks in LLM Systems"
+      ],
+      "author": [
+        {
+          "given": "Fadime Zeliha",
+          "family": "Seyhan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Beyond Guard",
+              "place": [
+                "Istanbul, Türkiye"
+              ],
+              "department": [
+                "R&D Depratment"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katira",
+          "family": "Soleymanzadeh",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beyond Guard",
+              "place": [
+                "Istanbul, Türkiye"
+              ],
+              "department": [
+                "R&D Depratment"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mustafa Oğuz",
+          "family": "Cengiz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beyond Guard",
+              "place": [
+                "Istanbul, Türkiye"
+              ],
+              "department": [
+                "R&D Depratment"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alp",
+          "family": "Ecevit",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beyond Guard",
+              "place": [
+                "Istanbul, Türkiye"
+              ],
+              "department": [
+                "R&D Depratment"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Roya",
+          "family": "Arkhmammadova",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beyond Guard",
+              "place": [
+                "Istanbul, Türkiye"
+              ],
+              "department": [
+                "R&D Depratment"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elif Tansu",
+          "family": "Kaya",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beyond Guard",
+              "place": [
+                "Istanbul, Türkiye"
+              ],
+              "department": [
+                "R&D Depratment"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 International Joint Conference on Neural Networks (IJCNN)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-6",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/ijcnn69854.2026.11729999",
+      "event": {
+        "name": "2026 International Joint Conference on Neural Networks (IJCNN)",
+        "location": "Maastricht, Netherlands",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              22
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              26
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.533
+    },
+    {
+      "DOI": "10.1109/access.2026.3690365",
+      "type": "journal-article",
+      "title": [
+        "Comprehensive Analysis of LLM Guardrails Approaches Preventing Harmful Content and Jailbreak Attacks"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5076-9107",
+          "authenticated-orcid": false,
+          "given": "Paweł",
+          "family": "Majewski",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Systems and Computer Networks, Wroc&#x0142;aw University of Science and Technology, Wroc&#x0142;aw, Poland"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-3403-8777",
+          "authenticated-orcid": false,
+          "given": "Kacper",
+          "family": "Marczak",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "GenerativeAI Academic Research Team (GART), Capgemini Insights &#x0026; Data, Wroc&#x0142;aw, Poland"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0005-6666-172X",
+          "authenticated-orcid": false,
+          "given": "Nina",
+          "family": "Dubicka",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "GenerativeAI Academic Research Team (GART), Capgemini Insights &#x0026; Data, Wroc&#x0142;aw, Poland"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-1679-2134",
+          "authenticated-orcid": false,
+          "given": "Jȩdrzej",
+          "family": "Podolak",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "GenerativeAI Academic Research Team (GART), Capgemini Insights &#x0026; Data, Wroc&#x0142;aw, Poland"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bartosz",
+          "family": "Sochaj",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "GenerativeAI Academic Research Team (GART), Capgemini Insights &#x0026; Data, Wroc&#x0142;aw, Poland"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9133-4388",
+          "authenticated-orcid": false,
+          "given": "Jakub",
+          "family": "Siłka",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Faculty of Applied Mathematics, Silesian University of Technology, Gliwice, Poland"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Marek",
+          "family": "Kowal",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "GenerativeAI Academic Research Team (GART), Capgemini Insights &#x0026; Data, Wroc&#x0142;aw, Poland"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Access"
+      ],
+      "volume": "14",
+      "issue": null,
+      "page": "70863-70879",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/access.2026.3690365",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.449
+    },
+    {
+      "DOI": "10.1609/aaai.v40i44.41074",
+      "type": "journal-article",
+      "title": [
+        "AlignTree: Efficient Defense Against LLM Jailbreak Attacks"
+      ],
+      "author": [
+        {
+          "given": "Gil",
+          "family": "Goren",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Shahar",
+          "family": "Katz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Lior",
+          "family": "Wolf",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the AAAI Conference on Artificial Intelligence"
+      ],
+      "volume": "40",
+      "issue": "44",
+      "page": "37417-37425",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            14
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            14
+          ]
+        ]
+      },
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "URL": "https://doi.org/10.1609/aaai.v40i44.41074",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.392
+    },
+    {
+      "DOI": "10.1016/j.knosys.2026.117270",
+      "type": "journal-article",
+      "title": [
+        "An empirical study of cross-dataset generalization in LLM jailbreak prompt detection"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6950-8927",
+          "authenticated-orcid": false,
+          "given": "Sultan",
+          "family": "Zavrak",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Knowledge-Based Systems"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "117270",
+      "article-number": "117270",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            10
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.1016/j.knosys.2026.117270",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.444
+    },
+    {
+      "DOI": "10.1145/3797136",
+      "type": "journal-article",
+      "title": [
+        "InDe-LLM: Defending against Jailbreak Attacks in LLM-Powered Systems via Intention Disentangling"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0008-3892-9145",
+          "authenticated-orcid": false,
+          "given": "Yujue",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Tsinghua University, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7778-4243",
+          "authenticated-orcid": false,
+          "given": "Quan",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "East China Normal University, Shanghai, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6446-247X",
+          "authenticated-orcid": false,
+          "given": "Chijin",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "East China Normal University, Shanghai, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0001-0461-9674",
+          "authenticated-orcid": false,
+          "given": "Gwihwan",
+          "family": "Go",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tsinghua University, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-5379-2100",
+          "authenticated-orcid": false,
+          "given": "Dalong",
+          "family": "Shi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "AVIC International Digital Network Technology Co., Ltd., Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0955-503X",
+          "authenticated-orcid": false,
+          "given": "Yu",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tsinghua University, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the ACM on Software Engineering"
+      ],
+      "volume": "3",
+      "issue": "FSE",
+      "page": "899-919",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            30
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            30
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            30
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "URL": "https://doi.org/10.1145/3797136",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.284
+    }
+  ]
+}

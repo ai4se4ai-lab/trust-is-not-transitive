@@ -1,0 +1,676 @@
+{
+  "key": "arxiv240301216",
+  "original": {
+    "url": "https://arxiv.org/abs/2403.01216",
+    "howpublished": "arXiv:2403.01216",
+    "year": "2024",
+    "author": "Su, Jiayuan and Luo, Jing and Wang, Hongwei and Cheng, Lu",
+    "title": "{API Is Enough: Conformal Prediction for Large Language Models Without Logit-Access}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv240301216"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2403.01216",
+    "https://api.crossref.org/works?query.title=API+Is+Enough%3A+Conformal+Prediction+for+Large+Language+Models+Without+Logit-Access&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2403.01216: API Is Enough: Conformal Prediction for Large Language Models Without Logit-Access"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "API Is Enough: Conformal Prediction for Large Language Models..."
+      ],
+      "twitter:description": [
+        "This study aims to address the pervasive challenge of quantifying uncertainty in large language models (LLMs) without logit-access. Conformal Prediction (CP), known for its model-agnostic and..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "API Is Enough: Conformal Prediction for Large Language Models Without Logit-Access"
+      ],
+      "citation_author": [
+        "Su, Jiayuan",
+        "Luo, Jing",
+        "Wang, Hongwei",
+        "Cheng, Lu"
+      ],
+      "citation_date": [
+        "2024/03/02"
+      ],
+      "citation_online_date": [
+        "2024/04/04"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2403.01216"
+      ],
+      "citation_arxiv_id": [
+        "2403.01216"
+      ],
+      "citation_abstract": [
+        "This study aims to address the pervasive challenge of quantifying uncertainty in large language models (LLMs) without logit-access. Conformal Prediction (CP), known for its model-agnostic and distribution-free features, is a desired approach for various LLMs and data distributions. However, existing CP methods for LLMs typically assume access to the logits, which are unavailable for some API-only LLMs. In addition, logits are known to be miscalibrated, potentially leading to degraded CP performance. To tackle these challenges, we introduce a novel CP method that (1) is tailored for API-only LLMs without logit-access; (2) minimizes the size of prediction sets; and (3) ensures a statistical guarantee of the user-defined coverage. The core idea of this approach is to formulate nonconformity measures using both coarse-grained (i.e., sample frequency) and fine-grained uncertainty notions (e.g., semantic similarity). Experimental results on both close-ended and open-ended Question Answering tasks show our approach can mostly outperform the logit-based CP baselines."
+      ]
+    },
+    "details": {
+      "title": "Title: API Is Enough: Conformal Prediction for Large Language Models Without Logit-Access",
+      "authors": "Authors: Jiayuan Su , Jing Luo , Hongwei Wang , Lu Cheng",
+      "dateline": "[Submitted on 2 Mar 2024 ( v1 ), last revised 4 Apr 2024 (this version, v2)]",
+      "metatable": "Subjects: Computation and Language (cs.CL) ; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) Cite as: arXiv:2403.01216 [cs.CL] (or arXiv:2403.01216v2 [cs.CL] for this version) https://doi.org/10.48550/arXiv.2403.01216 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.18653/v1/2024.findings-emnlp.54",
+      "type": "proceedings-article",
+      "title": [
+        "API Is Enough: Conformal Prediction for Large Language Models Without Logit-Access"
+      ],
+      "author": [
+        {
+          "given": "Jiayuan",
+          "family": "Su",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jing",
+          "family": "Luo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hongwei",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lu",
+          "family": "Cheng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EMNLP 2024"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "979-995",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2024.findings-emnlp.54",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+        "location": "Miami, Florida, USA",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              11
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.18653/v1/2024.acl-short.23",
+      "type": "proceedings-article",
+      "title": [
+        "Sketch-Guided Constrained Decoding for Boosting Blackbox Large Language Models without Logit Access"
+      ],
+      "author": [
+        {
+          "given": "Saibo",
+          "family": "Geng",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Berkay",
+          "family": "Döner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chris",
+          "family": "Wendler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Josifoski",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Robert",
+          "family": "West",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "234-245",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2024.acl-short.23",
+      "event": {
+        "name": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+        "location": "Bangkok, Thailand",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              8
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              8
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.611
+    },
+    {
+      "DOI": "10.1093/ajcp/aqae129.377",
+      "type": "journal-article",
+      "title": [
+        "Conformal Prediction and Large Language Models for Medical Coding"
+      ],
+      "author": [
+        {
+          "given": "Christopher",
+          "family": "Snyder",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Pathology and Immunology, Washington University in St. Louis, School of Medicine , St. Louis, Missouri, 63110"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Victor",
+          "family": "Brodsky",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Pathology and Immunology, Washington University in St. Louis, School of Medicine , St. Louis, Missouri, 63110"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "American Journal of Clinical Pathology"
+      ],
+      "volume": "162",
+      "issue": "Supplement_1",
+      "page": "S171-S172",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            15
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            15
+          ]
+        ]
+      },
+      "publisher": "Oxford University Press (OUP)",
+      "URL": "https://doi.org/10.1093/ajcp/aqae129.377",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.646
+    },
+    {
+      "DOI": "10.3390/math14203761",
+      "type": "journal-article",
+      "title": [
+        "Semantic Prior Smoothing for Conformal Prediction in Multiple-Choice Question Answering with API-Only Large Language Models"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3706-2569",
+          "authenticated-orcid": false,
+          "given": "Yikai",
+          "family": "Chen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "State Key Laboratory of Complex & Critical Software Environment, Beihang University, Beijing 100191, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0586-3783",
+          "authenticated-orcid": false,
+          "given": "Bo",
+          "family": "Lang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "State Key Laboratory of Complex & Critical Software Environment, Beihang University, Beijing 100191, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-9135-3910",
+          "authenticated-orcid": false,
+          "given": "Yi",
+          "family": "Wei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "State Key Laboratory of Complex & Critical Software Environment, Beihang University, Beijing 100191, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Mathematics"
+      ],
+      "volume": "14",
+      "issue": "20",
+      "page": "3761",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            16
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            16
+          ]
+        ]
+      },
+      "publisher": "MDPI AG",
+      "URL": "https://doi.org/10.3390/math14203761",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.508
+    },
+    {
+      "DOI": "10.3390/engproc2025120042",
+      "type": "proceedings-article",
+      "title": [
+        "REST API Fuzzing Using API Dependencies and Large Language Models"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1947-9379",
+          "authenticated-orcid": false,
+          "given": "Chien-Hung",
+          "family": "Liu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science and Information Engineering, National Taipei University of Technology, Taipei 106344, Taiwan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shu-Ling",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Industrial Management and Information, Southern Taiwan University of Science and Technology, Tainan City 710301, Taiwan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kuang-Yao",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science and Information Engineering, National Taipei University of Technology, Taipei 106344, Taiwan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "8th International Conference on Knowledge Innovation and Invention"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "42",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      },
+      "publisher": "MDPI",
+      "URL": "https://doi.org/10.3390/engproc2025120042",
+      "event": {
+        "name": "International Conference on Knowledge Innovation and Invention",
+        "acronym": "ICKII 2025"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.46
+    },
+    {
+      "DOI": "10.1098/rsta.2026.0061",
+      "type": "journal-article",
+      "title": [
+        "Uncertainty-aware large language models: a scoping review of conformal prediction methods"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0005-9734-9755",
+          "authenticated-orcid": false,
+          "given": "Alice Evelyn",
+          "family": "Ashby",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Centre of Reliable Machine Learning, Department of Computer Science, Royal Holloway University of London 1 , Egham, UK"
+            },
+            {
+              "name": "Surrey Institute for People-Centred AI, University of Surrey 2 , Guildford, UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6198-9295",
+          "authenticated-orcid": false,
+          "given": "Khuong An",
+          "family": "Nguyen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Centre of Reliable Machine Learning, Department of Computer Science, Royal Holloway University of London 1 , Egham, UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhiyuan",
+          "family": "Luo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Centre of Reliable Machine Learning, Department of Computer Science, Royal Holloway University of London 1 , Egham, UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences"
+      ],
+      "volume": "384",
+      "issue": "2327",
+      "page": null,
+      "article-number": "20260061",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            27
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            27
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            27
+          ]
+        ]
+      },
+      "publisher": "The Royal Society",
+      "URL": "https://doi.org/10.1098/rsta.2026.0061",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.408
+    }
+  ]
+}

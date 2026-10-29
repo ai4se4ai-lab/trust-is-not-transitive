@@ -1,0 +1,638 @@
+{
+  "key": "arxiv150102573",
+  "original": {
+    "url": "https://arxiv.org/abs/1501.02573",
+    "howpublished": "arXiv:1501.02573",
+    "year": "2015",
+    "author": "Bloem, Roderick and Koenighofer, Bettina and Koenighofer, Robert and Wang, Chao",
+    "title": "{Shield Synthesis: Runtime Enforcement for Reactive Systems}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv150102573"
+  },
+  "sources": [
+    "https://arxiv.org/abs/1501.02573",
+    "https://api.crossref.org/works?query.title=Shield+Synthesis%3A+Runtime+Enforcement+for+Reactive+Systems&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 1501.02573: Shield Synthesis: Runtime Enforcement for Reactive Systems"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Shield Synthesis: Runtime Enforcement for Reactive Systems"
+      ],
+      "twitter:description": [
+        "Scalability issues may prevent users from verifying critical properties of a complex hardware design. In this situation, we propose to synthesize a \"safety shield\" that is attached to the design..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Shield Synthesis: Runtime Enforcement for Reactive Systems"
+      ],
+      "citation_author": [
+        "Bloem, Roderick",
+        "Koenighofer, Bettina",
+        "Koenighofer, Robert",
+        "Wang, Chao"
+      ],
+      "citation_date": [
+        "2015/01/12"
+      ],
+      "citation_online_date": [
+        "2015/01/16"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/1501.02573"
+      ],
+      "citation_arxiv_id": [
+        "1501.02573"
+      ],
+      "citation_abstract": [
+        "Scalability issues may prevent users from verifying critical properties of a complex hardware design. In this situation, we propose to synthesize a \"safety shield\" that is attached to the design to enforce the properties at run time. Shield synthesis can succeed where model checking and reactive synthesis fail, because it only considers a small set of critical properties, as opposed to the complex design, or the complete specification in the case of reactive synthesis. The shield continuously monitors the input/output of the design and corrects its erroneous output only if necessary, and as little as possible, so other non-critical properties are likely to be retained. Although runtime enforcement has been studied in other domains such as action systems, reactive systems pose unique challenges where the shield must act without delay. We thus present the first shield synthesis solution for reactive hardware systems and report our experimental results. This is an extended version of [5], featuring an additional appendix."
+      ]
+    },
+    "details": {
+      "title": "Title: Shield Synthesis: Runtime Enforcement for Reactive Systems",
+      "authors": "Authors: Roderick Bloem , Bettina Koenighofer , Robert Koenighofer , Chao Wang",
+      "dateline": "[Submitted on 12 Jan 2015 ( v1 ), last revised 16 Jan 2015 (this version, v2)]",
+      "comments": "This is an extended version of [5], featuring an additional appendix",
+      "metatable": "Comments: This is an extended version of [5], featuring an additional appendix Subjects: Logic in Computer Science (cs.LO) Cite as: arXiv:1501.02573 [cs.LO] (or arXiv:1501.02573v2 [cs.LO] for this version) https://doi.org/10.48550/arXiv.1501.02573 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1145/3092282.3092291",
+      "type": "proceedings-article",
+      "title": [
+        "Runtime enforcement of reactive systems using synchronous enforcers"
+      ],
+      "author": [
+        {
+          "given": "Srinivas",
+          "family": "Pinisetty",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Aalto University, Finland / University of Gothenburg, Sweden"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Partha S.",
+          "family": "Roop",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Auckland, New Zealand"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Steven",
+          "family": "Smyth",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Kiel, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stavros",
+          "family": "Tripakis",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Aalto University, Finland / University of California at Berkeley, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Reinhard von",
+          "family": "Hanxleden",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Kiel, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 24th ACM SIGSOFT International SPIN Symposium on Model Checking of Software"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "80-89",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            7,
+            13
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2017,
+            7,
+            13
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            7,
+            13
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3092282.3092291",
+      "event": {
+        "name": "ISSTA '17: International Symposium on Software Testing and Analysis",
+        "location": "Santa Barbara CA USA",
+        "acronym": "ISSTA '17",
+        "sponsor": [
+          "SIGSOFT ACM Special Interest Group on Software Engineering"
+        ]
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.613
+    },
+    {
+      "DOI": "10.1145/3796563.3796582",
+      "type": "proceedings-article",
+      "title": [
+        "Advancements in Runtime Enforcement Frameworks for Reactive Systems"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0009-3754-630X",
+          "authenticated-orcid": false,
+          "given": "Ayush",
+          "family": "Anand",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Indian Institute of Technology Bhubaneswar, Bhuaneswar, India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7779-8231",
+          "authenticated-orcid": false,
+          "given": "Srinivas",
+          "family": "Pinisetty",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Indian Institute of Technology Bhubaneswar, Bhubaneswar, India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9922-6186",
+          "authenticated-orcid": false,
+          "given": "Thierry",
+          "family": "Jeron",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Univ Rennes, Inria, CNRS, IRISA, Rennes, India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 19th Innovations in Software Engineering Conference"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-4",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            19
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            19
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            29
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3796563.3796582",
+      "event": {
+        "name": "ISEC 2026: Innovations in Software Engineering Conference",
+        "location": "Jaipur India",
+        "acronym": "ISEC 2026"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.739
+    },
+    {
+      "DOI": "10.1007/s10703-011-0114-4",
+      "type": "journal-article",
+      "title": [
+        "Runtime enforcement monitors: composition, synthesis, and enforcement abilities"
+      ],
+      "author": [
+        {
+          "given": "Yliès",
+          "family": "Falcone",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Laurent",
+          "family": "Mounier",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jean-Claude",
+          "family": "Fernandez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jean-Luc",
+          "family": "Richier",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Formal Methods in System Design"
+      ],
+      "volume": "38",
+      "issue": "3",
+      "page": "223-262",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            3,
+            11
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2011,
+            6
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2011,
+            3,
+            11
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "URL": "https://doi.org/10.1007/s10703-011-0114-4",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.45
+    },
+    {
+      "DOI": "10.1109/tcns.2021.3061900",
+      "type": "journal-article",
+      "title": [
+        "Online Synthesis for Runtime Enforcement of Safety in Multiagent Systems"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5572-5311",
+          "authenticated-orcid": false,
+          "given": "Dhananjay",
+          "family": "Raju",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3045-8584",
+          "authenticated-orcid": false,
+          "given": "Sudarshanan",
+          "family": "Bharadwaj",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0292-9986",
+          "authenticated-orcid": false,
+          "given": "Franck",
+          "family": "Djeumou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0819-9985",
+          "authenticated-orcid": false,
+          "given": "Ufuk",
+          "family": "Topcu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Control of Network Systems"
+      ],
+      "volume": "8",
+      "issue": "2",
+      "page": "621-632",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/tcns.2021.3061900",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.719
+    },
+    {
+      "DOI": "10.1145/2695664.2695879",
+      "type": "proceedings-article",
+      "title": [
+        "Runtime enforcement for component-based systems"
+      ],
+      "author": [
+        {
+          "given": "Hadil",
+          "family": "Charafeddine",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "American University of Beirut, CMPS, Beirut, Lebanon"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Khalil",
+          "family": "El-Harake",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "American University of Beirut, CMPS, Beirut, Lebanon"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yliès",
+          "family": "Falcone",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Université Grenoble-Alpes, LIG, Grenoble, France"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohamad",
+          "family": "Jaber",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "American University of Beirut, CMPS, Beirut, Lebanon"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 30th Annual ACM Symposium on Applied Computing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1789-1796",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            4,
+            13
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            4,
+            13
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2015,
+            4,
+            13
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/2695664.2695879",
+      "event": {
+        "name": "SAC 2015: Symposium on Applied Computing",
+        "location": "Salamanca Spain",
+        "acronym": "SAC 2015",
+        "sponsor": [
+          "SIGAPP ACM Special Interest Group on Applied Computing"
+        ]
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.667
+    }
+  ]
+}

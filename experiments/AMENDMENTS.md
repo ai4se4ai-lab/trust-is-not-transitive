@@ -1,5 +1,38 @@
 # Dated amendments (original preregistration and results remain immutable)
 
+## 2026-10-29 — A3: post-review descriptive analyses (manuscript rewrite)
+
+After the round-6 automated reviews of the rewritten manuscript, add two
+**descriptive, post hoc** analyses of the preserved raw traces, computed by
+`scripts/post_review_analysis.py` into `results/processed/post_review.json`.
+No trace is sampled, no decision of either study is replaced, and nothing
+here is confirmatory.
+
+1. *Provenance-only control.* A reviewer observed that every unsafe family
+   that passes the deterministic gate proposes a patch from the untrusted
+   `issue` input, while the only benign issue-derived family (benign security
+   text) is blocked by every scorer-based pipeline anyway.
+   We therefore evaluate "deterministic gate, then block any action with an
+   untrusted input" on the logged test and shift traces of both studies.
+   It was not preregistered; it exposes a property of the authored fixture law
+   (no benign issue-derived action is accepted by the judge), not an effect of
+   the method. (Corrected after round-2 review: an earlier wording said that no
+   benign issue-derived action exists, which is false.)
+2. *Calibration-path equivalence.* Calibration losses were computed with the
+   decision core `tint.baselines.decide('checked_quarantine', ...)`, while
+   held-out decisions came from `GuardRuntime`. Replay the exploratory
+   calibration split through both at each seed's selected threshold and
+   count disagreements.
+
+Also disclosed in the manuscript: `experiments/dataset.py` and
+`experiments/run.py` were first committed (c47f2a4, 07:58:06 -0700) after the
+`prereg-v1` tag (a48fca6, 07:56:30 -0700), so the fixture templates were not
+frozen by the tag. The H6 decision rule is satisfied trivially by a block-all
+policy; the recorded "inconclusive" verdict is a deviation from the literal
+rule, explained in the paper. The checker-scaling statement is corrected from
+"linear" to the measured super-linear growth (per-edge set intersection);
+the checker study is not rerun.
+
 ## 2026-10-29 — A2: post-review analyses and attribution correction
 
 After round-1 automated review, add **exploratory descriptive** family-level

@@ -1,0 +1,51 @@
+{
+  "amendment": "A3 (post-review, descriptive, no new samples)",
+  "calibration_equivalence": {
+    "exploratory": {
+      "compared": 18000,
+      "disagreements": 0
+    }
+  },
+  "provenance_control": {
+    "exploratory": {
+      "shift": {
+        "benign": 0,
+        "benign_allowed": 0,
+        "benign_utility": null,
+        "joint_risk": 0.0,
+        "modeled_cost_units": 1.0,
+        "n": 6000,
+        "unsafe_allowed": 0
+      },
+      "test": {
+        "benign": 5387,
+        "benign_allowed": 3580,
+        "benign_utility": 0.66456283645814,
+        "joint_risk": 0.0,
+        "modeled_cost_units": 1.0,
+        "n": 12000,
+        "unsafe_allowed": 0
+      }
+    },
+    "primary": {
+      "shift": {
+        "benign": 0,
+        "benign_allowed": 0,
+        "benign_utility": null,
+        "joint_risk": 0.0,
+        "modeled_cost_units": 1.0,
+        "n": 6000,
+        "unsafe_allowed": 0
+      },
+      "test": {
+        "benign": 5409,
+        "benign_allowed": 3592,
+        "benign_utility": 0.6640783878720651,
+        "joint_risk": 0.0,
+        "modeled_cost_units": 1.0,
+        "n": 12000,
+        "unsafe_allowed": 0
+      }
+    }
+  }
+}

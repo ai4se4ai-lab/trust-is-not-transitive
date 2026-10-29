@@ -31,6 +31,7 @@ def task(name):
     elif name=='verify-results':
         run(sys.executable,'scripts/process_results.py','--verify')
         run(sys.executable,'scripts/validate_replay.py')
+        run(sys.executable,'scripts/post_review_analysis.py','--verify')
         run(sys.executable,'scripts/manifest.py','--verify')
     elif name=='verify-paper':
         for script in ['scripts/verify_numbers.py','scripts/check_refs.py','scripts/check_notation.py','scripts/verify_pdf.py']:
@@ -52,6 +53,7 @@ def task(name):
         run(sys.executable,'experiments/run.py','--exploratory-numeric')
         run(sys.executable,'experiments/policy_inventory.py')
         run(sys.executable,'scripts/process_results.py')
+        run(sys.executable,'scripts/post_review_analysis.py')
         task('paper')
         run(sys.executable,'scripts/manifest.py')
         task('verify-results')
