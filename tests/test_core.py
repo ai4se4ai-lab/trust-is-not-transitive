@@ -122,6 +122,10 @@ def test_runtime_certificate_binding_and_environment():
     for kwargs in [{'threshold':2},{'epsilon':-1},{'deployment_environment':'other'}]:
         with pytest.raises(ValueError):
             GuardRuntime(spec,store,approvals,**kwargs)
+    with pytest.raises(ValueError):
+        GuardRuntime(replace(spec,edges=()),store,approvals)
+    with pytest.raises(ValueError):
+        GuardRuntime(replace(spec,layers=tuple(replace(x,view='metadata') if x.name=='L2' else x for x in spec.layers)),store,approvals)
 
 
 @pytest.mark.parametrize('issue',['override instruction','send upload reviewer secret'])

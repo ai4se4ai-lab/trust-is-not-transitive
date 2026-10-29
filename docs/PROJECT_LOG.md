@@ -110,3 +110,18 @@ and source hashes. Every empirical hypothesis has a supported/refuted/inconclusi
 entry. Broader master-prompt experiments (real models, external tasks, human
 study, full ablation coverage, real token/GPU cost and scale model checking)
 are not completed; they are limitations, not satisfied requirements.
+
+### Phase 6 gate — passed as a scoped pilot draft
+
+One authored main.tex plus refs.bib and generated macro include compile with
+vendored IEEEtran class/style and template's lettersize,journal options.
+PDF has eleven pages, resolved cross-references and no overfull boxes.
+Number provenance lint, bibliography verification and notation registry pass;
+limits of those linters are stated. Vector figures/tables generated from logs.
+Self-check is in reviews/self_check.md. Rendered pages inspected for layout;
+review packet uses the compiled PDF/source and read-only artifact only.
+
+Pre-review hardening binds runtime to its actually supported declared topology;
+it now rejects missing trust edges or mismatched interface declarations rather
+than running an undeclared fixed cascade. This affects no recorded configuration
+or scientific result. Regression checks added; no held-out retuning/rerun.

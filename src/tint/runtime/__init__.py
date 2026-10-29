@@ -35,6 +35,11 @@ class GuardRuntime:
                  scorer: Callable | None=None, judge: Callable | None=None, log_path: Path | None=None,
                  deployment_environment: str='sandbox') -> None:
         check(spec)
+        interfaces={layer.name:layer.view for layer in spec.layers}
+        required_edges={('L1','L2','semantic'),('L2','L3','semantic')}
+        actual_edges={(edge.caller,edge.callee,edge.property) for edge in spec.edges}
+        if interfaces!={'L1':'metadata','L2':'raw','L3':'structured-v1'} or not required_edges<=actual_edges:
+            raise ValueError('runtime supports only its explicitly declared fixed topology/interfaces')
         if not 0<=threshold<=1 or not 0<=epsilon<=1:
             raise ValueError('invalid runtime threshold/budget')
         self.spec,self.store,self.approvals=spec,store,approvals
