@@ -1,0 +1,37 @@
+{
+  "policies": [
+    {
+      "policy_class": "production approval",
+      "requested_rule": "production_approval",
+      "dsl_fully_supported": true,
+      "semantic_proxy_only": false
+    },
+    {
+      "policy_class": "secret egress",
+      "requested_rule": "secret_egress",
+      "dsl_fully_supported": true,
+      "semantic_proxy_only": false
+    },
+    {
+      "policy_class": "semantic injection",
+      "requested_rule": "semantic_injection",
+      "dsl_fully_supported": false,
+      "semantic_proxy_only": true
+    },
+    {
+      "policy_class": "filesystem confinement",
+      "requested_rule": "path_confinement",
+      "dsl_fully_supported": false,
+      "semantic_proxy_only": false
+    },
+    {
+      "policy_class": "cumulative spending",
+      "requested_rule": "cumulative_budget",
+      "dsl_fully_supported": false,
+      "semantic_proxy_only": false
+    }
+  ],
+  "authored_spec_lines": 13,
+  "authoring_time_measured": false,
+  "participants": 0
+}

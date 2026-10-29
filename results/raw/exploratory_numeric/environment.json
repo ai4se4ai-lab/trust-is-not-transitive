@@ -1,0 +1,17 @@
+{
+  "api_calls": 0,
+  "api_cost": 0,
+  "clock": "perf_counter_ns",
+  "code_commit": "046501c62d409259cf8475398861e369a6a04a76",
+  "cpu_count": 22,
+  "external_models_executed": false,
+  "platform": "Windows-11-10.0.26100-SP0",
+  "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+  "python": "3.13.14",
+  "versions": {
+    "coverage": "7.14.0",
+    "numpy": "2.2.5",
+    "pytest": "9.0.3",
+    "scipy": "1.16.2"
+  }
+}

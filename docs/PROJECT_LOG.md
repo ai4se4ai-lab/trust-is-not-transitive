@@ -91,3 +91,22 @@ A1 documents a numeric-only correction (integer hundredths), fresh seeds 10–19
 and separate exploratory output. No primary thresholds/budgets are retuned and
 original held-out results are not overwritten. Synthesis sufficient-count
 logging is strengthened; original count omission is disclosed.
+
+### Phase 5 gate — passed for preregistered local hypotheses, external study open
+
+All original and exploratory raw logs retained, with separate source commits,
+seeds and run metadata. Processed summary is deterministically re-derived
+byte-for-byte; binomial bounds are recomputed from sufficient counts, selection
+checked independently, pattern counts checked, and hypotheses resolved with
+explicit scope. Primary calibration infeasible in every seed; calibrated policy
+has zero utility. Numeric-only exploratory correction restores feasible policies
+but is not pooled or relabeled confirmatory. DSL expressiveness hypothesis is
+refuted; real-LLM/external benchmark hypothesis is inconclusive/not run. Strong
+naive-with-sink control and equal-threshold no-calibration control are reported.
+Calibration alone provides no observed equal-threshold decision improvement.
+
+Paper macro/figure generator uses processed results and records JSON pointers
+and source hashes. Every empirical hypothesis has a supported/refuted/inconclusive
+entry. Broader master-prompt experiments (real models, external tasks, human
+study, full ablation coverage, real token/GPU cost and scale model checking)
+are not completed; they are limitations, not satisfied requirements.
