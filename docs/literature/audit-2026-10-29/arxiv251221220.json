@@ -1,0 +1,654 @@
+{
+  "key": "arxiv251221220",
+  "original": {
+    "url": "https://arxiv.org/abs/2512.21220",
+    "howpublished": "arXiv:2512.21220",
+    "year": "2025",
+    "author": "Wang, Le and Ying, Zonghao and Yang, Xiao and Zou, Quanchen and Yin, Zhenfei and Li, Tianlin and Yang, Jian and Yang, Yaodong and Liu, Aishan and Liu, Xianglong",
+    "title": "{RoboSafe: Safeguarding Embodied Agents via Executable Safety Logic}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv251221220"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2512.21220",
+    "https://api.crossref.org/works?query.title=RoboSafe%3A+Safeguarding+Embodied+Agents+via+Executable+Safety+Logic&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2512.21220: RoboSafe: Safeguarding Embodied Agents via Executable Safety Logic"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "RoboSafe: Safeguarding Embodied Agents via Executable Safety Logic"
+      ],
+      "twitter:description": [
+        "Embodied agents powered by vision-language models (VLMs) are increasingly capable of executing complex real-world tasks, yet they remain vulnerable to hazardous instructions that may trigger..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "RoboSafe: Safeguarding Embodied Agents via Executable Safety Logic"
+      ],
+      "citation_author": [
+        "Wang, Le",
+        "Ying, Zonghao",
+        "Yang, Xiao",
+        "Zou, Quanchen",
+        "Yin, Zhenfei",
+        "Li, Tianlin",
+        "Yang, Jian",
+        "Yang, Yaodong",
+        "Liu, Aishan",
+        "Liu, Xianglong"
+      ],
+      "citation_date": [
+        "2025/12/24"
+      ],
+      "citation_online_date": [
+        "2025/12/26"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2512.21220"
+      ],
+      "citation_arxiv_id": [
+        "2512.21220"
+      ],
+      "citation_abstract": [
+        "Embodied agents powered by vision-language models (VLMs) are increasingly capable of executing complex real-world tasks, yet they remain vulnerable to hazardous instructions that may trigger unsafe behaviors. Runtime safety guardrails, which intercept hazardous actions during task execution, offer a promising solution due to their flexibility. However, existing defenses often rely on static rule filters or prompt-level control, which struggle to address implicit risks arising in dynamic, temporally dependent, and context-rich environments. To address this, we propose RoboSafe, a hybrid reasoning runtime safeguard for embodied agents through executable predicate-based safety logic. RoboSafe integrates two complementary reasoning processes on a Hybrid Long-Short Safety Memory. We first propose a Backward Reflective Reasoning module that continuously revisits recent trajectories in short-term memory to infer temporal safety predicates and proactively triggers replanning when violations are detected. We then propose a Forward Predictive Reasoning module that anticipates upcoming risks by generating context-aware safety predicates from the long-term safety memory and the agent's multimodal observations. Together, these components form an adaptive, verifiable safety logic that is both interpretable and executable as code. Extensive experiments across multiple agents demonstrate that RoboSafe substantially reduces hazardous actions (-36.8% risk occurrence) compared with leading baselines, while maintaining near-original task performance. Real-world evaluations on physical robotic arms further confirm its practicality. Code will be released upon acceptance."
+      ]
+    },
+    "details": {
+      "title": "Title: RoboSafe: Safeguarding Embodied Agents via Executable Safety Logic",
+      "authors": "Authors: Le Wang , Zonghao Ying , Xiao Yang , Quanchen Zou , Zhenfei Yin , Tianlin Li , Jian Yang , Yaodong Yang , Aishan Liu , Xianglong Liu",
+      "dateline": "[Submitted on 24 Dec 2025 ( v1 ), last revised 26 Dec 2025 (this version, v2)]",
+      "comments": "11 pages, 6 figures",
+      "metatable": "Comments: 11 pages, 6 figures Subjects: Artificial Intelligence (cs.AI) ; Computer Vision and Pattern Recognition (cs.CV); Robotics (cs.RO) Cite as: arXiv:2512.21220 [cs.AI] (or arXiv:2512.21220v2 [cs.AI] for this version) https://doi.org/10.48550/arXiv.2512.21220 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.4018/jats.2009010103",
+      "type": "journal-article",
+      "title": [
+        "Inductive Logic Programming and Embodied Agents"
+      ],
+      "author": [
+        {
+          "given": "Andrea",
+          "family": "Kulakov",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Sts Cyril and Methodius, Macedonia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joona",
+          "family": "Laukkanen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The American University of Paris, France"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Blerim",
+          "family": "Mustafa",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Sts Cyril and Methodius, Macedonia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Georgi",
+          "family": "Stojanov",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The American University of Paris, France"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "International Journal of Agent Technologies and Systems"
+      ],
+      "volume": "1",
+      "issue": "1",
+      "page": "34-49",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2009,
+            1,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            1,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IGI Global Scientific Publishing",
+      "URL": "https://doi.org/10.4018/jats.2009010103",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.4
+    },
+    {
+      "DOI": "10.4018/978-1-60960-171-3.ch008",
+      "type": "book-chapter",
+      "title": [
+        "Inductive Logic Programming and Embodied Agents"
+      ],
+      "author": [
+        {
+          "given": "Andrea",
+          "family": "Kulakov",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Sts Cyril and Methodius, Macedonia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joona",
+          "family": "Laukkanen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The American University of Paris, France"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Blerim",
+          "family": "Mustafa",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Sts Cyril and Methodius, Macedonia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Georgi",
+          "family": "Stojanov",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The American University of Paris, France"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Developments in Intelligent Agent Technologies and Multi-Agent Systems"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "116-131",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IGI Global",
+      "URL": "https://doi.org/10.4018/978-1-60960-171-3.ch008",
+      "event": null,
+      "ISBN": [
+        "9781609601713",
+        "9781609601737"
+      ],
+      "relation": null,
+      "title_similarity": 0.4
+    },
+    {
+      "DOI": "10.1007/978-3-540-24662-6_15",
+      "type": "book-chapter",
+      "title": [
+        "Gestures for Embodied Agents with Logic Programming"
+      ],
+      "author": [
+        {
+          "given": "Zsòfia",
+          "family": "Ruttkay",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Zhisheng",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Anton",
+          "family": "Eliens",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Recent Advances in Constraints"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "266-284",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2004
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2004
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/978-3-540-24662-6_15",
+      "event": null,
+      "ISBN": [
+        "9783540218340",
+        "9783540246626"
+      ],
+      "relation": null,
+      "title_similarity": 0.485
+    },
+    {
+      "DOI": "10.24963/ijcai.2026/44",
+      "type": "proceedings-article",
+      "title": [
+        "Empowering Precise Embodied Agents with Executable Analytic Concepts as Semantic-Physical Blueprints"
+      ],
+      "author": [
+        {
+          "given": "Mingyang",
+          "family": "Sun",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Zhejiang University"
+            },
+            {
+              "name": "Shanghai Innovation Institute"
+            },
+            {
+              "name": "Westlake University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiude",
+          "family": "Wei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shanghai Jiao Tong University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Qichen",
+          "family": "He",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shanghai Jiao Tong University"
+            },
+            {
+              "name": "Shanghai Innovation Institute"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Donglin",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Westlake University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Cewu",
+          "family": "Lu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shanghai Jiao Tong University"
+            },
+            {
+              "name": "Shanghai Innovation Institute"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jianhua",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shanghai Jiao Tong University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "383-391",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            9
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "International Joint Conferences on Artificial Intelligence Organization",
+      "URL": "https://doi.org/10.24963/ijcai.2026/44",
+      "event": {
+        "name": "Thirty-Fifth International Joint Conference on Artificial Intelligence {IJCAI-26}",
+        "theme": "Artificial Intelligence",
+        "location": "Bremen, Germany",
+        "acronym": "IJCAI-2026",
+        "number": "35",
+        "sponsor": [
+          "International Joint Conferences on Artificial Intelligence Organization (IJCAI)"
+        ],
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              16
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              22
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.476
+    },
+    {
+      "DOI": "10.18653/2026.emnlp-main.1061",
+      "type": "proceedings-article",
+      "title": [
+        "Visual Compliance via Executable Safety Rule Entailment"
+      ],
+      "author": [
+        {
+          "given": "Jisoo",
+          "family": "Kim",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "TaeYoon",
+          "family": "Kwack",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jinwoo",
+          "family": "Jang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Honguk",
+          "family": "Woo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "24356-24391",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/2026.emnlp-main.1061",
+      "event": {
+        "name": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.505
+    }
+  ]
+}

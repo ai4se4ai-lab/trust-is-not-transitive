@@ -1,0 +1,706 @@
+{
+  "key": "arxiv251005310",
+  "original": {
+    "url": "https://arxiv.org/abs/2510.05310",
+    "howpublished": "arXiv:2510.05310",
+    "year": "2025",
+    "author": "She, Yining and Peterson, Daniel W. and Liu, Marianne Menglin and Upadhyay, Vikas and Chaghazardi, Mohammad Hossein and Kang, Eunsuk and Roth, Dan",
+    "title": "{RAG Makes Guardrails Unsafe? Investigating Robustness of Guardrails under RAG-style Contexts}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv251005310"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2510.05310",
+    "https://api.crossref.org/works?query.title=RAG+Makes+Guardrails+Unsafe%3F+Investigating+Robustness+of+Guardrails+under+RAG-style+Contexts&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2510.05310: RAG Makes Guardrails Unsafe? Investigating Robustness of Guardrails under RAG-style Contexts"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "RAG Makes Guardrails Unsafe? Investigating Robustness of..."
+      ],
+      "twitter:description": [
+        "With the increasing adoption of large language models (LLMs), ensuring the safety of LLM systems has become a pressing concern. External LLM-based guardrail models have emerged as a popular..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "RAG Makes Guardrails Unsafe? Investigating Robustness of Guardrails under RAG-style Contexts"
+      ],
+      "citation_author": [
+        "She, Yining",
+        "Peterson, Daniel W.",
+        "Liu, Marianne Menglin",
+        "Upadhyay, Vikas",
+        "Chaghazardi, Mohammad Hossein",
+        "Kang, Eunsuk",
+        "Roth, Dan"
+      ],
+      "citation_date": [
+        "2025/10/06"
+      ],
+      "citation_online_date": [
+        "2025/10/06"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2510.05310"
+      ],
+      "citation_arxiv_id": [
+        "2510.05310"
+      ],
+      "citation_abstract": [
+        "With the increasing adoption of large language models (LLMs), ensuring the safety of LLM systems has become a pressing concern. External LLM-based guardrail models have emerged as a popular solution to screen unsafe inputs and outputs, but they are themselves fine-tuned or prompt-engineered LLMs that are vulnerable to data distribution shifts. In this paper, taking Retrieval Augmentation Generation (RAG) as a case study, we investigated how robust LLM-based guardrails are against additional information embedded in the context. Through a systematic evaluation of 3 Llama Guards and 2 GPT-oss models, we confirmed that inserting benign documents into the guardrail context alters the judgments of input and output guardrails in around 11% and 8% of cases, making them unreliable. We separately analyzed the effect of each component in the augmented context: retrieved documents, user query, and LLM-generated response. The two mitigation methods we tested only bring minor improvements. These results expose a context-robustness gap in current guardrails and motivate training and evaluation protocols that are robust to retrieval and query composition."
+      ]
+    },
+    "details": {
+      "title": "Title: RAG Makes Guardrails Unsafe? Investigating Robustness of Guardrails under RAG-style Contexts",
+      "authors": "Authors: Yining She , Daniel W. Peterson , Marianne Menglin Liu , Vikas Upadhyay , Mohammad Hossein Chaghazardi , Eunsuk Kang , Dan Roth",
+      "dateline": "[Submitted on 6 Oct 2025]",
+      "metatable": "Subjects: Computation and Language (cs.CL) ; Artificial Intelligence (cs.AI) Cite as: arXiv:2510.05310 [cs.CL] (or arXiv:2510.05310v1 [cs.CL] for this version) https://doi.org/10.48550/arXiv.2510.05310 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1145/3783862.3783896",
+      "type": "proceedings-article",
+      "title": [
+        "RAG-Guardrails Integration for AI Content Control"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0008-8321-8190",
+          "authenticated-orcid": false,
+          "given": "Rakesh",
+          "family": "More",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "A J Gallagher USA (Independent Researcher), Chicago, IL, USA"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2025 18th International Conference on Computer Science and Information Technology"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "260-268",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            27
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            27
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            20
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3783862.3783896",
+      "event": {
+        "name": "ICCSIT 2025: The 18th International Conference on Computer Science and Information Technology",
+        "location": "Paris France",
+        "acronym": "ICCSIT 2025"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.504
+    },
+    {
+      "DOI": "10.36079/lamintang.ijai-01202.852",
+      "type": "journal-article",
+      "title": [
+        "RAG-Guardrails Integration for AI Content Control"
+      ],
+      "author": [
+        {
+          "given": "Rakesh",
+          "family": "More",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "International Journal of Artificial Intelligence"
+      ],
+      "volume": "12",
+      "issue": "2",
+      "page": "68-80",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            23
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            23
+          ]
+        ]
+      },
+      "publisher": "Lamintang Education and Training Centre",
+      "URL": "https://doi.org/10.36079/lamintang.ijai-01202.852",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.504
+    },
+    {
+      "DOI": "10.1109/icecet63943.2025.11471909",
+      "type": "proceedings-article",
+      "title": [
+        "Enhancing RAG Pipelines with Agent-Based Hallucination Detection and Guardrails Mechanisms"
+      ],
+      "author": [
+        {
+          "given": "Vaibhav",
+          "family": "Mishra",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Genpact,Bengaluru,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Vipul",
+          "family": "Sharma",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Genpact,Bengaluru,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Arjun",
+          "family": "Seth",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Genpact,Bengaluru,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Prakash",
+          "family": "Selvakumar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Genpact,Bengaluru,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 5th International Conference on Electrical, Computer and Energy Technologies (ICECET)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-6",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            3
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/icecet63943.2025.11471909",
+      "event": {
+        "name": "2025 5th International Conference on Electrical, Computer and Energy Technologies (ICECET)",
+        "location": "Paris, France",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              3
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              6
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.237
+    },
+    {
+      "DOI": "10.1109/icera72709.2026.11666732",
+      "type": "proceedings-article",
+      "title": [
+        "Traceability and Source Authority Guardrails for Agentic RAG-Based Financial Claim Verification"
+      ],
+      "author": [
+        {
+          "given": "Daffa Shidqi",
+          "family": "Thamrin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Telkom University",
+              "place": [
+                "Bandung, Indonesia"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Muharman",
+          "family": "Lubis",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Telkom University",
+              "place": [
+                "Bandung, Indonesia"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Egi",
+          "family": "Al Fansyah",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Telkom University",
+              "place": [
+                "Bandung, Indonesia"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ratandi Ahmad",
+          "family": "Fauzan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Telkom University",
+              "place": [
+                "Bandung, Indonesia"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Muhammad Rizq Dzaki",
+          "family": "Asyam",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Telkom University",
+              "place": [
+                "Bandung, Indonesia"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 5th International Conference on Electronics Representation and Algorithm (ICERA)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "499-504",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/icera72709.2026.11666732",
+      "event": {
+        "name": "2026 5th International Conference on Electronics Representation and Algorithm (ICERA)",
+        "location": "Yogyakarta, Indonesia",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              25
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              25
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.329
+    },
+    {
+      "DOI": "10.1049/icp.2025.4700",
+      "type": "journal-article",
+      "title": [
+        "Enhancing medical data processing with RAG-augmented fine-tuned LLMs and guardrails"
+      ],
+      "author": [
+        {
+          "given": "Aayush",
+          "family": "Shah",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Computer Engineering, SIES Graduate School of Technology, Nerul, Navi Mumbai, India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Dhruv",
+          "family": "Shetty",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Engineering, SIES Graduate School of Technology, Nerul, Navi Mumbai, India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Pranjal",
+          "family": "Patil",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Engineering, SIES Graduate School of Technology, Nerul, Navi Mumbai, India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Purva",
+          "family": "Ambre",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Engineering, SIES Graduate School of Technology, Nerul, Navi Mumbai, India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Suvarna",
+          "family": "Chaure",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Engineering, SIES Graduate School of Technology, Nerul, Navi Mumbai, India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Devesh",
+          "family": "Rajadhyax",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Cere Labs Pvt. Ltd, Mulund West, Mumbai, India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IET Conference Proceedings"
+      ],
+      "volume": "2025",
+      "issue": "43",
+      "page": "65-72",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            2
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institution of Engineering and Technology (IET)",
+      "URL": "https://doi.org/10.1049/icp.2025.4700",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.197
+    },
+    {
+      "DOI": "10.2307/jj.6605394",
+      "type": "monograph",
+      "title": [
+        "Guardrails"
+      ],
+      "author": [
+        {
+          "given": "URS",
+          "family": "GASSER",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "VIK TOR",
+          "family": "MAYER-SCHÖNBERGER",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            5
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Princeton University Press",
+      "URL": "https://doi.org/10.2307/jj.6605394",
+      "event": null,
+      "ISBN": [
+        "9780691256351",
+        "0691256357",
+        "9780691150680"
+      ],
+      "relation": {
+        "is-identical-to": [
+          {
+            "id-type": "doi",
+            "id": "10.1515/9780691256351",
+            "asserted-by": "object"
+          },
+          {
+            "id-type": "doi",
+            "id": "10.1353/book.122715",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "title_similarity": 0.222
+    }
+  ]
+}

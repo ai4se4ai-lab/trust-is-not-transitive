@@ -1,0 +1,951 @@
+{
+  "key": "arxiv230518404",
+  "original": {
+    "url": "https://arxiv.org/abs/2305.18404",
+    "howpublished": "arXiv:2305.18404",
+    "year": "2023",
+    "author": "Kumar, Bhawesh and Lu, Charlie and Gupta, Gauri and Palepu, Anil and Bellamy, David and Raskar, Ramesh and Beam, Andrew",
+    "title": "{Conformal Prediction with Large Language Models for Multi-Choice Question Answering}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv230518404"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2305.18404",
+    "https://api.crossref.org/works?query.title=Conformal+Prediction+with+Large+Language+Models+for+Multi-Choice+Question+Answering&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2305.18404: Conformal Prediction with Large Language Models for Multi-Choice Question Answering"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Conformal Prediction with Large Language Models for Multi-Choice..."
+      ],
+      "twitter:description": [
+        "As large language models continue to be widely developed, robust uncertainty quantification techniques will become crucial for their safe deployment in high-stakes scenarios. In this work, we..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Conformal Prediction with Large Language Models for Multi-Choice Question Answering"
+      ],
+      "citation_author": [
+        "Kumar, Bhawesh",
+        "Lu, Charlie",
+        "Gupta, Gauri",
+        "Palepu, Anil",
+        "Bellamy, David",
+        "Raskar, Ramesh",
+        "Beam, Andrew"
+      ],
+      "citation_date": [
+        "2023/05/28"
+      ],
+      "citation_online_date": [
+        "2023/07/08"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2305.18404"
+      ],
+      "citation_arxiv_id": [
+        "2305.18404"
+      ],
+      "citation_abstract": [
+        "As large language models continue to be widely developed, robust uncertainty quantification techniques will become crucial for their safe deployment in high-stakes scenarios. In this work, we explore how conformal prediction can be used to provide uncertainty quantification in language models for the specific task of multiple-choice question-answering. We find that the uncertainty estimates from conformal prediction are tightly correlated with prediction accuracy. This observation can be useful for downstream applications such as selective classification and filtering out low-quality predictions. We also investigate the exchangeability assumption required by conformal prediction to out-of-subject questions, which may be a more realistic scenario for many practical applications. Our work contributes towards more trustworthy and reliable usage of large language models in safety-critical situations, where robust guarantees of error rate are required."
+      ]
+    },
+    "details": {
+      "title": "Title: Conformal Prediction with Large Language Models for Multi-Choice Question Answering",
+      "authors": "Authors: Bhawesh Kumar , Charlie Lu , Gauri Gupta , Anil Palepu , David Bellamy , Ramesh Raskar , Andrew Beam",
+      "dateline": "[Submitted on 28 May 2023 ( v1 ), last revised 8 Jul 2023 (this version, v3)]",
+      "comments": "Updated sections on prompt engineering. Expanded sections 4.1 and 4.2 and appendix. Included additional references. Work published at the ICML 2023 (Neural Conversational AI TEACH) workshop",
+      "metatable": "Comments: Updated sections on prompt engineering. Expanded sections 4.1 and 4.2 and appendix. Included additional references. Work published at the ICML 2023 (Neural Conversational AI TEACH) workshop Subjects: Computation and Language (cs.CL) ; Machine Learning (cs.LG); Machine Learning (stat.ML) Cite as: arXiv:2305.18404 [cs.CL] (or arXiv:2305.18404v3 [cs.CL] for this version) https://doi.org/10.48550/arXiv.2305.18404 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.3390/math14203761",
+      "type": "journal-article",
+      "title": [
+        "Semantic Prior Smoothing for Conformal Prediction in Multiple-Choice Question Answering with API-Only Large Language Models"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3706-2569",
+          "authenticated-orcid": false,
+          "given": "Yikai",
+          "family": "Chen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "State Key Laboratory of Complex & Critical Software Environment, Beihang University, Beijing 100191, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0586-3783",
+          "authenticated-orcid": false,
+          "given": "Bo",
+          "family": "Lang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "State Key Laboratory of Complex & Critical Software Environment, Beihang University, Beijing 100191, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-9135-3910",
+          "authenticated-orcid": false,
+          "given": "Yi",
+          "family": "Wei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "State Key Laboratory of Complex & Critical Software Environment, Beihang University, Beijing 100191, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Mathematics"
+      ],
+      "volume": "14",
+      "issue": "20",
+      "page": "3761",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            16
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            16
+          ]
+        ]
+      },
+      "publisher": "MDPI AG",
+      "URL": "https://doi.org/10.3390/math14203761",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.544
+    },
+    {
+      "DOI": "10.1109/smc54092.2024.10832057",
+      "type": "proceedings-article",
+      "title": [
+        "Medical Multi-Choice Question Answering with Retrieval Augmented Language Models"
+      ],
+      "author": [
+        {
+          "given": "Yujie",
+          "family": "Liu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2024 IEEE International Conference on Systems, Man, and Cybernetics (SMC)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "3031-3036",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/smc54092.2024.10832057",
+      "event": {
+        "name": "2024 IEEE International Conference on Systems, Man, and Cybernetics (SMC)",
+        "location": "Kuching, Malaysia",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              6
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.472
+    },
+    {
+      "DOI": "10.1136/annrheumdis-2024-eular.2602",
+      "type": "proceedings-article",
+      "title": [
+        "POS0495 ASSESSING AND OPTIMIZING LARGE LANGUAGE MODELS ON SPONDYLOARTHRITIS MULTI-CHOICE QUESTION ANSWERING (SPAMCQA)"
+      ],
+      "author": [
+        {
+          "given": "K.",
+          "family": "LI",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "X.",
+          "family": "Ji",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "A.",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "X.",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Y.",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "J.",
+          "family": "Hu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "F.",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Z.",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "D.",
+          "family": "Pu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "S.",
+          "family": "MA",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "J.",
+          "family": "Dong",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Q.",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "D.",
+          "family": "Teng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "T.",
+          "family": "LI",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "J.",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Scientific Abstracts"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "888.2-889",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            6
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            10
+          ]
+        ]
+      },
+      "publisher": "BMJ Publishing Group Ltd and European League Against Rheumatism",
+      "URL": "https://doi.org/10.1136/annrheumdis-2024-eular.2602",
+      "event": {
+        "name": "EULAR 2024 European Congress of Rheumatology, 12-15 June. Vienna, Austria"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.64
+    },
+    {
+      "DOI": "10.1145/3728199.3728217",
+      "type": "proceedings-article",
+      "title": [
+        "Research on Multi-Agent Question Answering Based on Large Language Models"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-2916-1601",
+          "authenticated-orcid": false,
+          "given": "Xinpeng",
+          "family": "Lei",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Key Laboratory of Linguistic and Cultural Computing Ministry of Education, Northwest Minzu University, Lanzhou, Gansu, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-6084-831X",
+          "authenticated-orcid": false,
+          "given": "Fucheng",
+          "family": "Wan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Key Laboratory of Minzu Languages and Cultures Intelligent Information Processing, Northwest Minzu University, Lanzhou, Gansu, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2025 3rd International Conference on Communication Networks and Machine Learning"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "120-125",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            21
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            21
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            28
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3728199.3728217",
+      "event": {
+        "name": "CNML 2025: 2025 3rd International Conference on Communication Networks and Machine Learning",
+        "location": "Nanjing China",
+        "acronym": "CNML 2025"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.456
+    },
+    {
+      "DOI": "10.18653/v1/2024.acl-short.2",
+      "type": "proceedings-article",
+      "title": [
+        "FanOutQA: A Multi-Hop, Multi-Document Question Answering Benchmark for Large Language Models"
+      ],
+      "author": [
+        {
+          "given": "Andrew",
+          "family": "Zhu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alyssa",
+          "family": "Hwang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Liam",
+          "family": "Dugan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chris",
+          "family": "Callison-Burch",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "18-37",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2024.acl-short.2",
+      "event": {
+        "name": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+        "location": "Bangkok, Thailand",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              8
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              8
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.384
+    },
+    {
+      "DOI": "10.2196/57001",
+      "type": "journal-article",
+      "title": [
+        "Assessing and Optimizing Large Language Models on Spondyloarthritis Multi-Choice Question Answering: Protocol for Enhancement and Assessment"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0005-2325-2918",
+          "authenticated-orcid": false,
+          "given": "Anan",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7079-3171",
+          "authenticated-orcid": false,
+          "given": "Yunong",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4753-191X",
+          "authenticated-orcid": false,
+          "given": "Xiaojian",
+          "family": "Ji",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-8652-471X",
+          "authenticated-orcid": false,
+          "given": "Xiangyang",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8286-0394",
+          "authenticated-orcid": false,
+          "given": "Jiawen",
+          "family": "Hu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0005-6690-6280",
+          "authenticated-orcid": false,
+          "given": "Fazhan",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0009-7944-490X",
+          "authenticated-orcid": false,
+          "given": "Zhanchao",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8457-2505",
+          "authenticated-orcid": false,
+          "given": "Dong",
+          "family": "Pu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-7892-5791",
+          "authenticated-orcid": false,
+          "given": "Lulu",
+          "family": "Tang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8340-9762",
+          "authenticated-orcid": false,
+          "given": "Shikui",
+          "family": "Ma",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3699-5858",
+          "authenticated-orcid": false,
+          "given": "Qiang",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6294-9535",
+          "authenticated-orcid": false,
+          "given": "Jing",
+          "family": "Dong",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3335-5700",
+          "authenticated-orcid": false,
+          "given": "Kunlun",
+          "family": "He",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3822-6198",
+          "authenticated-orcid": false,
+          "given": "Kunpeng",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0001-5190-1162",
+          "authenticated-orcid": false,
+          "given": "Da",
+          "family": "Teng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0001-8013-8282",
+          "authenticated-orcid": false,
+          "given": "Tao",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "JMIR Research Protocols"
+      ],
+      "volume": "13",
+      "issue": null,
+      "page": "e57001",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            24
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            24
+          ]
+        ]
+      },
+      "publisher": "JMIR Publications Inc.",
+      "URL": "https://doi.org/10.2196/57001",
+      "event": null,
+      "ISBN": null,
+      "relation": {
+        "has-preprint": [
+          {
+            "id-type": "doi",
+            "id": "10.2196/preprints.57001",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "title_similarity": 0.551
+    }
+  ]
+}

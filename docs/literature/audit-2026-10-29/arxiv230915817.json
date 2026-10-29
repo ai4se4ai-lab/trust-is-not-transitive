@@ -1,0 +1,403 @@
+{
+  "key": "arxiv230915817",
+  "original": {
+    "url": "https://arxiv.org/abs/2309.15817",
+    "howpublished": "arXiv:2309.15817",
+    "year": "2023",
+    "author": "Ruan, Yangjun and Dong, Honghua and Wang, Andrew and Pitis, Silviu and Zhou, Yongchao and Ba, Jimmy and Dubois, Yann and Maddison, Chris J. and Hashimoto, Tatsunori",
+    "title": "{Identifying the Risks of LM Agents with an LM-Emulated Sandbox}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv230915817"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2309.15817",
+    "https://api.crossref.org/works?query.title=Identifying+the+Risks+of+LM+Agents+with+an+LM-Emulated+Sandbox&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2309.15817: Identifying the Risks of LM Agents with an LM-Emulated Sandbox"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Identifying the Risks of LM Agents with an LM-Emulated Sandbox"
+      ],
+      "twitter:description": [
+        "Recent advances in Language Model (LM) agents and tool use, exemplified by applications like ChatGPT Plugins, enable a rich set of capabilities but also amplify potential risks - such as leaking..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Identifying the Risks of LM Agents with an LM-Emulated Sandbox"
+      ],
+      "citation_author": [
+        "Ruan, Yangjun",
+        "Dong, Honghua",
+        "Wang, Andrew",
+        "Pitis, Silviu",
+        "Zhou, Yongchao",
+        "Ba, Jimmy",
+        "Dubois, Yann",
+        "Maddison, Chris J.",
+        "Hashimoto, Tatsunori"
+      ],
+      "citation_date": [
+        "2023/09/25"
+      ],
+      "citation_online_date": [
+        "2024/05/17"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2309.15817"
+      ],
+      "citation_arxiv_id": [
+        "2309.15817"
+      ],
+      "citation_abstract": [
+        "Recent advances in Language Model (LM) agents and tool use, exemplified by applications like ChatGPT Plugins, enable a rich set of capabilities but also amplify potential risks - such as leaking private data or causing financial losses. Identifying these risks is labor-intensive, necessitating implementing the tools, setting up the environment for each test scenario manually, and finding risky cases. As tools and agents become more complex, the high cost of testing these agents will make it increasingly difficult to find high-stakes, long-tailed risks. To address these challenges, we introduce ToolEmu: a framework that uses an LM to emulate tool execution and enables the testing of LM agents against a diverse range of tools and scenarios, without manual instantiation. Alongside the emulator, we develop an LM-based automatic safety evaluator that examines agent failures and quantifies associated risks. We test both the tool emulator and evaluator through human evaluation and find that 68.8% of failures identified with ToolEmu would be valid real-world agent failures. Using our curated initial benchmark consisting of 36 high-stakes tools and 144 test cases, we provide a quantitative risk analysis of current LM agents and identify numerous failures with potentially severe outcomes. Notably, even the safest LM agent exhibits such failures 23.9% of the time according to our evaluator, underscoring the need to develop safer LM agents for real-world deployment."
+      ]
+    },
+    "details": {
+      "title": "Title: Identifying the Risks of LM Agents with an LM-Emulated Sandbox",
+      "authors": "Authors: Yangjun Ruan , Honghua Dong , Andrew Wang , Silviu Pitis , Yongchao Zhou , Jimmy Ba , Yann Dubois , Chris J. Maddison , Tatsunori Hashimoto",
+      "dateline": "[Submitted on 25 Sep 2023 ( v1 ), last revised 17 May 2024 (this version, v2)]",
+      "metatable": "Subjects: Artificial Intelligence (cs.AI) ; Computation and Language (cs.CL); Machine Learning (cs.LG) Cite as: arXiv:2309.15817 [cs.AI] (or arXiv:2309.15817v2 [cs.AI] for this version) https://doi.org/10.48550/arXiv.2309.15817 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1145/1810295.1810370",
+      "type": "proceedings-article",
+      "title": [
+        "LM"
+      ],
+      "author": [
+        {
+          "given": "Tuan-Anh",
+          "family": "Doan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "National University of Singapore"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Lo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Singapore Management University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Shahar",
+          "family": "Maoz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Software Engineering, RWTH-Aachen, Germany"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Siau-Cheng",
+          "family": "Khoo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "National University of Singapore"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering - Volume 2"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "319-320",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2010,
+            5
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2010,
+            5
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/1810295.1810370",
+      "event": {
+        "name": "ICSE '10: 32nd International Conference on Software Engineering",
+        "sponsor": [
+          "SIGSOFT ACM Special Interest Group on Software Engineering",
+          "IEEE CS"
+        ],
+        "location": "Cape Town South Africa",
+        "acronym": "ICSE '10"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.074
+    },
+    {
+      "DOI": "10.1007/978-3-642-96868-6_125",
+      "type": "book-chapter",
+      "title": [
+        "LM"
+      ],
+      "author": [
+        {
+          "given": "Alan",
+          "family": "Bundy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Lincoln",
+          "family": "Wallen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Catalogue of Artificial Intelligence Tools"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "62-62",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1984
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1984
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/978-3-642-96868-6_125",
+      "event": null,
+      "ISBN": [
+        "9783540139386",
+        "9783642968686"
+      ],
+      "relation": null,
+      "title_similarity": 0.074
+    },
+    {
+      "DOI": "10.1007/s40319-023-01390-z",
+      "type": "journal-article",
+      "title": [
+        "“LM”"
+      ],
+      "author": [
+        {
+          "name": "LM v. KP Regulation (EU) 2017/1001, Arts. 124, 128, 129(3)",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IIC - International Review of Intellectual Property and Competition Law"
+      ],
+      "volume": "54",
+      "issue": "10",
+      "page": "1613-1613",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            11
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            5
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "URL": "https://doi.org/10.1007/s40319-023-01390-z",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.074
+    },
+    {
+      "DOI": "10.1007/978-3-662-43978-4_1779",
+      "type": "book-chapter",
+      "title": [
+        "LM"
+      ],
+      "author": null,
+      "container-title": [
+        "Encyclopedia of Parasitology"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1491-1491",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            23
+          ]
+        ]
+      },
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/978-3-662-43978-4_1779",
+      "event": null,
+      "ISBN": [
+        "9783662439777",
+        "9783662439784"
+      ],
+      "relation": null,
+      "title_similarity": 0.074
+    },
+    {
+      "DOI": "10.1007/978-3-540-48996-2_1779",
+      "type": "book-chapter",
+      "title": [
+        "LM"
+      ],
+      "author": null,
+      "container-title": [
+        "Encyclopedia of Parasitology"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "727-727",
+      "article-number": null,
+      "published": null,
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/978-3-540-48996-2_1779",
+      "event": null,
+      "ISBN": [
+        "9783540489948",
+        "9783540489962"
+      ],
+      "relation": null,
+      "title_similarity": 0.074
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "key": "abadi1993composing",
+  "original": {
+    "doi": "10.1145/151646.151649",
+    "year": "1993",
+    "pages": "73--132",
+    "number": "1",
+    "volume": "15",
+    "journal": "ACM Transactions on Programming Languages and Systems",
+    "title": "Composing Specifications",
+    "author": "Abadi, Mart{\\'\\i}n and Lamport, Leslie",
+    "ENTRYTYPE": "article",
+    "ID": "abadi1993composing"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1145/151646.151649"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1145/151646.151649",
+      "type": "journal-article",
+      "title": [
+        "Composing specifications"
+      ],
+      "author": [
+        {
+          "given": "Martín",
+          "family": "Abadi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Digital Equipment Corp., Palo Alto, CA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Leslie",
+          "family": "Lamport",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Digital Equipment Corp., Palo Alto, CA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ACM Transactions on Programming Languages and Systems"
+      ],
+      "volume": "15",
+      "issue": "1",
+      "page": "73-132",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1993,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1993,
+            1
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            1993,
+            1
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "URL": "https://doi.org/10.1145/151646.151649",
+      "event": null,
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

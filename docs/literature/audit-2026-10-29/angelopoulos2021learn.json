@@ -1,0 +1,503 @@
+{
+  "key": "angelopoulos2021learn",
+  "original": {
+    "url": "https://arxiv.org/abs/2110.01052",
+    "year": "2021",
+    "howpublished": "arXiv:2110.01052",
+    "title": "{Learn then Test: Calibrating Predictive Algorithms to Achieve Risk Control}",
+    "author": "Angelopoulos, Anastasios N. and Bates, Stephen and Cand{\\`e}s, Emmanuel J. and Jordan, Michael I. and Lei, Lihua",
+    "ENTRYTYPE": "misc",
+    "ID": "angelopoulos2021learn"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2110.01052",
+    "https://api.crossref.org/works?query.title=Learn+then+Test%3A+Calibrating+Predictive+Algorithms+to+Achieve+Risk+Control&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2110.01052: Learn then Test: Calibrating Predictive Algorithms to Achieve Risk Control"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Learn then Test: Calibrating Predictive Algorithms to Achieve Risk Control"
+      ],
+      "twitter:description": [
+        "We introduce a framework for calibrating machine learning models so that their predictions satisfy explicit, finite-sample statistical guarantees. Our calibration algorithms work with any..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Learn then Test: Calibrating Predictive Algorithms to Achieve Risk Control"
+      ],
+      "citation_author": [
+        "Angelopoulos, Anastasios N.",
+        "Bates, Stephen",
+        "Candès, Emmanuel J.",
+        "Jordan, Michael I.",
+        "Lei, Lihua"
+      ],
+      "citation_date": [
+        "2021/10/03"
+      ],
+      "citation_online_date": [
+        "2022/09/29"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2110.01052"
+      ],
+      "citation_arxiv_id": [
+        "2110.01052"
+      ],
+      "citation_abstract": [
+        "We introduce a framework for calibrating machine learning models so that their predictions satisfy explicit, finite-sample statistical guarantees. Our calibration algorithms work with any underlying model and (unknown) data-generating distribution and do not require model refitting. The framework addresses, among other examples, false discovery rate control in multi-label classification, intersection-over-union control in instance segmentation, and the simultaneous control of the type-1 error of outlier detection and confidence set coverage in classification or regression. Our main insight is to reframe the risk-control problem as multiple hypothesis testing, enabling techniques and mathematical arguments different from those in the previous literature. We use the framework to provide new calibration methods for several core machine learning tasks, with detailed worked examples in computer vision and tabular medical data."
+      ]
+    },
+    "details": {
+      "title": "Title: Learn then Test: Calibrating Predictive Algorithms to Achieve Risk Control",
+      "authors": "Authors: Anastasios N. Angelopoulos , Stephen Bates , Emmanuel J. Candès , Michael I. Jordan , Lihua Lei",
+      "dateline": "[Submitted on 3 Oct 2021 ( v1 ), last revised 29 Sep 2022 (this version, v5)]",
+      "comments": "Code available at this https URL",
+      "metatable": "Comments: Code available at this https URL Subjects: Machine Learning (cs.LG) ; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV); Methodology (stat.ME); Machine Learning (stat.ML) Cite as: arXiv:2110.01052 [cs.LG] (or arXiv:2110.01052v5 [cs.LG] for this version) https://doi.org/10.48550/arXiv.2110.01052 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1214/24-aoas1998",
+      "type": "journal-article",
+      "title": [
+        "Learn then test: Calibrating predictive algorithms to achieve risk control"
+      ],
+      "author": [
+        {
+          "given": "Anastasios N.",
+          "family": "Angelopoulos",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Science, University of California, Berkeley"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephen",
+          "family": "Bates",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Emmanuel J.",
+          "family": "Candès",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Statistics, Stanford University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael I.",
+          "family": "Jordan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Science, University of California, Berkeley"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lihua",
+          "family": "Lei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Stanford Graduate School of Business"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Annals of Applied Statistics"
+      ],
+      "volume": "19",
+      "issue": "2",
+      "page": "1641-1662",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Mathematical Statistics",
+      "URL": "https://doi.org/10.1214/24-aoas1998",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.1134/s0040601511040100",
+      "type": "journal-article",
+      "title": [
+        "Typical predictive control algorithms"
+      ],
+      "author": [
+        {
+          "given": "G. A.",
+          "family": "Pikina",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "M. S.",
+          "family": "Kuznetsov",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Thermal Engineering"
+      ],
+      "volume": "58",
+      "issue": "4",
+      "page": "336-341",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            4
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2011,
+            4
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2011,
+            4,
+            20
+          ]
+        ]
+      },
+      "publisher": "Pleiades Publishing Ltd",
+      "URL": "https://doi.org/10.1134/s0040601511040100",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.49
+    },
+    {
+      "DOI": "10.1080/00949655.2012.709518",
+      "type": "journal-article",
+      "title": [
+        "Calibrating predictive distributions"
+      ],
+      "author": [
+        {
+          "given": "Giovanni",
+          "family": "Fonseca",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Federica",
+          "family": "Giummolè",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Paolo",
+          "family": "Vidoni",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Statistical Computation and Simulation"
+      ],
+      "volume": "84",
+      "issue": "2",
+      "page": "373-383",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            7,
+            27
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2014,
+            2
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2012,
+            7,
+            27
+          ]
+        ]
+      },
+      "publisher": "Informa UK Limited",
+      "URL": "https://doi.org/10.1080/00949655.2012.709518",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.551
+    },
+    {
+      "DOI": "10.1002/9783527636242.ch6",
+      "type": "other",
+      "title": [
+        "Predictive PID Control Algorithms"
+      ],
+      "author": null,
+      "container-title": [
+        "Predictive Control in Process Engineering"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "221-250",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            9,
+            14
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2011,
+            9,
+            14
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2011,
+            9,
+            21
+          ]
+        ]
+      },
+      "publisher": "Wiley",
+      "URL": "https://doi.org/10.1002/9783527636242.ch6",
+      "event": null,
+      "ISBN": [
+        "9783527314928",
+        "9783527636242"
+      ],
+      "relation": null,
+      "title_similarity": 0.426
+    },
+    {
+      "DOI": "10.1109/lsp.2024.3486238",
+      "type": "journal-article",
+      "title": [
+        "Quantile Learn-Then-Test: Quantile-Based Risk Control for Hyperparameter Optimization"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1928-6005",
+          "authenticated-orcid": false,
+          "given": "Amirmohammad",
+          "family": "Farzaneh",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "King&#x0027;s Communications, Learning and Information Processing, Centre for Intelligent Information Processing Systems, Department of Engineering, King&#x0027;s College London, London, U.K."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4091-7860",
+          "authenticated-orcid": false,
+          "given": "Sangwoo",
+          "family": "Park",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "King&#x0027;s Communications, Learning and Information Processing, Centre for Intelligent Information Processing Systems, Department of Engineering, King&#x0027;s College London, London, U.K."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9898-3209",
+          "authenticated-orcid": false,
+          "given": "Osvaldo",
+          "family": "Simeone",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "King&#x0027;s Communications, Learning and Information Processing, Centre for Intelligent Information Processing Systems, Department of Engineering, King&#x0027;s College London, London, U.K."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Signal Processing Letters"
+      ],
+      "volume": "31",
+      "issue": null,
+      "page": "3044-3048",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/lsp.2024.3486238",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.42
+    }
+  ]
+}

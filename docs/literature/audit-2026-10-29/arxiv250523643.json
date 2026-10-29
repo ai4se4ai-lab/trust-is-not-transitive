@@ -1,0 +1,445 @@
+{
+  "key": "arxiv250523643",
+  "original": {
+    "url": "https://arxiv.org/abs/2505.23643",
+    "howpublished": "arXiv:2505.23643",
+    "year": "2025",
+    "author": "Costa, Manuel and Köpf, Boris and Kolluri, Aashish and Paverd, Andrew and Russinovich, Mark and Salem, Ahmed and Tople, Shruti and Wutschitz, Lukas and Zanella-Béguelin, Santiago",
+    "title": "{Securing AI Agents with Information-Flow Control}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250523643"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2505.23643",
+    "https://api.crossref.org/works?query.title=Securing+AI+Agents+with+Information-Flow+Control&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2505.23643: Securing AI Agents with Information-Flow Control"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Securing AI Agents with Information-Flow Control"
+      ],
+      "twitter:description": [
+        "As AI agents become increasingly autonomous and capable, ensuring their security against vulnerabilities such as prompt injection becomes critical. This paper explores the use of information-flow..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Securing AI Agents with Information-Flow Control"
+      ],
+      "citation_author": [
+        "Costa, Manuel",
+        "Köpf, Boris",
+        "Kolluri, Aashish",
+        "Paverd, Andrew",
+        "Russinovich, Mark",
+        "Salem, Ahmed",
+        "Tople, Shruti",
+        "Wutschitz, Lukas",
+        "Zanella-Béguelin, Santiago"
+      ],
+      "citation_date": [
+        "2025/05/29"
+      ],
+      "citation_online_date": [
+        "2025/09/03"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2505.23643"
+      ],
+      "citation_arxiv_id": [
+        "2505.23643"
+      ],
+      "citation_abstract": [
+        "As AI agents become increasingly autonomous and capable, ensuring their security against vulnerabilities such as prompt injection becomes critical. This paper explores the use of information-flow control (IFC) to provide security guarantees for AI agents. We present a formal model to reason about the security and expressiveness of agent planners. Using this model, we characterize the class of properties enforceable by dynamic taint-tracking and construct a taxonomy of tasks to evaluate security and utility trade-offs of planner designs. Informed by this exploration, we present Fides, a planner that tracks confidentiality and integrity labels, deterministically enforces security policies, and introduces novel primitives for selectively hiding information. Its evaluation in AgentDojo demonstrates that this approach enables us to complete a broad range of tasks with security guarantees. A tutorial to walk readers through the the concepts introduced in the paper can be found at https://github.com/microsoft/fides"
+      ]
+    },
+    "details": {
+      "title": "Title: Securing AI Agents with Information-Flow Control",
+      "authors": "Authors: Manuel Costa , Boris Köpf , Aashish Kolluri , Andrew Paverd , Mark Russinovich , Ahmed Salem , Shruti Tople , Lukas Wutschitz , Santiago Zanella-Béguelin",
+      "dateline": "[Submitted on 29 May 2025 ( v1 ), last revised 3 Sep 2025 (this version, v2)]",
+      "metatable": "Subjects: Cryptography and Security (cs.CR) ; Artificial Intelligence (cs.AI) Cite as: arXiv:2505.23643 [cs.CR] (or arXiv:2505.23643v2 [cs.CR] for this version) https://doi.org/10.48550/arXiv.2505.23643 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1007/978-3-032-02130-4",
+      "type": "book",
+      "title": [
+        "Securing AI Agents"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0004-6502-3673",
+          "authenticated-orcid": false,
+          "given": "Ken",
+          "family": "Huang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chris",
+          "family": "Hughes",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Data Analytics, AI, and Smart Systems"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Nature Switzerland",
+      "URL": "https://doi.org/10.1007/978-3-032-02130-4",
+      "event": null,
+      "ISBN": [
+        "9783032021298",
+        "9783032021304"
+      ],
+      "relation": null,
+      "title_similarity": 0.552
+    },
+    {
+      "DOI": "10.1007/11553939_149",
+      "type": "book-chapter",
+      "title": [
+        "Securing Mobile Agents Control Flow Using Opaque Predicates"
+      ],
+      "author": [
+        {
+          "given": "Anirban",
+          "family": "Majumdar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Clark",
+          "family": "Thomborson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Knowledge-Based Intelligent Information and Engineering Systems"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1065-1071",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2005
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2005
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/11553939_149",
+      "event": null,
+      "ISBN": [
+        "9783540288961",
+        "9783540319900"
+      ],
+      "relation": null,
+      "title_similarity": 0.468
+    },
+    {
+      "DOI": "10.1109/csf64896.2025.00031",
+      "type": "proceedings-article",
+      "title": [
+        "Securing P4 Programs by Information Flow Control"
+      ],
+      "author": [
+        {
+          "given": "Anoud",
+          "family": "Alshnakat",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "KTH Royal Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Amir M.",
+          "family": "Ahmadian",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "KTH Royal Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Musard",
+          "family": "Balliu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "KTH Royal Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Roberto",
+          "family": "Guanciale",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "KTH Royal Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Mads",
+          "family": "Dam",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "KTH Royal Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE 38th Computer Security Foundations Symposium (CSF)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "284-299",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            16
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            16
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/csf64896.2025.00031",
+      "event": {
+        "name": "2025 IEEE 38th Computer Security Foundations Symposium (CSF)",
+        "location": "Santa Cruz, CA, USA",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              16
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              20
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.762
+    },
+    {
+      "DOI": "10.4018/979-8-3373-6876-4",
+      "type": "edited-book",
+      "title": [
+        "Safeguarding and Securing Autonomous AI Agents"
+      ],
+      "author": null,
+      "container-title": [
+        "Advances in Computational Intelligence and Robotics"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IGI Global Scientific Publishing",
+      "URL": "https://doi.org/10.4018/979-8-3373-6876-4",
+      "event": null,
+      "ISBN": [
+        "9798337368764",
+        "9798337368788"
+      ],
+      "relation": null,
+      "title_similarity": 0.386
+    },
+    {
+      "DOI": "10.2139/ssrn.5204283",
+      "type": "posted-content",
+      "title": [
+        "Securing Ai Agents: Implementing Role-Based Access Control for Industrial Applications"
+      ],
+      "author": [
+        {
+          "given": "Aadil  Gani",
+          "family": "Ganie",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.2139/ssrn.5204283",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.496
+    }
+  ]
+}

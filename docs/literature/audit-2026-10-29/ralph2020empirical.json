@@ -1,0 +1,531 @@
+{
+  "key": "ralph2020empirical",
+  "original": {
+    "url": "https://arxiv.org/abs/2010.03525",
+    "year": "2020",
+    "howpublished": "arXiv:2010.03525",
+    "title": "{Empirical Standards for Software Engineering Research}",
+    "author": "Ralph, Paul and others",
+    "ENTRYTYPE": "misc",
+    "ID": "ralph2020empirical"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2010.03525",
+    "https://api.crossref.org/works?query.title=Empirical+Standards+for+Software+Engineering+Research&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2010.03525: Empirical Standards for Software Engineering Research"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Empirical Standards for Software Engineering Research"
+      ],
+      "twitter:description": [
+        "Empirical Standards are natural-language models of a scientific community's expectations for a specific kind of study (e.g. a questionnaire survey). The ACM SIGSOFT Paper and Peer Review Quality..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Empirical Standards for Software Engineering Research"
+      ],
+      "citation_author": [
+        "Ralph, Paul",
+        "Ali, Nauman bin",
+        "Baltes, Sebastian",
+        "Bianculli, Domenico",
+        "Diaz, Jessica",
+        "Dittrich, Yvonne",
+        "Ernst, Neil",
+        "Felderer, Michael",
+        "Feldt, Robert",
+        "Filieri, Antonio",
+        "de França, Breno Bernard Nicolau",
+        "Furia, Carlo Alberto",
+        "Gay, Greg",
+        "Gold, Nicolas",
+        "Graziotin, Daniel",
+        "He, Pinjia",
+        "Hoda, Rashina",
+        "Juristo, Natalia",
+        "Kitchenham, Barbara",
+        "Lenarduzzi, Valentina",
+        "Martínez, Jorge",
+        "Melegati, Jorge",
+        "Mendez, Daniel",
+        "Menzies, Tim",
+        "Molleri, Jefferson",
+        "Pfahl, Dietmar",
+        "Robbes, Romain",
+        "Russo, Daniel",
+        "Saarimäki, Nyyti",
+        "Sarro, Federica",
+        "Taibi, Davide",
+        "Siegmund, Janet",
+        "Spinellis, Diomidis",
+        "Staron, Miroslaw",
+        "Stol, Klaas",
+        "Storey, Margaret-Anne",
+        "Taibi, Davide",
+        "Tamburri, Damian",
+        "Torchiano, Marco",
+        "Treude, Christoph",
+        "Turhan, Burak",
+        "Wang, Xiaofeng",
+        "Vegas, Sira"
+      ],
+      "citation_date": [
+        "2020/10/07"
+      ],
+      "citation_online_date": [
+        "2021/03/04"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2010.03525"
+      ],
+      "citation_arxiv_id": [
+        "2010.03525"
+      ],
+      "citation_abstract": [
+        "Empirical Standards are natural-language models of a scientific community's expectations for a specific kind of study (e.g. a questionnaire survey). The ACM SIGSOFT Paper and Peer Review Quality Initiative generated empirical standards for research methods commonly used in software engineering. These living documents, which should be continuously revised to reflect evolving consensus around research best practices, will improve research quality and make peer review more effective, reliable, transparent and fair."
+      ]
+    },
+    "details": {
+      "title": "Title: Empirical Standards for Software Engineering Research",
+      "authors": "Authors: Paul Ralph , Nauman bin Ali , Sebastian Baltes , Domenico Bianculli , Jessica Diaz , Yvonne Dittrich , Neil Ernst , Michael Felderer , Robert Feldt , Antonio Filieri , Breno Bernard Nicolau de França , Carlo Alberto Furia , Greg Gay , Nicolas Gold , Daniel Graziotin , Pinjia He , Rashina Hoda , Natalia Juristo , Barbara Kitchenham , Valentina Lenarduzzi , Jorge Martínez , Jorge Melegati , Daniel Mendez , Tim Menzies , Jefferson Molleri , Dietmar Pfahl , Romain Robbes , Daniel Russo , Nyyti Saarimäki , Federica Sarro , Davide Taibi , Janet Siegmund , Diomidis Spinellis , Miroslaw Staron , Klaas Stol , Margaret-Anne Storey , Davide Taibi , Damian Tamburri , Marco Torchiano , Christoph Treude , Burak Turhan , Xiaofeng Wang , Sira Vegas",
+      "dateline": "[Submitted on 7 Oct 2020 ( v1 ), last revised 4 Mar 2021 (this version, v2)]",
+      "comments": "For the complete standards, supplements and other resources, see this https URL",
+      "metatable": "Comments: For the complete standards, supplements and other resources, see this https URL Subjects: Software Engineering (cs.SE) ; General Literature (cs.GL) Cite as: arXiv:2010.03525 [cs.SE] (or arXiv:2010.03525v2 [cs.SE] for this version) https://doi.org/10.48550/arXiv.2010.03525 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1109/metric.1999.809754",
+      "type": "proceedings-article",
+      "title": [
+        "Empirical Software Engineering Research Ethics"
+      ],
+      "author": [
+        {
+          "given": "J.",
+          "family": "Singer",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "National Research Council Canada"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "N.",
+          "family": "Vinson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings Sixth International Software Metrics Symposium (Cat. No.PR00403)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "326-326",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1999
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1999
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/metric.1999.809754",
+      "event": {
+        "name": "Proceedings of METRICS '99: Sixth International Symposium on Software Metrics",
+        "start": {
+          "date-parts": [
+            [
+              1999,
+              11,
+              4
+            ]
+          ]
+        },
+        "location": "Boca Raton, FL, USA",
+        "end": {
+          "date-parts": [
+            [
+              1999,
+              11,
+              6
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.8
+    },
+    {
+      "DOI": "10.1201/b19292",
+      "type": "reference-book",
+      "title": [
+        "Empirical Research in Software Engineering"
+      ],
+      "author": [
+        {
+          "given": "Ruchika",
+          "family": "Malhotra",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            3,
+            9
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            3,
+            9
+          ]
+        ]
+      },
+      "publisher": "Chapman and Hall/CRC",
+      "URL": "https://doi.org/10.1201/b19292",
+      "event": null,
+      "ISBN": [
+        "9780429183676"
+      ],
+      "relation": null,
+      "title_similarity": 0.721
+    },
+    {
+      "DOI": "10.1145/311963.311998",
+      "type": "journal-article",
+      "title": [
+        "Empirical research in software engineering"
+      ],
+      "author": [
+        {
+          "given": "Susan S.",
+          "family": "Brilliant",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "John C.",
+          "family": "Knight",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ACM SIGSOFT Software Engineering Notes"
+      ],
+      "volume": "24",
+      "issue": "3",
+      "page": "44-52",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1999,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1999,
+            5
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            1999,
+            5
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "URL": "https://doi.org/10.1145/311963.311998",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.721
+    },
+    {
+      "DOI": "10.1007/978-3-540-71301-2_49",
+      "type": "book-chapter",
+      "title": [
+        "Empirical Software Engineering Research Roadmap Introduction"
+      ],
+      "author": [
+        {
+          "given": "Richard W.",
+          "family": "Selby",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Empirical Software Engineering Issues. Critical Assessment and Future Directions"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "168-171",
+      "article-number": null,
+      "published": null,
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/978-3-540-71301-2_49",
+      "event": null,
+      "ISBN": [
+        "9783540713005",
+        "9783540713012"
+      ],
+      "relation": null,
+      "title_similarity": 0.699
+    },
+    {
+      "DOI": "10.1145/1321631.1321749",
+      "type": "proceedings-article",
+      "title": [
+        "Empirical research methods for software engineering"
+      ],
+      "author": [
+        {
+          "given": "Steve",
+          "family": "Easterbrook",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Toronto, Toronto, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the twenty-second IEEE/ACM international conference on Automated software engineering"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "574-574",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2007,
+            11,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2007,
+            11,
+            5
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2007,
+            11,
+            5
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/1321631.1321749",
+      "event": {
+        "name": "ASE07: International Conference on Automated Software Engineering 2007",
+        "location": "Atlanta Georgia USA",
+        "acronym": "ASE07",
+        "sponsor": [
+          "SIGAI ACM Special Interest Group on Artificial Intelligence",
+          "ACM Association for Computing Machinery",
+          "SIGSOFT ACM Special Interest Group on Software Engineering"
+        ]
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.766
+    },
+    {
+      "DOI": "10.1109/icsecompanion.2007.33",
+      "type": "proceedings-article",
+      "title": [
+        "Empirical Methods in Software Engineering Research"
+      ],
+      "author": [
+        {
+          "given": "Walter F.",
+          "family": "Tichy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Frank",
+          "family": "Padberg",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "29th International Conference on Software Engineering (ICSE'07 Companion)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "163-164",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2007,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2007,
+            5
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/icsecompanion.2007.33",
+      "event": {
+        "name": "29th International Conference on Software Engineering",
+        "start": {
+          "date-parts": [
+            [
+              2007,
+              5,
+              20
+            ]
+          ]
+        },
+        "location": "Minneapolis, MN, USA",
+        "end": {
+          "date-parts": [
+            [
+              2007,
+              5,
+              26
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.839
+    }
+  ]
+}

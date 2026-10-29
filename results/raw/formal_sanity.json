@@ -1,0 +1,6 @@
+{
+  "seed": 20261029,
+  "instances": 10000,
+  "status": "passed",
+  "scope": "arbitrary three-Bernoulli laws; Frechet inequalities; common-shock interpolation"
+}

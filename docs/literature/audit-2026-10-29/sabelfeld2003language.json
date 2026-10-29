@@ -1,0 +1,84 @@
+{
+  "key": "sabelfeld2003language",
+  "original": {
+    "doi": "10.1109/JSAC.2002.806121",
+    "year": "2003",
+    "pages": "5--19",
+    "number": "1",
+    "volume": "21",
+    "journal": "IEEE Journal on Selected Areas in Communications",
+    "title": "Language-Based Information-Flow Security",
+    "author": "Sabelfeld, Andrei and Myers, Andrew C.",
+    "ENTRYTYPE": "article",
+    "ID": "sabelfeld2003language"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1109/JSAC.2002.806121"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1109/jsac.2002.806121",
+      "type": "journal-article",
+      "title": [
+        "Language-based information-flow security"
+      ],
+      "author": [
+        {
+          "given": "A.",
+          "family": "Sabelfeld",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "A.C.",
+          "family": "Myers",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Journal on Selected Areas in Communications"
+      ],
+      "volume": "21",
+      "issue": "1",
+      "page": "5-19",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2003,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2003,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/jsac.2002.806121",
+      "event": null,
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

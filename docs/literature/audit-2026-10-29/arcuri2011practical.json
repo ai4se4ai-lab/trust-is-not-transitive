@@ -1,0 +1,108 @@
+{
+  "key": "arcuri2011practical",
+  "original": {
+    "doi": "10.1145/1985793.1985795",
+    "year": "2011",
+    "pages": "1--10",
+    "booktitle": "Proc. 33rd Int. Conf. Software Engineering (ICSE)",
+    "title": "A Practical Guide for Using Statistical Tests to Assess Randomized Algorithms in Software Engineering",
+    "author": "Arcuri, Andrea and Briand, Lionel",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arcuri2011practical"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1145/1985793.1985795"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1145/1985793.1985795",
+      "type": "proceedings-article",
+      "title": [
+        "A practical guide for using statistical tests to assess randomized algorithms in software engineering"
+      ],
+      "author": [
+        {
+          "given": "Andrea",
+          "family": "Arcuri",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Simula Research Laboratory, Lysaker, Norway"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lionel",
+          "family": "Briand",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Simula Research Laboratory &amp; University of Oslo, Lysaker, Norway"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 33rd International Conference on Software Engineering"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-10",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            5,
+            21
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2011,
+            5,
+            21
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2011,
+            5,
+            21
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/1985793.1985795",
+      "event": {
+        "name": "ICSE11: International Conference on Software Engineering",
+        "location": "Waikiki, Honolulu HI USA",
+        "acronym": "ICSE11",
+        "sponsor": [
+          "SIGSOFT ACM Special Interest Group on Software Engineering",
+          "IEEE CS"
+        ]
+      },
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

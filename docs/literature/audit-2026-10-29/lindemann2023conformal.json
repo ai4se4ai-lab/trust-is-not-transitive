@@ -1,0 +1,148 @@
+{
+  "key": "lindemann2023conformal",
+  "original": {
+    "doi": "10.1145/3576841.3585927",
+    "year": "2023",
+    "pages": "142--153",
+    "booktitle": "Proc. ACM/IEEE 14th Int. Conf. Cyber-Physical Systems (ICCPS)",
+    "title": "Conformal Prediction for {STL} Runtime Verification",
+    "author": "Lindemann, Lars and Qin, Xin and Deshmukh, Jyotirmoy V. and Pappas, George J.",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "lindemann2023conformal"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1145/3576841.3585927"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1145/3576841.3585927",
+      "type": "proceedings-article",
+      "title": [
+        "Conformal Prediction for STL Runtime Verification"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3430-6625",
+          "authenticated-orcid": false,
+          "given": "Lars",
+          "family": "Lindemann",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelphia, United States of America"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7457-0565",
+          "authenticated-orcid": false,
+          "given": "Xin",
+          "family": "Qin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Southern California, Los Angeles, United States of America"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8815-464X",
+          "authenticated-orcid": false,
+          "given": "Jyotirmoy V.",
+          "family": "Deshmukh",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Southern California, Los Angeles, United States of America"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9081-0637",
+          "authenticated-orcid": false,
+          "given": "George J.",
+          "family": "Pappas",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelphia, United States of America"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the ACM/IEEE 14th International Conference on Cyber-Physical Systems (with CPS-IoT Week 2023)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "142-153",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            9
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            9
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3576841.3585927",
+      "event": {
+        "name": "ICCPS '23: ACM/IEEE 14th International Conference on Cyber-Physical Systems (with CPS-IoT Week 2023)",
+        "location": "San Antonio TX USA",
+        "acronym": "ICCPS '23",
+        "sponsor": [
+          "SIGBED ACM Special Interest Group on Embedded Systems",
+          "IEEE TCRTS"
+        ]
+      },
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

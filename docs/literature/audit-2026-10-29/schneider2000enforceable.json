@@ -1,0 +1,83 @@
+{
+  "key": "schneider2000enforceable",
+  "original": {
+    "doi": "10.1145/353323.353382",
+    "year": "2000",
+    "pages": "30--50",
+    "number": "1",
+    "volume": "3",
+    "journal": "ACM Transactions on Information and System Security",
+    "title": "Enforceable Security Policies",
+    "author": "Schneider, Fred B.",
+    "ENTRYTYPE": "article",
+    "ID": "schneider2000enforceable"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1145/353323.353382"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1145/353323.353382",
+      "type": "journal-article",
+      "title": [
+        "Enforceable security policies"
+      ],
+      "author": [
+        {
+          "given": "Fred B.",
+          "family": "Schneider",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Cornell Univ., Ithaca, NY"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ACM Transactions on Information and System Security"
+      ],
+      "volume": "3",
+      "issue": "1",
+      "page": "30-50",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2000,
+            2
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            2
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2000,
+            2
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "URL": "https://doi.org/10.1145/353323.353382",
+      "event": null,
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

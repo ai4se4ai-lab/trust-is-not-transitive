@@ -1,0 +1,855 @@
+{
+  "key": "arxiv240110019",
+  "original": {
+    "url": "https://arxiv.org/abs/2401.10019",
+    "howpublished": "arXiv:2401.10019",
+    "year": "2024",
+    "author": "Yuan, Tongxin and He, Zhiwei and Dong, Lingzhong and Wang, Yiming and Zhao, Ruijie and Xia, Tian and Xu, Lizhen and Zhou, Binglin and Li, Fangqi and Zhang, Zhuosheng and Wang, Rui and Liu, Gongshen",
+    "title": "{R-Judge: Benchmarking Safety Risk Awareness for LLM Agents}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv240110019"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2401.10019",
+    "https://api.crossref.org/works?query.title=R-Judge%3A+Benchmarking+Safety+Risk+Awareness+for+LLM+Agents&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2401.10019: R-Judge: Benchmarking Safety Risk Awareness for LLM Agents"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "R-Judge: Benchmarking Safety Risk Awareness for LLM Agents"
+      ],
+      "twitter:description": [
+        "Large language models (LLMs) have exhibited great potential in autonomously completing tasks across real-world applications. Despite this, these LLM agents introduce unexpected safety risks when..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "R-Judge: Benchmarking Safety Risk Awareness for LLM Agents"
+      ],
+      "citation_author": [
+        "Yuan, Tongxin",
+        "He, Zhiwei",
+        "Dong, Lingzhong",
+        "Wang, Yiming",
+        "Zhao, Ruijie",
+        "Xia, Tian",
+        "Xu, Lizhen",
+        "Zhou, Binglin",
+        "Li, Fangqi",
+        "Zhang, Zhuosheng",
+        "Wang, Rui",
+        "Liu, Gongshen"
+      ],
+      "citation_date": [
+        "2024/01/18"
+      ],
+      "citation_online_date": [
+        "2024/10/05"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2401.10019"
+      ],
+      "citation_arxiv_id": [
+        "2401.10019"
+      ],
+      "citation_abstract": [
+        "Large language models (LLMs) have exhibited great potential in autonomously completing tasks across real-world applications. Despite this, these LLM agents introduce unexpected safety risks when operating in interactive environments. Instead of centering on the harmlessness of LLM-generated content in most prior studies, this work addresses the imperative need for benchmarking the behavioral safety of LLM agents within diverse environments. We introduce R-Judge, a benchmark crafted to evaluate the proficiency of LLMs in judging and identifying safety risks given agent interaction records. R-Judge comprises 569 records of multi-turn agent interaction, encompassing 27 key risk scenarios among 5 application categories and 10 risk types. It is of high-quality curation with annotated safety labels and risk descriptions. Evaluation of 11 LLMs on R-Judge shows considerable room for enhancing the risk awareness of LLMs: The best-performing model, GPT-4o, achieves 74.42% while no other models significantly exceed the random. Moreover, we reveal that risk awareness in open agent scenarios is a multi-dimensional capability involving knowledge and reasoning, thus challenging for LLMs. With further experiments, we find that fine-tuning on safety judgment significantly improve model performance while straightforward prompting mechanisms fail. R-Judge is publicly available at https://github.com/Lordog/R-Judge."
+      ]
+    },
+    "details": {
+      "title": "Title: R-Judge: Benchmarking Safety Risk Awareness for LLM Agents",
+      "authors": "Authors: Tongxin Yuan , Zhiwei He , Lingzhong Dong , Yiming Wang , Ruijie Zhao , Tian Xia , Lizhen Xu , Binglin Zhou , Fangqi Li , Zhuosheng Zhang , Rui Wang , Gongshen Liu",
+      "dateline": "[Submitted on 18 Jan 2024 ( v1 ), last revised 5 Oct 2024 (this version, v3)]",
+      "comments": "EMNLP Findings 2024",
+      "metatable": "Comments: EMNLP Findings 2024 Subjects: Computation and Language (cs.CL) ; Artificial Intelligence (cs.AI) Cite as: arXiv:2401.10019 [cs.CL] (or arXiv:2401.10019v3 [cs.CL] for this version) https://doi.org/10.48550/arXiv.2401.10019 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.18653/v1/2024.findings-emnlp.79",
+      "type": "proceedings-article",
+      "title": [
+        "R-Judge: Benchmarking Safety Risk Awareness for LLM Agents"
+      ],
+      "author": [
+        {
+          "given": "Tongxin",
+          "family": "Yuan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhiwei",
+          "family": "He",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lingzhong",
+          "family": "Dong",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yiming",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ruijie",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tian",
+          "family": "Xia",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lizhen",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Binglin",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fangqi",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhuosheng",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rui",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gongshen",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EMNLP 2024"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1467-1490",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2024.findings-emnlp.79",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+        "location": "Miami, Florida, USA",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              11
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.1109/icassp55912.2026.11464257",
+      "type": "proceedings-article",
+      "title": [
+        "Enhancing Risk Awareness in LLM Agents via Probing Safety Boundaries"
+      ],
+      "author": [
+        {
+          "given": "Yu",
+          "family": "Jiang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Nanyang Technological University,College of Computing and Data Science,Singapore"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Hanli",
+          "family": "Peng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanyang Technological University,College of Computing and Data Science,Singapore"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yongsen",
+          "family": "Zheng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanyang Technological University,College of Computing and Data Science,Singapore"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ziyao",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanyang Technological University,College of Computing and Data Science,Singapore"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Kwok-Yan",
+          "family": "Lam",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanyang Technological University,College of Computing and Data Science,Singapore"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Chee Wei",
+          "family": "Tan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanyang Technological University,College of Computing and Data Science,Singapore"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1761-1765",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            3
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/icassp55912.2026.11464257",
+      "event": {
+        "name": "ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+        "location": "Barcelona, Spain",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              3
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              8
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.519
+    },
+    {
+      "DOI": "10.18653/2026.emnlp-main.211",
+      "type": "proceedings-article",
+      "title": [
+        "SABER: Benchmarking Operational Safety of LLM Coding Agents in Stateful Project Workspaces"
+      ],
+      "author": [
+        {
+          "given": "Qi",
+          "family": "HU",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yifeng",
+          "family": "Tang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Qinghua",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lanyang",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Pengji",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuhao",
+          "family": "Qing",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xin",
+          "family": "Yao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dong",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lin",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhuoran",
+          "family": "Ji",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "4842-4866",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/2026.emnlp-main.211",
+      "event": {
+        "name": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.457
+    },
+    {
+      "DOI": "10.18653/v1/2026.acl-long.888",
+      "type": "proceedings-article",
+      "title": [
+        "CodeJudgeBench: Benchmarking LLM-as-a-Judge for Coding Tasks"
+      ],
+      "author": [
+        {
+          "given": "Hongchao",
+          "family": "Jiang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yiming",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yushi",
+          "family": "Cao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hung-yi",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Robby T.",
+          "family": "Tan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "19416-19448",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2026.acl-long.888",
+      "event": {
+        "name": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "location": "San Diego, California, United States",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.52
+    },
+    {
+      "DOI": "10.3390/electronics15030659",
+      "type": "journal-article",
+      "title": [
+        "Benchmarking LLM-as-a-Judge Models for 5W1H Extraction Evaluation"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1029-1548",
+          "authenticated-orcid": false,
+          "given": "José",
+          "family": "Cassola-Bacallao",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Systems and Computing Engineering, Universidad Católica del Norte, Antofagasta 1270398, Chile"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-3850-840X",
+          "authenticated-orcid": false,
+          "given": "José",
+          "family": "Morales-Donaire",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Journalism, Universidad Católica del Norte, Antofagasta 1270398, Chile"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0002-0920-9356",
+          "authenticated-orcid": false,
+          "given": "Paula",
+          "family": "Hernández-Montoya",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Journalism, Universidad Católica del Norte, Antofagasta 1270398, Chile"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5734-8962",
+          "authenticated-orcid": false,
+          "given": "Brian",
+          "family": "Keith-Norambuena",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Systems and Computing Engineering, Universidad Católica del Norte, Antofagasta 1270398, Chile"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Electronics"
+      ],
+      "volume": "15",
+      "issue": "3",
+      "page": "659",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ]
+      },
+      "publisher": "MDPI AG",
+      "URL": "https://doi.org/10.3390/electronics15030659",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.438
+    }
+  ]
+}

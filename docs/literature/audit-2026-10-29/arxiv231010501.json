@@ -1,0 +1,765 @@
+{
+  "key": "arxiv231010501",
+  "original": {
+    "url": "https://arxiv.org/abs/2310.10501",
+    "howpublished": "arXiv:2310.10501",
+    "year": "2023",
+    "author": "Rebedea, Traian and Dinu, Razvan and Sreedhar, Makesh and Parisien, Christopher and Cohen, Jonathan",
+    "title": "{NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv231010501"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2310.10501",
+    "https://api.crossref.org/works?query.title=NeMo+Guardrails%3A+A+Toolkit+for+Controllable+and+Safe+LLM+Applications+with+Programmable+Rails&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2310.10501: NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "NeMo Guardrails: A Toolkit for Controllable and Safe LLM..."
+      ],
+      "twitter:description": [
+        "NeMo Guardrails is an open-source toolkit for easily adding programmable guardrails to LLM-based conversational systems. Guardrails (or rails for short) are a specific way of controlling the..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails"
+      ],
+      "citation_author": [
+        "Rebedea, Traian",
+        "Dinu, Razvan",
+        "Sreedhar, Makesh",
+        "Parisien, Christopher",
+        "Cohen, Jonathan"
+      ],
+      "citation_date": [
+        "2023/10/16"
+      ],
+      "citation_online_date": [
+        "2023/10/16"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2310.10501"
+      ],
+      "citation_arxiv_id": [
+        "2310.10501"
+      ],
+      "citation_abstract": [
+        "NeMo Guardrails is an open-source toolkit for easily adding programmable guardrails to LLM-based conversational systems. Guardrails (or rails for short) are a specific way of controlling the output of an LLM, such as not talking about topics considered harmful, following a predefined dialogue path, using a particular language style, and more. There are several mechanisms that allow LLM providers and developers to add guardrails that are embedded into a specific model at training, e.g. using model alignment. Differently, using a runtime inspired from dialogue management, NeMo Guardrails allows developers to add programmable rails to LLM applications - these are user-defined, independent of the underlying LLM, and interpretable. Our initial results show that the proposed approach can be used with several LLM providers to develop controllable and safe LLM applications using programmable rails."
+      ]
+    },
+    "details": {
+      "title": "Title: NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails",
+      "authors": "Authors: Traian Rebedea , Razvan Dinu , Makesh Sreedhar , Christopher Parisien , Jonathan Cohen",
+      "dateline": "[Submitted on 16 Oct 2023]",
+      "comments": "Accepted at EMNLP 2023 - Demo track",
+      "metatable": "Comments: Accepted at EMNLP 2023 - Demo track Subjects: Computation and Language (cs.CL) ; Artificial Intelligence (cs.AI) Cite as: arXiv:2310.10501 [cs.CL] (or arXiv:2310.10501v1 [cs.CL] for this version) https://doi.org/10.48550/arXiv.2310.10501 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.18653/v1/2023.emnlp-demo.40",
+      "type": "proceedings-article",
+      "title": [
+        "NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails"
+      ],
+      "author": [
+        {
+          "given": "Traian",
+          "family": "Rebedea",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Razvan",
+          "family": "Dinu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Makesh Narsimhan",
+          "family": "Sreedhar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christopher",
+          "family": "Parisien",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jonathan",
+          "family": "Cohen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: System Demonstrations"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "431-445",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2023.emnlp-demo.40",
+      "event": {
+        "name": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+        "location": "Singapore",
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              12
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2023,
+              12
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.18653/v1/2025.acl-tutorials.8",
+      "type": "proceedings-article",
+      "title": [
+        "Guardrails and Security for LLMs: Safe, Secure and Controllable Steering of LLM Applications"
+      ],
+      "author": [
+        {
+          "given": "Traian",
+          "family": "Rebedea",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Leon",
+          "family": "Derczynski",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shaona",
+          "family": "Ghosh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Makesh Narsimhan",
+          "family": "Sreedhar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Faeze",
+          "family": "Brahman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Liwei",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bo",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yulia",
+          "family": "Tsvetkov",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christopher",
+          "family": "Parisien",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yejin",
+          "family": "Choi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 5: Tutorial Abstracts)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "13-15",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.acl-tutorials.8",
+      "event": {
+        "name": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 5: Tutorial Abstracts)",
+        "location": "Vienna, Austria",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.57
+    },
+    {
+      "DOI": "10.5121/ijci.2025.140510",
+      "type": "journal-article",
+      "title": [
+        "NEMO GUARDRAILS FOR SAFE AND SECURE INSURANCE AI"
+      ],
+      "author": [
+        {
+          "given": "Rakesh",
+          "family": "More",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "International Journal on Cybernetics &amp; Informatics"
+      ],
+      "volume": "14",
+      "issue": "5",
+      "page": "131-143",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            30
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            30
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            30
+          ]
+        ]
+      },
+      "publisher": "Academy and Industry Research Collaboration Center (AIRCC)",
+      "URL": "https://doi.org/10.5121/ijci.2025.140510",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.529
+    },
+    {
+      "DOI": "10.1007/979-8-8688-0205-8_4",
+      "type": "book-chapter",
+      "title": [
+        "Guardrails and AI: Building Safe + Controllable Apps"
+      ],
+      "author": [
+        {
+          "given": "Aarushi",
+          "family": "Kansal",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Building Generative AI-Powered Apps"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "59-75",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            24
+          ]
+        ]
+      },
+      "publisher": "Apress",
+      "URL": "https://doi.org/10.1007/979-8-8688-0205-8_4",
+      "event": null,
+      "ISBN": [
+        "9798868802041",
+        "9798868802058"
+      ],
+      "relation": null,
+      "title_similarity": 0.488
+    },
+    {
+      "DOI": "10.3390/fi18050252",
+      "type": "journal-article",
+      "title": [
+        "Evaluation of NeMo Guardrails as a Firewall for User–LLM Interaction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4378-5181",
+          "authenticated-orcid": false,
+          "given": "Antônio João",
+          "family": "Azambuja",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Space Sciences and Technologies, Aeronautics Institute of Technology (ITA), São José dos Campos 12228-900, Brazil"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-9034-7527",
+          "authenticated-orcid": false,
+          "given": "Marcos",
+          "family": "Guilherme",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Informatics, Federal University of Goiás (UFG), Goiânia 74690-900, Brazil"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-6047-4733",
+          "authenticated-orcid": false,
+          "given": "João Victor Fernandes de",
+          "family": "Castro",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Informatics, Federal University of Goiás (UFG), Goiânia 74690-900, Brazil"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5861-9928",
+          "authenticated-orcid": false,
+          "given": "Jean Phelipe de Oliveira",
+          "family": "Lima",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Aeronautical Infrastructure Engineering, Aeronautics Institute of Technology (ITA), São José dos Campos 12228-900, Brazil"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3691-6171",
+          "authenticated-orcid": false,
+          "given": "Leonardo B.",
+          "family": "Oliveira",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, Federal University of Minas Gerais (UFMG), Belo Horizonte 31270-901, Brazil"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2967-6077",
+          "authenticated-orcid": false,
+          "given": "Anderson da Silva",
+          "family": "Soares",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Informatics, Federal University of Goiás (UFG), Goiânia 74690-900, Brazil"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Future Internet"
+      ],
+      "volume": "18",
+      "issue": "5",
+      "page": "252",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            9
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            9
+          ]
+        ]
+      },
+      "publisher": "MDPI AG",
+      "URL": "https://doi.org/10.3390/fi18050252",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.42
+    },
+    {
+      "DOI": "10.5753/sbseg.2025.10665",
+      "type": "proceedings-article",
+      "title": [
+        "Avaliação do NeMo Guardrails como um Firewall para a Interação Usuário-LLM"
+      ],
+      "author": [
+        {
+          "given": "Marcos Guilherme D. de Oliveira",
+          "family": "Alves",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "João Victor F. de",
+          "family": "Castro",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jean Phelipe de Oliveira",
+          "family": "Lima",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Antônio João Gonçalves de",
+          "family": "Azambuja",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Leonardo Barbosa",
+          "family": "Oliveira",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Anderson da Silva",
+          "family": "Soares",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Anais do XXV Simpósio Brasileiro de Cibersegurança (SBSeg 2025)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "226-238",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            1
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            1
+          ]
+        ]
+      },
+      "publisher": "Sociedade Brasileira de Computação - SBC",
+      "URL": "https://doi.org/10.5753/sbseg.2025.10665",
+      "event": {
+        "name": "Simpósio Brasileiro de Cibersegurança",
+        "number": "25",
+        "location": "Brasil",
+        "acronym": "SBSeg 2025"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.322
+    }
+  ]
+}

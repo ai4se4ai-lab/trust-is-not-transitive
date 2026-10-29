@@ -1,0 +1,72 @@
+{
+  "key": "wilcoxon1945individual",
+  "original": {
+    "doi": "10.2307/3001968",
+    "year": "1945",
+    "pages": "80--83",
+    "number": "6",
+    "volume": "1",
+    "journal": "Biometrics Bulletin",
+    "title": "Individual Comparisons by Ranking Methods",
+    "author": "Wilcoxon, Frank",
+    "ENTRYTYPE": "article",
+    "ID": "wilcoxon1945individual"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.2307/3001968"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.2307/3001968",
+      "type": "journal-article",
+      "title": [
+        "Individual Comparisons by Ranking Methods"
+      ],
+      "author": [
+        {
+          "given": "Frank",
+          "family": "Wilcoxon",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Biometrics Bulletin"
+      ],
+      "volume": "1",
+      "issue": "6",
+      "page": "80",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1945,
+            12
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1945,
+            12
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "JSTOR",
+      "URL": "https://doi.org/10.2307/3001968",
+      "event": null,
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

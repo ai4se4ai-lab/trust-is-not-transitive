@@ -1,0 +1,528 @@
+{
+  "key": "arxiv250926238",
+  "original": {
+    "url": "https://arxiv.org/abs/2509.26238",
+    "howpublished": "arXiv:2509.26238",
+    "year": "2025",
+    "author": "Oldfield, James and Torr, Philip and Patras, Ioannis and Bibi, Adel and Barez, Fazl",
+    "title": "{Beyond Linear Probes: Dynamic Safety Monitoring for Language Models}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250926238"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2509.26238",
+    "https://api.crossref.org/works?query.title=Beyond+Linear+Probes%3A+Dynamic+Safety+Monitoring+for+Language+Models&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2509.26238: Beyond Linear Probes: Dynamic Safety Monitoring for Language Models"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Beyond Linear Probes: Dynamic Safety Monitoring for Language Models"
+      ],
+      "twitter:description": [
+        "Monitoring large language models' (LLMs) activations is an effective way to detect harmful requests before they lead to unsafe outputs. However, traditional safety monitors often require the same..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Beyond Linear Probes: Dynamic Safety Monitoring for Language Models"
+      ],
+      "citation_author": [
+        "Oldfield, James",
+        "Torr, Philip",
+        "Patras, Ioannis",
+        "Bibi, Adel",
+        "Barez, Fazl"
+      ],
+      "citation_date": [
+        "2025/09/30"
+      ],
+      "citation_online_date": [
+        "2026/04/21"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2509.26238"
+      ],
+      "citation_arxiv_id": [
+        "2509.26238"
+      ],
+      "citation_abstract": [
+        "Monitoring large language models' (LLMs) activations is an effective way to detect harmful requests before they lead to unsafe outputs. However, traditional safety monitors often require the same amount of compute for every query. This creates a trade-off: expensive monitors waste resources on easy inputs, while cheap ones risk missing subtle cases. We argue that safety monitors should be flexible--costs should rise only when inputs are difficult to assess, or when more compute is available. To achieve this, we introduce Truncated Polynomial Classifiers (TPCs), a natural extension of linear probes for dynamic activation monitoring. Our key insight is that polynomials can be trained and evaluated progressively, term-by-term. At test-time, one can early-stop for lightweight monitoring, or use more terms for stronger guardrails when needed. TPCs provide two modes of use. First, as a safety dial: by evaluating more terms, developers and regulators can \"buy\" stronger guardrails from the same model. Second, as an adaptive cascade: clear cases exit early after low-order checks, and higher-order guardrails are evaluated only for ambiguous inputs, reducing overall monitoring costs. On WildGuardMix, across 4 models with up to 30B parameters, we show that TPCs compete with or outperform MLP-based probe baselines of the same size for harmful prompt classification, all the while being more interpretable than their black-box counterparts. Our code is available at http://github.com/james-oldfield/tpc."
+      ]
+    },
+    "details": {
+      "title": "Title: Beyond Linear Probes: Dynamic Safety Monitoring for Language Models",
+      "authors": "Authors: James Oldfield , Philip Torr , Ioannis Patras , Adel Bibi , Fazl Barez",
+      "dateline": "[Submitted on 30 Sep 2025 ( v1 ), last revised 21 Apr 2026 (this version, v4)]",
+      "comments": "ICLR 2026; Minor revisions and clarifications",
+      "metatable": "Comments: ICLR 2026; Minor revisions and clarifications Subjects: Machine Learning (cs.LG) Cite as: arXiv:2509.26238 [cs.LG] (or arXiv:2509.26238v4 [cs.LG] for this version) https://doi.org/10.48550/arXiv.2509.26238 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1081/sac-120023879",
+      "type": "journal-article",
+      "title": [
+        "Monitoring Residual Autocorrelations in Dynamic Linear Models"
+      ],
+      "author": [
+        {
+          "given": "Pilar",
+          "family": "Gargallo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Manuel",
+          "family": "Salvador",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Communications in Statistics - Simulation and Computation"
+      ],
+      "volume": "32",
+      "issue": "4",
+      "page": "1079-1104",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2003,
+            1,
+            11
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2003,
+            1,
+            11
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Informa UK Limited",
+      "URL": "https://doi.org/10.1081/sac-120023879",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.407
+    },
+    {
+      "DOI": "10.2172/1122210",
+      "type": "report",
+      "title": [
+        "Network Traffic Monitoring Using Poisson Dynamic Linear Models"
+      ],
+      "author": [
+        {
+          "name": "Lawrence Livermore National Lab. (LLNL), Livermore, CA (United States)",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "D.",
+          "family": "Merl",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Lawrence Livermore National Lab. (LLNL), Livermore, CA (United States)"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "name": "USDOE",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            5,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2011,
+            5,
+            9
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Office of Scientific and Technical Information (OSTI)",
+      "URL": "https://doi.org/10.2172/1122210",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.442
+    },
+    {
+      "DOI": "10.1002/stc.2035",
+      "type": "journal-article",
+      "title": [
+        "Bayesian dynamic linear models for structural health monitoring"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0604-7008",
+          "authenticated-orcid": false,
+          "given": "James‐A.",
+          "family": "Goulet",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Civil, Geologic and Mining EngineeringPolytechnique Montreal Montreal Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Structural Control and Health Monitoring"
+      ],
+      "volume": "24",
+      "issue": "12",
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2017,
+            12
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            5
+          ]
+        ]
+      },
+      "publisher": "Wiley",
+      "URL": "https://doi.org/10.1002/stc.2035",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.439
+    },
+    {
+      "DOI": "10.52202/079017-1347",
+      "type": "proceedings-article",
+      "title": [
+        "Beyond Prompts: Dynamic Conversational Benchmarking of Large Language Models"
+      ],
+      "author": [
+        {
+          "given": "David",
+          "family": "Castillo-Bolado",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joseph",
+          "family": "Davidson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Finlay",
+          "family": "Gray",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Marek",
+          "family": "Rosa",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 37"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "42528-42565",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/079017-1347",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 37",
+        "theme": "38th Conference on Neural Information Processing Systems (NeurIPS 2024)",
+        "location": "Vancouver, BC, Canada",
+        "acronym": "NeurIPS 2024",
+        "number": "37",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              15
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.672
+    },
+    {
+      "DOI": "10.1109/trustcom66490.2025.00371",
+      "type": "proceedings-article",
+      "title": [
+        "Detecting Multi-Turn Jailbreak Attacks in Large Language Models via Linear Probes"
+      ],
+      "author": [
+        {
+          "given": "Jorge",
+          "family": "Marina-Metola",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Computer Security Lab (COSEC) Universidad Carlos III de Madrid,Leganes,Spain"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jose Maria",
+          "family": "de Fuentes",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Computer Security Lab (COSEC) Universidad Carlos III de Madrid,Leganes,Spain"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Lorena",
+          "family": "Gonzalez-Manzano",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Computer Security Lab (COSEC) Universidad Carlos III de Madrid,Leganes,Spain"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Luis",
+          "family": "Ibanez-Lissen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Computer Security Lab (COSEC) Universidad Carlos III de Madrid,Leganes,Spain"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "3111-3120",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            14
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            14
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/trustcom66490.2025.00371",
+      "event": {
+        "name": "2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
+        "location": "Guiyang, China",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              14
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              17
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.344
+    }
+  ]
+}

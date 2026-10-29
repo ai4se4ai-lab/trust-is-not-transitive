@@ -1,0 +1,82 @@
+{
+  "key": "clopper1934use",
+  "original": {
+    "doi": "10.1093/biomet/26.4.404",
+    "year": "1934",
+    "pages": "404--413",
+    "number": "4",
+    "volume": "26",
+    "journal": "Biometrika",
+    "title": "The Use of Confidence or Fiducial Limits Illustrated in the Case of the Binomial",
+    "author": "Clopper, C. J. and Pearson, E. S.",
+    "ENTRYTYPE": "article",
+    "ID": "clopper1934use"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1093/biomet/26.4.404"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1093/biomet/26.4.404",
+      "type": "journal-article",
+      "title": [
+        "THE USE OF CONFIDENCE OR FIDUCIAL LIMITS ILLUSTRATED IN THE CASE OF THE BINOMIAL"
+      ],
+      "author": [
+        {
+          "given": "C. J.",
+          "family": "CLOPPER",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "E. S.",
+          "family": "PEARSON",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Biometrika"
+      ],
+      "volume": "26",
+      "issue": "4",
+      "page": "404-413",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1934
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1934
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Oxford University Press (OUP)",
+      "URL": "https://doi.org/10.1093/biomet/26.4.404",
+      "event": null,
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

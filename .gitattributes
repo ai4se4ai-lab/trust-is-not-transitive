@@ -1,0 +1,26 @@
+# Stable source bytes across Windows/Linux checkouts.
+*.py text eol=lf
+*.md text eol=lf
+*.tex text eol=lf
+*.bib text eol=lf
+*.toml text eol=lf
+*.lock text eol=lf
+*.yml text eol=lf
+*.sh text eol=lf
+*.pm text eol=lf
+*.pctl text eol=lf
+Makefile text eol=lf
+Dockerfile text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+.dockerignore text eol=lf
+*.cff text eol=lf
+# Preserve recorded metadata/data bytes exactly for the SHA-256 manifest.
+*.json -text
+*.csv -text
+*.gz -text
+*.pdf -text
+*.png -text
+*.cls -text
+*.bst -text
+docs/TSE/*.tex -text

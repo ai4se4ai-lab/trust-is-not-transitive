@@ -1,0 +1,100 @@
+{
+  "key": "vargha2000critique",
+  "original": {
+    "doi": "10.3102/10769986025002101",
+    "year": "2000",
+    "pages": "101--132",
+    "number": "2",
+    "volume": "25",
+    "journal": "Journal of Educational and Behavioral Statistics",
+    "title": "A Critique and Improvement of the {CL} Common Language Effect Size Statistics of {McGraw} and {Wong}",
+    "author": "Vargha, Andr{\\'a}s and Delaney, Harold D.",
+    "ENTRYTYPE": "article",
+    "ID": "vargha2000critique"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.3102/10769986025002101"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.3102/10769986025002101",
+      "type": "journal-article",
+      "title": [
+        "A Critique and Improvement of the\n                    <i>CL</i>\n                    Common Language Effect Size Statistics of McGraw and Wong"
+      ],
+      "author": [
+        {
+          "given": "András",
+          "family": "Vargha",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department o f Experimental Psychology, ELTE, Hungary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Harold D.",
+          "family": "Delaney",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Psychology, UNM, U.S.A"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Educational and Behavioral Statistics"
+      ],
+      "volume": "25",
+      "issue": "2",
+      "page": "101-132",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2000,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            6
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2000,
+            6,
+            1
+          ]
+        ]
+      },
+      "publisher": "American Educational Research Association (AERA)",
+      "URL": "https://doi.org/10.3102/10769986025002101",
+      "event": null,
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 0.988
+    }
+  ]
+}

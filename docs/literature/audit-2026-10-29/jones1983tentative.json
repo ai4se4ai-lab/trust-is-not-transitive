@@ -1,0 +1,83 @@
+{
+  "key": "jones1983tentative",
+  "original": {
+    "doi": "10.1145/69575.69577",
+    "year": "1983",
+    "pages": "596--619",
+    "number": "4",
+    "volume": "5",
+    "journal": "ACM Transactions on Programming Languages and Systems",
+    "title": "Tentative Steps Toward a Development Method for Interfering Programs",
+    "author": "Jones, Cliff B.",
+    "ENTRYTYPE": "article",
+    "ID": "jones1983tentative"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1145/69575.69577"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1145/69575.69577",
+      "type": "journal-article",
+      "title": [
+        "Tentative steps toward a development method for interfering programs"
+      ],
+      "author": [
+        {
+          "given": "C. B.",
+          "family": "Jones",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Manchester University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ACM Transactions on Programming Languages and Systems"
+      ],
+      "volume": "5",
+      "issue": "4",
+      "page": "596-619",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1983,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1983,
+            10
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            1983,
+            10
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "URL": "https://doi.org/10.1145/69575.69577",
+      "event": null,
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "prism_version": "4.11",
+  "source": "https://github.com/prismmodelchecker/prism/releases/download/v4.11/prism-4.11-win64-x86-installer.exe",
+  "sha256": "ea55d805c8e63a93b135c5f6d4e45758efd8628e220a08c8b6f0638e2f526b2f",
+  "java": {
+    "release": "jdk-21.0.9+10",
+    "asset": {
+      "url": "https://api.github.com/repos/adoptium/temurin21-binaries/releases/assets/310695614",
+      "id": 310695614,
+      "node_id": "RA_kwDOI-qQc84ShNa-",
+      "name": "OpenJDK21U-jre_x64_windows_hotspot_21.0.9_10.zip",
+      "label": "",
+      "uploader": {
+        "login": "eclipse-temurin-bot",
+        "id": 81643974,
+        "node_id": "MDQ6VXNlcjgxNjQzOTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/81643974?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eclipse-temurin-bot",
+        "html_url": "https://github.com/eclipse-temurin-bot",
+        "followers_url": "https://api.github.com/users/eclipse-temurin-bot/followers",
+        "following_url": "https://api.github.com/users/eclipse-temurin-bot/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eclipse-temurin-bot/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eclipse-temurin-bot/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eclipse-temurin-bot/subscriptions",
+        "organizations_url": "https://api.github.com/users/eclipse-temurin-bot/orgs",
+        "repos_url": "https://api.github.com/users/eclipse-temurin-bot/repos",
+        "events_url": "https://api.github.com/users/eclipse-temurin-bot/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eclipse-temurin-bot/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "content_type": "application/zip",
+      "state": "uploaded",
+      "size": 48957446,
+      "digest": "sha256:39c5e23f3ce4d420663afba8ffde28034b72e2b3e240943dc2321bc1f912eef9",
+      "download_count": 1967454,
+      "created_at": "2025-10-30T22:24:32Z",
+      "updated_at": "2025-10-30T22:24:34Z",
+      "browser_download_url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_x64_windows_hotspot_21.0.9_10.zip"
+    },
+    "sha256": "39c5e23f3ce4d420663afba8ffde28034b72e2b3e240943dc2321bc1f912eef9"
+  }
+}

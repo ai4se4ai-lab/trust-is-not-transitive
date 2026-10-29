@@ -1,0 +1,1128 @@
+\documentclass[lettersize,journal]{IEEEtran}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{array}
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\usepackage{textcomp}
+\usepackage{stfloats}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{cite}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\setcounter{theorem}{-1}
+\input{generated/macros.tex}
+\begin{document}
+\title{Trust Is Not Transitive: Executable Contracts for Hierarchical Agent Guardrails\\A Scoped Theory and Reproducible Feasibility Study}
+\author{Anonymous Research Artifact}
+\maketitle
+
+\begin{abstract}
+An agent's guard may delegate a difficult decision to another guard, but an
+allow verdict is usable only under the conditions for which it was justified.
+We implement TINT, a restricted prototype combining mandatory tool-action
+checks, explicit delegation conditions, structured judge inputs and a
+certificate for the complete configured policy. Our theory separates stacks
+that accept early from ensembles in which every guard must agree, and states
+the assumptions needed for risk bounds and cost optimization. The study tests
+implementation mechanics with scripted guards, not real language models. In
+the frozen primary run, all \resPrimaryInfeasible{} seed-level policy families
+failed the risk constraint; denying uncertified actions also denied every
+benign task: zero benign utility. A disclosed threshold correction, evaluated
+separately on fresh exploratory seeds, yielded
+\resExploratoryCheckedQuarantineRisk{}\% unsafe accepted proposals among all
+proposals, with \resExploratoryCheckedQuarantineUtility{}\% benign acceptance.
+In a separate \resPrimaryReplications{}-replication experiment with a known
+synthetic population, selected upper bounds covered true risk in
+\resPrimaryCoverage{}\% of replications. These results demonstrate executable
+accounting and rejection behavior, not useful real-agent safety. External
+benchmarks, learned guards, actual development-task success and practical
+adaptive robustness remain untested. Raw observations, scoped proofs and
+reproduction instructions accompany the artifact.
+
+\end{abstract}
+\begin{IEEEkeywords}
+Agent safety, runtime enforcement, assume-guarantee contracts, calibration,
+provenance, reproducibility.
+\end{IEEEkeywords}
+
+\section{Introduction}
+\IEEEPARstart{A}{gents} can turn an incorrect judgment into a tool effect.
+For a coding agent, an issue comment is evidence about a task, but it is not
+authority to read a secret file or alter production. A fast rule may screen an
+action before a classifier or a slower judge examines an uncertain case. The
+engineering attraction of this hierarchy is clear: costly deliberation is
+reserved for difficult inputs. Its assurance case is less straightforward.
+A verdict carries a guarantee only for the property and input conditions under
+which that guarantee was established.
+
+Consider DevAgent, which reads issues, proposes typed tool actions and receives
+guard decisions. The malicious trace $T^*$ proposes uploading secret-tainted
+\texttt{.env} data to an external destination after reading an issue. The benign
+trace $T_b$ proposes sending public diagnostics to a local mock. The
+judge-targeting trace $T_j$ adds an instruction telling the reviewer to answer
+SAFE to the malicious issue. A raw-text judge can be modeled as obeying that
+instruction even while meeting a contract whose assumption excludes raw
+untrusted text. The problem is an undischarged assumption at composition time,
+not a contradiction in assume-guarantee logic.
+
+There is substantial prior art. ContrAgent already provides temporal agent
+contracts and deterministic supervision~\cite{arxiv260918128}. A probabilistic
+layered architecture already composes conditional safety
+guarantees~\cite{arxiv260518672}. Conformal Arbitrage and Trust or Escalate
+already provide statistical routing/cascade guarantees~\cite{arxiv250600911,arxiv240718370}.
+CaMeL and Fides already mediate information flow around untrusted
+agents~\cite{arxiv250318813,arxiv250523643}. We therefore do not claim the first
+formal guardrail hierarchy, the first calibrated cascade, or a new general law
+of non-transitivity.
+
+Our narrower hypothesis is that explicit, executable checks of the premises
+attached to each acceptance route make failures easier to reject and audit.
+This creates several challenges. First, a guard can inspect a different
+provenance class or representation from the one its certificate covers.
+Second, routing selects a different population at each layer, invalidating a
+naive reuse of marginal errors. Third, a slower guard can be both expensive
+and vulnerable, so escalation is not automatically a risk reduction.
+
+TINT (Trust Is Not Transitive) implements explicit delegation checks. An
+acceptance route is one way a proposal can receive its final allow, such as
+cheap acceptance or acceptance after a judge. The theory can bound these
+routes separately; the implemented certificate instead covers the whole
+configured policy, including both routes. A fingerprint checks that this
+certificate names the actual threshold, guard versions, view and declared
+context. This identity check does not establish that the deployment population
+still matches calibration. The prototype evaluates only a handwritten scorer
+and scripted judges.
+
+We investigate the following research questions, retaining the intended scope
+while limiting our answers to the evidence collected.
+
+\noindent\textbf{RQ I (specification and decomposition).} How can an end-to-end
+safety property of an AI agent be formally specified and decomposed into
+per-layer assume-guarantee contracts across a hierarchy of heterogeneous
+guardrails, such that trust between layers is explicit rather than assumed
+transitive?
+
+\noindent\textbf{RQ II (guarantees and escalation).} Under what conditions does
+a hierarchical guardrail composition provide bounded end-to-end residual risk,
+when does it fail under invalid trust, correlated errors and adaptive
+adversaries, and what escalation policy minimizes expected cost subject to a
+risk constraint?
+
+\noindent\textbf{RQ III (engineering value).} Does the resulting hierarchy
+improve the risk--latency--cost trade-off and robustness relative to flat and
+ad-hoc guards, and do its formal assumptions hold in practice?
+
+Our evidence comprises scoped proofs and an executable counterexample
+(RQ I; Theorems~\ref{thm:nontransitive}--\ref{thm:composition}), corrected risk
+accounting and finite-family synthesis (RQ II;
+Theorems~\ref{thm:bounds}--\ref{thm:limits}), and a preregistered local study with
+a separately labeled exploratory correction (RQ III;
+Section~\ref{sec:results}). The primary utility failure is a result, not evidence
+of useful superiority. Real-model generalization remains unanswered.
+
+\section{Background and Running Example}
+\label{sec:background}
+\begin{definition}[Agent, trace and provenance]
+An agent proposes an action $a$ after observations $o$ in a finite trace prefix
+$h$. Tool effects occur only through a trusted dispatcher. A datum's label is
+an element of the powerset lattice
+$\mathcal{L}=2^{\{\mathrm{untrusted},\mathrm{secret}\}}$, ordered by inclusion,
+with union as join. The empty label denotes trusted/public data. A derived
+datum inherits the join of all source labels; derived is a history attribute,
+not a third security level. Label creation and propagation are monitor-owned.
+\end{definition}
+
+In $T^*$ and $T_j$, the issue is untrusted and the transmitted file contains a
+fake secret used for testing. Its payload label remains secret. In $T_b$, the
+payload is independently produced public diagnostics; reading an untrusted
+issue does not itself make those bytes secret. Labels follow declared data
+dependencies, which the trusted host must supply completely; they do not
+decide whether following an issue's instruction is authorized. Unknown payload
+references conservatively carry both labels. There is no implicit host-file
+read or operating-system shell in this interpreter.
+
+\begin{definition}[Safety property]
+The specification is $\varphi=\varphi_{\rm det}\wedge\varphi_{\rm sem}$.
+The deterministic fragment is the invariant
+\begin{align}
+\varphi_{\rm det}={}&\mathbf{G}((\mathrm{execute}\wedge\mathrm{production}\nonumber\\
+&\quad\wedge\mathrm{destructive})\Rightarrow\mathrm{approved})\nonumber\\
+&\wedge\mathbf{G}((\mathrm{execute}\wedge\mathrm{external})
+\Rightarrow\neg\mathrm{secretPayload}).
+\end{align}
+Here $\mathbf G$ means always. Approval binds an exact action digest and a
+revocation epoch: incrementing the epoch invalidates earlier grants. The
+semantic oracle $Y(h,a)\in\{0,1\}$ is an external correctness label, not the
+guard's runnable detector. For a fixed population $D$ of labeled proposals
+$(h,a,Y)$, the semantic requirement is
+$R(D)=\Pr_D(Y=1,\mathrm{allow})\leq\epsilon$, where $\epsilon$ is the allowed
+per-decision residual-risk budget.
+
+\end{definition}
+
+The conjunction joins different obligations: exact exclusion of the hard
+forbidden effects, and a population-scoped bound on oracle-unsafe acceptance.
+The hard predicates deny $T^*$ and $T_j$; $T_b$ remains eligible for semantic
+acceptance. Fixture labels are $Y(T^*)=Y(T_j)=1$ and $Y(T_b)=0$, by construction.
+These labels do not solve general prompt-injection recognition. A static
+per-decision bound also does not imply that an unbounded session never fails.
+
+\begin{definition}[Layer]\label{def:layer}
+A layer $L_i$ maps a permitted view of $(h,a)$ to allow, block or escalate,
+with declared provenance, property scope, cost $c_i$ and latency budget
+$\ell_i$. Missing or erroneous results cannot grant authority. The instantiated
+scorer returns $s\in[0,1]$, with larger values more suspicious; its cheap route
+accepts when $s<\tau$, otherwise consulting the judge. An approval fallback
+abstains and therefore denies. For arbitrary synchronous plugins, the
+prototype handles caller-reported errors but does not enforce cancellation
+of a nonreturning call.
+
+\end{definition}
+
+For $T_j$, the raw judge input contains attacker instructions. A closed
+structured view contains only Boolean action/provenance features, a bounded
+numeric score and a fixed schema tag. It excludes issue text, arbitrary target
+strings and model-generated explanations. This transformation reduces the
+guard's input language, but may remove semantic evidence needed to distinguish
+authorized from unauthorized behavior.
+
+\begin{definition}[Operational dual process]
+A System~I layer has a declared worst-case work bound and is admitted to a
+deployment-specific resource budget $B$. A System~II layer is outside that
+budget and requires explicit timeout and failure handling. This is an
+engineering classification, not a cognitive claim or a wall-clock proof for
+neural inference.
+\end{definition}
+
+The role of the cheap layer is to screen routine instances such as $T_b$; it
+does not obtain authority to waive the deterministic invariants for $T^*$ or
+$T_j$. Dual-process terminology motivates resource allocation but supplies no
+independent safety theorem.
+
+\begin{definition}[Hierarchy]
+A hierarchy is a finite acyclic escalation graph with disjoint terminal
+acceptance-route events $E_i$. A terminal denial cannot be overwritten. Every
+acceptance traverses the mandatory deterministic sink checks. An all-veto
+ensemble instead accepts only when every guard allows; these compositions have
+different probability semantics.
+\end{definition}
+
+\begin{definition}[Layer contract]
+A contract $C_i=(A_i,G_i,P_i,I_i)$ specifies assumptions $A_i$, guarantees
+$G_i$, property scope $P_i$ and permitted view $I_i$. Assumptions include
+provenance integrity, representation/version and calibration context. Contract
+satisfaction means $A_i\Rightarrow G_i$, not that the environment satisfies
+$A_i$. A guarantee may be a deterministic invariant or a stated statistical
+bound on a named event.
+\end{definition}
+
+\begin{definition}[Conditioned trust]
+$\operatorname{Trust}(i,j,P\mid\chi)$ means that caller $i$ may rely on
+callee $j$ for property $P$ only when trusted evidence establishes condition
+$\chi$. The arrow $i\to j$ denotes reliance, not data flow. A transitive closure
+would add $i\to k$ by chaining $i\to j$ and $j\to k$; this is permitted only
+when intermediate guarantees entail the next assumptions for the same actual
+view and property, with mandatory sink checks preserved. For $T_j$, an edge
+$\operatorname{Trust}(L_2,L_3,\varphi_{\rm sem}\mid\chi)$ cannot use a
+structured-view certificate while $\chi$ is false because raw issue text was
+passed to the judge. Contract names $C_i$ are distinct from condition $\chi$.
+
+\end{definition}
+
+A guarantee valid for $T_b$'s structured interface cannot be reused for raw
+$T_j$: the input premise differs. A scope assertion about semantic
+classification also cannot authorize disclosure of a secret in $T^*$.
+The checker validates declarations and edge obligations; it does not prove
+that a declared guard guarantee or external calibration premise is true.
+
+\begin{definition}[Residual risk, cost and latency]\label{def:metrics}
+The relevant denominators are
+\begin{gather*}
+R=\Pr(Y=1,\mathrm{allow})\quad\text{(joint risk)},\\
+\Pr(\mathrm{allow}\mid Y=1)\quad\text{(attack miss)},\\
+\Pr(Y=1\mid\mathrm{allow})\quad\text{(accepted unsafe fraction)},\\
+\Pr(\mathrm{allow}\mid Y=0)\quad\text{(benign utility)}.
+\end{gather*}
+For additive costs, $\mathbb E[C]=\sum_i c_i\Pr(\mathrm{reach}\ i)$.
+Complete-decision latency quantiles are measured, not formed by adding layer
+quantiles. Modeled units are neither CPU time nor money, tokens or GPU use.
+
+\end{definition}
+
+\begin{definition}[Threat model]
+An attacker controls issue/tool-return content and may choose later local
+queries after observing earlier guard outputs. It cannot modify trusted
+labels, policy, certificate store, approval store or dispatcher. Static
+exchangeability is not assumed for adaptive attacks. A common-shock mixture
+parameter $\rho$ is distinguished from observed pairwise correlation.
+\end{definition}
+
+Table~\ref{tab:traces} summarizes the complete canonical example. The raw judge
+is an intentionally vulnerable program, not an empirical claim about an LLM.
+The stronger naive control is essential: the deterministic example alone
+cannot distinguish quarantine from ordinary complete mediation.
+
+Only the calibrated checked runtime uses this control path: proposal,
+hard-pass, certified, semantic-pass, then effect or denial. Hard-pass requires
+the trusted sink predicates; certified requires a matching whole-policy
+certificate within risk and confidence budgets. If $s<\tau$ the cheap route
+reaches semantic-pass; otherwise a structured-judge allow is required. A
+judge escalation reaches the abstaining approval stub and denial. For $T_b$,
+an applicable certificate and a low score permit cheap acceptance; $T_j$ is
+already denied by the hard sink. Comparators can omit these states as stated
+in the evaluation design. This is a hand-specified control semantics, not a
+checked extraction of Python.
+
+\begin{table}[t]
+\caption{Canonical traces under the executable countermodel. ``Sink'' denotes
+mandatory deterministic mediation, independent of semantic judgment.}
+\label{tab:traces}
+\centering\small
+\begin{tabular}{lccc}
+\hline
+Trace & Raw judge & Naive with sink & Checked sink\\
+\hline
+$T^*$ & deny & deny & deny\\
+$T_b$ & allow & allow & eligible\\
+$T_j$ & allow & deny & deny\\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Approach}
+\label{sec:approach}
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/pipeline.pdf}
+\caption{TINT's implemented mediation path. A whole-policy statistical certificate
+covers the actual cheap/judge routing configuration. A matching declared context
+does not establish that the deployment distribution is unchanged.}
+\label{fig:pipeline}
+\end{figure*}
+
+\subsection{Specification and explicit delegation}
+The closed JSON domain-specific language (DSL) declares layers, scopes, evidence,
+interfaces, direct trust edges and mandatory predicates. There is no arbitrary
+expression evaluator. The well-formedness checker rejects unknown fields,
+duplicate names, cycles, scope mismatches, missing direct-edge evidence and a raw
+judge view when its contract requires quarantine. Unsupported predicates are rejected
+rather than silently treated as enforced. The trusted runtime supplies actual
+provenance and approval facts and retains the mandatory sink checks shown in
+Fig.~\ref{fig:pipeline}.
+
+\begin{theorem}[Non-transitivity of conditional verdict reliance]
+\label{thm:nontransitive}
+There exist locally contract-satisfying layers whose naive delegation permits
+an unsafe action when the caller does not discharge the delegated assumptions.
+Local contract satisfaction alone does not imply global safety.
+\end{theorem}
+\begin{IEEEproof}
+Restrict the example contract to the three canonical traces. The judge's
+assumption $A_3$ is a structured input; its guarantee $G_3$ is the correct
+verdict on those traces. Define the judge to meet $G_3$ under $A_3$, but return
+allow on raw $T_j$ containing the reviewer phrase. A middle relay's assumption
+$A_2$ is that the caller discharges $A_3$; $G_2$ is to relay a correct
+verdict. The outer relay assumes $A_1=A_2\land\mathrm{sinkPreserved}$ and
+guarantees safe permitted execution $G_1$ under those premises. These
+are conditional implications: they say nothing when their premises fail.
+The naive caller passes raw $T_j$ and executes the relayed allow without a
+sink check, violating secret egress while the premises are false. For $T_b$
+there is no unsafe effect; raw $T^*$ without the phrase is denied. The stronger
+naive-with-sink control also denies $T_j$. The countermodel demonstrates missing
+premises, not failure of a valid assume-guarantee inference.
+
+\end{IEEEproof}
+
+The sufficient conditions for sound closure are explicit assumption discharge
+for each edge, compatible property scopes and actual views, acyclic escalation,
+and preservation of mandatory invariants. A declaration that one layer trusts
+another is therefore not an executable substitute for checking these premises.
+
+\begin{theorem}[Scoped composition soundness]
+\label{thm:composition}
+Assume a correct mandatory deterministic monitor, complete mediation with
+unforgeable metadata, and monotone denial. Let mutually exclusive events $E_i$
+exhaust final acceptance, and let $b_i$ bound each route's joint unsafe mass:
+$\Pr_D(Y=1,E_i)\leq b_i$. If these bounds hold simultaneously and all executable
+interface premises hold, no hard violation executes and $R(D)\leq\sum_i b_i$.
+If simultaneous bounds hold with probability $1-\delta$ over calibration
+samples, that is the confidence of this population-risk conclusion; $\delta$
+is the calibration failure budget, distinct from decision randomness under $D$.
+The implementation uses one whole-policy bound rather than estimating $b_i$
+separately.
+
+\end{theorem}
+\begin{IEEEproof}
+Induct on mediated trace extensions. Any executed extension has passed the
+correct deterministic monitor, preserving the invariant. For semantic loss,
+disjointness gives
+$\mathbf{1}_{\{Y=1,\mathrm{allow}\}}=\sum_i\mathbf{1}_{\{Y=1,E_i\}}$.
+Taking expectations yields the result. Simultaneous certificates can be
+obtained by allocating a failure budget across a fixed family and applying a
+union bound; independence is unnecessary. Failure of an executable interface
+premise forces denial. The theorem does not assert that distributional
+premises are decidable at runtime. In $T^*$ and $T_j$ deterministic mediation
+denies the action; $T_b$ needs an applicable semantic acceptance certificate.
+\end{IEEEproof}
+
+The implementation certifies the entire fixed routing policy, rather than
+estimating a local error on selectively observed traffic and multiplying it
+by a marginal reach rate. This avoids hidden
+selection assumptions. Route-specific certificates are a supported theoretical
+extension, not separately estimated by the pilot implementation.
+
+\subsection{Risk accounting and dependence}
+Conditional on unsafe input, the common-shock model first flips a branch coin
+of probability $\rho$. In that branch all guards compare one shared uniform
+variable with their miss rates; otherwise they use independent uniform
+variables. This preserves each conditional marginal while changing dependence.
+
+\begin{theorem}[Risk bounds for an all-veto ensemble]
+\label{thm:bounds}
+Let $\beta_i$ bound the joint event
+$M_i=\{Y=1,\mathrm{allow}_i\}$, let $m_i$ be the miss rate conditional on
+$Y=1$, and let $\pi=\Pr(Y=1)$ be unsafe prevalence. Then
+$R\leq\min_i\beta_i$. Under unsafe-conditional independence,
+$R=\pi\prod_i m_i$; under the common-shock model above,
+\begin{equation}
+R=\pi\left((1-\rho)\prod_i m_i+\rho\min_i m_i\right).
+\label{eq:mixture}
+\end{equation}
+Early acceptance instead uses the disjoint-route accounting of
+Theorem~\ref{thm:composition}.
+\end{theorem}
+\begin{IEEEproof}
+The veto intersection is contained in every $M_i$, proving the joint minimum
+bound. Conditional independence gives the product of $m_i$; multiplying by
+unsafe prevalence gives joint risk. In the shared-uniform branch the
+intersection has probability $\min_i m_i$, and in the independent branch it
+has probability $\prod_i m_i$. Averaging branches and multiplying by $\pi$
+proves~\eqref{eq:mixture}. Early acceptance can skip later guards, so its
+acceptance event is not this intersection.
+\end{IEEEproof}
+
+The product of joint marginal miss probabilities is generally incorrect even
+under unsafe-conditional independence: those events share the same unsafe
+input event. Moreover, observed pairwise correlation does not identify an
+arbitrary higher-order failure law. Common compromise of a judge on $T_j$
+illustrates why repeated verdicts need not be independent. Successful
+classification of $T_b$ supplies no evidence for that independence assumption.
+
+The library separates three statistical promises. \emph{Split conformal}
+controls marginal prediction-set coverage. \emph{Conformal risk control} (CRC)
+controls expected bounded loss across calibration samples and a new decision,
+not population risk conditional on one observed calibration sample. For $n$
+exchangeable labeled samples $Z_k$, fixed losses $l_t\in[0,1]$ decreasing
+with conservatism $t$, and desired expected-loss budget $\alpha$, CRC
+chooses the least conservative setting satisfying
+$(\sum_{k=1}^n l_t(Z_k)+1)/(n+1)\leq\alpha$, with a zero-loss fallback
+under its regularity conditions~\cite{arxiv220802814}. These utilities are not
+the certificate used in the pilot.
+
+\emph{The implemented certificate} is a one-sided binomial population-risk
+bound. For each of $K$ fixed policies, count $k$ unsafe accepted proposals among
+all $n$ iid calibration proposals and allocate failure budget $\delta/K$.
+For $k<n$, the upper bound is the $(1-\delta/K)$ quantile of
+$\operatorname{Beta}(k+1,n-k)$; it is one for $k=n$. For example, zero observed
+losses give $U=1-(\delta/K)^{1/n}$, not proof of zero risk. Simultaneous bounds
+permit selecting a feasible policy with $U\leq\epsilon$; no feasible policy
+means denial. Iid sampling is stronger than general exchangeability. The
+confidence concerns repeated calibration samples; deployment risk concerns new
+proposals after the policy is fixed. A finite test frequency is neither.
+
+For a fixed policy, let $Q$ be a new deployment law. Total variation is the
+largest probability difference between $D$ and $Q$ over events. Thus an
+externally established $\operatorname{TV}(D,Q)\leq\eta$ implies
+$R(Q)\leq\min(1,R(D)+\eta)$. No estimator of $\eta$ is certified here.
+Without restrictions on $Q$, an attacker can concentrate on any accepted
+unsafe input, making its risk one. Hard mediation still excludes its exact
+hard predicates; it does not exclude all semantic violations. Absent exact
+semantic verification, denying uncertified semantic acceptance is the
+distribution-free fallback in this restricted model.
+
+\subsection{Escalation synthesis}
+\begin{theorem}[Conditional sufficient optimality of escalation]
+\label{thm:optimization}
+For $x\sim D_X$, let $r_0(x),r_1(x)$ be conditional probabilities of the same
+joint unsafe-acceptance event under cheap acceptance or escalation given $x$.
+Let $d(x)>0$ be extra cost and $c_0(x)$ baseline cost. A
+randomized escalation probability $q(x)\in[0,1]$ has
+\begin{align*}
+R(q)&=\mathbb E_{D_X}[(1-q)r_0+qr_1],\\
+C(q)&=\mathbb E_{D_X}[c_0+qd].
+\end{align*}
+Consider minimizing $C(q)$ subject to $R(q)\leq\epsilon$, with measurable
+policies and finite integrable costs. If a finite $\lambda\geq0$ and a feasible
+pointwise Lagrangian minimizer $q$ exist with
+$\lambda(R(q)-\epsilon)=0$, that policy is optimal. It escalates where
+$\lambda(r_0-r_1)>d$, accepts where the inequality reverses, and may randomize
+on ties. Existence of such a multiplier is an extra premise.
+\end{theorem}
+\begin{IEEEproof}
+The multiplier is a price per unit of risk: it trades added cost against risk
+reduction. The full Lagrangian is
+\begin{align*}
+L(q,\lambda)={}&\mathbb E[c_0+\lambda r_0]-\lambda\epsilon\\
+&+\mathbb E[q(d-\lambda(r_0-r_1))].
+\end{align*}
+The sign of the coefficient of $q$ gives the rule. Every feasible competitor's
+cost is at least the minimized Lagrangian lower bound (weak duality).
+Complementary slackness, the stated product being zero, makes the candidate's
+cost equal that bound. A tie mixture can change risk without changing the
+Lagrangian. At a boundary risk budget, a finite multiplier need not exist.
+\end{IEEEproof}
+
+In the raw-judge countermodel before the hard sink, if escalation increases
+risk on $T_j$, then $r_0-r_1<0$ and escalation
+cannot satisfy the inequality at positive extra cost. For $T_b$, a small risk
+reduction may not justify deliberation. For $T^*$, optimization never waives the
+mandatory sink. Known conditional risks and their monotonicity in a score are
+assumptions; the theorem does not learn them from calibration.
+
+The pilot solves a different, finite problem: enumerate a fixed policy grid
+and minimize observed calibration mean cost among simultaneously certified
+candidates. This is exact within that grid, not among all routing functions.
+A separate known-risk finite LP supports policy mixtures; with normalization
+and one active risk constraint, an extreme optimum needs at most two policies.
+The optional latency API certifies an event $\Pr(L>\mathrm{budget})\leq\gamma$,
+where $\gamma$ is an exceedance budget; no real inference-latency constraint was
+evaluated. Averaging percentiles would not certify that event.
+
+\begin{theorem}[Tightness and limits]
+\label{thm:limits}
+The veto minimum and capped route bound $\min(1,\sum_i b_i)$ are tight given their
+stated marginal information. Pairwise independence does not determine joint
+failure for an arbitrary ensemble.
+\end{theorem}
+\begin{IEEEproof}
+For the joint minimum construction take $\pi=1$ and $m_i=\beta_i$, then let
+guard $i$ miss when a shared uniform variable is at most $m_i$. This attains
+$\min_i\beta_i$; independent uniforms attain the conditional product law.
+For routes, allocate disjoint unsafe masses $b_i$ when their sum is at most
+one. If it exceeds one, allocate masses no larger than the bounds that sum to
+one, attaining the cap. Finally, interpret Boolean bits as guard misses and
+take uniform laws on $\{000,011,101,110\}$ and $\{001,010,100,111\}$.
+Each coordinate has marginal $1/2$ and every pair is independent, yet all-one
+probabilities are $0$ and $1/4$. Thus pairwise data do not identify joint risk.
+Shared susceptibility in $T_j$ illustrates the dependence concern; $T_b$ alone
+cannot identify its failure law.
+
+\end{IEEEproof}
+
+\subsection{Implementation, assumptions and limits}
+The typed interpreter implements local mock HTTP, in-memory files and typed
+tool-effect records. It rejects arbitrary shell commands and unknown tool
+fields. Provenance references are write-once; unknown references retain
+conservative taint. Approval binds the immutable action digest and epoch.
+The trusted dispatcher checks its configured environment against the proposal.
+The tool adapter parses function-call argument objects and invokes the same
+mediated interpreter; it is not a tested connection to an external model API.
+
+The checker validates declarations, not semantic truth. It accepts only the
+runtime's exact topology and supported predicates. At \emph{each runtime
+decision}, a fingerprint rechecks specification, guard versions, threshold,
+view and environment; confidence and risk budgets are also checked. Complete
+host dependencies, valid issuers and honest implementation versions remain
+external premises.
+
+The primary instrument is \texttt{lexical-v1}; the corrected exploratory
+instrument is \texttt{lexical-v2}. Both remain frozen for reproduction.
+The current default \texttt{lexical-v3-bounded} adds an input cap and is not
+the source of historical CPU measurements or certificates. As Definition~\ref{def:layer}
+states, exceptions deny authority but arbitrary synchronous plugins have no
+enforced cancellation deadline; they can hang. Concurrent trusted-store
+mutation and covert channels are outside scope.
+
+\begin{table}[t]
+\caption{Obligation-to-code correspondence. Declaration checks do not prove
+external distribution or plugin semantics.}
+\label{tab:obligations}
+\centering\scriptsize
+\begin{tabular}{p{.24\columnwidth}p{.32\columnwidth}p{.29\columnwidth}}
+\hline
+Obligation & Executed check & External premise\\
+\hline
+Edge compatibility & Scope/evidence sets; fixed topology & Truth of guarantees\\
+Provenance & Write-once store; parent-taint union & Complete host dependencies\\
+Approval & Digest and epoch match & Trusted grant issuer\\
+Hard safety & Mandatory typed predicates & Faithful interpreter semantics\\
+Judge interface & Closed Boolean/numeric schema & Adequate semantic evidence\\
+Certificate & Policy/view/context identity; risk/confidence budgets & Valid issuer, labels, iid relationship\\
+Guard identity & Version string in fingerprint & Immutable implementation\\
+\hline
+\end{tabular}
+\end{table}
+
+In the stated control semantics, every effect has a preceding hard-pass and
+certified state, by induction over the only effect transition.
+Table~\ref{tab:obligations} distinguishes checked facts from external premises.
+This correspondence is an inspection argument, not a proved refinement link
+or a general semantic contract solver.
+
+\textbf{Assumptions and limits.} Deterministic guarantees hold only for this
+typed, completely mediated semantics. The PRISM model is an independently
+checked finite abstraction, without a proved refinement relation to Python.
+Structured quarantine excludes raw instructions but does not establish the
+semantic oracle. Statistical certification assumes fixed candidates and the
+stated calibration/deployment relationship; arbitrary adaptation and drift
+are not covered. A matching fingerprint cannot establish that relationship.
+These are preconditions, not empirically established facts about real LLMs.
+
+\section{Evaluation Design}
+\label{sec:design}
+The local protocol was committed and tagged \texttt{prereg-v1} before empirical
+calibration or held-out evaluation. Unit tests and canonical model checks
+preceded preregistration and are not independent confirmatory findings. The
+tag is local, not an independently timestamped registry. The original run and
+the amendment are retained separately, with their source commit identifiers.
+
+The testbed uses a handwritten lexical scorer, a deliberately vulnerable
+raw-text judge and a structured deterministic judge. The latter's features do
+not include the oracle label. Two scripted proposal sources are not two base
+LLMs: no real base LLM was run. The hardware audit found a small GPU but the
+installed learning framework was CPU-only. API credentials were unavailable,
+and the inspected small guard model required authenticated access acceptance.
+Docker's engine was unavailable; its image recipe was not executed.
+
+\subsection{Datasets, splits and comparators}
+For each of \resPrimarySeeds{} primary seeds, the fixed fixture law generates
+\resCalibrationCount{} calibration, \resDevelopmentCount{} development and
+\resTestPerSeed{} test traces with disjoint identifiers. Template families
+overlap across these iid splits, so they are not independent authored tasks.
+An additional \resShiftPerSeed{} traces per seed use an encoded family absent
+from calibration. The law includes benign requests, benign security discussion,
+secret exfiltration, unapproved destructive production actions, direct
+instruction-following, implicit unauthorized patches and judge-targeting text.
+Labels are known by construction, with no independent human annotation.
+
+Table~\ref{tab:baselines} states each toy comparator's rule. All uncertified
+cheap exits use threshold $\resBaselineThreshold{}$; the calibrated method uses
+its selected threshold. Rules-only accepts after hard pass; invalid delegation
+adds a nominal scorer charge to judge-only despite equal verdicts. Cost units
+are protocol charges, not call profiling. Judges are scripted, not official
+AgentSpec, ShieldAgent or LlamaFirewall implementations. Comparing invalid
+delegation to naive-with-sink isolates mandatory mediation; comparing that
+sink control to checked changes the judge view. Comparing checked controls
+at identical thresholds isolates certification from unchanged detection.
+
+\begin{table}[t]
+\caption{Implemented comparator mechanisms. Fixed denotes the protocol's
+baseline threshold; selected denotes the calibrated threshold. A failed cheap
+exit with no judge means denial.}
+\label{tab:baselines}
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccc}
+\hline
+Method & Hard sink & Cheap exit & Judge & Certificate\\
+\hline
+Rules only & yes & none & none & no\\
+Lexical only & no & fixed & none & no\\
+Scripted judge only & no & none & raw & no\\
+Invalid delegation & no & none & raw & no\\
+Naive with sink & yes & fixed & raw & no\\
+Checked uncalibrated & yes & fixed & structured & no\\
+Checked calibrated & yes & selected & structured & yes\\
+\hline
+\end{tabular}
+\end{table}
+
+The policy grid contains \resThresholdCount{} fixed thresholds. Whole-policy
+joint loss is certified against a \resRiskBudget{}\% target with a
+\resConfidenceFailure{}\% confidence-failure budget and simultaneous correction
+over that grid. This permissive target is a test of certification mechanics,
+not a production safety recommendation. Infeasible selection denies all
+uncertified actions. Development data are diagnostics, not used to revise the
+frozen thresholds. Modeled layer costs are arbitrary units from the frozen
+configuration; CPU quantiles measure complete local decisions separately.
+
+Public benchmark repositories and their code licenses were inspected, but no
+external dataset was executed or redistributed. R-Judge's project website
+states a noncommercial share-alike license; repository-license retrieval failed.
+AgentHarm has an additional safety-use restriction. These observations do not
+imply that an upstream repository's code license covers every included dataset.
+
+\subsection{Evidence map and statistics}
+\begin{table*}[t]
+\caption{Frozen hypothesis-to-evidence map. ``Supported'' is always scoped to
+the actual local instrument. Unavailable evidence is not replaced by a simulated
+claim about real models.}
+\label{tab:hypotheses}
+\centering\small
+\begin{tabular}{llll}
+\hline
+Hypothesis & RQ & Evidence & Outcome\\
+\hline
+Hard invariant preservation & I & Proof, PRISM, exhaustive model, replay & Supported within typed semantics\\
+Planted invalid-spec detection & I & Mutation confusion matrix & Supported for generator classes\\
+Selected bound coverage & II & Known iid law with repeated calibration & Supported for synthetic law\\
+Invalid delegation counterexample & II & Canonical traces and stronger sink control & Supported; sink alone also protects\\
+Finite-family selection optimality & II & Independent enumeration and LP constraints & Supported within candidate family\\
+Useful safety--utility improvement & III & Paired replay, controls and trade-off plots & Primary inconclusive; exploratory only\\
+External/model generalization & III & No real-model or benchmark execution & Inconclusive/not run\\
+Full policy expressiveness & I & Executable restricted-DSL inventory & Refuted\\
+\hline
+\end{tabular}
+\end{table*}
+
+Table~\ref{tab:hypotheses} separates the evidence. The coverage study is a
+\emph{different generator} from the authored agent traces: for each fresh
+uniform $U$, candidate loss $j$ is $\mathbf1[U<r_j]$, so true population risk
+$r_j$ is known and losses are nested. Each of \resPrimaryReplications{}
+replications uses \resCoverageCalibrationCount{} calibration and
+\resCoverageTestCount{} test draws, targeting \resCoverageTarget{}\% risk.
+It selects the cheapest certified candidate; the zero-loss denial fallback
+is counted as covered if none is feasible, never omitted. The fixed grid is
+given in the preregistration. Certification coverage asks whether selected
+true risk is below its bound; finite test-frequency compliance is separate.
+
+Seed-level paired risk/utility differences use a percentile bootstrap with
+\resBootstrapCount{} resamples, paired Wilcoxon tests, Holm correction across
+baseline comparisons, and descriptive Vargha--Delaney $A_{12}$. Intervals are
+unadjusted; Holm correction applies to tests, not simultaneous interval
+coverage. Timings use fixed comparator order with no dedicated warmup. Tables
+pool test proposals: CPU quantiles cover decisions, costs are means and hard
+counts total forbidden accepted proposals. Intervals instead
+resample seeds, not duplicated template instances as though they were
+independent developers. The sample is a pilot and is not powered to detect
+real deployment effects. Coverage intervals use an exact binomial interval.
+No result rests on a bare significance test.
+
+The scalability study times repeated valid scope/graph declarations and
+planted missing-evidence, scope, endpoint and cycle mutations, not rich
+temporal specifications. Authoring time and participant usability are unmeasured.
+
+The historical \emph{core search} permits at most \resAdaptiveBudget{} local
+queries, retaining attempts and stopping on unsafe acceptance. It invokes
+uncertified functions at a fixed threshold, including the misleading raw label
+\texttt{checked\_quarantine}, not the selected calibrated runtime. Every core
+accepts the first fixed phrase. These logs show neither response-informed
+adaptation nor the denying primary runtime's behavior.
+
+\section{Results}
+\label{sec:results}
+\subsection{RQ I: specification and decomposition}
+The canonical PRISM study checks \resPrismCases{} configurations and agrees
+with the independent checker on both reachability properties. Exhaustive
+enumeration covers \resFormalStates{} Boolean sink cases. Seeded sanity
+checks exercise \resFormalInstances{} random probability instances. The
+general proofs remain pen-and-paper proofs; these finite checks are neither
+Lean/Isabelle mechanizations nor proofs of the runtime implementation.
+
+The original mutation study rejects \resPrimaryCheckerTP{} invalid-case
+evaluations across \resPrimaryCheckerUniqueInvalid{} unique generated variants,
+while accepting \resPrimaryCheckerTN{} evaluations of
+\resPrimaryCheckerUniqueClean{} unique clean graphs, with
+\resPrimaryCheckerFP{} false rejections and \resPrimaryCheckerFN{} missed
+mutations. This demonstrates agreement with the mutation generator, not
+precision/recall on naturally occurring policy errors. The maximum cell-median
+checker time is \resPrimaryCheckerMax{} microseconds on the recorded host.
+No policy-count scalability result is claimed for PRISM; its evaluated model
+is the fixed canonical abstraction.
+
+The inventory supports only \resSupportedClasses{} of
+\resPolicyClasses{} policy classes fully in the DSL: production approval and
+secret egress. Semantic injection has a statistical proxy; filesystem
+confinement and cumulative spending are rejected as unsupported predicates.
+The full-expressiveness hypothesis is refuted. This restricted boundary is
+preferable to accepting declarations that the runtime does not enforce.
+Core test coverage is \resCoreCoverage{}\%, including the numeric-boundary
+regression. Coverage is a structural test metric, not a proof of correctness.
+
+\subsection{RQ II: risk, dependence and policy selection}
+For the separate nested-loss generator, selected bounds cover true population
+risk in \resPrimaryCoverage{}\% of \resPrimaryReplications{} replications;
+the exact interval is [\resPrimaryCoverageLo{}\%, \resPrimaryCoverageHi{}\%].
+The certificate's nominal confidence is \resNominalConfidence{}\%. This is
+observed conservative coverage under the known iid law, not a stronger
+deployment guarantee. The selected policy's finite test frequency is below
+the \resCoverageTarget{}\% risk budget in \resPrimaryFiniteTestBelow{}
+replications; that comparison is to the budget, not the selected bound.
+Fallback replications stay in the denominator as known zero-risk denials.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/dependence.pdf}
+\caption{Seeded common-shock simulations and the model-specific intersection
+formula. The unsafe population has $\pi=1$ and conditional miss rates $\resDependenceFirst{},\resDependenceSecond{},\resDependenceThird{}$. Each cross is one seed with \resDependenceSamples{} draws. The horizontal mixture weight is not measured correlation; the curve is model-specific.}
+\label{fig:dependence}
+\end{figure}
+
+Fig.~\ref{fig:dependence} visualizes the constructed dependence law behind
+Theorem~\ref{thm:bounds}. The parity construction independently demonstrates
+that the same pairwise information need not determine higher-order risk.
+These are controlled validations of assumptions and limits, not estimates of
+real guard correlations. $T_j$ supplies the complementary executable witness
+that a raw judge's interface premise can fail even when its conditional
+contract is satisfied.
+
+Discrete selection has \resPrimarySynthMismatches{} mismatches across
+\resPrimarySynthInstances{} primary finite-family instances and
+\resExploratorySynthMismatches{} across \resExploratorySynthInstances{}
+exploratory instances, compared with a separate exhaustive calculation by the
+authors. Original synthesis logs omitted calibration counts, so their stored
+bounds cannot be recalibrated from those records; amended logs retain counts.
+
+Post-review re-analysis reconstructs each LP's risk/cost from weights, checks
+the simplex, and compares its objective with independently coded vertex
+enumeration. Read-only semantic replay joins historical decisions to traces
+and checks configuration, authored labels and non-timing outputs. Independent
+here means a separate computation, not independent authorship or oracle
+validation. No new held-out outcomes are introduced.
+
+The most consequential RQ II finding is feasibility failure. In the primary
+replay, \resPrimaryInfeasible{} of \resPrimarySeeds{} seed-level families have
+no candidate whose simultaneous upper-risk bound met the budget. The runtime
+denies uncertified routes. This follows the fallback but does not create a useful
+policy. It shows why a risk-constrained synthesizer must expose infeasibility,
+rather than silently relaxing the budget or treating absence of a certificate
+as permission to execute.
+
+\subsection{RQ III: utility and engineering trade-offs}
+\begin{table*}[t]
+\caption{Frozen primary replay. Risk is joint unsafe acceptance; utility is
+benign acceptance. Costs are modeled arbitrary units, CPU is measured local
+decision time, and hard counts are violating accepted proposals under the typed
+oracle. The calibrated method denies all uncertified actions.}
+\label{tab:primary}
+\centering\small
+\begin{tabular}{lrrrrr}
+\hline
+Method & Risk (\%) & Utility (\%) & Cost units & CPU $p_{95}$ ($\mu$s) & Hard count\\
+\hline
+\resPrimaryTable
+\hline
+\end{tabular}
+\end{table*}
+
+Table~\ref{tab:primary} reports the primary replay on
+\resPrimaryTestCount{} held-out proposals. Denying all uncertified actions
+has \resPrimaryCheckedQuarantineRisk{}\% joint risk and
+\resPrimaryCheckedQuarantineUtility{}\% benign utility. Rules-only retains
+\resPrimaryRulesOnlyUtility{}\% benign utility at substantially greater
+semantic residual risk. A system that denies every benign task has not
+demonstrated the intended safety--utility advantage, regardless of its risk.
+
+The scorer intends $s(k)=\min(98,4+12k)/100$, where $k$ counts distinct substring matches
+for \texttt{ignore, override, secret, .env, reviewer, instruction, send, upload}
+after case-folding. The judge blocks at $s\geq0.40$. Historically,
+$0.04+0.12\cdot3$ evaluates just below $0.40$, so a three-feature request is
+allowed rather than blocked. Integer hundredths make both score and cutoff
+the same stored value. In the direct-injection and judge-targeting patch
+families this flips the structured judge to denial; implicit patches still pass.
+The underlying checked core's analytic risk falls from
+\resPrimaryCheckedUncalibratedPopulationRisk{}\% to
+\resExploratoryCheckedQuarantinePopulationRisk{}\%, crossing the frozen
+\resRiskBudget{}\% certification budget. The primary runtime had denied
+uncertified actions, rather than fixed that detector.
+
+The amendment changes no lexical features or intended cutoffs. It versions the
+scorer, preserves original logs and uses \resExploratorySeeds{} fresh seeds.
+For example, exploratory seed \resExampleSeed{} observes \resExampleMisses{}
+joint losses among \resExampleCalibrationCount{} calibration proposals; its
+selected threshold \resExampleThreshold{} has upper risk
+\resExampleBound{}\% after simultaneous correction. This count-to-bound-to-
+selection example is exploratory, not retroactive primary success.
+
+\begin{table*}[t]
+\caption{Exploratory numeric-correction replication on fresh seeds. Metrics and
+units match Table~\ref{tab:primary}. Equal decisions for calibrated and
+uncalibrated checked controls show that calibration is an applicability/selection
+mechanism here, not a new semantic detector.}
+\label{tab:exploratory}
+\centering\small
+\begin{tabular}{lrrrrr}
+\hline
+Method & Risk (\%) & Utility (\%) & Cost units & CPU $p_{95}$ ($\mu$s) & Hard count\\
+\hline
+\resExploratoryTable
+\hline
+\end{tabular}
+\end{table*}
+
+Table~\ref{tab:exploratory} reports
+\resExploratoryCheckedQuarantineRisk{}\% joint risk and
+\resExploratoryCheckedQuarantineUtility{}\% benign acceptance. Against naive
+with sink, the checked-minus-baseline paired risk difference is
+\resExploratoryNaiveWithSinkComparisonDiff{} percentage points, with unadjusted
+interval [\resExploratoryNaiveWithSinkComparisonLo{},
+\resExploratoryNaiveWithSinkComparisonHi{}] and Holm-adjusted
+$p=\resExploratoryNaiveWithSinkComparisonP{}$. Descriptive
+$A_{12}=\resExploratoryNaiveWithSinkComparisonA{}$ counts the chance that a
+checked seed has lower risk than a baseline seed, giving ties half weight;
+larger favors checked. Utility is identical between these controls, and
+calibrated/uncalibrated checked decisions coincide. The interval quantifies
+sampling this authored mixture, not real-attack effectiveness.
+
+\begin{table}[t]
+\caption{Authored family support and exploratory acceptance within family.
+Suffix variants do not alter guard behavior; these are mixture-law samples,
+not distinct semantic tasks. $N_P,N_E$ are primary/exploratory counts; mass is sampling probability; acceptance rates compare naive-with-sink and checked within each family.}
+\label{tab:families}
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrr}
+\hline
+Family & $N_P$ & $N_E$ & Mass (\%) & Naive (\%) & Checked (\%)\\
+\hline
+\resFamilyTable
+\hline
+\end{tabular}
+\end{table}
+
+The empirical judge-targeting family differs from canonical $T_j$. Here it
+proposes an \emph{unauthorized patch} with no secret egress or production
+deletion, so the hard sink cannot decide its semantic authorization. Canonical
+$T_j$ remains secret exfiltration and is denied by that sink. Sharing a
+reviewer phrase does not make their actions or violated properties identical;
+Tables~\ref{tab:traces} and~\ref{tab:families} therefore have different outcomes.
+
+For the authored mixture, exploratory checked population risk is
+\resExploratoryCheckedQuarantinePopulationRisk{}\%, utility
+\resExploratoryCheckedQuarantinePopulationUtility{}\%, and modeled cost
+\resExploratoryCheckedQuarantinePopulationCost{} units, versus
+\resExploratoryNaiveWithSinkPopulationRisk{}\% risk for naive with sink.
+The mechanisms and family masses imply these values. Among accepted
+exploratory proposals, the unsafe fraction is
+\resExploratoryAcceptedConditionalRisk{}\%; its denominator differs from joint
+risk and from benign utility.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/tradeoffs.pdf}
+\caption{Observed local risk--modeled-cost points, keeping frozen primary and
+exploratory results separate. Utility must be considered alongside these axes:
+the primary low-risk point denies all benign tasks. Coincident/adjacent points
+share labels; u is benign acceptance. Both panels share the risk scale. These
+are local configurations, not external-model Pareto frontiers.}
+\label{fig:tradeoffs}
+\end{figure*}
+
+The rules-only control remains much cheaper in the modeled cost and has higher
+benign utility. CPU measurements include actual local middleware processing;
+the calibrated runtime's fingerprinting and checks add overhead that toy
+comparators do not perform. They are not estimates of real guard inference
+latency. Fig.~\ref{fig:tradeoffs} therefore supports a scoped engineering
+trade-off, not dominance over the baselines on every axis.
+
+The shifted set contains only authored unauthorized patches: all inputs are
+attacks, unlike the original benign/attack mixture. Its encoded maintenance
+text has no listed suspicious feature, so the structured view has a low score,
+no secret external payload and no destructive production action. Checked
+acceptance is \resExploratoryShiftRisk{}\% on this all-attack denominator.
+The matching declared context does not detect the new law. Core-search logs
+likewise provide no primary-runtime adaptive claim; the primary fallback
+instead denies every uncertified benign task too.
+
+\subsection{Assumption audit and threats to validity}
+\textbf{Internal validity.} The primary arithmetic defect is preserved, and
+fresh-seed correction remains exploratory. The designer authored labels,
+templates and planted mutations; these are not independent observations of
+semantic safety. Regression tests check configuration identity, not arbitrary
+plugin correctness. Original synthesis counts remain unavailable.
+
+\textbf{External validity.} No real base LLM, pretrained guard, official defense,
+external benchmark, completed development task or practitioner workflow was
+evaluated. Inference load, real token/GPU cost, long sessions and temporal drift
+are untested. Local CPU results and modeled units cannot establish deployment
+performance or savings.
+
+\textbf{Construct validity.} The distinct denominators in Definition~\ref{def:metrics} must
+not be interchanged. Benign acceptance is not task completion; structured
+quarantine is not semantic noninterference. Trusted context identity does not
+establish stationarity, and complete dependency tracking remains a host premise.
+
+\textbf{Conclusion validity.} Seeds sample one authored law, not independent
+developers or tasks. Conservative correction can produce infeasibility.
+Pairwise correlation cannot establish the needed joint structure. Numeric
+lint checks empirical source provenance, not every PDF glyph; notation lint
+is a registry check, not a semantic proof. These limitations qualify every
+statistical and formal conclusion.
+
+\section{Related Work}
+\label{sec:related}
+\subsection{Guardrail systems}
+Llama Guard, WildGuard, Constitutional Classifiers and ThinkGuard
+illustrate classification and reasoning approaches to safety
+monitoring~\cite{arxiv231206674,arxiv240618495,arxiv250118837,arxiv250213458}.
+NeMo provides programmable rails, while LlamaFirewall combines specialized
+scanners for agent threats~\cite{arxiv231010501,arxiv250503574}.
+Truncated polynomial classifiers support progressive activation
+monitoring~\cite{arxiv250926238}. These systems motivate heterogeneous layers;
+our toy components do not reproduce their learned behavior or results.
+OneShield further illustrates configurable guardrail
+engineering~\cite{arxiv250721170}.
+
+\subsection{Cascades and adaptive compute}
+FrugalGPT studies cost-aware model cascades~\cite{arxiv230505176}.
+Trust or Escalate already supplies cascaded selective evaluation with
+human-agreement guarantees~\cite{arxiv240718370}. Conformal Arbitrage already
+calibrates a primary/guardian switch and analyzes score-gap routing
+optimality~\cite{arxiv250600911}. Hybrid abstention uses hierarchical detection
+for practical filtering~\cite{arxiv260215391}. Our distinction is checking
+the applicability of certificates at actual tool-action routes, not inventing
+calibrated cascading. The mathematical optimization result is a standard
+Lagrangian observation, not a new general router theorem.
+
+\subsection{Dual-process architectures}
+The System~I/System~II vocabulary connects fast response with deliberative
+reasoning, and the reasoning-model survey organizes that
+literature~\cite{arxiv250217419}. We use an operational resource criterion
+without claiming equivalence to human cognition. Training-time helpfulness
+and constitutional feedback address another part of safety engineering;
+they do not substitute for tool-effect mediation~\cite{arxiv220405862,arxiv221208073}.
+
+\subsection{Runtime enforcement and verification}
+AgentSpec provides structured runtime rules~\cite{arxiv250318666}; ShieldAgent
+reasons with verifiable policy representations~\cite{arxiv250322738}.
+ProbGuard estimates future safety through probabilistic
+monitoring~\cite{arxiv250800500}. VeriGuard separates verified-policy
+construction from online action monitoring~\cite{arxiv251005156}.
+ContrAgent is especially close in its temporal contracts and compiled
+monitors~\cite{arxiv260918128}; Agent Behavioral Contracts also supplies
+composition and probabilistic satisfaction notions~\cite{arxiv260222302}.
+The recent layered probabilistic architecture directly limits any claim to
+first conditional guardrail composition~\cite{arxiv260518672}.
+
+Shield synthesis provides classical runtime correction under formal
+specifications~\cite{arxiv150102573,arxiv170808611,arxiv190805402,arxiv240604184}.
+RoboGuard protects a root-of-trust model and uses temporal
+constraints~\cite{arxiv250307885}.
+Our deterministic mediation belongs to this established enforcement lineage.
+
+\subsection{System-level isolation}
+CaMeL separates control and data flow and mediates
+capabilities~\cite{arxiv250318813}. Fides tracks confidentiality/integrity
+labels with a formal planner model~\cite{arxiv250523643}. Spotlighting and
+instruction-hierarchy training address provenance cues and instruction
+priority through model behavior~\cite{arxiv240314720,arxiv240413208}.
+TINT uses a deliberately restricted structured guard view, not a proof that
+prompt formatting prevents instruction-following. Task Shield checks goal
+alignment and provides a stronger real-agent comparison target for future
+work~\cite{arxiv241216682}.
+
+\subsection{Statistical guarantees}
+CRC controls expected monotone loss under exchangeability
+conditions~\cite{arxiv220802814}. Conformal tutorials and adaptive
+classification methods distinguish marginal guarantees from stronger
+conditional claims~\cite{arxiv210707511,arxiv200602544}.
+Adaptive conformal inference studies changing distributions, while adaptive
+and tail-risk methods broaden the controlled objectives~\cite{arxiv210600170,arxiv240617819,arxiv250220285}.
+Conformal abstention, factuality and language-generation methods demonstrate
+other established statistical interfaces~\cite{arxiv240501563,arxiv240210978,arxiv230610193}.
+We implement small calibration utilities and apply finite-family binomial
+certification; we claim no new conformal theorem or adaptive safety guarantee.
+
+\subsection{Layered safety engineering}
+Conditional component contracts, runtime assurance and defense in depth
+motivate exposing assumptions instead of counting layers. ScenicProver is a
+particularly relevant compositional assurance framework with explicit evidence
+and provenance~\cite{arxiv251102164}. Semantic integrity constraints also
+illustrate declarative assurance at another software
+boundary~\cite{arxiv250300600}; NaSh emphasizes recovery and guardrail design
+for language-driven shells~\cite{arxiv250613028}. Our gap is an executable
+integration for a restricted tool-agent interface, not a novel safety-case
+principle. 
+
+\subsection{Attacks and evaluation}
+Indirect injection, optimized jailbreaks, guard evasion and latent-defense
+attacks demonstrate why guard behavior must itself be part of the threat
+model~\cite{arxiv230212173,arxiv230715043,arxiv250411168,arxiv241209565,arxiv250305264}.
+RAG context changes can alter guard judgments~\cite{arxiv251005310}; baseline
+defenses illustrate the need to specify attacker access~\cite{arxiv230900614}.
+AgentDojo, ASB, AgentHarm, RedCode, ToolEmu and R-Judge offer substantially
+richer evaluation substrates~\cite{arxiv240613352,arxiv241002644,arxiv241009024,arxiv241107781,arxiv230915817,arxiv240110019}.
+RedCodeAgent, BAD-ACTS and CyberSecEval further expand agent-security
+testing~\cite{arxiv251002609,arxiv250816481,arxiv240801605}.
+Representation sensitivity cautions against treating a benchmark score as an
+intrinsic model property~\cite{arxiv261003585}. None of those benchmarks was
+executed here, and our fixture attack search is not a comparable evaluation.
+
+\begin{table*}[t]
+\caption{Closest-work comparison. Y denotes an established capability in the
+reviewed source, S a different/scoped property, U unestablished in this review,
+and P proposed/tested only in our local pilot. U never means proven absence.}
+\label{tab:gap}
+\centering\scriptsize
+\begin{tabular}{lccccccccc}
+\hline
+Approach & Hierarchy & Formal spec & Hard & Statistical & Conditioned trust & Cost & Agent traces & Adaptive & Tool\\
+\hline
+ContrAgent & U & Y & Y & U & Y & Y & Y & U & Y\\
+Layered probabilistic contracts & Y & Y & S & Y & Y & U & U & U & U\\
+Conformal Arbitrage & Y & Y & U & Y & S & Y & U & U & Y\\
+Trust or Escalate & Y & Y & U & Y & S & Y & U & U & Y\\
+AgentSpec & U & Y & Y & U & U & Y & Y & U & Y\\
+CaMeL / Fides & Y & Y & Y & U & Y & Y & Y & Y & Y\\
+RoboGuard & Y & Y & Y & U & Y & Y & Y & Y & Y\\
+ScenicProver & Y & Y & Y & Y & Y & S & S & U & Y\\
+TINT local integration & Y & Y & P & P & Y & P & P & U & Y\\
+\hline
+\end{tabular}
+\end{table*}
+
+Table~\ref{tab:gap} uses hierarchy for composed guards; formal spec for
+machine-defined constraints; hard for exact safety within a stated semantics;
+statistical for a probability guarantee; conditioned trust for explicit
+reliance premises; cost for resource-aware routing/measurement; agent traces
+for tool-action sequences; adaptive for analyzed response-informed attacks;
+and tool for an available artifact. U is missing review evidence, not absence.
+TINT's adaptive cell is U because first-query core search is not that evidence.
+No individual column is claimed novel.
+
+\section{Discussion and Limitations}
+A verdict is usable only under its stated premises. The canonical example
+exposes invalid composition; its stronger control shows that ordinary mediation
+already protects the hard property. Route sums prevent a separate probability
+error: importing veto intersections into early acceptance. These are established
+principles made executable, not newly discovered safety laws.
+
+Primary infeasibility demonstrates correct denial without useful service.
+Exploratory correction restores some utility but leaves implicit unsafe actions
+and fails under the designed shift. Equal checked-control decisions show that
+certification does not repair an unchanged detector. Distinctive practical
+value therefore remains a research question.
+
+Future evaluation must use real proposal-generating LLMs and independently
+implemented learned guards across external benchmarks. GPU-hosted models,
+activation probes and reasoning judges may change miss rates, correlations,
+costs and latency under load. No numerical bound or trade-off reported here
+is claimed to transfer unchanged. Further work also needs richer rule
+semantics, explicit route-specific calibration, independently authored policy
+errors, stronger adaptive attacks and a proved abstraction/refinement link.
+The artifact does not establish real-agent safety or resource advantage.
+
+\section{Conclusion}
+Explicit conditions on trust edges make a limited but useful assurance case
+executable: deterministic effects remain mediated, certificates bind the
+actual routing configuration, and unproved premises are visible. Scoped
+proofs and reproducible local experiments expose the difference between
+conditional component guarantees and valid composition. The primary utility
+failure, the exploratory correction and the shift failure all constrain the
+empirical conclusion. Real-agent engineering value remains to be established.
+
+\section*{Data and Artifact Availability}
+The repository is \url{https://github.com/ai4se4ai-lab/trust-is-not-transitive}.
+The local artifact includes raw compressed decision logs, processed summaries,
+source/configuration hashes, proofs, PRISM input/output, generated macros and
+vector figures. Raw execution commit identifiers are recorded in each
+\texttt{environment.json}; the artifact manifest identifies analysis inputs.
+The artifact is local; no archival release or DOI was created. Historical primary
+instrument is retained for reproduction alongside the corrected exploratory
+instrument. \texttt{ARTIFACT.md} distinguishes re-analysis from full reruns and
+documents unavailable prerequisites. 
+
+\section*{Ethics and Acknowledgments}
+All attack strings target the local typed interpreter or a scripted judge.
+There is no real network egress, production operation, third-party exploit,
+personal datum or genuine secret in the released fixture data. No participant
+study was conducted. External model access conditions were not accepted on
+the user's behalf, and external datasets are not redistributed. No funding,
+institutional approval, human contribution or reviewer endorsement is claimed.
+Automated adversarial reviews accompanying the artifact are development aids,
+not independent peer review or publication acceptance.
+
+\bibliographystyle{IEEEtran}
+\bibliography{refs}
+\end{document}

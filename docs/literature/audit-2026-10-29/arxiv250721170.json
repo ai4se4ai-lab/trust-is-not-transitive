@@ -1,0 +1,813 @@
+{
+  "key": "arxiv250721170",
+  "original": {
+    "url": "https://arxiv.org/abs/2507.21170",
+    "howpublished": "arXiv:2507.21170",
+    "year": "2025",
+    "author": "DeLuca, Chad and Gentile, Anna Lisa and Asthana, Shubhi and Zhang, Bing and Chowdhary, Pawan and Cheng, Kellen and Shbita, Basel and Li, Pengyuan and Ren, Guang-Jie and Gopisetty, Sandeep",
+    "title": "{OneShield -- the Next Generation of LLM Guardrails}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250721170"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2507.21170",
+    "https://api.crossref.org/works?query.title=OneShield+--+the+Next+Generation+of+LLM+Guardrails&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2507.21170: OneShield -- the Next Generation of LLM Guardrails"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "OneShield -- the Next Generation of LLM Guardrails"
+      ],
+      "twitter:description": [
+        "The rise of Large Language Models has created a general excitement about the great potential for a myriad of applications. While LLMs offer many possibilities, questions about safety, privacy, and..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "OneShield -- the Next Generation of LLM Guardrails"
+      ],
+      "citation_author": [
+        "DeLuca, Chad",
+        "Gentile, Anna Lisa",
+        "Asthana, Shubhi",
+        "Zhang, Bing",
+        "Chowdhary, Pawan",
+        "Cheng, Kellen",
+        "Shbita, Basel",
+        "Li, Pengyuan",
+        "Ren, Guang-Jie",
+        "Gopisetty, Sandeep"
+      ],
+      "citation_date": [
+        "2025/07/25"
+      ],
+      "citation_online_date": [
+        "2025/07/31"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2507.21170"
+      ],
+      "citation_arxiv_id": [
+        "2507.21170"
+      ],
+      "citation_abstract": [
+        "The rise of Large Language Models has created a general excitement about the great potential for a myriad of applications. While LLMs offer many possibilities, questions about safety, privacy, and ethics have emerged, and all the key actors are working to address these issues with protective measures for their own models and standalone solutions. The constantly evolving nature of LLMs makes it extremely challenging to universally shield users against their potential risks, and one-size-fits-all solutions are unfeasible. In this work, we propose OneShield, our stand-alone, model-agnostic and customizable solution to safeguard LLMs. OneShield aims to provide facilities for defining risk factors, expressing and declaring contextual safety and compliance policies, and mitigating LLM risks, with a focus on each specific customer. We describe the implementation of the framework, discuss scalability considerations, and provide usage statistics of OneShield since its initial deployment."
+      ]
+    },
+    "details": {
+      "title": "Title: OneShield -- the Next Generation of LLM Guardrails",
+      "authors": "Authors: Chad DeLuca , Anna Lisa Gentile , Shubhi Asthana , Bing Zhang , Pawan Chowdhary , Kellen Cheng , Basel Shbita , Pengyuan Li , Guang-Jie Ren , Sandeep Gopisetty",
+      "dateline": "[Submitted on 25 Jul 2025 ( v1 ), last revised 31 Jul 2025 (this version, v2)]",
+      "metatable": "Subjects: Cryptography and Security (cs.CR) ; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) Cite as: arXiv:2507.21170 [cs.CR] (or arXiv:2507.21170v2 [cs.CR] for this version) https://doi.org/10.48550/arXiv.2507.21170 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.52202/085713-2248",
+      "type": "proceedings-article",
+      "title": [
+        "C-SafeGen: Certified Safe LLM Generation with Claim-Based Streaming Guardrails"
+      ],
+      "author": [
+        {
+          "given": "Mintong",
+          "family": "Kang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "UIUC"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhaorun",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Chicago"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bo",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanjing University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 38"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "74716-74738",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/085713-2248",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 38",
+        "theme": "39th Conference on Neural Information Processing Systems (NeurIPS 2025)",
+        "location": "San Diego, California, USA and Mexico City, Mexico",
+        "acronym": "NeurIPS 2025",
+        "number": "38",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              30
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.5
+    },
+    {
+      "DOI": "10.1177/21522715251368264",
+      "type": "journal-article",
+      "title": [
+        "Artificial Influence: Why AI Needs Guardrails for the Next Generation"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3320-0303",
+          "authenticated-orcid": false,
+          "given": "Brenda K.",
+          "family": "Wiederhold",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Cyberpsychology, Behavior, and Social Networking"
+      ],
+      "volume": "28",
+      "issue": "10",
+      "page": "655-657",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            1
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            14
+          ]
+        ]
+      },
+      "publisher": "SAGE Publications",
+      "URL": "https://doi.org/10.1177/21522715251368264",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.44
+    },
+    {
+      "DOI": "10.1109/lra.2026.3667488",
+      "type": "journal-article",
+      "title": [
+        "Safety Guardrails for LLM-Enabled Robots"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-4380-3212",
+          "authenticated-orcid": false,
+          "given": "Zachary",
+          "family": "Ravichandran",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelpha, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-5693-2819",
+          "authenticated-orcid": false,
+          "given": "Alexander",
+          "family": "Robey",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Carnegie Mellon University, Pittsburgh, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3902-9391",
+          "authenticated-orcid": false,
+          "given": "Vijay",
+          "family": "Kumar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelpha, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9081-0637",
+          "authenticated-orcid": false,
+          "given": "George J.",
+          "family": "Pappas",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelpha, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9448-8750",
+          "authenticated-orcid": false,
+          "given": "Hamed",
+          "family": "Hassani",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelpha, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Robotics and Automation Letters"
+      ],
+      "volume": "11",
+      "issue": "4",
+      "page": "4649-4656",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            4
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/lra.2026.3667488",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.316
+    },
+    {
+      "DOI": "10.1162/isal.a.855",
+      "type": "proceedings-article",
+      "title": [
+        "Behavioral Guardrails for Dynamic LLM Persona"
+      ],
+      "author": [
+        {
+          "given": "Ognjen",
+          "family": "Malkoc",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Gaudiy Inc., Japan"
+            },
+            {
+              "name": "ognjen.malkoc@gaudiy.com"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Koyuki",
+          "family": "Abe",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Gaudiy Inc., Japan"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Kazuki",
+          "family": "Kitagawa",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Gaudiy Inc., Japan"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Mizuki",
+          "family": "Oka",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Gaudiy Inc., Japan"
+            },
+            {
+              "name": "Chiba Institute of Technology, Japan"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yuya",
+          "family": "Ishikawa",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Gaudiy Inc., Japan"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ALIFE 2025: Ciphers of Life: Proceedings of the Artificial Life Conference 2025"
+      ],
+      "volume": "37",
+      "issue": null,
+      "page": null,
+      "article-number": "27",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            6
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            6
+          ]
+        ]
+      },
+      "publisher": "MIT Press",
+      "URL": "https://doi.org/10.1162/isal.a.855",
+      "event": {
+        "name": "ALIFE 2025: Ciphers of Life: Proceedings of the Artificial Life Conference 2025",
+        "location": "Kyoto, Japan",
+        "acronym": "isal2025",
+        "number": "37",
+        "sponsor": [
+          "The International Society for Artificial Life"
+        ],
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              6
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              10
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.346
+    },
+    {
+      "DOI": "10.18653/v1/2026.findings-eacl.48",
+      "type": "proceedings-article",
+      "title": [
+        "CodeGuard: Improving LLM Guardrails in CS Education"
+      ],
+      "author": [
+        {
+          "given": "Nishat",
+          "family": "Raihan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Noah",
+          "family": "Erdachew",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Fnu Jayoti",
+          "family": "Devi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Joanna C. S.",
+          "family": "Santos",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Marcos",
+          "family": "Zampieri",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EACL 2026"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "937-949",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2026.findings-eacl.48",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EACL 2026",
+        "location": "Rabat, Morocco",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              3
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.376
+    },
+    {
+      "DOI": "10.1145/3580305.3599572",
+      "type": "proceedings-article",
+      "title": [
+        "Towards Next-Generation Intelligent Assistants Leveraging LLM Techniques"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-2049-2458",
+          "authenticated-orcid": false,
+          "given": "Xin Luna",
+          "family": "Dong",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Meta Reality Labs, Redmond, WA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-2507-1884",
+          "authenticated-orcid": false,
+          "given": "Seungwhan",
+          "family": "Moon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Meta Reality Labs, Redmond, WA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7539-4492",
+          "authenticated-orcid": false,
+          "given": "Yifan Ethan",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Meta Reality Labs, Austin, TX, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-9300-6793",
+          "authenticated-orcid": false,
+          "given": "Kshitiz",
+          "family": "Malik",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Meta Reality Labs, Menlo Park, CA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1524-5890",
+          "authenticated-orcid": false,
+          "given": "Zhou",
+          "family": "Yu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Columbia University, New York City, NY, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "5792-5793",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            4
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            6
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            4
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3580305.3599572",
+      "event": {
+        "name": "KDD '23: The 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+        "location": "Long Beach CA USA",
+        "acronym": "KDD '23",
+        "sponsor": [
+          "SIGMOD ACM Special Interest Group on Management of Data",
+          "SIGKDD ACM Special Interest Group on Knowledge Discovery in Data"
+        ]
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.396
+    }
+  ]
+}

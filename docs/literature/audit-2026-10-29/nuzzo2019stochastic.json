@@ -1,0 +1,152 @@
+{
+  "key": "nuzzo2019stochastic",
+  "original": {
+    "doi": "10.1145/3243216",
+    "year": "2019",
+    "pages": "1--26",
+    "number": "1",
+    "volume": "18",
+    "journal": "ACM Transactions on Embedded Computing Systems",
+    "title": "Stochastic Assume-Guarantee Contracts for Cyber-Physical System Design",
+    "author": "Nuzzo, Pierluigi and Li, Jiwei and Sangiovanni-Vincentelli, Alberto L. and Xi, Yugeng and Li, Dewei",
+    "ENTRYTYPE": "article",
+    "ID": "nuzzo2019stochastic"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1145/3243216"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1145/3243216",
+      "type": "journal-article",
+      "title": [
+        "Stochastic Assume-Guarantee Contracts for Cyber-Physical System Design"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2984-0364",
+          "authenticated-orcid": false,
+          "given": "Pierluigi",
+          "family": "Nuzzo",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Southern California, Los Angeles, CA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiwei",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shanghai Jiao Tong University, Shanghai, P. R. China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alberto L.",
+          "family": "Sangiovanni-Vincentelli",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of California at Berkeley, Berkeley, CA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yugeng",
+          "family": "Xi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shanghai Jiao Tong University, Shanghai, P. R. China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dewei",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shanghai Jiao Tong University, Shanghai, P. R. China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ACM Transactions on Embedded Computing Systems"
+      ],
+      "volume": "18",
+      "issue": "1",
+      "page": "1-26",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            25
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            31
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            25
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "URL": "https://doi.org/10.1145/3243216",
+      "event": null,
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

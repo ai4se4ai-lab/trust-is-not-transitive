@@ -1,0 +1,513 @@
+{
+  "key": "arxiv210707511",
+  "original": {
+    "url": "https://arxiv.org/abs/2107.07511",
+    "howpublished": "arXiv:2107.07511",
+    "year": "2021",
+    "author": "Angelopoulos, Anastasios N. and Bates, Stephen",
+    "title": "{A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv210707511"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2107.07511",
+    "https://api.crossref.org/works?query.title=A+Gentle+Introduction+to+Conformal+Prediction+and+Distribution-Free+Uncertainty+Quantification&rows=6"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2107.07511: A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "A Gentle Introduction to Conformal Prediction and..."
+      ],
+      "twitter:description": [
+        "Black-box machine learning models are now routinely used in high-risk settings, like medical diagnostics, which demand uncertainty quantification to avoid consequential model failures. Conformal..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification"
+      ],
+      "citation_author": [
+        "Angelopoulos, Anastasios N.",
+        "Bates, Stephen"
+      ],
+      "citation_date": [
+        "2021/07/15"
+      ],
+      "citation_online_date": [
+        "2022/12/07"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2107.07511"
+      ],
+      "citation_arxiv_id": [
+        "2107.07511"
+      ],
+      "citation_abstract": [
+        "Black-box machine learning models are now routinely used in high-risk settings, like medical diagnostics, which demand uncertainty quantification to avoid consequential model failures. Conformal prediction is a user-friendly paradigm for creating statistically rigorous uncertainty sets/intervals for the predictions of such models. Critically, the sets are valid in a distribution-free sense: they possess explicit, non-asymptotic guarantees even without distributional assumptions or model assumptions. One can use conformal prediction with any pre-trained model, such as a neural network, to produce sets that are guaranteed to contain the ground truth with a user-specified probability, such as 90%. It is easy-to-understand, easy-to-use, and general, applying naturally to problems arising in the fields of computer vision, natural language processing, deep reinforcement learning, and so on. This hands-on introduction is aimed to provide the reader a working understanding of conformal prediction and related distribution-free uncertainty quantification techniques with one self-contained document. We lead the reader through practical theory for and examples of conformal prediction and describe its extensions to complex machine learning tasks involving structured outputs, distribution shift, time-series, outliers, models that abstain, and more. Throughout, there are many explanatory illustrations, examples, and code samples in Python. With each code sample comes a Jupyter notebook implementing the method on a real-data example; the notebooks can be accessed and easily run using our codebase."
+      ]
+    },
+    "details": {
+      "title": "Title: A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification",
+      "authors": "Authors: Anastasios N. Angelopoulos , Stephen Bates",
+      "dateline": "[Submitted on 15 Jul 2021 ( v1 ), last revised 7 Dec 2022 (this version, v6)]",
+      "comments": "Blog and tutorial video at this http URL ; Code is available at this https URL",
+      "metatable": "Comments: Blog and tutorial video at this http URL ; Code is available at this https URL Subjects: Machine Learning (cs.LG) ; Artificial Intelligence (cs.AI); Statistics Theory (math.ST); Methodology (stat.ME); Machine Learning (stat.ML) Cite as: arXiv:2107.07511 [cs.LG] (or arXiv:2107.07511v6 [cs.LG] for this version) https://doi.org/10.48550/arXiv.2107.07511 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1177/25152459251380452",
+      "type": "journal-article",
+      "title": [
+        "A Tutorial on Distribution-Free Uncertainty Quantification Using Conformal Prediction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6307-5347",
+          "authenticated-orcid": false,
+          "given": "Tim",
+          "family": "Kaiser",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Education and Psychology, Freie Universität Berlin, Berlin, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8267-2083",
+          "authenticated-orcid": false,
+          "given": "Philipp",
+          "family": "Herzog",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Psychology, RPTU University Kaiserslautern-Landau, Kaiserslautern, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Methods and Practices in Psychological Science"
+      ],
+      "volume": "8",
+      "issue": "4",
+      "page": null,
+      "article-number": "25152459251380452",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            4
+          ]
+        ]
+      },
+      "publisher": "SAGE Publications",
+      "URL": "https://doi.org/10.1177/25152459251380452",
+      "event": null,
+      "ISBN": null,
+      "relation": {
+        "has-review": [
+          {
+            "id-type": "doi",
+            "id": "10.1177/25152459251380452/v2/response1",
+            "asserted-by": "object"
+          },
+          {
+            "id-type": "doi",
+            "id": "10.1177/25152459251380452/v2/review2",
+            "asserted-by": "object"
+          },
+          {
+            "id-type": "doi",
+            "id": "10.1177/25152459251380452/v2/decision1",
+            "asserted-by": "object"
+          },
+          {
+            "id-type": "doi",
+            "id": "10.1177/25152459251380452/v3/decision1",
+            "asserted-by": "object"
+          },
+          {
+            "id-type": "doi",
+            "id": "10.1177/25152459251380452/v3/review2",
+            "asserted-by": "object"
+          },
+          {
+            "id-type": "doi",
+            "id": "10.1177/25152459251380452/v2/review1",
+            "asserted-by": "object"
+          },
+          {
+            "id-type": "doi",
+            "id": "10.1177/25152459251380452/v3/review1",
+            "asserted-by": "object"
+          },
+          {
+            "id-type": "doi",
+            "id": "10.1177/25152459251380452/v3/response1",
+            "asserted-by": "object"
+          },
+          {
+            "id-type": "doi",
+            "id": "10.1177/25152459251380452/v1/decision1",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "title_similarity": 0.575
+    },
+    {
+      "DOI": "10.31234/osf.io/xzqgt_v1",
+      "type": "posted-content",
+      "title": [
+        "A tutorial on distribution-free uncertainty quantification using conformal prediction"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6307-5347",
+          "authenticated-orcid": true,
+          "given": "Tim",
+          "family": "Kaiser",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8267-2083",
+          "authenticated-orcid": true,
+          "given": "Philipp",
+          "family": "Herzog",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            11
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Center for Open Science",
+      "URL": "https://doi.org/10.31234/osf.io/xzqgt_v1",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.575
+    },
+    {
+      "DOI": "10.1561/2200000101",
+      "type": "journal-article",
+      "title": [
+        "Conformal Prediction: A Gentle Introduction"
+      ],
+      "author": [
+        {
+          "given": "Anastasios N.",
+          "family": "Angelopoulos",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of California , ,",
+              "place": [
+                "Berkeley, USA"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephen",
+          "family": "Bates",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of California , ,",
+              "place": [
+                "Berkeley, USA"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Foundations and Trends® in Machine Learning"
+      ],
+      "volume": "16",
+      "issue": "4",
+      "page": "494-591",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            27
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            27
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            27
+          ]
+        ]
+      },
+      "publisher": "Emerald",
+      "URL": "https://doi.org/10.1561/2200000101",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.475
+    },
+    {
+      "DOI": "10.1561/9781638281597",
+      "type": "monograph",
+      "title": [
+        "Conformal Prediction: A Gentle Introduction"
+      ],
+      "author": [
+        {
+          "given": "Anastasios N.",
+          "family": "Angelopoulos",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephen",
+          "family": "Bates",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Now Publishers",
+      "URL": "https://doi.org/10.1561/9781638281597",
+      "event": null,
+      "ISBN": [
+        "9781638281580",
+        "9781638281597"
+      ],
+      "relation": null,
+      "title_similarity": 0.475
+    },
+    {
+      "DOI": "10.1177/25152459251380452/v2/review1",
+      "type": "peer-review",
+      "title": [
+        "Review for \"A Tutorial on Distribution-Free Uncertainty Quantification Using Conformal Prediction\""
+      ],
+      "author": null,
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            18
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            18
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "SAGE Publications",
+      "URL": "https://doi.org/10.1177/25152459251380452/v2/review1",
+      "event": null,
+      "ISBN": null,
+      "relation": {
+        "is-review-of": [
+          {
+            "id-type": "doi",
+            "id": "10.1177/25152459251380452",
+            "asserted-by": "subject"
+          }
+        ]
+      },
+      "title_similarity": 0.592
+    },
+    {
+      "DOI": "10.1177/25152459251380452/v2/review2",
+      "type": "peer-review",
+      "title": [
+        "Review for \"A Tutorial on Distribution-Free Uncertainty Quantification Using Conformal Prediction\""
+      ],
+      "author": null,
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            7
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "SAGE Publications",
+      "URL": "https://doi.org/10.1177/25152459251380452/v2/review2",
+      "event": null,
+      "ISBN": null,
+      "relation": {
+        "is-review-of": [
+          {
+            "id-type": "doi",
+            "id": "10.1177/25152459251380452",
+            "asserted-by": "subject"
+          }
+        ]
+      },
+      "title_similarity": 0.592
+    }
+  ]
+}

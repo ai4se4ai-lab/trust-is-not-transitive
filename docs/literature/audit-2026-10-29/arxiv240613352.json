@@ -1,0 +1,750 @@
+{
+  "key": "arxiv240613352",
+  "original": {
+    "url": "https://arxiv.org/abs/2406.13352",
+    "howpublished": "arXiv:2406.13352",
+    "year": "2024",
+    "author": "Debenedetti, Edoardo and Zhang, Jie and Balunović, Mislav and Beurer-Kellner, Luca and Fischer, Marc and Tramèr, Florian",
+    "title": "{AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv240613352"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2406.13352",
+    "https://api.crossref.org/works?query.title=AgentDojo%3A+A+Dynamic+Environment+to+Evaluate+Prompt+Injection+Attacks+and+Defenses+for+LLM+Agents&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2406.13352: AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection..."
+      ],
+      "twitter:description": [
+        "AI agents aim to solve complex tasks by combining text-based reasoning with external tool calls. Unfortunately, AI agents are vulnerable to prompt injection attacks where data returned by external..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents"
+      ],
+      "citation_author": [
+        "Debenedetti, Edoardo",
+        "Zhang, Jie",
+        "Balunović, Mislav",
+        "Beurer-Kellner, Luca",
+        "Fischer, Marc",
+        "Tramèr, Florian"
+      ],
+      "citation_date": [
+        "2024/06/19"
+      ],
+      "citation_online_date": [
+        "2024/11/24"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2406.13352"
+      ],
+      "citation_arxiv_id": [
+        "2406.13352"
+      ],
+      "citation_abstract": [
+        "AI agents aim to solve complex tasks by combining text-based reasoning with external tool calls. Unfortunately, AI agents are vulnerable to prompt injection attacks where data returned by external tools hijacks the agent to execute malicious tasks. To measure the adversarial robustness of AI agents, we introduce AgentDojo, an evaluation framework for agents that execute tools over untrusted data. To capture the evolving nature of attacks and defenses, AgentDojo is not a static test suite, but rather an extensible environment for designing and evaluating new agent tasks, defenses, and adaptive attacks. We populate the environment with 97 realistic tasks (e.g., managing an email client, navigating an e-banking website, or making travel bookings), 629 security test cases, and various attack and defense paradigms from the literature. We find that AgentDojo poses a challenge for both attacks and defenses: state-of-the-art LLMs fail at many tasks (even in the absence of attacks), and existing prompt injection attacks break some security properties but not all. We hope that AgentDojo can foster research on new design principles for AI agents that solve common tasks in a reliable and robust manner.. We release the code for AgentDojo at https://github.com/ethz-spylab/agentdojo."
+      ]
+    },
+    "details": {
+      "title": "Title: AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+      "authors": "Authors: Edoardo Debenedetti , Jie Zhang , Mislav Balunović , Luca Beurer-Kellner , Marc Fischer , Florian Tramèr",
+      "dateline": "[Submitted on 19 Jun 2024 ( v1 ), last revised 24 Nov 2024 (this version, v3)]",
+      "comments": "Updated version after fixing a bug in the Llama implementation and updating the travel suite",
+      "metatable": "Comments: Updated version after fixing a bug in the Llama implementation and updating the travel suite Subjects: Cryptography and Security (cs.CR) ; Machine Learning (cs.LG) Cite as: arXiv:2406.13352 [cs.CR] (or arXiv:2406.13352v3 [cs.CR] for this version) https://doi.org/10.48550/arXiv.2406.13352 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.52202/079017-2636",
+      "type": "proceedings-article",
+      "title": [
+        "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents"
+      ],
+      "author": [
+        {
+          "given": "Edoardo",
+          "family": "Debenedetti",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jie",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mislav",
+          "family": "Balunovic",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Luca",
+          "family": "Beurer-Kellner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Marc",
+          "family": "Fischer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Florian",
+          "family": "Tramèr",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 37"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "82895-82920",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/079017-2636",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 37",
+        "theme": "38th Conference on Neural Information Processing Systems (NeurIPS 2024)",
+        "location": "Vancouver, BC, Canada",
+        "acronym": "NeurIPS 2024",
+        "number": "37",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              15
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.18653/v1/2025.findings-naacl.395",
+      "type": "proceedings-article",
+      "title": [
+        "Adaptive Attacks Break Defenses Against Indirect Prompt Injection Attacks on LLM Agents"
+      ],
+      "author": [
+        {
+          "given": "Qiusi",
+          "family": "Zhan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Richard",
+          "family": "Fang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Henil Shalin",
+          "family": "Panchal",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Kang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: NAACL 2025"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "7101-7117",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.findings-naacl.395",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: NAACL 2025",
+        "location": "Albuquerque, New Mexico",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.516
+    },
+    {
+      "DOI": "10.1109/ijcnn69854.2026.11729999",
+      "type": "proceedings-article",
+      "title": [
+        "Assessing Defenses Against Prompt Injection Attacks in LLM Systems"
+      ],
+      "author": [
+        {
+          "given": "Fadime Zeliha",
+          "family": "Seyhan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Beyond Guard",
+              "place": [
+                "Istanbul, Türkiye"
+              ],
+              "department": [
+                "R&D Depratment"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Katira",
+          "family": "Soleymanzadeh",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beyond Guard",
+              "place": [
+                "Istanbul, Türkiye"
+              ],
+              "department": [
+                "R&D Depratment"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mustafa Oğuz",
+          "family": "Cengiz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beyond Guard",
+              "place": [
+                "Istanbul, Türkiye"
+              ],
+              "department": [
+                "R&D Depratment"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alp",
+          "family": "Ecevit",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beyond Guard",
+              "place": [
+                "Istanbul, Türkiye"
+              ],
+              "department": [
+                "R&D Depratment"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Roya",
+          "family": "Arkhmammadova",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beyond Guard",
+              "place": [
+                "Istanbul, Türkiye"
+              ],
+              "department": [
+                "R&D Depratment"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elif Tansu",
+          "family": "Kaya",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beyond Guard",
+              "place": [
+                "Istanbul, Türkiye"
+              ],
+              "department": [
+                "R&D Depratment"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 International Joint Conference on Neural Networks (IJCNN)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-6",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/ijcnn69854.2026.11729999",
+      "event": {
+        "name": "2026 International Joint Conference on Neural Networks (IJCNN)",
+        "location": "Maastricht, Netherlands",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              22
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              26
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.454
+    },
+    {
+      "DOI": "10.1109/tps-isa62245.2024.00053",
+      "type": "proceedings-article",
+      "title": [
+        "[Short Paper] Forensic Analysis of Indirect Prompt Injection Attacks on LLM Agents"
+      ],
+      "author": [
+        {
+          "given": "Maxim",
+          "family": "Chernyshev",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Deakin University,Deakin Cyber Research and Innovation Centre (Deakin Cyber),Victoria,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zubair",
+          "family": "Baig",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Deakin University,Deakin Cyber Research and Innovation Centre (Deakin Cyber),Victoria,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Robin",
+          "family": "Doss",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Deakin University,Deakin Cyber Research and Innovation Centre (Deakin Cyber),Victoria,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2024 IEEE 6th International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications (TPS-ISA)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "409-411",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            28
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            28
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/tps-isa62245.2024.00053",
+      "event": {
+        "name": "2024 IEEE 6th International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications (TPS-ISA)",
+        "location": "Washington, DC, USA",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              28
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              31
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.579
+    },
+    {
+      "DOI": "10.3390/computers15090570",
+      "type": "journal-article",
+      "title": [
+        "Evaluating Indirect Prompt Injection Defenses in Tool-Using LLM Agents: Security, Utility, and Replication"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6269-1191",
+          "authenticated-orcid": false,
+          "given": "Adil",
+          "family": "Khan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "General Education Department, Liwa University, Abu Dhabi P.O. Box 41009, United Arab Emirates"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            },
+            {
+              "role": "conceptualization",
+              "vocabulary": "credit"
+            },
+            {
+              "role": "software",
+              "vocabulary": "credit"
+            },
+            {
+              "role": "validation",
+              "vocabulary": "credit"
+            },
+            {
+              "role": "formal-analysis",
+              "vocabulary": "credit"
+            },
+            {
+              "role": "investigation",
+              "vocabulary": "credit"
+            },
+            {
+              "role": "writing-original-draft",
+              "vocabulary": "credit"
+            }
+          ]
+        },
+        {
+          "given": "Khaled",
+          "family": "AlKhanbashi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "General Education Department, Liwa University, Abu Dhabi P.O. Box 41009, United Arab Emirates"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1244-4448",
+          "authenticated-orcid": false,
+          "given": "Azza",
+          "family": "Mohamed",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Electrical and Computer Engineering Department, College of Engineering, Abu Dhabi University, Abu Dhabi P.O. Box 59911, United Arab Emirates"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            },
+            {
+              "role": "visualization",
+              "vocabulary": "credit"
+            },
+            {
+              "role": "writing-review-editing",
+              "vocabulary": "credit"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Computers"
+      ],
+      "volume": "15",
+      "issue": "9",
+      "page": "570",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            31
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            31
+          ]
+        ]
+      },
+      "publisher": "MDPI AG",
+      "URL": "https://doi.org/10.3390/computers15090570",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.474
+    }
+  ]
+}

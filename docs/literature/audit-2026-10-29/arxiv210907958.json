@@ -1,0 +1,365 @@
+{
+  "key": "arxiv210907958",
+  "original": {
+    "url": "https://arxiv.org/abs/2109.07958",
+    "howpublished": "arXiv:2109.07958",
+    "year": "2021",
+    "author": "Lin, Stephanie and Hilton, Jacob and Evans, Owain",
+    "title": "{TruthfulQA: Measuring How Models Mimic Human Falsehoods}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv210907958"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2109.07958",
+    "https://api.crossref.org/works?query.title=TruthfulQA%3A+Measuring+How+Models+Mimic+Human+Falsehoods&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2109.07958: TruthfulQA: Measuring How Models Mimic Human Falsehoods"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "TruthfulQA: Measuring How Models Mimic Human Falsehoods"
+      ],
+      "twitter:description": [
+        "We propose a benchmark to measure whether a language model is truthful in generating answers to questions. The benchmark comprises 817 questions that span 38 categories, including health, law,..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "TruthfulQA: Measuring How Models Mimic Human Falsehoods"
+      ],
+      "citation_author": [
+        "Lin, Stephanie",
+        "Hilton, Jacob",
+        "Evans, Owain"
+      ],
+      "citation_date": [
+        "2021/09/08"
+      ],
+      "citation_online_date": [
+        "2022/05/08"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2109.07958"
+      ],
+      "citation_arxiv_id": [
+        "2109.07958"
+      ],
+      "citation_abstract": [
+        "We propose a benchmark to measure whether a language model is truthful in generating answers to questions. The benchmark comprises 817 questions that span 38 categories, including health, law, finance and politics. We crafted questions that some humans would answer falsely due to a false belief or misconception. To perform well, models must avoid generating false answers learned from imitating human texts. We tested GPT-3, GPT-Neo/J, GPT-2 and a T5-based model. The best model was truthful on 58% of questions, while human performance was 94%. Models generated many false answers that mimic popular misconceptions and have the potential to deceive humans. The largest models were generally the least truthful. This contrasts with other NLP tasks, where performance improves with model size. However, this result is expected if false answers are learned from the training distribution. We suggest that scaling up models alone is less promising for improving truthfulness than fine-tuning using training objectives other than imitation of text from the web."
+      ]
+    },
+    "details": {
+      "title": "Title: TruthfulQA: Measuring How Models Mimic Human Falsehoods",
+      "authors": "Authors: Stephanie Lin , Jacob Hilton , Owain Evans",
+      "dateline": "[Submitted on 8 Sep 2021 ( v1 ), last revised 8 May 2022 (this version, v2)]",
+      "comments": "ACL 2022 (main conference); the TruthfulQA benchmark and evaluation code is available at this https URL",
+      "metatable": "Comments: ACL 2022 (main conference); the TruthfulQA benchmark and evaluation code is available at this https URL Subjects: Computation and Language (cs.CL) ; Artificial Intelligence (cs.AI); Computers and Society (cs.CY); Machine Learning (cs.LG) Cite as: arXiv:2109.07958 [cs.CL] (or arXiv:2109.07958v2 [cs.CL] for this version) https://doi.org/10.48550/arXiv.2109.07958 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.18653/v1/2022.acl-long.229",
+      "type": "proceedings-article",
+      "title": [
+        "TruthfulQA: Measuring How Models Mimic Human Falsehoods"
+      ],
+      "author": [
+        {
+          "given": "Stephanie",
+          "family": "Lin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jacob",
+          "family": "Hilton",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Owain",
+          "family": "Evans",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "3214-3252",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2022.acl-long.229",
+      "event": {
+        "name": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "location": "Dublin, Ireland",
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              5
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2022,
+              5
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.5007/1808-1711.2022.e84576",
+      "type": "journal-article",
+      "title": [
+        "Models as Felicitous Falsehoods"
+      ],
+      "author": [
+        {
+          "given": "Catherine",
+          "family": "Elgin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Principia: an international journal of epistemology"
+      ],
+      "volume": "26",
+      "issue": "1",
+      "page": "7-23",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            6,
+            7
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            6,
+            7
+          ]
+        ]
+      },
+      "publisher": "Universidade Federal de Santa Catarina (UFSC)",
+      "URL": "https://doi.org/10.5007/1808-1711.2022.e84576",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.5
+    },
+    {
+      "DOI": "10.7551/mitpress/15707.003.0013",
+      "type": "book-chapter",
+      "title": [
+        "Models as Felicitous Falsehoods"
+      ],
+      "author": null,
+      "container-title": [
+        "Epistemic Ecology"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "263-282",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            20
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            20
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "The MIT Press",
+      "URL": "https://doi.org/10.7551/mitpress/15707.003.0013",
+      "event": null,
+      "ISBN": [
+        "9780262382410"
+      ],
+      "relation": null,
+      "title_similarity": 0.5
+    },
+    {
+      "DOI": "10.1016/s0262-4079(18)31636-1",
+      "type": "journal-article",
+      "title": [
+        "How falsehoods spread after a mass shooting"
+      ],
+      "author": [
+        {
+          "given": "Chris",
+          "family": "Baraniuk",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "New Scientist"
+      ],
+      "volume": "239",
+      "issue": "3195",
+      "page": "8",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2018,
+            9
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.1016/s0262-4079(18)31636-1",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.306
+    },
+    {
+      "DOI": "10.1017/cbo9780511753527.005",
+      "type": "book-chapter",
+      "title": [
+        "FALSEHOODS"
+      ],
+      "author": null,
+      "container-title": [
+        "What is Truth?"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "61-73",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1976,
+            1,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1976,
+            1,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Cambridge University Press",
+      "URL": "https://doi.org/10.1017/cbo9780511753527.005",
+      "event": null,
+      "ISBN": [
+        "9780521209670",
+        "9780521114752",
+        "9780511753527"
+      ],
+      "relation": null,
+      "title_similarity": 0.345
+    }
+  ]
+}

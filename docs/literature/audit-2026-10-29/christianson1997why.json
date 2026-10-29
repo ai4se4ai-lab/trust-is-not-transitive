@@ -1,0 +1,95 @@
+{
+  "key": "christianson1997why",
+  "original": {
+    "doi": "10.1007/3-540-62494-5_16",
+    "publisher": "Springer",
+    "year": "1997",
+    "pages": "171--176",
+    "volume": "1189",
+    "series": "LNCS",
+    "booktitle": "Security Protocols (Proc. Int. Workshop, 1996)",
+    "title": "Why Isn't Trust Transitive?",
+    "author": "Christianson, Bruce and Harbison, William S.",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "christianson1997why"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1007/3-540-62494-5_16"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1007/3-540-62494-5_16",
+      "type": "book-chapter",
+      "title": [
+        "Why isn't trust transitive?"
+      ],
+      "author": [
+        {
+          "given": "Bruce",
+          "family": "Christianson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "William S.",
+          "family": "Harbison",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Security Protocols"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "171-176",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1997
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1997
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2005,
+            6,
+            3
+          ]
+        ]
+      },
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/3-540-62494-5_16",
+      "event": null,
+      "ISBN": [
+        "9783540624943",
+        "9783540680475"
+      ],
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

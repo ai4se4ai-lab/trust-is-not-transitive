@@ -1,0 +1,331 @@
+{
+  "key": "holm1979simple",
+  "original": {
+    "year": "1979",
+    "pages": "65--70",
+    "number": "2",
+    "volume": "6",
+    "journal": "Scandinavian Journal of Statistics",
+    "title": "A Simple Sequentially Rejective Multiple Test Procedure",
+    "author": "Holm, Sture",
+    "ENTRYTYPE": "article",
+    "ID": "holm1979simple"
+  },
+  "sources": [
+    "https://api.crossref.org/works?query.title=A+Simple+Sequentially+Rejective+Multiple+Test+Procedure&rows=5"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.2307/2531823",
+      "type": "journal-article",
+      "title": [
+        "An Improved Sequentially Rejective Bonferroni Test Procedure"
+      ],
+      "author": [
+        {
+          "given": "Burt S.",
+          "family": "Holland",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Margaret DiPonzio",
+          "family": "Copenhaver",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Biometrics"
+      ],
+      "volume": "43",
+      "issue": "2",
+      "page": "417",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1987,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1987,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "JSTOR",
+      "URL": "https://doi.org/10.2307/2531823",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.777
+    },
+    {
+      "DOI": "10.1080/01621459.1986.10478341",
+      "type": "journal-article",
+      "title": [
+        "Modified Sequentially Rejective Multiple Test Procedures"
+      ],
+      "author": [
+        {
+          "given": "Juliet Popper",
+          "family": "Shaffer",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of California",
+              "place": [
+                "USA"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of the American Statistical Association"
+      ],
+      "volume": "81",
+      "issue": "395",
+      "page": "826-831",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1986,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1986,
+            9
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2012,
+            3,
+            12
+          ]
+        ]
+      },
+      "publisher": "Informa UK Limited",
+      "URL": "https://doi.org/10.1080/01621459.1986.10478341",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.88
+    },
+    {
+      "DOI": "10.2307/2532027",
+      "type": "journal-article",
+      "title": [
+        "Correction: An Improved Sequentially Rejective Bonferroni Test Procedure"
+      ],
+      "author": null,
+      "container-title": [
+        "Biometrics"
+      ],
+      "volume": "43",
+      "issue": "3",
+      "page": "737",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1987,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1987,
+            9
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "JSTOR",
+      "URL": "https://doi.org/10.2307/2532027",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.708
+    },
+    {
+      "DOI": "10.1007/978-1-4419-9863-7_101337",
+      "type": "book-chapter",
+      "title": [
+        "Sequentially Rejective Bonferroni Test"
+      ],
+      "author": null,
+      "container-title": [
+        "Encyclopedia of Systems Biology"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1932-1932",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer New York",
+      "URL": "https://doi.org/10.1007/978-1-4419-9863-7_101337",
+      "event": null,
+      "ISBN": [
+        "9781441998620",
+        "9781441998637"
+      ],
+      "relation": null,
+      "title_similarity": 0.619
+    },
+    {
+      "DOI": "10.1002/sim.3495",
+      "type": "journal-article",
+      "title": [
+        "A graphical approach to sequentially rejective multiple test procedures"
+      ],
+      "author": [
+        {
+          "given": "Frank",
+          "family": "Bretz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Willi",
+          "family": "Maurer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Werner",
+          "family": "Brannath",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Posch",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Statistics in Medicine"
+      ],
+      "volume": "28",
+      "issue": "4",
+      "page": "586-604",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            12,
+            2
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            2,
+            20
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2008,
+            12,
+            2
+          ]
+        ]
+      },
+      "publisher": "Wiley",
+      "URL": "https://doi.org/10.1002/sim.3495",
+      "event": null,
+      "ISBN": null,
+      "relation": {
+        "has-review": [
+          {
+            "id-type": "doi",
+            "id": "10.3410/f.1160101.620378",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "title_similarity": 0.804
+    }
+  ]
+}

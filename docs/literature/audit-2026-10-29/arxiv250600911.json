@@ -1,0 +1,393 @@
+{
+  "key": "arxiv250600911",
+  "original": {
+    "url": "https://arxiv.org/abs/2506.00911",
+    "howpublished": "arXiv:2506.00911",
+    "year": "2025",
+    "author": "Overman, William and Bayati, Mohsen",
+    "title": "{Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250600911"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2506.00911",
+    "https://api.crossref.org/works?query.title=Conformal+Arbitrage%3A+Risk-Controlled+Balancing+of+Competing+Objectives+in+Language+Models&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2506.00911: Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Conformal Arbitrage: Risk-Controlled Balancing of Competing..."
+      ],
+      "twitter:description": [
+        "Modern language model deployments must often balance competing objectives, for example, helpfulness versus harmlessness, cost versus accuracy, and reward versus safety. We introduce Conformal..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models"
+      ],
+      "citation_author": [
+        "Overman, William",
+        "Bayati, Mohsen"
+      ],
+      "citation_date": [
+        "2025/06/01"
+      ],
+      "citation_online_date": [
+        "2025/06/01"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2506.00911"
+      ],
+      "citation_arxiv_id": [
+        "2506.00911"
+      ],
+      "citation_abstract": [
+        "Modern language model deployments must often balance competing objectives, for example, helpfulness versus harmlessness, cost versus accuracy, and reward versus safety. We introduce Conformal Arbitrage, a post hoc framework that learns a data driven threshold to mediate between a Primary model optimized for a primary objective and a more conservative Guardian which could be another model or a human domain expert aligned with a guardrail objective. The threshold is calibrated with conformal risk control, yielding finite sample, distribution free guarantees that the long run frequency of undesirable events, such as factual errors or safety violations, does not exceed a user specified quota. Because Conformal Arbitrage operates wholly at the API level, without requiring access to model logits or updating model weights, it complements weight based alignment techniques and integrates seamlessly with existing cost aware cascades. Empirically, Conformal Arbitrage traces an efficient frontier, allowing users to define an acceptable performance level for one objective while maximizing utility in another. We observe that our method outperforms, in terms of accuracy, cost matched random routing between models. These properties make Conformal Arbitrage a practical, theoretically grounded tool for trustworthy and economical deployment of large language models across a broad range of potentially competing objectives."
+      ]
+    },
+    "details": {
+      "title": "Title: Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models",
+      "authors": "Authors: William Overman , Mohsen Bayati",
+      "dateline": "[Submitted on 1 Jun 2025]",
+      "metatable": "Subjects: Artificial Intelligence (cs.AI) Cite as: arXiv:2506.00911 [cs.AI] (or arXiv:2506.00911v1 [cs.AI] for this version) https://doi.org/10.48550/arXiv.2506.00911 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.52202/085713-2364",
+      "type": "proceedings-article",
+      "title": [
+        "Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models"
+      ],
+      "author": [
+        {
+          "given": "William",
+          "family": "Overman",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Stanford University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohsen",
+          "family": "Bayati",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Stanford University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 38"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "78334-78366",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/085713-2364",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 38",
+        "theme": "39th Conference on Neural Information Processing Systems (NeurIPS 2025)",
+        "location": "San Diego, California, USA and Mexico City, Mexico",
+        "acronym": "NeurIPS 2025",
+        "number": "38",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              30
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.1080/09638180903118736",
+      "type": "journal-article",
+      "title": [
+        "Balancing Multiple Competing Objectives with a Balanced Scorecard"
+      ],
+      "author": [
+        {
+          "given": "Heidi",
+          "family": "Sundin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Markus",
+          "family": "Granlund",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David A.",
+          "family": "Brown",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "European Accounting Review"
+      ],
+      "volume": "19",
+      "issue": "2",
+      "page": "203-246",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2010,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Informa UK Limited",
+      "URL": "https://doi.org/10.1080/09638180903118736",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.5
+    },
+    {
+      "DOI": "10.1017/s0143814x04000108",
+      "type": "journal-article",
+      "title": [
+        "Valuing Agriculture: Balancing Competing Objectives in the Policy Process"
+      ],
+      "author": [
+        {
+          "given": "LINDA COURTENAY",
+          "family": "BOTTERILL",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Public Policy"
+      ],
+      "volume": "24",
+      "issue": "2",
+      "page": "199-218",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2004,
+            7,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2004,
+            8
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2004,
+            7,
+            1
+          ]
+        ]
+      },
+      "publisher": "Cambridge University Press (CUP)",
+      "URL": "https://doi.org/10.1017/s0143814x04000108",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.62
+    },
+    {
+      "DOI": "10.2139/ssrn.5164542",
+      "type": "posted-content",
+      "title": [
+        "Arbitrage in Risk Models"
+      ],
+      "author": [
+        {
+          "given": "James",
+          "family": "Norman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.2139/ssrn.5164542",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.384
+    },
+    {
+      "DOI": "10.1017/9781316585351.004",
+      "type": "book-chapter",
+      "title": [
+        "Balancing competing objectives: the key themes of civil dispute resolution"
+      ],
+      "author": null,
+      "container-title": [
+        "Civil Dispute Resolution"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "28-60",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            12,
+            13
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            12,
+            13
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Cambridge University Press",
+      "URL": "https://doi.org/10.1017/9781316585351.004",
+      "event": null,
+      "ISBN": [
+        "9781316585351",
+        "9781316606346"
+      ],
+      "relation": null,
+      "title_similarity": 0.479
+    }
+  ]
+}

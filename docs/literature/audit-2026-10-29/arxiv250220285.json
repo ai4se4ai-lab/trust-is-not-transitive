@@ -1,0 +1,780 @@
+{
+  "key": "arxiv250220285",
+  "original": {
+    "url": "https://arxiv.org/abs/2502.20285",
+    "howpublished": "arXiv:2502.20285",
+    "year": "2025",
+    "author": "Chen, Catherine Yu-Chi and Shen, Jingyan and Deng, Zhun and Lei, Lihua",
+    "title": "{Conformal Tail Risk Control for Large Language Model Alignment}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250220285"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2502.20285",
+    "https://api.crossref.org/works?query.title=Conformal+Tail+Risk+Control+for+Large+Language+Model+Alignment&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2502.20285: Conformal Tail Risk Control for Large Language Model Alignment"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Conformal Tail Risk Control for Large Language Model Alignment"
+      ],
+      "twitter:description": [
+        "Recent developments in large language models (LLMs) have led to their widespread usage for various tasks. The prevalence of LLMs in society implores the assurance on the reliability of their..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Conformal Tail Risk Control for Large Language Model Alignment"
+      ],
+      "citation_author": [
+        "Chen, Catherine Yu-Chi",
+        "Shen, Jingyan",
+        "Deng, Zhun",
+        "Lei, Lihua"
+      ],
+      "citation_date": [
+        "2025/02/27"
+      ],
+      "citation_online_date": [
+        "2025/02/27"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2502.20285"
+      ],
+      "citation_arxiv_id": [
+        "2502.20285"
+      ],
+      "citation_abstract": [
+        "Recent developments in large language models (LLMs) have led to their widespread usage for various tasks. The prevalence of LLMs in society implores the assurance on the reliability of their performance. In particular, risk-sensitive applications demand meticulous attention to unexpectedly poor outcomes, i.e., tail events, for instance, toxic answers, humiliating language, and offensive outputs. Due to the costly nature of acquiring human annotations, general-purpose scoring models have been created to automate the process of quantifying these tail events. This phenomenon introduces potential human-machine misalignment between the respective scoring mechanisms. In this work, we present a lightweight calibration framework for blackbox models that ensures the alignment of humans and machines with provable guarantees. Our framework provides a rigorous approach to controlling any distortion risk measure that is characterized by a weighted average of quantiles of the loss incurred by the LLM with high confidence. The theoretical foundation of our method relies on the connection between conformal risk control and a traditional family of statistics, i.e., L-statistics. To demonstrate the utility of our framework, we conduct comprehensive experiments that address the issue of human-machine misalignment."
+      ]
+    },
+    "details": {
+      "title": "Title: Conformal Tail Risk Control for Large Language Model Alignment",
+      "authors": "Authors: Catherine Yu-Chi Chen , Jingyan Shen , Zhun Deng , Lihua Lei",
+      "dateline": "[Submitted on 27 Feb 2025]",
+      "metatable": "Subjects: Machine Learning (cs.LG) ; Machine Learning (stat.ML) Cite as: arXiv:2502.20285 [cs.LG] (or arXiv:2502.20285v1 [cs.LG] for this version) https://doi.org/10.48550/arXiv.2502.20285 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1007/978-3-032-30539-8_28",
+      "type": "book-chapter",
+      "title": [
+        "Control Point Detection for Network Alignment Using Large Language Model"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8737-8262",
+          "authenticated-orcid": false,
+          "given": "Müslüm",
+          "family": "Hacar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9017-9651",
+          "authenticated-orcid": false,
+          "given": "Özge Öztürk",
+          "family": "Hacar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Computational Science and Its Applications – ICCSA 2026 Workshops"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "365-373",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            2
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2027
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            2
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Switzerland",
+      "URL": "https://doi.org/10.1007/978-3-032-30539-8_28",
+      "event": null,
+      "ISBN": [
+        "9783032305381",
+        "9783032305398"
+      ],
+      "relation": null,
+      "title_similarity": 0.479
+    },
+    {
+      "DOI": "10.52202/075280-2064",
+      "type": "proceedings-article",
+      "title": [
+        "OpenAssistant Conversations - Democratizing Large Language Model Alignment"
+      ],
+      "author": [
+        {
+          "given": "Andreas",
+          "family": "Köpf",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yannic",
+          "family": "Kilcher",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dimitri Von",
+          "family": "Rütte",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sotiris",
+          "family": "Anagnostidis",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhi Rui",
+          "family": "Tam",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Keith",
+          "family": "Stevens",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Abdullah",
+          "family": "Barhoum",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Duc",
+          "family": "Nguyen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Oliver",
+          "family": "Stanley",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Richárd",
+          "family": "Nagyfi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shahul",
+          "family": "Es",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sameer",
+          "family": "Suri",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Glushkov",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Arnav",
+          "family": "Dantuluri",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrew",
+          "family": "Maguire",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christoph",
+          "family": "Schuhmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Huu",
+          "family": "Nguyen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alexander",
+          "family": "Mattick",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 36"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "47669-47681",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/075280-2064",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 36",
+        "theme": "37th Conference on Neural Information Processing Systems (NeurIPS 2023)",
+        "location": "New Orleans, Louisiana, USA",
+        "acronym": "NeurIPS 2023",
+        "number": "36",
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              16
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.617
+    },
+    {
+      "DOI": "10.1145/3711896.3737204",
+      "type": "proceedings-article",
+      "title": [
+        "Complicated Semantic Alignment for Long-Tail Query Rewriting in Taobao Search Based on Large Language Model"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2727-0003",
+          "authenticated-orcid": false,
+          "given": "Yunling",
+          "family": "Feng",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Taobao &amp; Tmall Group of Alibaba, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-4407-7794",
+          "authenticated-orcid": false,
+          "given": "Gui",
+          "family": "Ling",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Taobao &amp; Tmall Group of Alibaba, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-5134-8900",
+          "authenticated-orcid": false,
+          "given": "Yue",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Taobao &amp; Tmall Group of Alibaba, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6861-7742",
+          "authenticated-orcid": false,
+          "given": "Jianfeng",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Taobao &amp; Tmall Group of Alibaba, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0009-9838-5343",
+          "authenticated-orcid": false,
+          "given": "Dan",
+          "family": "Ou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Taobao &amp; Tmall Group of Alibaba, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9463-7410",
+          "authenticated-orcid": false,
+          "given": "Qingwen",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Taobao &amp; Tmall Group of Alibaba, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5918-093X",
+          "authenticated-orcid": false,
+          "given": "Fuyu",
+          "family": "Lv",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Taobao &amp; Tmall Group of Alibaba, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7290-9585",
+          "authenticated-orcid": false,
+          "given": "Yajing",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Researcher, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "4435-4446",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            3
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            3
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3711896.3737204",
+      "event": {
+        "name": "KDD '25: The 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+        "location": "Toronto ON Canada",
+        "acronym": "KDD '25",
+        "sponsor": [
+          "SIGKDD ACM Special Interest Group on Knowledge Discovery in Data",
+          "SIGMOD ACM Special Interest Group on Management of Data"
+        ]
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.479
+    },
+    {
+      "DOI": "10.2139/ssrn.6172999",
+      "type": "posted-content",
+      "title": [
+        "Taming Tail Risk in Financial Markets: Conformal Risk Control for Nonstationary Portfolio VaR"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4550-2963",
+          "authenticated-orcid": true,
+          "given": "Marc",
+          "family": "Schmitt",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.2139/ssrn.6172999",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.418
+    },
+    {
+      "DOI": "10.52202/079017-3645",
+      "type": "proceedings-article",
+      "title": [
+        "Large language model validity via enhanced conformal prediction methods"
+      ],
+      "author": [
+        {
+          "given": "John",
+          "family": "Cherian",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Isaac",
+          "family": "Gibbs",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Emmanuel",
+          "family": "Candès",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 37"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "114812-114842",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "URL": "https://doi.org/10.52202/079017-3645",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 37",
+        "theme": "38th Conference on Neural Information Processing Systems (NeurIPS 2024)",
+        "location": "Vancouver, BC, Canada",
+        "acronym": "NeurIPS 2024",
+        "number": "37",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              15
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.427
+    }
+  ]
+}

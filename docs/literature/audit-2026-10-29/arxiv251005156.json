@@ -1,0 +1,589 @@
+{
+  "key": "arxiv251005156",
+  "original": {
+    "url": "https://arxiv.org/abs/2510.05156",
+    "howpublished": "arXiv:2510.05156",
+    "year": "2025",
+    "author": "Miculicich, Lesly and Parmar, Mihir and Palangi, Hamid and Dvijotham, Krishnamurthy Dj and Montanari, Mirko and Pfister, Tomas and Le, Long T.",
+    "title": "{VeriGuard: Enhancing LLM Agent Safety via Verified Code Generation}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv251005156"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2510.05156",
+    "https://api.crossref.org/works?query.title=VeriGuard%3A+Enhancing+LLM+Agent+Safety+via+Verified+Code+Generation&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2510.05156: VeriGuard: Enhancing LLM Agent Safety via Verified Code Generation"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "VeriGuard: Enhancing LLM Agent Safety via Verified Code Generation"
+      ],
+      "twitter:description": [
+        "The deployment of autonomous AI agents in sensitive domains, such as healthcare, introduces critical risks to safety, security, and privacy. These agents may deviate from user objectives, violate..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "VeriGuard: Enhancing LLM Agent Safety via Verified Code Generation"
+      ],
+      "citation_author": [
+        "Miculicich, Lesly",
+        "Parmar, Mihir",
+        "Palangi, Hamid",
+        "Dvijotham, Krishnamurthy Dj",
+        "Montanari, Mirko",
+        "Pfister, Tomas",
+        "Le, Long T."
+      ],
+      "citation_date": [
+        "2025/10/03"
+      ],
+      "citation_online_date": [
+        "2025/10/03"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2510.05156"
+      ],
+      "citation_arxiv_id": [
+        "2510.05156"
+      ],
+      "citation_abstract": [
+        "The deployment of autonomous AI agents in sensitive domains, such as healthcare, introduces critical risks to safety, security, and privacy. These agents may deviate from user objectives, violate data handling policies, or be compromised by adversarial attacks. Mitigating these dangers necessitates a mechanism to formally guarantee that an agent's actions adhere to predefined safety constraints, a challenge that existing systems do not fully address. We introduce VeriGuard, a novel framework that provides formal safety guarantees for LLM-based agents through a dual-stage architecture designed for robust and verifiable correctness. The initial offline stage involves a comprehensive validation process. It begins by clarifying user intent to establish precise safety specifications. VeriGuard then synthesizes a behavioral policy and subjects it to both testing and formal verification to prove its compliance with these specifications. This iterative process refines the policy until it is deemed correct. Subsequently, the second stage provides online action monitoring, where VeriGuard operates as a runtime monitor to validate each proposed agent action against the pre-verified policy before execution. This separation of the exhaustive offline validation from the lightweight online monitoring allows formal guarantees to be practically applied, providing a robust safeguard that substantially improves the trustworthiness of LLM agents."
+      ]
+    },
+    "details": {
+      "title": "Title: VeriGuard: Enhancing LLM Agent Safety via Verified Code Generation",
+      "authors": "Authors: Lesly Miculicich , Mihir Parmar , Hamid Palangi , Krishnamurthy Dj Dvijotham , Mirko Montanari , Tomas Pfister , Long T. Le",
+      "dateline": "[Submitted on 3 Oct 2025]",
+      "comments": "22 pages",
+      "metatable": "Comments: 22 pages Subjects: Software Engineering (cs.SE) ; Artificial Intelligence (cs.AI); Cryptography and Security (cs.CR) ACM classes: I.2.7 Cite as: arXiv:2510.05156 [cs.SE] (or arXiv:2510.05156v1 [cs.SE] for this version) https://doi.org/10.48550/arXiv.2510.05156 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.18653/v1/2025.findings-acl.784",
+      "type": "proceedings-article",
+      "title": [
+        "Enhancing LLM Agent Safety via Causal Influence Prompting"
+      ],
+      "author": [
+        {
+          "given": "Dongyoon",
+          "family": "Hahm",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Woogyeol",
+          "family": "Jin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "June Suk",
+          "family": "Choi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sungsoo",
+          "family": "Ahn",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Kimin",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: ACL 2025"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "15143-15168",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.findings-acl.784",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: ACL 2025",
+        "location": "Vienna, Austria",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.654
+    },
+    {
+      "DOI": "10.71465/ajeet3630",
+      "type": "journal-article",
+      "title": [
+        "Security Knowledge Distillation for Enhancing LLM Safety in Code Generation"
+      ],
+      "author": [
+        {
+          "family": "Daniel Thompson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "family": "Sarah Mitchell",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "family": "Jason Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "American Journal of Electrical Engineering and Technology"
+      ],
+      "volume": "7",
+      "issue": "1",
+      "page": "88-94",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            31
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            31
+          ]
+        ]
+      },
+      "publisher": "International Study Counselor",
+      "URL": "https://doi.org/10.71465/ajeet3630",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.634
+    },
+    {
+      "DOI": "10.2139/ssrn.6143886",
+      "type": "posted-content",
+      "title": [
+        "Security Knowledge Distillation for Enhancing LLM Safety in Code Generation Authors"
+      ],
+      "author": [
+        {
+          "given": "Sarah",
+          "family": "Mitchell",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jason",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Thompson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.2139/ssrn.6143886",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.6
+    },
+    {
+      "DOI": "10.65109/rvab7186",
+      "type": "proceedings-article",
+      "title": [
+        "LLM-SMAC: Solving Multi-Agent Decision-Making Tasks via LLM Decision Tree Code Generation"
+      ],
+      "author": [
+        {
+          "given": "Yue",
+          "family": "Deng",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Weiyu",
+          "family": "Ma",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuxin",
+          "family": "Fan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ruyi",
+          "family": "Song",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yin",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Haifeng",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jian",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 25th International Conference on Autonomous Agents and Multiagent Systems"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": null,
+      "published-print": null,
+      "published-online": null,
+      "publisher": "International Foundation for Autonomous Agents and Multiagent Systems",
+      "URL": "https://doi.org/10.65109/rvab7186",
+      "event": {
+        "name": "25th International Conference on Autonomous Agents and Multiagent Systems",
+        "theme": "Autonomous Agents",
+        "location": "Paphos, Cyprus",
+        "acronym": "AAMAS",
+        "number": "25",
+        "sponsor": [
+          "SIGAI, IFAAMAS"
+        ],
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              25
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              29
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.5
+    },
+    {
+      "DOI": "10.1109/tii.2026.3669495",
+      "type": "journal-article",
+      "title": [
+        "ModSolAgent: Automated Finite Element Code Generation for Abaqus via LLM-Based Agent"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0003-5143-8619",
+          "authenticated-orcid": false,
+          "given": "Zidi",
+          "family": "Li",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "College of Computer Science and Technology, Dalian University of Technology, Dalian, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8937-1515",
+          "authenticated-orcid": false,
+          "given": "Hongwei",
+          "family": "Ge",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Computer Science and Technology, Dalian University of Technology, Dalian, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-8376-8657",
+          "authenticated-orcid": false,
+          "given": "Guozhi",
+          "family": "Tang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Computer Science and Technology, Dalian University of Technology, Dalian, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1168-6645",
+          "authenticated-orcid": false,
+          "given": "Yuxuan",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Computer Science and Technology, Dalian University of Technology, Dalian, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Industrial Informatics"
+      ],
+      "volume": "22",
+      "issue": "6",
+      "page": "4693-4704",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/tii.2026.3669495",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.403
+    }
+  ]
+}

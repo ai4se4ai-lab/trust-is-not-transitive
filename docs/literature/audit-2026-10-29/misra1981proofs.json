@@ -1,0 +1,84 @@
+{
+  "key": "misra1981proofs",
+  "original": {
+    "doi": "10.1109/TSE.1981.230844",
+    "year": "1981",
+    "pages": "417--426",
+    "number": "4",
+    "volume": "SE-7",
+    "journal": "IEEE Transactions on Software Engineering",
+    "title": "Proofs of Networks of Processes",
+    "author": "Misra, Jayadev and Chandy, K. Mani",
+    "ENTRYTYPE": "article",
+    "ID": "misra1981proofs"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1109/TSE.1981.230844"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1109/tse.1981.230844",
+      "type": "journal-article",
+      "title": [
+        "Proofs of Networks of Processes"
+      ],
+      "author": [
+        {
+          "given": "J.",
+          "family": "Misra",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "K.M.",
+          "family": "Chandy",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Software Engineering"
+      ],
+      "volume": "SE-7",
+      "issue": "4",
+      "page": "417-426",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1981,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1981,
+            7
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/tse.1981.230844",
+      "event": null,
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

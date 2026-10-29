@@ -1,0 +1,607 @@
+{
+  "key": "arxiv240718370",
+  "original": {
+    "url": "https://arxiv.org/abs/2407.18370",
+    "howpublished": "arXiv:2407.18370",
+    "year": "2024",
+    "author": "Jung, Jaehun and Brahman, Faeze and Choi, Yejin",
+    "title": "{Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv240718370"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2407.18370",
+    "https://api.crossref.org/works?query.title=Trust+or+Escalate%3A+LLM+Judges+with+Provable+Guarantees+for+Human+Agreement&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2407.18370: Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement"
+      ],
+      "twitter:description": [
+        "We present a principled approach to provide LLM-based evaluation with a rigorous guarantee of human agreement. We first propose that a reliable evaluation method should not uncritically rely on..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement"
+      ],
+      "citation_author": [
+        "Jung, Jaehun",
+        "Brahman, Faeze",
+        "Choi, Yejin"
+      ],
+      "citation_date": [
+        "2024/07/25"
+      ],
+      "citation_online_date": [
+        "2024/07/25"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2407.18370"
+      ],
+      "citation_arxiv_id": [
+        "2407.18370"
+      ],
+      "citation_abstract": [
+        "We present a principled approach to provide LLM-based evaluation with a rigorous guarantee of human agreement. We first propose that a reliable evaluation method should not uncritically rely on model preferences for pairwise evaluation, but rather assess the confidence of judge models and selectively decide when to trust its judgement. We then show that under this selective evaluation framework, human agreement can be provably guaranteed -- such that the model evaluation aligns with that of humans to a user-specified agreement level. As part of our framework, we also introduce Simulated Annotators, a novel confidence estimation method that significantly improves judge calibration and thus enables high coverage of evaluated instances. Finally, we propose Cascaded Selective Evaluation, where we use cheaper models as initial judges and escalate to stronger models only when necessary -- again, while still providing a provable guarantee of human agreement. Experimental results show that Cascaded Selective Evaluation guarantees strong alignment with humans, far beyond what LLM judges could achieve without selective evaluation. For example, on a subset of Chatbot Arena where GPT-4 almost never achieves 80% human agreement, our method, even while employing substantially cost-effective models such as Mistral-7B, guarantees over 80% human agreement with almost 80% test coverage."
+      ]
+    },
+    "details": {
+      "title": "Title: Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+      "authors": "Authors: Jaehun Jung , Faeze Brahman , Yejin Choi",
+      "dateline": "[Submitted on 25 Jul 2024]",
+      "metatable": "Subjects: Machine Learning (cs.LG) ; Computation and Language (cs.CL) Cite as: arXiv:2407.18370 [cs.LG] (or arXiv:2407.18370v1 [cs.LG] for this version) https://doi.org/10.48550/arXiv.2407.18370 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1145/3662158.3664933",
+      "type": "proceedings-article",
+      "title": [
+        "Keynote: Provable Slashing Guarantees"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7163-8306",
+          "authenticated-orcid": false,
+          "given": "Tim",
+          "family": "Roughgarden",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Computer Science, Columbia University, New York, NY, United States of America"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 43rd ACM Symposium on Principles of Distributed Computing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "2-2",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            17
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            17
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            17
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3662158.3664933",
+      "event": {
+        "name": "PODC '24: 43rd ACM Symposium on Principles of Distributed Computing",
+        "sponsor": [
+          "SIGACT ACM Special Interest Group on Algorithms and Computation Theory",
+          "SIGOPS ACM Special Interest Group on Operating Systems"
+        ],
+        "location": "Nantes France",
+        "acronym": "PODC '24"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.438
+    },
+    {
+      "DOI": "10.1145/3701551.3703531",
+      "type": "proceedings-article",
+      "title": [
+        "Sequential Diversification with Provable Guarantees"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0008-6463-392X",
+          "authenticated-orcid": false,
+          "given": "Honglian",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "KTH Royal Institute of Technology, Stockholm, Sweden"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5976-1993",
+          "authenticated-orcid": false,
+          "given": "Sijing",
+          "family": "Tu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "KTH Royal Institute of Technology, Stockholm, Sweden"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5211-112X",
+          "authenticated-orcid": false,
+          "given": "Aristides",
+          "family": "Gionis",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "KTH Royal Institute of Technology, Stockholm, Sweden"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the Eighteenth ACM International Conference on Web Search and Data Mining"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "345-353",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            10
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            10
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3701551.3703531",
+      "event": {
+        "name": "WSDM '25: The Eighteenth ACM International Conference on Web Search and Data Mining",
+        "sponsor": [
+          "SIGMOD ACM Special Interest Group on Management of Data",
+          "SIGWEB ACM Special Interest Group on Hypertext, Hypermedia, and Web",
+          "SIGKDD ACM Special Interest Group on Knowledge Discovery in Data",
+          "SIGIR ACM Special Interest Group on Information Retrieval"
+        ],
+        "location": "Hannover Germany",
+        "acronym": "WSDM '25"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.509
+    },
+    {
+      "DOI": "10.23919/date69613.2026.11539087",
+      "type": "proceedings-article",
+      "title": [
+        "Provable Guarantees in Approximate Synthesis"
+      ],
+      "author": [
+        {
+          "given": "Kushagra",
+          "family": "Gupta",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "IIT Delhi"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Priyanka",
+          "family": "Golia",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "IIT Delhi"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Subhajit",
+          "family": "Roy",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "IIT Kanpur"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kuldeep S",
+          "family": "Meel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Toronto Georgia Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 Design, Automation &amp;amp; Test in Europe Conference (DATE)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-7",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            20
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            20
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.23919/date69613.2026.11539087",
+      "event": {
+        "name": "2026 Design, Automation &amp; Test in Europe Conference (DATE)",
+        "location": "Verona, Italy",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              20
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              22
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.466
+    },
+    {
+      "DOI": "10.23919/ifipnetworking52078.2021.9472206",
+      "type": "proceedings-article",
+      "title": [
+        "Parallel VM Deployment with Provable Guarantees"
+      ],
+      "author": [
+        {
+          "given": "Itamar",
+          "family": "Cohen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gil",
+          "family": "Einziger",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Maayan",
+          "family": "Goldstein",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yaniv",
+          "family": "Sa'ar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gabriel",
+          "family": "Scalosub",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Erez",
+          "family": "Waisbard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2021 IFIP Networking Conference (IFIP Networking)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-9",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            21
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            21
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.23919/ifipnetworking52078.2021.9472206",
+      "event": {
+        "name": "2021 IFIP Networking Conference (IFIP Networking)",
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              6,
+              21
+            ]
+          ]
+        },
+        "location": "Espoo and Helsinki, Finland",
+        "end": {
+          "date-parts": [
+            [
+              2021,
+              6,
+              24
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.571
+    },
+    {
+      "DOI": "10.1007/11558859_10",
+      "type": "book-chapter",
+      "title": [
+        "Efficient Steganography with Provable Security Guarantees"
+      ],
+      "author": [
+        {
+          "given": "Aggelos",
+          "family": "Kiayias",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yona",
+          "family": "Raekow",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Alexander",
+          "family": "Russell",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Information Hiding"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "118-130",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2005
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2005
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/11558859_10",
+      "event": null,
+      "ISBN": [
+        "9783540290391",
+        "9783540314813"
+      ],
+      "relation": null,
+      "title_similarity": 0.487
+    }
+  ]
+}

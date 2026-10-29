@@ -1,0 +1,793 @@
+{
+  "key": "arxiv260223719",
+  "original": {
+    "url": "https://arxiv.org/abs/2602.23719",
+    "howpublished": "arXiv:2602.23719",
+    "year": "2026",
+    "author": "Zhao, Wenzhe and Zhao, Yang and Liu, Ganchao and Jiang, Zhiyu and Ma, Dandan and Li, Zihao and Li, Xuelong",
+    "title": "{SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv260223719"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2602.23719",
+    "https://api.crossref.org/works?query.title=SAGE-LLM%3A+Towards+Safe+and+Generalizable+LLM+Controller+with+Fuzzy-CBF+Verification+and+Graph-Structured+Knowledge+Retrieval+for+UAV+Decision&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2602.23719: SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "SAGE-LLM: Towards Safe and Generalizable LLM Controller with..."
+      ],
+      "twitter:description": [
+        "In UAV dynamic decision, complex and variable hazardous factors pose severe challenges to the generalization capability of algorithms. Despite offering semantic understanding and scene..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision"
+      ],
+      "citation_author": [
+        "Zhao, Wenzhe",
+        "Zhao, Yang",
+        "Liu, Ganchao",
+        "Jiang, Zhiyu",
+        "Ma, Dandan",
+        "Li, Zihao",
+        "Li, Xuelong"
+      ],
+      "citation_date": [
+        "2026/02/27"
+      ],
+      "citation_online_date": [
+        "2026/02/27"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2602.23719"
+      ],
+      "citation_arxiv_id": [
+        "2602.23719"
+      ],
+      "citation_abstract": [
+        "In UAV dynamic decision, complex and variable hazardous factors pose severe challenges to the generalization capability of algorithms. Despite offering semantic understanding and scene generalization, Large Language Models (LLM) lack domain-specific UAV control knowledge and formal safety assurances, restricting their direct applicability. To bridge this gap, this paper proposes a train-free two-layer decision architecture based on LLMs, integrating high-level safety planning with low-level precise control. The framework introduces three key contributions: 1) A fuzzy Control Barrier Function verification mechanism for semantically-augmented actions, providing provable safety certification for LLM outputs. 2) A star-hierarchical graph-based retrieval-augmented generation system, enabling efficient, elastic, and interpretable scene adaptation. 3) Systematic experimental validation in pursuit-evasion scenarios with unknown obstacles and emergent threats, demonstrating that our SAGE-LLM maintains performance while significantly enhancing safety and generalization without online training. The proposed framework demonstrates strong extensibility, suggesting its potential for generalization to broader embodied intelligence systems and safety-critical control domains."
+      ]
+    },
+    "details": {
+      "title": "Title: SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision",
+      "authors": "Authors: Wenzhe Zhao , Yang Zhao , Ganchao Liu , Zhiyu Jiang , Dandan Ma , Zihao Li , Xuelong Li",
+      "dateline": "[Submitted on 27 Feb 2026]",
+      "metatable": "Subjects: Robotics (cs.RO) ; Artificial Intelligence (cs.AI) Cite as: arXiv:2602.23719 [cs.RO] (or arXiv:2602.23719v1 [cs.RO] for this version) https://doi.org/10.48550/arXiv.2602.23719 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1145/3776759.3776823",
+      "type": "proceedings-article",
+      "title": [
+        "HR-LLM: Towards Semantically Enhanced Personnel Retrieval in SOEs with Knowledge Graph and LLM Fine-Tuning"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0008-3862-8246",
+          "authenticated-orcid": false,
+          "given": "Liang",
+          "family": "Chen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "NARI INFORMATION &amp; COMMUNICATION TECHNOLOGY CO., LTD, Nanjing, Jiangsu, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0002-7805-8491",
+          "authenticated-orcid": false,
+          "given": "Jun",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "NARI INFORMATION &amp; COMMUNICATION TECHNOLOGY CO., LTD, Nanjing, Jiangsu, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0002-6331-5889",
+          "authenticated-orcid": false,
+          "given": "Hong-Yu",
+          "family": "Ding",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "NARI INFORMATION &amp; COMMUNICATION TECHNOLOGY CO., LTD, Nanjing, Jiangsu, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-8183-3166",
+          "authenticated-orcid": false,
+          "given": "Yu-Qing",
+          "family": "Gao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "NARI INFORMATION &amp; COMMUNICATION TECHNOLOGY CO., LTD, Nanjing, Jiangsu, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-7311-5855",
+          "authenticated-orcid": false,
+          "given": "Xian-Min",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "NARI INFORMATION &amp; COMMUNICATION TECHNOLOGY CO., LTD, Nanjing, Jiangsu, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-2009-7280",
+          "authenticated-orcid": false,
+          "given": "Yang",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "NARI INFORMATION &amp; COMMUNICATION TECHNOLOGY CO., LTD, Nanjing, Jiangsu, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-9012-8266",
+          "authenticated-orcid": false,
+          "given": "Xuan",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "NARI INFORMATION &amp; COMMUNICATION TECHNOLOGY CO., LTD, Nanjing, Jiangsu, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2025 International Symposium on Artificial Intelligence and Computational Social Sciences"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "418-425",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            19
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            19
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            19
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3776759.3776823",
+      "event": {
+        "name": "AICSS 2025: 2025 International Symposium on Artificial Intelligence and Computational Social Sciences",
+        "acronym": "AICSS 2025",
+        "location": "Beijing China"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.379
+    },
+    {
+      "DOI": "10.1609/aaai.v40i36.40322",
+      "type": "journal-article",
+      "title": [
+        "Graph of Verification: Structured Verification of LLM Reasoning with Directed Acyclic Graphs"
+      ],
+      "author": [
+        {
+          "given": "Jiwei",
+          "family": "Fang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bin",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Changwei",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jin",
+          "family": "Wan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhiwei",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the AAAI Conference on Artificial Intelligence"
+      ],
+      "volume": "40",
+      "issue": "36",
+      "page": "30665-30672",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            14
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            14
+          ]
+        ]
+      },
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "URL": "https://doi.org/10.1609/aaai.v40i36.40322",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.328
+    },
+    {
+      "DOI": "10.18653/v1/2025.acl-long.1317",
+      "type": "proceedings-article",
+      "title": [
+        "Knowledge Graph Retrieval-Augmented Generation for LLM-based Recommendation"
+      ],
+      "author": [
+        {
+          "given": "Shijie",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wenqi",
+          "family": "Fan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yue",
+          "family": "Feng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lin",
+          "family": "Shanru",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xinyu",
+          "family": "Ma",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shuaiqiang",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dawei",
+          "family": "Yin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "27152-27168",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.acl-long.1317",
+      "event": {
+        "name": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "location": "Vienna, Austria",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.298
+    },
+    {
+      "DOI": "10.1007/s44163-026-01492-w",
+      "type": "journal-article",
+      "title": [
+        "ClinicGraphRAG knowledge graph and LLM retrieval-augmented generation for reliable clinical decision support summaries"
+      ],
+      "author": [
+        {
+          "given": "Md Mehedi Hassan",
+          "family": "Melon",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Md Monirul",
+          "family": "Islam",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Md Mizanur",
+          "family": "Rahman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nayem",
+          "family": "Miah",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Md Mahidur",
+          "family": "Rahman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Md Fazlay",
+          "family": "Rabby",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Md",
+          "family": "Shahiduzzaman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Md Azharul",
+          "family": "Islam",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Md Sumon",
+          "family": "Rana",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohammad",
+          "family": "Shahbazi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Discover Artificial Intelligence"
+      ],
+      "volume": "6",
+      "issue": "1",
+      "page": null,
+      "article-number": "833",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            12
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            12
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "URL": "https://doi.org/10.1007/s44163-026-01492-w",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.363
+    },
+    {
+      "DOI": "10.1109/cscwd68734.2026.11582637",
+      "type": "proceedings-article",
+      "title": [
+        "LLM-Guided Tree-Structured Rules Expansion for Knowledge Graph Reasoning"
+      ],
+      "author": [
+        {
+          "given": "Jianan",
+          "family": "Sun",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Tianjin University,Tianjin,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhe",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tianjin University,Tianjin,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hongyue",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Tianjin University,Tianjin,China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kewen",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Griffith University,Brisbane,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "3244-3249",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            13
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            13
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/cscwd68734.2026.11582637",
+      "event": {
+        "name": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+        "location": "Fuzhou, China",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              13
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              15
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.38
+    }
+  ]
+}

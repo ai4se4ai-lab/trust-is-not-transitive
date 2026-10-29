@@ -1,0 +1,150 @@
+{
+  "key": "bates2021distribution",
+  "original": {
+    "doi": "10.1145/3478535",
+    "year": "2021",
+    "pages": "1--34",
+    "number": "6",
+    "volume": "68",
+    "journal": "Journal of the ACM",
+    "title": "Distribution-Free, Risk-Controlling Prediction Sets",
+    "author": "Bates, Stephen and Angelopoulos, Anastasios and Lei, Lihua and Malik, Jitendra and Jordan, Michael",
+    "ENTRYTYPE": "article",
+    "ID": "bates2021distribution"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1145/3478535"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1145/3478535",
+      "type": "journal-article",
+      "title": [
+        "Distribution-free, Risk-controlling Prediction Sets"
+      ],
+      "author": [
+        {
+          "given": "Stephen",
+          "family": "Bates",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "UC Berkeley, Berkeley, CA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anastasios",
+          "family": "Angelopoulos",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "UC Berkeley, Berkeley, CA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lihua",
+          "family": "Lei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Stanford University, Stanford, CA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jitendra",
+          "family": "Malik",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "UC Berkeley, Berkeley, CA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael",
+          "family": "Jordan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "UC Berkeley, Berkeley, CA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of the ACM"
+      ],
+      "volume": "68",
+      "issue": "6",
+      "page": "1-34",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            12,
+            31
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            30
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "URL": "https://doi.org/10.1145/3478535",
+      "event": null,
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

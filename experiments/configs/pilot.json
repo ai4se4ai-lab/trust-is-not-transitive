@@ -1,0 +1,12 @@
+{
+  "seeds":[0,1,2,3,4,5,6,7,8,9],
+  "n_calibration":1800,"n_development":600,"n_test":1200,"n_shift":600,
+  "thresholds":[0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1],
+  "epsilon":0.2,"delta":0.05,
+  "layer_costs":{"L1":1,"L2":20,"L3":1000,"L4":5000},
+  "coverage_replications_per_seed":100,"coverage_n_cal":1024,"coverage_n_test":2048,
+  "coverage_target":0.1,"coverage_delta":0.05,
+  "coverage_risks":[0,0.01,0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.15,0.2],
+  "bootstrap_seed":20261029,"bootstrap_replicates":10000,
+  "adaptive_budget":16
+}

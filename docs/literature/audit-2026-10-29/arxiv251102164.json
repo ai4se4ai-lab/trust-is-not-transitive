@@ -1,0 +1,536 @@
+{
+  "key": "arxiv251102164",
+  "original": {
+    "url": "https://arxiv.org/abs/2511.02164",
+    "howpublished": "arXiv:2511.02164",
+    "year": "2025",
+    "author": "Vin, Eric and Miller, Kyle A. and Incer, Inigo and Seshia, Sanjit A. and Fremont, Daniel J.",
+    "title": "{ScenicProver: A Framework for Compositional Probabilistic Verification of Learning-Enabled Systems}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv251102164"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2511.02164",
+    "https://api.crossref.org/works?query.title=ScenicProver%3A+A+Framework+for+Compositional+Probabilistic+Verification+of+Learning-Enabled+Systems&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2511.02164: ScenicProver: A Framework for Compositional Probabilistic Verification of Learning-Enabled Systems"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "ScenicProver: A Framework for Compositional Probabilistic..."
+      ],
+      "twitter:description": [
+        "Full verification of learning-enabled cyber-physical systems (CPS) has long been intractable due to challenges including black-box components and complex real-world environments. Existing tools..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "ScenicProver: A Framework for Compositional Probabilistic Verification of Learning-Enabled Systems"
+      ],
+      "citation_author": [
+        "Vin, Eric",
+        "Miller, Kyle A.",
+        "Incer, Inigo",
+        "Seshia, Sanjit A.",
+        "Fremont, Daniel J."
+      ],
+      "citation_date": [
+        "2025/11/04"
+      ],
+      "citation_online_date": [
+        "2025/11/04"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2511.02164"
+      ],
+      "citation_arxiv_id": [
+        "2511.02164"
+      ],
+      "citation_abstract": [
+        "Full verification of learning-enabled cyber-physical systems (CPS) has long been intractable due to challenges including black-box components and complex real-world environments. Existing tools either provide formal guarantees for limited types of systems or test the system as a monolith, but no general framework exists for compositional analysis of learning-enabled CPS using varied verification techniques over complex real-world environments. This paper introduces ScenicProver, a verification framework that aims to fill this gap. Built upon the Scenic probabilistic programming language, the framework supports: (1) compositional system description with clear component interfaces, ranging from interpretable code to black boxes; (2) assume-guarantee contracts over those components using an extension of Linear Temporal Logic containing arbitrary Scenic expressions; (3) evidence generation through testing, formal proofs via Lean 4 integration, and importing external assumptions; (4) systematic combination of generated evidence using contract operators; and (5) automatic generation of assurance cases tracking the provenance of system-level guarantees. We demonstrate the framework's effectiveness through a case study on an autonomous vehicle's automatic emergency braking system with sensor fusion. By leveraging manufacturer guarantees for radar and laser sensors and focusing testing efforts on uncertain conditions, our approach enables stronger probabilistic guarantees than monolithic testing with the same computational budget."
+      ]
+    },
+    "details": {
+      "title": "Title: ScenicProver: A Framework for Compositional Probabilistic Verification of Learning-Enabled Systems",
+      "authors": "Authors: Eric Vin , Kyle A. Miller , Inigo Incer , Sanjit A. Seshia , Daniel J. Fremont",
+      "dateline": "[Submitted on 4 Nov 2025]",
+      "comments": "26 pages, 4 figures. Full version (including appendices) of a paper submitted to TACAS 2026",
+      "metatable": "Comments: 26 pages, 4 figures. Full version (including appendices) of a paper submitted to TACAS 2026 Subjects: Logic in Computer Science (cs.LO) ; Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Programming Languages (cs.PL) Cite as: arXiv:2511.02164 [cs.LO] (or arXiv:2511.02164v1 [cs.LO] for this version) https://doi.org/10.48550/arXiv.2511.02164 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1109/qest.2010.24",
+      "type": "proceedings-article",
+      "title": [
+        "Compositional Verification of Probabilistic Systems Using Learning"
+      ],
+      "author": [
+        {
+          "given": "Lu",
+          "family": "Feng",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Marta",
+          "family": "Kwiatkowska",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Parker",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2010 Seventh International Conference on the Quantitative Evaluation of Systems"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "133-142",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2010,
+            9
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/qest.2010.24",
+      "event": {
+        "name": "2010 Seventh International Conference on the Quantitative Evaluation of Systems (QEST)",
+        "location": "Williamsburg, VA, USA",
+        "start": {
+          "date-parts": [
+            [
+              2010,
+              9,
+              15
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2010,
+              9,
+              18
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.476
+    },
+    {
+      "DOI": "10.1007/978-3-642-24372-1_40",
+      "type": "book-chapter",
+      "title": [
+        "Learning-Based Compositional Verification for Synchronous Probabilistic Systems"
+      ],
+      "author": [
+        {
+          "given": "Lu",
+          "family": "Feng",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tingting",
+          "family": "Han",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Marta",
+          "family": "Kwiatkowska",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Parker",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Automated Technology for Verification and Analysis"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "511-521",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/978-3-642-24372-1_40",
+      "event": null,
+      "ISBN": [
+        "9783642243714",
+        "9783642243721"
+      ],
+      "relation": null,
+      "title_similarity": 0.465
+    },
+    {
+      "DOI": "10.1007/bfb0084809",
+      "type": "book-chapter",
+      "title": [
+        "Compositional verification of probabilistic processes"
+      ],
+      "author": [
+        {
+          "given": "Kim G.",
+          "family": "Larsen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Arne",
+          "family": "Skou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "CONCUR '92"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "456-471",
+      "article-number": null,
+      "published": null,
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/bfb0084809",
+      "event": null,
+      "ISBN": [
+        "9783540558224"
+      ],
+      "relation": null,
+      "title_similarity": 0.515
+    },
+    {
+      "DOI": "10.1007/978-3-319-02444-8_38",
+      "type": "book-chapter",
+      "title": [
+        "CELL: A Compositional Verification Framework"
+      ],
+      "author": [
+        {
+          "given": "Kun",
+          "family": "Ji",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yang",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Shang-Wei",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jun",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jin Song",
+          "family": "Dong",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Truong Khanh",
+          "family": "Nguyen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Automated Technology for Verification and Analysis"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "474-477",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer International Publishing",
+      "URL": "https://doi.org/10.1007/978-3-319-02444-8_38",
+      "event": null,
+      "ISBN": [
+        "9783319024431",
+        "9783319024448"
+      ],
+      "relation": null,
+      "title_similarity": 0.476
+    },
+    {
+      "DOI": "10.1007/978-3-642-16576-4_2",
+      "type": "book-chapter",
+      "title": [
+        "A Formal Framework for Compositional Verification of Organic Computing Systems"
+      ],
+      "author": [
+        {
+          "given": "Florian",
+          "family": "Nafz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hella",
+          "family": "Seebach",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jan-Philipp",
+          "family": "Steghöfer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Simon",
+          "family": "Bäumler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wolfgang",
+          "family": "Reif",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Autonomic and Trusted Computing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "17-31",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "URL": "https://doi.org/10.1007/978-3-642-16576-4_2",
+      "event": null,
+      "ISBN": [
+        "9783642165757",
+        "9783642165764"
+      ],
+      "relation": null,
+      "title_similarity": 0.679
+    }
+  ]
+}

@@ -1,0 +1,683 @@
+{
+  "key": "arxiv240314720",
+  "original": {
+    "url": "https://arxiv.org/abs/2403.14720",
+    "howpublished": "arXiv:2403.14720",
+    "year": "2024",
+    "author": "Hines, Keegan and Lopez, Gary and Hall, Matthew and Zarfati, Federico and Zunger, Yonatan and Kiciman, Emre",
+    "title": "{Defending Against Indirect Prompt Injection Attacks With Spotlighting}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv240314720"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2403.14720",
+    "https://api.crossref.org/works?query.title=Defending+Against+Indirect+Prompt+Injection+Attacks+With+Spotlighting&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2403.14720: Defending Against Indirect Prompt Injection Attacks With Spotlighting"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Defending Against Indirect Prompt Injection Attacks With Spotlighting"
+      ],
+      "twitter:description": [
+        "Large Language Models (LLMs), while powerful, are built and trained to process a single text input. In common applications, multiple inputs can be processed by concatenating them together into a..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Defending Against Indirect Prompt Injection Attacks With Spotlighting"
+      ],
+      "citation_author": [
+        "Hines, Keegan",
+        "Lopez, Gary",
+        "Hall, Matthew",
+        "Zarfati, Federico",
+        "Zunger, Yonatan",
+        "Kiciman, Emre"
+      ],
+      "citation_date": [
+        "2024/03/20"
+      ],
+      "citation_online_date": [
+        "2024/03/20"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2403.14720"
+      ],
+      "citation_arxiv_id": [
+        "2403.14720"
+      ],
+      "citation_abstract": [
+        "Large Language Models (LLMs), while powerful, are built and trained to process a single text input. In common applications, multiple inputs can be processed by concatenating them together into a single stream of text. However, the LLM is unable to distinguish which sections of prompt belong to various input sources. Indirect prompt injection attacks take advantage of this vulnerability by embedding adversarial instructions into untrusted data being processed alongside user commands. Often, the LLM will mistake the adversarial instructions as user commands to be followed, creating a security vulnerability in the larger system. We introduce spotlighting, a family of prompt engineering techniques that can be used to improve LLMs' ability to distinguish among multiple sources of input. The key insight is to utilize transformations of an input to provide a reliable and continuous signal of its provenance. We evaluate spotlighting as a defense against indirect prompt injection attacks, and find that it is a robust defense that has minimal detrimental impact to underlying NLP tasks. Using GPT-family models, we find that spotlighting reduces the attack success rate from greater than {50}\\% to below {2}\\% in our experiments with minimal impact on task efficacy."
+      ]
+    },
+    "details": {
+      "title": "Title: Defending Against Indirect Prompt Injection Attacks With Spotlighting",
+      "authors": "Authors: Keegan Hines , Gary Lopez , Matthew Hall , Federico Zarfati , Yonatan Zunger , Emre Kiciman",
+      "dateline": "[Submitted on 20 Mar 2024]",
+      "metatable": "Subjects: Cryptography and Security (cs.CR) ; Computation and Language (cs.CL); Machine Learning (cs.LG) Cite as: arXiv:2403.14720 [cs.CR] (or arXiv:2403.14720v1 [cs.CR] for this version) https://doi.org/10.48550/arXiv.2403.14720 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1063/5.0286966",
+      "type": "proceedings-article",
+      "title": [
+        "Defending against prompt injection attacks in LLMs"
+      ],
+      "author": [
+        {
+          "given": "Varin",
+          "family": "Thakur",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Udbhav",
+          "family": "Garg",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "AIP Conference Proceedings",
+        "THE 2ND MAKASSAR CONFERENCE OF APPLIED SCIENCES (MCAS): Synergizing Research and Innovation for Mitigating Climate Change"
+      ],
+      "volume": "3370",
+      "issue": null,
+      "page": "050021",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "AIP Publishing",
+      "URL": "https://doi.org/10.1063/5.0286966",
+      "event": {
+        "name": "THE 2ND MAKASSAR CONFERENCE OF APPLIED SCIENCES (MCAS): Synergizing Research and Innovation for Mitigating Climate Change",
+        "location": "Makassar, Indonesia"
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.755
+    },
+    {
+      "DOI": "10.1145/3690624.3709179",
+      "type": "proceedings-article",
+      "title": [
+        "Benchmarking and Defending against Indirect Prompt Injection Attacks on Large Language Models"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-2786-6395",
+          "authenticated-orcid": false,
+          "given": "Jingwei",
+          "family": "Yi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Science and Technology of China, Heifei, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5169-3180",
+          "authenticated-orcid": false,
+          "given": "Yueqi",
+          "family": "Xie",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Hong Kong University of Science and Technology, Hong Kong, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3571-7808",
+          "authenticated-orcid": false,
+          "given": "Bin",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft Corporation, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5429-468X",
+          "authenticated-orcid": false,
+          "given": "Emre",
+          "family": "Kiciman",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft Corporation, Redmond, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0794-7681",
+          "authenticated-orcid": false,
+          "given": "Guangzhong",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Science and Technology of China, Hefei, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8608-8482",
+          "authenticated-orcid": false,
+          "given": "Xing",
+          "family": "Xie",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft Corporation, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9138-1272",
+          "authenticated-orcid": false,
+          "given": "Fangzhao",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft Corporation, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1809-1820",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            20
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            20
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            20
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "URL": "https://doi.org/10.1145/3690624.3709179",
+      "event": {
+        "name": "KDD '25: The 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+        "location": "Toronto ON Canada",
+        "acronym": "KDD '25",
+        "sponsor": [
+          "SIGMOD ACM Special Interest Group on Management of Data",
+          "SIGKDD ACM Special Interest Group on Knowledge Discovery in Data"
+        ]
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.708
+    },
+    {
+      "DOI": "10.18653/v1/2025.findings-emnlp.1060",
+      "type": "proceedings-article",
+      "title": [
+        "Defending against Indirect Prompt Injection by Instruction Detection"
+      ],
+      "author": [
+        {
+          "given": "Tongyu",
+          "family": "Wen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chenglong",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiyuan",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Haoyu",
+          "family": "Tang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yueqi",
+          "family": "Xie",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lingjuan",
+          "family": "Lyu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhicheng",
+          "family": "Dou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fangzhao",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EMNLP 2025"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "19472-19487",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.findings-emnlp.1060",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+        "location": "Suzhou, China",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              11
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.715
+    },
+    {
+      "DOI": "10.1109/icaiic68212.2026.11454261",
+      "type": "proceedings-article",
+      "title": [
+        "Defending Against Prompt Injection Attacks Using Automatic System Prompt Engineering"
+      ],
+      "author": [
+        {
+          "given": "Hyeokjin",
+          "family": "Kwon",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "School of Computer Science and Engineering, Yeungnam University,Gyeongsan,Republic of Korea"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Wooguil",
+          "family": "Pak",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Computer Science and Engineering, Yeungnam University,Gyeongsan,Republic of Korea"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 International Conference on Artificial Intelligence in Information and Communication (ICAIIC)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1200-1203",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            24
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            24
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/icaiic68212.2026.11454261",
+      "event": {
+        "name": "2026 International Conference on Artificial Intelligence in Information and Communication (ICAIIC)",
+        "location": "Tokyo, Japan",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              24
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              27
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.613
+    },
+    {
+      "DOI": "10.18653/v1/2025.findings-naacl.395",
+      "type": "proceedings-article",
+      "title": [
+        "Adaptive Attacks Break Defenses Against Indirect Prompt Injection Attacks on LLM Agents"
+      ],
+      "author": [
+        {
+          "given": "Qiusi",
+          "family": "Zhan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Richard",
+          "family": "Fang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Henil Shalin",
+          "family": "Panchal",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Kang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: NAACL 2025"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "7101-7117",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "URL": "https://doi.org/10.18653/v1/2025.findings-naacl.395",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: NAACL 2025",
+        "location": "Albuquerque, New Mexico",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        }
+      },
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.638
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# Python 3.13.14 used for the recorded run. Exact direct/transitive runtime lock.
+numpy==2.2.5
+scipy==1.16.2
+pytest==9.0.3
+coverage==7.14.0
+colorama==0.4.6; sys_platform == 'win32'
+iniconfig==2.3.0
+packaging==25.0
+pluggy==1.6.0
+Pygments==2.19.2

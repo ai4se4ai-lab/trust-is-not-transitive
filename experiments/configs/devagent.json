@@ -1,0 +1,13 @@
+{
+  "layers": [
+    {"name":"L1","scope":["semantic","deterministic"],"requires":[],"provides":["quarantine","calibrated_context"],"view":"metadata"},
+    {"name":"L2","scope":["semantic"],"requires":["calibrated_context"],"provides":["quarantine","calibrated_context"],"view":"raw"},
+    {"name":"L3","scope":["semantic"],"requires":["quarantine","calibrated_context"],"provides":[],"view":"structured-v1"}
+  ],
+  "trust": [
+    {"caller":"L1","callee":"L2","property":"semantic","evidence":["calibrated_context"]},
+    {"caller":"L2","callee":"L3","property":"semantic","evidence":["quarantine","calibrated_context"]}
+  ],
+  "mandatory":["production_approval","secret_egress"],
+  "rules":["production_approval","secret_egress"]
+}

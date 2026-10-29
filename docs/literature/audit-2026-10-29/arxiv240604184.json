@@ -1,0 +1,483 @@
+{
+  "key": "arxiv240604184",
+  "original": {
+    "url": "https://arxiv.org/abs/2406.04184",
+    "howpublished": "arXiv:2406.04184",
+    "year": "2024",
+    "author": "Rodriguez, Andoni and Amir, Guy and Corsi, Davide and Sanchez, Cesar and Katz, Guy",
+    "title": "{Shield Synthesis for LTL Modulo Theories}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv240604184"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2406.04184",
+    "https://api.crossref.org/works?query.title=Shield+Synthesis+for+LTL+Modulo+Theories&rows=5"
+  ],
+  "errors": [],
+  "arxiv": {
+    "meta": {
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "msapplication-TileColor": [
+        "#da532c"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "Abstract page for arXiv paper 2406.04184: Shield Synthesis for LTL Modulo Theories"
+      ],
+      "twitter:site": [
+        "@arxiv"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "Shield Synthesis for LTL Modulo Theories"
+      ],
+      "twitter:description": [
+        "In recent years, Machine Learning (ML) models have achieved remarkable success in various domains. However, these models also tend to demonstrate unsafe behaviors, precluding their deployment in..."
+      ],
+      "twitter:image": [
+        "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+      ],
+      "twitter:image:alt": [
+        "arXiv logo"
+      ],
+      "citation_title": [
+        "Shield Synthesis for LTL Modulo Theories"
+      ],
+      "citation_author": [
+        "Rodriguez, Andoni",
+        "Amir, Guy",
+        "Corsi, Davide",
+        "Sanchez, Cesar",
+        "Katz, Guy"
+      ],
+      "citation_date": [
+        "2024/06/06"
+      ],
+      "citation_online_date": [
+        "2025/02/14"
+      ],
+      "citation_pdf_url": [
+        "https://arxiv.org/pdf/2406.04184"
+      ],
+      "citation_arxiv_id": [
+        "2406.04184"
+      ],
+      "citation_abstract": [
+        "In recent years, Machine Learning (ML) models have achieved remarkable success in various domains. However, these models also tend to demonstrate unsafe behaviors, precluding their deployment in safety-critical systems. To cope with this issue, ample research focuses on developing methods that guarantee the safe behaviour of a given ML model. A prominent example is shielding which incorporates an external component (a ``shield'') that blocks unwanted behavior. Despite significant progress, shielding suffers from a main setback: it is currently geared towards properties encoded solely in propositional logics (e.g., LTL) and is unsuitable for richer logics. This, in turn, limits the widespread applicability of shielding in many real-world systems. In this work, we address this gap, and extend shielding to LTL modulo theories, by building upon recent advances in reactive synthesis modulo theories. This allowed us to develop a novel approach for generating shields conforming to complex safety specifications in these more expressive, logics. We evaluated our shields and demonstrate their ability to handle rich data with temporal dynamics. To the best of our knowledge, this is the first approach for synthesizing shields for such expressivity."
+      ]
+    },
+    "details": {
+      "title": "Title: Shield Synthesis for LTL Modulo Theories",
+      "authors": "Authors: Andoni Rodriguez , Guy Amir , Davide Corsi , Cesar Sanchez , Guy Katz",
+      "dateline": "[Submitted on 6 Jun 2024 ( v1 ), last revised 14 Feb 2025 (this version, v2)]",
+      "comments": "To appear in AAAI 2025",
+      "metatable": "Comments: To appear in AAAI 2025 Subjects: Logic in Computer Science (cs.LO) ; Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Robotics (cs.RO) Cite as: arXiv:2406.04184 [cs.LO] (or arXiv:2406.04184v2 [cs.LO] for this version) https://doi.org/10.48550/arXiv.2406.04184 Focus to learn more arXiv-issued DOI via DataCite"
+    }
+  },
+  "crossref": [
+    {
+      "DOI": "10.1609/aaai.v39i14.33660",
+      "type": "journal-article",
+      "title": [
+        "Shield Synthesis for LTL Modulo Theories"
+      ],
+      "author": [
+        {
+          "given": "Andoni",
+          "family": "Rodríguez",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Guy",
+          "family": "Amir",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Davide",
+          "family": "Corsi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "César",
+          "family": "Sánchez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Guy",
+          "family": "Katz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the AAAI Conference on Artificial Intelligence"
+      ],
+      "volume": "39",
+      "issue": "14",
+      "page": "15134-15142",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            11
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            11
+          ]
+        ]
+      },
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "URL": "https://doi.org/10.1609/aaai.v39i14.33660",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 1.0
+    },
+    {
+      "DOI": "10.1007/978-3-031-98685-7_11",
+      "type": "book-chapter",
+      "title": [
+        "Counter Example Guided Reactive Synthesis for LTL Modulo Theories$$^*$$"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0006-3464-8667",
+          "authenticated-orcid": false,
+          "given": "Andoni",
+          "family": "Rodríguez",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3478-3408",
+          "authenticated-orcid": false,
+          "given": "Felipe",
+          "family": "Gorostiaga",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3927-4773",
+          "authenticated-orcid": false,
+          "given": "Cesar",
+          "family": "Sánchez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Computer Aided Verification"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "224-248",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            23
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Switzerland",
+      "URL": "https://doi.org/10.1007/978-3-031-98685-7_11",
+      "event": null,
+      "ISBN": [
+        "9783031986840",
+        "9783031986857"
+      ],
+      "relation": null,
+      "title_similarity": 0.696
+    },
+    {
+      "DOI": "10.1609/aaai.v38i9.28939",
+      "type": "journal-article",
+      "title": [
+        "Adaptive Reactive Synthesis for LTL and LTLf Modulo Theories"
+      ],
+      "author": [
+        {
+          "given": "Andoni",
+          "family": "Rodríguez",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "César",
+          "family": "Sánchez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the AAAI Conference on Artificial Intelligence"
+      ],
+      "volume": "38",
+      "issue": "9",
+      "page": "10679-10686",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            24
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            24
+          ]
+        ]
+      },
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "URL": "https://doi.org/10.1609/aaai.v38i9.28939",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.713
+    },
+    {
+      "DOI": "10.1007/978-3-032-26220-2_3",
+      "type": "book-chapter",
+      "title": [
+        "Maximum Realizability for LTL Modulo Theories"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0006-3464-8667",
+          "authenticated-orcid": false,
+          "given": "Andoni",
+          "family": "Rodríguez Herrero",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3927-4773",
+          "authenticated-orcid": false,
+          "given": "César",
+          "family": "Sánchez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Formal Methods"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "50-70",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            18
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Switzerland",
+      "URL": "https://doi.org/10.1007/978-3-032-26220-2_3",
+      "event": null,
+      "ISBN": [
+        "9783032262196",
+        "9783032262202"
+      ],
+      "relation": null,
+      "title_similarity": 0.64
+    },
+    {
+      "DOI": "10.1049/iet-cdt.2017.0112",
+      "type": "journal-article",
+      "title": [
+        "LTL transformation modulo positive transitions"
+      ],
+      "author": [
+        {
+          "given": "Mustapha",
+          "family": "Bourahla",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Laboratory of Pure and Applied Mathematics Computer Science Department University of M'Sila BP 166 Ichebilia M'Sila Algeria"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IET Computers &amp; Digital Techniques"
+      ],
+      "volume": "11",
+      "issue": "6",
+      "page": "205-213",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            10,
+            17
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2017,
+            11
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            10,
+            17
+          ]
+        ]
+      },
+      "publisher": "Institution of Engineering and Technology (IET)",
+      "URL": "https://doi.org/10.1049/iet-cdt.2017.0112",
+      "event": null,
+      "ISBN": null,
+      "relation": null,
+      "title_similarity": 0.442
+    }
+  ]
+}

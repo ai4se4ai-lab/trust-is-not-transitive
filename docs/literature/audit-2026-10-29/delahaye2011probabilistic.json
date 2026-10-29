@@ -1,0 +1,105 @@
+{
+  "key": "delahaye2011probabilistic",
+  "original": {
+    "doi": "10.1007/s10703-010-0107-8",
+    "year": "2011",
+    "pages": "1--32",
+    "number": "1",
+    "volume": "38",
+    "journal": "Formal Methods in System Design",
+    "title": "Probabilistic Contracts: A Compositional Reasoning Methodology for the Design of Systems with Stochastic and/or Non-Deterministic Aspects",
+    "author": "Delahaye, Beno{\\^\\i}t and Caillaud, Beno{\\^\\i}t and Legay, Axel",
+    "ENTRYTYPE": "article",
+    "ID": "delahaye2011probabilistic"
+  },
+  "sources": [
+    "https://api.crossref.org/works/10.1007/s10703-010-0107-8"
+  ],
+  "errors": [],
+  "crossref": [
+    {
+      "DOI": "10.1007/s10703-010-0107-8",
+      "type": "journal-article",
+      "title": [
+        "Probabilistic contracts: a compositional reasoning methodology for the design of systems with stochastic and/or non-deterministic aspects"
+      ],
+      "author": [
+        {
+          "given": "Benoît",
+          "family": "Delahaye",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Benoît",
+          "family": "Caillaud",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Axel",
+          "family": "Legay",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Formal Methods in System Design"
+      ],
+      "volume": "38",
+      "issue": "1",
+      "page": "1-32",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            12,
+            8
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2011,
+            2
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2010,
+            12,
+            8
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "URL": "https://doi.org/10.1007/s10703-010-0107-8",
+      "event": null,
+      "ISBN": null,
+      "relation": {},
+      "title_similarity": 1.0
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+https://arxiv.org/pdf/2305.18404
+
+arXiv:2305.18404v3  [cs.CL]  8 Jul 2023
+Conformal Prediction with Large Language Models
+for Multi-Choice Question Answering
+Bhawesh Kumar * 1 Charles Lu * 2 Gauri Gupta 2 Anil Palepu 3 David Bellamy 1 Ramesh Raskar 2
+Andrew Beam 1
+Abstract
+As large language models are widely developed,
+robust uncertainty quantiﬁcation techniques will
+become crucial for safe deployment in high-
+stakes scenarios. This work explores how con-
+formal prediction can quantify uncertainty in
+language models for multiple-choice question-
+answering. We ﬁnd that the uncertainty estimates
+from conformal prediction are tightly correlated
+with prediction accuracy. This observation can
+be helpful in downstream applications such as se-
+lective classiﬁcation and ﬁltering out low-quality
+predictions. We also investigate the exchange-
+ability assumption required by conformal predic-
+tion to out-of-subject questions, which may be
+a more realistic scenario for many practical ap-
+plications. Our work contributes towards more
+trustworthy and reliable usage of large language
+models in safety-critical situations, where robust
+guarantees of error rate are required.
+1. Introduction
+Large language models (LLMs) have recently achieved im-
+pressive performance on a number of NLP tasks, such as
+machine translation, text summarization, and code gen-
+eration.
+However, lingering concerns of trust and bias
+still limit their widespread application for critical decision-
+making domains such as healthcare.
+One well-known issue with current LLMs is their tendency
+to “hallucinate” false information with seemingly high con-
+ﬁdence. These hallucinations can occur when the model
+generates outputs not grounded in any factual basis or
+when the prompt is highly unusual or ambiguous. This
+*Equal contribution
+1Harvard University 2MIT Media Lab
+3Harvard-MIT Health Sciences & Technology.
+Correspon-
+dence to: Bhawesh Kumar <bhaweshk@mit.edu>, Charlie Lu
+<luchar@mit.edu>.
+This work was published at the ICML 2023 (Neural Conversa-
+tional AI TEACH) workshop. Honolulu, Hawaii, USA. Copyright
+2023 by the author(s).
+behavior of LLMs may also result from how these mod-
+els are trained — using statistical sampling for next-token
+prediction — which can progressively increase the likeli-
+hood of factual errors as the length of generated tokens
+increases (LeCun, 2023). Factually incorrect outputs may
+confuse and deceive users into drawing wrong conclusions,
+ultimately decreasing the overall system’s trustworthiness.
+Decisions based on unpredictable or biased model behavior
+could have signiﬁcant negative and socially harmful conse-
+quences in high-stakes domains such as healthcare and law.
+Therefore, we seek to explore principled uncertainty quan-
+tiﬁcation (UQ) techniques for LLMs that can provide guar-
+anteed error rates of model predictions. Ideally, these UQ
+techniques should be model agnostic and easy to imple-
+ment without requiring model retraining due to the inten-
+sive computing costs and limited API access associated
+with many LLMs. To this end, we investigate conformal
+prediction, a distribution-free UQ framework, to provide
+LLMs for the task of multiple-choice question-answering
+(MCQA).
+Based on our experiments, we ﬁnd the uncertainty, as pro-
+vided by conformal prediction, to be strongly correlated
+with accuracy, enabling applications such as ﬁltering out
+low-quality predictions to prevent a degraded user experi-
+ence. We also verify the importance of the exchangeability
+assumption in conformal prediction (see section 2) for guar-
+anteeing a user-speciﬁed level of errors.
+To summarize, our contributions are the following:
+• we adapt conformal prediction for MCQA tasks to
+provide distribution-free uncertainty quantiﬁcation in
+LLMs,
+• show how the uncertainty provided by conformal pre-
+diction can be useful for downstream tasks such as se-
+lective classiﬁcation,
+• and assess the performance of conformal prediction
+when the exchangeability assumption is violated for
+in-context learning in LLMs.
+1
