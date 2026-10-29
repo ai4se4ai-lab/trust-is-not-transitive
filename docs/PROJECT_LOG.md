@@ -35,3 +35,18 @@ Phase 2 starts after this gate. Java is absent, Docker daemon is unavailable,
 and only Docker's WSL distribution exists. Checking whether official PRISM can
 be provisioned locally; otherwise record the independent finite-state checker
 as a scoped substitute, never as a PRISM/Storm run.
+
+### Phase 2 gate — passed (scoped theory)
+
+Definitions D1–D9 and detailed proofs T0–T4 are in `formal/FRAMEWORK.md`.
+Corrected unsafe-conditional independence, routing selection, per-decision
+versus session risk, pairwise versus higher-order dependence, and threshold
+optimality assumptions. No new mathematical novelty claimed. Registry lint
+passes but is explicitly not a semantic notation proof. Independent exhaustive
+checking passes; 10,000 seeded random-law sanity checks pass.
+Official PRISM 4.11 was provisioned into ignored `.tools/`; real explicit-engine
+runs of all six trace/configuration cases match the independent checker on
+both properties. Exact installer/JAR/model hashes and Java release provenance
+are retained. Adoptium's API returned 403; a pinned official GitHub release
+worked. Lean/Isabelle mechanization omitted in favor of the allowed detailed
+proof alternative. The PRISM abstraction does not verify the Python runtime.

@@ -1,0 +1,46 @@
+{
+  "engine": "independent exhaustive Python finite-state checker",
+  "canonical": [
+    {
+      "checked": false,
+      "trace": 0,
+      "execute": false,
+      "bad_execute": false
+    },
+    {
+      "checked": false,
+      "trace": 1,
+      "execute": true,
+      "bad_execute": false
+    },
+    {
+      "checked": false,
+      "trace": 2,
+      "execute": true,
+      "bad_execute": true
+    },
+    {
+      "checked": true,
+      "trace": 0,
+      "execute": false,
+      "bad_execute": false
+    },
+    {
+      "checked": true,
+      "trace": 1,
+      "execute": true,
+      "bad_execute": false
+    },
+    {
+      "checked": true,
+      "trace": 2,
+      "execute": false,
+      "bad_execute": false
+    }
+  ],
+  "invariant_states": 64,
+  "parity_intersections": [
+    0.0,
+    0.25
+  ]
+}
