@@ -89,7 +89,7 @@ class GuardRuntime:
         return decision
 
 
-def policy_fingerprint(spec: Specification, threshold: float, scorer_version: str='lexical-v1',
+def policy_fingerprint(spec: Specification, threshold: float, scorer_version: str='lexical-v2',
                        judge_version: str='structured-surrogate-v1', environment: str='sandbox') -> str:
     # Trusted plugin versions must identify immutable implementations; a malicious
     # host/plugin can lie about this identity and is outside the threat model.

@@ -80,3 +80,14 @@ real-model/external-validation hypothesis. Benchmark code license audit stored;
 data terms are not inferred from code terms. No participant study fabricated.
 GPU is present but installed torch is CPU-only; no API credentials established.
 Phase 5 execution begins only after this frozen protocol.
+
+### Phase 5 initial run and A1 amendment
+
+Original run completed without infrastructure failure. All candidate families
+were infeasible at the frozen budget; fail-closed runtime therefore denied all
+uncertified benign actions too. This is a negative utility outcome, retained.
+Post-run inspection discovered floating-point boundary arithmetic in lexical-v1.
+A1 documents a numeric-only correction (integer hundredths), fresh seeds 10–19
+and separate exploratory output. No primary thresholds/budgets are retuned and
+original held-out results are not overwritten. Synthesis sufficient-count
+logging is strengthened; original count omission is disclosed.

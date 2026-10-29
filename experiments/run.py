@@ -186,6 +186,7 @@ def synthesis_study(raw):
             except ValueError:selected=None
             mixture=optimal_mixture(np.r_[0,risks],np.r_[1001,costs],.1)
             rows.append({'seed':seed,'layers':layers,'risks':risks.tolist(),'costs':costs.tolist(),'bounds':bounds.tolist(),
+                         'calibration_counts':calibration.sum(axis=0).tolist(),'n_calibration':len(calibration),
                          'selected':selected,'exhaustive':expected,'mixture_weights':mixture.tolist(),
                          'mixture_risk':float(mixture@np.r_[0,risks]),'mixture_cost':float(mixture@np.r_[1001,costs])})
     write_json(raw/'synthesis.json',rows)
@@ -212,6 +213,10 @@ def adaptive_study(raw):
 
 def main():
     raw=ROOT/'results/raw'
+    exploratory='--exploratory-numeric' in sys.argv
+    if exploratory:
+        raw=raw/'exploratory_numeric'
+        CONFIG['seeds']=list(range(10,20))
     raw.mkdir(parents=True,exist_ok=True)
     if (raw/'decisions.jsonl.gz').exists():
         raise SystemExit('Held-out run already exists. Use tasks all --fresh only for explicit reproduction; do not tune/retest silently.')
@@ -224,7 +229,7 @@ def main():
         function(raw)
     write_json(raw/'run.json',{'elapsed_seconds':time.perf_counter()-start,'config_sha256':hashlib.sha256((ROOT/'experiments/configs/pilot.json').read_bytes()).hexdigest(),
                              'prereg_tag':subprocess.check_output(['git','rev-parse','prereg-v1^{}'],cwd=ROOT,text=True).strip(),
-                             'status':'complete','scope':'preregistered synthetic feasibility study'})
+                             'status':'complete','scope':'exploratory numeric-correction replication' if exploratory else 'preregistered synthetic feasibility study'})
     print('All local experiments complete',flush=True)
 
 

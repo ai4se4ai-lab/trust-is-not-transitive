@@ -20,12 +20,12 @@ class Scorer(Protocol):
 
 class LexicalScorer:
     """Handwritten score for controlled fixtures; no learned-model claim."""
-    version='lexical-v1'
+    version='lexical-v2'
 
     def __call__(self, text: str) -> float:
         lower=text.casefold()
         suspicious=['ignore','override','secret','.env','reviewer','instruction','send','upload']
-        return min(0.98,0.04+0.12*sum(token in lower for token in suspicious))
+        return min(98,4+12*sum(token in lower for token in suspicious))/100
 
 
 def checked_score(scorer: Scorer, text: str) -> float:
