@@ -1,13 +1,16 @@
 {
   "status": "passed",
-  "checkout_commit": "76831bb",
+  "checkout_commit": "1187502",
+  "environment": "fresh venv installed exclusively from requirements-paper.lock",
   "metric_cells_compared": 42,
   "scientific_fields": [
     "n",
     "unsafe",
     "benign",
     "misses",
+    "allowed",
     "joint_risk",
+    "accepted_conditional_risk",
     "attack_success",
     "benign_utility",
     "false_block_rate",
@@ -16,9 +19,9 @@
     "reach_rates"
   ],
   "known_differences": [
-    "wall-clock and CPU timing",
-    "environment paths and execution commit",
-    "regenerated primary synthesis retains formerly omitted calibration counts"
+    "measured CPU/checker/wall-clock timings",
+    "environment paths/execution commit",
+    "regenerated primary synthesis includes formerly omitted calibration counts"
   ],
-  "full_pipeline": "tests, real PRISM, both studies, analyses, PDF and verification targets passed in detached checkout"
+  "pipeline": "56 tests, real PRISM, both studies, analysis, semantic replay, manifest, PDF and verification targets passed in detached checkout"
 }

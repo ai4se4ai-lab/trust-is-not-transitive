@@ -49,7 +49,7 @@ def main() -> None:
     for r in records:
         entries.append('@misc{'+r['key']+',\n  title = {{'+escape(r['title'])+'}},\n  author = {'+
                        ' and '.join(escape(a) for a in r['authors'])+'},\n  year = {'+r['year']+'},\n  howpublished = {arXiv preprint},\n  url = {'+r['url']+'}\n}')
-    (paper/'refs.bib').write_text('\n\n'.join(entries)+'\n', encoding='utf-8')
+    (paper/'references.bib').write_text('\n\n'.join(entries)+'\n', encoding='utf-8')
     print(f'{len(records)} opened-source entries; unknown means unestablished, never absent.')
 
 

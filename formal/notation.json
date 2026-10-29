@@ -18,5 +18,9 @@
   "epsilon": "target per-decision residual risk",
   "q": "randomized escalation probability",
   "d": "incremental escalation cost",
-  "lambda": "Lagrange multiplier or nested-family conservatism parameter, scoped separately"
+  "lambda": "Lagrange multiplier for escalation optimization",
+  "t": "increasing conservatism parameter for nested CRC losses",
+  "chi": "condition on a directed trust edge, distinct from contract C_i",
+  "s": "bounded suspiciousness score",
+  "tau": "cheap acceptance threshold"
 }

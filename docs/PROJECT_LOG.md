@@ -142,3 +142,39 @@ passed all 56 tests plus smoke. Full author regeneration in a detached checkout
 passed; observations in the main repository remain original.
 
 Phase 8 starts with a fresh PhD-reader agent receiving only PDF/LaTeX.
+
+
+### Phase 8 gate — reader clarity passed, scientific limitations retained
+
+Fresh reader assessed 103 entries; 28 initial scores were 2 or 3. Rewrites
+explicitly separate canonical exfiltration from semantic patch fixtures,
+whole-policy certification from route theory, confidence from decision risk,
+and ideal optimization from finite selection. CRC/optimization passages were
+rewritten with defined variables, objectives and causal examples. All 28
+reassessed entries score 0 or 1; final precision check finds no new 2/3 and
+correct comprehension. Original scores remain preserved; no human study
+or scientific endorsement is implied. Main manuscript remains twelve pages
+with generated figures/numbers and no overfull boxes or unresolved references.
+
+Literature-depth correction: initial Phase 1 wording overstated closest-work
+full-text depth at that instant; AgentSpec full text was revisited during this
+reader pass. Bibliographic identities were opened/verified; scoping-review
+limits remain explicit. Distributed metadata now contains facts/hashes rather
+than verbatim source abstracts; local evidence stays ignored.
+
+Reproduction: fresh exact-lock environment and detached checkout 1187502 ran
+the complete pipeline successfully, including 56 tests, real PRISM, both
+historical studies, semantic replay, PDF and verification. Scientific outputs
+match originals except known timing/environment and synthesis-count-availability
+differences. Git attributes now preserve recorded metadata bytes across clones
+while fixing source LF endings, so original-file hash checks are portable.
+
+Review diffs use actual latexdiff 1.4.0 with Algorithm::Diff 1.201. Missing Perl
+module was provisioned in ignored .tools; it is not a fabricated visual diff.
+
+### Phase 9 — local pilot release preparation
+
+Final report records all hypotheses, amended/negative results, unaltered four-
+round scores, reader outcomes and partial/unmet master-prompt requirements.
+The project is a local v0.1.0 pilot, not a completed TSE effectiveness study
+or the requested completed-research v1.0. No remote push/release or DOI.

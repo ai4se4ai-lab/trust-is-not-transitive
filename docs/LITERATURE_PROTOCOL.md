@@ -25,6 +25,9 @@ confirmed primary-source details remain unverified; no invented bibliography
 entries are used to fill gaps. Exhaustiveness is not claimed.
 
 Evidence HTML is kept locally for audit and is not a redistributable dataset.
+The distributed metadata index retains bibliographic facts, verification flags
+and response hashes rather than verbatim abstracts. Abstracts are inspected in
+the ignored local source evidence; the CSV review notes are our own summaries.
 All bibliography entries refer to the opened arXiv version, without inventing
 publisher venues. Classical context is additionally grounded in Schneider's
 author-hosted paper, Leucker/Schallhart's author-hosted paper and publisher

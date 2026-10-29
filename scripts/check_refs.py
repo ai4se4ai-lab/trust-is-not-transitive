@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[1]
 
 
 def main():
-    bib=(ROOT/'paper/refs.bib').read_text(encoding='utf-8')
+    bib=(ROOT/'paper/references.bib').read_text(encoding='utf-8')
     keys=re.findall(r'@\w+\{([^,]+),',bib)
     assert len(keys)==len(set(keys))
     rows=list(csv.DictReader((ROOT/'paper/refs_verification.csv').open(encoding='utf-8')))

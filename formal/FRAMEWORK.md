@@ -6,8 +6,9 @@ reasoning. Their mathematical novelty is not claimed.
 
 ## Definitions (the same three traces throughout)
 
-**D1: agent, trace and provenance.** An agent proposes an action a from a finite
-typed action alphabet after observations o. A trace prefix h is a sequence of
+**D1: agent, trace and provenance.** An agent proposes an action a from finitely
+many typed constructors after observations o; parameter values need not form a
+finite alphabet. The PRISM model is a separate finite abstraction. A trace prefix h is a sequence of
 observations, proposals and mediated outcomes. Data labels are subsets of
 {untrusted, secret}; the empty set denotes trusted/public and the join is union.
 Derived data inherit the union of all sources. "Derived" is a provenance history
@@ -68,8 +69,8 @@ does not imply Ai is true in a composition. Tj is a witness that a raw view
 does not satisfy a structured-view judge's Ai. Tb passing a judge does not
 discharge the premise for Tj.
 
-**D7: conditioned trust.** Trust(i,j,P,C) means layer i may consume j's verdict
-for property P only when condition C is discharged by trusted evidence at
+**D7: conditioned trust.** Trust(i,j,P | chi) means layer i may consume j's verdict
+for property P only when condition chi is discharged by trusted evidence at
 that edge. A trust edge contains no authority to introduce another edge. The
 checker validates direct edges, interfaces, property scopes and acyclicity.
 A checked closure is sound only if each intermediate contract guarantee entails
@@ -149,9 +150,9 @@ Frechet feasibility. Pairwise correlations do not characterize n-way events.
 For an early-accept cascade use T1's route sum; the min/product bound is invalid.
 
 Expected conformal risk control: fix a nested family of loss functions
-l_lambda(z) in [0,1] that decreases as lambda increases, with a zero-loss
-fallback. For n exchangeable calibration samples, choose the smallest lambda
-with (sum l_lambda + 1)/(n+1)<=alpha. Then E_cal,test[l_lambdahat(Ztest)]<=alpha
+l_t(z) in [0,1] that decreases as t increases, with a zero-loss
+fallback. For n exchangeable calibration samples, choose the smallest t
+with (sum l_t + 1)/(n+1)<=alpha. Then E_cal,test[l_that(Ztest)]<=alpha
 under the CRC theorem's monotonicity and regularity assumptions. The library
 uses finite nested thresholds and fail-closed fallback. This is a marginal
 expectation guarantee, not a 1-delta confidence statement about realized
@@ -173,6 +174,8 @@ bound that adaptive attack. T* is independently denied by deterministic policy.
 Let x be the trusted decision view. Accepting cheap has conditional risk r0(x)
 and escalating has risk r1(x) and extra cost d(x)>0. Consider randomized routing
 q(x) in [0,1], minimize E[c0+q*d] subject to E[r0-q*(r0-r1)]<=epsilon.
+Expected costs are finite/integrable; a measurable feasible policy and finite
+nonnegative multiplier satisfying complementary slackness are explicit premises.
 For any multiplier lambda>=0, pointwise Lagrangian minimization escalates iff
 lambda*(r0-r1)>d, accepts iff the inequality reverses, and may randomize on
 ties. The inequality follows directly by collecting the coefficient of q in

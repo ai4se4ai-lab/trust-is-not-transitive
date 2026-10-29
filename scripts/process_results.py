@@ -168,9 +168,16 @@ def study(directory):
             assert row['candidate']['threshold']==config['thresholds'][best]
         else:
             assert not feasible
+    # Behaviorally distinct grid points: thresholds with equal calibration
+    # losses and costs are the same policy on this fixture law.
+    grid={'distinct_policies':max(len(set(zip(r['calibration_misses'],r['calibration_cost_mean']))) for r in selections),
+          'distinct_risk_levels':max(len(set(r['calibration_misses'])) for r in selections),
+          'min_upper_risk':min(min(r['bounds']) for r in selections)}
     return {'scope':read_json(directory/'run.json')['scope'],'seeds':seeds,'decision_records':len(rows),
-            'metrics':metrics,'family_metrics':family_metrics,'analytic_fixture_population':population,
-            'seed_metrics':seed_metrics,'comparisons':comparisons,'selections':selections,
+            'baseline_threshold':next(r['threshold'] for r in rows if r['policy']=='classifier_only'),
+            'metrics':metrics,'family_metrics':family_metrics,'family_weights':weights,'analytic_fixture_population':population,
+            'seed_metrics':seed_metrics,'comparisons':comparisons,'selections':selections,'grid_structure':grid,
+            'environment':read_json(directory/'environment.json'),
             'coverage':{'n':len(coverage),'true_risk_bound_covered':int(true_covered),'coverage':true_covered/len(coverage),
                         'coverage_ci':proportion_ci(true_covered,len(coverage)),'target_covered':int(target_covered),
                         'finite_test_frequency_below_target':int(test_below)},
@@ -179,7 +186,8 @@ def study(directory):
                        'unique_clean':len({(r['policies'],r['layers']) for r in checker if not r['invalid']})},
             'synthesis':{'instances':len(synthesis),'mismatches':sum(r['selected']!=r['exhaustive'] for r in synthesis),
                          'original_calibration_counts_available':all('calibration_counts' in r for r in synthesis)},
-            'correlation':{'cells':len(corr),'max_absolute_sampling_gap':max(abs(r['empirical_joint']-r['model_joint']) for r in corr)},
+            'correlation':{'cells':len(corr),'points':[[r['mixture_weight'],r['empirical_joint']] for r in corr],'max_absolute_sampling_gap':max(abs(r['empirical_joint']-r['model_joint']) for r in corr),
+                           'conditional_miss_rates':corr[0]['miss_rates'],'samples_per_cell':corr[0]['samples']},
             'adaptive':adaptive_summary,
             'adaptive_scope':'uncertified decision-core functions at fixed threshold; checked_quarantine raw label is not GuardRuntime or its selected certificate',
             'runtime_seconds':read_json(directory/'run.json')['elapsed_seconds']}

@@ -9,6 +9,9 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from process_results import read_json,serialize
 
+BEGIN='% BEGIN GENERATED MACROS'
+END='% END GENERATED MACROS'
+
 LABELS={'rules_only':'Rules only','classifier_only':'Lexical only','judge_only_scripted':'Scripted judge only',
         'naive_delegation':'Invalid delegation','naive_with_sink':'Naive with sink',
         'checked_uncalibrated':'Checked, uncalibrated','checked_quarantine':'Checked, calibrated'}
@@ -51,6 +54,12 @@ def generate():
         macro(prefix+'CheckerMax',max(x['median_us'] for x in s['checker']['scalability']),base+'/checker/scalability#max-median-us')
         macro(prefix+'SynthInstances',s['synthesis']['instances'],base+'/synthesis/instances','d')
         macro(prefix+'SynthMismatches',s['synthesis']['mismatches'],base+'/synthesis/mismatches','d')
+        macro(prefix+'SeedFirst',min(s['seeds']),base+'/seeds#min','d')
+        macro(prefix+'SeedLast',max(s['seeds']),base+'/seeds#max','d')
+        macro(prefix+'Commit',s['environment']['code_commit'][:7],base+'/environment/code_commit#short')
+        macro(prefix+'DistinctPolicies',s['grid_structure']['distinct_policies'],base+'/grid_structure/distinct_policies','d')
+        macro(prefix+'DistinctRiskLevels',s['grid_structure']['distinct_risk_levels'],base+'/grid_structure/distinct_risk_levels','d')
+        macro(prefix+'MinBound',100*s['grid_structure']['min_upper_risk'],base+'/grid_structure/min_upper_risk#percent','.1f')
         rows=[]
         for index,(policy,label) in enumerate(LABELS.items()):
             m=s['metrics']['test'][policy]
@@ -63,7 +72,7 @@ def generate():
             hard=macro(stem+'Hard',m['hard_violations'],path+'/hard_violations','d')
             rows.append(f'{label} & {risk} & {utility} & {cost} & {p95} & {hard} \\\\')
         tables[study]='\n'.join(rows)
-        for policy in ['checked_quarantine','naive_with_sink','rules_only']:
+        for policy in ['checked_quarantine','checked_uncalibrated','naive_with_sink','rules_only']:
             population=s['analytic_fixture_population'][policy]
             stem=prefix+''.join(x.title() for x in policy.split('_'))+'Population'
             for field,suffix,scale in [('joint_risk','Risk',100),('benign_utility','Utility',100),('modeled_cost_units','Cost',1)]:
@@ -89,15 +98,46 @@ def generate():
         exp=summary['studies']['exploratory']['family_metrics'][family]
         n1=macro(stem+'Primary',primary['n'],f'/studies/primary/family_metrics/{family}/checked_quarantine/n','d')
         n2=macro(stem+'Exploratory',exp['checked_quarantine']['n'],f'/studies/exploratory/family_metrics/{family}/checked_quarantine/n','d')
+        mass=macro(stem+'Mass',100*summary['studies']['exploratory']['family_weights'][family],f'/studies/exploratory/family_weights/{family}#percent','.0f')
         vals=[]
         for policy,suffix in [('naive_with_sink','Naive'),('checked_quarantine','Checked')]:
             m=exp[policy]
             vals.append(macro(stem+suffix,100*m['allowed']/m['n'],f'/studies/exploratory/family_metrics/{family}/{policy}/allowed#fraction-percent','.0f'))
-        family_rows.append(f'{label} & {n1} & {n2} & {vals[0]} & {vals[1]} \\\\')
+        family_rows.append(f'{label} & {n1} & {n2} & {mass} & {vals[0]} & {vals[1]} \\\\')
     tables['family']='\n'.join(family_rows)
     macro('FormalStates',summary['formal']['invariant_states'],'/formal/invariant_states','d')
     macro('FormalInstances',summary['sanity']['instances'],'/sanity/instances','d')
     macro('PrismCases',summary['prism']['cases'],'/prism/cases','d')
+    ex=summary['studies']['exploratory']['selections'][0]
+    position=summary['design']['thresholds'].index(ex['candidate']['threshold'])
+    for name,value,pointer,fmt in [
+        ('ExampleSeed',ex['seed'],'/studies/exploratory/selections/0/seed','d'),
+        ('ExampleMisses',ex['calibration_misses'][position],f'/studies/exploratory/selections/0/calibration_misses/{position}','d'),
+        ('ExampleCalibrationCount',ex['n'],'/studies/exploratory/selections/0/n','d'),
+        ('ExampleThreshold',ex['candidate']['threshold'],'/studies/exploratory/selections/0/candidate/threshold','.2f'),
+        ('ExampleBound',100*ex['upper_risk'],'/studies/exploratory/selections/0/upper_risk#percent','.2f'),
+        ('BaselineThreshold',summary['studies']['primary']['baseline_threshold'],'/studies/primary/baseline_threshold','.2f'),
+        ('CoverageTarget',100*summary['design']['coverage_target'],'/design/coverage_target#percent','.0f'),
+        ('CoverageCalibrationCount',summary['design']['coverage_n_cal'],'/design/coverage_n_cal','d'),
+        ('CoverageTestCount',summary['design']['coverage_n_test'],'/design/coverage_n_test','d'),
+        ('DependenceSamples',summary['studies']['primary']['correlation']['samples_per_cell'],'/studies/primary/correlation/samples_per_cell','d')]:
+        macro(name,value,pointer,fmt)
+    for index,name in enumerate(['First','Second','Third']):
+        macro('Dependence'+name,summary['studies']['primary']['correlation']['conditional_miss_rates'][index],f'/studies/primary/correlation/conditional_miss_rates/{index}')
+    points=summary['studies']['primary']['correlation']['points']
+    macro('DependencePoints',' '.join(f'({x:.2f},{y:.4f})' for x,y in points),'/studies/primary/correlation/points')
+    env=summary['studies']['primary']['environment']
+    for name,key in [('EnvPython','python'),('EnvCpuCount','cpu_count'),('EnvPlatform','platform'),('EnvProcessor','processor')]:
+        macro(name,env[key],'/studies/primary/environment/'+key,'d')
+    for name,key in [('EnvNumpy','numpy'),('EnvScipy','scipy'),('EnvPytest','pytest')]:
+        macro(name,env['versions'][key],'/studies/primary/environment/versions/'+key)
+    for name,layer in [('CostRules','L1'),('CostScorer','L2'),('CostJudge','L3'),('CostApproval','L4')]:
+        macro(name,summary['design']['layer_costs'][layer],'/design/layer_costs/'+layer,'d')
+    grid=summary['design']['thresholds']
+    macro('ThresholdMin',grid[0],'/design/thresholds/0','.1f')
+    macro('ThresholdMax',grid[-1],'/design/thresholds/-1','.1f')
+    macro('ThresholdStep',grid[1]-grid[0],'/design/thresholds#step','.1f')
+    macro('CoveragePerSeed',summary['design']['coverage_replications_per_seed'],'/design/coverage_replications_per_seed','d')
     macro('CoreCoverage',summary['core_coverage'],'/core_coverage')
     macro('NominalConfidence',100*(1-summary['design']['delta']),'/design/delta#one-minus-percent','.0f')
     macro('PolicyClasses',len(summary['policy_inventory']['policies']),'/policy_inventory/policies#length','d')
@@ -116,57 +156,14 @@ def generate():
     # are macros rather than separate authored section/table files.
     for name,rows in tables.items():
         lines.append('\\newcommand{\\res'+name.title()+'Table}{%\n'+rows+'\n}')
-    (out/'macros.tex').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+    # Macros live inside the single main.tex, between fixed markers.
+    tex=ROOT/'paper/main.tex'
+    source=tex.read_text(encoding='utf-8')
+    head,rest=source.split(BEGIN,1)
+    _,tail=rest.split(END,1)
+    tex.write_text(head+BEGIN+'\n'+'\n'.join(lines)+'\n'+END+tail,encoding='utf-8')
     (out/'macro_provenance.json').write_text(serialize(macros),encoding='utf-8')
-    plot(summary)
-    print(len(macros),'numeric macros generated from raw-derived summary; figure PDFs generated.')
-
-
-def plot(summary):
-    import matplotlib
-    matplotlib.use('Agg')
-    import matplotlib.pyplot as plt
-    import numpy as np
-    plt.rcParams.update({'font.size':9,'pdf.fonttype':42,'font.family':'serif'})
-    directory=ROOT/'paper/figures'
-    directory.mkdir(parents=True,exist_ok=True)
-    fig,axes=plt.subplots(1,2,figsize=(7.0,2.6),layout='constrained')
-    for ax,study,title in zip(axes,['primary','exploratory'],['Frozen primary (numeric defect)','Exploratory (corrected arithmetic)']):
-        metrics=summary['studies'][study]['metrics']['test']
-        for index,(name,label) in enumerate(LABELS.items()):
-            m=metrics[name]
-            ax.scatter(m['modeled_cost_units'],100*m['joint_risk'],marker=['o','s','^','v','D','x','+'][index],s=45,color='black',label=label)
-            # Avoid overlapping text for equal-decision controls; legend conveys labels.
-        ax.set(title=title,xlabel='Modeled cost (arbitrary units)',ylabel='Joint unsafe acceptance (%)')
-        ax.grid(alpha=.2)
-    handles,labels=axes[0].get_legend_handles_labels()
-    fig.legend(handles,labels,ncol=3,loc='outside lower center',fontsize=7,frameon=False)
-    fig.savefig(directory/'tradeoffs.pdf')
-    plt.close(fig)
-    fig,ax=plt.subplots(figsize=(3.4,2.3),layout='constrained')
-    x=np.linspace(0,1,101)
-    m=[.1,.2,.3]
-    ax.plot(x,(1-x)*np.prod(m)+x*min(m),color='black',label='Common-shock model')
-    raw=ROOT/'results/raw'
-    import gzip
-    rows=[]
-    with gzip.open(raw/'correlation.jsonl.gz','rt') as stream:
-        rows=[json.loads(line) for line in stream]
-    ax.scatter([r['mixture_weight'] for r in rows],[r['empirical_joint'] for r in rows],color='black',marker='x',s=12,label='Seeded simulation')
-    ax.set(xlabel='Common-shock mixture weight',ylabel='Joint miss probability')
-    ax.legend(fontsize=7,frameon=False)
-    fig.savefig(directory/'dependence.pdf')
-    plt.close(fig)
-    # Vector pipeline without additional graphics dependencies.
-    fig,ax=plt.subplots(figsize=(7.0,1.2),layout='constrained')
-    ax.set_xlim(0,10);ax.set_ylim(0,1);ax.axis('off')
-    names=['Typed action\n+ provenance','Mandatory\nsink predicates','Certificate\ncontext match','Cheap score /\nstructured judge','Typed sandbox\neffect or denial']
-    for index,name in enumerate(names):
-        xx=.85+index*2.05
-        ax.text(xx,.5,name,ha='center',va='center',fontsize=8,bbox={'boxstyle':'round,pad=.5','facecolor':'white','edgecolor':'black'})
-        if index<4:ax.annotate('',xy=(xx+1.32,.5),xytext=(xx+.75,.5),arrowprops={'arrowstyle':'->','color':'black'})
-    fig.savefig(directory/'pipeline.pdf')
-    plt.close(fig)
+    print(len(macros),'numeric macros generated from raw-derived summary; figures are TikZ in main.tex.')
 
 
 if __name__=='__main__':generate()

@@ -47,7 +47,8 @@ before any submission.
 
 `verify-results` re-derives summary bytes from raw observations, recomputes
 binomial family bounds, checks selection independently and verifies the hash
-manifest. `paper` regenerates empirical macros and vector figures before TeX.
+manifest. `paper` regenerates the empirical macro block inside `paper/main.tex` before
+TeX; all figures are TikZ/pgfplots in `main.tex` and plot only those macros.
 `verify-paper` checks empirical source-number provenance, bibliography evidence,
 notation registry, cross-references and PDF layout properties. It does not
 prove glyph-level origin of every PDF numeral. Mathematical constants have

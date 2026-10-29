@@ -96,7 +96,10 @@ def main() -> None:
         except Exception as exc:
             print('FAILED', identifier, str(exc), flush=True)
         time.sleep(0.2)
-    (ROOT/'docs/literature/metadata.json').write_text(json.dumps(records, indent=2, ensure_ascii=False)+'\n', encoding='utf-8')
+    # Keep source text in ignored local evidence, not in the distributable index.
+    published = [{k:v for k,v in record.items() if k!='abstract'} | {'abstract_checked_locally':True}
+                 for record in records]
+    (ROOT/'docs/literature/metadata.json').write_text(json.dumps(published, indent=2, ensure_ascii=False)+'\n', encoding='utf-8')
     print('Verified primary-source metadata records:', len(records), flush=True)
 
 

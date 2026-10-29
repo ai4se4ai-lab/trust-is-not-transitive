@@ -9,10 +9,10 @@
     "year": "2026",
     "category": "contracts",
     "url": "https://arxiv.org/abs/2609.18128",
-    "abstract": " Large language model (LLM) agents augmented by tools can automate complex, multi-step tasks, such as web navigation, code generation, and workflow orchestration, by acting on external systems through tool calls. However, hallucinations, distributional instability, and adversarial manipulations in LLMs, and the irreversible consequences of certain tool calls can lead to harmful outcomes. Existing safeguards either grade recorded trajectories post hoc with stochastic LLM judges or block unsafe actions one call at a time, and no single deterministic artifact supports both roles. We present ContrAgent, a contract-based framework for symbolic temporal supervision of LLM agents. ContrAgent captures an agent's behavior as a sequence of tool calls and formalizes it as a trace over a fixed set of checkable predicates. It then specifies required behaviors using assume-guarantee contracts in linear temporal logic over finite traces (LTLf). Each contract is compiled to a deterministic finite automaton (DFA) that serves two roles: gating agent actions online and evaluating recorded traces offline. A contract library, acting as a reusable knowledge base, is maintained independently of the agent's model and can be applied across different agents within the same task domain. We show the effectiveness of our approach on four benchmarks spanning both roles, where ContrAgent matches state-of-the-art LLM-judge and rule-based guardrail baselines while producing deterministic, reproducible verdicts and, in the online mode, orders-of-magnitude lower per-call latency.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "5527c4d26db24bbb61f1570a784d7248dac55028a5f36b35dd2b8b91dfa4ac84"
+    "evidence_sha256": "5527c4d26db24bbb61f1570a784d7248dac55028a5f36b35dd2b8b91dfa4ac84",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv260518672",
@@ -31,10 +31,10 @@
     "year": "2026",
     "category": "contracts",
     "url": "https://arxiv.org/abs/2605.18672",
-    "abstract": " This position paper argues that enforcing LLM agent safety within a single abstraction layer is not merely suboptimal but categorically insufficient for deployed LLM agents -- a structural consequence of how agent execution works, not a contingent limitation of current systems. The three dimensions that jointly constitute safe operation -- semantic intent and policy compliance, environmental validity, and dynamical feasibility -- each depend on a strictly distinct set of information that becomes available at different stages of execution. No single guardrail can certify all three. We argue that the community must respond with a contract-based architecture in which each safety dimension is enforced by an independently certified layer whose probabilistic guarantee satisfies the next layer's assumption. We sketch such an architecture and derive the compositional system-level safety bounds it admits via the chain rule of probability. Three open problems stand between this and a deployable standard: bound estimation from non-i.i.d.\\ traces, graceful degradation of contracts under deployment drift, and extension to multi-agent settings -- the most important unfinished business in LLM agent runtime assurance.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "e26f138828af099fd10fb917eceb774a9668239f5d95aca116e95d99ea291fac"
+    "evidence_sha256": "e26f138828af099fd10fb917eceb774a9668239f5d95aca116e95d99ea291fac",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250600911",
@@ -46,10 +46,10 @@
     "year": "2025",
     "category": "cascades",
     "url": "https://arxiv.org/abs/2506.00911",
-    "abstract": " Modern language model deployments must often balance competing objectives, for example, helpfulness versus harmlessness, cost versus accuracy, and reward versus safety. We introduce Conformal Arbitrage, a post hoc framework that learns a data driven threshold to mediate between a Primary model optimized for a primary objective and a more conservative Guardian which could be another model or a human domain expert aligned with a guardrail objective. The threshold is calibrated with conformal risk control, yielding finite sample, distribution free guarantees that the long run frequency of undesirable events, such as factual errors or safety violations, does not exceed a user specified quota. Because Conformal Arbitrage operates wholly at the API level, without requiring access to model logits or updating model weights, it complements weight based alignment techniques and integrates seamlessly with existing cost aware cascades. Empirically, Conformal Arbitrage traces an efficient frontier, allowing users to define an acceptable performance level for one objective while maximizing utility in another. We observe that our method outperforms, in terms of accuracy, cost matched random routing between models. These properties make Conformal Arbitrage a practical, theoretically grounded tool for trustworthy and economical deployment of large language models across a broad range of potentially competing objectives.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "50c490f305ad1746302e3551df91b42cc9764d95d7769a405ed594d6113860e2"
+    "evidence_sha256": "50c490f305ad1746302e3551df91b42cc9764d95d7769a405ed594d6113860e2",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv240718370",
@@ -62,10 +62,10 @@
     "year": "2024",
     "category": "cascades",
     "url": "https://arxiv.org/abs/2407.18370",
-    "abstract": " We present a principled approach to provide LLM-based evaluation with a rigorous guarantee of human agreement. We first propose that a reliable evaluation method should not uncritically rely on model preferences for pairwise evaluation, but rather assess the confidence of judge models and selectively decide when to trust its judgement. We then show that under this selective evaluation framework, human agreement can be provably guaranteed -- such that the model evaluation aligns with that of humans to a user-specified agreement level. As part of our framework, we also introduce Simulated Annotators, a novel confidence estimation method that significantly improves judge calibration and thus enables high coverage of evaluated instances. Finally, we propose Cascaded Selective Evaluation, where we use cheaper models as initial judges and escalate to stronger models only when necessary -- again, while still providing a provable guarantee of human agreement. Experimental results show that Cascaded Selective Evaluation guarantees strong alignment with humans, far beyond what LLM judges could achieve without selective evaluation. For example, on a subset of Chatbot Arena where GPT-4 almost never achieves 80% human agreement, our method, even while employing substantially cost-effective models such as Mistral-7B, guarantees over 80% human agreement with almost 80% test coverage.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "777e59f3c2e645d0bd252dbc24f6700d57e875ecc58e0926a3b504849c72f4a7"
+    "evidence_sha256": "777e59f3c2e645d0bd252dbc24f6700d57e875ecc58e0926a3b504849c72f4a7",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv260215391",
@@ -78,10 +78,10 @@
     "year": "2026",
     "category": "cascades",
     "url": "https://arxiv.org/abs/2602.15391",
-    "abstract": " Large Language Models (LLMs) deployed in production environments face a fundamental safety-utility trade-off either a strict filtering mechanisms prevent harmful outputs but often block benign queries or a relaxed controls risk unsafe content generation. Conventional guardrails based on static rules or fixed confidence thresholds are typically context-insensitive and computationally expensive, resulting in high latency and degraded user experience. To address these limitations, we introduce an adaptive abstention system that dynamically adjusts safety thresholds based on real-time contextual signals such as domain and user history. The proposed framework integrates a multi-dimensional detection architecture composed of five parallel detectors, combined through a hierarchical cascade mechanism to optimize both speed and precision. The cascade design reduces unnecessary computation by progressively filtering queries, achieving substantial latency improvements compared to non-cascaded models and external guardrail systems. Extensive evaluation on mixed and domain-specific workloads demonstrates significant reductions in false positives, particularly in sensitive domains such as medical advice and creative writing. The system maintains high safety precision and near-perfect recall under strict operating modes. Overall, our context-aware abstention framework effectively balances safety and utility while preserving performance, offering a scalable solution for reliable LLM deployment.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "7e68139f16a9761f122beb3c734a4ab5cf928248d8daf26e2a5eab576cfdce4b"
+    "evidence_sha256": "7e68139f16a9761f122beb3c734a4ab5cf928248d8daf26e2a5eab576cfdce4b",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv230505176",
@@ -94,10 +94,10 @@
     "year": "2023",
     "category": "cascades",
     "url": "https://arxiv.org/abs/2305.05176",
-    "abstract": " There is a rapidly growing number of large language models (LLMs) that users can query for a fee. We review the cost associated with querying popular LLM APIs, e.g. GPT-4, ChatGPT, J1-Jumbo, and find that these models have heterogeneous pricing structures, with fees that can differ by two orders of magnitude. In particular, using LLMs on large collections of queries and text can be expensive. Motivated by this, we outline and discuss three types of strategies that users can exploit to reduce the inference cost associated with using LLMs: 1) prompt adaptation, 2) LLM approximation, and 3) LLM cascade. As an example, we propose FrugalGPT, a simple yet flexible instantiation of LLM cascade which learns which combinations of LLMs to use for different queries in order to reduce cost and improve accuracy. Our experiments show that FrugalGPT can match the performance of the best individual LLM (e.g. GPT-4) with up to 98% cost reduction or improve the accuracy over GPT-4 by 4% with the same cost. The ideas and findings presented here lay a foundation for using LLMs sustainably and efficiently.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "9db65a4b8984a6a95fd669f4600067b0f8f3b7ca3a9bb6eac4ad5c37ff37535b"
+    "evidence_sha256": "9db65a4b8984a6a95fd669f4600067b0f8f3b7ca3a9bb6eac4ad5c37ff37535b",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250503574",
@@ -126,10 +126,10 @@
     "year": "2025",
     "category": "guards",
     "url": "https://arxiv.org/abs/2505.03574",
-    "abstract": " Large language models (LLMs) have evolved from simple chatbots into autonomous agents capable of performing complex tasks such as editing production code, orchestrating workflows, and taking higher-stakes actions based on untrusted inputs like webpages and emails. These capabilities introduce new security risks that existing security measures, such as model fine-tuning or chatbot-focused guardrails, do not fully address. Given the higher stakes and the absence of deterministic solutions to mitigate these risks, there is a critical need for a real-time guardrail monitor to serve as a final layer of defense, and support system level, use case specific safety policy definition and enforcement. We introduce LlamaFirewall, an open-source security focused guardrail framework designed to serve as a final layer of defense against security risks associated with AI Agents. Our framework mitigates risks such as prompt injection, agent misalignment, and insecure code risks through three powerful guardrails: PromptGuard 2, a universal jailbreak detector that demonstrates clear state of the art performance; Agent Alignment Checks, a chain-of-thought auditor that inspects agent reasoning for prompt injection and goal misalignment, which, while still experimental, shows stronger efficacy at preventing indirect injections in general scenarios than previously proposed approaches; and CodeShield, an online static analysis engine that is both fast and extensible, aimed at preventing the generation of insecure or dangerous code by coding agents. Additionally, we include easy-to-use customizable scanners that make it possible for any developer who can write a regular expression or an LLM prompt to quickly update an agent's security guardrails.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "f5d3a76ea20c3e6b4fb11ca6774943b7da9e094085d1dc03669f3007333070cc"
+    "evidence_sha256": "f5d3a76ea20c3e6b4fb11ca6774943b7da9e094085d1dc03669f3007333070cc",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv231206674",
@@ -150,10 +150,10 @@
     "year": "2023",
     "category": "guards",
     "url": "https://arxiv.org/abs/2312.06674",
-    "abstract": " We introduce Llama Guard, an LLM-based input-output safeguard model geared towards Human-AI conversation use cases. Our model incorporates a safety risk taxonomy, a valuable tool for categorizing a specific set of safety risks found in LLM prompts (i.e., prompt classification). This taxonomy is also instrumental in classifying the responses generated by LLMs to these prompts, a process we refer to as response classification. For the purpose of both prompt and response classification, we have meticulously gathered a dataset of high quality. Llama Guard, a Llama2-7b model that is instruction-tuned on our collected dataset, albeit low in volume, demonstrates strong performance on existing benchmarks such as the OpenAI Moderation Evaluation dataset and ToxicChat, where its performance matches or exceeds that of currently available content moderation tools. Llama Guard functions as a language model, carrying out multi-class classification and generating binary decision scores. Furthermore, the instruction fine-tuning of Llama Guard allows for the customization of tasks and the adaptation of output formats. This feature enhances the model's capabilities, such as enabling the adjustment of taxonomy categories to align with specific use cases, and facilitating zero-shot or few-shot prompting with diverse taxonomies at the input. We are making Llama Guard model weights available and we encourage researchers to further develop and adapt them to meet the evolving needs of the community for AI safety.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "397d7b49c9b5010ae3061df23c411996613d1329f43d04673d124f6653033751"
+    "evidence_sha256": "397d7b49c9b5010ae3061df23c411996613d1329f43d04673d124f6653033751",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv240618495",
@@ -171,10 +171,10 @@
     "year": "2024",
     "category": "guards",
     "url": "https://arxiv.org/abs/2406.18495",
-    "abstract": " We introduce WildGuard -- an open, light-weight moderation tool for LLM safety that achieves three goals: (1) identifying malicious intent in user prompts, (2) detecting safety risks of model responses, and (3) determining model refusal rate. Together, WildGuard serves the increasing needs for automatic safety moderation and evaluation of LLM interactions, providing a one-stop tool with enhanced accuracy and broad coverage across 13 risk categories. While existing open moderation tools such as Llama-Guard2 score reasonably well in classifying straightforward model interactions, they lag far behind a prompted GPT-4, especially in identifying adversarial jailbreaks and in evaluating models' refusals, a key measure for evaluating safety behaviors in model responses. To address these challenges, we construct WildGuardMix, a large-scale and carefully balanced multi-task safety moderation dataset with 92K labeled examples that cover vanilla (direct) prompts and adversarial jailbreaks, paired with various refusal and compliance responses. WildGuardMix is a combination of WildGuardTrain, the training data of WildGuard, and WildGuardTest, a high-quality human-annotated moderation test set with 5K labeled items covering broad risk scenarios. Through extensive evaluations on WildGuardTest and ten existing public benchmarks, we show that WildGuard establishes state-of-the-art performance in open-source safety moderation across all the three tasks compared to ten strong existing open-source moderation models (e.g., up to 26.4% improvement on refusal detection). Importantly, WildGuard matches and sometimes exceeds GPT-4 performance (e.g., up to 3.9% improvement on prompt harmfulness identification). WildGuard serves as a highly effective safety moderator in an LLM interface, reducing the success rate of jailbreak attacks from 79.8% to 2.4%.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "c438bdd0e90890805eb7be399da92e4b5880eb168ff6569627552ff8cbc9c5a4"
+    "evidence_sha256": "c438bdd0e90890805eb7be399da92e4b5880eb168ff6569627552ff8cbc9c5a4",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250118837",
@@ -227,10 +227,10 @@
     "year": "2025",
     "category": "guards",
     "url": "https://arxiv.org/abs/2501.18837",
-    "abstract": " Large language models (LLMs) are vulnerable to universal jailbreaks-prompting strategies that systematically bypass model safeguards and enable users to carry out harmful processes that require many model interactions, like manufacturing illegal substances at scale. To defend against these attacks, we introduce Constitutional Classifiers: safeguards trained on synthetic data, generated by prompting LLMs with natural language rules (i.e., a constitution) specifying permitted and restricted content. In over 3,000 estimated hours of red teaming, no red teamer found a universal jailbreak that could extract information from an early classifier-guarded LLM at a similar level of detail to an unguarded model across most target queries. On automated evaluations, enhanced classifiers demonstrated robust defense against held-out domain-specific jailbreaks. These classifiers also maintain deployment viability, with an absolute 0.38% increase in production-traffic refusals and a 23.7% inference overhead. Our work demonstrates that defending against universal jailbreaks while maintaining practical deployment viability is tractable.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "2119e177033b224531305856549c39e13a22a87c97edb4bfae5c788d81632b9e"
+    "evidence_sha256": "2119e177033b224531305856549c39e13a22a87c97edb4bfae5c788d81632b9e",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250926238",
@@ -245,10 +245,10 @@
     "year": "2025",
     "category": "guards",
     "url": "https://arxiv.org/abs/2509.26238",
-    "abstract": " Monitoring large language models' (LLMs) activations is an effective way to detect harmful requests before they lead to unsafe outputs. However, traditional safety monitors often require the same amount of compute for every query. This creates a trade-off: expensive monitors waste resources on easy inputs, while cheap ones risk missing subtle cases. We argue that safety monitors should be flexible--costs should rise only when inputs are difficult to assess, or when more compute is available. To achieve this, we introduce Truncated Polynomial Classifiers (TPCs), a natural extension of linear probes for dynamic activation monitoring. Our key insight is that polynomials can be trained and evaluated progressively, term-by-term. At test-time, one can early-stop for lightweight monitoring, or use more terms for stronger guardrails when needed. TPCs provide two modes of use. First, as a safety dial: by evaluating more terms, developers and regulators can \"buy\" stronger guardrails from the same model. Second, as an adaptive cascade: clear cases exit early after low-order checks, and higher-order guardrails are evaluated only for ambiguous inputs, reducing overall monitoring costs. On WildGuardMix, across 4 models with up to 30B parameters, we show that TPCs compete with or outperform MLP-based probe baselines of the same size for harmful prompt classification, all the while being more interpretable than their black-box counterparts. Our code is available at this http URL .",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "05ca2bdf1e9841f2174e914c80273ad3a7490457046ed3219d844240ee8d1209"
+    "evidence_sha256": "05ca2bdf1e9841f2174e914c80273ad3a7490457046ed3219d844240ee8d1209",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv231010501",
@@ -263,10 +263,10 @@
     "year": "2023",
     "category": "guards",
     "url": "https://arxiv.org/abs/2310.10501",
-    "abstract": " NeMo Guardrails is an open-source toolkit for easily adding programmable guardrails to LLM-based conversational systems. Guardrails (or rails for short) are a specific way of controlling the output of an LLM, such as not talking about topics considered harmful, following a predefined dialogue path, using a particular language style, and more. There are several mechanisms that allow LLM providers and developers to add guardrails that are embedded into a specific model at training, e.g. using model alignment. Differently, using a runtime inspired from dialogue management, NeMo Guardrails allows developers to add programmable rails to LLM applications - these are user-defined, independent of the underlying LLM, and interpretable. Our initial results show that the proposed approach can be used with several LLM providers to develop controllable and safe LLM applications using programmable rails.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "6c2549391f3f4a08dbeeb57f56092f365690212b6d2ac44d8bb7ef3e418a05f2"
+    "evidence_sha256": "6c2549391f3f4a08dbeeb57f56092f365690212b6d2ac44d8bb7ef3e418a05f2",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250213458",
@@ -280,10 +280,10 @@
     "year": "2025",
     "category": "guards",
     "url": "https://arxiv.org/abs/2502.13458",
-    "abstract": " Ensuring the safety of large language models (LLMs) is critical as they are deployed in real-world applications. Existing guardrails rely on rule-based filtering or single-pass classification, limiting their ability to handle nuanced safety violations. To address this, we propose ThinkGuard, a critique-augmented guardrail model that distills knowledge from high-capacity LLMs by generating structured critiques alongside safety labels. Fine-tuned on critique-augmented data, the captured deliberative thinking ability drastically enhances the guardrail's cautiousness and interpretability. Evaluated on multiple safety benchmarks, ThinkGuard achieves the highest average F1 and AUPRC, outperforming all baselines. Compared to LLaMA Guard 3, ThinkGuard improves accuracy by 16.1% and macro F1 by 27.0%. Moreover, it surpasses label-only fine-tuned models, confirming that structured critiques enhance both classification precision and nuanced safety reasoning while maintaining computational efficiency.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "d5114e75fe95b0bd73d783e366439193b8712b04a7deb17dbfe9080c700de22a"
+    "evidence_sha256": "d5114e75fe95b0bd73d783e366439193b8712b04a7deb17dbfe9080c700de22a",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250318666",
@@ -296,10 +296,10 @@
     "year": "2025",
     "category": "runtime",
     "url": "https://arxiv.org/abs/2503.18666",
-    "abstract": " Agents built on LLMs are increasingly deployed across diverse domains, automating complex decision-making and task execution. However, their autonomy introduces safety risks, including security vulnerabilities, legal violations, and unintended harmful actions. Existing mitigation methods, such as model-based safeguards and early enforcement strategies, fall short in robustness, interpretability, and adaptability. To address these challenges, we propose AgentSpec, a lightweight domain-specific language for specifying and enforcing runtime constraints on LLM agents. With AgentSpec, users define structured rules that incorporate triggers, predicates, and enforcement mechanisms, ensuring agents operate within predefined safety boundaries. We implement AgentSpec across multiple domains, including code execution, embodied agents, and autonomous driving, demonstrating its adaptability and effectiveness. Our evaluation shows that AgentSpec successfully prevents unsafe executions in over 90% of code agent cases, eliminates all hazardous actions in embodied agent tasks, and enforces 100% compliance by autonomous vehicles (AVs). Despite its strong safety guarantees, AgentSpec remains computationally lightweight, with overheads in milliseconds. By combining interpretability, modularity, and efficiency, AgentSpec provides a practical and scalable solution for enforcing LLM agent safety across diverse applications. We also automate the generation of rules using LLMs and assess their effectiveness. Our evaluation shows that the rules generated by OpenAI o1 achieve a precision of 95.56% and recall of 70.96% for embodied agents, successfully identify 87.26% of the risky code, and prevent AVs from breaking laws in 5 out of 8 scenarios.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "80cae4a2c085a06c97a7253020bfb59f247c9fafe9cd70c2e65eb05118bddb63"
+    "evidence_sha256": "80cae4a2c085a06c97a7253020bfb59f247c9fafe9cd70c2e65eb05118bddb63",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250800500",
@@ -313,10 +313,10 @@
     "year": "2025",
     "category": "runtime",
     "url": "https://arxiv.org/abs/2508.00500",
-    "abstract": " Large Language Model (LLM) agents increasingly operate across domains such as robotics, virtual assistants, and web automation. However, their stochastic decision-making introduces safety risks that are difficult to anticipate during execution. Existing runtime monitoring frameworks, such as AgentSpec, primarily rely on reactive safety rules that detect violations only when unsafe behavior is imminent or has already occurred, limiting their ability to handle long-horizon dependencies. We present ProbGuard, a proactive runtime monitoring framework for LLM agents that anticipates safety violations through probabilistic risk prediction. ProbGuard abstracts agent executions into symbolic states and learns a Discrete-Time Markov Chain (DTMC) from execution traces to model behavioral dynamics. At runtime, the monitor estimates the probability that execution will remain safe from the current state, and triggers an intervention when this probability falls below a user-defined threshold. To improve robustness, ProbGuard incorporates semantic validity constraints in the abstraction and admits a PAC-style analysis that characterizes the sample complexity required to certify the learned model under standard assumptions. We evaluate ProbGuard in two safety-critical domains: autonomous driving and embodied household agents. Across evaluated scenarios, ProbGuard consistently predicts traffic law violations and collisions in advance, with warnings up to 15.84 seconds at a threshold yielding no false alarms, and up to 38.66 seconds at stricter thresholds. In embodied agent tasks, ProbGuard's re-prompting intervention mode reduces unsafe behavior by 65.37% relative to the unmonitored baseline while retaining 80.4% of the baseline task completion; a stricter halting configuration reduces unsafe behavior by 93.60% at a larger cost in completion.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "cd0c743ec1f7526771500d4827183cf662ae11cf02c378f4df67e89cbfa20955"
+    "evidence_sha256": "cd0c743ec1f7526771500d4827183cf662ae11cf02c378f4df67e89cbfa20955",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250318813",
@@ -336,10 +336,10 @@
     "year": "2025",
     "category": "isolation",
     "url": "https://arxiv.org/abs/2503.18813",
-    "abstract": " Large Language Models (LLMs) are increasingly deployed in agentic systems that interact with an untrusted environment. However, LLM agents are vulnerable to prompt injection attacks when handling untrusted data. In this paper we propose CaMeL, a robust defense that creates a protective system layer around the LLM, securing it even when underlying models are susceptible to attacks. To operate, CaMeL explicitly extracts the control and data flows from the (trusted) query; therefore, the untrusted data retrieved by the LLM can never impact the program flow. To further improve security, CaMeL uses a notion of a capability to prevent the exfiltration of private data over unauthorized data flows by enforcing security policies when tools are called. We demonstrate effectiveness of CaMeL by solving $77\\%$ of tasks with provable security (compared to $84\\%$ with an undefended system) in AgentDojo. We release CaMeL at this https URL .",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "da161f5329f0f8ee86277a1dcf59fbdf0183786be12dcb6e4d7a2092fb8a9ab0"
+    "evidence_sha256": "da161f5329f0f8ee86277a1dcf59fbdf0183786be12dcb6e4d7a2092fb8a9ab0",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250523643",
@@ -358,10 +358,10 @@
     "year": "2025",
     "category": "isolation",
     "url": "https://arxiv.org/abs/2505.23643",
-    "abstract": " As AI agents become increasingly autonomous and capable, ensuring their security against vulnerabilities such as prompt injection becomes critical. This paper explores the use of information-flow control (IFC) to provide security guarantees for AI agents. We present a formal model to reason about the security and expressiveness of agent planners. Using this model, we characterize the class of properties enforceable by dynamic taint-tracking and construct a taxonomy of tasks to evaluate security and utility trade-offs of planner designs. Informed by this exploration, we present Fides, a planner that tracks confidentiality and integrity labels, deterministically enforces security policies, and introduces novel primitives for selectively hiding information. Its evaluation in AgentDojo demonstrates that this approach enables us to complete a broad range of tasks with security guarantees. A tutorial to walk readers through the the concepts introduced in the paper can be found at this https URL",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "b15b4bf8b75c098a6a4d69769573a76d240d27a96cb55f80ef18b562ef5bdd45"
+    "evidence_sha256": "b15b4bf8b75c098a6a4d69769573a76d240d27a96cb55f80ef18b562ef5bdd45",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv220802814",
@@ -376,10 +376,10 @@
     "year": "2022",
     "category": "statistics",
     "url": "https://arxiv.org/abs/2208.02814",
-    "abstract": " We extend conformal prediction to control the expected value of any monotone loss function. The algorithm generalizes split conformal prediction together with its coverage guarantee. Like conformal prediction, the conformal risk control procedure is tight up to an $\\mathcal{O}(1/n)$ factor. We also introduce extensions of the idea to distribution shift, quantile risk control, multiple and adversarial risk control, and expectations of U-statistics. Worked examples from computer vision and natural language processing demonstrate the usage of our algorithm to bound the false negative rate, graph distance, and token-level F1-score.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "f96743d7570a4949a4c9302a6f686e99c82c14f457f94c0c8384deb634ebe8f2"
+    "evidence_sha256": "f96743d7570a4949a4c9302a6f686e99c82c14f457f94c0c8384deb634ebe8f2",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv210707511",
@@ -391,10 +391,10 @@
     "year": "2021",
     "category": "statistics",
     "url": "https://arxiv.org/abs/2107.07511",
-    "abstract": " Black-box machine learning models are now routinely used in high-risk settings, like medical diagnostics, which demand uncertainty quantification to avoid consequential model failures. Conformal prediction is a user-friendly paradigm for creating statistically rigorous uncertainty sets/intervals for the predictions of such models. Critically, the sets are valid in a distribution-free sense: they possess explicit, non-asymptotic guarantees even without distributional assumptions or model assumptions. One can use conformal prediction with any pre-trained model, such as a neural network, to produce sets that are guaranteed to contain the ground truth with a user-specified probability, such as 90%. It is easy-to-understand, easy-to-use, and general, applying naturally to problems arising in the fields of computer vision, natural language processing, deep reinforcement learning, and so on. This hands-on introduction is aimed to provide the reader a working understanding of conformal prediction and related distribution-free uncertainty quantification techniques with one self-contained document. We lead the reader through practical theory for and examples of conformal prediction and describe its extensions to complex machine learning tasks involving structured outputs, distribution shift, time-series, outliers, models that abstain, and more. Throughout, there are many explanatory illustrations, examples, and code samples in Python. With each code sample comes a Jupyter notebook implementing the method on a real-data example; the notebooks can be accessed and easily run using our codebase.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "1f177bc52d33be906017069cc84fa776465bf3604456835f137a9ecbe16589ee"
+    "evidence_sha256": "1f177bc52d33be906017069cc84fa776465bf3604456835f137a9ecbe16589ee",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv200602544",
@@ -407,10 +407,10 @@
     "year": "2020",
     "category": "statistics",
     "url": "https://arxiv.org/abs/2006.02544",
-    "abstract": " Conformal inference, cross-validation+, and the jackknife+ are hold-out methods that can be combined with virtually any machine learning algorithm to construct prediction sets with guaranteed marginal coverage. In this paper, we develop specialized versions of these techniques for categorical and unordered response labels that, in addition to providing marginal coverage, are also fully adaptive to complex data distributions, in the sense that they perform favorably in terms of approximate conditional coverage compared to alternative methods. The heart of our contribution is a novel conformity score, which we explicitly demonstrate to be powerful and intuitive for classification problems, but whose underlying principle is potentially far more general. Experiments on synthetic and real data demonstrate the practical value of our theoretical guarantees, as well as the statistical advantages of the proposed methods over the existing alternatives.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "a616416c33684ccdac2778f65d0c20d104435c1f977a21333d81ec111fab49f9"
+    "evidence_sha256": "a616416c33684ccdac2778f65d0c20d104435c1f977a21333d81ec111fab49f9",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv210600170",
@@ -422,10 +422,10 @@
     "year": "2021",
     "category": "statistics",
     "url": "https://arxiv.org/abs/2106.00170",
-    "abstract": " We develop methods for forming prediction sets in an online setting where the data generating distribution is allowed to vary over time in an unknown fashion. Our framework builds on ideas from conformal inference to provide a general wrapper that can be combined with any black box method that produces point predictions of the unseen label or estimated quantiles of its distribution. While previous conformal inference methods rely on the assumption that the data points are exchangeable, our adaptive approach provably achieves the desired coverage frequency over long-time intervals irrespective of the true data generating process. We accomplish this by modelling the distribution shift as a learning problem in a single parameter whose optimal value is varying over time and must be continuously re-estimated. We test our method, adaptive conformal inference, on two real world datasets and find that its predictions are robust to visible and significant distribution shifts.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "97aa916a78834f81f3fc00f91c869fb3882c8dbf0bc8849ce1e12439071dfb4c"
+    "evidence_sha256": "97aa916a78834f81f3fc00f91c869fb3882c8dbf0bc8849ce1e12439071dfb4c",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv240613352",
@@ -441,10 +441,10 @@
     "year": "2024",
     "category": "attacks_evaluation",
     "url": "https://arxiv.org/abs/2406.13352",
-    "abstract": " AI agents aim to solve complex tasks by combining text-based reasoning with external tool calls. Unfortunately, AI agents are vulnerable to prompt injection attacks where data returned by external tools hijacks the agent to execute malicious tasks. To measure the adversarial robustness of AI agents, we introduce AgentDojo, an evaluation framework for agents that execute tools over untrusted data. To capture the evolving nature of attacks and defenses, AgentDojo is not a static test suite, but rather an extensible environment for designing and evaluating new agent tasks, defenses, and adaptive attacks. We populate the environment with 97 realistic tasks (e.g., managing an email client, navigating an e-banking website, or making travel bookings), 629 security test cases, and various attack and defense paradigms from the literature. We find that AgentDojo poses a challenge for both attacks and defenses: state-of-the-art LLMs fail at many tasks (even in the absence of attacks), and existing prompt injection attacks break some security properties but not all. We hope that AgentDojo can foster research on new design principles for AI agents that solve common tasks in a reliable and robust manner.. We release the code for AgentDojo at this https URL .",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "8f3ec7c99e354e60393b8e7e9496ec4e0251d39fcb2678f4b21b0b0e60d04750"
+    "evidence_sha256": "8f3ec7c99e354e60393b8e7e9496ec4e0251d39fcb2678f4b21b0b0e60d04750",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv241009024",
@@ -468,10 +468,10 @@
     "year": "2024",
     "category": "attacks_evaluation",
     "url": "https://arxiv.org/abs/2410.09024",
-    "abstract": " The robustness of LLMs to jailbreak attacks, where users design prompts to circumvent safety measures and misuse model capabilities, has been studied primarily for LLMs acting as simple chatbots. Meanwhile, LLM agents -- which use external tools and can execute multi-stage tasks -- may pose a greater risk if misused, but their robustness remains underexplored. To facilitate research on LLM agent misuse, we propose a new benchmark called AgentHarm. The benchmark includes a diverse set of 110 explicitly malicious agent tasks (440 with augmentations), covering 11 harm categories including fraud, cybercrime, and harassment. In addition to measuring whether models refuse harmful agentic requests, scoring well on AgentHarm requires jailbroken agents to maintain their capabilities following an attack to complete a multi-step task. We evaluate a range of leading LLMs, and find (1) leading LLMs are surprisingly compliant with malicious agent requests without jailbreaking, (2) simple universal jailbreak templates can be adapted to effectively jailbreak agents, and (3) these jailbreaks enable coherent and malicious multi-step agent behavior and retain model capabilities. To enable simple and reliable evaluation of attacks and defenses for LLM-based agents, we publicly release AgentHarm at this https URL .",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "41ddac1c6779405777b2268858a9d1b1e0de210ffccc224797a4d52c3a08e89f"
+    "evidence_sha256": "41ddac1c6779405777b2268858a9d1b1e0de210ffccc224797a4d52c3a08e89f",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv230915817",
@@ -490,10 +490,10 @@
     "year": "2023",
     "category": "attacks_evaluation",
     "url": "https://arxiv.org/abs/2309.15817",
-    "abstract": " Recent advances in Language Model (LM) agents and tool use, exemplified by applications like ChatGPT Plugins, enable a rich set of capabilities but also amplify potential risks - such as leaking private data or causing financial losses. Identifying these risks is labor-intensive, necessitating implementing the tools, setting up the environment for each test scenario manually, and finding risky cases. As tools and agents become more complex, the high cost of testing these agents will make it increasingly difficult to find high-stakes, long-tailed risks. To address these challenges, we introduce ToolEmu: a framework that uses an LM to emulate tool execution and enables the testing of LM agents against a diverse range of tools and scenarios, without manual instantiation. Alongside the emulator, we develop an LM-based automatic safety evaluator that examines agent failures and quantifies associated risks. We test both the tool emulator and evaluator through human evaluation and find that 68.8% of failures identified with ToolEmu would be valid real-world agent failures. Using our curated initial benchmark consisting of 36 high-stakes tools and 144 test cases, we provide a quantitative risk analysis of current LM agents and identify numerous failures with potentially severe outcomes. Notably, even the safest LM agent exhibits such failures 23.9% of the time according to our evaluator, underscoring the need to develop safer LM agents for real-world deployment.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "909a82533cd7dc93c4beb2856929de2be3c84eedfa1a24b74675601d0afb1db5"
+    "evidence_sha256": "909a82533cd7dc93c4beb2856929de2be3c84eedfa1a24b74675601d0afb1db5",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv240110019",
@@ -515,10 +515,10 @@
     "year": "2024",
     "category": "attacks_evaluation",
     "url": "https://arxiv.org/abs/2401.10019",
-    "abstract": " Large language models (LLMs) have exhibited great potential in autonomously completing tasks across real-world applications. Despite this, these LLM agents introduce unexpected safety risks when operating in interactive environments. Instead of centering on the harmlessness of LLM-generated content in most prior studies, this work addresses the imperative need for benchmarking the behavioral safety of LLM agents within diverse environments. We introduce R-Judge, a benchmark crafted to evaluate the proficiency of LLMs in judging and identifying safety risks given agent interaction records. R-Judge comprises 569 records of multi-turn agent interaction, encompassing 27 key risk scenarios among 5 application categories and 10 risk types. It is of high-quality curation with annotated safety labels and risk descriptions. Evaluation of 11 LLMs on R-Judge shows considerable room for enhancing the risk awareness of LLMs: The best-performing model, GPT-4o, achieves 74.42% while no other models significantly exceed the random. Moreover, we reveal that risk awareness in open agent scenarios is a multi-dimensional capability involving knowledge and reasoning, thus challenging for LLMs. With further experiments, we find that fine-tuning on safety judgment significantly improve model performance while straightforward prompting mechanisms fail. R-Judge is publicly available at this https URL .",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "daac71cf1d65fc2bb0dc5242463e5af06790c2da00f8c193becd5cc92c26a082"
+    "evidence_sha256": "daac71cf1d65fc2bb0dc5242463e5af06790c2da00f8c193becd5cc92c26a082",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv230212173",
@@ -534,10 +534,10 @@
     "year": "2023",
     "category": "attacks_evaluation",
     "url": "https://arxiv.org/abs/2302.12173",
-    "abstract": " Large Language Models (LLMs) are increasingly being integrated into various applications. The functionalities of recent LLMs can be flexibly modulated via natural language prompts. This renders them susceptible to targeted adversarial prompting, e.g., Prompt Injection (PI) attacks enable attackers to override original instructions and employed controls. So far, it was assumed that the user is directly prompting the LLM. But, what if it is not the user prompting? We argue that LLM-Integrated Applications blur the line between data and instructions. We reveal new attack vectors, using Indirect Prompt Injection, that enable adversaries to remotely (without a direct interface) exploit LLM-integrated applications by strategically injecting prompts into data likely to be retrieved. We derive a comprehensive taxonomy from a computer security perspective to systematically investigate impacts and vulnerabilities, including data theft, worming, information ecosystem contamination, and other novel security risks. We demonstrate our attacks' practical viability against both real-world systems, such as Bing's GPT-4 powered Chat and code-completion engines, and synthetic applications built on GPT-4. We show how processing retrieved prompts can act as arbitrary code execution, manipulate the application's functionality, and control how and if other APIs are called. Despite the increasing integration and reliance on LLMs, effective mitigations of these emerging threats are currently lacking. By raising awareness of these vulnerabilities and providing key insights into their implications, we aim to promote the safe and responsible deployment of these powerful models and the development of robust defenses that protect users and systems from potential attacks.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "3559b1e494ca02a7e5e8ab295cf61c6391f964ca7b162ca51b9a56d32396b14f"
+    "evidence_sha256": "3559b1e494ca02a7e5e8ab295cf61c6391f964ca7b162ca51b9a56d32396b14f",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv241002644",
@@ -555,10 +555,10 @@
     "year": "2024",
     "category": "attacks_evaluation",
     "url": "https://arxiv.org/abs/2410.02644",
-    "abstract": " Although LLM-based agents, powered by Large Language Models (LLMs), can use external tools and memory mechanisms to solve complex real-world tasks, they may also introduce critical security vulnerabilities. However, the existing literature does not comprehensively evaluate attacks and defenses against LLM-based agents. To address this, we introduce Agent Security Bench (ASB), a comprehensive framework designed to formalize, benchmark, and evaluate the attacks and defenses of LLM-based agents, including 10 scenarios (e.g., e-commerce, autonomous driving, finance), 10 agents targeting the scenarios, over 400 tools, 27 different types of attack/defense methods, and 7 evaluation metrics. Based on ASB, we benchmark 10 prompt injection attacks, a memory poisoning attack, a novel Plan-of-Thought backdoor attack, 4 mixed attacks, and 11 corresponding defenses across 13 LLM backbones. Our benchmark results reveal critical vulnerabilities in different stages of agent operation, including system prompt, user prompt handling, tool usage, and memory retrieval, with the highest average attack success rate of 84.30\\%, but limited effectiveness shown in current defenses, unveiling important works to be done in terms of agent security for the community. We also introduce a new metric to evaluate the agents' capability to balance utility and security. Our code can be found at this https URL .",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "7f9b93abea068b4b9be7cad968c16ea3a49047d939937a802ad3384b7ffe3d0e"
+    "evidence_sha256": "7f9b93abea068b4b9be7cad968c16ea3a49047d939937a802ad3384b7ffe3d0e",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv241107781",
@@ -576,10 +576,10 @@
     "year": "2024",
     "category": "attacks_evaluation",
     "url": "https://arxiv.org/abs/2411.07781",
-    "abstract": " With the rapidly increasing capabilities and adoption of code agents for AI-assisted coding, safety concerns, such as generating or executing risky code, have become significant barriers to the real-world deployment of these agents. To provide comprehensive and practical evaluations on the safety of code agents, we propose RedCode, a benchmark for risky code execution and generation: (1) RedCode-Exec provides challenging prompts that could lead to risky code execution, aiming to evaluate code agents' ability to recognize and handle unsafe code. We provide a total of 4,050 risky test cases in Python and Bash tasks with diverse input formats including code snippets and natural text. They covers 25 types of critical vulnerabilities spanning 8 domains (e.g., websites, file systems). We provide Docker environments and design corresponding evaluation metrics to assess their execution results. (2) RedCode-Gen provides 160 prompts with function signatures and docstrings as input to assess whether code agents will follow instructions to generate harmful code or software. Our empirical findings, derived from evaluating three agent frameworks based on 19 LLMs, provide insights into code agents' vulnerabilities. For instance, evaluations on RedCode-Exec show that agents are more likely to reject executing risky operations on the operating system, but are less likely to reject executing technically buggy code, indicating high risks. Risky operations described in natural text lead to a lower rejection rate than those in code format. Additionally, evaluations on RedCode-Gen show that more capable base models and agents with stronger overall coding abilities, such as GPT4, tend to produce more sophisticated and effective harmful software. Our findings highlight the need for stringent safety evaluations for diverse code agents. Our dataset and code are available at this https URL .",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "9c8e32cdc7c7beb22ea4d4660e49b541599e856ec7afe75ff64d227ea3318ce4"
+    "evidence_sha256": "9c8e32cdc7c7beb22ea4d4660e49b541599e856ec7afe75ff64d227ea3318ce4",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv230715043",
@@ -595,10 +595,10 @@
     "year": "2023",
     "category": "attacks_evaluation",
     "url": "https://arxiv.org/abs/2307.15043",
-    "abstract": " Because \"out-of-the-box\" large language models are capable of generating a great deal of objectionable content, recent work has focused on aligning these models in an attempt to prevent undesirable generation. While there has been some success at circumventing these measures -- so-called \"jailbreaks\" against LLMs -- these attacks have required significant human ingenuity and are brittle in practice. In this paper, we propose a simple and effective attack method that causes aligned language models to generate objectionable behaviors. Specifically, our approach finds a suffix that, when attached to a wide range of queries for an LLM to produce objectionable content, aims to maximize the probability that the model produces an affirmative response (rather than refusing to answer). However, instead of relying on manual engineering, our approach automatically produces these adversarial suffixes by a combination of greedy and gradient-based search techniques, and also improves over past automatic prompt generation methods. Surprisingly, we find that the adversarial prompts generated by our approach are quite transferable, including to black-box, publicly released LLMs. Specifically, we train an adversarial attack suffix on multiple prompts (i.e., queries asking for many different types of objectionable content), as well as multiple models (in our case, Vicuna-7B and 13B). When doing so, the resulting attack suffix is able to induce objectionable content in the public interfaces to ChatGPT, Bard, and Claude, as well as open source LLMs such as LLaMA-2-Chat, Pythia, Falcon, and others. In total, this work significantly advances the state-of-the-art in adversarial attacks against aligned language models, raising important questions about how such systems can be prevented from producing objectionable information. Code is available at this http URL .",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "f957c79f77f2adc8a543a16ac8ea0c57ce6f7a7e4f3a75566c8e5f74bb81638a"
+    "evidence_sha256": "f957c79f77f2adc8a543a16ac8ea0c57ce6f7a7e4f3a75566c8e5f74bb81638a",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv241209565",
@@ -618,10 +618,10 @@
     "year": "2024",
     "category": "attacks_evaluation",
     "url": "https://arxiv.org/abs/2412.09565",
-    "abstract": " Recent latent-space monitoring techniques have shown promise as defenses against LLM attacks. These defenses act as scanners that seek to detect harmful activations before they lead to undesirable actions. This prompts the question: Can models execute harmful behavior via inconspicuous latent states? Here, we study such obfuscated activations. We show that state-of-the-art latent-space defenses -- including sparse autoencoders, representation probing, and latent OOD detection -- are all vulnerable to obfuscated activations. For example, against probes trained to classify harmfulness, our attacks can often reduce recall from 100% to 0% while retaining a 90% jailbreaking rate. However, obfuscation has limits: we find that on a complex task (writing SQL code), obfuscation reduces model performance. Together, our results demonstrate that neural activations are highly malleable: we can reshape activation patterns in a variety of ways, often while preserving a network's behavior. This poses a fundamental challenge to latent-space defenses.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "3635be6be9c58f549e78ffe2ed12e4459207f5b8c486c49f899b33d674bd7028"
+    "evidence_sha256": "3635be6be9c58f549e78ffe2ed12e4459207f5b8c486c49f899b33d674bd7028",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250305264",
@@ -633,10 +633,10 @@
     "year": "2025",
     "category": "attacks_evaluation",
     "url": "https://arxiv.org/abs/2503.05264",
-    "abstract": " We introduce the Context Compliance Attack (CCA), a novel, optimization-free method for bypassing AI safety mechanisms. Unlike current approaches -- which rely on complex prompt engineering and computationally intensive optimization -- CCA exploits a fundamental architectural vulnerability inherent in many deployed AI systems. By subtly manipulating conversation history, CCA convinces the model to comply with a fabricated dialogue context, thereby triggering restricted behavior. Our evaluation across a diverse set of open-source and proprietary models demonstrates that this simple attack can circumvent state-of-the-art safety protocols. We discuss the implications of these findings and propose practical mitigation strategies to fortify AI systems against such elementary yet effective adversarial tactics.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "120231fc7fc55d823a5abc3cabc2ee73cae350253b7c30b99b00367a65774c83"
+    "evidence_sha256": "120231fc7fc55d823a5abc3cabc2ee73cae350253b7c30b99b00367a65774c83",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250411168",
@@ -651,10 +651,10 @@
     "year": "2025",
     "category": "attacks_evaluation",
     "url": "https://arxiv.org/abs/2504.11168",
-    "abstract": " Large Language Models (LLMs) guardrail systems are designed to protect against prompt injection and jailbreak attacks. However, they remain vulnerable to evasion techniques. We demonstrate two approaches for bypassing LLM prompt injection and jailbreak detection systems via traditional character injection methods and algorithmic Adversarial Machine Learning (AML) evasion techniques. Through testing against six prominent protection systems, including Microsoft's Azure Prompt Shield and Meta's Prompt Guard, we show that both methods can be used to evade detection while maintaining adversarial utility achieving in some instances up to 100% evasion success. Furthermore, we demonstrate that adversaries can enhance Attack Success Rates (ASR) against black-box targets by leveraging word importance ranking computed by offline white-box models. Our findings reveal vulnerabilities within current LLM protection mechanisms and highlight the need for more robust guardrail systems.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "0550617b5c200b1ef8f29b9a451c2be159d0bc86a5eccc2fc2b2daf2fe1f6b52"
+    "evidence_sha256": "0550617b5c200b1ef8f29b9a451c2be159d0bc86a5eccc2fc2b2daf2fe1f6b52",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv251002609",
@@ -673,10 +673,10 @@
     "year": "2025",
     "category": "attacks_evaluation",
     "url": "https://arxiv.org/abs/2510.02609",
-    "abstract": " Code agents have gained widespread adoption due to their strong code generation capabilities and integration with code interpreters, enabling dynamic execution, debugging, and interactive programming capabilities. While these advancements have streamlined complex workflows, they have also introduced critical safety and security risks. Current static safety benchmarks and red-teaming tools are inadequate for identifying emerging real-world risky scenarios, as they fail to cover certain boundary conditions, such as the combined effects of different jailbreak tools. In this work, we propose RedCodeAgent, the first automated red-teaming agent designed to systematically uncover vulnerabilities in diverse code agents. With an adaptive memory module, RedCodeAgent can leverage existing jailbreak knowledge, dynamically select the most effective red-teaming tools and tool combinations in a tailored toolbox for a given input query, thus identifying vulnerabilities that might otherwise be overlooked. For reliable evaluation, we develop simulated sandbox environments to additionally evaluate the execution results of code agents, mitigating potential biases of LLM-based judges that only rely on static code. Through extensive evaluations across multiple state-of-the-art code agents, diverse risky scenarios, and various programming languages, RedCodeAgent consistently outperforms existing red-teaming methods, achieving higher attack success rates and lower rejection rates with high efficiency. We further validate RedCodeAgent on real-world code assistants, e.g., Cursor and Codeium, exposing previously unidentified security risks. By automating and optimizing red-teaming processes, RedCodeAgent enables scalable, adaptive, and effective safety assessments of code agents.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "64fd0ef249c13c722cc66544519268b7518478d0cac4e570cbdce49b779a6456"
+    "evidence_sha256": "64fd0ef249c13c722cc66544519268b7518478d0cac4e570cbdce49b779a6456",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv261003585",
@@ -691,10 +691,10 @@
     "year": "2026",
     "category": "attacks_evaluation",
     "url": "https://arxiv.org/abs/2610.03585",
-    "abstract": " Security benchmarks for LLM-based agents often report the attack success rate (ASR) as a measure of model robustness and use these scores to compare different models and defense mechanisms, assuming that they describe the security of the agent. In this paper, we explore whether it also influences the benchmark's measurement. To measure the effect of the benchmark representation, we introduce threat-preserving representation sensitivity (TPRS), which measures how much the ASR changes when we change the agent-visible representation while holding the underlying task, harmful action, security policy, ground truth, environment, and the evaluation criteria fixed. On Agent Security Bench (ASB), replacing threat-related tool names with threat-neutral names raises the committed attack success rate by 11.67 percentage points on GPT-5-mini and by 13.21 points on Claude Haiku 4.5. On MCPTox, replacing the original neutral tool name with an explicit threat-related name lowers the ASR by 11.00 percentage points on GPT-5-mini and 4.11 points on Claude Haiku 4.5. On AgentDojo, adding threat-related wording to the attack-relevant tool changes ASR by only 0.50 percentage points on GPT-4o-mini, yet the benign utility falls by 5.36 points on tasks requiring that tool. We ran an experiment on MCPTox where we observed that a threat-neutral name matched on token count, length, and casing reproduces most of the shift produced by the threat-explicit name (8.54 of 11.00 points on GPT-5-mini). The results show that a security score measured under one representation may fail to generalize across threat-preserving representations of the same security problem. Robustness claims should therefore be supported by performance across a controlled set of threat-preserving representations rather than relying on a single representation-dependent score.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "07d0cc70b9848a5aadb54368fdc990137fe46f8b19d47f7da91dde256d21d8e0"
+    "evidence_sha256": "07d0cc70b9848a5aadb54368fdc990137fe46f8b19d47f7da91dde256d21d8e0",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250217419",
@@ -725,10 +725,10 @@
     "year": "2025",
     "category": "dual_process",
     "url": "https://arxiv.org/abs/2502.17419",
-    "abstract": " Achieving human-level intelligence requires refining the transition from the fast, intuitive System 1 to the slower, more deliberate System 2 reasoning. While System 1 excels in quick, heuristic decisions, System 2 relies on logical reasoning for more accurate judgments and reduced biases. Foundational Large Language Models (LLMs) excel at fast decision-making but lack the depth for complex reasoning, as they have not yet fully embraced the step-by-step analysis characteristic of true System 2 thinking. Recently, reasoning LLMs like OpenAI's o1/o3 and DeepSeek's R1 have demonstrated expert-level performance in fields such as mathematics and coding, closely mimicking the deliberate reasoning of System 2 and showcasing human-like cognitive abilities. This survey begins with a brief overview of the progress in foundational LLMs and the early development of System 2 technologies, exploring how their combination has paved the way for reasoning LLMs. Next, we discuss how to construct reasoning LLMs, analyzing their features, the core methods enabling advanced reasoning, and the evolution of various reasoning LLMs. Additionally, we provide an overview of reasoning benchmarks, offering an in-depth comparison of the performance of representative reasoning LLMs. Finally, we explore promising directions for advancing reasoning LLMs and maintain a real-time \\href{ this https URL }{GitHub Repository} to track the latest developments. We hope this survey will serve as a valuable resource to inspire innovation and drive progress in this rapidly evolving field.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "6f79a070aab009f594cf63b0aa61cc63de3f4ac228f5b1c173e2c0a1209c3fe8"
+    "evidence_sha256": "6f79a070aab009f594cf63b0aa61cc63de3f4ac228f5b1c173e2c0a1209c3fe8",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv150102573",
@@ -742,10 +742,10 @@
     "year": "2015",
     "category": "foundations",
     "url": "https://arxiv.org/abs/1501.02573",
-    "abstract": " Scalability issues may prevent users from verifying critical properties of a complex hardware design. In this situation, we propose to synthesize a \"safety shield\" that is attached to the design to enforce the properties at run time. Shield synthesis can succeed where model checking and reactive synthesis fail, because it only considers a small set of critical properties, as opposed to the complex design, or the complete specification in the case of reactive synthesis. The shield continuously monitors the input/output of the design and corrects its erroneous output only if necessary, and as little as possible, so other non-critical properties are likely to be retained. Although runtime enforcement has been studied in other domains such as action systems, reactive systems pose unique challenges where the shield must act without delay. We thus present the first shield synthesis solution for reactive hardware systems and report our experimental results. This is an extended version of [5], featuring an additional appendix.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "400093eed5b8a9ea3c9fae87e70fabe64edb22781fce3b89d9dbbd9f5de44a0d"
+    "evidence_sha256": "400093eed5b8a9ea3c9fae87e70fabe64edb22781fce3b89d9dbbd9f5de44a0d",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv170808611",
@@ -761,10 +761,10 @@
     "year": "2017",
     "category": "foundations",
     "url": "https://arxiv.org/abs/1708.08611",
-    "abstract": " Reinforcement learning algorithms discover policies that maximize reward, but do not necessarily guarantee safety during learning or execution phases. We introduce a new approach to learn optimal policies while enforcing properties expressed in temporal logic. To this end, given the temporal logic specification that is to be obeyed by the learning system, we propose to synthesize a reactive system called a shield. The shield is introduced in the traditional learning process in two alternative ways, depending on the location at which the shield is implemented. In the first one, the shield acts each time the learning agent is about to make a decision and provides a list of safe actions. In the second way, the shield is introduced after the learning agent. The shield monitors the actions from the learner and corrects them only if the chosen action causes a violation of the specification. We discuss which requirements a shield must meet to preserve the convergence guarantees of the learner. Finally, we demonstrate the versatility of our approach on several challenging reinforcement learning scenarios.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "84897cdad3f22b7858a5b4aa945593db9bbfa97f16a3e5d3920dd9779635cd2f"
+    "evidence_sha256": "84897cdad3f22b7858a5b4aa945593db9bbfa97f16a3e5d3920dd9779635cd2f",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv190805402",
@@ -778,10 +778,10 @@
     "year": "2019",
     "category": "foundations",
     "url": "https://arxiv.org/abs/1908.05402",
-    "abstract": " Cyber-physical systems are often safety-critical in that violations of safety properties may lead to catastrophes. We propose a method to enforce the safety of systems with real-valued signals by synthesizing a runtime enforcer called the shield. Whenever the system violates a property, the shield, composed with the system, makes correction instantaneously to ensure that no erroneous output is generated by the combined system. While techniques for synthesizing Boolean shields are well understood, they do not handle real-valued signals ubiquitous in cyber-physical systems, meaning corrections may be either unrealizable or inefficient to compute in the real domain. We solve the realizability and efficiency problems by statically analyzing the compatibility of predicates defined over real-valued signals, and using the analysis result to constrain a two-player safety game used to synthesize the shield. We have implemented the method and demonstrated its effectiveness and efficiency on a variety of applications, including an automotive powertrain control system.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "454247f2789d96e63fb36994caa093c55407219056560cafe2496282708d7d2a"
+    "evidence_sha256": "454247f2789d96e63fb36994caa093c55407219056560cafe2496282708d7d2a",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv240604184",
@@ -796,10 +796,10 @@
     "year": "2024",
     "category": "foundations",
     "url": "https://arxiv.org/abs/2406.04184",
-    "abstract": " In recent years, Machine Learning (ML) models have achieved remarkable success in various domains. However, these models also tend to demonstrate unsafe behaviors, precluding their deployment in safety-critical systems. To cope with this issue, ample research focuses on developing methods that guarantee the safe behaviour of a given ML model. A prominent example is shielding which incorporates an external component (a ``shield'') that blocks unwanted behavior. Despite significant progress, shielding suffers from a main setback: it is currently geared towards properties encoded solely in propositional logics (e.g., LTL) and is unsuitable for richer logics. This, in turn, limits the widespread applicability of shielding in many real-world systems. In this work, we address this gap, and extend shielding to LTL modulo theories, by building upon recent advances in reactive synthesis modulo theories. This allowed us to develop a novel approach for generating shields conforming to complex safety specifications in these more expressive, logics. We evaluated our shields and demonstrate their ability to handle rich data with temporal dynamics. To the best of our knowledge, this is the first approach for synthesizing shields for such expressivity.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "5df9716bad54270fa1062e2282a17817f70357930f2927b23bbd532aa0c1fd54"
+    "evidence_sha256": "5df9716bad54270fa1062e2282a17817f70357930f2927b23bbd532aa0c1fd54",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250322738",
@@ -812,10 +812,10 @@
     "year": "2025",
     "category": "runtime_extra",
     "url": "https://arxiv.org/abs/2503.22738",
-    "abstract": " Autonomous agents powered by foundation models have seen widespread adoption across various real-world applications. However, they remain highly vulnerable to malicious instructions and attacks, which can result in severe consequences such as privacy breaches and financial losses. More critically, existing guardrails for LLMs are not applicable due to the complex and dynamic nature of agents. To tackle these challenges, we propose ShieldAgent, the first guardrail agent designed to enforce explicit safety policy compliance for the action trajectory of other protected agents through logical reasoning. Specifically, ShieldAgent first constructs a safety policy model by extracting verifiable rules from policy documents and structuring them into a set of action-based probabilistic rule circuits. Given the action trajectory of the protected agent, ShieldAgent retrieves relevant rule circuits and generates a shielding plan, leveraging its comprehensive tool library and executable code for formal verification. In addition, given the lack of guardrail benchmarks for agents, we introduce ShieldAgent-Bench, a dataset with 3K safety-related pairs of agent instructions and action trajectories, collected via SOTA attacks across 6 web environments and 7 risk categories. Experiments show that ShieldAgent achieves SOTA on ShieldAgent-Bench and three existing benchmarks, outperforming prior methods by 11.3% on average with a high recall of 90.1%. Additionally, ShieldAgent reduces API queries by 64.7% and inference time by 58.2%, demonstrating its high precision and efficiency in safeguarding agents.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "79ac51b5eb03688a4a0a8dc5d2cfd3962041758b61b461afccab89081ce6d40b"
+    "evidence_sha256": "79ac51b5eb03688a4a0a8dc5d2cfd3962041758b61b461afccab89081ce6d40b",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv251005156",
@@ -832,10 +832,10 @@
     "year": "2025",
     "category": "runtime_extra",
     "url": "https://arxiv.org/abs/2510.05156",
-    "abstract": " The deployment of autonomous AI agents in sensitive domains, such as healthcare, introduces critical risks to safety, security, and privacy. These agents may deviate from user objectives, violate data handling policies, or be compromised by adversarial attacks. Mitigating these dangers necessitates a mechanism to formally guarantee that an agent's actions adhere to predefined safety constraints, a challenge that existing systems do not fully address. We introduce VeriGuard, a novel framework that provides formal safety guarantees for LLM-based agents through a dual-stage architecture designed for robust and verifiable correctness. The initial offline stage involves a comprehensive validation process. It begins by clarifying user intent to establish precise safety specifications. VeriGuard then synthesizes a behavioral policy and subjects it to both testing and formal verification to prove its compliance with these specifications. This iterative process refines the policy until it is deemed correct. Subsequently, the second stage provides online action monitoring, where VeriGuard operates as a runtime monitor to validate each proposed agent action against the pre-verified policy before execution. This separation of the exhaustive offline validation from the lightweight online monitoring allows formal guarantees to be practically applied, providing a robust safeguard that substantially improves the trustworthiness of LLM agents.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "2dd08745a86e46e54134293f193da4bfc76e50434ebfaae7b9f5537b152c59d5"
+    "evidence_sha256": "2dd08745a86e46e54134293f193da4bfc76e50434ebfaae7b9f5537b152c59d5",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv260222302",
@@ -846,10 +846,10 @@
     "year": "2026",
     "category": "runtime_extra",
     "url": "https://arxiv.org/abs/2602.22302",
-    "abstract": " Traditional software relies on contracts -- APIs, type systems, assertions -- to specify and enforce correct behavior. AI agents, by contrast, operate on prompts and natural language instructions with no formal behavioral specification. This gap is the root cause of drift, governance failures, and frequent project failures in agentic AI deployments. We introduce Agent Behavioral Contracts (ABC), a formal framework that brings Design-by-Contract principles to autonomous AI agents. An ABC contract C = (P, I, G, R) specifies Preconditions, Invariants, Governance policies, and Recovery mechanisms as first-class, runtime-enforceable components. We define (p, delta, k)-satisfaction -- a probabilistic notion of contract compliance that accounts for LLM non-determinism and recovery -- and prove a Drift Bounds Theorem showing that contracts with recovery rate gamma > alpha (the natural drift rate) bound behavioral drift to D* = alpha/gamma in expectation, with Gaussian concentration in the stochastic setting. We establish sufficient conditions for safe contract composition in multi-agent chains and derive probabilistic degradation bounds. We implement ABC in AgentAssert, a runtime enforcement library, and evaluate on AgentContract-Bench, a benchmark of 200 scenarios across 7 models from 6 vendors. Results across 1,980 sessions show that contracted agents detect 5.2-6.8 soft violations per session that uncontracted baselines miss entirely (p < 0.0001, Cohen's d = 6.7-33.8), achieve 88-100% hard constraint compliance, and bound behavioral drift to D* < 0.27 across extended sessions, with 100% recovery for frontier models and 17-100% across all models, at overhead < 10 ms per action.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "ef400f91c4b5fdc6c8559bc64bf42a856a5f5f1d58b561821b579812d3e8f24c"
+    "evidence_sha256": "ef400f91c4b5fdc6c8559bc64bf42a856a5f5f1d58b561821b579812d3e8f24c",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250613028",
@@ -863,10 +863,10 @@
     "year": "2025",
     "category": "runtime_extra",
     "url": "https://arxiv.org/abs/2506.13028",
-    "abstract": " We explore how a shell that uses an LLM to accept natural language input might be designed differently from the shells of today. As LLMs may produce unintended or unexplainable outputs, we argue that a natural language shell should provide guardrails that empower users to recover from such errors. We concretize some ideas for doing so by designing a new shell called NaSh, identify remaining open problems in this space, and discuss research directions to address them.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "e61dc4647ee15db381884e0a7f9e4e51c44d11932d617d86c3810871ec7e0190"
+    "evidence_sha256": "e61dc4647ee15db381884e0a7f9e4e51c44d11932d617d86c3810871ec7e0190",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250307885",
@@ -881,10 +881,10 @@
     "year": "2025",
     "category": "runtime_extra",
     "url": "https://arxiv.org/abs/2503.07885",
-    "abstract": " Although the integration of large language models (LLMs) into robotics has unlocked transformative capabilities, it has also introduced significant safety concerns, ranging from average-case LLM errors (e.g., hallucinations) to adversarial jailbreaking attacks, which can produce harmful robot behavior in real-world settings. Traditional robot safety approaches do not address the contextual vulnerabilities of LLMs, and current LLM safety approaches overlook the physical risks posed by robots operating in real-world environments. To ensure the safety of LLM-enabled robots, we propose RoboGuard, a two-stage guardrail architecture. RoboGuard first contextualizes pre-defined safety rules by grounding them in the robot's environment using a root-of-trust LLM. This LLM is shielded from malicious prompts and employs chain-of-thought (CoT) reasoning to generate context-dependent safety specifications, such as temporal logic constraints. RoboGuard then resolves conflicts between these contextual safety specifications and potentially unsafe plans using temporal logic control synthesis, ensuring compliance while minimally violating user preferences. In simulation and real-world experiments that consider worst-case jailbreaking attacks, RoboGuard reduces the execution of unsafe plans from over 92% to below 3% without compromising performance on safe plans. We also demonstrate that RoboGuard is resource-efficient, robust against adaptive attacks, and enhanced by its root-of-trust LLM's CoT reasoning. These results demonstrate the potential of RoboGuard to mitigate the safety risks and enhance the reliability of LLM-enabled robots. We provide additional resources at this https URL .",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "fe6e84795c7813f7bbdcb41a0156d9296708defcf7c477feb0c497f474a094d8"
+    "evidence_sha256": "fe6e84795c7813f7bbdcb41a0156d9296708defcf7c477feb0c497f474a094d8",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250300600",
@@ -901,10 +901,10 @@
     "year": "2025",
     "category": "runtime_extra",
     "url": "https://arxiv.org/abs/2503.00600",
-    "abstract": " AI-augmented data processing systems (DPSs) integrate large language models (LLMs) into query pipelines, allowing powerful semantic operations on structured and unstructured data. However, the reliability (a.k.a. trust) of these systems is fundamentally challenged by the potential for LLMs to produce errors, limiting their adoption in critical domains. To help address this reliability bottleneck, we introduce semantic integrity constraints (SICs) -- a declarative abstraction for specifying and enforcing correctness conditions over LLM outputs in semantic queries. SICs generalize traditional database integrity constraints to semantic settings, supporting common types of constraints, such as grounding, soundness, and exclusion, with both reactive and proactive enforcement strategies. We argue that SICs provide a foundation for building reliable and auditable AI-augmented data systems. Specifically, we present a system design for integrating SICs into query planning and runtime execution and discuss its realization in AI-augmented DPSs. To guide and evaluate our vision, we outline several design goals -- covering criteria around expressiveness, runtime semantics, integration, performance, and enterprise-scale applicability -- and discuss how our framework addresses each, along with open research challenges.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "1e37f2e8b0a542715600b9e00fb0767c074d7aaf4f4747988433aeabe053fda1"
+    "evidence_sha256": "1e37f2e8b0a542715600b9e00fb0767c074d7aaf4f4747988433aeabe053fda1",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv251005310",
@@ -921,10 +921,10 @@
     "year": "2025",
     "category": "guards_extra",
     "url": "https://arxiv.org/abs/2510.05310",
-    "abstract": " With the increasing adoption of large language models (LLMs), ensuring the safety of LLM systems has become a pressing concern. External LLM-based guardrail models have emerged as a popular solution to screen unsafe inputs and outputs, but they are themselves fine-tuned or prompt-engineered LLMs that are vulnerable to data distribution shifts. In this paper, taking Retrieval Augmentation Generation (RAG) as a case study, we investigated how robust LLM-based guardrails are against additional information embedded in the context. Through a systematic evaluation of 3 Llama Guards and 2 GPT-oss models, we confirmed that inserting benign documents into the guardrail context alters the judgments of input and output guardrails in around 11% and 8% of cases, making them unreliable. We separately analyzed the effect of each component in the augmented context: retrieved documents, user query, and LLM-generated response. The two mitigation methods we tested only bring minor improvements. These results expose a context-robustness gap in current guardrails and motivate training and evaluation protocols that are robust to retrieval and query composition.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "2ad9331f34533ecdbdd3a9d01dd3b4a6198e20156053dfd32ce4b0f3ef80aa22"
+    "evidence_sha256": "2ad9331f34533ecdbdd3a9d01dd3b4a6198e20156053dfd32ce4b0f3ef80aa22",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250721170",
@@ -944,10 +944,10 @@
     "year": "2025",
     "category": "guards_extra",
     "url": "https://arxiv.org/abs/2507.21170",
-    "abstract": " The rise of Large Language Models has created a general excitement about the great potential for a myriad of applications. While LLMs offer many possibilities, questions about safety, privacy, and ethics have emerged, and all the key actors are working to address these issues with protective measures for their own models and standalone solutions. The constantly evolving nature of LLMs makes it extremely challenging to universally shield users against their potential risks, and one-size-fits-all solutions are unfeasible. In this work, we propose OneShield, our stand-alone, model-agnostic and customizable solution to safeguard LLMs. OneShield aims to provide facilities for defining risk factors, expressing and declaring contextual safety and compliance policies, and mitigating LLM risks, with a focus on each specific customer. We describe the implementation of the framework, discuss scalability considerations, and provide usage statistics of OneShield since its initial deployment.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "6db476a46b5070a01ab911c3555795cb8161d16706e94027bb99f327d809f3bc"
+    "evidence_sha256": "6db476a46b5070a01ab911c3555795cb8161d16706e94027bb99f327d809f3bc",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250315707",
@@ -965,10 +965,10 @@
     "year": "2025",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2503.15707",
-    "abstract": " The integration of large language models (LLMs) into robotic task planning has unlocked better reasoning capabilities for complex, long-horizon workflows. However, ensuring safety in LLM-driven plans remains a critical challenge, as these models often prioritize task completion over risk mitigation. This paper introduces SAFER (Safety-Aware Framework for Execution in Robotics), a multi-LLM framework designed to embed safety awareness into robotic task planning. SAFER employs a Safety Agent that operates alongside the primary task planner, providing safety feedback. Additionally, we introduce LLM-as-a-Judge, a novel metric leveraging LLMs as evaluators to quantify safety violations within generated task plans. Our framework integrates safety feedback at multiple stages of execution, enabling real-time risk assessment, proactive error correction, and transparent safety evaluation. We also integrate a control framework using Control Barrier Functions (CBFs) to ensure safety guarantees within SAFER's task planning. We evaluated SAFER against state-of-the-art LLM planners on complex long-horizon tasks involving heterogeneous robotic agents, demonstrating its effectiveness in reducing safety violations while maintaining task efficiency. We also verify the task planner and safety planner through actual hardware experiments involving multiple robots and a human.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "ee2f16433acdf44fb9def9f55e4d2a4b4122835d7ab70dc17ca4bfc745a0d228"
+    "evidence_sha256": "ee2f16433acdf44fb9def9f55e4d2a4b4122835d7ab70dc17ca4bfc745a0d228",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250816481",
@@ -981,10 +981,10 @@
     "year": "2025",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2508.16481",
-    "abstract": " Ensuring the safe use of agentic systems requires a thorough understanding of the range of malicious behaviors these systems may exhibit. In this paper, we evaluate the robustness of LLM-based agentic systems against attacks that aim to elicit harmful actions from agents. To this end, we propose a novel taxonomy of harms for agentic systems and a novel benchmark, BAD-ACTS, for studying the security of agentic systems with respect to a wide range of harmful actions. BAD-ACTS consists of five implementations of agentic systems in distinct application environments, as well as a dataset of 238 high-quality examples of harmful actions and an extended dataset containing 699 additional adversarial actions. This enables a comprehensive study of the robustness of agentic systems across a wide range of categories of harmful behaviors, available tools, and inter-agent communication structures. Using this benchmark, we analyze the robustness of agentic systems under an array of attackers attempting to elicit malicious behaviors, including agents acting adversarially and prompt injections. We found that agents are often vulnerable, as indicated by success rates between 40% and 90% depending on the model. We additionally propose an effective defense based on zero-shot message monitoring. We believe that this benchmark provides a diverse testbed for the safety research of agentic systems. Code is available at this https URL .",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "11ecf35809cb8fb9122ee73c792f41103483d6c425bf3046ddf9ba0a73bd9e8d"
+    "evidence_sha256": "11ecf35809cb8fb9122ee73c792f41103483d6c425bf3046ddf9ba0a73bd9e8d",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv251102164",
@@ -999,10 +999,10 @@
     "year": "2025",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2511.02164",
-    "abstract": " Full verification of learning-enabled cyber-physical systems (CPS) has long been intractable due to challenges including black-box components and complex real-world environments. Existing tools either provide formal guarantees for limited types of systems or test the system as a monolith, but no general framework exists for compositional analysis of learning-enabled CPS using varied verification techniques over complex real-world environments. This paper introduces ScenicProver, a verification framework that aims to fill this gap. Built upon the Scenic probabilistic programming language, the framework supports: (1) compositional system description with clear component interfaces, ranging from interpretable code to black boxes; (2) assume-guarantee contracts over those components using an extension of Linear Temporal Logic containing arbitrary Scenic expressions; (3) evidence generation through testing, formal proofs via Lean 4 integration, and importing external assumptions; (4) systematic combination of generated evidence using contract operators; and (5) automatic generation of assurance cases tracking the provenance of system-level guarantees. We demonstrate the framework's effectiveness through a case study on an autonomous vehicle's automatic emergency braking system with sensor fusion. By leveraging manufacturer guarantees for radar and laser sensors and focusing testing efforts on uncertain conditions, our approach enables stronger probabilistic guarantees than monolithic testing with the same computational budget.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "0d726c62dae0fe14f6dad50d3c8d2a67881fdfca7ccd385a9ea164cfe56803e3"
+    "evidence_sha256": "0d726c62dae0fe14f6dad50d3c8d2a67881fdfca7ccd385a9ea164cfe56803e3",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv251221220",
@@ -1022,10 +1022,10 @@
     "year": "2025",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2512.21220",
-    "abstract": " Embodied agents powered by vision-language models (VLMs) are increasingly capable of executing complex real-world tasks, yet they remain vulnerable to hazardous instructions that may trigger unsafe behaviors. Runtime safety guardrails, which intercept hazardous actions during task execution, offer a promising solution due to their flexibility. However, existing defenses often rely on static rule filters or prompt-level control, which struggle to address implicit risks arising in dynamic, temporally dependent, and context-rich environments. To address this, we propose RoboSafe, a hybrid reasoning runtime safeguard for embodied agents through executable predicate-based safety logic. RoboSafe integrates two complementary reasoning processes on a Hybrid Long-Short Safety Memory. We first propose a Backward Reflective Reasoning module that continuously revisits recent trajectories in short-term memory to infer temporal safety predicates and proactively triggers replanning when violations are detected. We then propose a Forward Predictive Reasoning module that anticipates upcoming risks by generating context-aware safety predicates from the long-term safety memory and the agent's multimodal observations. Together, these components form an adaptive, verifiable safety logic that is both interpretable and executable as code. Extensive experiments across multiple agents demonstrate that RoboSafe substantially reduces hazardous actions (-36.8% risk occurrence) compared with leading baselines, while maintaining near-original task performance. Real-world evaluations on physical robotic arms further confirm its practicality. Code will be released upon acceptance.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "b6ce3cbd6e79e2a3b847a41c07557be53261ac6c645e6cdad01c317df592c10e"
+    "evidence_sha256": "b6ce3cbd6e79e2a3b847a41c07557be53261ac6c645e6cdad01c317df592c10e",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv260223719",
@@ -1042,10 +1042,10 @@
     "year": "2026",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2602.23719",
-    "abstract": " In UAV dynamic decision, complex and variable hazardous factors pose severe challenges to the generalization capability of algorithms. Despite offering semantic understanding and scene generalization, Large Language Models (LLM) lack domain-specific UAV control knowledge and formal safety assurances, restricting their direct applicability. To bridge this gap, this paper proposes a train-free two-layer decision architecture based on LLMs, integrating high-level safety planning with low-level precise control. The framework introduces three key contributions: 1) A fuzzy Control Barrier Function verification mechanism for semantically-augmented actions, providing provable safety certification for LLM outputs. 2) A star-hierarchical graph-based retrieval-augmented generation system, enabling efficient, elastic, and interpretable scene adaptation. 3) Systematic experimental validation in pursuit-evasion scenarios with unknown obstacles and emergent threats, demonstrating that our SAGE-LLM maintains performance while significantly enhancing safety and generalization without online training. The proposed framework demonstrates strong extensibility, suggesting its potential for generalization to broader embodied intelligence systems and safety-critical control domains.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "045bb28c9baa97b59d277e30382d67034953e602f89817916a5d639212e37bb8"
+    "evidence_sha256": "045bb28c9baa97b59d277e30382d67034953e602f89817916a5d639212e37bb8",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv240501563",
@@ -1067,10 +1067,10 @@
     "year": "2024",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2405.01563",
-    "abstract": " We develop a principled procedure for determining when a large language model (LLM) should abstain from responding (e.g., by saying \"I don't know\") in a general domain, instead of resorting to possibly \"hallucinating\" a non-sensical or incorrect answer. Building on earlier approaches that use self-consistency as a more reliable measure of model confidence, we propose using the LLM itself to self-evaluate the similarity between each of its sampled responses for a given query. We then further leverage conformal prediction techniques to develop an abstention procedure that benefits from rigorous theoretical guarantees on the hallucination rate (error rate). Experimentally, our resulting conformal abstention method reliably bounds the hallucination rate on various closed-book, open-domain generative question answering datasets, while also maintaining a significantly less conservative abstention rate on a dataset with long responses (Temporal Sequences) compared to baselines using log-probability scores to quantify uncertainty, while achieveing comparable performance on a dataset with short answers (TriviaQA). To evaluate the experiments automatically, one needs to determine if two responses are equivalent given a question. Following standard practice, we use a thresholded similarity function to determine if two responses match, but also provide a method for calibrating the threshold based on conformal prediction, with theoretical guarantees on the accuracy of the match prediction, which might be of independent interest.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "43ae453365e66f7269f85876a63fe3583ff0341392cf8768d5d4e8c8d0f7bbb0"
+    "evidence_sha256": "43ae453365e66f7269f85876a63fe3583ff0341392cf8768d5d4e8c8d0f7bbb0",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv220405862",
@@ -1111,10 +1111,10 @@
     "year": "2022",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2204.05862",
-    "abstract": " We apply preference modeling and reinforcement learning from human feedback (RLHF) to finetune language models to act as helpful and harmless assistants. We find this alignment training improves performance on almost all NLP evaluations, and is fully compatible with training for specialized skills such as python coding and summarization. We explore an iterated online mode of training, where preference models and RL policies are updated on a weekly cadence with fresh human feedback data, efficiently improving our datasets and models. Finally, we investigate the robustness of RLHF training, and identify a roughly linear relation between the RL reward and the square root of the KL divergence between the policy and its initialization. Alongside our main results, we perform peripheral analyses on calibration, competing objectives, and the use of OOD detection, compare our models with human writers, and provide samples from our models using prompts appearing in recent related work.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "889edf404dea62a309adf5ba030064f546c5a8fd8ee196c609cedf933c5c1c3e"
+    "evidence_sha256": "889edf404dea62a309adf5ba030064f546c5a8fd8ee196c609cedf933c5c1c3e",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv221208073",
@@ -1175,10 +1175,10 @@
     "year": "2022",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2212.08073",
-    "abstract": " As AI systems become more capable, we would like to enlist their help to supervise other AIs. We experiment with methods for training a harmless AI assistant through self-improvement, without any human labels identifying harmful outputs. The only human oversight is provided through a list of rules or principles, and so we refer to the method as 'Constitutional AI'. The process involves both a supervised learning and a reinforcement learning phase. In the supervised phase we sample from an initial model, then generate self-critiques and revisions, and then finetune the original model on revised responses. In the RL phase, we sample from the finetuned model, use a model to evaluate which of the two samples is better, and then train a preference model from this dataset of AI preferences. We then train with RL using the preference model as the reward signal, i.e. we use 'RL from AI Feedback' (RLAIF). As a result we are able to train a harmless but non-evasive AI assistant that engages with harmful queries by explaining its objections to them. Both the SL and RL methods can leverage chain-of-thought style reasoning to improve the human-judged performance and transparency of AI decision making. These methods make it possible to control AI behavior more precisely and with far fewer human labels.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "7a86597e78a15c5b4e763b0af1ab79c389453eb598783ae69abd4ea469dbdfad"
+    "evidence_sha256": "7a86597e78a15c5b4e763b0af1ab79c389453eb598783ae69abd4ea469dbdfad",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv240617819",
@@ -1192,10 +1192,10 @@
     "year": "2024",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2406.17819",
-    "abstract": " Science and technology have a growing need for effective mechanisms that ensure reliable, controlled performance from black-box machine learning algorithms. These performance guarantees should ideally hold conditionally on the input-that is the performance guarantees should hold, at least approximately, no matter what the input. However, beyond stylized discrete groupings such as ethnicity and gender, the right notion of conditioning can be difficult to define. For example, in problems such as image segmentation, we want the uncertainty to reflect the intrinsic difficulty of the test sample, but this may be difficult to capture via a conditioning event. Building on the recent work of Gibbs et al. [2023], we propose a methodology for achieving approximate conditional control of statistical risks-the expected value of loss functions-by adapting to the difficulty of test samples. Our framework goes beyond traditional conditional risk control based on user-provided conditioning events to the algorithmic, data-driven determination of appropriate function classes for conditioning. We apply this framework to various regression and segmentation tasks, enabling finer-grained control over model performance and demonstrating that by continuously monitoring and adjusting these parameters, we can achieve superior precision compared to conventional risk-control methods.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "0a9665ef6546a8a49088e59d044384402fc3382ad2bb2a11f2615e8046556b6b"
+    "evidence_sha256": "0a9665ef6546a8a49088e59d044384402fc3382ad2bb2a11f2615e8046556b6b",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv250220285",
@@ -1209,10 +1209,10 @@
     "year": "2025",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2502.20285",
-    "abstract": " Recent developments in large language models (LLMs) have led to their widespread usage for various tasks. The prevalence of LLMs in society implores the assurance on the reliability of their performance. In particular, risk-sensitive applications demand meticulous attention to unexpectedly poor outcomes, i.e., tail events, for instance, toxic answers, humiliating language, and offensive outputs. Due to the costly nature of acquiring human annotations, general-purpose scoring models have been created to automate the process of quantifying these tail events. This phenomenon introduces potential human-machine misalignment between the respective scoring mechanisms. In this work, we present a lightweight calibration framework for blackbox models that ensures the alignment of humans and machines with provable guarantees. Our framework provides a rigorous approach to controlling any distortion risk measure that is characterized by a weighted average of quantiles of the loss incurred by the LLM with high confidence. The theoretical foundation of our method relies on the connection between conformal risk control and a traditional family of statistics, i.e., L-statistics. To demonstrate the utility of our framework, we conduct comprehensive experiments that address the issue of human-machine misalignment.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "34715c70b506f08535d190e2ab3a2c8493a7e3a0740c87a5165d522968f34557"
+    "evidence_sha256": "34715c70b506f08535d190e2ab3a2c8493a7e3a0740c87a5165d522968f34557",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv230518404",
@@ -1229,10 +1229,10 @@
     "year": "2023",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2305.18404",
-    "abstract": " As large language models continue to be widely developed, robust uncertainty quantification techniques will become crucial for their safe deployment in high-stakes scenarios. In this work, we explore how conformal prediction can be used to provide uncertainty quantification in language models for the specific task of multiple-choice question-answering. We find that the uncertainty estimates from conformal prediction are tightly correlated with prediction accuracy. This observation can be useful for downstream applications such as selective classification and filtering out low-quality predictions. We also investigate the exchangeability assumption required by conformal prediction to out-of-subject questions, which may be a more realistic scenario for many practical applications. Our work contributes towards more trustworthy and reliable usage of large language models in safety-critical situations, where robust guarantees of error rate are required.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "3af7a317c5483c43e32a50fe94bcccbb1c62f5b102954151f3d2a239509742b4"
+    "evidence_sha256": "3af7a317c5483c43e32a50fe94bcccbb1c62f5b102954151f3d2a239509742b4",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv210907958",
@@ -1245,10 +1245,10 @@
     "year": "2021",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2109.07958",
-    "abstract": " We propose a benchmark to measure whether a language model is truthful in generating answers to questions. The benchmark comprises 817 questions that span 38 categories, including health, law, finance and politics. We crafted questions that some humans would answer falsely due to a false belief or misconception. To perform well, models must avoid generating false answers learned from imitating human texts. We tested GPT-3, GPT-Neo/J, GPT-2 and a T5-based model. The best model was truthful on 58% of questions, while human performance was 94%. Models generated many false answers that mimic popular misconceptions and have the potential to deceive humans. The largest models were generally the least truthful. This contrasts with other NLP tasks, where performance improves with model size. However, this result is expected if false answers are learned from the training distribution. We suggest that scaling up models alone is less promising for improving truthfulness than fine-tuning using training objectives other than imitation of text from the web.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "f854aa9f226f72763384841bcc4d4f6ce6464c86ba5eabc46c3083281d5861b4"
+    "evidence_sha256": "f854aa9f226f72763384841bcc4d4f6ce6464c86ba5eabc46c3083281d5861b4",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv240210978",
@@ -1260,10 +1260,10 @@
     "year": "2024",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2402.10978",
-    "abstract": " Guaranteeing the correctness and factuality of language model (LM) outputs is a major open problem. In this work, we propose conformal factuality, a framework that can ensure high probability correctness guarantees for LMs by connecting language modeling and conformal prediction. We observe that the correctness of an LM output is equivalent to an uncertainty quantification problem, where the uncertainty sets are defined as the entailment set of an LM's output. Using this connection, we show that conformal prediction in language models corresponds to a back-off algorithm that provides high probability correctness guarantees by progressively making LM outputs less specific (and expanding the associated uncertainty sets). This approach applies to any black-box LM and requires very few human-annotated samples. Evaluations of our approach on closed book QA (FActScore, NaturalQuestions) and reasoning tasks (MATH) show that our approach can provide 80-90% correctness guarantees while retaining the majority of the LM's original output.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "403d3ecb92fabf65d2c680b4251a4f6544d209e33d5ef1e47983d6b35062b0d1"
+    "evidence_sha256": "403d3ecb92fabf65d2c680b4251a4f6544d209e33d5ef1e47983d6b35062b0d1",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv230610193",
@@ -1280,10 +1280,10 @@
     "year": "2023",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2306.10193",
-    "abstract": " We propose a novel approach to conformal prediction for generative language models (LMs). Standard conformal prediction produces prediction sets -- in place of single predictions -- that have rigorous, statistical performance guarantees. LM responses are typically sampled from the model's predicted distribution over the large, combinatorial output space of natural language. Translating this process to conformal prediction, we calibrate a stopping rule for sampling different outputs from the LM that get added to a growing set of candidates until we are confident that the output set is sufficient. Since some samples may be low-quality, we also simultaneously calibrate and apply a rejection rule for removing candidates from the output set to reduce noise. Similar to conformal prediction, we prove that the sampled set returned by our procedure contains at least one acceptable answer with high probability, while still being empirically precise (i.e., small) on average. Furthermore, within this set of candidate responses, we show that we can also accurately identify subsets of individual components -- such as phrases or sentences -- that are each independently correct (e.g., that are not \"hallucinations\"), again with statistical guarantees. We demonstrate the promise of our approach on multiple tasks in open-domain question answering, text summarization, and radiology report generation using different LM variants.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "99ed3ee045bc4a4d88594d8d67c4b29f9dd05ad5139bbc78e146e9123971069e"
+    "evidence_sha256": "99ed3ee045bc4a4d88594d8d67c4b29f9dd05ad5139bbc78e146e9123971069e",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv240301216",
@@ -1297,10 +1297,10 @@
     "year": "2024",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2403.01216",
-    "abstract": " This study aims to address the pervasive challenge of quantifying uncertainty in large language models (LLMs) without logit-access. Conformal Prediction (CP), known for its model-agnostic and distribution-free features, is a desired approach for various LLMs and data distributions. However, existing CP methods for LLMs typically assume access to the logits, which are unavailable for some API-only LLMs. In addition, logits are known to be miscalibrated, potentially leading to degraded CP performance. To tackle these challenges, we introduce a novel CP method that (1) is tailored for API-only LLMs without logit-access; (2) minimizes the size of prediction sets; and (3) ensures a statistical guarantee of the user-defined coverage. The core idea of this approach is to formulate nonconformity measures using both coarse-grained (i.e., sample frequency) and fine-grained uncertainty notions (e.g., semantic similarity). Experimental results on both close-ended and open-ended Question Answering tasks show our approach can mostly outperform the logit-based CP baselines.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "83434bd8f2fc53344d94cc7dbdf954ae11a2f1bfbb86a993f742412f204290d9"
+    "evidence_sha256": "83434bd8f2fc53344d94cc7dbdf954ae11a2f1bfbb86a993f742412f204290d9",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv240314720",
@@ -1316,10 +1316,10 @@
     "year": "2024",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2403.14720",
-    "abstract": " Large Language Models (LLMs), while powerful, are built and trained to process a single text input. In common applications, multiple inputs can be processed by concatenating them together into a single stream of text. However, the LLM is unable to distinguish which sections of prompt belong to various input sources. Indirect prompt injection attacks take advantage of this vulnerability by embedding adversarial instructions into untrusted data being processed alongside user commands. Often, the LLM will mistake the adversarial instructions as user commands to be followed, creating a security vulnerability in the larger system. We introduce spotlighting, a family of prompt engineering techniques that can be used to improve LLMs' ability to distinguish among multiple sources of input. The key insight is to utilize transformations of an input to provide a reliable and continuous signal of its provenance. We evaluate spotlighting as a defense against indirect prompt injection attacks, and find that it is a robust defense that has minimal detrimental impact to underlying NLP tasks. Using GPT-family models, we find that spotlighting reduces the attack success rate from greater than {50}\\% to below {2}\\% in our experiments with minimal impact on task efficacy.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "382a56bd96a5dc61924c959faafdbbed83940ddf3361b1ba49765fd0e9e4786c"
+    "evidence_sha256": "382a56bd96a5dc61924c959faafdbbed83940ddf3361b1ba49765fd0e9e4786c",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv230900614",
@@ -1339,10 +1339,10 @@
     "year": "2023",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2309.00614",
-    "abstract": " As Large Language Models quickly become ubiquitous, it becomes critical to understand their security vulnerabilities. Recent work shows that text optimizers can produce jailbreaking prompts that bypass moderation and alignment. Drawing from the rich body of work on adversarial machine learning, we approach these attacks with three questions: What threat models are practically useful in this domain? How do baseline defense techniques perform in this new domain? How does LLM security differ from computer vision? We evaluate several baseline defense strategies against leading adversarial attacks on LLMs, discussing the various settings in which each is feasible and effective. Particularly, we look at three types of defenses: detection (perplexity based), input preprocessing (paraphrase and retokenization), and adversarial training. We discuss white-box and gray-box settings and discuss the robustness-performance trade-off for each of the defenses considered. We find that the weakness of existing discrete optimizers for text, combined with the relatively high costs of optimization, makes standard adaptive attacks more challenging for LLMs. Future research will be needed to uncover whether more powerful optimizers can be developed, or whether the strength of filtering and preprocessing defenses is greater in the LLMs domain than it has been in computer vision.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "9d2893f94ccf7205c4795021f7673499ce7550daebefdc1af429756a4344944a"
+    "evidence_sha256": "9d2893f94ccf7205c4795021f7673499ce7550daebefdc1af429756a4344944a",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv241216682",
@@ -1356,10 +1356,10 @@
     "year": "2024",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2412.16682",
-    "abstract": " Large Language Model (LLM) agents are increasingly being deployed as conversational assistants capable of performing complex real-world tasks through tool integration. This enhanced ability to interact with external systems and process various data sources, while powerful, introduces significant security vulnerabilities. In particular, indirect prompt injection attacks pose a critical threat, where malicious instructions embedded within external data sources can manipulate agents to deviate from user intentions. While existing defenses based on rule constraints, source spotlighting, and authentication protocols show promise, they struggle to maintain robust security while preserving task functionality. We propose a novel and orthogonal perspective that reframes agent security from preventing harmful actions to ensuring task alignment, requiring every agent action to serve user objectives. Based on this insight, we develop Task Shield, a test-time defense mechanism that systematically verifies whether each instruction and tool call contributes to user-specified goals. Through experiments on the AgentDojo benchmark, we demonstrate that Task Shield reduces attack success rates (2.07\\%) while maintaining high task utility (69.79\\%) on GPT-4o.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "d443c11d79636f95e221fe827fea0ed115cf16f4fccdec35ee6e0ea9be788374"
+    "evidence_sha256": "d443c11d79636f95e221fe827fea0ed115cf16f4fccdec35ee6e0ea9be788374",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv240413208",
@@ -1375,10 +1375,10 @@
     "year": "2024",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2404.13208",
-    "abstract": " Today's LLMs are susceptible to prompt injections, jailbreaks, and other attacks that allow adversaries to overwrite a model's original instructions with their own malicious prompts. In this work, we argue that one of the primary vulnerabilities underlying these attacks is that LLMs often consider system prompts (e.g., text from an application developer) to be the same priority as text from untrusted users and third parties. To address this, we propose an instruction hierarchy that explicitly defines how models should behave when instructions of different priorities conflict. We then propose a data generation method to demonstrate this hierarchical instruction following behavior, which teaches LLMs to selectively ignore lower-privileged instructions. We apply this method to GPT-3.5, showing that it drastically increases robustness -- even for attack types not seen during training -- while imposing minimal degradations on standard capabilities.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "f352bc82d7d5173d4f6e27c40a644ce44db94f20ceafaea3bbaa410adc917308"
+    "evidence_sha256": "f352bc82d7d5173d4f6e27c40a644ce44db94f20ceafaea3bbaa410adc917308",
+    "abstract_checked_locally": true
   },
   {
     "key": "arxiv240801605",
@@ -1401,9 +1401,9 @@
     "year": "2024",
     "category": "snowball_candidate",
     "url": "https://arxiv.org/abs/2408.01605",
-    "abstract": " We are releasing a new suite of security benchmarks for LLMs, CYBERSECEVAL 3, to continue the conversation on empirically measuring LLM cybersecurity risks and capabilities. CYBERSECEVAL 3 assesses 8 different risks across two broad categories: risk to third parties, and risk to application developers and end users. Compared to previous work, we add new areas focused on offensive security capabilities: automated social engineering, scaling manual offensive cyber operations, and autonomous offensive cyber operations. In this paper we discuss applying these benchmarks to the Llama 3 models and a suite of contemporaneous state-of-the-art LLMs, enabling us to contextualize risks both with and without mitigations in place.",
     "verified": "yes",
     "checked": "2026-10-29",
-    "evidence_sha256": "da05d58f872b37a18e62a68816ae4a34a8f8c11dfbf0b94eae7f90070793d89b"
+    "evidence_sha256": "da05d58f872b37a18e62a68816ae4a34a8f8c11dfbf0b94eae7f90070793d89b",
+    "abstract_checked_locally": true
   }
 ]

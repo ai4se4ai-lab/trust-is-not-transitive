@@ -1,5 +1,13 @@
 # Baseline fidelity and model status
 
+Cost/route logs are a declared logical model, not a call profiler. The toy
+baseline helper precomputes lexical features even when its returned logical
+route contains only the hard sink; CPU timings include that helper work.
+Invalid delegation carries an extra nominal scorer charge relative to
+judge-only although their verdicts match. None of these modeled charges
+establishes actual learned-model calls, prices or savings. GuardRuntime's
+mandatory checks really do precede its scorer/judge calls.
+
 `rules_only`, `classifier_only`, `judge_only_scripted`, `naive_delegation`,
 `naive_with_sink` and `checked_uncalibrated` are controlled toy comparators.
 The exposed judge deliberately responds to a fixture phrase. This is a unit

@@ -21,8 +21,9 @@ documents full reproduction, PRISM/TeX setup, licensing and limitations.
 Read the [manuscript](paper/main.pdf), [formal framework](formal/FRAMEWORK.md),
 [preregistration](experiments/PREREGISTRATION.md),
 [amendments](experiments/AMENDMENTS.md) and [final report](docs/FINAL_REPORT.md).
-The paper uses one authored [main.tex](paper/main.tex), [refs.bib](paper/refs.bib)
-and a generated macro include.
+The paper is a single [main.tex](paper/main.tex) with one bibliography,
+[references.bib](paper/references.bib). Result macros are generated into a marked block at
+the top of `main.tex` by `scripts/make_macros.py`; do not hand-edit that block.
 
 The library supplies immutable provenance/action types, a closed JSON DSL,
 direct-edge obligation checks, mandatory sink mediation, structured judge views,

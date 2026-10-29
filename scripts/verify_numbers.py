@@ -15,12 +15,20 @@ ROOT=Path(__file__).resolve().parents[1]
 def check_source(text):
     # Mathematical constants/theorem subscripts are justified by the written
     # proofs rather than experimental data. Remove math before prose checking.
-    text=re.sub(r'(?s)\\\[.*?\\\]|\$.*?\$|\\begin\{(?:equation|align)\*?\}.*?\\end\{(?:equation|align)\*?\}', '',text)
+    text=re.sub(r'(?s)\\\[.*?\\\]|\$.*?\$|\\begin\{(?:equation|align|gather)\*?\}.*?\\end\{(?:equation|align|gather)\*?\}', '',text)
     text=re.sub(r'(?s)\\begin\{verbatim\}.*?\\end\{verbatim\}','',text)
+    # TikZ figures need layout constants (sizes, offsets, axis limits). Plotted
+    # data must still come from result macros: plot coordinates may not
+    # contain literal digits, and every figure is stripped only after this check.
+    for picture in re.findall(r'(?s)\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}',text):
+        for coordinates in re.findall(r'(?s)coordinates\s*\{(.*?)\};',picture):
+            if re.search(r'\d',re.sub(r'\\res[A-Za-z]+\{?\}?','',coordinates)):
+                raise ValueError('Literal data in plot coordinates: '+coordinates.strip()[:80])
+    text=re.sub(r'(?s)\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}','',text)
     errors=[]
     for index,line in enumerate(text.splitlines(),1):
         # Only structural setup may opt out, under these closed command names.
-        if re.match(r'\s*\\(?:documentclass|usepackage|setcounter|setlength|includegraphics|bibliographystyle|bibliography|input|author|title|begin\{tabular\})',line):continue
+        if re.match(r'\s*\\(?:documentclass|usepackage|setcounter|setlength|includegraphics|bibliographystyle|bibliography|input|author|title|begin\{tabular\}|pgfplotsset|usetikzlibrary|renewcommand\{\\arraystretch\})',line):continue
         line=re.sub(r'(?<!\\)%.*','',line)
         line=re.sub(r'\\(?:cite|ref|eqref|label|url|href|texttt)\{[^}]*\}','',line)
         if re.search(r'\d',line):errors.append((index,line.strip()))
@@ -28,9 +36,13 @@ def check_source(text):
 
 
 def main():
-    text=(ROOT/'paper/main.tex').read_text(encoding='utf-8')
+    source=(ROOT/'paper/main.tex').read_text(encoding='utf-8')
+    # The generated macro block is exempt from the prose check; everything
+    # outside it is authored text.
+    head,rest=source.split('% BEGIN GENERATED MACROS',1)
+    generated,tail=rest.split('% END GENERATED MACROS',1)
+    text=head+tail
     check_source(text)
-    generated=(ROOT/'paper/generated/macros.tex').read_text(encoding='utf-8')
     provenance=json.loads((ROOT/'paper/generated/macro_provenance.json').read_text())
     for key,row in provenance.items():
         assert hashlib.sha256((ROOT/row['source']).read_bytes()).hexdigest()==row['source_sha256']
@@ -39,7 +51,8 @@ def main():
     defined=set(re.findall(r'\\newcommand\{\\(res[A-Za-z]+)\}',generated))
     assert used<=defined,used-defined
     # Mutation checks ensure common accidental result literals are rejected.
-    for bad in ['Observed risk was 3.14 percent.','We tested 123 tasks.']:
+    for bad in ['Observed risk was 3.14 percent.','We tested 123 tasks.',
+                '\\begin{tikzpicture}\\addplot coordinates {(1,29.83)};\\end{tikzpicture}']:
         try:check_source(bad)
         except ValueError:pass
         else:raise AssertionError('numeric-literal guard failed')
