@@ -50,3 +50,22 @@ both properties. Exact installer/JAR/model hashes and Java release provenance
 are retained. Adoptium's API returned 403; a pinned official GitHub release
 worked. Lean/Isabelle mechanization omitted in favor of the allowed detailed
 proof alternative. The PRISM abstraction does not verify the Python runtime.
+
+### Phase 3 gate — passed for the explicitly lightweight substitute
+
+Typed model/taint, closed JSON contract DSL, direct-edge assumption checker,
+lexical classifier, raw/structured scripted judge, approval stub, calibration,
+finite-family synthesis, tool-call argument adapter and in-memory DevAgent
+are implemented. Core coverage measured 99% with 51 passing tests. Smoke
+completed in 4.62 seconds. T*, Tb, Tj behave as required; stronger naive-with-sink
+control also blocks Tj and is retained. Certificate configuration drift,
+agent-forged approval/labels/environment and taint erasure have regression tests.
+GitHub Actions workflow written, not remotely executed.
+
+Scope deviations: no real shell interpreter, pretrained guard, activation
+probe or human experiment. No named SOTA baseline is falsely reimplemented by
+a regex; fidelity notes identify every surrogate. Synthesis is exact within a
+finite family, with no unrestricted n-layer approximation claim. Test fixtures
+contain synthetic certificates solely to exercise plumbing and are not used as
+calibrated empirical evidence. These substitutions follow the prompt's
+feasibility/future-work provisions but do not satisfy a full real-LLM study.
