@@ -16,5 +16,3 @@ build/
 archive/local/
 .tools/
 docs/literature/evidence/*.html
-requirements-paper.lock 
-requirements.lock
