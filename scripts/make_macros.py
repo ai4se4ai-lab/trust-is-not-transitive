@@ -46,6 +46,8 @@ def generate():
         macro(prefix+'CheckerTN',s['checker']['tn'],base+'/checker/tn','d')
         macro(prefix+'CheckerFP',s['checker']['fp'],base+'/checker/fp','d')
         macro(prefix+'CheckerFN',s['checker']['fn'],base+'/checker/fn','d')
+        macro(prefix+'CheckerUniqueInvalid',s['checker']['unique_invalid'],base+'/checker/unique_invalid','d')
+        macro(prefix+'CheckerUniqueClean',s['checker']['unique_clean'],base+'/checker/unique_clean','d')
         macro(prefix+'CheckerMax',max(x['median_us'] for x in s['checker']['scalability']),base+'/checker/scalability#max-median-us')
         macro(prefix+'SynthInstances',s['synthesis']['instances'],base+'/synthesis/instances','d')
         macro(prefix+'SynthMismatches',s['synthesis']['mismatches'],base+'/synthesis/mismatches','d')
@@ -61,6 +63,11 @@ def generate():
             hard=macro(stem+'Hard',m['hard_violations'],path+'/hard_violations','d')
             rows.append(f'{label} & {risk} & {utility} & {cost} & {p95} & {hard} \\\\')
         tables[study]='\n'.join(rows)
+        for policy in ['checked_quarantine','naive_with_sink','rules_only']:
+            population=s['analytic_fixture_population'][policy]
+            stem=prefix+''.join(x.title() for x in policy.split('_'))+'Population'
+            for field,suffix,scale in [('joint_risk','Risk',100),('benign_utility','Utility',100),('modeled_cost_units','Cost',1)]:
+                macro(stem+suffix,population[field]*scale,base+'/analytic_fixture_population/'+policy+'/'+field)
         for comparison in s['comparisons']:
             stem=prefix+''.join(x.title() for x in comparison['baseline'].split('_'))+'Comparison'
             path=base+'/comparisons#baseline='+comparison['baseline']
@@ -70,6 +77,24 @@ def generate():
                 macro(stem+suffix,comparison['risk_difference_ci'][index]*100,path+'/risk_difference_ci/'+str(index)+'#percent')
         shifted=s['metrics']['shift']['checked_quarantine']
         macro(prefix+'ShiftRisk',100*shifted['joint_risk'],base+'/metrics/shift/checked_quarantine/joint_risk#percent')
+        accepted=s['metrics']['test']['checked_quarantine']['accepted_conditional_risk']
+        if accepted is not None:macro(prefix+'AcceptedConditionalRisk',accepted*100,base+'/metrics/test/checked_quarantine/accepted_conditional_risk#percent')
+    family_rows=[]
+    families={'benign':'Benign report','benign_security':'Benign security text','exfiltration':'Secret exfiltration',
+              'production_delete':'Production deletion','direct_injection':'Direct injection',
+              'implicit_patch':'Implicit patch','judge_injection':'Judge targeting'}
+    for family,label in families.items():
+        stem='Family'+''.join(x.title() for x in family.split('_'))
+        primary=summary['studies']['primary']['family_metrics'][family]['checked_quarantine']
+        exp=summary['studies']['exploratory']['family_metrics'][family]
+        n1=macro(stem+'Primary',primary['n'],f'/studies/primary/family_metrics/{family}/checked_quarantine/n','d')
+        n2=macro(stem+'Exploratory',exp['checked_quarantine']['n'],f'/studies/exploratory/family_metrics/{family}/checked_quarantine/n','d')
+        vals=[]
+        for policy,suffix in [('naive_with_sink','Naive'),('checked_quarantine','Checked')]:
+            m=exp[policy]
+            vals.append(macro(stem+suffix,100*m['allowed']/m['n'],f'/studies/exploratory/family_metrics/{family}/{policy}/allowed#fraction-percent','.0f'))
+        family_rows.append(f'{label} & {n1} & {n2} & {vals[0]} & {vals[1]} \\\\')
+    tables['family']='\n'.join(family_rows)
     macro('FormalStates',summary['formal']['invariant_states'],'/formal/invariant_states','d')
     macro('FormalInstances',summary['sanity']['instances'],'/sanity/instances','d')
     macro('PrismCases',summary['prism']['cases'],'/prism/cases','d')

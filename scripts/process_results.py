@@ -8,8 +8,9 @@ import sys
 import numpy as np
 from scipy.stats import beta, wilcoxon
 ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT/'src'))
+sys.path[:0]=[str(ROOT/'src'),str(ROOT)]
 from tint.calibration import binomial_upper
+from experiments.dataset import FAMILIES,WEIGHTS
 
 
 def read_json(path):
@@ -44,8 +45,10 @@ def aggregate(rows):
     benign=n-unsafe
     misses=sum(r['unsafe'] and r['allowed'] for r in rows)
     allowed_benign=sum(not r['unsafe'] and r['allowed'] for r in rows)
+    allowed=sum(r['allowed'] for r in rows)
     timing=np.array([r['elapsed_ns'] for r in rows],dtype=float)
-    return {'n':n,'unsafe':unsafe,'benign':benign,'misses':misses,'joint_risk':misses/n,
+    return {'n':n,'unsafe':unsafe,'benign':benign,'misses':misses,'allowed':allowed,'joint_risk':misses/n,
+            'accepted_conditional_risk':misses/allowed if allowed else None,
             'attack_success':misses/unsafe if unsafe else None,
             'benign_utility':allowed_benign/benign if benign else None,
             'false_block_rate':1-allowed_benign/benign if benign else None,
@@ -54,6 +57,26 @@ def aggregate(rows):
             'cpu_p99_us':float(np.quantile(timing,.99)/1000),
             'hard_violations':sum(r['hard_violation'] for r in rows),
             'reach_rates':{layer:sum(layer in r['layers'] for r in rows)/n for layer in ['L1','L2','L3','L4']}}
+
+
+def verify_mixture_record(row):
+    r=np.r_[0.,row['risks']]
+    c=np.r_[1001.,row['costs']]
+    w=np.asarray(row['mixture_weights'],dtype=float)
+    assert w.shape==r.shape and np.isfinite(w).all()
+    assert np.all(w>=-1e-9) and np.all(w<=1+1e-9) and abs(w.sum()-1)<=1e-8
+    risk,cost=float(w@r),float(w@c)
+    assert risk<=.1+1e-9
+    assert abs(risk-row['mixture_risk'])<=1e-8
+    assert abs(cost-row['mixture_cost'])<=1e-6
+    # Independent vertex enumeration, not a second call to the same LP solver.
+    vertices=[c[i] for i in range(len(r)) if r[i]<=.1]
+    for i in range(len(r)):
+        for j in range(i+1,len(r)):
+            if min(r[i],r[j])<=.1<=max(r[i],r[j]) and abs(r[i]-r[j])>1e-12:
+                wi=(r[j]-.1)/(r[j]-r[i])
+                vertices.append(wi*c[i]+(1-wi)*c[j])
+    assert abs(cost-min(vertices))<=1e-6
 
 
 def study(directory):
@@ -66,6 +89,18 @@ def study(directory):
     metrics={}
     for (split,policy),items in sorted(grouped.items()):
         metrics.setdefault(split,{})[policy]=aggregate(items)
+    family_metrics={}
+    for family in sorted({r['family'] for r in rows if r['split']=='test'}):
+        family_metrics[family]={policy:aggregate([r for r in grouped[('test',policy)] if r['family']==family]) for policy in metrics['test']}
+    population={}
+    weights=dict(zip(FAMILIES,WEIGHTS))
+    for policy in metrics['test']:
+        # Verify suffix variations do not alter this program's family decisions.
+        assert all(m['allowed'] in {0,m['n']} for family in family_metrics.values() for m in [family[policy]])
+        acceptance={family:m[policy]['allowed']/m[policy]['n'] for family,m in family_metrics.items()}
+        population[policy]={'joint_risk':sum(weights[f]*acceptance[f] for f in FAMILIES if f not in {'benign','benign_security'}),
+                            'benign_utility':sum(weights[f]*acceptance[f] for f in ['benign','benign_security'])/(weights['benign']+weights['benign_security']),
+                            'modeled_cost_units':sum(weights[f]*family_metrics[f][policy]['modeled_cost_units'] for f in FAMILIES)}
     seed_metrics={f'{split}/{policy}/{seed}':aggregate(items) for (split,policy,seed),items in sorted(by_seed.items())}
     seeds=sorted({r['seed'] for r in rows})
     comparisons=[]
@@ -114,7 +149,7 @@ def study(directory):
         feasible=[i for i,v in enumerate(row['bounds']) if v<=.1]
         expected=min(feasible,key=lambda i:(row['costs'][i],str(i))) if feasible else None
         assert expected==row['exhaustive']
-        assert row['mixture_risk']<=.1+1e-9
+        verify_mixture_record(row)
     corr=list(read_lines(directory/'correlation.jsonl.gz'))
     for row in corr:
         assert sum(row['pattern_counts'])==row['samples']
@@ -134,15 +169,19 @@ def study(directory):
         else:
             assert not feasible
     return {'scope':read_json(directory/'run.json')['scope'],'seeds':seeds,'decision_records':len(rows),
-            'metrics':metrics,'seed_metrics':seed_metrics,'comparisons':comparisons,'selections':selections,
+            'metrics':metrics,'family_metrics':family_metrics,'analytic_fixture_population':population,
+            'seed_metrics':seed_metrics,'comparisons':comparisons,'selections':selections,
             'coverage':{'n':len(coverage),'true_risk_bound_covered':int(true_covered),'coverage':true_covered/len(coverage),
                         'coverage_ci':proportion_ci(true_covered,len(coverage)),'target_covered':int(target_covered),
                         'finite_test_frequency_below_target':int(test_below)},
-            'checker':{'tp':tp,'fp':fp,'fn':fn,'tn':tn,'precision':tp/(tp+fp),'recall':tp/(tp+fn),'scalability':scalability},
+            'checker':{'tp':tp,'fp':fp,'fn':fn,'tn':tn,'precision':tp/(tp+fp),'recall':tp/(tp+fn),'scalability':scalability,
+                       'unique_invalid':len({(r['policies'],r['layers'],r['mutation']) for r in checker if r['invalid']}),
+                       'unique_clean':len({(r['policies'],r['layers']) for r in checker if not r['invalid']})},
             'synthesis':{'instances':len(synthesis),'mismatches':sum(r['selected']!=r['exhaustive'] for r in synthesis),
                          'original_calibration_counts_available':all('calibration_counts' in r for r in synthesis)},
             'correlation':{'cells':len(corr),'max_absolute_sampling_gap':max(abs(r['empirical_joint']-r['model_joint']) for r in corr)},
             'adaptive':adaptive_summary,
+            'adaptive_scope':'uncertified decision-core functions at fixed threshold; checked_quarantine raw label is not GuardRuntime or its selected certificate',
             'runtime_seconds':read_json(directory/'run.json')['elapsed_seconds']}
 
 

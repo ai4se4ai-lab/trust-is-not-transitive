@@ -1,5 +1,22 @@
 # Dated amendments (original preregistration and results remain immutable)
 
+## 2026-10-29 — A2: post-review analyses and attribution correction
+
+After round-1 automated review, add **exploratory descriptive** family-level
+acceptance and exact fixture-law risk/utility/cost calculations from existing
+raw logs. Explain that uncertainty reflects mixture sampling, not independent
+semantic tasks. Add accepted-action conditional risk. Strengthen validation
+with read-only semantic replay and independent finite LP vertex checks. These
+are not new held-out experiments; no trace or outcome is replaced.
+
+Correct the historical search target: the raw policy label checked_quarantine
+refers to an uncertified fixed-threshold decision core, not calibrated runtime.
+Add explicit processed scope metadata and correct prose. Retain original
+records. First-candidate success means no observed response-informed adaptation.
+Current runtime confidence/input/topology checks are separately hardened;
+historical v1/v2 scorer identities remain frozen for reproduction. None of
+these changes supplies missing real-model or external effectiveness evidence.
+
 ## 2026-10-29 — A1: numerical boundary correction; exploratory replication
 
 Observed after the initial frozen run: every selected family was infeasible

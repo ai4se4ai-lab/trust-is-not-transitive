@@ -3,1274 +3,1631 @@
     "pointer": "/design/adaptive_budget",
     "rendered": "16",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 16
   },
   "resBootstrapCount": {
     "pointer": "/design/bootstrap_replicates",
     "rendered": "10000",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 10000
   },
   "resCalibrationCount": {
     "pointer": "/design/n_calibration",
     "rendered": "1800",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1800
   },
   "resConfidenceFailure": {
     "pointer": "/design/delta",
     "rendered": "5",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 5.0
   },
   "resCoreCoverage": {
     "pointer": "/core_coverage",
     "rendered": "99.70",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
-    "value": 99.69924812030075
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 99.70370370370371
   },
   "resDevelopmentCount": {
     "pointer": "/design/n_development",
     "rendered": "600",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 600
+  },
+  "resExploratoryAcceptedConditionalRisk": {
+    "pointer": "/studies/exploratory/metrics/test/checked_quarantine/accepted_conditional_risk#percent",
+    "rendered": "25.40",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 25.401125234423837
   },
   "resExploratoryCheckedQuarantineCost": {
     "pointer": "/studies/exploratory/metrics/test/checked_quarantine/modeled_cost_units",
     "rendered": "370.67",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 370.67333333333335
   },
   "resExploratoryCheckedQuarantineCpu": {
     "pointer": "/studies/exploratory/metrics/test/checked_quarantine/cpu_p95_us",
     "rendered": "188.80",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 188.80499999999995
   },
   "resExploratoryCheckedQuarantineHard": {
     "pointer": "/studies/exploratory/metrics/test/checked_quarantine/hard_violations",
     "rendered": "0",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0
+  },
+  "resExploratoryCheckedQuarantinePopulationCost": {
+    "pointer": "/studies/exploratory/analytic_fixture_population/checked_quarantine/modeled_cost_units",
+    "rendered": "366.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 366.0
+  },
+  "resExploratoryCheckedQuarantinePopulationRisk": {
+    "pointer": "/studies/exploratory/analytic_fixture_population/checked_quarantine/joint_risk",
+    "rendered": "10.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 10.0
+  },
+  "resExploratoryCheckedQuarantinePopulationUtility": {
+    "pointer": "/studies/exploratory/analytic_fixture_population/checked_quarantine/benign_utility",
+    "rendered": "66.67",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 66.66666666666667
   },
   "resExploratoryCheckedQuarantineRisk": {
     "pointer": "/studies/exploratory/metrics/test/checked_quarantine/joint_risk#percent",
     "rendered": "10.16",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 10.158333333333333
   },
   "resExploratoryCheckedQuarantineUtility": {
     "pointer": "/studies/exploratory/metrics/test/checked_quarantine/benign_utility#percent",
     "rendered": "66.46",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 66.456283645814
   },
   "resExploratoryCheckedUncalibratedComparisonA": {
     "pointer": "/studies/exploratory/comparisons#baseline=checked_uncalibrated/A12_lower_risk",
     "rendered": "0.50",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.5
   },
   "resExploratoryCheckedUncalibratedComparisonDiff": {
     "pointer": "/studies/exploratory/comparisons#baseline=checked_uncalibrated/risk_difference",
     "rendered": "0.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.0
   },
   "resExploratoryCheckedUncalibratedComparisonHi": {
     "pointer": "/studies/exploratory/comparisons#baseline=checked_uncalibrated/risk_difference_ci/1#percent",
     "rendered": "0.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.0
   },
   "resExploratoryCheckedUncalibratedComparisonLo": {
     "pointer": "/studies/exploratory/comparisons#baseline=checked_uncalibrated/risk_difference_ci/0#percent",
     "rendered": "0.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.0
   },
   "resExploratoryCheckedUncalibratedComparisonP": {
     "pointer": "/studies/exploratory/comparisons#baseline=checked_uncalibrated/holm_p",
     "rendered": "1.00000",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1
   },
   "resExploratoryCheckedUncalibratedCost": {
     "pointer": "/studies/exploratory/metrics/test/checked_uncalibrated/modeled_cost_units",
     "rendered": "370.67",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 370.67333333333335
   },
   "resExploratoryCheckedUncalibratedCpu": {
     "pointer": "/studies/exploratory/metrics/test/checked_uncalibrated/cpu_p95_us",
     "rendered": "9.20",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 9.2
   },
   "resExploratoryCheckedUncalibratedHard": {
     "pointer": "/studies/exploratory/metrics/test/checked_uncalibrated/hard_violations",
     "rendered": "0",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0
   },
   "resExploratoryCheckedUncalibratedRisk": {
     "pointer": "/studies/exploratory/metrics/test/checked_uncalibrated/joint_risk#percent",
     "rendered": "10.16",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 10.158333333333333
   },
   "resExploratoryCheckedUncalibratedUtility": {
     "pointer": "/studies/exploratory/metrics/test/checked_uncalibrated/benign_utility#percent",
     "rendered": "66.46",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 66.456283645814
   },
   "resExploratoryCheckerFN": {
     "pointer": "/studies/exploratory/checker/fn",
     "rendered": "0",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0
   },
   "resExploratoryCheckerFP": {
     "pointer": "/studies/exploratory/checker/fp",
     "rendered": "0",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0
   },
   "resExploratoryCheckerMax": {
     "pointer": "/studies/exploratory/checker/scalability#max-median-us",
     "rendered": "11654.20",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 11654.2
   },
   "resExploratoryCheckerTN": {
     "pointer": "/studies/exploratory/checker/tn",
     "rendered": "350",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 350
   },
   "resExploratoryCheckerTP": {
     "pointer": "/studies/exploratory/checker/tp",
     "rendered": "1400",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1400
+  },
+  "resExploratoryCheckerUniqueClean": {
+    "pointer": "/studies/exploratory/checker/unique_clean",
+    "rendered": "35",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 35
+  },
+  "resExploratoryCheckerUniqueInvalid": {
+    "pointer": "/studies/exploratory/checker/unique_invalid",
+    "rendered": "140",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 140
   },
   "resExploratoryClassifierOnlyComparisonA": {
     "pointer": "/studies/exploratory/comparisons#baseline=classifier_only/A12_lower_risk",
     "rendered": "1.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1.0
   },
   "resExploratoryClassifierOnlyComparisonDiff": {
     "pointer": "/studies/exploratory/comparisons#baseline=classifier_only/risk_difference",
     "rendered": "-10.10",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -10.100000000000001
   },
   "resExploratoryClassifierOnlyComparisonHi": {
     "pointer": "/studies/exploratory/comparisons#baseline=classifier_only/risk_difference_ci/1#percent",
     "rendered": "-9.32",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -9.316666666666668
   },
   "resExploratoryClassifierOnlyComparisonLo": {
     "pointer": "/studies/exploratory/comparisons#baseline=classifier_only/risk_difference_ci/0#percent",
     "rendered": "-10.96",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -10.958333333333334
   },
   "resExploratoryClassifierOnlyComparisonP": {
     "pointer": "/studies/exploratory/comparisons#baseline=classifier_only/holm_p",
     "rendered": "0.01172",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.01171875
   },
   "resExploratoryClassifierOnlyCost": {
     "pointer": "/studies/exploratory/metrics/test/classifier_only/modeled_cost_units",
     "rendered": "20.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 20.0
   },
   "resExploratoryClassifierOnlyCpu": {
     "pointer": "/studies/exploratory/metrics/test/classifier_only/cpu_p95_us",
     "rendered": "3.70",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 3.7
   },
   "resExploratoryClassifierOnlyHard": {
     "pointer": "/studies/exploratory/metrics/test/classifier_only/hard_violations",
     "rendered": "1212",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1212
   },
   "resExploratoryClassifierOnlyRisk": {
     "pointer": "/studies/exploratory/metrics/test/classifier_only/joint_risk#percent",
     "rendered": "20.26",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 20.258333333333333
   },
   "resExploratoryClassifierOnlyUtility": {
     "pointer": "/studies/exploratory/metrics/test/classifier_only/benign_utility#percent",
     "rendered": "66.46",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 66.456283645814
   },
   "resExploratoryCoverage": {
     "pointer": "/studies/exploratory/coverage/coverage#percent",
     "rendered": "99.10",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 99.1
   },
   "resExploratoryCoverageHi": {
     "pointer": "/studies/exploratory/coverage/coverage_ci/1#percent",
     "rendered": "99.59",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 99.58766043396575
   },
   "resExploratoryCoverageLo": {
     "pointer": "/studies/exploratory/coverage/coverage_ci/0#percent",
     "rendered": "98.30",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 98.29842169301054
   },
   "resExploratoryFiniteTestBelow": {
     "pointer": "/studies/exploratory/coverage/finite_test_frequency_below_target",
     "rendered": "996",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 996
   },
   "resExploratoryInfeasible": {
     "pointer": "/studies/exploratory/selections#infeasible",
     "rendered": "0",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0
   },
   "resExploratoryJudgeOnlyScriptedComparisonA": {
     "pointer": "/studies/exploratory/comparisons#baseline=judge_only_scripted/A12_lower_risk",
     "rendered": "1.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1.0
   },
   "resExploratoryJudgeOnlyScriptedComparisonDiff": {
     "pointer": "/studies/exploratory/comparisons#baseline=judge_only_scripted/risk_difference",
     "rendered": "-20.72",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -20.716666666666665
   },
   "resExploratoryJudgeOnlyScriptedComparisonHi": {
     "pointer": "/studies/exploratory/comparisons#baseline=judge_only_scripted/risk_difference_ci/1#percent",
     "rendered": "-19.79",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -19.791666666666668
   },
   "resExploratoryJudgeOnlyScriptedComparisonLo": {
     "pointer": "/studies/exploratory/comparisons#baseline=judge_only_scripted/risk_difference_ci/0#percent",
     "rendered": "-21.64",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -21.641666666666666
   },
   "resExploratoryJudgeOnlyScriptedComparisonP": {
     "pointer": "/studies/exploratory/comparisons#baseline=judge_only_scripted/holm_p",
     "rendered": "0.01172",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.01171875
   },
   "resExploratoryJudgeOnlyScriptedCost": {
     "pointer": "/studies/exploratory/metrics/test/judge_only_scripted/modeled_cost_units",
     "rendered": "1000.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1000.0
   },
   "resExploratoryJudgeOnlyScriptedCpu": {
     "pointer": "/studies/exploratory/metrics/test/judge_only_scripted/cpu_p95_us",
     "rendered": "15.70",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 15.7
   },
   "resExploratoryJudgeOnlyScriptedHard": {
     "pointer": "/studies/exploratory/metrics/test/judge_only_scripted/hard_violations",
     "rendered": "1212",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1212
   },
   "resExploratoryJudgeOnlyScriptedRisk": {
     "pointer": "/studies/exploratory/metrics/test/judge_only_scripted/joint_risk#percent",
     "rendered": "30.88",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 30.875000000000004
   },
   "resExploratoryJudgeOnlyScriptedUtility": {
     "pointer": "/studies/exploratory/metrics/test/judge_only_scripted/benign_utility#percent",
     "rendered": "66.46",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 66.456283645814
   },
   "resExploratoryNaiveDelegationComparisonA": {
     "pointer": "/studies/exploratory/comparisons#baseline=naive_delegation/A12_lower_risk",
     "rendered": "1.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1.0
   },
   "resExploratoryNaiveDelegationComparisonDiff": {
     "pointer": "/studies/exploratory/comparisons#baseline=naive_delegation/risk_difference",
     "rendered": "-20.72",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -20.716666666666665
   },
   "resExploratoryNaiveDelegationComparisonHi": {
     "pointer": "/studies/exploratory/comparisons#baseline=naive_delegation/risk_difference_ci/1#percent",
     "rendered": "-19.79",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -19.791666666666668
   },
   "resExploratoryNaiveDelegationComparisonLo": {
     "pointer": "/studies/exploratory/comparisons#baseline=naive_delegation/risk_difference_ci/0#percent",
     "rendered": "-21.64",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -21.641666666666666
   },
   "resExploratoryNaiveDelegationComparisonP": {
     "pointer": "/studies/exploratory/comparisons#baseline=naive_delegation/holm_p",
     "rendered": "0.01172",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.01171875
   },
   "resExploratoryNaiveDelegationCost": {
     "pointer": "/studies/exploratory/metrics/test/naive_delegation/modeled_cost_units",
     "rendered": "1020.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1020.0
   },
   "resExploratoryNaiveDelegationCpu": {
     "pointer": "/studies/exploratory/metrics/test/naive_delegation/cpu_p95_us",
     "rendered": "11.90",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 11.9
   },
   "resExploratoryNaiveDelegationHard": {
     "pointer": "/studies/exploratory/metrics/test/naive_delegation/hard_violations",
     "rendered": "1212",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1212
   },
   "resExploratoryNaiveDelegationRisk": {
     "pointer": "/studies/exploratory/metrics/test/naive_delegation/joint_risk#percent",
     "rendered": "30.88",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 30.875000000000004
   },
   "resExploratoryNaiveDelegationUtility": {
     "pointer": "/studies/exploratory/metrics/test/naive_delegation/benign_utility#percent",
     "rendered": "66.46",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 66.456283645814
   },
   "resExploratoryNaiveWithSinkComparisonA": {
     "pointer": "/studies/exploratory/comparisons#baseline=naive_with_sink/A12_lower_risk",
     "rendered": "1.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1.0
   },
   "resExploratoryNaiveWithSinkComparisonDiff": {
     "pointer": "/studies/exploratory/comparisons#baseline=naive_with_sink/risk_difference",
     "rendered": "-10.62",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -10.616666666666667
   },
   "resExploratoryNaiveWithSinkComparisonHi": {
     "pointer": "/studies/exploratory/comparisons#baseline=naive_with_sink/risk_difference_ci/1#percent",
     "rendered": "-9.86",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -9.858333333333334
   },
   "resExploratoryNaiveWithSinkComparisonLo": {
     "pointer": "/studies/exploratory/comparisons#baseline=naive_with_sink/risk_difference_ci/0#percent",
     "rendered": "-11.38",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -11.383333333333331
   },
   "resExploratoryNaiveWithSinkComparisonP": {
     "pointer": "/studies/exploratory/comparisons#baseline=naive_with_sink/holm_p",
     "rendered": "0.01172",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.01171875
   },
   "resExploratoryNaiveWithSinkCost": {
     "pointer": "/studies/exploratory/metrics/test/naive_with_sink/modeled_cost_units",
     "rendered": "370.67",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 370.67333333333335
   },
   "resExploratoryNaiveWithSinkCpu": {
     "pointer": "/studies/exploratory/metrics/test/naive_with_sink/cpu_p95_us",
     "rendered": "7.70",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 7.704999999999927
   },
   "resExploratoryNaiveWithSinkHard": {
     "pointer": "/studies/exploratory/metrics/test/naive_with_sink/hard_violations",
     "rendered": "0",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0
+  },
+  "resExploratoryNaiveWithSinkPopulationCost": {
+    "pointer": "/studies/exploratory/analytic_fixture_population/naive_with_sink/modeled_cost_units",
+    "rendered": "366.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 366.0
+  },
+  "resExploratoryNaiveWithSinkPopulationRisk": {
+    "pointer": "/studies/exploratory/analytic_fixture_population/naive_with_sink/joint_risk",
+    "rendered": "20.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 20.0
+  },
+  "resExploratoryNaiveWithSinkPopulationUtility": {
+    "pointer": "/studies/exploratory/analytic_fixture_population/naive_with_sink/benign_utility",
+    "rendered": "66.67",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 66.66666666666667
   },
   "resExploratoryNaiveWithSinkRisk": {
     "pointer": "/studies/exploratory/metrics/test/naive_with_sink/joint_risk#percent",
     "rendered": "20.77",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 20.775
   },
   "resExploratoryNaiveWithSinkUtility": {
     "pointer": "/studies/exploratory/metrics/test/naive_with_sink/benign_utility#percent",
     "rendered": "66.46",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 66.456283645814
   },
   "resExploratoryRecords": {
     "pointer": "/studies/exploratory/decision_records",
     "rendered": "168000",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 168000
   },
   "resExploratoryReplications": {
     "pointer": "/studies/exploratory/coverage/n",
     "rendered": "1000",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1000
   },
   "resExploratoryRulesOnlyComparisonA": {
     "pointer": "/studies/exploratory/comparisons#baseline=rules_only/A12_lower_risk",
     "rendered": "1.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1.0
   },
   "resExploratoryRulesOnlyComparisonDiff": {
     "pointer": "/studies/exploratory/comparisons#baseline=rules_only/risk_difference",
     "rendered": "-20.40",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -20.400000000000002
   },
   "resExploratoryRulesOnlyComparisonHi": {
     "pointer": "/studies/exploratory/comparisons#baseline=rules_only/risk_difference_ci/1#percent",
     "rendered": "-19.73",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -19.73333333333333
   },
   "resExploratoryRulesOnlyComparisonLo": {
     "pointer": "/studies/exploratory/comparisons#baseline=rules_only/risk_difference_ci/0#percent",
     "rendered": "-21.16",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -21.15833333333333
   },
   "resExploratoryRulesOnlyComparisonP": {
     "pointer": "/studies/exploratory/comparisons#baseline=rules_only/holm_p",
     "rendered": "0.01172",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.01171875
   },
   "resExploratoryRulesOnlyCost": {
     "pointer": "/studies/exploratory/metrics/test/rules_only/modeled_cost_units",
     "rendered": "1.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1.0
   },
   "resExploratoryRulesOnlyCpu": {
     "pointer": "/studies/exploratory/metrics/test/rules_only/cpu_p95_us",
     "rendered": "5.40",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 5.4
   },
   "resExploratoryRulesOnlyHard": {
     "pointer": "/studies/exploratory/metrics/test/rules_only/hard_violations",
     "rendered": "0",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0
+  },
+  "resExploratoryRulesOnlyPopulationCost": {
+    "pointer": "/studies/exploratory/analytic_fixture_population/rules_only/modeled_cost_units",
+    "rendered": "1.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 1.0
+  },
+  "resExploratoryRulesOnlyPopulationRisk": {
+    "pointer": "/studies/exploratory/analytic_fixture_population/rules_only/joint_risk",
+    "rendered": "30.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 30.000000000000004
+  },
+  "resExploratoryRulesOnlyPopulationUtility": {
+    "pointer": "/studies/exploratory/analytic_fixture_population/rules_only/benign_utility",
+    "rendered": "100.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 100.0
   },
   "resExploratoryRulesOnlyRisk": {
     "pointer": "/studies/exploratory/metrics/test/rules_only/joint_risk#percent",
     "rendered": "30.56",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 30.55833333333333
   },
   "resExploratoryRulesOnlyUtility": {
     "pointer": "/studies/exploratory/metrics/test/rules_only/benign_utility#percent",
     "rendered": "100.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 100.0
   },
   "resExploratoryRuntime": {
     "pointer": "/studies/exploratory/runtime_seconds",
     "rendered": "10.37",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 10.37051380000048
   },
   "resExploratorySeeds": {
     "pointer": "/studies/exploratory/seeds#length",
     "rendered": "10",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 10
   },
   "resExploratoryShiftRisk": {
     "pointer": "/studies/exploratory/metrics/shift/checked_quarantine/joint_risk#percent",
     "rendered": "100.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 100.0
   },
   "resExploratorySynthInstances": {
     "pointer": "/studies/exploratory/synthesis/instances",
     "rendered": "50",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 50
   },
   "resExploratorySynthMismatches": {
     "pointer": "/studies/exploratory/synthesis/mismatches",
     "rendered": "0",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0
   },
   "resExploratoryTestCount": {
     "pointer": "/studies/exploratory/metrics/test/checked_quarantine/n",
     "rendered": "12000",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 12000
+  },
+  "resFamilyBenignChecked": {
+    "pointer": "/studies/exploratory/family_metrics/benign/checked_quarantine/allowed#fraction-percent",
+    "rendered": "100",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 100.0
+  },
+  "resFamilyBenignExploratory": {
+    "pointer": "/studies/exploratory/family_metrics/benign/checked_quarantine/n",
+    "rendered": "3580",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 3580
+  },
+  "resFamilyBenignNaive": {
+    "pointer": "/studies/exploratory/family_metrics/benign/naive_with_sink/allowed#fraction-percent",
+    "rendered": "100",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 100.0
+  },
+  "resFamilyBenignPrimary": {
+    "pointer": "/studies/primary/family_metrics/benign/checked_quarantine/n",
+    "rendered": "3592",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 3592
+  },
+  "resFamilyBenignSecurityChecked": {
+    "pointer": "/studies/exploratory/family_metrics/benign_security/checked_quarantine/allowed#fraction-percent",
+    "rendered": "0",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 0.0
+  },
+  "resFamilyBenignSecurityExploratory": {
+    "pointer": "/studies/exploratory/family_metrics/benign_security/checked_quarantine/n",
+    "rendered": "1807",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 1807
+  },
+  "resFamilyBenignSecurityNaive": {
+    "pointer": "/studies/exploratory/family_metrics/benign_security/naive_with_sink/allowed#fraction-percent",
+    "rendered": "0",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 0.0
+  },
+  "resFamilyBenignSecurityPrimary": {
+    "pointer": "/studies/primary/family_metrics/benign_security/checked_quarantine/n",
+    "rendered": "1817",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 1817
+  },
+  "resFamilyDirectInjectionChecked": {
+    "pointer": "/studies/exploratory/family_metrics/direct_injection/checked_quarantine/allowed#fraction-percent",
+    "rendered": "0",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 0.0
+  },
+  "resFamilyDirectInjectionExploratory": {
+    "pointer": "/studies/exploratory/family_metrics/direct_injection/checked_quarantine/n",
+    "rendered": "1174",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 1174
+  },
+  "resFamilyDirectInjectionNaive": {
+    "pointer": "/studies/exploratory/family_metrics/direct_injection/naive_with_sink/allowed#fraction-percent",
+    "rendered": "0",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 0.0
+  },
+  "resFamilyDirectInjectionPrimary": {
+    "pointer": "/studies/primary/family_metrics/direct_injection/checked_quarantine/n",
+    "rendered": "1182",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 1182
+  },
+  "resFamilyExfiltrationChecked": {
+    "pointer": "/studies/exploratory/family_metrics/exfiltration/checked_quarantine/allowed#fraction-percent",
+    "rendered": "0",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 0.0
+  },
+  "resFamilyExfiltrationExploratory": {
+    "pointer": "/studies/exploratory/family_metrics/exfiltration/checked_quarantine/n",
+    "rendered": "1734",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 1734
+  },
+  "resFamilyExfiltrationNaive": {
+    "pointer": "/studies/exploratory/family_metrics/exfiltration/naive_with_sink/allowed#fraction-percent",
+    "rendered": "0",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 0.0
+  },
+  "resFamilyExfiltrationPrimary": {
+    "pointer": "/studies/primary/family_metrics/exfiltration/checked_quarantine/n",
+    "rendered": "1836",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 1836
+  },
+  "resFamilyImplicitPatchChecked": {
+    "pointer": "/studies/exploratory/family_metrics/implicit_patch/checked_quarantine/allowed#fraction-percent",
+    "rendered": "100",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 100.0
+  },
+  "resFamilyImplicitPatchExploratory": {
+    "pointer": "/studies/exploratory/family_metrics/implicit_patch/checked_quarantine/n",
+    "rendered": "1219",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 1219
+  },
+  "resFamilyImplicitPatchNaive": {
+    "pointer": "/studies/exploratory/family_metrics/implicit_patch/naive_with_sink/allowed#fraction-percent",
+    "rendered": "100",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 100.0
+  },
+  "resFamilyImplicitPatchPrimary": {
+    "pointer": "/studies/primary/family_metrics/implicit_patch/checked_quarantine/n",
+    "rendered": "1203",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 1203
+  },
+  "resFamilyJudgeInjectionChecked": {
+    "pointer": "/studies/exploratory/family_metrics/judge_injection/checked_quarantine/allowed#fraction-percent",
+    "rendered": "0",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 0.0
+  },
+  "resFamilyJudgeInjectionExploratory": {
+    "pointer": "/studies/exploratory/family_metrics/judge_injection/checked_quarantine/n",
+    "rendered": "1274",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 1274
+  },
+  "resFamilyJudgeInjectionNaive": {
+    "pointer": "/studies/exploratory/family_metrics/judge_injection/naive_with_sink/allowed#fraction-percent",
+    "rendered": "100",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 100.0
+  },
+  "resFamilyJudgeInjectionPrimary": {
+    "pointer": "/studies/primary/family_metrics/judge_injection/checked_quarantine/n",
+    "rendered": "1194",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 1194
+  },
+  "resFamilyProductionDeleteChecked": {
+    "pointer": "/studies/exploratory/family_metrics/production_delete/checked_quarantine/allowed#fraction-percent",
+    "rendered": "0",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 0.0
+  },
+  "resFamilyProductionDeleteExploratory": {
+    "pointer": "/studies/exploratory/family_metrics/production_delete/checked_quarantine/n",
+    "rendered": "1212",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 1212
+  },
+  "resFamilyProductionDeleteNaive": {
+    "pointer": "/studies/exploratory/family_metrics/production_delete/naive_with_sink/allowed#fraction-percent",
+    "rendered": "0",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 0.0
+  },
+  "resFamilyProductionDeletePrimary": {
+    "pointer": "/studies/primary/family_metrics/production_delete/checked_quarantine/n",
+    "rendered": "1176",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 1176
   },
   "resFormalInstances": {
     "pointer": "/sanity/instances",
     "rendered": "10000",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 10000
   },
   "resFormalStates": {
     "pointer": "/formal/invariant_states",
     "rendered": "64",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 64
   },
   "resNominalConfidence": {
     "pointer": "/design/delta#one-minus-percent",
     "rendered": "95",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 95.0
   },
   "resPolicyClasses": {
     "pointer": "/policy_inventory/policies#length",
     "rendered": "5",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 5
   },
   "resPrimaryCheckedQuarantineCost": {
     "pointer": "/studies/primary/metrics/test/checked_quarantine/modeled_cost_units",
     "rendered": "1.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1.0
   },
   "resPrimaryCheckedQuarantineCpu": {
     "pointer": "/studies/primary/metrics/test/checked_quarantine/cpu_p95_us",
     "rendered": "137.90",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 137.9
   },
   "resPrimaryCheckedQuarantineHard": {
     "pointer": "/studies/primary/metrics/test/checked_quarantine/hard_violations",
     "rendered": "0",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0
+  },
+  "resPrimaryCheckedQuarantinePopulationCost": {
+    "pointer": "/studies/primary/analytic_fixture_population/checked_quarantine/modeled_cost_units",
+    "rendered": "1.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 1.0
+  },
+  "resPrimaryCheckedQuarantinePopulationRisk": {
+    "pointer": "/studies/primary/analytic_fixture_population/checked_quarantine/joint_risk",
+    "rendered": "0.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 0.0
+  },
+  "resPrimaryCheckedQuarantinePopulationUtility": {
+    "pointer": "/studies/primary/analytic_fixture_population/checked_quarantine/benign_utility",
+    "rendered": "0.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 0.0
   },
   "resPrimaryCheckedQuarantineRisk": {
     "pointer": "/studies/primary/metrics/test/checked_quarantine/joint_risk#percent",
     "rendered": "0.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.0
   },
   "resPrimaryCheckedQuarantineUtility": {
     "pointer": "/studies/primary/metrics/test/checked_quarantine/benign_utility#percent",
     "rendered": "0.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.0
   },
   "resPrimaryCheckedUncalibratedComparisonA": {
     "pointer": "/studies/primary/comparisons#baseline=checked_uncalibrated/A12_lower_risk",
     "rendered": "1.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1.0
   },
   "resPrimaryCheckedUncalibratedComparisonDiff": {
     "pointer": "/studies/primary/comparisons#baseline=checked_uncalibrated/risk_difference",
     "rendered": "-29.83",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -29.825000000000003
   },
   "resPrimaryCheckedUncalibratedComparisonHi": {
     "pointer": "/studies/primary/comparisons#baseline=checked_uncalibrated/risk_difference_ci/1#percent",
     "rendered": "-29.19",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -29.19166666666667
   },
   "resPrimaryCheckedUncalibratedComparisonLo": {
     "pointer": "/studies/primary/comparisons#baseline=checked_uncalibrated/risk_difference_ci/0#percent",
     "rendered": "-30.43",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -30.43333333333333
   },
   "resPrimaryCheckedUncalibratedComparisonP": {
     "pointer": "/studies/primary/comparisons#baseline=checked_uncalibrated/holm_p",
     "rendered": "0.01172",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.01171875
   },
   "resPrimaryCheckedUncalibratedCost": {
     "pointer": "/studies/primary/metrics/test/checked_uncalibrated/modeled_cost_units",
     "rendered": "365.40",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 365.39666666666665
   },
   "resPrimaryCheckedUncalibratedCpu": {
     "pointer": "/studies/primary/metrics/test/checked_uncalibrated/cpu_p95_us",
     "rendered": "7.30",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 7.3
   },
   "resPrimaryCheckedUncalibratedHard": {
     "pointer": "/studies/primary/metrics/test/checked_uncalibrated/hard_violations",
     "rendered": "0",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0
   },
   "resPrimaryCheckedUncalibratedRisk": {
     "pointer": "/studies/primary/metrics/test/checked_uncalibrated/joint_risk#percent",
     "rendered": "29.83",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 29.825000000000003
   },
   "resPrimaryCheckedUncalibratedUtility": {
     "pointer": "/studies/primary/metrics/test/checked_uncalibrated/benign_utility#percent",
     "rendered": "66.41",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 66.40783878720652
   },
   "resPrimaryCheckerFN": {
     "pointer": "/studies/primary/checker/fn",
     "rendered": "0",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0
   },
   "resPrimaryCheckerFP": {
     "pointer": "/studies/primary/checker/fp",
     "rendered": "0",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0
   },
   "resPrimaryCheckerMax": {
     "pointer": "/studies/primary/checker/scalability#max-median-us",
     "rendered": "9737.50",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 9737.5
   },
   "resPrimaryCheckerTN": {
     "pointer": "/studies/primary/checker/tn",
     "rendered": "350",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 350
   },
   "resPrimaryCheckerTP": {
     "pointer": "/studies/primary/checker/tp",
     "rendered": "1400",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1400
+  },
+  "resPrimaryCheckerUniqueClean": {
+    "pointer": "/studies/primary/checker/unique_clean",
+    "rendered": "35",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 35
+  },
+  "resPrimaryCheckerUniqueInvalid": {
+    "pointer": "/studies/primary/checker/unique_invalid",
+    "rendered": "140",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 140
   },
   "resPrimaryClassifierOnlyComparisonA": {
     "pointer": "/studies/primary/comparisons#baseline=classifier_only/A12_lower_risk",
     "rendered": "1.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1.0
   },
   "resPrimaryClassifierOnlyComparisonDiff": {
     "pointer": "/studies/primary/comparisons#baseline=classifier_only/risk_difference",
     "rendered": "-19.82",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -19.825
   },
   "resPrimaryClassifierOnlyComparisonHi": {
     "pointer": "/studies/primary/comparisons#baseline=classifier_only/risk_difference_ci/1#percent",
     "rendered": "-18.98",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -18.983333333333334
   },
   "resPrimaryClassifierOnlyComparisonLo": {
     "pointer": "/studies/primary/comparisons#baseline=classifier_only/risk_difference_ci/0#percent",
     "rendered": "-20.58",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -20.583333333333332
   },
   "resPrimaryClassifierOnlyComparisonP": {
     "pointer": "/studies/primary/comparisons#baseline=classifier_only/holm_p",
     "rendered": "0.01172",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.01171875
   },
   "resPrimaryClassifierOnlyCost": {
     "pointer": "/studies/primary/metrics/test/classifier_only/modeled_cost_units",
     "rendered": "20.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 20.0
   },
   "resPrimaryClassifierOnlyCpu": {
     "pointer": "/studies/primary/metrics/test/classifier_only/cpu_p95_us",
     "rendered": "2.80",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 2.8
   },
   "resPrimaryClassifierOnlyHard": {
     "pointer": "/studies/primary/metrics/test/classifier_only/hard_violations",
     "rendered": "1176",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1176
   },
   "resPrimaryClassifierOnlyRisk": {
     "pointer": "/studies/primary/metrics/test/classifier_only/joint_risk#percent",
     "rendered": "19.82",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 19.825
   },
   "resPrimaryClassifierOnlyUtility": {
     "pointer": "/studies/primary/metrics/test/classifier_only/benign_utility#percent",
     "rendered": "66.41",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 66.40783878720652
   },
   "resPrimaryCoverage": {
     "pointer": "/studies/primary/coverage/coverage#percent",
     "rendered": "99.60",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 99.6
   },
   "resPrimaryCoverageHi": {
     "pointer": "/studies/primary/coverage/coverage_ci/1#percent",
     "rendered": "99.89",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 99.8909092012274
   },
   "resPrimaryCoverageLo": {
     "pointer": "/studies/primary/coverage/coverage_ci/0#percent",
     "rendered": "98.98",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 98.97903353160702
   },
   "resPrimaryFiniteTestBelow": {
     "pointer": "/studies/primary/coverage/finite_test_frequency_below_target",
     "rendered": "998",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 998
   },
   "resPrimaryInfeasible": {
     "pointer": "/studies/primary/selections#infeasible",
     "rendered": "10",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 10
   },
   "resPrimaryJudgeOnlyScriptedComparisonA": {
     "pointer": "/studies/primary/comparisons#baseline=judge_only_scripted/A12_lower_risk",
     "rendered": "1.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1.0
   },
   "resPrimaryJudgeOnlyScriptedComparisonDiff": {
     "pointer": "/studies/primary/comparisons#baseline=judge_only_scripted/risk_difference",
     "rendered": "-39.63",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -39.62500000000001
   },
   "resPrimaryJudgeOnlyScriptedComparisonHi": {
     "pointer": "/studies/primary/comparisons#baseline=judge_only_scripted/risk_difference_ci/1#percent",
     "rendered": "-39.07",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -39.06666666666667
   },
   "resPrimaryJudgeOnlyScriptedComparisonLo": {
     "pointer": "/studies/primary/comparisons#baseline=judge_only_scripted/risk_difference_ci/0#percent",
     "rendered": "-40.19",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -40.19166666666667
   },
   "resPrimaryJudgeOnlyScriptedComparisonP": {
     "pointer": "/studies/primary/comparisons#baseline=judge_only_scripted/holm_p",
     "rendered": "0.01172",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.01171875
   },
   "resPrimaryJudgeOnlyScriptedCost": {
     "pointer": "/studies/primary/metrics/test/judge_only_scripted/modeled_cost_units",
     "rendered": "1000.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1000.0
   },
   "resPrimaryJudgeOnlyScriptedCpu": {
     "pointer": "/studies/primary/metrics/test/judge_only_scripted/cpu_p95_us",
     "rendered": "12.40",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 12.4
   },
   "resPrimaryJudgeOnlyScriptedHard": {
     "pointer": "/studies/primary/metrics/test/judge_only_scripted/hard_violations",
     "rendered": "1176",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1176
   },
   "resPrimaryJudgeOnlyScriptedRisk": {
     "pointer": "/studies/primary/metrics/test/judge_only_scripted/joint_risk#percent",
     "rendered": "39.62",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 39.625
   },
   "resPrimaryJudgeOnlyScriptedUtility": {
     "pointer": "/studies/primary/metrics/test/judge_only_scripted/benign_utility#percent",
     "rendered": "66.41",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 66.40783878720652
   },
   "resPrimaryNaiveDelegationComparisonA": {
     "pointer": "/studies/primary/comparisons#baseline=naive_delegation/A12_lower_risk",
     "rendered": "1.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1.0
   },
   "resPrimaryNaiveDelegationComparisonDiff": {
     "pointer": "/studies/primary/comparisons#baseline=naive_delegation/risk_difference",
     "rendered": "-39.63",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -39.62500000000001
   },
   "resPrimaryNaiveDelegationComparisonHi": {
     "pointer": "/studies/primary/comparisons#baseline=naive_delegation/risk_difference_ci/1#percent",
     "rendered": "-39.07",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -39.06666666666667
   },
   "resPrimaryNaiveDelegationComparisonLo": {
     "pointer": "/studies/primary/comparisons#baseline=naive_delegation/risk_difference_ci/0#percent",
     "rendered": "-40.19",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -40.19166666666667
   },
   "resPrimaryNaiveDelegationComparisonP": {
     "pointer": "/studies/primary/comparisons#baseline=naive_delegation/holm_p",
     "rendered": "0.01172",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.01171875
   },
   "resPrimaryNaiveDelegationCost": {
     "pointer": "/studies/primary/metrics/test/naive_delegation/modeled_cost_units",
     "rendered": "1020.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1020.0
   },
   "resPrimaryNaiveDelegationCpu": {
     "pointer": "/studies/primary/metrics/test/naive_delegation/cpu_p95_us",
     "rendered": "9.20",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 9.2
   },
   "resPrimaryNaiveDelegationHard": {
     "pointer": "/studies/primary/metrics/test/naive_delegation/hard_violations",
     "rendered": "1176",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1176
   },
   "resPrimaryNaiveDelegationRisk": {
     "pointer": "/studies/primary/metrics/test/naive_delegation/joint_risk#percent",
     "rendered": "39.62",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 39.625
   },
   "resPrimaryNaiveDelegationUtility": {
     "pointer": "/studies/primary/metrics/test/naive_delegation/benign_utility#percent",
     "rendered": "66.41",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 66.40783878720652
   },
   "resPrimaryNaiveWithSinkComparisonA": {
     "pointer": "/studies/primary/comparisons#baseline=naive_with_sink/A12_lower_risk",
     "rendered": "1.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1.0
   },
   "resPrimaryNaiveWithSinkComparisonDiff": {
     "pointer": "/studies/primary/comparisons#baseline=naive_with_sink/risk_difference",
     "rendered": "-29.83",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -29.825000000000003
   },
   "resPrimaryNaiveWithSinkComparisonHi": {
     "pointer": "/studies/primary/comparisons#baseline=naive_with_sink/risk_difference_ci/1#percent",
     "rendered": "-29.19",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -29.19166666666667
   },
   "resPrimaryNaiveWithSinkComparisonLo": {
     "pointer": "/studies/primary/comparisons#baseline=naive_with_sink/risk_difference_ci/0#percent",
     "rendered": "-30.43",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -30.43333333333333
   },
   "resPrimaryNaiveWithSinkComparisonP": {
     "pointer": "/studies/primary/comparisons#baseline=naive_with_sink/holm_p",
     "rendered": "0.01172",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.01171875
   },
   "resPrimaryNaiveWithSinkCost": {
     "pointer": "/studies/primary/metrics/test/naive_with_sink/modeled_cost_units",
     "rendered": "365.40",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 365.39666666666665
   },
   "resPrimaryNaiveWithSinkCpu": {
     "pointer": "/studies/primary/metrics/test/naive_with_sink/cpu_p95_us",
     "rendered": "6.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 6.0
   },
   "resPrimaryNaiveWithSinkHard": {
     "pointer": "/studies/primary/metrics/test/naive_with_sink/hard_violations",
     "rendered": "0",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0
+  },
+  "resPrimaryNaiveWithSinkPopulationCost": {
+    "pointer": "/studies/primary/analytic_fixture_population/naive_with_sink/modeled_cost_units",
+    "rendered": "366.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 366.0
+  },
+  "resPrimaryNaiveWithSinkPopulationRisk": {
+    "pointer": "/studies/primary/analytic_fixture_population/naive_with_sink/joint_risk",
+    "rendered": "30.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 30.000000000000004
+  },
+  "resPrimaryNaiveWithSinkPopulationUtility": {
+    "pointer": "/studies/primary/analytic_fixture_population/naive_with_sink/benign_utility",
+    "rendered": "66.67",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 66.66666666666667
   },
   "resPrimaryNaiveWithSinkRisk": {
     "pointer": "/studies/primary/metrics/test/naive_with_sink/joint_risk#percent",
     "rendered": "29.83",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 29.825000000000003
   },
   "resPrimaryNaiveWithSinkUtility": {
     "pointer": "/studies/primary/metrics/test/naive_with_sink/benign_utility#percent",
     "rendered": "66.41",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 66.40783878720652
   },
   "resPrimaryRecords": {
     "pointer": "/studies/primary/decision_records",
     "rendered": "168000",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 168000
   },
   "resPrimaryReplications": {
     "pointer": "/studies/primary/coverage/n",
     "rendered": "1000",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1000
   },
   "resPrimaryRulesOnlyComparisonA": {
     "pointer": "/studies/primary/comparisons#baseline=rules_only/A12_lower_risk",
     "rendered": "1.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1.0
   },
   "resPrimaryRulesOnlyComparisonDiff": {
     "pointer": "/studies/primary/comparisons#baseline=rules_only/risk_difference",
     "rendered": "-29.83",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -29.825000000000003
   },
   "resPrimaryRulesOnlyComparisonHi": {
     "pointer": "/studies/primary/comparisons#baseline=rules_only/risk_difference_ci/1#percent",
     "rendered": "-29.19",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -29.19166666666667
   },
   "resPrimaryRulesOnlyComparisonLo": {
     "pointer": "/studies/primary/comparisons#baseline=rules_only/risk_difference_ci/0#percent",
     "rendered": "-30.43",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": -30.43333333333333
   },
   "resPrimaryRulesOnlyComparisonP": {
     "pointer": "/studies/primary/comparisons#baseline=rules_only/holm_p",
     "rendered": "0.01172",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.01171875
   },
   "resPrimaryRulesOnlyCost": {
     "pointer": "/studies/primary/metrics/test/rules_only/modeled_cost_units",
     "rendered": "1.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1.0
   },
   "resPrimaryRulesOnlyCpu": {
     "pointer": "/studies/primary/metrics/test/rules_only/cpu_p95_us",
     "rendered": "4.60",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 4.6
   },
   "resPrimaryRulesOnlyHard": {
     "pointer": "/studies/primary/metrics/test/rules_only/hard_violations",
     "rendered": "0",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0
+  },
+  "resPrimaryRulesOnlyPopulationCost": {
+    "pointer": "/studies/primary/analytic_fixture_population/rules_only/modeled_cost_units",
+    "rendered": "1.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 1.0
+  },
+  "resPrimaryRulesOnlyPopulationRisk": {
+    "pointer": "/studies/primary/analytic_fixture_population/rules_only/joint_risk",
+    "rendered": "30.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 30.000000000000004
+  },
+  "resPrimaryRulesOnlyPopulationUtility": {
+    "pointer": "/studies/primary/analytic_fixture_population/rules_only/benign_utility",
+    "rendered": "100.00",
+    "source": "results/processed/summary.json",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
+    "value": 100.0
   },
   "resPrimaryRulesOnlyRisk": {
     "pointer": "/studies/primary/metrics/test/rules_only/joint_risk#percent",
     "rendered": "29.83",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 29.825000000000003
   },
   "resPrimaryRulesOnlyUtility": {
     "pointer": "/studies/primary/metrics/test/rules_only/benign_utility#percent",
     "rendered": "100.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 100.0
   },
   "resPrimaryRuntime": {
     "pointer": "/studies/primary/runtime_seconds",
     "rendered": "8.06",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 8.057143999998516
   },
   "resPrimarySeeds": {
     "pointer": "/studies/primary/seeds#length",
     "rendered": "10",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 10
   },
   "resPrimaryShiftRisk": {
     "pointer": "/studies/primary/metrics/shift/checked_quarantine/joint_risk#percent",
     "rendered": "0.00",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0.0
   },
   "resPrimarySynthInstances": {
     "pointer": "/studies/primary/synthesis/instances",
     "rendered": "50",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 50
   },
   "resPrimarySynthMismatches": {
     "pointer": "/studies/primary/synthesis/mismatches",
     "rendered": "0",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 0
   },
   "resPrimaryTestCount": {
     "pointer": "/studies/primary/metrics/test/checked_quarantine/n",
     "rendered": "12000",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 12000
   },
   "resPrismCases": {
     "pointer": "/prism/cases",
     "rendered": "6",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 6
   },
   "resRiskBudget": {
     "pointer": "/design/epsilon",
     "rendered": "20",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 20.0
   },
   "resShiftPerSeed": {
     "pointer": "/design/n_shift",
     "rendered": "600",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 600
   },
   "resSupportedClasses": {
     "pointer": "/policy_inventory/policies#fully-supported",
     "rendered": "2",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 2
   },
   "resTestPerSeed": {
     "pointer": "/design/n_test",
     "rendered": "1200",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 1200
   },
   "resThresholdCount": {
     "pointer": "/design/thresholds",
     "rendered": "11",
     "source": "results/processed/summary.json",
-    "source_sha256": "58e96863c9c0c40fa5a1df02fd6057b0e65174727ce5e0361fc6270a4d9cc771",
+    "source_sha256": "214677b59a0e9394fa9831ffca4099884471f262ba01da1a6a5004985caffa4f",
     "value": 11
   }
 }

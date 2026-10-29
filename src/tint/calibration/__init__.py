@@ -80,7 +80,7 @@ class Certificate:
     delta: float
     sample_count: int
 
-    def applies(self, policy_id: str, context_id: str, view_version: str, epsilon: float) -> bool:
+    def applies(self, policy_id: str, context_id: str, view_version: str, epsilon: float, max_delta: float=0.05) -> bool:
         return (self.policy_id==policy_id and self.context_id==context_id and self.view_version==view_version
                 and math.isfinite(self.upper_risk) and 0<=self.upper_risk<=epsilon<=1
-                and 0<self.delta<1 and self.sample_count>0)
+                and 0<self.delta<=max_delta<1 and type(self.sample_count) is int and self.sample_count>0)

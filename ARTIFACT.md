@@ -1,5 +1,15 @@
 # Artifact guide and scope
 
+Round-1 corrections: verify-results now also performs read-only semantic replay
+of all retained decisions against traces/historical configurations, checks LP
+weights/risk/cost/simplex constraints, and enumerates the finite LP's vertices
+independently. Historical adaptive records labeled checked_quarantine query
+an uncertified fixed-threshold decision core, not GuardRuntime or its selected
+certificate; original logs remain unchanged. Their first fixed phrase succeeds,
+so no observed response-informed adaptation occurred. Current lexical-v3-bounded
+caps input size; historical v1/v2 remain frozen for reproduction. Arbitrary
+synchronous plugins still have no enforced cancellation deadline. See docs/ERRATA.md.
+
 This is a local feasibility artifact and an IEEE-formatted scoped manuscript,
 not a completed real-LLM/TSE effectiveness evaluation. The frozen primary study
 found no useful certified policy. Original logs are retained alongside a
@@ -26,12 +36,12 @@ Windows host). Scripts add src to Python paths; installing the project itself
 is unnecessary. For an editable installation, use setuptools 80.9.0 and
 `pip install --no-build-isolation --no-deps -e .`.
 
-Smoke takes about five seconds; re-analysis verification about ten seconds;
+Smoke takes about five seconds; allow a minute for analysis plus semantic replay;
 paper generation/build normally under a minute on this host. TeX requires
 pdflatex/bibtex (MiKTeX or TeX Live) and ordinary IEEEtran packages. Vendored
 IEEEtran.cls and IEEEtran.bst retain upstream licenses and have hashes in
 paper/template_provenance.json. Template originals are unchanged. The manuscript
-is eleven pages including references, below the conservative twelve-page IEEE
+is twelve pages including references, within the conservative twelve-page IEEE
 CS regular-paper budget; authors must verify current journal-specific rules
 before any submission.
 

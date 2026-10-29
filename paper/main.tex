@@ -239,6 +239,15 @@ is an intentionally vulnerable program, not an empirical claim about an LLM.
 The stronger naive control is essential: the deterministic example alone
 cannot distinguish quarantine from ordinary complete mediation.
 
+For the implemented fixed hierarchy, operational control states are proposal,
+hard-pass, certified, semantic-pass, effect and denial. A proposal reaches
+hard-pass only when the monitor-owned view satisfies the sink predicates. It
+reaches certified only with a matching whole-policy certificate within the
+host's risk and confidence budgets. Semantic-pass requires the configured
+cheap route or an allow from the structured judge. Only semantic-pass reaches
+an effect; failed premises and reported errors lead to denial. This is a
+hand-specified control semantics, not a machine-checked extraction of Python.
+
 \begin{table}[t]
 \caption{Canonical traces under the executable countermodel. ``Sink'' denotes
 mandatory deterministic mediation, independent of semantic judgment.}
@@ -394,10 +403,13 @@ exact deterministic mediation is the only universal fallback in this model.
 Suppose a trusted view $x$ has known cheap-acceptance risk $r_0(x)$,
 escalation risk $r_1(x)$, and positive incremental cost $d(x)$. For randomized
 escalation $q(x)\in[0,1]$, minimizing expected cost subject to an expected-risk
-constraint admits a pointwise Lagrangian rule: escalate when
-$\lambda(r_0-r_1)>d$, accept when the inequality reverses, and possibly
-randomize at equality. A feasible multiplier/tie mixture meeting the risk
-constraint certifies optimality.
+constraint has this sufficient optimality condition: if a measurable policy
+and finite nonnegative multiplier exist, expected costs are finite/integrable,
+and feasibility and complementary slackness $\lambda(R(q)-\epsilon)=0$ hold.
+Pointwise minimization escalates when
+$\lambda(r_0-r_1)>d$, accepts when the inequality reverses, and possibly
+randomizes at equality. Such a multiplier/tie mixture certifies optimality;
+its existence is an additional premise, not a consequence of known risks.
 \end{theorem}
 \begin{IEEEproof}
 For multiplier $\lambda\geq0$, the Lagrangian, up to a constant, is
@@ -408,6 +420,8 @@ Lagrangian value equals its primal cost; weak duality then proves global
 optimality under the stated existence premise. If costs are constant and
 risk reduction is monotone in a score, this becomes a threshold on that score.
 Neither monotonicity nor known conditional risks follows from calibration.
+At a boundary risk budget a feasible optimum need not admit a finite
+multiplier; no existence claim is made in that case.
 \end{IEEEproof}
 
 Escalation to a compromised judge on $T_j$ can increase risk, invalidating the
@@ -418,7 +432,8 @@ optimization objective to the same running example used in the definitions.
 
 The implemented synthesizer enumerates a fixed finite family, computes
 simultaneous upper-risk bounds, and chooses the cheapest feasible candidate.
-This is exact relative to that family. A linear program supports mixtures of
+The objective is observed calibration mean cost among certified candidates,
+not certified population expected cost. A linear program supports mixtures of
 finite candidates with known risk/cost inputs; a single risk constraint permits
 an optimum supported on at most two candidates. Multiple-layer evaluation
 expands a bounded candidate grid. No approximation ratio to unrestricted
@@ -427,7 +442,7 @@ $\Pr(L>\mathrm{budget})\leq\gamma$; averaging percentile values is not valid.
 
 \begin{theorem}[Tightness and limits]
 \label{thm:limits}
-The veto minimum and disjoint-route sum bounds are tight given only their
+The veto minimum and capped route bound $\min(1,\sum_i b_i)$ are tight given their
 stated marginal information. Pairwise independence does not determine joint
 failure for an arbitrary ensemble.
 \end{theorem}
@@ -437,6 +452,8 @@ most $m_i$. The nested miss events attain intersection probability
 $\min_i m_i$. Independent uniforms attain the product construction. For
 disjoint acceptance routes, place unsafe mass $b_i$ on each route and the
 remaining mass elsewhere, with $\sum_i b_i\leq1$; the sum bound is attained.
+When the sum exceeds one, choose disjoint unsafe masses no greater than their
+individual bounds that sum to one; the capped bound is attained.
 Finally, uniform laws on even-parity and odd-parity Boolean triples both
 have marginal probability $1/2$ and pairwise independent coordinates, yet
 their all-one probabilities are respectively $0$ and $1/4$. Thus the same
@@ -459,8 +476,40 @@ component implementations. The runtime has a fixed routing topology; the DSL
 does not synthesize arbitrary temporal monitors. A certificate fingerprint
 binds the specification, scorer/judge versions, threshold, representation and
 environment, and is recomputed at evaluation. Plugin identity and context
-declarations remain trusted-host obligations. The interpreter is synchronous;
-concurrent mutation of trusted stores and covert channels are out of scope.
+declarations remain trusted-host obligations. The interpreter is synchronous.
+Current lexical inputs are length-bounded, but arbitrary plugins have no
+runtime-enforced cancellation deadline: a caller-reported timeout exception
+is handled, while a nonreturning plugin can hang. Availability, concurrent
+trusted-store mutation and covert channels are out of scope. Frozen experiments
+retain their earlier scorer versions.
+Historical CPU measurements and certificates therefore do not describe the
+current bounded default scorer.
+
+\begin{table}[t]
+\caption{Obligation-to-code correspondence. Declaration checks do not prove
+external distribution or plugin semantics.}
+\label{tab:obligations}
+\centering\scriptsize
+\begin{tabular}{p{.24\columnwidth}p{.32\columnwidth}p{.29\columnwidth}}
+\hline
+Obligation & Executed check & External premise\\
+\hline
+Edge compatibility & Scope/evidence sets; fixed topology & Truth of guarantees\\
+Provenance & Write-once store; parent-taint union & Complete host dependencies\\
+Approval & Digest and epoch match & Trusted grant issuer\\
+Hard safety & Mandatory typed predicates & Faithful interpreter semantics\\
+Judge interface & Closed Boolean/numeric schema & Adequate semantic evidence\\
+Certificate & Policy/view/context identity; risk/confidence budgets & Valid issuer, labels, iid relationship\\
+Guard identity & Version string in fingerprint & Immutable implementation\\
+\hline
+\end{tabular}
+\end{table}
+
+In the stated control semantics, every effect has a preceding hard-pass and
+certified state, by induction over the only effect transition.
+Table~\ref{tab:obligations} distinguishes checked facts from external premises.
+This correspondence is an inspection argument, not a proved refinement link
+or a general semantic contract solver.
 
 \textbf{Assumptions and limits.} Deterministic guarantees hold only for this
 typed, completely mediated semantics. The PRISM model is an independently
@@ -553,7 +602,9 @@ is reported as a separate quantity.
 
 Seed-level paired risk/utility differences use a percentile bootstrap with
 \resBootstrapCount{} resamples, paired Wilcoxon tests, Holm correction across
-baseline comparisons, and descriptive Vargha--Delaney $A_{12}$. Intervals
+baseline comparisons, and descriptive Vargha--Delaney $A_{12}$. Intervals are
+unadjusted; Holm correction applies to tests, not simultaneous interval
+coverage. Timings use fixed comparator order with no dedicated warmup. Intervals
 resample seeds, not duplicated template instances as though they were
 independent developers. The sample is a pilot and is not powered to detect
 real deployment effects. Coverage intervals use an exact binomial interval.
@@ -565,7 +616,12 @@ mutations. These repetitive generated obligations do not represent rich
 temporal specifications. Authoring time and participant usability were not
 measured. Adaptive search permits at most \resAdaptiveBudget{} local fixture
 queries per comparator/seed, keeps all attempts, and stops on unsafe
-acceptance. It is a weak budgeted fixture search, not a model-based optimizer.
+acceptance. The historical instrument calls fixed-threshold uncertified
+decision-core functions, including the raw label \texttt{checked\_quarantine};
+it does not invoke the calibrated runtime or its selected certificate. Its
+first fixed phrase succeeds for every core, providing no observed
+response-informed adaptation. These records cannot be attributed to the
+denying primary runtime.
 
 \section{Results}
 \label{sec:results}
@@ -577,8 +633,10 @@ checks exercise \resFormalInstances{} random probability instances. The
 general proofs remain pen-and-paper proofs; these finite checks are neither
 Lean/Isabelle mechanizations nor proofs of the runtime implementation.
 
-The original mutation study rejects \resPrimaryCheckerTP{} planted invalid
-specifications while accepting \resPrimaryCheckerTN{} clean controls, with
+The original mutation study rejects \resPrimaryCheckerTP{} invalid-case
+evaluations across \resPrimaryCheckerUniqueInvalid{} unique generated variants,
+while accepting \resPrimaryCheckerTN{} evaluations of
+\resPrimaryCheckerUniqueClean{} unique clean graphs, with
 \resPrimaryCheckerFP{} false rejections and \resPrimaryCheckerFN{} missed
 mutations. This demonstrates agreement with the mutation generator, not
 precision/recall on naturally occurring policy errors. The maximum cell-median
@@ -631,6 +689,11 @@ retain bounds but omitted calibration counts; consequently those particular
 bounds cannot be independently recalibrated from their records. The amended
 instrument retains sufficient counts. Selection consistency and LP feasibility
 are checkable in both runs; no unrestricted routing optimum is inferred.
+Re-analysis additionally reconstructs mixture risk/cost from weights, checks
+normalization/nonnegativity, and compares objective values with independent
+vertex enumeration. Read-only semantic replay joins each decision to its trace
+and validates the historical configuration, oracle fields and non-timing
+verdict, route, layer and cost outputs.
 
 The most consequential RQ II finding is feasibility failure. In the primary
 replay, \resPrimaryInfeasible{} of \resPrimarySeeds{} seed-level families have
@@ -650,7 +713,7 @@ oracle. The calibrated method denies all uncertified actions.}
 \centering\small
 \begin{tabular}{lrrrrr}
 \hline
-Method & Risk (\%) & Utility (\%) & Cost units & CPU upper-tail ($\mu$s) & Hard count\\
+Method & Risk (\%) & Utility (\%) & Cost units & CPU $p_{95}$ ($\mu$s) & Hard count\\
 \hline
 \resPrimaryTable
 \hline
@@ -681,7 +744,7 @@ mechanism here, not a new semantic detector.}
 \centering\small
 \begin{tabular}{lrrrrr}
 \hline
-Method & Risk (\%) & Utility (\%) & Cost units & CPU upper-tail ($\mu$s) & Hard count\\
+Method & Risk (\%) & Utility (\%) & Cost units & CPU $p_{95}$ ($\mu$s) & Hard count\\
 \hline
 \resExploratoryTable
 \hline
@@ -699,6 +762,34 @@ $A_{12}=\resExploratoryNaiveWithSinkComparisonA{}$ and Holm-adjusted
 $p=\resExploratoryNaiveWithSinkComparisonP{}$. This is evidence about the
 scripted judge mechanism only. The uncalibrated checked control has identical
 decisions and joint risk; no detection benefit is attributed to calibration.
+
+\begin{table}[t]
+\caption{Authored family support and exploratory acceptance within family.
+Suffix variants do not alter guard behavior; these are mixture-law samples,
+not distinct semantic tasks.}
+\label{tab:families}
+\centering\scriptsize
+\begin{tabular}{lrrrr}
+\hline
+Family & Primary & Exploratory & Sink (\%) & Checked (\%)\\
+\hline
+\resFamilyTable
+\hline
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:families} exposes the limited support. Under the authored law,
+the exploratory checked policy's analytically implied risk is
+\resExploratoryCheckedQuarantinePopulationRisk{}\%, utility is
+\resExploratoryCheckedQuarantinePopulationUtility{}\%, and modeled cost is
+\resExploratoryCheckedQuarantinePopulationCost{} units. The stronger naive
+sink control's population risk is
+\resExploratoryNaiveWithSinkPopulationRisk{}\%. These differences are built
+into the scripted mechanisms and prevalences. The interval above measures
+mixture-sampling uncertainty, not independent evidence of effectiveness on
+semantically varied attacks. Among accepted exploratory proposals, unsafe
+conditional risk is \resExploratoryAcceptedConditionalRisk{}\%, distinct from
+joint unsafe acceptance.
 
 \begin{figure*}[t]
 \centering
@@ -720,8 +811,9 @@ trade-off, not dominance over the baselines on every axis.
 On the unseen encoded family, exploratory checked risk reaches
 \resExploratoryShiftRisk{}\%. The feature view cannot distinguish the authored
 unauthorized patch, and the declared runtime context does not detect the
-distribution change. The fixture search also finds accepted unsafe inputs
-quickly; it does not substantiate robustness against a strong adaptive attacker.
+distribution change. Fixed-threshold core search finds accepted unsafe inputs
+immediately; it does not measure the primary certified runtime and supplies
+no robustness evidence against a strong adaptive attacker.
 The primary checked fallback instead has no utility. Both observations limit
 the intended general robustness claim.
 

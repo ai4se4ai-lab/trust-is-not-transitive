@@ -33,15 +33,18 @@ class GuardRuntime:
                  certificate: Certificate | None=None, context_id: str='local-fixtures-v1',
                  policy_id: str | None=None, epsilon: float=0.05, threshold: float=0.2,
                  scorer: Callable | None=None, judge: Callable | None=None, log_path: Path | None=None,
-                 deployment_environment: str='sandbox') -> None:
+                 deployment_environment: str='sandbox', max_delta: float=0.05) -> None:
         check(spec)
         interfaces={layer.name:layer.view for layer in spec.layers}
         required_edges={('L1','L2','semantic'),('L2','L3','semantic')}
         actual_edges={(edge.caller,edge.callee,edge.property) for edge in spec.edges}
-        if interfaces!={'L1':'metadata','L2':'raw','L3':'structured-v1'} or not required_edges<=actual_edges:
+        if interfaces!={'L1':'metadata','L2':'raw','L3':'structured-v1'} or required_edges!=actual_edges:
             raise ValueError('runtime supports only its explicitly declared fixed topology/interfaces')
         if not 0<=threshold<=1 or not 0<=epsilon<=1:
             raise ValueError('invalid runtime threshold/budget')
+        if not 0<max_delta<1:
+            raise ValueError('invalid deployment confidence budget')
+        self.max_delta=max_delta
         self.spec,self.store,self.approvals=spec,store,approvals
         if deployment_environment not in {'sandbox','production'}:
             raise ValueError('invalid trusted deployment environment')
@@ -68,7 +71,7 @@ class GuardRuntime:
         if verdict!=Verdict.BLOCK:
             actual_id=policy_fingerprint(self.spec,self.threshold,getattr(self.scorer,'version','custom-unversioned'),
                                          getattr(self.judge,'version','custom-unversioned'),self.deployment_environment)
-            if actual_id!=self.policy_id or self.certificate is None or not self.certificate.applies(actual_id,self.context_id,'structured-v1',self.epsilon):
+            if actual_id!=self.policy_id or self.certificate is None or not self.certificate.applies(actual_id,self.context_id,'structured-v1',self.epsilon,self.max_delta):
                 verdict,reason,route=Verdict.BLOCK,'missing or inapplicable whole-policy certificate','contract'
             else:
                 certificate_id=self.certificate.policy_id
@@ -94,7 +97,7 @@ class GuardRuntime:
         return decision
 
 
-def policy_fingerprint(spec: Specification, threshold: float, scorer_version: str='lexical-v2',
+def policy_fingerprint(spec: Specification, threshold: float, scorer_version: str='lexical-v3-bounded',
                        judge_version: str='structured-surrogate-v1', environment: str='sandbox') -> str:
     # Trusted plugin versions must identify immutable implementations; a malicious
     # host/plugin can lie about this identity and is outside the threat model.

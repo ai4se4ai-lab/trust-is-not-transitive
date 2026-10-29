@@ -30,6 +30,7 @@ def task(name):
         run(sys.executable,'scripts/build_paper.py')
     elif name=='verify-results':
         run(sys.executable,'scripts/process_results.py','--verify')
+        run(sys.executable,'scripts/validate_replay.py')
         run(sys.executable,'scripts/manifest.py','--verify')
     elif name=='verify-paper':
         for script in ['scripts/verify_numbers.py','scripts/check_refs.py','scripts/check_notation.py','scripts/verify_pdf.py']:

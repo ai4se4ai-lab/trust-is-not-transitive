@@ -20,7 +20,7 @@ def check_source(text):
     errors=[]
     for index,line in enumerate(text.splitlines(),1):
         # Only structural setup may opt out, under these closed command names.
-        if re.match(r'\s*\\(?:documentclass|usepackage|setcounter|setlength|includegraphics|bibliographystyle|bibliography|input|author|title)',line):continue
+        if re.match(r'\s*\\(?:documentclass|usepackage|setcounter|setlength|includegraphics|bibliographystyle|bibliography|input|author|title|begin\{tabular\})',line):continue
         line=re.sub(r'(?<!\\)%.*','',line)
         line=re.sub(r'\\(?:cite|ref|eqref|label|url|href|texttt)\{[^}]*\}','',line)
         if re.search(r'\d',line):errors.append((index,line.strip()))

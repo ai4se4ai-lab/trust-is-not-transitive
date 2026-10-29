@@ -81,8 +81,8 @@ def check(spec: Specification) -> None:
     by_name={x.name:x for x in spec.layers}
     if len(by_name)!=len(spec.layers) or not by_name:
         raise SpecError("duplicate or empty layers")
-    if not {'production_approval','secret_egress'} <= spec.mandatory:
-        raise SpecError("mandatory sink invariants missing")
+    if spec.mandatory!={'production_approval','secret_egress'}:
+        raise SpecError("unknown or missing mandatory sink invariant")
     if set(spec.rules)!={'production_approval','secret_egress'}:
         raise SpecError("unsupported predicate; only typed deterministic fragment is implemented")
     seen=set()

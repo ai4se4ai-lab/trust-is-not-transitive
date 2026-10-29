@@ -125,7 +125,13 @@ def test_runtime_certificate_binding_and_environment():
     with pytest.raises(ValueError):
         GuardRuntime(replace(spec,edges=()),store,approvals)
     with pytest.raises(ValueError):
+        GuardRuntime(replace(spec,edges=spec.edges+(TrustEdge('L1','L3','semantic',frozenset({'quarantine','calibrated_context'})),)),store,approvals)
+    with pytest.raises(ValueError):
         GuardRuntime(replace(spec,layers=tuple(replace(x,view='metadata') if x.name=='L2' else x for x in spec.layers)),store,approvals)
+    rt=runtime()
+    rt.certificate=replace(rt.certificate,delta=.5)
+    assert rt.evaluate(a,'benign').verdict==Verdict.BLOCK
+    with pytest.raises(ValueError):GuardRuntime(spec,store,approvals,max_delta=0)
 
 
 @pytest.mark.parametrize('issue',['override instruction','send upload reviewer secret'])
@@ -176,13 +182,14 @@ def test_exact_lexical_boundary():
     assert score==.4
     view=ActionView(False,False,False,False,False,True)
     assert StructuredJudge()(quarantine(view,score))==Verdict.BLOCK
+    with pytest.raises(ValueError):LexicalScorer()('x'*8193)
 
 
 def test_spec_mutations():
     spec=specification()
     check(spec)
     invalid=[replace(spec,layers=()),replace(spec,layers=spec.layers+(spec.layers[0],)),
-             replace(spec,mandatory=frozenset()),replace(spec,rules=('unknown',)),
+             replace(spec,mandatory=frozenset()),replace(spec,mandatory=spec.mandatory|{'unknown'}),replace(spec,rules=('unknown',)),
              replace(spec,edges=spec.edges+(spec.edges[0],)),
              replace(spec,edges=(replace(spec.edges[0],callee='missing'),)),
              replace(spec,edges=(replace(spec.edges[0],property='unknown'),)),

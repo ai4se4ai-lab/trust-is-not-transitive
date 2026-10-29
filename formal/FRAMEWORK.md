@@ -176,13 +176,20 @@ q(x) in [0,1], minimize E[c0+q*d] subject to E[r0-q*(r0-r1)]<=epsilon.
 For any multiplier lambda>=0, pointwise Lagrangian minimization escalates iff
 lambda*(r0-r1)>d, accepts iff the inequality reverses, and may randomize on
 ties. The inequality follows directly by collecting the coefficient of q in
-the Lagrangian. Whenever a feasible multiplier/tie mixture achieves the risk
-constraint, weak duality and equality of its Lagrangian value certify global
+the Lagrangian. If a measurable feasible mixture and finite multiplier exist
+and satisfy complementary slackness lambda*(R(q)-epsilon)=0, weak duality
+and equality of its Lagrangian value certify global
 optimality. Feasibility and known conditional risks are assumptions, not learned
 facts. If r1>r0 escalation can increase risk; no universal score threshold
 follows. With constant d and monotone risk reduction in a score, it becomes a
 threshold in that score. Tj can have r1>r0 for an exposed judge, violating this
 premise; structured quarantine is still no semantic correctness oracle.
+
+Finite multiplier existence is not implied. For x uniform on (0,1), cheap risk
+r0(x)=x, escalated risk r1(x)=0, cost d(x)=1 and target epsilon=0, feasibility
+requires escalation almost surely but no finite multiplier yields it. This
+boundary case is excluded by the explicit existence/slackness premise, not
+by an unspoken regularity assumption.
 
 For a finite set of candidate deterministic configurations with trusted cost
 and simultaneous risk bounds, enumerate all configurations and retain the

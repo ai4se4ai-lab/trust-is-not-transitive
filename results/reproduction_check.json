@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "checkout_commit": "76831bb",
+  "metric_cells_compared": 42,
+  "scientific_fields": [
+    "n",
+    "unsafe",
+    "benign",
+    "misses",
+    "joint_risk",
+    "attack_success",
+    "benign_utility",
+    "false_block_rate",
+    "modeled_cost_units",
+    "hard_violations",
+    "reach_rates"
+  ],
+  "known_differences": [
+    "wall-clock and CPU timing",
+    "environment paths and execution commit",
+    "regenerated primary synthesis retains formerly omitted calibration counts"
+  ],
+  "full_pipeline": "tests, real PRISM, both studies, analyses, PDF and verification targets passed in detached checkout"
+}
