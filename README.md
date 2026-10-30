@@ -21,6 +21,9 @@ documents full reproduction, PRISM/TeX setup, licensing and limitations.
 Read the [manuscript](paper/main.pdf), [formal framework](formal/FRAMEWORK.md),
 [preregistration](experiments/PREREGISTRATION.md),
 [amendments](experiments/AMENDMENTS.md) and [final report](docs/FINAL_REPORT.md).
+For teaching, use the [undergraduate tutorial](paper/tutorial.md),
+[instructor answer key](paper/tutorial-instructor-notes.md), and
+`python scripts/tutorial_lab.py` for the accompanying local lab.
 The paper is a single [main.tex](paper/main.tex) with one bibliography,
 [references.bib](paper/references.bib). Result macros are generated into a marked block at
 the top of `main.tex` by `scripts/make_macros.py`; do not hand-edit that block.
