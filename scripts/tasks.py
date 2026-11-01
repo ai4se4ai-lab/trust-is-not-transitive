@@ -25,6 +25,19 @@ def task(name):
     elif name=='formal':
         for script in ['formal/check.py','formal/sanity.py','scripts/check_notation.py','scripts/run_prism.py']:
             run(sys.executable,script)
+    elif name=='proofs':
+        run(sys.executable,'formal/calculus/prove.py')
+        run(sys.executable,'formal/calculus/mutate.py')
+    elif name=='verification':
+        task('proofs')
+        run(sys.executable,'experiments/v2/run.py','e9','e10')
+        run(sys.executable,'experiments/v2/run.py','e3','e4','e7','e8','e11','e12','e12b','e13','e14','environment')
+        run(sys.executable,'experiments/v2/corpus_analysis.py')
+        run(sys.executable,'experiments/v2/worked_example.py')
+        run(sys.executable,'experiments/v2/mutation.py')
+        run(sys.executable,'experiments/v2/classify_mutants.py')
+        task('paper')
+        run(sys.executable,'scripts/manifest.py')
     elif name=='paper':
         run(sys.executable,'scripts/make_macros.py')
         run(sys.executable,'scripts/build_paper.py')

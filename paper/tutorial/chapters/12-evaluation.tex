@@ -1,0 +1,215 @@
+% =====================================================================
+\section{The Experiments: What Was Tested and What It Shows}
+\label{ch:evaluation}
+% =====================================================================
+
+\begin{bigidea}
+A theorem tells you the \emph{idea} is right; it does not tell you the \emph{program} is right, nor that anyone will meet such stacks in real life. The paper therefore runs experiments of three kinds, each aimed at a different claim: (1) are the proofs right? (2) does the code do what the proofs say? (3) how fast is it, and what do real configurations look like? Notably, \textbf{no LLM was run}. This chapter explains each experiment in plain terms, with the paper's numbers, and states carefully what the numbers do and do not prove.
+\end{bigidea}
+
+\subsection{First, how to think about evaluating a verification tool}
+
+\begin{toolbox}{testing ideas used in this chapter}
+\textbf{Differential testing.} Run two independently written implementations on the same inputs and compare; any disagreement is a bug in (at least) one.
+
+\textbf{Small-scope hypothesis and exhaustive testing.} Most bugs show up on small inputs. If we test \emph{every} input up to a small size, we catch most bugs, and nothing is left to chance.
+
+\textbf{Random testing.} For larger inputs, sample many random cases.
+
+\textbf{Mutation testing.} To measure how good a test suite (an \emph{oracle}) is, introduce small deliberate bugs ``mutants'' into the code. A good oracle \emph{kills} (detects) most mutants. Survivors reveal blind spots; some survivors are \emph{equivalent mutants}, i.e.\ do not change behavior at all.
+
+\textbf{Model checking / model search.} Systematically enumerate behaviors of a model and check a property on each.
+
+\textbf{Monte Carlo coverage.} To test a statistical procedure (e.g.\ a 95\% bound), simulate many worlds where the truth is known and count how often the bound is correct (its \emph{coverage}).
+\end{toolbox}
+
+The paper explains the logic of its design: ``claims about the calculus are proved, so we test whether the proofs depend on the definitions they appear to use (E1, E2). Claims about the implementation are tested by comparison with a reference interpreter and a model search written from the equations. \dots\ Relevance cannot be shown by any of this, so we mine public configurations \dots''
+
+\subsection{The research questions}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+\textbf{RQ} & \textbf{Question}\\
+\midrule
+RQ1 & Are the theorems proved, and do the proofs depend on the definitions?\\
+RQ2 & Does the implementation conform to the definitions, and are its rejections real?\\
+RQ3 & How do checking, deciding and recertifying grow with size?\\
+RQ4 & What do real configurations look like, and what does the approach report on them and on published designs?\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{RQ1: are the results proved?}
+
+\textbf{E1 (all proof goals, two solvers).} All 66 proof goals are proved by Z3 and by cvc5. None has contradictory premises (63 are shown satisfiable, 1 returned unknown, 2 have no premises). The slowest took under a second. \emph{Meaning:} given the encoding, the induction steps are valid.
+
+\textbf{E2 (definition mutants).} All 13 mutated definitions yield a countermodel to the expected theorem. \emph{Meaning:} the proofs depend on the definitions, e.g.\ making evidence inherited breaks soundness at the guard case.
+
+\textbf{E14 (the SAT reduction).} On 3000 random CNF formulas near the satisfiability threshold, 2260 of them satisfiable, the checker's verdict on the reduction of the Complexity theorem agreed with brute-force SAT: 0 disagreements. On 740 formulas the fast first pass rejected a safe hierarchy and exploration corrected it. \emph{Meaning:} the reduction is right, and the false-alarm phenomenon is real.
+
+\textbf{E12, E12b (are the certificates calibrated?).} E12 applies Clopper--Pearson bounds to 40 random laws on cascades. Minimum simultaneous route coverage was $0.949$ against a nominal $0.95$ (below nominal on 2 laws); the paper says this is within Monte Carlo error but \emph{failed the protocol's literal rule}. E12b is the one that matters: on 40 random DAGs with known laws it certifies all routes, changes one stage, recalibrates only the stale routes, rebuilds the engine, and compares the risk of its decisions with the sum of open bounds. Minimum coverage was $0.923$ for all routes together and $0.960$ for the sum, against nominal $0.95$; the upper Wilson limit of the worst law, corrected for the number of laws, is $0.959$, so the shortfall is within sampling error. Also, the per-layer product \emph{understated} the true risk on 18 of 40 laws, by up to a factor of 5.7, confirming the Fr\'echet--Hoeffding warning.
+
+\begin{warning}{How to read ``coverage 0.949 vs 0.95''}
+A 95\% bound that holds in 949 of 1000 simulated worlds is not obviously broken: if the true coverage is $0.95$, then ordinary sampling noise easily produces a value like $0.949$ in a finite simulation. The authors keep the honest note that the literal rule they wrote down in advance was not met on 2 laws, and relaxed it only after seeing the result (marked with a dagger in their experiment table). Good practice: report deviations from your own protocol.
+\end{warning}
+
+\subsection{RQ2: does the implementation conform?}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}lXX@{}}
+\toprule
+\textbf{ID} & \textbf{What was done} & \textbf{Result}\\
+\midrule
+E3 & \textbf{Exhaustive}: every hierarchy of up to 4 nodes on a small alphabet (2 goals, 2 obligations, 9 layers, gates and veto stages with and without facts): 6,944,956 hierarchies, 1,170,859 accepted. Checker vs.\ the equations; a model search (enumerating behaviors and obligation sets) covered 243,285 of them. & 0 disagreements in both comparisons\\[3pt]
+E4 & \textbf{Random differential}: 40,000 specifications (18,183 accepted, 21,817 rejected), 800,000 decisions. Checker vs.\ engine vs.\ reference; model search on 15,591 small specifications; sampled contract-respecting runs on accepted specifications (343,793 runs, 75,844 ended in acceptance); residual lists vs.\ a path-wise computation; equations vs.\ reference on 600 terms and models. & 0 disagreements; 0 unsafe acceptances among sampled runs; the same sampling found a violation on 16,657 of 21,817 rejected specs (a measure of the sampler's power, partial); 0 adequacy failures\\[3pt]
+E5 & \textbf{Mutation testing} of the checker, engine, certificate and fingerprint code: 419 mutants. & Differential oracle alone detected 93; 175 more crashed or hung; unit tests killed 119 that the random oracle missed, total 387 killed; 32 survivors, of which 28 equivalent and 4 are untested differences in the form of a digest\\[3pt]
+E6 & Each of 49,482 rejection \textbf{witnesses} is a complete model; replayed on an engine with the check removed. & all were accepted on the reported route, satisfied $\models$, and violated the reported goal (0 failures)\\[3pt]
+E7 & A second derivation: a Z3 encoding of the semantics (3000 hierarchies) and a PRISM probabilistic model (200). & 0 disagreements\\
+E8 & Replaying 48,000 preserved decisions of an earlier study through the engine. & 0 disagreements\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Why so many different tests? Each kind of test catches a different class of mistake. Exhaustive testing leaves no gap on small inputs. Random testing reaches larger inputs. Mutation testing asks whether the oracle itself is strong enough to notice bugs: the paper is candid that the random oracle \emph{alone} detected only 93 of 419 mutants, because its generator makes no cycles, raising stages or missing certificates, and that unit tests written after reading the survivors are biased upward as a measure.
+
+\begin{warning}{The shared-author caveat}
+The checker, the reference interpreter, the model search and the SMT/PRISM encodings were all written by one author, from the same figure of semantics. These tests catch \emph{implementation} errors, not a shared \emph{misreading} of the semantics. The proofs and the adequacy tests are supposed to cover that, and the paper lists it under threats to validity.
+\end{warning}
+
+\subsection{RQ3: scalability}
+
+\textbf{E9 (checking time).} Figure~\ref{fig:scale-tut} shows median checking time for accepted hierarchies of growing size.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}
+\begin{loglogaxis}[width=0.8\textwidth,height=6.2cm,xlabel={Nodes},ylabel={Seconds},legend pos=north west,legend style={font=\scriptsize,draw=none},grid=major,grid style={black!15}]
+\addplot[tintblue,mark=*,thick] coordinates {(1000,0.0043) (3162,0.0133) (10000,0.0407) (31623,0.1412) (100000,0.5437) (316228,2.1555) (1000000,7.8244)};
+\addlegendentry{chain}
+\addplot[tintorange,dashed,mark=square*,thick] coordinates {(1000,0.0032) (3163,0.0101) (10000,0.0340) (31624,0.1222) (100000,0.4568) (316228,1.9787) (1000000,7.1678)};
+\addlegendentry{diamonds}
+\addplot[gray,dotted,domain=1000:1000000] {x*0.0000075};
+\addlegendentry{slope 1 (linear)}
+\end{loglogaxis}
+\end{tikzpicture}
+\caption{Median checking time vs.\ hierarchy size (paper's E9 data). The dotted line is exactly linear growth.}
+\label{fig:scale-tut}
+\end{figure}
+
+\begin{toolbox}{reading a log--log plot}
+On a plot where both axes are logarithmic, a power law $t=c\,n^{a}$ is a straight line with slope $a$. Doubling the size doubles the time when $a=1$ (linear) and quadruples it when $a=2$. Fitting a line to the points gives the empirical exponent $a$.
+\end{toolbox}
+
+The fitted slopes are $1.15$ (chain) and $1.17$ (diamonds) from ten thousand nodes up: close to linear, a million nodes in at most $7.8$ seconds. The authors warn that slopes above $1$ may come from Python's memory behavior (not verified), and that \emph{the argument for near-linearity is the theorem, not the fit}. Other findings:
+
+\begin{itemize}
+\item \textbf{Rejection is cheap to decide, costlier to explain.} A chain where every guard fails took $9.5$ s at a million nodes without witnesses (slope $1.14$), but storing a path per finding is quadratic (slope $1.97$, $50.1$ s at $32{,}000$ nodes).
+\item \textbf{Goals cost little.} $32{,}768$ goals on $100{,}000$ nodes took $0.89$ s. With 200 separate full-scope layers and $262{,}144$ goals (over fifty million scope entries) it took $19.8$ s.
+\item \textbf{Exploration is exponential on a family built for it}: $262{,}141$ states, $0.30$ s at depth $16$.
+\end{itemize}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}rrrrrrr@{}}
+\toprule
+$d$ (diamonds) & Nodes & Paths & \tint{} & Z3 & Enumeration & PRISM \\
+\midrule
+8 & 25 & $2.6\times10^{2}$ & 0.1 & 5.4 & 0.4 & 1522.9\\
+20 & 61 & $1.0\times10^{6}$ & 0.2 & 8.9 & 1040.7 & 1503.5\\
+64 & 193 & $1.8\times10^{19}$ & 0.9 & 26.9 & skipped & 1521.0\\
+256 & 769 & $1.2\times10^{77}$ & 3.2 & 97.5 & skipped & 2690.0\\
+\bottomrule
+\end{tabular}
+
+{\footnotesize Checking time in milliseconds on hierarchies with $2^d$ paths (from the paper).}
+\end{center}
+
+An honest reading: \emph{path enumeration} dies already at depth 20 (over a second) and is not run beyond. But Z3 and PRISM, being general-purpose tools, do \textbf{not} suffer path explosion here (the state space stays small when the goals are fixed). The checker is only a \emph{constant factor} faster ($3.2$ ms vs.\ $97.5$ ms at depth 256). The checker's real benefits are its witness paths, routes and residual list, and that a deployment needs no solver.
+
+\textbf{E10 (decision time).} A decision costs about $0.8\,\mu$s of engine time per stage, or $1.7$ ms at depth $2048$. Building an engine at that depth, with checking and hashing, takes $0.25$ s.
+
+\textbf{E11 (recertification).} On 2000 random hierarchies with $4.3$ routes on average, a random change of one stage stales $33\%$ of routes on average. In a cascade of 64 routes, changing the last layer stales $1.6\%$ and an average layer $50.8\%$. Across $94{,}840$ checks that a non-stale route's event is unchanged there were \textbf{0 violations}. The paper cautions: stored labelled data could be replayed for a whole-policy bound, so the fair saving is in \emph{new labels}, and it depends on where changes fall.
+
+\subsection{RQ4: real configurations and published designs}
+
+\textbf{E15 (public configurations).} The authors analyzed the 138 example configurations in the NeMo Guardrails repository at one commit, classifying rails by name. 56 have real rails, using 78 distinct flows. The median has $2$ stages and the largest $9$. Of the rails, 42 are prompted LLM tasks, 60 other models or external services, 10 deterministic, and 8 rewrite their input (which the language cannot express). 47 configurations are entirely statistical; 3 are entirely deterministic; 4 guard tool calls. The framework has \emph{no escalation construct}: a stage's rails form a chain in which any rail can stop the request.
+
+\begin{bigidea}
+In practice, the public examples are \textbf{short chains of learned stages that act on text, not on actions}. For such a chain, the graph analysis of this paper is trivial. The useful output is the \emph{list of assumptions}. The paper says clearly that examples are written to teach a feature, that one framework is not the world, and that it gives no evidence that escalation hierarchies are common (these appear in research designs and in the paper's example). No configuration in the corpus provides facts, so the complexity results about fact flow have no observed instance there.
+\end{bigidea}
+
+\textbf{E13 (published designs).} The authors wrote specifications of published designs from their descriptions, applying the two uniform obligations. These are their own models, by one modeller; the first version was edited after seeing results, so the experiment is \emph{exploratory}. Read a rejection as: \emph{the description, under the rule, does not state what the composition needs}. It does not mean that a system is insecure.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}p{2.8cm}p{1.5cm}p{2.0cm}p{1.3cm}X@{}}
+\toprule
+\textbf{Design} & \textbf{Benign} & \textbf{Adversarial} & \textbf{Routes} & \textbf{Obligations that the adversarial verdict rests on or that would flip it}\\
+\midrule
+DevAgent & accepted & accepted & 2 & rests on: \ob{human\_attentive}, \ob{miss\_rate\_bounded}, \ob{safe\_on\_this\_text}\\
+DevAgent, exposed judge & accepted & rejected & 1 & supply: \ob{safe\_on\_this\_text}\\
+LlamaFirewall & rejected & rejected & 1 & supply: \ob{miss\_rate\_bounded}, \ob{safe\_on\_this\_text}\\
+NeMo rails & rejected & rejected & 1 & supply: \ob{miss\_rate\_bounded}, \ob{safe\_on\_this\_text}\\
+CaMeL-style & accepted & accepted & 1 & rests on: \ob{memory\_uncompromised}, \ob{policy\_adequate}, \ob{trusted\_query\_and\_interpreter}\\
+Trust or Escalate & accepted & rejected & 3 & supply: \ob{safe\_on\_this\_text}\\
+Conformal Arbitrage & accepted & rejected & 2 & supply: \ob{safe\_on\_this\_text}\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+How to read this honestly: LlamaFirewall and NeMo state \emph{measurements} (e.g.\ reduced attack success on a benchmark), not bounds for a particular deployment, so their goals remain open under the rule even in the benign threat model; a deployer who certifies the stages supplies the obligation. CaMeL passes under both threat models with its residual assumptions (a trusted query, adequate policies), but the verdict \emph{repeats the design's own premise}: in the model its planner reads only the trusted query, and labelling the planner raw would reject it. Trust or Escalate and Conformal Arbitrage pass only with a benign threat model, which is theirs: neither is a security mechanism.
+
+\subsection{An earlier study, and the failures along the way}
+
+The paper's section on failures is part of its credibility. Reviews of earlier versions found defects, recorded in the artifact's errata: a reported measurement had been a constant; the contract-satisfaction code had not been executed by any experiment; the fingerprint omitted checked predicates and closures, so a stale certificate could stay open; the \emph{first statement of the Route risk theorem was false}; assumption lists omitted provided facts and veto stages that matter only through their facts; a first corpus extraction lost the Colang 2 configurations; the PRISM model had the crediting rule built in. All were fixed and the experiments rerun. The authors' own attempt to prove a generalized Meet lemma found it false, which led to the complexity theorem.
+
+An earlier \emph{preregistered scripted study} of one fixed pipeline stays in the artifact. Its certificate requirement refused deployment in all 10 primary seeds, which exposed a floating-point defect in a scripted scorer. After the fix, certification changed no decision. A simple provenance rule reached lower risk than the full pipeline, because the sandbox could not exercise semantic guards, and no semantic mechanism resisted a distribution shift that the residual list had predicted. The paper says: ``These results stand. They are consistent with the preference for deterministic establishment \dots\ and they give no evidence that semantic guards work.''
+
+\begin{tryit}{a floating-point trap from the historical study}
+python scripts/tutorial_lab.py
+# part 6 prints:  historical=0.39999999999999997, corrected=0.4, cutoff=0.40
+#                 historical >= cutoff: False; corrected >= cutoff: True
+# sums of decimal fractions are not exact in binary floating point,
+# so a score that "should" equal the threshold can fall just below it.
+\end{tryit}
+
+\subsection{Threats to validity}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}p{2.2cm}X@{}}
+\toprule
+\textbf{Kind} & \textbf{Threats the paper lists}\\
+\midrule
+Internal & One author wrote the calculus, checker, reference, encodings and specifications, so oracles share assumptions. The script applying induction is unchecked. An obligation could be misstated and still pass. The runs were made on one day from uncommitted code. Hand classification of mutants and unit tests added after seeing survivors bias E5. The mutation operators are a small set.\\
+Construct & ``Safe'' is relative to declared goals and contracts: weak goals are easily safe, a false contract voids the guarantee, an assumed obligation can be written down to silence a rejection. Safety says nothing about utility: the calculus would accept a hierarchy that denies nearly everything. Per-decision risk is not session harm. A joint bound can look small because attacks are rare.\\
+External & The corpus is one framework's teaching examples. The designs were modelled by one person from publications, with no check by their authors. The language cannot express rewriting or voting; the synthetic families show structure, not typical deployments. Timings come from one machine and a Python implementation. Nothing involves a practitioner.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\pauseq{A skeptical classmate says: ``Zero disagreements in millions of tests proves the checker is correct.'' Give two reasons this is too strong, using the information in this chapter.}{(1) Tests cover only the inputs tried; exhaustive testing covers hierarchies of up to 4 nodes on a small alphabet, not all sizes. (2) The oracles (reference interpreter, model search, SMT and PRISM encodings) were written by the same author from the same semantics figure, so a shared misreading of the semantics would produce agreement and still be wrong. (3) Mutation testing shows the random oracle alone detected only 93 of 419 mutants, so 'zero disagreements' from that oracle has limited power. The proofs and the adequacy tests are supposed to cover the shared-misreading risk.}
+
+\begin{tryit}{rerun the paper's experiments}
+# From the repository root (see ARTIFACT.md for the full table)
+python -m pip install -r requirements-paper.lock
+python scripts/tasks.py proofs               # E1, E2: about 2 min
+python experiments/v2/run.py e3 e4           # E3, E4, E6: about 10 min
+python experiments/v2/run.py e13 e14         # designs and the SAT reduction: 1 min
+python scripts/tasks.py verification         # everything: under 1 hour
+\end{tryit}
+
+\begin{recap}
+\begin{itemize}
+\item Proofs: 66/66 goals by two solvers; 13/13 mutants caught; the SAT reduction agrees with brute force on 3000 formulas.
+\item Conformance: millions of exhaustive and random comparisons with 0 disagreements; mutation testing shows what the random oracle alone misses.
+\item Scale: about a million nodes in under 8 seconds; near-linear fit, but the theorem is the argument; rejection \emph{witnesses} can be quadratic.
+\item Real configurations are short chains of learned stages; the output of most value is the list of assumptions. Published designs are modelled, not tested, and exploratory.
+\item The paper is open about its failures; practice the same habit.
+\end{itemize}
+\end{recap}

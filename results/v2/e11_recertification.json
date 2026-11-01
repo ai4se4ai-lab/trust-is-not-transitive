@@ -1,0 +1,71 @@
+{
+ "attempts": 9040,
+ "cascade": [
+  {
+   "last_layer_fraction": 0.5,
+   "mean_fraction": 0.75,
+   "routes": 2
+  },
+  {
+   "last_layer_fraction": 0.25,
+   "mean_fraction": 0.625,
+   "routes": 4
+  },
+  {
+   "last_layer_fraction": 0.125,
+   "mean_fraction": 0.5625,
+   "routes": 8
+  },
+  {
+   "last_layer_fraction": 0.0625,
+   "mean_fraction": 0.53125,
+   "routes": 16
+  },
+  {
+   "last_layer_fraction": 0.03125,
+   "mean_fraction": 0.515625,
+   "routes": 32
+  },
+  {
+   "last_layer_fraction": 0.015625,
+   "mean_fraction": 0.5078125,
+   "routes": 64
+  }
+ ],
+ "devagent_matrix": {
+  "c": [
+   "n3"
+  ],
+  "g1": [
+   "n3",
+   "n4"
+  ],
+  "g2": [
+   "n3",
+   "n4"
+  ],
+  "g3": [
+   "n3",
+   "n4"
+  ],
+  "n3": [
+   "n3"
+  ],
+  "n4": [
+   "n4"
+  ],
+  "s": [
+   "n3",
+   "n4"
+  ],
+  "v2": [
+   "n4"
+  ]
+ },
+ "locality_checks": 94840,
+ "locality_violations": 0,
+ "mean_fraction_affected": 0.3279798701298701,
+ "mean_routes": 4.325,
+ "median_fraction_affected": 0.2,
+ "random_hierarchies": 2000
+}

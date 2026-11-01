@@ -1,0 +1,159 @@
+% =====================================================================
+\section{Exercises}
+\label{ch:exercises}
+% =====================================================================
+
+\newtcolorbox{exbox}[1]{enhanced,breakable,colback=tintblue!4,colframe=tintblue,fonttitle=\bfseries,
+  title={#1},left=6pt,right=6pt,top=3pt,bottom=3pt,boxrule=0.8pt,arc=3pt}
+\newcounter{exn}
+\newcommand{\exercise}[3]{\refstepcounter{exn}%
+  \begin{exbox}{Exercise \theexn\ \ (#1)}#2\end{exbox}%
+  \ifdefined\showanswers\begin{answerbox}{Solution to Exercise \theexn}#3\end{answerbox}\fi}
+
+\begin{bigidea}
+Understanding comes from doing. The exercises follow the chapters. Warm-ups first, then proofs, then computation, then lab and discussion. Solutions are included only in the \emph{instructor edition} of this document (compile with the command at the top of \code{tutorial.tex}).
+\end{bigidea}
+
+\subsection*{Part I: Logic and the calculus (Chapters~\ref{ch:toolkit}--\ref{ch:calculus})}
+
+\exercise{vacuous contracts}{
+Consider $H_{\mathrm{toy}}=\gate(g,a,\epsilon,\emptyset,\emptyset,\guard(j,L,\Omega_j,\deny))$ with $\Goals=\{a,b\}$, $\req(L)=\{o\}$, $\scope(L)=\{b\}$, and the model $P(g)=\text{true}$, $V(j)=\acc$.\\
+(a) Take $E(j)=\{o\}$ and $S=\{a\}$. Is $M\models_\emptyset H_{\mathrm{toy}}$ (for $\Omega_j=\emptyset$)?\\
+(b) Take $E(j)=\emptyset$ and $S=\{a\}$, with $\Omega_j=\{o\}$. Is $M\models_\emptyset H_{\mathrm{toy}}$?\\
+(c) Take $E(j)=\emptyset$, $S=\{a\}$ and $\Omega_j=\emptyset$. Is it? What does the decision semantics say, and is the proposal safe?
+}{
+(a) No. The contract applies ($o\in E(j)$) and demands $\scope(L)=\{b\}\subseteq S=\{a\}$, which is false.\\
+(b) No. Realization demands $\Omega_j\cup F=\{o\}\subseteq E(j)=\emptyset$, false: a false declaration lies outside the guarantee.\\
+(c) Yes. Realization holds ($\emptyset\subseteq E(j)$). The contract's condition $\{o\}\subseteq E(j)$ is false, so the guard line is vacuously true. The gate applies and $a\in S$. The decision is $\accepted(j)$, but $b\notin S$: unsafe. This is the model of the lead-lined suitcase.
+}
+
+\exercise{reading the semantics}{
+Write $\sem{H}{M}$ and decide $M\models_\emptyset H$ for $H=\switch(s,\ \gate(g,a,\epsilon,\emptyset,\emptyset,\deny),\ \guard(j,L',\emptyset,\deny))$ with $\req(L')=\emptyset$, $\scope(L')=\{a\}$, $\Goals=\{a\}$, and the model $W(s)=\text{false}$, $V(j)=\acc$, $E(j)=\emptyset$, $S=\{a\}$.
+}{
+$W(s)=\text{false}$, so the second branch is taken: the guard $j$ with $V(j)=\acc$ gives $\accepted(j)$. For $\models$: the switch requires $M\models_\emptyset$ of the chosen branch only. Realization at $j$: $\emptyset\subseteq E(j)$ holds. The acceptance clause: $\req(L')=\emptyset\subseteq E(j)$, so the contract applies and demands $\scope(L')=\{a\}\subseteq S=\{a\}$: true. So $M\models_\emptyset H$. Note that the unused arm is irrelevant for this model.
+}
+
+\subsection*{Part II: The check (Chapters~\ref{ch:check}--\ref{ch:transitive})}
+
+\exercise{run the walk}{
+Goals $\Goals=\{a,b,c\}$. Gate $g_1$ (deterministic) establishes $a$ and leads to a switch $s$. Left arm: deterministic gate $g_2$ establishes $b$, then guard $j_1$ with $\req=\emptyset$, $\scope=\{c\}$. Right arm: guard $j_2$ with $\req=\{o\}$, $\scope=\{b,c\}$, evidence $\Omega_{j_2}=\emptyset$. Both guards continue to $\deny$.\\
+(a) Compute $(A,B)$ at each guard and evaluate $\ok$. (b) Is the hierarchy accepted? (c) Give two different repairs.
+}{
+(a) After $g_1$: $A=\{a\}$. Left: after $g_2$, $A=\{a,b\}$; at $j_1$ open $=\{c\}\subseteq\scope=\{c\}$ and $\req=\emptyset\subseteq\Omega\cup B$: $\ok$ holds. Right: at $j_2$, $A=\{a\}$, open $=\{b,c\}\subseteq\scope=\{b,c\}$ but $\req=\{o\}\not\subseteq\emptyset$ and $\Goals\not\subseteq A$: $\ok$ fails.\\
+(b) Rejected, finding at $j_2$: missing obligation $o$, open goal $b$ (or $c$), path $g_1\,s\,j_2$.\\
+(c) Repair 1: declare $o$ in $\Omega_{j_2}$ and give $o$ an owner (it enters the residual). Repair 2: add a deterministic gate establishing $b$ and a gate providing $o$ before $j_2$ on the right arm (if such mechanisms exist). Repair 3: shrink the goals or change the layer so it does not need $o$.
+}
+
+\exercise{build the witness}{
+For the rejected hierarchy of Exercise 3, build the model of the Completeness proof: give $P,V,W,E,S$ and verify $A\subseteq S$, $M\models_\emptyset H$, acceptance, and violation.
+}{
+Rejected branch: the right arm, so $W(s)=\text{false}$. $P(g_1)=\text{true}$. At $j_2$ the failing case is (a): $o\in\req\setminus(\Omega\cup B)$ and an open goal $\psi\in\{b,c\}$; take $\psi=b$. $S=\{a,c\}$ (everything but $b$), $V(j_2)=\acc$, $E(j_2)=\{\text{all obligations}\}\setminus\{o\}$. Check: $A=\{a\}\subseteq S$ \checkmark. $M\models_\emptyset H$: $g_1$ applies ($\req=\emptyset$) and $a\in S$ \checkmark; switch picks the right arm; at $j_2$ realization holds because $\Omega=\emptyset$; the contract's condition fails because $o\notin E(j_2)$, so it is vacuous \checkmark. Decision: $\accepted(j_2)$ and $b\notin S$: violated.
+}
+
+\exercise{fix the transitive hierarchy}{
+In the counterexample $\guard(n_1,\ell_1,\{o\},\guard(n_2,\ell_2,\emptyset,\deny))$ of Theorem ``Transitive reasoning'', insert a deterministic gate $c$ between the guards that provides $o$. Does $\chk$ now accept? Does the attack model still exist? What must you say about gate $c$ in the claims list?
+}{
+With the gate $c$ providing $o$, $B=\{o\}$ at $n_2$ (the gate is deterministic, hence credited), and $\req(\ell_2)=\{o\}\subseteq\emptyset\cup B$, with the goal in scope: $\ok$ holds, so $\chk$ accepts. By Soundness no contract-respecting violating run exists. In the old attack $o$ failed at $n_2$; now realization requires the provided fact $o$ to hold at $n_2$ ($F\subseteq E(n_2)$), so that model is excluded. The claims list gets $(c,o)$: someone must argue that gate $c$ really guarantees $o$ at $n_2$ (for example, by checking provenance labels).
+}
+
+\exercise{order}{
+(a) Show by the walk that $\guard(n,\ell_0,\emptyset,\gate(m,\varphi,\epsilon,\emptyset,\emptyset,\deny))$ with $\Goals=\{\varphi\}$, $\req(\ell_0)=\emptyset$, $\scope(\ell_0)=\emptyset$ is rejected but $\gate(m,\varphi,\epsilon,\emptyset,\emptyset,\guard(n,\ell_0,\emptyset,\deny))$ is accepted. (b) Why is this the formal version of ``exit door before the checkpoint''?
+}{
+(a) First: at $n$, $A=\emptyset$; $\Goals\not\subseteq A$; $\req=\emptyset\subseteq\emptyset$ but $\Goals=\{\varphi\}\not\subseteq A\cup\scope=\emptyset$: $\ok$ fails, rejected. Second: the gate is credited, $A=\{\varphi\}\supseteq\Goals$; first disjunct of $\ok$ holds; accepted. (b) In the first hierarchy a proposal can be accepted by $n$ without ever meeting the gate $m$, so the gate's goal is unestablished when the decision ends.
+}
+
+\exercise{the Meet lemma with different evidence}{
+Let $\Goals=\{g_1,g_2\}$, $\req(\ell)=\{o\}$, $\scope(\ell)=\{g_1,g_2\}$. Give path 1 $(A,e)=(\Goals,\emptyset)$ and path 2 $(A',e')=(\emptyset,\{o\})$. Show both satisfy $\ok$ but $\ok(\ell,e\cap e',A\cap A')$ fails. Then show that using the \emph{same} evidence on both paths makes the intersection work.
+}{
+Path 1: $\Goals\subseteq A$, first disjunct. Path 2: $\req=\{o\}\subseteq e'$ and $\Goals\subseteq\emptyset\cup\scope$: second disjunct. Meet: $A\cap A'=\emptyset$, $e\cap e'=\emptyset$: first disjunct false; $\req=\{o\}\not\subseteq\emptyset$: second false. With one evidence set $e$, if some path needs the second disjunct then $\req\subseteq e$ already holds for the intersection too, and the scope covers whatever is open on that path, hence in the intersection.
+}
+
+\subsection*{Part III: Graphs and complexity (Chapter~\ref{ch:graphs})}
+
+\exercise{counting paths}{
+A graph has $d$ diamonds in a row (Figure in Chapter~\ref{ch:graphs}), each with two middle nodes. (a) How many nodes does it have? (b) How many entry-to-exit paths? (c) For $d=30$, roughly how many paths? (d) How many set operations does the one-pass algorithm do, as a function of $d$ and the word size?
+}{
+(a) $3d+1$: one fork/join node per diamond plus the final one ($d+1$), and two middle nodes per diamond ($2d$); for $d=3$ this is the 10 nodes of the figure. (b) $2^d$. (c) $2^{30}\approx1.07\times10^9$. (d) Linear in the number of nodes and edges: about $(3d+1)+4d$ operations on bit vectors of $\lceil(|\Goals|+|O|)/w\rceil$ words each; no dependence on the number of paths.
+}
+
+\exercise{a SAT instance}{
+Apply the reduction of the Complexity theorem to the formula $(x)\wedge(\neg x)$. Describe the hierarchy. Is it accepted? Relate this to the satisfiability of the formula.
+}{
+One switch on $x$ chooses between a gate providing $t_x$ and a gate providing $f_x$. Clause $(x)$ is falsified by $f_x$: a veto stage requiring $f_x$ and providing \ob{bad}. Clause $(\neg x)$ is falsified by $t_x$: a veto stage requiring $t_x$ and providing \ob{bad}. Final guard: one open goal, requires \ob{bad}. On the path with $t_x$ the second veto stage is credited and provides \ob{bad}; on the path with $f_x$ the first one does. So \ob{bad} is provided on every path, $\ok$ holds everywhere, and the hierarchy is accepted. The formula is unsatisfiable, matching ``rejected iff satisfiable''.
+}
+
+\exercise{a false alarm}{
+Design a hierarchy (with a switch and two arms that rejoin at a guard) on which the first pass of the algorithm raises an alarm that the exploration step then dismisses. Use the idea of Chapter~\ref{ch:graphs}.
+}{
+Arm 1: a deterministic gate establishes all goals and provides nothing. Arm 2: a deterministic gate provides fact $o$ and establishes nothing; (a veto stage in arm 2 may be needed to make the structure interesting). The rejoin guard $j$ has $\req(\ell_j)=\{o\}$ and $\scope(\ell_j)=\Goals$, $\Omega_j=\emptyset$. Path 1: $A=\Goals$, $B=\emptyset$: first disjunct. Path 2: $A=\emptyset$, $B=\{o\}$: second disjunct. First pass: $\mathrm{avail}=\emptyset$, $\mathrm{facts}=\emptyset$: fails. Exploration visits the two $(A,B)$ pairs separately: both pass. No real violation.
+}
+
+\subsection*{Part IV: Structure and risk (Chapters~\ref{ch:structural}--\ref{ch:risk})}
+
+\exercise{monotonicity needs the same branches}{
+Why does the Monotonicity statement require that $M'$ have the same switch branches as $M$? Give a model pair violating the conclusion when this is dropped.
+}{
+Take $H=\switch(s,\deny,\guard(j,\ldots,\deny))$. Let $M$ have $W(s)=\text{true}$ (go to $\deny$), so $M$ denies. Let $M'$ have $W'(s)=\text{false}$ and $V'(j)=\acc$. Then $M'$ accepts while $M$ does not, although $M'$'s gates and guards are not more permissive pointwise. Routing is free, so only changing stages while keeping the routing fixed is covered.
+}
+
+\exercise{Fr\'echet bounds}{
+Two guards in a veto chain have marginal miss probabilities $m_1=0.05$ and $m_2=0.1$. (a) Compute the Fr\'echet--Hoeffding interval for the joint miss probability. (b) What does independence give? (c) What does a team that quotes (b) risk?
+}{
+(a) Lower: $\max(0,1-(0.95+0.9))=\max(0,-0.85)=0$; upper: $\min(0.05,0.1)=0.05$. So any value in $[0,0.05]$. (b) $0.05\times0.1=0.005$. (c) If the two guards fail on the same inputs (nested misses), the real joint miss rate can be $0.05$, ten times the quoted figure.
+}
+
+\exercise{cascade}{
+Unsafe proposals are $2\%$ of traffic. An early guard $G_1$ accepts $25\%$ of the unsafe proposals and escalates the rest to $G_2$, which blocks everything it sees. (a) Compute $R$. (b) What would the formula ``$\prod_im_i$ times the unsafe mass'' report?
+}{
+(a) Route $G_1$: $R_{G_1}=0.25\times0.02=0.005$. Route $G_2$ accepts nothing: $R_{G_2}=0$. So $R=0.005$ ($0.5\%$ of traffic). (b) $G_2$'s miss rate is $0$, hence $\prod m_i=0$ and the formula reports $0$. It misses the entire risk because it ignores that $G_2$ never sees the proposals accepted by $G_1$.
+}
+
+\exercise{Clopper--Pearson by hand}{
+(a) A route sees zero losses in $N=500$ samples; compute the $95\%$ upper bound ($\delta=0.05$) from $(1-u)^N=\delta$. Compare with the rule of three. (b) A deployment has three statistical routes and total confidence budget $\delta=0.06$. Allocate equal shares; with zero losses and $N=1000$ per route, compute each route's bound and the sum.
+}{
+(a) $u=1-0.05^{1/500}$; $\ln0.05=-2.9957$; $-2.9957/500=-0.005991$; $e^{-0.005991}=0.994027$; $u\approx0.00597$. Rule of three: $3/500=0.006$. (b) $\delta_r=0.02$. $u=1-0.02^{1/1000}$; $\ln0.02=-3.9120$; $e^{-0.003912}=0.996096$; $u\approx0.00390$ per route; sum $\approx0.0117$. This is with probability at least $0.94$.
+}
+
+\exercise{why not the whole-system bound?}{
+Why can a single whole-hierarchy bound be tighter than a sum of three route bounds at level $\delta/3$ each? Why would a team still want per-route certificates?
+}{
+A sum of three bounds each calibrated at the stricter level $\delta/3$ pays a price for splitting the confidence; and summing upper bounds adds slack. A single bound uses all $N$ samples and all of $\delta$ for one quantity. But per-route certificates allow \emph{incremental recertification}: when a stage changes, only the routes it precedes need new evidence, and the others keep their certificates. The paper reports the route sum averaged $1.25$ times a single whole-hierarchy bound.
+}
+
+\exercise{fingerprints}{
+A graph: gate $a$ $\to$ switch $s$; $s\to$ gate $b\to$ route $r_1$; $s\to$ gate $c\to$ route $r_2$; and also $b\to c$ (so $r_2$ can also be reached through $b$). Which routes' fingerprints change when (i) $a$, (ii) $b$, (iii) $c$, (iv) $r_1$ is changed?
+}{
+A route is stale if the changed node is the route or one of its ancestors. Ancestors of $r_1$: $a,s,b$. Ancestors of $r_2$: $a,s,c,b$ (through $b\to c$). (i) $a$: both. (ii) $b$: both ($b$ is an ancestor of both). (iii) $c$: only $r_2$. (iv) $r_1$: only $r_1$.
+}
+
+\exercise{non-interference}{
+A classifier's view is the triple (action type, destination host category, size bucket). Give two proposals with equal views but different safety under the goal ``no secret leaves the machine''. What does the Non-interference theorem say about any guard with that view?
+}{
+Proposal 1: upload (a log file with public diagnostics) to an external host, size bucket small. Proposal 2: upload (a secrets file) to an external host, size bucket small. Both have view (upload, external, small). The theorem: equal views get equal decisions, so the guard either accepts both or neither. It cannot be correct on both for this goal. To decide the goal the view needs provenance labels (that is why gate $g_2$ of DevAgent uses taint labels).
+}
+
+\subsection*{Part V: Evidence and critical reading (Chapters~\ref{ch:proofs}--\ref{ch:evaluation})}
+
+\exercise{lab: remove the fact}{
+In \code{experiments/v2/cases/devagent.json}, delete \code{"safe\_on\_this\_text"} from the \code{provides} list of gate \code{c}. Before running, predict the checker's output (accepted or rejected, which node, which obligation). Then run it with the code from Chapter~\ref{ch:check} (using \code{run.adversarial}) and compare. Do \emph{not} commit the change.
+}{
+Prediction: rejected. At $n_3$ the obligation \ob{safe\_on\_this\_text} is neither declared in its evidence nor provided; $\varphi_4$ is open and $\ok$ fails. Expected finding: code \code{obligation}, node \code{n3}, detail \code{safe\_on\_this\_text}, path \code{g1 g2 g3 s c n3}, goal \code{phi4} (or \code{phi3} on a stack where $c$ does not establish it). Students should also note that the residual list changes if they instead declare the obligation at $n_3$.
+}
+
+\exercise{lab: a floating-point trap}{
+Run \code{python scripts/tutorial\_lab.py} and read part 6. Explain in one paragraph why a threshold test on a computed score can behave differently from the arithmetic one expects, and why it matters for a guard whose certificate was computed on a particular threshold.
+}{
+Binary floating point cannot represent most decimal fractions exactly, so a sum that is mathematically $0.4$ may be stored as $0.39999999999999997$. A test ``score $\ge0.4$'' then flips. For a guard whose certificate was computed for the decisions made at a specific threshold, a hidden change in which side of the threshold a score falls changes the decision function, so the certificate (which is about the function that was calibrated) no longer describes the system. This is how the historical study's certificate requirement exposed a defect.
+}
+
+\exercise{critique the experiments}{
+Pick two of the paper's experiments (e.g.\ E4 and E13) and write a half-page critique: what claim does each support, what threat to validity is most serious, and what additional experiment would address it?
+}{
+Sample answer for E4 (random differential testing): supports ``the implementation agrees with the reference on random specifications''. Most serious threat: shared author and shared semantics figure; agreement does not rule out a shared misreading. An addition: an independently written implementation by someone who has only read the paper's prose. For E13 (published designs): supports ``the approach can state, for these designs, what composition would need''. Threat: one modeller, edited after results; verdicts turn on the encoding rule. An addition: two modellers independently encode the designs from the papers, then compare their specifications and verdicts.
+}
+
+\exercise{design a safer DevAgent}{
+Propose a modification of DevAgent that lets benign tainted work (like $\Tb$) be accepted without a human, while keeping the guarantee for $\varphi_3$. Identify the new claims and residual entries your design adds. Argue why it is or is not acceptable under the assumptions table.
+}{
+Open-ended. A good answer notes that the calculus will accept any design in which a deterministic gate establishes $\varphi_3$ for the tainted case, e.g.\ a gate that checks that the action does not depend on tainted values (taint-based data-flow restriction as in CaMeL). The new claims: the correctness of that dependency tracking and its completeness (every derivation recorded). The residual is smaller (the human assumption disappears from this arm), but $\varphi_4$ still needs a statistical or human guard. Students should be asked to check complete mediation and the trusted-host premise.
+}

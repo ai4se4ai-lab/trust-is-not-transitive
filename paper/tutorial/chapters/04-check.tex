@@ -1,0 +1,276 @@
+% =====================================================================
+\section{The Composition Check: Soundness and Completeness}
+\label{ch:check}
+% =====================================================================
+
+\begin{bigidea}
+Safety quantifies over \emph{all} behaviors of the stages, which is infinitely many. But we can decide it by a simple walk through the hierarchy that keeps two sets: the goals already \emph{guaranteed} ($A$) and the facts already \emph{established} ($B$). The walk is \textbf{sound} (if it accepts, the hierarchy is safe) and \textbf{complete} (if it rejects, there is a concrete contract-respecting attack). Together: the walk accepts \emph{exactly} the safe hierarchies.
+\end{bigidea}
+
+\subsection{The idea of the walk}
+
+Imagine you are an auditor following a proposal as it moves through the stack from the entry. At each stage you ask: ``what do I \emph{know for certain} by now?''
+
+\begin{itemize}
+\item After a \emph{deterministic gate} that passes, you know its goal holds, so add it to your list of guaranteed goals $A$. If it also provides facts, add them to $B$.
+\item After a \emph{guard} that accepts, the decision is over. At that moment you need $\Goals\subseteq$ (what you already know) $\cup$ (what this guard's contract covers). And its contract must be \emph{usable}, which means its assumptions are available.
+\item A \emph{switch} could send the proposal either way, so you must check both branches.
+\end{itemize}
+
+\subsection{The definitions}
+
+\begin{defbox}{credited gate}
+A gate $\gate(n,\varphi,\ell,\Omega,D,k)$ is \textbf{credited} given facts $B$ if $\req(\ell)\subseteq\Omega\cup B$: every obligation its contract assumes is either declared as evidence at this stage or already provided as a fact.
+\end{defbox}
+
+(A deterministic gate has $\req(\epsilon)=\emptyset$, so it is always credited.)
+
+\begin{defbox}{usable-or-covered: $\ok$}
+For evidence $e$ and established goals $A$:
+\[
+\ok(\ell,e,A)\ \triangleq\ \Goals\subseteq A\ \ \vee\ \bigl(\req(\ell)\subseteq e\ \wedge\ \Goals\subseteq A\cup\scope(\ell)\bigr).
+\]
+\end{defbox}
+
+Read it as: the guard is fine if \textbf{either} (i) the gates before it already established \emph{all} goals (so whatever this guard does, it cannot hurt); \textbf{or} (ii) its contract is usable ($\req(\ell)\subseteq e$) \emph{and} the goals still open are covered by its scope.
+
+\begin{defbox}{the check, by recursion on the term}
+\begin{align*}
+\chk(\deny,A,B)&=\mathrm{true}\\
+\chk(\gate(n,\varphi,\ell,\Omega,D,k),A,B)&=\chk(k,A',B')\\
+\chk(\guard(n,\ell,\Omega,k),A,B)&=\ok(\ell,\Omega\cup B,A)\ \wedge\ \chk(k,A,B)\\
+\chk(\switch(n,a,b),A,B)&=\chk(a,A,B)\wedge\chk(b,A,B)
+\end{align*}
+where for a gate $(A',B')=(A\cup\{\varphi\},\,B\cup D)$ if $\req(\ell)\subseteq\Omega\cup B$ (credited), and $(A',B')=(A,B)$ otherwise.
+\end{defbox}
+
+Every line has a story:
+
+\begin{itemize}
+\item \textbf{$\deny$ always checks}: nothing is ever accepted there.
+\item \textbf{Gate}: if credited, learn its goal and facts; if not credited, learn nothing (carry on with the same sets). Importantly, an uncredited gate can still stop proposals; we just refuse to \emph{rely} on it.
+\item \textbf{Guard}: it must be fine \emph{now} (acceptance ends the decision), \emph{and} the continuation must check too (because the guard may escalate to it). Note that the continuation gets the \emph{same} $(A,B)$: escalation teaches nothing.
+\item \textbf{Switch}: both branches must check. The condition is not trusted (it may be either; the routing is free).
+\end{itemize}
+
+\begin{warning}{Why the first disjunct of $\ok$?}
+Without it the checker would give false alarms. Suppose gates have already established every goal. A guard behind them might have an unusable contract; but its acceptance is harmless, because every goal already holds. The first disjunct $\Goals\subseteq A$ says so.
+\end{warning}
+
+The check starts as $\chk(H,\emptyset,\emptyset)$: nothing is known yet.
+
+\subsection{Worked examples of the walk}
+
+\subsubsection*{The toy hierarchy, twice}
+
+Recall $H_{\mathrm{toy}}=\gate(g,a,\epsilon,\emptyset,\emptyset,\guard(j,L,\Omega_j,\deny))$ with $\Goals=\{a,b\}$, $\req(L)=\{o\}$, $\scope(L)=\{b\}$.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{@{}p{3.1cm}p{3.6cm}X@{}}
+\toprule
+\textbf{Case} & \textbf{Walk} & \textbf{Result}\\
+\midrule
+$\Omega_j=\emptyset$ & Gate $g$ credited: $A=\{a\}$, $B=\emptyset$. Guard $j$: is $\Goals\subseteq A$? No ($b$ open). Is $\req(L)=\{o\}\subseteq\emptyset\cup\emptyset$? No. So $\ok$ fails. & \textcolor{tintred}{\textbf{rejected}} (guard $j$, missing obligation $o$, open goal $b$, path $g\,j$)\\[6pt]
+$\Omega_j=\{o\}$ & $A=\{a\}$. Guard $j$: $\{o\}\subseteq\{o\}$ yes; $\Goals=\{a,b\}\subseteq A\cup\scope(L)=\{a,b\}$ yes. So $\ok$ holds. & \textcolor{tintgreen}{\textbf{accepted}}\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Notice what happened in the second case: the \emph{only} reason the checker is satisfied is that we \emph{declared} that $o$ holds at $j$. The checker has not verified that. It records ``$j$ relies on $o$'' on its list of assumptions (the \emph{residual}, see below).
+
+\subsubsection*{DevAgent}
+
+To use the paper's ``adversarial reading'', every stage that reads raw text additionally requires \ob{safe\_on\_this\_text}. Walk the untainted arm of Figure~\ref{fig:devagent-term}:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}lp{4.1cm}p{3.6cm}X@{}}
+\toprule
+\textbf{After} & \textbf{$A$ (goals known)} & \textbf{$B$ (facts known)} & \textbf{Comment}\\
+\midrule
+start & $\emptyset$ & $\emptyset$ & \\
+$g_1$ & $\{\varphi_1\}$ & $\emptyset$ & deterministic: credited\\
+$g_2$ & $\{\varphi_1,\varphi_2\}$ & $\emptyset$ & \\
+$g_3$ & $\{\varphi_1,\varphi_2,\varphi_{\mathrm{env}}\}$ & $\emptyset$ & \\
+$s$ (switch) & unchanged & unchanged & routing teaches nothing\\
+$c$ & $\ldots\cup\{\varphi_3\}$ & $\{\ob{safe\_on\_this\_text}\}$ & credited; \textbf{provides} the fact\\
+$n_3$ (guard) & open: $\{\varphi_4\}\subseteq\scope=\{\varphi_4\}$ \checkmark & $\req\subseteq\Omega\cup B$ \checkmark & the fact from $c$ makes the judge's contract usable\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+The tainted arm: $v_2$ is a veto stage with $\varphi=\bot$ and no facts, so it adds nothing. At the human $n_4$ the open goals are $\varphi_3,\varphi_4$, both in its scope, and its evidence declares the obligation \ob{safe\_on\_this\_text} directly. The specification is \textbf{accepted} with routes $n_3$ and $n_4$.
+
+Now the simpler stack \emph{without} the switch and the provenance gate: a single raw-text judge $n_3$ covering $\varphi_3,\varphi_4$ for all input. At $n_3$ the open goals are $\varphi_3,\varphi_4$ and \ob{safe\_on\_this\_text} is neither declared nor provided. $\ok$ fails: \textcolor{tintred}{\textbf{rejected}}, with the message
+
+\begin{lstlisting}[language={},basicstyle=\ttfamily\footnotesize]
+obligation at n3: safe_on_this_text
+  goal: phi3   path: g1 g2 g3 n3
+\end{lstlisting}
+
+Exactly as in the toy case, the rejection is the formal version of the lead-lined suitcase.
+
+\begin{tryit}{reproduce both verdicts}
+# run from the repository root
+import sys
+sys.path[:0] = ["src", ".", "experiments/v2", "formal/calculus"]
+import run                      # contains the 'adversarial reading' rule
+from tint import hsl
+
+def load(name):
+    return hsl.parse(open(f"experiments/v2/cases/{name}.json").read())
+
+good = hsl.check(run.adversarial(load("devagent")))
+print(good.ok, good.routes)      # True ('n3', 'n4')
+print(good.residual)             # the assumptions this verdict rests on
+
+bad = hsl.check(run.adversarial(load("devagent_exposed_judge")))
+print(bad.ok)                    # False
+print(bad.findings[0])           # node n3, missing safe_on_this_text, goal phi3
+\end{tryit}
+
+\pauseq{In the DevAgent walk above, what would change if gate $c$ did \emph{not} provide \ob{safe\_on\_this\_text}? Which node would fail, and why?}{Node $n_3$ would fail. $A$ would still contain $\varphi_3$ (gate $c$ establishes it), but $\req(L_3)$ would contain \ob{safe\_on\_this\_text}, which is neither declared in $n_3$'s evidence nor in $B$. The first disjunct of $\ok$ fails too ($\varphi_4$ open), so $\ok$ is false. Fixing it: either let $c$ provide the fact (its job: it can, because it is deterministic), or declare it at $n_3$ and accept it as an assumption on the residual list.}
+
+\subsection{Soundness}
+\label{sec:sound}
+
+\begin{statement}{Theorem (Soundness) \hfill\normalfont paper: Theorem 1}
+If $\chk(H,A,B)$ then $H$ is safe from $(A,B)$.
+\end{statement}
+
+In words: \emph{if the walk accepts, then every contract-respecting behavior that gets accepted satisfies all goals.} The theorem is stated for arbitrary starting sets $(A,B)$, not just $(\emptyset,\emptyset)$; this is the ``generalize the induction'' trick of Chapter~\ref{ch:toolkit}.
+
+\begin{plainproof}{Soundness}
+We prove it by structural induction on $H$, for \emph{all} $A,B$ and all $F\supseteq B$ (the facts that really were provided so far contain the ones the checker credited). Fix a model $M$ with $M\models_F H$, $A\subseteq S$, and suppose $\sem{H}{M}=\accepted(r)$. We must show $\Goals\subseteq S$.
+
+\medskip\textbf{Case $\deny$.} $\sem{\deny}{M}=\denied$, so it is never accepted; there is nothing to prove.
+
+\medskip\textbf{Case gate.} The decision is $\accepted$, so the gate passed: $P(n)$ holds. Two sub-cases:
+\begin{itemize}
+\item \emph{The gate is credited.} Then $\req(\ell)\subseteq\Omega\cup B$. By realization $\Omega\cup F\subseteq E(n)$, and $B\subseteq F$, so $\req(\ell)\subseteq E(n)$: the contract \emph{applies}. The contract-satisfaction rule for a gate then gives $\varphi\in S$ and $M\models_{F\cup D}k$. Now use the induction hypothesis on the continuation $k$ with the larger sets $A\cup\{\varphi\}\subseteq S$ (true because $A\subseteq S$ and $\varphi\in S$) and $B\cup D\subseteq F\cup D$. It gives $\Goals\subseteq S$.
+\item \emph{The gate is not credited.} Then the checker carries the same $(A,B)$ forward. Depending on whether the contract applies at run time, the model satisfies $k$ under $F$ or $F\cup D$; in both cases $B\subseteq F\subseteq F\cup D$, so the induction hypothesis applies unchanged.
+\end{itemize}
+
+\medskip\textbf{Case guard.} Look at the verdict.
+\begin{itemize}
+\item $V(n)=\esc$. Then $M\models_F k$ and the decision is that of $k$; induction hypothesis (the check of $k$ is part of $\chk$ of the guard).
+\item $V(n)=\acc$. If $\Goals\subseteq A$, then since $A\subseteq S$ we are done. Otherwise $\ok$ holds through its second disjunct: $\req(\ell)\subseteq\Omega\cup B\subseteq E(n)$ (again realization and $B\subseteq F$). Hence the guard's contract applies and gives $\scope(\ell)\subseteq S$. Therefore $\Goals\subseteq A\cup\scope(\ell)\subseteq S$.
+\item $V(n)=\blk$ cannot be an accepted outcome.
+\end{itemize}
+
+\medskip\textbf{Case switch.} Whichever branch $W(n)$ selects, the check of \emph{both} branches succeeded, so the induction hypothesis applies to the chosen one. \hfill$\blacksquare$
+\end{plainproof}
+
+\textbf{The key step to understand}: \emph{credited $\Rightarrow$ really applies}. The checker credits using \emph{declarations} ($\Omega$) and \emph{provided facts} ($B$); the semantics, via realization, forces declarations and provided facts to be \emph{true} ($\subseteq E(n)$). That link is the whole reason a purely syntactic walk can prove a semantic statement.
+
+\pauseq{Where in the proof would a ``transitive'' shortcut (``evidence declared at an earlier stage also holds at later stages'') be used, and what would go wrong with the realization step?}{It would be used in the guard case: to claim $\req(\ell)\subseteq E(n)$ for a later guard $n$ using $\Omega$ declared at an earlier stage. But realization only gives $\Omega_n\cup F\subseteq E(n)$ for the \emph{local} declaration $\Omega_n$ and the provided facts. Evidence declared elsewhere is a statement about a different node's $E$, so nothing links it to $E(n)$. Chapter~\ref{ch:transitive} turns this into a theorem and a counterexample.}
+
+\subsection{Completeness}
+\label{sec:complete}
+
+Soundness says the checker never approves an unsafe design. Could it be too cautious, i.e.\ reject designs that are actually fine? Completeness says: only when the stages could really behave badly while respecting contracts.
+
+\subsubsection{Two preparations}
+
+\textbf{Unique identifiers.} The proof chooses each node's behavior independently, so a node identifier must not appear twice \emph{on one path}. Otherwise, a model (which has only one $P(n)$ for each $n$) could not make the node pass at the first occurrence and fail at the second. We write $\uniq(H)$ for ``no identifier repeats along a path''. (Identifiers may repeat across the two arms of a switch, which allows a shared node to appear in both arms of the unfolding.)
+
+\begin{statement}{Lemma (Frame) \hfill\normalfont paper: Lemma 1}
+If $n$ does not occur in $H$, changing $P$, $V$, $W$ or $E$ at $n$ changes neither $\sem{H}{M}$ nor whether $M\models_F H$.
+\end{statement}
+
+\begin{plainproof}{Frame}
+By induction on $H$: the equations of $\sem{\cdot}{M}$ and $\models$ consult $P,V,W,E$ only at the identifiers that occur in $H$. If $n$ is not among them, the value stored for $n$ is never read. \hfill$\blacksquare$
+\end{plainproof}
+
+This lets us build the model for a continuation first and then ``add'' decisions for the current node without disturbing the continuation's behavior.
+
+\subsubsection{The theorem}
+
+\begin{statement}{Theorem (Completeness) \hfill\normalfont paper: Theorem 2}
+If $\neg\chk(H,A,B)$ and $\uniq(H)$, there are a model $M$ and a node $r$ with $A\subseteq S$, $M\models_B H$, $\sem{H}{M}=\accepted(r)$ and $\Goals\not\subseteq S$.
+\end{statement}
+
+In words: if the walk rejects, we can \emph{build} a behavior in which every contract is respected, the proposal is accepted, and some goal is violated. That is a real attack on the specification.
+
+\begin{plainproof}{Completeness}
+Induction on $H$; at each step we construct $M$. Assume $\neg\chk(H,A,B)$.
+
+\medskip\textbf{Case $\deny$.} $\chk(\deny,\cdot,\cdot)$ is always true, so this case cannot occur.
+
+\medskip\textbf{Case gate.} $\neg\chk$ of the gate means the continuation is rejected under $(A',B')$. By induction hypothesis take its witness model. Set $P(n)=\text{true}$ (the gate passes). By the Frame lemma and uniqueness this leaves the continuation's run unchanged.
+\begin{itemize}
+\item \emph{Credited:} let every obligation hold at $n$. The contract then asks for $\varphi\in S$, which holds because $A'\subseteq S$ in the witness and $\varphi\in A'$, and for $M\models_{B\cup D}k$, which is exactly the witness property.
+\item \emph{Not credited:} some obligation $o\in\req(\ell)\setminus(\Omega\cup B)$ exists. Let $o$ \emph{alone} fail at $n$. Realization only demands $\Omega\cup B\subseteq E(n)$, which is fine since $o\notin\Omega\cup B$. The contract is vacuous (its assumption fails), so only $M\models_B k$ is demanded, again the witness.
+\end{itemize}
+
+\medskip\textbf{Case switch.} One of the two branches is rejected. Choose that branch ($W(n)$ accordingly) and use its witness.
+
+\medskip\textbf{Case guard.}
+\begin{itemize}
+\item \emph{The continuation is rejected.} Take its witness, let $n$ escalate ($V(n)=\esc$), and let every obligation hold at $n$. An escalating guard is asked nothing beyond $M\models_B k$.
+\item \emph{The continuation checks, so $\ok(\ell,\Omega\cup B,A)$ fails.} Then a goal $\psi\in\Goals\setminus A$ is open, and (a) some $o\in\req(\ell)\setminus(\Omega\cup B)$ exists, or (b) $\psi\notin\scope(\ell)$. Define $S$ to be everything but $\psi$ (this keeps $A\subseteq S$ because $\psi\notin A$), and set $V(n)=\acc$.
+  \begin{itemize}
+  \item In (a) let $E(n)$ be everything except $o$: realization holds since $o\notin\Omega\cup B$, and the contract is vacuous because $\req(\ell)\not\subseteq E(n)$.
+  \item In (b) let everything hold at $n$. The contract asks only $\scope(\ell)\subseteq S$, true because $\psi\notin\scope(\ell)$ and $S$ is everything else.
+  \end{itemize}
+  Then $n$ accepts, and the goal $\psi\notin S$ is violated. \hfill$\blacksquare$
+\end{itemize}
+\end{plainproof}
+
+\begin{example}{the witness for the toy hierarchy}
+For $H_{\mathrm{toy}}$ with $\Omega_j=\emptyset$: the gate is credited (deterministic), so the continuation (guard $j$) is rejected with open goal $\psi=b$. We are in case (a), because $o\in\req(L)\setminus(\emptyset\cup\emptyset)$. Construct: $P(g)=\text{true}$; $S=\{a\}$ (everything but $b$); $V(j)=\acc$; $E(j)=\emptyset$ (everything except $o$). This is exactly the second model of Chapter~\ref{ch:calculus}, which we verified is contract-respecting and unsafe. The proof \emph{is} a recipe, and the tool implements it as \code{hsl.witness\_model}.
+\end{example}
+
+\subsection{Putting soundness and completeness together}
+
+For $\uniq$ hierarchies, soundness and completeness give
+\[
+\chk(H,\emptyset,\emptyset)\ \Longleftrightarrow\ H\text{ is safe}.
+\]
+
+\begin{bigidea}
+A simple linear-time walk \emph{exactly} characterizes a property that quantifies over all (infinitely many) behaviors of the stages. This is possible only because we chose an abstraction in which stages are \emph{free}, constrained only by contracts.
+\end{bigidea}
+
+Three caveats follow, and the paper states them plainly.
+
+\begin{enumerate}
+\item \textbf{A rejection is not a proof that the deployed system is insecure.} A rejected hierarchy may be fine for the guards actually deployed, if they do more than they declare, or if two stages are correlated (Chapter~\ref{ch:graphs}). What a rejection says is: \emph{the declared contracts do not entail the goals.}
+\item \textbf{Declaring an assumption as evidence silences a rejection, by design.} The claim then moves to a list where a person must answer for it (next subsection).
+\item \textbf{The theorems are relative to the abstraction.} If the real stage can behave outside what its contract allows, the abstraction is wrong, not the theorem.
+\end{enumerate}
+
+\subsection{What the verdict rests on: residual, claims and necessity}
+\label{sec:necessary}
+
+A bare ``accepted'' is not very useful to a safety engineer. The checker therefore also reports:
+
+\begin{defbox}{residual and claims}
+\begin{itemize}
+\item The \textbf{residual} is the set of pairs (stage, \emph{assumed} obligation) declared at a stage on which some goal or provided fact depends. These are the things that someone must argue are true. For DevAgent: $(n_3,\ob{miss\_rate\_bounded})$, $(n_4,\ob{human\_attentive})$, $(n_4,\ob{safe\_on\_this\_text})$.
+\item The \textbf{claims} are the goals and facts that deterministic gates are \emph{trusted} to establish: $(g_1,\varphi_1)$, $(g_2,\varphi_2)$, $(g_3,\varphi_{\mathrm{env}})$, $(c,\varphi_3)$, $(c,\ob{safe\_on\_this\_text})$. A gate with a trivial rule that claims a fact silences a rejection just as a false declaration does, so claims need review too.
+\end{itemize}
+\end{defbox}
+
+Not every residual entry is needed: a goal may be covered by something else later. So the checker removes each entry \emph{alone} and re-checks.
+
+\begin{statement}{Corollary (Necessary assumptions) \hfill\normalfont paper: Corollary 1}
+If removing a residual entry from an accepted hierarchy makes it rejected, the entry is necessary: without it there is a contract-respecting violating run.
+\end{statement}
+
+\begin{plainproof}{Necessary assumptions}
+The thinned hierarchy (with the entry removed) has the same node identifiers, so it still satisfies $\uniq$. It is rejected by hypothesis. Apply the Completeness theorem to it. \hfill$\blacksquare$
+\end{plainproof}
+
+Two entries that can stand in for each other both pass this test, so the test finds \emph{single points of dependence}, not minimal sets. For DevAgent all three residual entries were found necessary.
+
+\begin{recap}
+\begin{itemize}
+\item The check walks the hierarchy with two sets: goals credited $A$, facts credited $B$. Only credited gates add to them; guards and switches add nothing.
+\item $\ok(\ell,e,A)$: either all goals are already established, or the guard's contract is usable \emph{and} covers what is left.
+\item \textbf{Soundness}: accepted $\Rightarrow$ safe. The key step is realization: credited evidence is true in every contract-respecting model.
+\item \textbf{Completeness}: rejected $\Rightarrow$ there is an explicit contract-respecting attack. The proof builds it case by case.
+\item The checker reports the residual (assumptions to argue), the claims (gates to trust) and which entries are necessary.
+\end{itemize}
+\end{recap}

@@ -1,0 +1,74 @@
+{
+ "version": "hsl-1",
+ "goals": [
+  "production_approval",
+  "secret_egress",
+  "path_confinement",
+  "cumulative_budget",
+  "semantic_injection"
+ ],
+ "entry": "a",
+ "obligations": [
+  {
+   "name": "miss_rate_bounded",
+   "kind": "assumed"
+  },
+  {
+   "name": "config_match",
+   "kind": "checked"
+  }
+ ],
+ "layers": [
+  {
+   "name": "Judge",
+   "scope": [
+    "semantic_injection"
+   ],
+   "requires": [
+    "miss_rate_bounded",
+    "config_match"
+   ],
+   "view": "structured"
+  }
+ ],
+ "nodes": [
+  {
+   "type": "gate",
+   "id": "a",
+   "rule": "production_approval",
+   "establishes": "production_approval",
+   "next": "b"
+  },
+  {
+   "type": "gate",
+   "id": "b",
+   "rule": "secret_egress",
+   "establishes": "secret_egress",
+   "next": "c"
+  },
+  {
+   "type": "gate",
+   "id": "c",
+   "rule": "path_confinement",
+   "establishes": "path_confinement",
+   "next": "d"
+  },
+  {
+   "type": "gate",
+   "id": "d",
+   "rule": "cumulative_budget",
+   "establishes": "cumulative_budget",
+   "next": "j"
+  },
+  {
+   "type": "guard",
+   "id": "j",
+   "layer": "Judge",
+   "evidence": [
+    "miss_rate_bounded",
+    "config_match"
+   ],
+   "next": null
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+[
+ {
+  "constructor_seconds": 0.0005428000004030764,
+  "decision_microseconds": 8.699500031070784,
+  "depth": 4,
+  "per_stage_microseconds": 2.174875007767696
+ },
+ {
+  "constructor_seconds": 0.0010805999918375164,
+  "decision_microseconds": 11.557000034372322,
+  "depth": 8,
+  "per_stage_microseconds": 1.4446250042965403
+ },
+ {
+  "constructor_seconds": 0.0036124999896856025,
+  "decision_microseconds": 30.0989999959711,
+  "depth": 32,
+  "per_stage_microseconds": 0.9405937498740968
+ },
+ {
+  "constructor_seconds": 0.015001599997049198,
+  "decision_microseconds": 108.19249997439329,
+  "depth": 128,
+  "per_stage_microseconds": 0.8452539060499475
+ },
+ {
+  "constructor_seconds": 0.059530900005484,
+  "decision_microseconds": 420.98550002265256,
+  "depth": 512,
+  "per_stage_microseconds": 0.8222373047317433
+ },
+ {
+  "constructor_seconds": 0.25262369999836665,
+  "decision_microseconds": 1737.0189999928698,
+  "depth": 2048,
+  "per_stage_microseconds": 0.8481538085902685
+ }
+]

@@ -19,7 +19,9 @@ def main():
     audit_records=json.loads(audit_path.read_text(encoding='utf-8')) if audit_path.exists() else []
     audited={r['key']:r for r in audit_records}
     if audited:
-        assert set(keys)==set(audited)==set(verified), 'Bibliography/audit/verification keys differ'
+        assert set(keys)==set(verified) and set(audited)<=set(keys), 'Bibliography/audit/verification keys differ'
+        added=json.loads((ROOT/'docs/literature/audit-2026-10-31/crossref.json').read_text(encoding='utf-8'))
+        assert set(keys)-set(audited)==set(added), 'Entries outside both audits'
     for key in keys:
         if verified[key]['verified']=='primary':
             record=audited[key]

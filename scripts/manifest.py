@@ -21,8 +21,8 @@ def digest(path):
 
 def files():
     paths=[]
-    for directory in ['src','formal','experiments','scripts','results/raw','results/processed']:
-        paths.extend(p for p in (ROOT/directory).rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix not in {'.pyc'})
+    for directory in ['src','formal','experiments','scripts','results/raw','results/processed','results/v2']:
+        paths.extend(p for p in (ROOT/directory).rglob('*') if p.is_file() and not {'__pycache__','timing'}&set(p.parts) and p.suffix not in {'.pyc'})
     paths.extend(ROOT/p for p in ['requirements.lock','requirements-paper.lock','pyproject.toml'])
     return {p.relative_to(ROOT).as_posix():digest(p) for p in sorted(set(paths))}
 

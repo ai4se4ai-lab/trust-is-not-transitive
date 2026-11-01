@@ -1,0 +1,79 @@
+{
+ "version": "hsl-1",
+ "goals": [
+  "data_flow_policy",
+  "control_flow_integrity"
+ ],
+ "entry": "plan",
+ "obligations": [
+  {
+   "name": "trusted_query_and_interpreter",
+   "kind": "assumed"
+  },
+  {
+   "name": "memory_uncompromised",
+   "kind": "assumed"
+  },
+  {
+   "name": "policy_adequate",
+   "kind": "assumed"
+  }
+ ],
+ "layers": [
+  {
+   "name": "Planner",
+   "scope": [],
+   "requires": [
+    "trusted_query_and_interpreter",
+    "memory_uncompromised"
+   ],
+   "view": "metadata"
+  },
+  {
+   "name": "Policy",
+   "scope": [],
+   "requires": [
+    "policy_adequate"
+   ],
+   "view": "structured"
+  },
+  {
+   "name": "Execute",
+   "scope": [],
+   "requires": [],
+   "view": "structured"
+  }
+ ],
+ "nodes": [
+  {
+   "type": "gate",
+   "id": "plan",
+   "rule": "plan_from_trusted_query",
+   "establishes": "control_flow_integrity",
+   "next": "policy",
+   "layer": "Planner",
+   "evidence": [
+    "trusted_query_and_interpreter",
+    "memory_uncompromised"
+   ]
+  },
+  {
+   "type": "gate",
+   "id": "policy",
+   "rule": "capability_policy",
+   "establishes": "data_flow_policy",
+   "next": "run",
+   "layer": "Policy",
+   "evidence": [
+    "policy_adequate"
+   ]
+  },
+  {
+   "type": "guard",
+   "id": "run",
+   "layer": "Execute",
+   "evidence": [],
+   "next": null
+  }
+ ]
+}

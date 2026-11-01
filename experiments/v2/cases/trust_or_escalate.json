@@ -1,0 +1,74 @@
+{
+ "version": "hsl-1",
+ "goals": [
+  "human_agreement"
+ ],
+ "entry": "m1",
+ "obligations": [
+  {
+   "name": "miss_rate_bounded",
+   "kind": "assumed"
+  }
+ ],
+ "layers": [
+  {
+   "name": "M1",
+   "scope": [
+    "human_agreement"
+   ],
+   "requires": [
+    "miss_rate_bounded"
+   ],
+   "view": "raw"
+  },
+  {
+   "name": "M2",
+   "scope": [
+    "human_agreement"
+   ],
+   "requires": [
+    "miss_rate_bounded"
+   ],
+   "view": "raw"
+  },
+  {
+   "name": "M3",
+   "scope": [
+    "human_agreement"
+   ],
+   "requires": [
+    "miss_rate_bounded"
+   ],
+   "view": "raw"
+  }
+ ],
+ "nodes": [
+  {
+   "type": "guard",
+   "id": "m1",
+   "layer": "M1",
+   "evidence": [
+    "miss_rate_bounded"
+   ],
+   "next": "m2"
+  },
+  {
+   "type": "guard",
+   "id": "m2",
+   "layer": "M2",
+   "evidence": [
+    "miss_rate_bounded"
+   ],
+   "next": "m3"
+  },
+  {
+   "type": "guard",
+   "id": "m3",
+   "layer": "M3",
+   "evidence": [
+    "miss_rate_bounded"
+   ],
+   "next": null
+  }
+ ]
+}

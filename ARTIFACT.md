@@ -1,5 +1,27 @@
 # Artifact guide and scope
 
+The current paper rests on the verification study in `formal/calculus`, `src/tint/hsl`,
+`experiments/v2` and `results/v2`. Timings live in `results/v2/timing`, outside the manifest.
+It needs `z3-solver` and `cvc5` from `requirements.lock`. PRISM is optional: set `PRISM_HOME`
+and `PRISM_JAVA`, otherwise E7 and E9 skip it. First results of failed experiments are in
+`docs/ERRATA.md`; changes made after results are in Amendment A of `experiments/v2/PROTOCOL.md`.
+
+| Claim | Command | Output | Time |
+|---|---|---|---|
+| Proofs, proof mutants (E1, E2) | `python scripts/tasks.py proofs` | `results/v2/proofs.json`, `proof_mutants.json` | 2 min |
+| Conformance (E3, E4, E6) | `python experiments/v2/run.py e3 e4` | `e3_exhaustive.json`, `e4_differential.json` | 10 min |
+| Oracle strength (E5) | `python experiments/v2/mutation.py`, then `classify_mutants.py` | `e5_mutation.json` | 15 min |
+| Monolithic comparison (E7) | `python experiments/v2/run.py e7` | `e7_monolithic.json` | 3 min |
+| Earlier study (E8) | `python experiments/v2/run.py e8` | `e8_continuity.json` | 1 min |
+| Scale (E9, E10) | `python experiments/v2/run.py e9 e10` | `timing/` | 15 min |
+| Recertification (E11) | `python experiments/v2/run.py e11` | `e11_recertification.json` | 2 min |
+| Certificates (E12, E12b) | `python experiments/v2/run.py e12 e12b` | `e12_route_bounds.json`, `e12b_pipeline.json` | 5 min |
+| Designs, hardness (E13, E14) | `python experiments/v2/run.py e13 e14` | `e13_cases.json`, `e14_reduction.json` | 1 min |
+| Corpus, worked example (E15) | `corpus_analysis.py`, `worked_example.py` | `e15_corpus.json`, `worked_example.json` | seconds |
+| Everything, paper, manifest | `python scripts/tasks.py verification` | all of the above | under 1 hour |
+
+The material below describes the earlier scripted study, preserved for E8.
+
 Round-1 corrections: verify-results now also performs read-only semantic replay
 of all retained decisions against traces/historical configurations, checks LP
 weights/risk/cost/simplex constraints, and enumerates the finite LP's vertices

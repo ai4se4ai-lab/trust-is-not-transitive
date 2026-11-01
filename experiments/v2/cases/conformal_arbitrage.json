@@ -1,0 +1,55 @@
+{
+ "version": "hsl-1",
+ "goals": [
+  "guardian_loss"
+ ],
+ "entry": "p",
+ "obligations": [
+  {
+   "name": "miss_rate_bounded",
+   "kind": "assumed"
+  }
+ ],
+ "layers": [
+  {
+   "name": "Primary",
+   "scope": [
+    "guardian_loss"
+   ],
+   "requires": [
+    "miss_rate_bounded"
+   ],
+   "view": "raw"
+  },
+  {
+   "name": "Guardian",
+   "scope": [
+    "guardian_loss"
+   ],
+   "requires": [
+    "miss_rate_bounded"
+   ],
+   "view": "raw"
+  }
+ ],
+ "nodes": [
+  {
+   "type": "guard",
+   "id": "p",
+   "layer": "Primary",
+   "evidence": [
+    "miss_rate_bounded"
+   ],
+   "next": "g"
+  },
+  {
+   "type": "guard",
+   "id": "g",
+   "layer": "Guardian",
+   "evidence": [
+    "miss_rate_bounded"
+   ],
+   "next": null
+  }
+ ]
+}
