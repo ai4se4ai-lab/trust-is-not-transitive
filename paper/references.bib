@@ -1,5 +1,6 @@
 % Bibliography for "Trust Is Not Transitive".
-% Audited against primary records on 2026-10-29; published versions are preferred.
+% Rechecked against primary records on 2026-11-01; published versions are preferred.
+% Google Scholar returned HTTP 429; see the audit for access limitations.
 % Per-entry sources, limitations, and archived evidence: docs/literature/REFERENCE_AUDIT.md
 % Citation keys retain their original names even when the cited version is published.
 
@@ -133,6 +134,17 @@
   publisher = {ACM},
   doi = {10.1145/3744916.3764546},
   url = {https://doi.org/10.1145/3744916.3764546}
+}
+
+@inproceedings{shamsujjoha2025swiss,
+  author = {Shamsujjoha, Md and Lu, Qinghua and Zhao, Dehai and Zhu, Liming},
+  title = {{Swiss Cheese Model for AI Safety: A Taxonomy and Reference Architecture for Multi-Layered Guardrails of Foundation Model Based Agents}},
+  booktitle = {2025 IEEE 22nd International Conference on Software Architecture (ICSA)},
+  pages = {37--48},
+  year = {2025},
+  publisher = {IEEE},
+  doi = {10.1109/ICSA65012.2025.00014},
+  url = {https://doi.org/10.1109/ICSA65012.2025.00014}
 }
 
 @inproceedings{arxiv250800500,
@@ -414,12 +426,12 @@
   url = {https://proceedings.mlr.press/v267/chen25ae.html}
 }
 
-@misc{arxiv251005156,
+@inproceedings{arxiv251005156,
+  author = {Miculicich, Lesly and Parmar, Mihir and Palangi, Hamid and Dvijotham, Dj and Montanari, Mirko and Pfister, Tomas and Le, Long},
   title = {{VeriGuard: Enhancing LLM Agent Safety via Verified Code Generation}},
-  author = {Miculicich, Lesly and Parmar, Mihir and Palangi, Hamid and Dvijotham, Krishnamurthy Dj and Montanari, Mirko and Pfister, Tomas and Le, Long T.},
-  year = {2025},
-  howpublished = {arXiv:2510.05156},
-  url = {https://arxiv.org/abs/2510.05156}
+  booktitle = {ACL 2026},
+  year = {2026},
+  url = {https://research.google/pubs/veriguard-enhancing-llm-agent-safety-via-verified-code-generation-2/}
 }
 
 @misc{arxiv260222302,
@@ -491,12 +503,13 @@
   url = {https://doi.org/10.1109/iros60139.2025.11246041}
 }
 
-@misc{arxiv250816481,
-  title = {{Benchmarking the Robustness of Agentic Systems to Adversarially-Induced Harms}},
+@inproceedings{arxiv250816481,
   author = {Nöther, Jonathan and Singla, Adish and Radanovic, Goran},
-  year = {2025},
-  howpublished = {arXiv:2508.16481},
-  url = {https://arxiv.org/abs/2508.16481}
+  title = {{Benchmarking the Robustness of Agentic Systems to Adversarially-Induced Harmful Behaviors}},
+  booktitle = {Conference on Language Modeling (COLM)},
+  year = {2026},
+  url = {https://proceedings.colm.cc/paper_files/paper/2026/hash/8b54ecd9823fff6d37e61ece8f87e534-Abstract-Conference.html},
+  note = {Pre-proceedings}
 }
 
 @misc{arxiv251102164,
@@ -816,11 +829,10 @@
 }
 
 @inproceedings{tibshirani2019conformal,
-  author = {Tibshirani, Ryan J. and Barber, Rina Foygel and Cand{\`e}s, Emmanuel J. and Ramdas, Aaditya},
+  author = {Tibshirani, Ryan J. and Foygel Barber, Rina and Cand{\`e}s, Emmanuel J. and Ramdas, Aaditya},
   title = {{Conformal Prediction Under Covariate Shift}},
   booktitle = {Advances in Neural Information Processing Systems},
   volume = {32},
-  pages = {},
   year = {2019},
   publisher = {Curran Associates, Inc.},
   url = {https://proceedings.neurips.cc/paper_files/paper/2019/hash/8fb21ee7a2207526da55a679f0332de2-Abstract.html}
@@ -970,8 +982,11 @@
   author = {Carnevali, Laura and German, Reinhard and Santoni, Francesco and Vicario, Enrico},
   title = {Compositional Analysis of Hierarchical UML Statecharts},
   journal = {IEEE Transactions on Software Engineering},
+  volume = {48},
+  number = {12},
+  pages = {4762--4788},
   year = {2022},
-  doi = {10.1109/tse.2021.3125720},
+  doi = {10.1109/tse.2021.3125720}
 }
 
 @article{bu2024clopper,
@@ -1114,31 +1129,38 @@
   doi = {10.1145/2430545.2430550},
 }
 
-@article{demoura2008z3,
+@inproceedings{demoura2008z3,
   author = {de Moura, Leonardo and Bjørner, Nikolaj},
-  title = {Z3: An Efficient SMT Solver},
-  journal = {Lecture Notes in Computer Science},
+  title = {{Z3: An Efficient SMT Solver}},
+  booktitle = {Tools and Algorithms for the Construction and Analysis of Systems},
+  series = {Lecture Notes in Computer Science},
+  volume = {4963},
   pages = {337--340},
   year = {2008},
-  doi = {10.1007/978-3-540-78800-3_24},
+  publisher = {Springer},
+  doi = {10.1007/978-3-540-78800-3_24}
 }
 
-@article{barbosa2022cvc5,
+@inproceedings{barbosa2022cvc5,
   author = {Barbosa, Haniel and Barrett, Clark and Brain, Martin and Kremer, Gereon and Lachnitt, Hanna and Mann, Makai and Mohamed, Abdalrhman and Mohamed, Mudathir and Niemetz, Aina and N{\"o}tzli, Andres and Ozdemir, Alex and Preiner, Mathias and Reynolds, Andrew and Sheng, Ying and Tinelli, Cesare and Zohar, Yoni},
-  title = {cvc5: A Versatile and Industrial-Strength SMT Solver},
-  journal = {Lecture Notes in Computer Science},
+  title = {{cvc5: A Versatile and Industrial-Strength SMT Solver}},
+  booktitle = {Tools and Algorithms for the Construction and Analysis of Systems},
+  series = {Lecture Notes in Computer Science},
+  volume = {13243},
   pages = {415--442},
   year = {2022},
-  doi = {10.1007/978-3-030-99524-9_24},
+  publisher = {Springer},
+  doi = {10.1007/978-3-030-99524-9_24}
 }
 
-@article{kildall1973unified,
+@inproceedings{kildall1973unified,
   author = {Kildall, Gary A.},
   title = {A unified approach to global program optimization},
-  journal = {Proceedings of the 1st annual ACM SIGACT-SIGPLAN symposium on Principles of programming languages  - POPL '73},
+  booktitle = {Proceedings of the 1st Annual ACM SIGACT-SIGPLAN Symposium on Principles of Programming Languages (POPL '73)},
   pages = {194--206},
   year = {1973},
-  doi = {10.1145/512927.512945},
+  publisher = {ACM},
+  doi = {10.1145/512927.512945}
 }
 
 @article{kam1977monotone,
@@ -1152,13 +1174,14 @@
   doi = {10.1007/bf00290339},
 }
 
-@article{barnett2005weakest,
+@inproceedings{barnett2005weakest,
   author = {Barnett, Mike and Leino, K. Rustan M.},
   title = {Weakest-precondition of unstructured programs},
-  journal = {Proceedings of the 6th ACM SIGPLAN-SIGSOFT workshop on Program analysis for software tools and engineering},
+  booktitle = {Proceedings of the 6th ACM SIGPLAN-SIGSOFT Workshop on Program Analysis for Software Tools and Engineering},
   pages = {82--87},
   year = {2005},
-  doi = {10.1145/1108792.1108813},
+  publisher = {ACM},
+  doi = {10.1145/1108792.1108813}
 }
 
 @article{jia2011analysis,
@@ -1183,11 +1206,14 @@
   doi = {10.1145/3338843},
 }
 
-@article{littlewood2004redundancy,
+@inproceedings{littlewood2004redundancy,
   author = {Littlewood, Bev and Strigini, Lorenzo},
   title = {Redundancy and Diversity in Security},
-  journal = {Lecture Notes in Computer Science},
+  booktitle = {Computer Security -- ESORICS 2004},
+  series = {Lecture Notes in Computer Science},
+  volume = {3193},
   pages = {423--438},
   year = {2004},
-  doi = {10.1007/978-3-540-30108-0_26},
+  publisher = {Springer},
+  doi = {10.1007/978-3-540-30108-0_26}
 }

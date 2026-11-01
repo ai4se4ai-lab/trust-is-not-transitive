@@ -13,6 +13,38 @@ def main():
     assert len(keys)==len(set(keys))
     rows=list(csv.DictReader((ROOT/'paper/refs_verification.csv').open(encoding='utf-8')))
     verified={r['key']:r for r in rows}
+    refresh_path=ROOT/'docs/literature/audit-2026-11-01/audit.json'
+    if refresh_path.exists():
+        refreshed=json.loads(refresh_path.read_text(encoding='utf-8'))
+        reviewed={r['key']:r for r in refreshed}
+        assert len(rows)==len(verified) and len(refreshed)==len(reviewed), 'Duplicate verification records'
+        assert set(keys)==set(verified)==set(reviewed), 'Bibliography/audit/verification keys differ'
+        for key in keys:
+            record=reviewed[key]
+            entry=re.search(r'@\w+\{'+re.escape(key)+r',.*?\n\}',bib,flags=re.S).group()
+            assert hashlib.sha256(entry.encode()).hexdigest()==record['entry_sha256'], ('Entry changed since audit',key)
+            row=verified[key]
+            assert row['verified']=='audited' and row['date_checked']==record['checked'],key
+            assert row['URL']==record['entry'].get('url','https://doi.org/'+record['entry'].get('doi','')),key
+            assert row['evidence_sha256']==hashlib.sha256(json.dumps(record,ensure_ascii=False,sort_keys=True).encode()).hexdigest(),key
+            assert record['sources'] and record['evidence'],key
+            for name,expected in record['evidence'].items():
+                assert Path(name).name==name
+                local=refresh_path.parent/name
+                assert local.is_file() and hashlib.sha256(local.read_bytes()).hexdigest()==expected, ('Evidence differs',key,name)
+            if 'historical_audit' in record:
+                for name,expected in record['historical_audit']['evidence'].items():
+                    local=ROOT/'docs/literature/audit-2026-10-29'/name
+                    assert local.is_file() and hashlib.sha256(local.read_bytes()).hexdigest()==expected, ('Historical evidence differs',key,name)
+        citations=set()
+        for tex in (ROOT/'paper').rglob('*.tex'):
+            text=re.sub(r'(?m)(?<!\\)%.*$','',tex.read_text(encoding='utf-8'))
+            citations.update(k.strip() for group in re.findall(r'\\cite\w*\*?(?:\[[^\]]*\])*\{([^}]+)\}',text) for k in group.split(','))
+        assert citations<=set(keys),citations-set(keys)
+        print(len(keys),'entries match the 2026-11-01 reviewed audit and evidence hashes;')
+        print(sum(r['changed'] for r in refreshed),'entries corrected. All citation keys resolve.')
+        print('Google Scholar was inaccessible (HTTP 429). Access and author-version limitations are recorded in REFERENCE_AUDIT.md.')
+        return
     records=json.loads((ROOT/'docs/literature/metadata.json').read_text(encoding='utf-8'))
     by_key={r['key']:r for r in records}
     audit_path=ROOT/'docs/literature/audit-2026-10-29/audit.json'
