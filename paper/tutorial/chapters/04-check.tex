@@ -141,6 +141,36 @@ If $\chk(H,A,B)$ then $H$ is safe from $(A,B)$.
 
 In words: \emph{if the walk accepts, then every contract-respecting behavior that gets accepted satisfies all goals.} The theorem is stated for arbitrary starting sets $(A,B)$, not just $(\emptyset,\emptyset)$; this is the ``generalize the induction'' trick of Chapter~\ref{ch:toolkit}.
 
+\subsubsection*{The exact statement we induct on}
+
+Recall the accumulator proof in Section~\ref{sec:generalization}: its hypothesis for the smaller list had to work for \emph{every} accumulator. Here the hypothesis for each smaller hierarchy must work for every choice of starting information satisfying these premises:
+\begin{statement}{Generalized soundness claim for a fixed tree $H$}
+For all $A,B,F,M$ and accepting guards $r$,
+\[
+\left.
+\begin{gathered}
+\chk(H,A,B),\qquad A\subseteq S,\qquad B\subseteq F,\\
+M\models_F H,\qquad \sem{H}{M}=\accepted(r)
+\end{gathered}
+\right\}
+\quad\Longrightarrow\quad\Goals\subseteq S.
+\]
+Here $S$ is the proposal's actual goal set in the model $M$.
+\end{statement}
+We induct on the tree $H$. The induction hypothesis for a child $k$ is this \emph{whole universally quantified statement} with $k$ in place of $H$. Thus we can supply new sets at the child, provided we prove its premises. We do not induct on the sizes of $A,B,F$, and we do not assume the theorem for the parent.
+
+\begin{example}{instantiate the hypothesis after the scanner}
+In $H_{\mathrm{review}}$ from Section~\ref{sec:code-review-constructors}, start with $A=B=F=\emptyset$. If execution reaches a reviewer, the scanner has passed. Its credited contract establishes $s\in S$ and supplies $q$. The checker calls its continuation with
+\[
+A'=\{s\},\qquad B'=\{q\},
+\]
+and the contract-satisfaction relation continues with $F'=\{q\}$. The hypothesis for the smaller continuation can now be used with precisely these nonempty sets: $A'\subseteq S$ and $B'\subseteq F'$ hold. A hypothesis restricted to $A=B=F=\emptyset$ would not match this call.
+
+\textbf{Why keep $B$ and $F$ separate if they are equal here?} Suppose instead a gate requires $o$, declares no evidence, and is entered with $B=F=\emptyset$. The checker cannot credit it, because $o\notin\Omega\cup B$. But in a particular model, $o\in E(n)$ may really hold. If that gate passes, its contract applies and provides $q$ semantically. Then the continuation has $B'=\emptyset$ but $F'=\{q\}$. The checker conservatively credits nothing; the modeled execution provides more. The proof needs $B'\subseteq F'$, not equality.
+\end{example}
+
+The theorem as stated follows by choosing $F=B$ in the generalized claim. The usual initial check then chooses $A=B=\emptyset$. This is the same final move as choosing accumulator $a=0$ after proving the stronger sum formula.
+
 \begin{plainproof}{Soundness}
 We prove it by structural induction on $H$, for \emph{all} $A,B$ and all $F\supseteq B$ (the facts that really were provided so far contain the ones the checker credited). Fix a model $M$ with $M\models_F H$, $A\subseteq S$, and suppose $\sem{H}{M}=\accepted(r)$. We must show $\Goals\subseteq S$.
 

@@ -123,9 +123,78 @@ These come back in the formal semantics, and each is a place where the paper mak
 
 % ---------------------------------------------------------------------
 \subsection{Trees, recursive definitions and structural induction}
+\label{sec:trees-induction}
 % ---------------------------------------------------------------------
 
 \textbf{Why we need them.} The paper defines a hierarchy as a \emph{term}, i.e.\ a tree of nested constructors, and defines everything (what it means to run it, whether it is safe, whether it checks) by \emph{recursion} on that tree. Nearly every proof is by \emph{structural induction}. If you understand this subsection, you understand the shape of every proof in the tutorial.
+
+\subsubsection{Start with a payment workflow}
+
+\begin{story}{One payment, three agents}
+A Requester creates a payment request, an Approver authorizes it, and an Executor transfers the money. Our rule is: \textbf{never execute a payment without approval}. To keep this first example small, assume there is just one fixed payment, approval is genuine and remains valid, and no agent changes the request.
+
+Use two constructors: $\mathrm{Agent}(a)$ is one agent, and $\mathrm{Then}(X,Y)$ means ``run $X$, then $Y$''. The whole workflow is
+\[
+\mathrm{Then}\bigl(\mathrm{Then}(\mathrm{Agent}(R),\mathrm{Agent}(P)),
+                         \mathrm{Agent}(E)\bigr),
+\]
+where $R,P,E$ stand for Requester, Approver and Executor. The outer \texttt{Then} is the \textbf{root}; its left child is another \texttt{Then}; the three agents are \textbf{leaves}. A constructor is simply a building rule: one makes an agent, the other combines two smaller workflows. Reusing these rules builds any finite workflow in this toy language.
+
+\begin{center}
+\begin{tikzpicture}[font=\small,
+  part/.style={draw=tintteal,rounded corners,fill=tintteal!6,inner sep=5pt},
+  edge/.style={-{Stealth[length=1.8mm]}}]
+\node[part] (root) at (0,0) {Then (root)};
+\node[part] (left) at (-2,-1) {Then};
+\node[part] (exec) at (2,-1) {Executor};
+\node[part] (request) at (-3.2,-2) {Requester};
+\node[part] (approve) at (-0.8,-2) {Approver};
+\draw[edge] (root)--(left);
+\draw[edge] (root)--(exec);
+\draw[edge] (left)--(request);
+\draw[edge] (left)--(approve);
+\end{tikzpicture}
+
+\small Tree edges mean ``contains this component''; execution order is Requester, Approver, Executor.
+\end{center}
+
+The tree describes how the system is assembled. It does not itself transfer money. Also, \texttt{Agent} and \texttt{Then} are teaching devices; Chapter~\ref{ch:calculus} introduces the paper's actual four constructors.
+\end{story}
+
+\textbf{Recursion: write a rule for each constructor.} A toy static checker carries a Boolean $b$, meaning ``approval is available for this payment''. It returns the updated Boolean or \texttt{error}:
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+\textbf{Component} & \textbf{Checker rule}\\
+\midrule
+Requester & Return $b$ unchanged.\\
+Approver & Return $\mathrm{true}$.\\
+Executor & Return $\mathrm{true}$ if $b=\mathrm{true}$; otherwise return \texttt{error}.\\
+$\mathrm{Then}(X,Y)$ & Check $X$ with $b$. If it returns \texttt{error}, reject; otherwise check $Y$ with the Boolean returned by $X$.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+The last rule is recursive: checking a composite calls the same checker on its smaller parts. Starting with no approval, the walk is
+\[
+\underbrace{\mathrm{false}}_{\text{start}}
+\xrightarrow{\text{Requester}}\mathrm{false}
+\xrightarrow{\text{Approver}}\mathrm{true}
+\xrightarrow{\text{Executor}}\mathrm{true}.
+\]
+It succeeds. Remove the Approver and the Executor receives $\mathrm{false}$, so the checker rejects. These are checks of two concrete workflows, not yet a proof for every workflow.
+
+\textbf{Structural induction: prove the rules work for every tree.}
+The useful claim is: for either starting Boolean $b$, if the checker succeeds, execution from the matching approval state makes no unapproved transfer and ends with the Boolean predicted by the checker.
+\begin{itemize}
+\item \textbf{Base cases:} Requester and Approver make no transfer and update approval as specified. Executor is checked successfully only with approval, and preserves it.
+\item \textbf{Step case:} for $\mathrm{Then}(X,Y)$, assume the claim for the smaller trees $X$ and $Y$. The claim for $X$ makes its execution safe and identifies its final approval state. This is exactly the state supplied to $Y$; the claim for $Y$ therefore makes the rest safe and identifies the final state of the whole workflow.
+\end{itemize}
+This is not assuming the conclusion for the whole workflow. The assumptions concern \emph{strictly smaller} trees, eventually reaching individual agents. Because every tree in this language is finite, the cases cover all of them. Tracking the returned state matters: two parts that are safe under different assumptions cannot simply be declared safe together.
+
+\begin{warning}{Recursion and induction answer different questions}
+\textbf{Recursion} defines how to compute a result from smaller parts.
+\textbf{Structural induction} proves a claim about every structure made from the constructors. Running a checker on one workflow illustrates recursion; proving that its rules preserve safety establishes correctness for all finite workflows in the language, under the stated assumptions.
+\end{warning}
 
 \begin{toolbox}{recursive definitions on trees}
 Consider arithmetic expressions built with three constructors: a \texttt{num(n)} (a leaf), \texttt{add(e1,e2)} and \texttt{mul(e1,e2)}. For example $\texttt{add(num(2), mul(num(3), num(4)))}$ is the tree for $2+3\cdot4$.
@@ -137,6 +206,8 @@ A function on such trees is defined by \textbf{one equation per constructor}, ea
 \mathrm{value}(\texttt{mul}(e_1,e_2)) &= \mathrm{value}(e_1)\cdot\mathrm{value}(e_2).
 \end{align*}
 Such a definition always terminates, because every recursive call is on a strictly smaller tree. We will define the check $\chk$, the semantics $\sem{H}{M}$ and the contract-satisfaction relation $\models$ just like this.
+
+Do not let the new symbols hide the questions. $\sem{H}{M}$ reads ``the decision made by hierarchy $H$ under behavior $M$''; its result is acceptance or denial. $M\models_F H$ reads ``behavior $M$ respects the hierarchy's contracts, starting with provided facts $F$''; this is a true-or-false statement. Neither alone says that the hierarchy is safe. Section~\ref{sec:reading-semantics} unpacks the notation and Section~\ref{sec:contracts-versus-safety} works through the distinction.
 \end{toolbox}
 
 \begin{toolbox}{proof by structural induction}
@@ -153,11 +224,87 @@ Why is this valid? Every tree is built from leaves by finitely many constructor 
 \emph{Step:} $t=\texttt{add}(e_1,e_2)$. By the induction hypothesis $\ell(e_1)=i(e_1)+1$ and $\ell(e_2)=i(e_2)+1$. Then $\ell(t)=\ell(e_1)+\ell(e_2)=i(e_1)+i(e_2)+2$ and $i(t)=i(e_1)+i(e_2)+1$, so $\ell(t)=i(t)+1$. \checkmark\ The case \texttt{mul} is identical.
 \end{toolbox}
 
-\textbf{Generalizing the induction.} Notice that in the paper's proofs, the induction is ``generalized over $A$, $B$ and $F$'' (sets that the checker carries along). That means the statement being proved is \emph{for all values of these sets}, so that the induction hypothesis is available for the \emph{different} values that arise in the subtree. If you fixed the sets at their starting values (empty), the hypothesis would be too weak to use in the step. This is the standard trick of ``strengthening the induction hypothesis''.
+\subsubsection{Why proving more can make the induction work}
+\label{sec:generalization}
 
-\begin{example}{why generalize? (a small illustration)}
-Suppose we want to prove ``$\mathrm{sum}(t, 0)=\mathrm{total}(t)$'' for a function $\mathrm{sum}(t,\textit{acc})$ that adds numbers into an accumulator. In the step for \texttt{add} the call on the right subtree has accumulator $\mathrm{sum}(e_1,0)\ne 0$, so a hypothesis only about accumulator $0$ is useless. We must prove ``$\mathrm{sum}(t,\textit{acc})=\textit{acc}+\mathrm{total}(t)$ for \emph{all} $\textit{acc}$''. The checker's sets $A,B$ are the accumulators of the paper's proofs.
+In the payment example, the whole workflow starts with $b=\mathrm{false}$, but the Executor subtree starts with $b=\mathrm{true}$. A hypothesis about smaller workflows \emph{only when started without approval} cannot justify that recursive call. We need the hypothesis for \emph{either} starting Boolean, with execution started in the matching state. Generalization changes the statement we prove; it does not change the checker or pretend approval exists.
+
+\begin{example}{the accumulator: see exactly where the weak hypothesis fails}
+Consider this function on a finite list of integers:
+\begin{lstlisting}
+def sum_numbers(numbers, acc):
+    if numbers == []:
+        return acc
+    return sum_numbers(numbers[1:], acc + numbers[0])
+\end{lstlisting}
+Its recursive calls on one input are
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Call} & \textbf{Accumulator} & \textbf{Accumulator + remaining total}\\
+\midrule
+\texttt{sum\_numbers([2,3,4], 0)} & $0$ & $0+9=9$\\
+\texttt{sum\_numbers([3,4], 2)} & $2$ & $2+7=9$\\
+\texttt{sum\_numbers([4], 5)} & $5$ & $5+4=9$\\
+\texttt{sum\_numbers([], 9)} & $9$ & $9+0=9$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Our original goal is $\mathrm{sum\_numbers}(L,0)=\mathrm{total}(L)$.
+If we induct on $L$ using only this statement, the hypothesis for the tail $[3,4]$ tells us about accumulator $0$, whereas the actual recursive call uses $2$. It does not match.
+
+Instead, prove the stronger statement
+\[
+Q(L):\quad\forall a\in\mathbb Z,\qquad
+\mathrm{sum\_numbers}(L,a)=a+\mathrm{total}(L).
+\]
+\textbf{Base:} for the empty list, the function returns $a$, and $a+\mathrm{total}([])=a+0=a$ for arbitrary $a$.
+
+\textbf{Step:} write $L=x::R$, meaning head $x$ followed by the smaller tail $R$. The induction hypothesis is $Q(R)$, so it is available for \emph{every} accumulator. For arbitrary $a$, use it at $a+x$:
+\begin{align*}
+\mathrm{sum\_numbers}(x::R,a)
+ &=\mathrm{sum\_numbers}(R,a+x) &&\text{function definition}\\
+ &=(a+x)+\mathrm{total}(R) &&\text{hypothesis at }a+x\\
+ &=a+\mathrm{total}(x::R). &&\text{definition of total}
+\end{align*}
+That proves $Q(x::R)$. Finally choose $a=0$ to recover the original goal.
+\textbf{We did not test infinitely many accumulators}: we proved the equation using an arbitrary symbol $a$. The stronger claim gives a stronger hypothesis for the smaller list, exactly matching the recursive call.
 \end{example}
+
+\subsubsection{Why $A$, $B$ and $F$? Why not $J$, $K$ and $L$?}
+
+The letters are just names; consistent renaming changes nothing. Their \emph{roles} are different:
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}llX@{}}
+\toprule
+\textbf{Set} & \textbf{Used by} & \textbf{Meaning}\\
+\midrule
+$A$ & Checker & Goals credited as established by earlier gates.\\
+$B$ & Checker & Obligations credited as provided by earlier gates.\\
+$F$ & Semantics and proof & Obligations actually provided along the modeled run.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+The checker is $\chk(H,A,B)$, \textbf{not} $\chk(H,A,B,F)$. The proof uses the additional semantic set $F$ to show that credited facts are supported: $B\subseteq F$. It also assumes $A\subseteq S$, where $S$ is the set of goals the proposal actually satisfies. These are conditions of the generalized claim; it does not assert safety for arbitrary unsupported information.
+
+Here $A$ contains \emph{goals}, while $B$ and $F$ contain \emph{obligations}. A goal might be ``the change contains no exposed credentials''; an obligation might be ``the judge's input satisfies the sanitization policy''. Establishing one does not automatically establish the other: the gate must explicitly promise the relevant goal or provide the relevant obligation. Section~\ref{sec:accounting-example} follows all three sets through two gates and a guard.
+
+A credited, passing gate with goal $\varphi$ and provided facts $D$ changes the states used in the proof to
+\[
+A'=A\cup\{\varphi\},\qquad B'=B\cup D,\qquad F'=F\cup D.
+\]
+Thus a hypothesis restricted to empty sets would not cover the continuation. As with the accumulator, we prove correctness for all starting sets satisfying the required premises, then instantiate the hypothesis with the updated sets. Chapter~\ref{ch:check} gives those premises and the full proof. There is no universal rule requiring three sets: this argument distinguishes goals, statically credited obligations, and semantically provided obligations. They could be packaged in a record while retaining their separate roles.
+
+\begin{story}{Final intuition: three accounting records}
+Think of the sets as three accounting records:
+\begin{itemize}
+\item $A$ = \textbf{Achievement record:} Which safety goals have we established?
+\item $B$ = \textbf{Checker evidence record:} Which obligations have we justified for later stages?
+\item $F$ = \textbf{Semantic fact record:} Which obligations are carried forward as actually provided in the modeled execution?
+\end{itemize}
+\end{story}
+
+\pauseq{In the accumulator proof, why may we use the hypothesis at $a+x$? In the payment proof, why must the hypothesis cover an Executor starting with approval?}{The hypothesis is $Q(R)$, which quantifies over every accumulator, so $a+x$ is an allowed instance. The payment check passes the Approver's returned state $\mathrm{true}$ to the Executor. A hypothesis covering only initial state $\mathrm{false}$ does not describe that call. In both cases the tree or list gets smaller while the carried information changes.}
 
 \pauseq{Prove by structural induction that the \emph{depth} of the arithmetic tree (longest path from root to a leaf, counting the leaf as depth $0$) is at most the number of inner nodes. Then say which constructors are the base and step cases.}{Let $d(t)$ be the depth. Base: $\texttt{num}$: $d=0\le i=0$. Step: $t=\texttt{add}(e_1,e_2)$: $d(t)=1+\max(d(e_1),d(e_2))\le 1+\max(i(e_1),i(e_2))\le 1+i(e_1)+i(e_2)=i(t)$. Same for \texttt{mul}. The hierarchy version of this ('a decision visits at most depth(H) stages') appears in Chapter~\ref{ch:structural}.}
 
