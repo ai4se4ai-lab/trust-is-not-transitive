@@ -1610,7 +1610,7 @@ We suggest treating an \Hsl{} specification as a reviewed artifact, kept with th
 \label{tab:assumptions}
 \centering
 \footnotesize
-\begin{tabular}{@{}p{3.1cm}p{2.3cm}p{5.8cm}p{5.2cm}@{}}
+\begin{tabular}{@{}p{3.3cm}p{1.4cm}p{6.4cm}p{5.2cm}@{}}
 \toprule
 Premise & Needed by & How to discharge & If false \\
 \midrule
@@ -1678,47 +1678,61 @@ Reference & \texttt{reference.py} & E3, E4 \\
 \label{sec:eval}
 % =====================================================================
 
-Our claims are of three kinds, and each needs its own attack. Claims about the calculus are proved, so we test whether the proofs depend on the definitions they appear to use (E1, E2), by mutating those definitions. Claims about the implementation are tested by comparison with a reference interpreter and a model search written from the equations; these share an author with the checker, so they catch implementation errors and not a shared misreading of the semantics, which the proofs and the adequacy tests must cover. Exhaustive testing on small inputs relies on the small-scope hypothesis~\cite{jackson2019alloy}, and we add random testing of larger inputs and measure the oracle by mutation~\cite{jia2011analysis}, following the differential validation of executable semantics~\cite{wang2023kst}. Monolithic encodings in Z3 and PRISM~\cite{kwiatkowska2011prism} give a second derivation of each verdict, again by the same author from the same figure. Scale is measured on synthetic families built to stress each term of Theorem~\ref{thm:complexity}, including rejecting and exponential cases, as is usual for compositional analyses~\cite{bagheri2015covert}. Relevance cannot be shown by any of this, so we mine public configurations for what real stacks look like, and we apply one encoding rule to published designs. We use no LLM and no user study, so the usefulness of the output to practitioners is an open question.
+The evaluation examines the theoretical claims, implementation conformance, scalability, and relevance of the framework. For the calculus, E1 checks the proof goals, and E2 mutates the definitions to test whether the proofs depend on the intended rules. For the implementation, we compare the checker with a reference interpreter and a model search derived from the equations. These implementations share an author and can therefore share a misunderstanding of the semantics. The proofs and adequacy tests provide additional checks on this correspondence.
+
+Exhaustive testing of small hierarchies follows the small-scope hypothesis~\cite{jackson2019alloy}. We complement it with random testing of larger hierarchies and use mutation testing~\cite{jia2011analysis} to assess the ability of the test oracle to detect faults, following work on differential validation of executable semantics~\cite{wang2023kst}. Monolithic encodings in Z3 and PRISM~\cite{kwiatkowska2011prism} provide alternative derivations of the verdicts, although the same author constructed them from Fig.~\ref{fig:semantics}.
+
+To evaluate scalability, we use synthetic families that exercise the complexity bounds of Theorem~\ref{thm:complexity}, including rejected hierarchies and cases requiring exponential exploration, as is common in evaluations of compositional analyses~\cite{bagheri2015covert}. To examine relevance, we analyze public configurations and model published designs using a uniform encoding rule. We run no LLMs and conduct no user study; whether the output helps practitioners remains an open question.
 
 \subsection{Experimental Setup}
 \label{sec:setup}
 
-Table~\ref{tab:exps} lists the experiments. A protocol was written before the first runs on the same day, and an amendment after the review of those runs. The protocol's date cannot be verified externally, and the code was not committed when the results below were produced. Random hierarchies have up to 16 nodes, 1--3 goals and 1--3 obligations, with provided facts, views and failing checked predicates, and the mean number of reachable nodes is \resDiffMeanReachable{}. Fixed seeds are in the artifact, and the sample does not depend on the number of CPUs. Timings are medians of seven runs for E9's node and goal sweeps and of three for its other families; in Table~\ref{tab:versus}, the checker's are medians of three and the alternatives' are single runs with a 60-second timeout. The machine had \resEnvCpus{} logical CPUs, Windows, Python \resEnvVersionPython{}, Z3 \resEnvZthree{} and cvc5 \resEnvCvc{}. PRISM ran with its explicit engine, as the symbolic engines' native library failed to load. Result numbers are generated from result files, except for first-run figures quoted from the errata.
+%Table~\ref{tab:exps} lists the experiments and their decision rules. 
 
-\begin{table}[!t]
-\caption{Experiments and Decision Rules. A Dagger Marks Rules or Experiments Added or Changed After Seeing First Results}
-\label{tab:exps}
-\centering
-\footnotesize
-\setlength{\tabcolsep}{2.5pt}
-\begin{tabular}{@{}llp{3.3cm}p{2.75cm}@{}}
-\toprule
-RQ & ID & Method & Decision rule \\
-\midrule
-1 & E1 & all obligations, two solvers & all proved, none vacuous \\
-1 & E2 & definition mutants & each has a countermodel$^{\dagger}$ \\
-1 & E12 & known laws, Clopper--Pearson on cascades & coverage not credibly below $1-\delta^{\dagger}$ \\
-1 & E12b & \texttt{certify} and recertification on DAGs$^{\dagger}$ & as E12 \\
-1 & E14 & reduction vs.\ brute-force SAT$^{\dagger}$ & zero disagreements \\
-2 & E3 & all small hierarchies vs.\ equations and model search & zero disagreements \\
-2 & E4 & random differential testing & zero disagreements \\
-2 & E5 & AST mutants & read every survivor \\
-2 & E6 & witnesses checked with $\models$ & all accepted and unsafe \\
-2 & E7 & Z3 and PRISM encodings & zero disagreements \\
-2 & E8 & replay of preserved traces & zero disagreements \\
-3 & E9 & synthetic families, alternatives & node slope below $1.2$ \\
-3 & E10 & decision time vs.\ depth & report \\
-3 & E11 & single-stage changes & report; no locality violation$^{\dagger}$ \\
-4 & E13 & published designs$^{\dagger}$ & report; exploratory \\
-4 & E15 & public configurations$^{\dagger}$ & report; exploratory \\
-\bottomrule
-\end{tabular}
-\end{table}
+We wrote the protocol on the day of the first runs, before executing them, and amended it after reviewing those results. The protocol's date cannot be verified externally, and the code was uncommitted when the reported results were produced.
+
+The randomly generated hierarchies contain up to 16 nodes, 1--3 goals, and 1--3 obligations. They include provided facts, input views, and failing checked predicates. The mean number of reachable nodes is \resDiffMeanReachable{}. The artifact records the fixed seeds, and the generated sample is independent of the number of CPUs.
+
+For E9, timings are medians of seven runs for the node and goal sweeps and three runs for the other families. In Table~\ref{tab:versus}, checker timings are medians of three runs; each alternative is measured in a single run with a 60-second timeout. The machine ran Windows with \resEnvCpus{} logical CPUs, Python \resEnvVersionPython{}, Z3 \resEnvZthree{}, and cvc5 \resEnvCvc{}. PRISM used its explicit engine because the native library required by its symbolic engines failed to load. Numerical results are generated from result files, except for first-run figures quoted from the errata.
+
+% \begin{table*}[!t]
+% \caption{Experiments and Decision Rules. A Dagger Marks Rules or Experiments Added or Changed After Seeing First Results}
+% \label{tab:exps}
+% \centering
+% \small
+% \setlength{\tabcolsep}{6pt}
+% \begin{tabular}{@{}
+%   >{\raggedright\arraybackslash}p{\dimexpr0.05\textwidth-1.5\tabcolsep\relax}
+%   >{\raggedright\arraybackslash}p{\dimexpr0.08\textwidth-1.5\tabcolsep\relax}
+%   >{\raggedright\arraybackslash}p{\dimexpr0.49\textwidth-1.5\tabcolsep\relax}
+%   >{\raggedright\arraybackslash}p{\dimexpr0.38\textwidth-1.5\tabcolsep\relax}@{}}
+% \toprule
+% RQ & ID & Method & Decision rule \\
+% \midrule
+% 1 & E1 & all obligations, two solvers & all proved, none vacuous \\
+% 1 & E2 & definition mutants & each has a countermodel$^{\dagger}$ \\
+% 1 & E12 & known laws, Clopper--Pearson on cascades & coverage not credibly below $1-\delta^{\dagger}$ \\
+% 1 & E12b & \texttt{certify} and recertification on DAGs$^{\dagger}$ & as E12 \\
+% 1 & E14 & reduction vs.\ brute-force SAT$^{\dagger}$ & zero disagreements \\
+% 2 & E3 & all small hierarchies vs.\ equations and model search & zero disagreements \\
+% 2 & E4 & random differential testing & zero disagreements \\
+% 2 & E5 & AST mutants & read every survivor \\
+% 2 & E6 & witnesses checked with $\models$ & all accepted and unsafe \\
+% 2 & E7 & Z3 and PRISM encodings & zero disagreements \\
+% 2 & E8 & replay of preserved traces & zero disagreements \\
+% 3 & E9 & synthetic families, alternatives & node slope below $1.2$ \\
+% 3 & E10 & decision time vs.\ depth & report \\
+% 3 & E11 & single-stage changes & report; no locality violation$^{\dagger}$ \\
+% 4 & E13 & published designs$^{\dagger}$ & report; exploratory \\
+% 4 & E15 & public configurations$^{\dagger}$ & report; exploratory \\
+% \bottomrule
+% \end{tabular}
+% \end{table*}
 
 \subsection{RQ1: Are the Results Proved?}
 \label{sec:rq1}
 
-\textbf{E1.} All \resProofObligations{} proof goals are proved by Z3 (\resProofZthree{}) and by cvc5 (\resProofCvc{}) (Table~\ref{tab:proofs}). None has contradictory premises: \resProofSatisfiable{} are shown satisfiable, \resProofUnknown{} returned unknown, and \resProofNoPremise{} have no premises. The slowest took less than a second, as the steps are simple once the induction is laid out.
+\textbf{E1.} Z3 and cvc5 each proved all \resProofObligations{} proof goals (\resProofZthree{} and \resProofCvc{}, respectively; Table~\ref{tab:proofs}). Separate checks found no contradictory premises: the premises of \resProofSatisfiable{} goals were shown satisfiable, \resProofUnknown{} check returned unknown, and \resProofNoPremise{} goals had no premises. Thus, the unknown result leaves one premise-satisfiability check unresolved. The slowest proof goal took less than a second; the individual steps are simple once the induction cases are specified.
 
 \begin{table}[!t]
 \caption{Proof Goals by Result}
@@ -1734,29 +1748,49 @@ Result & Goals & Z3 & cvc5 \\
 \end{tabular}
 \end{table}
 
-\textbf{E2.} All \resProofMutants{} mutated definitions yield a countermodel to the expected theorem (\resProofMutantsKilled{}). Making evidence inherited breaks soundness at the guard case, which ties the title's claim to the proof.
+\textbf{E2.} Each of the \resProofMutants{} mutated definitions produced a countermodel to the corresponding theorem, killing all \resProofMutantsKilled{} mutants. In particular, allowing stages to inherit local evidence invalidates the guard case of soundness. This result connects the claim that evidence cannot be transferred transitively to a concrete failure of the proof.
 
-\textbf{E14.} On \resReductionFormulas{} random CNF formulas near the satisfiability threshold, \resReductionSatisfiable{} of them satisfiable, the checker's verdict on the reduction of Theorem~\ref{thm:complexity} agreed with brute-force SAT, with \resReductionDisagreements{} disagreements. On \resReductionFalseAlarms{} of them the first pass rejected a safe hierarchy and exploration corrected it.
+\textbf{E14.} We tested the reduction in Theorem~\ref{thm:complexity} on \resReductionFormulas{} random CNF formulas near the satisfiability threshold, of which \resReductionSatisfiable{} were satisfiable. The checker's verdicts on the resulting hierarchies agreed with brute-force SAT, with \resReductionDisagreements{} disagreements. For \resReductionFalseAlarms{} formulas, the initial analysis rejected a safe hierarchy, and exact exploration corrected the verdict.
 
-\textbf{E12, E12b.} E12 applies Clopper--Pearson bounds to \resBoundLaws{} random laws on cascades. Minimum simultaneous route coverage was \resBoundCoverageRoutes{}, below nominal $0.95$ on \resBoundBelowNominal{} laws; this is within Monte Carlo error but failed the protocol's literal rule. E12b is the test that matters. On \resPipelineLaws{} random DAGs, each with a known finite law, whose unsafe labels respect the premise that gated routes are safe, it certifies all routes through \texttt{certify}, changes one stage, recalibrates only the stale routes, rebuilds the engine from those certificates, and compares the risk of its decisions with the sum of open bounds. Laws on hierarchies with no statistical route were skipped. Minimum coverage across laws was \resPipelineCoverageRoutes{} for all routes together and \resPipelineCoverageSum{} for the sum, against nominal $0.95$; the upper Wilson limit of the worst law, corrected for the number of laws, is \resPipelineWilson{}, so the shortfall is within sampling error. On E12's laws, the per-layer product understated true risk on \resBoundProductUnder{} of \resBoundLaws{} laws, by up to a factor of \resBoundMaxUnder{}, and overstated it on the others. The minimum understated it on \resBoundMinUnder{}. The route sum averaged \resBoundSumRatio{} times a single whole-hierarchy bound.
+\textbf{E12, E12b.} E12 evaluates Clopper--Pearson bounds on \resBoundLaws{} randomly generated probability laws for cascades. Simultaneous route coverage measures how often all route bounds cover their true risks in the same calibration replication. Its minimum across laws was \resBoundCoverageRoutes{}, and coverage fell below the nominal level of $0.95$ on \resBoundBelowNominal{} laws. These deviations are within Monte Carlo sampling error, but they failed the protocol's literal decision rule.
+
+E12b evaluates the implemented certification and recertification process. It uses \resPipelineLaws{} random DAGs, each with a known finite probability law and unsafe labels that satisfy the premise that gated routes are safe. For each eligible hierarchy, the experiment certifies all routes through \texttt{certify}, changes one stage, recalibrates only routes whose certificates have become stale, and rebuilds the engine. It then compares the true risk of the engine's decisions with the sum of the open certificate bounds. Hierarchies with no statistical route are skipped.
+
+Across these laws, minimum simultaneous route coverage was \resPipelineCoverageRoutes{}, and minimum coverage of the summed bound was \resPipelineCoverageSum{}, against a nominal level of $0.95$. For the law with the lowest simultaneous coverage, the upper Wilson confidence limit, corrected for the number of laws, was \resPipelineWilson{}. The observed shortfall is therefore consistent with sampling error.
+
+On E12's laws, the product of per-layer miss probabilities underestimated true risk on \resBoundProductUnder{} of \resBoundLaws{} laws, by up to a factor of \resBoundMaxUnder{}, and overestimated it on the remaining laws. The minimum per-layer miss probability underestimated risk on \resBoundMinUnder{} laws. The sum of route bounds averaged \resBoundSumRatio{} times a single whole-hierarchy bound.
 
 \subsection{RQ2: Does the Implementation Conform?}
 \label{sec:rq2}
 
-\textbf{E3.} On an alphabet of two goals, two obligations, nine layers and gates and veto stages with and without facts, we enumerated every hierarchy of up to \resExhaustiveNodes{} nodes with all nodes reachable: \resExhaustiveTotal{} hierarchies, \resExhaustiveAccepted{} accepted. The checker and the equations had \resExhaustiveDisagreements{} disagreements. A model search, which enumerates behaviors and obligation sets at every reached stage and judges each run with the executable $\models$ and semantics, covered \resExhaustiveSearches{} of them, with \resExhaustiveSearchDisagreements{} disagreements. It ran on all hierarchies up to three nodes and on a random sample of about one in 64 of four nodes.
+\textbf{E3.} Using an alphabet of two goals, two obligations, nine layers, and gates and veto stages with and without provided facts, we enumerated every hierarchy with up to \resExhaustiveNodes{} nodes in which all nodes were reachable. This produced \resExhaustiveTotal{} hierarchies, of which the checker accepted \resExhaustiveAccepted{}. The checker and the executable equations had \resExhaustiveDisagreements{} disagreements.
 
-\textbf{E4.} On \resDiffSpecs{} random specifications (\resDiffAccepted{} accepted, \resDiffRejected{} rejected) and \resDiffDecisions{} decisions, checker, engine and reference gave \resDiffDisagreements{} disagreements, including failing checked predicates. Model search covered \resDiffSemantic{} small specifications, with \resDiffSemanticDisagreements{} disagreements. Sampled models, biased toward acceptance, gave \resDiffContractRuns{} contract-respecting runs on accepted specifications, of which \resDiffAcceptingRuns{} ended in acceptance, none unsafe (\resDiffUnsafeAccepted{}). The same sampling found a violation on \resDiffRejectedFound{} of \resDiffRejected{} rejected specifications, which gauges its power; it is partial. Residual lists agreed with a path-wise computation from the equations, with \resDiffResidualDisagreements{} disagreements. The equations agreed with the reference on \resAdequacyTerms{} terms and models for $\chk$, the semantics and $\models$, with \resAdequacyFailures{} failures.
+We also searched for models by enumerating stage behaviors and obligation sets at each reached invocation, then evaluating each run using the executable contract-satisfaction relation $\models$ and decision semantics. This search covered \resExhaustiveSearches{} hierarchies, with \resExhaustiveSearchDisagreements{} disagreements. It included all hierarchies with up to three nodes and a random sample of approximately one in 64 four-node hierarchies.
 
-\textbf{E5.} We mutated the checker, engine, certificate and fingerprint code. Of \resMutationTotal{} mutants, the differential oracle alone detected \resMutationDifferential{}; \resMutationCrash{} more crashed or hung; and unit tests killed \resMutationUnit{} that the random oracle missed, because its generator produces no cycles, raising stages or missing certificates. Earlier runs showed these gaps, and we wrote unit tests after reading their survivors, so the combined figure of \resMutationKilled{} is biased upward, and the differential figure is the fairer measure of the random oracle. We read all \resMutationSurvived{} survivors: \resMutationEquivalent{} are equivalent, such as type annotations and changes that exact exploration repairs, and \resMutationGaps{} are untested differences, three in the form of a digest and one in which of two refusals is raised. The classification is in the artifact.
+\textbf{E4.} Across \resDiffSpecs{} random specifications (\resDiffAccepted{} accepted and \resDiffRejected{} rejected) and \resDiffDecisions{} decisions, comparisons among the checker, engine, and reference produced \resDiffDisagreements{} disagreements, including cases with failing checked predicates. Model search covered \resDiffSemantic{} small specifications, with \resDiffSemanticDisagreements{} disagreements.
 
-\textbf{E6.} Each of \resDiffWitnesses{} rejection witnesses is a complete model. Replayed on an engine with the check removed, each was accepted on the reported route, satisfied $\models$ and violated the reported goal (\resDiffWitnessFailures{} failures).
+Sampling models with a bias toward acceptance produced \resDiffContractRuns{} contract-respecting runs on accepted specifications. Of these, \resDiffAcceptingRuns{} ended in acceptance, and \resDiffUnsafeAccepted{} were unsafe. The same sampling found a violating run for \resDiffRejectedFound{} of the \resDiffRejected{} rejected specifications. This count indicates the sampling procedure's ability to find violations; it does not constitute an exhaustive search.
 
-\textbf{E7.} We compared verdicts with a Z3 encoding of Fig.~\ref{fig:semantics} on \resMonoZthree{} hierarchies, and with a PRISM model in which each stage chooses which obligations hold, on \resMonoPrism{}: \resMonoDisagreements{} disagreements. \textbf{E8.} Replaying \resContinuityCompared{} preserved decisions of an earlier study through the engine gave \resContinuityDisagreements{} disagreements.
+Residual lists were also compared with a computation that follows each path using the equations, yielding \resDiffResidualDisagreements{} disagreements. Adequacy checks compared the equations with the reference on \resAdequacyTerms{} terms and models for $\chk$, the decision semantics, and $\models$, with \resAdequacyFailures{} failures.
+
+\textbf{E5.} We applied mutations to the checker, engine, certificate, and fingerprint code. Of \resMutationTotal{} mutants, the differential oracle alone detected \resMutationDifferential{}, and a further \resMutationCrash{} crashed or hung. Unit tests killed another \resMutationUnit{} mutants missed by the random oracle. The random generator does not produce cycles, stages that raise exceptions, or missing certificates, leaving these cases to unit tests.
+
+We added those unit tests after inspecting survivors from earlier runs. The combined count of \resMutationKilled{} killed mutants is therefore biased upward as a measure of the original test suite's effectiveness; the differential count better represents the random oracle's performance. We inspected all \resMutationSurvived{} survivors. Of these, \resMutationEquivalent{} were classified as equivalent, including changes to type annotations and changes whose effects exact exploration corrects. The remaining \resMutationGaps{} expose untested differences: three affect the form of a digest, and one changes which of two rejection errors is raised. The artifact records the classification.
+
+\textbf{E6.} We replayed all \resDiffWitnesses{} rejection witnesses, each represented as a complete model, through an engine with the composition check disabled. Every witness was accepted on the reported route, satisfied the contract relation $\models$, and violated the reported goal, with \resDiffWitnessFailures{} failures.
+
+\textbf{E7.} We compared checker verdicts with a Z3 encoding of Fig.~\ref{fig:semantics} on \resMonoZthree{} hierarchies and with a PRISM model on \resMonoPrism{} hierarchies. In the PRISM model, each stage chooses which obligations hold. These comparisons produced \resMonoDisagreements{} disagreements.
+
+\textbf{E8.} Replaying \resContinuityCompared{} preserved decisions from an earlier study through the engine produced \resContinuityDisagreements{} disagreements.
 
 \subsection{RQ3: Scalability}
 \label{sec:rq3}
 
-\textbf{E9.} Fig.~\ref{fig:scale} shows checking time for accepted hierarchies. A graph of \resMillionNodes{} nodes checks in at most \resMillionSeconds{}~s, with fitted log-log slopes \resSlopeChain{} and \resSlopeDiamonds{} over the sizes from ten thousand nodes up. Slopes above $1$ may come from Python's memory behavior, which we did not verify; the argument for near-linearity is Theorem~\ref{thm:complexity}. Rejection is cheap to decide and costlier to explain: a chain in which every guard fails took \resRejectedDecision{}~s at \resRejectedDecisionNodes{} nodes without witnesses (slope \resSlopeRejectedDecision{}), while storing a path per finding is quadratic (slope \resSlopeRejectedWitness{}, \resRejectedWitness{}~s at \resRejectedWitnessNodes{} nodes). Goals cost little: \resGoalsMax{} goals on \resGoalsNodes{} nodes took \resGoalsMaxSeconds{}~s. With \resLayersCount{} separate full-scope layers and \resLayersGoals{} goals, a specification of over fifty million scope entries, it took \resLayersSeconds{}~s. Exploration is exponential on a family built for it, with \resFlowStates{} states and \resFlowSeconds{}~s at depth \resFlowDepth{}. Observed hierarchies are small (E15), so these limits matter mainly as bounds on continuous-integration cost.
+\textbf{E9.} Figure~\ref{fig:scale} shows checking times for accepted hierarchies. Graphs with \resMillionNodes{} nodes were checked in at most \resMillionSeconds{}~s. For sizes of ten thousand nodes and above, the fitted log-log slopes were \resSlopeChain{} for chains and \resSlopeDiamonds{} for diamonds. Python's memory behavior may explain slopes above $1$, but we did not investigate this explanation. The formal basis for near-linear complexity is Theorem~\ref{thm:complexity}.
+
+Producing explanations costs more than deciding rejection. For a chain in which every guard fails the composition condition, checking without witnesses took \resRejectedDecision{}~s at \resRejectedDecisionNodes{} nodes, with a fitted slope of \resSlopeRejectedDecision{}. Storing a separate path for each finding incurred quadratic growth: the fitted slope was \resSlopeRejectedWitness{}, and checking took \resRejectedWitness{}~s at \resRejectedWitnessNodes{} nodes.
+
+Increasing the number of goals had a modest cost in the goal sweep: checking \resGoalsMax{} goals on \resGoalsNodes{} nodes took \resGoalsMaxSeconds{}~s. A larger specification with \resLayersCount{} distinct full-scope layers and \resLayersGoals{} goals, totaling over fifty million scope entries, took \resLayersSeconds{}~s. On the family designed to require exponential exploration, the checker explored \resFlowStates{} states in \resFlowSeconds{}~s at depth \resFlowDepth{}. The configurations observed in E15 are small, so these scale limits primarily characterize the potential cost of checking in continuous integration.
 
 \begin{figure}[!t]
 \centering
@@ -1772,7 +1806,7 @@ Result & Goals & Z3 & cvc5 \\
 \label{fig:scale}
 \end{figure}
 
-Table~\ref{tab:versus} compares alternatives on hierarchies with $2^{d}$ paths and eight goals. Path enumeration stops at depth \resPathMaxDepth{}. Monolithic verification does not suffer from path explosion here, because with the goals fixed the state space stays small: PRISM decided every depth up to \resPrismMaxDepth{}, and the flow-free problem has no hard core for Z3 either. At depth \resVersusMaxDepth{}, with about $\resVersusPaths$ paths, the checker took \resVersusTintMs{}~ms and Z3 \resVersusZthreeMs{}~ms. The gain over a general verifier is a constant factor. The checker's benefits are its witness paths, routes and residual list, and that a deployment needs no solver.
+Table~\ref{tab:versus} compares the checker with alternative methods on hierarchies containing $2^{d}$ paths and eight goals. Path enumeration reached its limit at depth \resPathMaxDepth{}. The monolithic encodings avoided path explosion on this family because the fixed number of goals kept the state space small. PRISM decided every tested depth up to \resPrismMaxDepth{}, and these flow-free instances were also tractable for Z3. At depth \resVersusMaxDepth{}, representing approximately $\resVersusPaths$ paths, the checker took \resVersusTintMs{}~ms and Z3 took \resVersusZthreeMs{}~ms. Here, the checker offers a constant-factor speed advantage over a general verifier. Its additional benefits are witness paths, explicit acceptance routes, residual assumptions, and deployment without a solver.
 
 \begin{table}[!t]
 \caption{Checking Time in ms on $2^{d}$-Path Hierarchies}
@@ -1791,16 +1825,22 @@ $d$ & Nodes & Paths & \tint{} & Z3 & Enum. & PRISM \\
 \raggedright\scriptsize The worse of a safe and an unsafe variant. ``skipped'': not run after a timeout at a smaller depth.
 \end{table}
 
-\textbf{E10.} On a mix of gates and guards with a checked obligation, a decision costs about \resStageMicroseconds{}~$\mu$s of engine time per stage, or \resDecisionMs{}~ms at depth \resOverheadDepth{}. Building an engine at that depth, with checking and hashing, takes \resConstructorSeconds{}~s.
+\textbf{E10.} For hierarchies combining gates and guards with a checked obligation, decision execution required approximately \resStageMicroseconds{}~$\mu$s of engine time per stage, or \resDecisionMs{}~ms at depth \resOverheadDepth{}. Constructing an engine at that depth, including composition checking and fingerprint computation, took \resConstructorSeconds{}~s.
 
-\textbf{E11.} On \resRecertHierarchies{} random hierarchies with \resRecertMeanRoutes{} routes on average, a random change of one stage stales \resRecertMeanFraction\% of routes on average. In a cascade of \resCascadeRoutes{} routes, changing the last layer stales \resCascadeLast\% and an average layer \resCascadeMean\%. Across \resLocalityChecks{} checks that a non-stale route's event is unchanged there were \resLocalityViolations{} violations. These counts favor no one: stored labeled data could be replayed for a whole-policy bound, so the fair saving is in new labels, and it depends on where changes fall, as Section~\ref{sec:worked} shows.
+\textbf{E11.} Across \resRecertHierarchies{} random hierarchies, with an average of \resRecertMeanRoutes{} routes each, changing one randomly selected stage made certificates stale for an average of \resRecertMeanFraction\% of routes. In a cascade with \resCascadeRoutes{} routes, changing the last layer affected \resCascadeLast\% of routes, whereas the average across layer changes was \resCascadeMean\%. We performed \resLocalityChecks{} checks that acceptance events on unaffected routes remained unchanged and found \resLocalityViolations{} violations.
+
+These counts alone do not establish a cost advantage over whole-policy recertification, which can also replay stored labeled data. A fair comparison should measure the need for new labels. Any saving depends on where the change occurs, as the worked example in Section~\ref{sec:worked} illustrates.
 
 \subsection{RQ4: Real Configurations and Published Designs}
 \label{sec:rq4}
 
-\textbf{E15.} We analyzed the \resCorpusConfigs{} example configurations in the NeMo Guardrails repository at one commit, including Colang 2 flows and agent hook rails, and classified rails by name, with rules given in the artifact. \resCorpusWithRails{} configurations have real rails, using \resCorpusFlows{} distinct flows. The median has \resCorpusMedian{} stages and the largest \resCorpusMax{}. The framework has no escalation construct: a stage's rails form a chain in which any rail can stop the request. Of the rails, \resCorpusLlm{} are prompted LLM tasks, \resCorpusService{} other models or external services, \resCorpusDeterministic{} deterministic, and \resCorpusTransforming{} rewrite their input, which our language cannot express. \resCorpusAllStat{} configurations are entirely statistical. \resCorpusAllDet{} are entirely deterministic, including regex rails for coding-agent hooks, and \resCorpusTool{} guard tool calls. So these configurations are short chains, mostly of learned stages, on text and not on actions. For such a chain the graph analysis of this paper is trivial, and the output of interest is its list of assumptions. Examples are written to teach a feature, so a stage count says little about production, and the corpus is one framework. It gives no evidence that escalation hierarchies are common; these appear in research designs and in our example. No configuration in it provides facts in our sense, so the results of Section~\ref{sec:complexity} on flow have no observed instance here.
+\textbf{E15.} We analyzed \resCorpusConfigs{} example configurations from a single commit of the NeMo Guardrails repository, including Colang 2 flows and agent hook rails. Rails were classified by name using the rules recorded in the artifact. Of these configurations, \resCorpusWithRails{} contain guardrails, using \resCorpusFlows{} distinct flows. The median configuration has \resCorpusMedian{} stages, and the largest has \resCorpusMax{}. The framework has no escalation construct: the rails within a stage form a chain in which any rail can stop the request.
 
-\textbf{E13.} We wrote specifications of published designs from their publications, applying the two uniform obligations of Section~\ref{sec:practice}. These are our models, by one modeller; the first version of them was edited after results, and the verdicts turn directly on the rule, so this experiment is exploratory and we read it as an illustration. A rejection means that the description, under the rule, does not state what the composition needs. It does not mean that a system is insecure. Table~\ref{tab:cases} gives the verdict under a benign and an adversarial threat model, and the obligations that would make each design pass under the adversarial one.
+The rail classification identified \resCorpusLlm{} prompted LLM tasks, \resCorpusService{} other models or external services, \resCorpusDeterministic{} deterministic rails, and \resCorpusTransforming{} rails that rewrite their inputs. The rewriting rails cannot be expressed in our language. Among the configurations, \resCorpusAllStat{} are entirely statistical, \resCorpusAllDet{} are entirely deterministic, and \resCorpusTool{} guard tool calls. The deterministic configurations include regex rails for coding-agent hooks.
+
+These examples are predominantly short chains of learned stages operating on text rather than actions. For such chains, the graph analysis is straightforward; the main output of interest is the list of assumptions. However, teaching examples from one framework do not establish the structure of production deployments. The corpus provides no evidence that escalation hierarchies are common, although these occur in published research designs and in DevAgent. No examined configuration provides facts in the sense of our calculus, so the corpus contains no observed instance of fact propagation to which the corresponding results in Section~\ref{sec:complexity} apply.
+
+\textbf{E13.} We modeled published designs from their publications, applying the two uniform obligations defined in Section~\ref{sec:practice}. One modeller produced all specifications, and the initial models were revised after inspecting results. Because the verdicts depend directly on the encoding rule, we treat this experiment as an exploratory illustration. A rejection indicates that the published description, interpreted under that rule, does not supply the assumptions needed to justify the composition; it does not establish that the deployed system is insecure. Table~\ref{tab:cases} reports verdicts under benign and adversarial threat models, together with the obligations supporting an adversarial acceptance or needed to obtain one.
 
 \begin{table*}[!t]
 \caption{Designs as Modelled in \Hsl{}: Verdict per Threat Model, Routes, and What Would Flip the Adversarial Verdict (Exploratory)}
@@ -1816,25 +1856,33 @@ Design & Benign & Adversarial & Routes & Obligations that the adversarial verdic
 \end{tabular}
 \end{table*}
 
-NeMo Guardrails~\cite{arxiv231010501} and LlamaFirewall~\cite{arxiv250503574} state measurements, not bounds for a deployment, for their learned stages, and so their goals remain open under the rule even with a benign threat model. Measured performance is reported there: LlamaFirewall reports reduced attack success on AgentDojo at a modest cost in utility. A deployment that certifies its stages supplies the obligation, as the table shows. Our analysis adds only the list of claims it would have to supply. NeMo addresses conversational applications, and its authors recommend combining rail types. CaMeL~\cite{arxiv250318813} passes under both threat models with its residual assumptions, among them a trusted query and adequate policies, since in our model its planner reads only the trusted query. Labeling the planner as raw would reject it, so this verdict repeats the design's own premise. The model simplifies: planning is a generation step, and failed policies may ask the user. Trust or Escalate~\cite{arxiv240718370} and Conformal Arbitrage~\cite{arxiv250600911} pass only with a benign threat model, which is theirs: neither is a security mechanism, Trust or Escalate concerns evaluation of model outputs, and Conformal Arbitrage has one threshold and a whole-policy expected-loss guarantee, which our route model simplifies.
+NeMo Guardrails~\cite{arxiv231010501} and LlamaFirewall~\cite{arxiv250503574} report measurements for their learned stages rather than bounds for a particular deployment. Under our encoding rule, their goals therefore remain open even under the benign threat model. This finding does not negate their reported performance: LlamaFirewall, for example, reports reduced attack success on AgentDojo at a modest utility cost. Certifying the stages for a deployment would supply the missing obligation. Our analysis identifies the claims that such a deployment would need to support. NeMo focuses on conversational applications, and its authors recommend combining rail types.
+
+CaMeL~\cite{arxiv250318813} passes under both threat models, conditional on its residual assumptions, including a trusted query and adequate policies. Our model assumes that its planner reads only the trusted query. Classifying that planner's view as raw would cause rejection, so the verdict depends on the design's stated isolation premise. The encoding also simplifies the design: planning generates proposals, and policy failures may lead to a user query.
+
+Trust or Escalate~\cite{arxiv240718370} and Conformal Arbitrage~\cite{arxiv250600911} pass only under the benign threat model, which matches their intended setting. Neither is presented as a security mechanism. Trust or Escalate concerns the evaluation of model outputs, while Conformal Arbitrage uses one threshold and provides a whole-policy expected-loss guarantee. Our route model simplifies the latter guarantee.
 
 \subsection{Failures, Deviations and Continuity}
 \label{sec:failures}
 
-Reviews of earlier versions of this study found defects, recorded in the artifact's errata with the first results. In brief: a reported measurement had been a constant; the contract-satisfaction code had not been executed by any experiment; the fingerprint omitted checked predicates and closures, so a stale certificate could stay open; the first statement of Theorem~\ref{thm:risk} was false; assumption lists omitted provided facts and veto stages that matter only through their facts; a first corpus extraction lost the Colang 2 configurations; and the PRISM model had the crediting rule built in, which also made it seem to explode. All are fixed and the experiments rerun. Our own attempt to prove a generalized meet lemma found it false, which led to Theorem~\ref{thm:complexity}. Earlier, E9 had shown a quadratic cost in the number of goals, since removed. Deviations from the protocol are marked in Table~\ref{tab:exps}; E12's literal rule failed on two laws in the first run and was relaxed afterwards.
+Reviews of earlier versions identified defects documented in the artifact's errata alongside the original results. A reported measurement was a constant, and no experiment exercised the contract-satisfaction code. Fingerprints omitted checked predicates and closures, allowing stale certificates to remain open. The initial statement of Theorem~\ref{thm:risk} was false. Assumption lists omitted dependencies involving provided facts and veto stages whose only contribution was to provide facts. The initial corpus extraction missed the Colang 2 configurations. Finally, the PRISM model incorporated the checker's crediting rule, compromising its role as an alternative encoding and making it appear to suffer from state-space explosion. These defects were corrected and the experiments rerun.
 
-An earlier preregistered scripted study of one fixed pipeline remains in the artifact. Its certificate requirement refused deployment in all \resPrimarySeeds{} primary seeds, which exposed a floating-point defect in a scripted scorer; any acceptance test on joint risk would have done the same. After the fix, certification changed no decision. A simple provenance rule reached lower risk than the full pipeline, because the sandbox could not exercise semantic guards, and no semantic mechanism resisted a distribution shift that the residual list had predicted. These results stand. They are consistent with the preference for deterministic establishment that Theorem~\ref{thm:order} and Table~\ref{tab:attackers} express, and they give no evidence that semantic guards work.
+An attempted proof of a generalized meet lemma also revealed that the lemma was false, leading to Theorem~\ref{thm:complexity}. Earlier E9 runs exposed quadratic growth in the number of goals; that implementation cost has since been removed. In particular, E12 failed the original literal decision rule on two laws in the first run, and the rule was relaxed afterward.
+
+The artifact retains an earlier preregistered scripted study of a fixed pipeline. Its certificate requirement prevented deployment in all \resPrimarySeeds{} primary seeds, exposing a floating-point defect in a scripted scorer. Any acceptance test based on joint risk would have detected the same issue. After the defect was corrected, certification changed no decisions. A simple provenance rule achieved lower risk than the full pipeline because the sandbox could not exercise semantic guards. Moreover, no semantic mechanism withstood a distribution shift associated with an assumption identified by the residual list. These results remain part of the record. They are consistent with the preference for deterministic establishment expressed by Theorem~\ref{thm:order} and Table~\ref{tab:attackers}, but provide no evidence of semantic guard effectiveness.
 
 \subsection{Threats to Validity}
 \label{sec:threats}
 
-\textbf{Internal.} One author wrote the calculus, checker, reference, encodings and specifications, so oracles share assumptions; the proofs tie the reference to the equations only on sampled terms. The script applying induction is unchecked. An obligation could be misstated and still pass, although mutants and adequacy tests reduce that risk. The runs were made on one day from uncommitted code; a later audit of the paper against the code then found that the engine accepted invalid confidence shares and omitted slot state from the identity of a callable object. After we corrected both and added tests, we reran E3 to E6 and E11 to E14: only the mutant counts of E5 changed, because the corrected code adds mutation sites. E1, E2, E7 to E10 and E15 were not rerun. Hand classification of mutants and the addition of unit tests after seeing survivors bias E5. The mutation operators are a small set.
+\textbf{Internal.} One author developed the calculus, checker, reference interpreter, encodings, and specifications, creating a risk of shared assumptions across the test oracles. Correspondence between the reference and the equations is checked only on sampled terms, and the script applying the induction schema is not itself verified. A proof goal could therefore be misstated and still be proved, although definition mutants and adequacy tests reduce this risk.
 
-\textbf{Construct.} ``Safe'' is relative to declared goals and contracts: weak goals are easily safe, a false contract voids the guarantee, and an assumed obligation can be written down to silence a rejection. Safety says nothing about utility: the calculus would accept a hierarchy that denies nearly everything. Per-decision risk is not session harm. A joint bound can look small because attacks are rare.
+%The runs were conducted on one day using uncommitted code. A later audit comparing the manuscript with the implementation found that the engine accepted invalid confidence shares and omitted slot state when identifying callable objects. After correcting both defects and adding tests, we reran E3--E6 and E11--E14. Only E5's mutant counts changed, because the corrections introduced additional mutation sites. E1, E2, E7--E10, and E15 were not rerun. Manual classification of mutants and the addition of unit tests after inspecting survivors bias E5, and the mutation operators cover only a limited set of changes.
 
-\textbf{External.} The corpus is one framework's teaching examples. The designs were modelled by one person from publications, with no check by their authors and no second modeller. The language cannot express rewriting or voting, and the synthetic families show structure and not typical deployments. Timings come from one machine and a Python implementation, and PRISM's symbolic engines were unavailable. Nothing here involves a practitioner.
+\textbf{Construct.} Safety is relative to the declared goals and contracts. Weak goals are easy to satisfy, false contracts invalidate the corresponding guarantees, and declaring an assumed obligation can silence a rejection without establishing that obligation. Safety also does not imply utility: the calculus accepts a hierarchy that denies nearly every proposal. Per-decision risk does not capture harm accumulated across a session, and a small joint-risk bound may reflect rare attacks rather than effective detection.
 
-\textbf{Conclusion.} In E12 and E12b coverage holds up to Monte Carlo error; E12b's laws are small and its generator ours. Node slopes sit near the protocol's limit, and the theorem rather than the fit is the argument for near-linearity.
+\textbf{External.} The language cannot directly express rewriting or voting, and the synthetic families isolate structural properties rather than represent typical deployments. Timings come from one machine and a Python implementation; PRISM's symbolic engines were unavailable. No practitioners participated in the evaluation.
+
+\textbf{Conclusion.} The coverage estimates in E12 and E12b are consistent with nominal coverage within Monte Carlo sampling error. However, E12b uses small finite probability laws generated by our own procedure. The fitted node-scaling slopes are close to the protocol's threshold, so Theorem~\ref{thm:complexity}, rather than the empirical fits alone, supports the claim of near-linear complexity.
 
 % =====================================================================
 \section{Related Work}
@@ -2195,8 +2243,6 @@ executed in under one minute on a laptop CPU, without
 requiring a GPU or API key. The evaluation corpus includes
 only the guardrail-related sections of publicly available
 configurations, together with their source commit identifiers.
-The generated datasets are released under the CC0 license,
-and the source code is distributed under the MIT license.
 
 
 \section*{Ethics Statement}
