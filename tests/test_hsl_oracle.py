@@ -577,3 +577,114 @@ def test_route_without_an_allocated_share_cannot_open():
     certificates = certify(base, [(PROPOSAL, False)] * 50, .05, routes=['b'], share=.01)
     with pytest.raises(SpecError):
         engine(h, {'open': always(Verdict.ESCALATE)}, statistical=G, shares={'a': .01}, certificates=certificates)
+
+
+ALLOWING = always(Verdict.ALLOW)
+TWO_ROUTES = hierarchy([Guard('a', 'open', NONE, 'b'), Guard('b', 'open', NONE, None)])
+
+
+def certificate_for(route, delta):
+    base = engine(TWO_ROUTES, {'open': ALLOWING}, statistical=G)
+    return RouteCertificate(route, base.fingerprints[route], '', .01, delta, 100)
+
+
+@pytest.mark.parametrize('shares', [
+    {'a': .4, 'b': -.35},
+    {'a': float('nan'), 'b': 0},
+    {'a': float('inf'), 'b': 0},
+    {'a': -float('inf'), 'b': 0},
+    {'a': 1.5, 'b': 0},
+    {'a': True, 'b': 0},
+    {'a': '0.01', 'b': 0},
+    {'a': .01, 'b': .01, 'unbuilt': -1},
+])
+def test_invalid_confidence_shares_are_refused(shares):
+    with pytest.raises(SpecError):
+        engine(TWO_ROUTES, {'open': ALLOWING}, statistical=G, shares=shares, certificates=[certificate_for('a', .4)])
+
+
+@pytest.mark.parametrize('value', [float('nan'), float('inf'), -.01, 1.5, True, None])
+@pytest.mark.parametrize('name', ['delta', 'budget'])
+def test_invalid_budgets_are_refused(name, value):
+    with pytest.raises(SpecError):
+        engine(TWO_ROUTES, {'open': always(Verdict.ALLOW)}, statistical=G, **{name: value})
+
+
+def test_shares_may_reserve_confidence_for_later_routes():
+    reserved = engine(TWO_ROUTES, {'open': always(Verdict.ESCALATE)}, statistical=G, shares={'a': .02, 'b': 0, 'unbuilt': .03})
+    assert reserved.shares['unbuilt'] == .03
+
+
+def test_zero_share_cannot_open_a_route():
+    with pytest.raises(SpecError):
+        engine(TWO_ROUTES, {'open': ALLOWING}, statistical=G, shares={'a': 0, 'b': .05}, certificates=[certificate_for('a', .01)])
+
+
+class SlotGuard:
+    __slots__ = ('accept',)
+
+    def __init__(self, accept):
+        self.accept = accept
+
+    def __call__(self, view):
+        return Verdict.ALLOW if self.accept else Verdict.BLOCK
+
+
+class InheritedSlotGuard(SlotGuard):
+    __slots__ = ('extra',)
+
+
+class StringSlotGuard:
+    __slots__ = 'value'
+
+    def __init__(self, value):
+        self.value = value
+
+    def __call__(self, view):
+        return Verdict.BLOCK
+
+
+class PrivateSlotGuard:
+    __slots__ = ('__value',)
+
+    def __init__(self, value):
+        self.__value = value
+
+    def __call__(self, view):
+        return Verdict.BLOCK
+
+
+@pytest.mark.parametrize('make', [SlotGuard, InheritedSlotGuard, StringSlotGuard, PrivateSlotGuard])
+def test_digest_of_a_callable_covers_its_slots(make):
+    from tint.hsl.engine import component_digest
+    assert component_digest(make(1)) != component_digest(make(2))
+    assert component_digest(make(1)) == component_digest(make(1))
+
+
+def test_digest_of_a_callable_with_an_unset_slot():
+    from tint.hsl.engine import component_digest
+    assert component_digest(InheritedSlotGuard(1))
+
+
+def test_slot_change_closes_the_old_certificate():
+    h = hierarchy([Guard('a', 'open', NONE, None)])
+    old = engine(h, {'open': SlotGuard(False)}, statistical=G)
+    stale = RouteCertificate('a', old.fingerprints['a'], '', .01, .05, 100)
+    new = engine(h, {'open': SlotGuard(True)}, statistical=G, certificates=[stale])
+    assert not new.open and new.evaluate(PROPOSAL).reason == 'route not certified'
+
+
+def test_rebuilding_after_a_change_in_place_closes_the_certificate():
+    h = hierarchy([Guard('a', 'open', NONE, None)])
+    guard = SlotGuard(False)
+    old = engine(h, {'open': guard}, statistical=G)
+    stale = RouteCertificate('a', old.fingerprints['a'], '', .01, .05, 100)
+    assert engine(h, {'open': guard}, statistical=G, certificates=[stale]).open
+    guard.accept = True
+    assert not engine(h, {'open': guard}, statistical=G, certificates=[stale]).open
+
+
+def test_reporting_explores_where_decision_mode_need_not():
+    h = hierarchy([Gate('v', 'r', 'g', 'a', None, NONE, frozenset({'o'})), Guard('a', 'open', NONE, None)], obligations=(OB,))
+    assert check(h).ok and check(h).exact_states > 0
+    assert check(h, witnesses=False).ok and check(h, witnesses=False).exact_states == 0

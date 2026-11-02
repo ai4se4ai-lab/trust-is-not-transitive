@@ -392,14 +392,14 @@
 \newcommand{\resDiffMeanReachable}{6.0}
 \newcommand{\resAdequacyTerms}{600}
 \newcommand{\resAdequacyFailures}{0}
-\newcommand{\resMutationTotal}{419}
-\newcommand{\resMutationKilled}{387}
+\newcommand{\resMutationTotal}{428}
+\newcommand{\resMutationKilled}{396}
 \newcommand{\resMutationSurvived}{32}
 \newcommand{\resMutationEquivalent}{28}
 \newcommand{\resMutationGaps}{4}
 \newcommand{\resMutationDifferential}{93}
-\newcommand{\resMutationCrash}{175}
-\newcommand{\resMutationUnit}{119}
+\newcommand{\resMutationCrash}{183}
+\newcommand{\resMutationUnit}{120}
 \newcommand{\resMonoZthree}{3000}
 \newcommand{\resMonoPrism}{200}
 \newcommand{\resMonoDisagreements}{0}
@@ -606,7 +606,7 @@ These questions arise because each stage's guarantee is conditional, and that is
 
 \textbf{Our approach.} We model a hierarchy as a term of a small calculus in which each guard is constrained only by its contract. Evidence for a contract belongs to a single invocation of a stage, and it moves forward in exactly one way: a \emph{gate} whose contract applies can \emph{provide} a fact that later stages may use, whereas a guard's verdict provides nothing. From these rules follows a composition condition, which an automated checker decides and, when it fails, explains with witnesses.
 
-\textbf{Contributions.}
+\textbf{Contributions.} This study makes the following contributions.
 \begin{enumerate}
 \item \textbf{Formal modeling.} A calculus of guardrail hierarchies and a specification language, \Hsl{}, for acyclic hierarchies (Section~\ref{sec:calculus}).
 \item \textbf{Composition verification.} A composition condition with proofs of soundness and of completeness relative to free stages, and a complexity classification (Section~\ref{sec:verify}).
@@ -626,27 +626,212 @@ These questions arise because each stage's guarantee is conditional, and that is
 \textbf{Scope.} We ask whether a composition is justified given its parts' contracts. We do not ask whether any LLM meets a contract, and we make no claim that any agent became safer. No LLM is run in the study: a theorem over all contract-respecting guards needs no sample of them. Against an adaptive attacker a statistical contract may simply be false, and Table~\ref{tab:attackers} states what then remains.
 
 
-% =====================================================================
-\section{Background}
-\label{sec:background}
-% =====================================================================
+% % =====================================================================
+% \section{Background}
+% \label{sec:background}
+% % =====================================================================
 
-\textbf{Guardrails.} Guardrails intercept the proposed actions of a tool-using agent. They include deterministic rules, classifiers for injection and harmful content~\cite{arxiv231206674,arxiv240618495,arxiv250118837}, LLM-based checks of an action against the user's goal~\cite{arxiv250503574,arxiv241216682} and human approval. The central threat is \emph{indirect prompt injection}, in which text read as data contains instructions the agent follows~\cite{arxiv230212173}. Guardrail products can be evaded~\cite{arxiv250411168}. A guard that reads attacker text can be addressed by it, which is why the \emph{dual-LLM pattern} separates a privileged LLM that never reads untrusted text from a quarantined one with no tool access~\cite{willison2023dual}.
+% \textbf{Guardrails.} Guardrails intercept the proposed actions of a tool-using agent. They include deterministic rules, classifiers for injection and harmful content~\cite{arxiv231206674,arxiv240618495,arxiv250118837}, LLM-based checks of an action against the user's goal~\cite{arxiv250503574,arxiv241216682} and human approval. The central threat is \emph{indirect prompt injection}, in which text read as data contains instructions the agent follows~\cite{arxiv230212173}. Guardrail products can be evaded~\cite{arxiv250411168}. A guard that reads attacker text can be addressed by it, which is why the \emph{dual-LLM pattern} separates a privileged LLM that never reads untrusted text from a quarantined one with no tool access~\cite{willison2023dual}.
 
-\textbf{Monitors and information flow.} A reference monitor mediates every access and is small enough to verify~\cite{anderson1972computer,saltzer1975protection}. Execution monitors enforce safety properties of traces~\cite{schneider2000enforceable}. Information-flow control attaches labels to data and propagates them through derivations~\cite{denning1976lattice,sabelfeld2003language}.
+% \textbf{Monitors and information flow.} A reference monitor mediates every access and is small enough to verify~\cite{anderson1972computer,saltzer1975protection}. Execution monitors enforce safety properties of traces~\cite{schneider2000enforceable}. Information-flow control attaches labels to data and propagates them through derivations~\cite{denning1976lattice,sabelfeld2003language}.
 
-\textbf{Assume-guarantee contracts.} A contract $(A,G)$ states that if the environment satisfies assumption $A$, the component guarantees $G$~\cite{meyer1992applying,benveniste2018contracts}. Compositional proof rules~\cite{misra1981proofs,jones1983tentative,abadi1993composing} are sound only when every assumption is established by the environment or by another component's guarantee. Probabilistic forms of contracts exist~\cite{delahaye2011probabilistic,nuzzo2019stochastic}.
+% \textbf{Assume-guarantee contracts.} A contract $(A,G)$ states that if the environment satisfies assumption $A$, the component guarantees $G$~\cite{meyer1992applying,benveniste2018contracts}. Compositional proof rules~\cite{misra1981proofs,jones1983tentative,abadi1993composing} are sound only when every assumption is established by the environment or by another component's guarantee. Probabilistic forms of contracts exist~\cite{delahaye2011probabilistic,nuzzo2019stochastic}.
 
-\textbf{Dataflow analysis.} A forward \emph{must} analysis computes the facts that hold on every path to a program point. For distributive transfer functions the iterative solution equals the meet over all paths~\cite{kildall1973unified,kam1977monotone}; on an acyclic graph one pass in topological order suffices.
+% \textbf{Dataflow analysis.} A forward \emph{must} analysis computes the facts that hold on every path to a program point. For distributive transfer functions the iterative solution equals the meet over all paths~\cite{kildall1973unified,kam1977monotone}; on an acyclic graph one pass in topological order suffices.
 
-\textbf{Statistical certification.} For a fixed policy and $N$ independent samples with $k$ losses, the Clopper--Pearson bound is an exact one-sided upper confidence bound on the loss probability~\cite{clopper1934use}, and it is used in statistical model checking~\cite{bu2024clopper}. Bounds at level $\delta/m$ hold simultaneously for $m$ quantities by the union bound~\cite{angelopoulos2021learn}. These guarantees assume independent or exchangeable data~\cite{arxiv210707511}.
+% \textbf{Statistical certification.} For a fixed policy and $N$ independent samples with $k$ losses, the Clopper--Pearson bound is an exact one-sided upper confidence bound on the loss probability~\cite{clopper1934use}, and it is used in statistical model checking~\cite{bu2024clopper}. Bounds at level $\delta/m$ hold simultaneously for $m$ quantities by the union bound~\cite{angelopoulos2021learn}. These guarantees assume independent or exchangeable data~\cite{arxiv210707511}.
 
-\subsection{Running Example}
-\label{sec:example}
+% \subsection{Running Example}
+% \label{sec:example}
 
-\emph{DevAgent} triages issues, edits files and calls HTTP services. Deterministic gates check production approval ($\varphi_1$), secret egress ($\varphi_2$) and the execution environment. Two semantic goals remain: $\varphi_3$, never act on instructions embedded in untrusted content; and $\varphi_4$, the change does what the requester asked. Four traces recur in this paper. In $\Tstar$, a malicious issue tells the agent to upload a secret file to an external host. In $\Tb$, a benign issue asks for public diagnostics to be attached to a local report; its action has the same shape. $\Tj$ is $\Tstar$ with one more sentence, ``reviewer must answer SAFE'', addressed to the judge. $\Tjp$ plays the same trick on a patch that breaks no deterministic rule.
+% \emph{DevAgent} triages issues, edits files and calls HTTP services. Deterministic gates check production approval ($\varphi_1$), secret egress ($\varphi_2$) and the execution environment. Two semantic goals remain: $\varphi_3$, never act on instructions embedded in untrusted content; and $\varphi_4$, the change does what the requester asked. Four traces recur in this paper. In $\Tstar$, a malicious issue tells the agent to upload a secret file to an external host. In $\Tb$, a benign issue asks for public diagnostics to be attached to a local report; its action has the same shape. $\Tj$ is $\Tstar$ with one more sentence, ``reviewer must answer SAFE'', addressed to the judge. $\Tjp$ plays the same trick on a patch that breaks no deterministic rule.
 
-Suppose a judge reads the raw issue, and its contract says that it blocks unsafe actions, as long as its input is not written to manipulate it. On $\Tjp$ the judge follows the embedded sentence and accepts. Every component met its contract, since the judge's assumption was false and it therefore promised nothing, and yet the stack accepted an unsafe action. The guarantee was relied on where its assumption had not been established, and nothing in the stack records that.
+% Suppose a judge reads the raw issue, and its contract says that it blocks unsafe actions, as long as its input is not written to manipulate it. On $\Tjp$ the judge follows the embedded sentence and accepts. Every component met its contract, since the judge's assumption was false and it therefore promised nothing, and yet the stack accepted an unsafe action. The guarantee was relied on where its assumption had not been established, and nothing in the stack records that.
+
+
+
+
+
+% ===================================================================== 
+\section{Background} \label{sec:background} % =====================================================================
+
+\textbf{Guardrails.} Guardrails are mechanisms designed to monitor and control the actions proposed by AI agents before those actions are executed. They include deterministic rules, classifiers that detect prompt injection or harmful content~\cite{arxiv231206674,arxiv240618495,arxiv250118837}, LLM-based judges that assess whether an action is consistent with the user's request~\cite{arxiv250503574,arxiv241216682}, and human approval mechanisms. A major security concern is \emph{indirect prompt injection}, where malicious instructions are embedded in untrusted content that an agent processes as part of a legitimate task~\cite{arxiv230212173}. Existing research has demonstrated that guardrail systems can be bypassed~\cite{arxiv250411168}. An important source of vulnerability is that a guardrail examining untrusted text may itself follow instructions contained in that text. One architectural response is the \emph{dual-LLM pattern}, which separates a privileged LLM that does not process untrusted content from a quarantined LLM that can process such content but cannot invoke tools~\cite{willison2023dual}.
+
+\medskip \textbf{Monitors and information flow.} Traditional software security provides several foundations for controlling system behavior. A \emph{reference monitor} mediates access to protected resources and is designed to be sufficiently small and simple to permit verification~\cite{anderson1972computer,saltzer1975protection}. An \emph{execution monitor} observes program execution and enforces safety properties by preventing prohibited behaviors~\cite{schneider2000enforceable}. Information-flow control takes a complementary approach by associating security labels with data and propagating these labels as information moves through a system~\cite{denning1976lattice,sabelfeld2003language}. These concepts motivate explicit reasoning about what information a guardrail receives, which properties it can establish, and whether subsequent stages can safely rely on those properties.
+
+\medskip \textbf{Assume-guarantee contracts.} An assume-guarantee contract $(A,G)$ specifies the conditions under which a component's guarantees are valid. Specifically, the component guarantees property $G$ provided that its environment satisfies assumption $A$~\cite{meyer1992applying,benveniste2018contracts}. Compositional reasoning uses such contracts to establish system-level properties from the guarantees of individual components~\cite{misra1981proofs,jones1983tentative,abadi1993composing}. However, this reasoning is sound only if every assumption required by a component is established by its environment or by guarantees provided by other components. Otherwise, a component may satisfy its contract without providing the property expected by the overall system. Probabilistic extensions allow contracts to express statistical guarantees rather than exclusively deterministic properties~\cite{delahaye2011probabilistic,nuzzo2019stochastic}.
+
+\medskip \textbf{Dataflow analysis.} Dataflow analysis determines which properties hold at different points in a program. In particular, a forward \emph{must} analysis identifies facts that hold along every path reaching a given program point. For distributive transfer functions, the iterative solution is equivalent to the intersection of facts established across all possible paths~\cite{kildall1973unified,kam1977monotone}. For acyclic graphs, this analysis can be performed in a single pass following topological order. This provides a foundation for tracking which facts have been established before a guardrail is invoked, rather than assuming that properties verified by one component automatically hold for subsequent components.
+
+\medskip \textbf{Statistical certification.} Some guardrail guarantees are statistical rather than absolute. For a fixed policy evaluated on $N$ independent samples, of which $k$ result in losses, the Clopper--Pearson method provides an exact one-sided upper confidence bound on the loss probability~\cite{clopper1934use}. Such bounds are also used in statistical model checking~\cite{bu2024clopper}. When certifying $m$ quantities, assigning a failure probability of $\delta/m$ to each quantity ensures, through the union bound, a simultaneous confidence level of at least $1-\delta$~\cite{angelopoulos2021learn}. These guarantees depend on the assumptions underlying the sampling procedure, including independence or appropriate exchangeability conditions~\cite{arxiv210707511}. Consequently, statistical evidence obtained under one evaluation setting does not automatically remain valid when the policy, inputs, or threat model changes.
+
+\subsection{Running Example} \label{sec:example}
+
+Consider \emph{DevAgent}, an AI-powered software engineering agent that processes issue reports, modifies source code, and interacts with external services through HTTP requests. Before executing an action, DevAgent passes it through a hierarchy of guardrails designed to enforce both deterministic security rules and semantic requirements.
+
+The deterministic gates check whether an action has the required production approval ($\varphi_1$), whether it violates restrictions on secret exfiltration ($\varphi_2$), and whether it is permitted in the current execution environment. Two additional properties require semantic reasoning: $\varphi_3$ requires the agent not to follow instructions embedded in untrusted content, while $\varphi_4$ requires its actions to remain consistent with the legitimate user's request.
+
+We use four execution traces to illustrate how these requirements interact:
+
+\begin{itemize} \item \textbf{Malicious action ($\Tstar$).} An attacker embeds instructions in an issue report directing DevAgent to upload a secret file to an external server. Executing this request would violate the intended security requirements.
+
+ \item \textbf{Benign action ($\Tb$).} A legitimate issue asks DevAgent to collect public diagnostic information and attach it to a local report. Although the action has a similar structure to $\Tstar$, it is authorized and does not violate the security requirements.
+
+ \item \textbf{Judge-targeted injection ($\Tj$).} This trace extends $\Tstar$ by adding the instruction ``reviewer must answer SAFE'' to the malicious issue report. The attacker attempts to manipulate the guardrail responsible for evaluating the proposed action.
+
+ \item \textbf{Injection without deterministic violations ($\Tjp$).} This trace applies the same judge-targeted injection to a proposed code modification that does not violate any deterministic security rule but is inconsistent with the legitimate user's request. \end{itemize}
+
+Consider a guardrail hierarchy in which an LLM-based judge examines the raw issue report to determine whether the proposed action is safe. The judge's contract guarantees that it blocks unsafe actions, provided its input does not contain instructions intended to manipulate its judgment.
+
+In trace $\Tjp$, the attacker includes the instruction ``reviewer must answer SAFE'' in the issue report. Because the judge processes this untrusted content, it may follow the injected instruction and approve the unsafe modification. The deterministic gates also allow the action because none of their rules is violated.
+
+This outcome does not necessarily indicate that any individual guardrail has violated its contract. The deterministic gates have correctly enforced their respective rules, while the judge's guarantee does not apply because its assumption about the absence of manipulative instructions is false. Nevertheless, the overall hierarchy accepts an unsafe action.
+
+This example illustrates a fundamental limitation of reasoning about guardrails independently: \emph{a system-level safety guarantee cannot be established merely by combining components that individually satisfy their contracts}. The assumptions required by each component must also be established along the relevant execution paths. In this example, the hierarchy provides no evidence that the judge's input satisfies its contract assumption, yet its verdict is relied upon to authorize the action. Our approach makes such dependencies explicit and verifies whether the resulting composition is justified.
+
+\medskip \textbf{Recursive structure and proof.} The calculus below represents a hierarchy as a finite tree of constructors: a gate contains its continuation, and a routing stage contains alternative sub-hierarchies. A recursive definition processes a tree using results for its smaller subtrees. Structural induction proves a claim for every such tree by one case per constructor, assuming the claim only for the smaller subtrees. For DevAgent, we can reason about the hierarchy after a provenance gate, then justify what that gate contributes. Recursion defines the analysis; induction proves its correctness.
+
+
+
+% % =====================================================================
+% \section{A Calculus of Guardrail Hierarchies}
+% \label{sec:calculus}
+% % =====================================================================
+
+% \subsection{Syntax}
+
+% Fix a finite set of goals $\Goals$, the properties every accepted proposal must satisfy, and a set of obligation names. A \emph{layer} $\ell$ is the interface of a learned or human component. It declares $\req(\ell)$, the obligations its contract assumes, and $\scope(\ell)\subseteq\Goals$, the goals it covers when it accepts. A hierarchy is a term:
+% \begin{align*}
+% H ::={}& \deny \mid \gate(n,\varphi,\ell,\Omega,D,H)\\
+% \mid{}& \guard(n,\ell,\Omega,H) \mid \switch(n,H,H)
+% \end{align*}
+% Here $n$ is a node identifier, and $\Omega$ is the \emph{evidence}: the obligations that the specification declares to hold for this one invocation. Evidence is a declaration. Nothing in the term makes it true, which is why the semantics below needs a separate component for what actually holds, and why declared evidence that is not established at runtime ends up on a list of assumptions.
+
+% A \emph{gate} can only stop a proposal. If it passes and its contract applies, it establishes the goal $\varphi$, if it has one ($\varphi$ may be absent, written $\bot$), and provides the facts $D$, which are obligations that hold from then on. A gate whose layer is the distinguished empty layer $\epsilon$ is a \emph{deterministic gate}, a reference monitor that decides $\varphi$ exactly. Any other gate is a \emph{veto stage}, such as a classifier that can only reject. A \emph{guard} can end a decision by accepting, can reject, or can pass the proposal on by escalating. A \emph{switch} routes on a condition and teaches the analysis nothing: taking a branch establishes no fact, even if the condition looks like a test, because a switch has no contract. To learn something, a stage must be a gate. Leaving the hierarchy denies, because $\deny$ is the only leaf. Every acceptance is therefore the act of a named guard, and we call each guard a \emph{route}, the way a proposal can get through. A stack with no such stage is modelled with a final guard of empty scope that releases what reaches it.
+
+% \subsection{Semantics}
+
+% We do not model what a stage computes. We model what could happen. For one proposal, a \emph{model} $M=(P,V,W,E,S)$ fixes every stage's behavior: $P(n)$ says whether gate $n$ passes, $V(n)\in\{\acc,\blk,\esc\}$ is guard $n$'s verdict, $W(n)$ is switch $n$'s branch, $E(n)$ is the set of obligations that actually hold on invocation $n$, and $S$ is the set of goals the proposal satisfies. These components are free, meaning arbitrary: any combination of values is a possible model unless a contract excludes it. An attack is simply a model, typically one in which an obligation fails at some stage. Fig.~\ref{fig:semantics} gives the decision semantics and contract satisfaction.
+
+% \begin{figure}[!t]
+% \centering
+% \footnotesize
+% \begin{align*}
+% \sem{\deny}{M}&=\denied\\
+% \sem{\gate(n,\varphi,\ell,\Omega,D,k)}{M}&=\sem{k}{M}\text{ if }P(n),\text{ else }\denied\\
+% \sem{\guard(n,\ell,\Omega,k)}{M}&=\begin{cases}\accepted(n)&\text{if }V(n)=\acc\\\sem{k}{M}&\text{if }V(n)=\esc\\\denied&\text{if }V(n)=\blk\end{cases}\\
+% \sem{\switch(n,a,b)}{M}&=\sem{a}{M}\text{ if }W(n),\text{ else }\sem{b}{M}
+% \end{align*}
+% \hrule
+% \vspace{2pt}
+% With $\mathrm{Real}(n)\triangleq\Omega\cup F\subseteq E(n)$ (realization):
+% \begin{align*}
+% M\models_F\;&\deny\quad\text{always}\\
+% M\models_F\;&\gate(n,\varphi,\ell,\Omega,D,k)\text{ iff, when }P(n):\ \mathrm{Real}(n)\;\wedge\\
+% &\quad\text{if }\req(\ell)\subseteq E(n):\ \varphi\in S\wedge M\models_{F\cup D}k\\
+% &\quad\text{otherwise: }M\models_F k\\
+% M\models_F\;&\guard(n,\ell,\Omega,k)\text{ iff }\mathrm{Real}(n)\;\wedge\\
+% &\quad(V(n)=\acc\wedge\req(\ell)\subseteq E(n)\Rightarrow\scope(\ell)\subseteq S)\\
+% &\quad\wedge(V(n)=\esc\Rightarrow M\models_F k)\\
+% M\models_F\;&\switch(n,a,b)\text{ iff }M\models_F a\text{ if }W(n),\text{ else }M\models_F b
+% \end{align*}
+% \caption{Decision semantics (top) and contract satisfaction (bottom). $F$ is the set of facts provided so far on this run. All premises concern only the invocations this proposal reaches.}
+% \label{fig:semantics}
+% \end{figure}
+
+% $M\models_F H$ reads ``this behavior respects every contract on the invocations the proposal reaches, given facts $F$''. Three rules carry the content. \emph{Realization:} declared evidence and provided facts must hold at the invocation; a false declaration is outside the guarantee. The test in a contract is on $E(n)$, what is true, while the checker below can only see $\Omega$, what is declared, and realization links the two. \emph{Conditionality:} a promise applies only if all of the stage's obligations hold on this invocation, so a stage may do anything otherwise. \emph{Locality:} $E$ is indexed by node, so that an obligation at $n$ says nothing about any other node. A fact in $F$ reaches later stages only through a gate whose contract applied. A verdict of $\esc$ asks nothing of a guard and adds nothing to $F$. Indexing by invocation is a modelling choice, justified by how guards work: each is called on its own view of the proposal, so that what held of the scorer's input need not hold of the judge's.
+
+% \begin{definition}[Safety]
+% \label{def:safe}
+% $H$ is \emph{safe from} $(A,B)$ if for every model $M$ with $A\subseteq S$ and $M\models_B H$: if $\sem{H}{M}=\accepted(r)$ for some $r$, then $\Goals\subseteq S$. $H$ is \emph{safe} if it is safe from $(\emptyset,\emptyset)$.
+% \end{definition}
+
+% Safety holds one proposal at a time and over all behaviors, but it is conditional on contracts, and an attacker who makes a contract false is outside it. It says nothing about usefulness: $\deny$ is safe. Table~\ref{tab:attackers} separates what each attacker class leaves standing; the drift $\eta$ is the total-variation distance between the calibration and deployment distributions (Section~\ref{sec:risk}).
+
+% \begin{table}[!t]
+% \caption{What Remains Against Each Attacker Class}
+% \label{tab:attackers}
+% \centering
+% \footnotesize
+% \setlength{\tabcolsep}{3pt}
+% \begin{tabular}{@{}p{1.75cm}p{3cm}p{3.2cm}@{}}
+% \toprule
+% Attacker & Goals set by deterministic gates & Goals resting on learned stages \\
+% \midrule
+% None; drift only & hold exactly & certificate degrades by the drift $\eta$ \\
+% Fixed attacks, present in calibration & hold exactly & certificate holds for that mix \\
+% Adaptive & hold, given complete mediation & no guarantee; contract may be false \\
+% \bottomrule
+% \end{tabular}
+% \end{table}
+
+% \begin{table}[!t]
+% \caption{Sets Used in the Calculus}
+% \label{tab:sets}
+% \centering
+% \footnotesize
+% \setlength{\tabcolsep}{3pt}
+% \begin{tabular}{@{}lp{7.2cm}@{}}
+% \toprule
+% Set & Meaning \\
+% \midrule
+% $\Omega$ & obligations declared at this stage (syntax) \\
+% $D$ & facts a gate provides (syntax) \\
+% $E(n)$ & obligations actually true at invocation $n$ (model) \\
+% $S$ & goals the proposal actually satisfies (model) \\
+% $F$ & facts actually provided so far on the run (semantics) \\
+% $A,B$ & goals and facts the checker has credited so far (analysis) \\
+% \bottomrule
+% \end{tabular}
+% \\[2pt]
+% \raggedright\scriptsize The analysis tracks declarations; soundness shows that $A\subseteq S$ and $B\subseteq F$ are preserved along a run.
+% \end{table}
+
+% \subsection{The Specification Language}
+
+% \Hsl{} is the concrete syntax: a closed JSON schema declaring goals, obligations, layers and an acyclic graph of stages. Stages can share successors, and a term is the graph's unfolding along paths. Obligations carry a \emph{kind} that records how they are established. A \emph{checked} obligation has a runtime predicate, and failing it denies. A \emph{construction} obligation is true of the code, such as the single function that builds a guard's input. An \emph{assumed} obligation is the deployer's to justify. Kind does not affect the composition condition; it determines what is left to argue. An obligation may be tied to a view. Evidence tied to another view than the stage's layer is dropped before analysis, with a warning. Fig.~\ref{fig:devagent} and Listing~\ref{lst:devagent} show DevAgent.
+
+% \begin{figure}[!t]
+% \centering
+% \begin{tikzpicture}[font=\scriptsize,
+%   box/.style={draw, rounded corners=2pt, align=center, minimum height=0.55cm, inner sep=2pt, text width=0.82cm},
+%   sem/.style={box, fill=black!10},
+%   arr/.style={-{Stealth[length=1.8mm]}}]
+% \node[box] (g1) {$g_1$\\$\varphi_1$};
+% \node[box, right=0.16cm of g1] (g2) {$g_2$\\$\varphi_2$};
+% \node[box, right=0.16cm of g2] (g3) {$g_3$\\$\varphi_{\mathrm{env}}$};
+% \node[box, right=0.22cm of g3, text width=0.8cm] (s) {$s$\\tainted?};
+% \node[sem, above right=0.08cm and 0.3cm of s, text width=1.05cm] (v) {$v_2$ scorer\\veto, raw};
+% \node[sem, right=0.2cm of v, text width=1.15cm] (h) {$n_4$ human\\$\varphi_3,\varphi_4$};
+% \node[box, below right=0.08cm and 0.3cm of s, text width=1.05cm] (c) {$c$ gate\\$\varphi_3$, fact};
+% \node[sem, right=0.2cm of c, text width=1.15cm] (j) {$n_3$ judge\\$\varphi_4$};
+% \draw[arr] (g1)--(g2); \draw[arr] (g2)--(g3); \draw[arr] (g3)--(s);
+% \draw[arr] (s.east)--node[above left=-1pt,font=\tiny]{yes}(v.west);
+% \draw[arr] (s.east)--node[below left=-1pt,font=\tiny]{no}(c.west);
+% \draw[arr] (v)--(h); \draw[arr] (c)--(j);
+% \end{tikzpicture}
+% \caption{DevAgent. Gates $g_1$--$g_3$ establish deterministic goals. Switch $s$ only routes. On the untainted arm, gate $c$ verifies by provenance that no untrusted text is present, which establishes $\varphi_3$ and provides a fact to the raw-text judge $n_3$, whose task is $\varphi_4$. Tainted input is triaged by scorer $v_2$ and goes to a person, who covers both goals. Denial edges are omitted; shaded stages are statistical or human.}
+% \label{fig:devagent}
+% \end{figure}
+
+% \begin{figure}[!t]
+% \begin{lstlisting}[caption={Part of the DevAgent specification in \Hsl{}.},label={lst:devagent},captionpos=b]
+% "layers": [{"name": "L3", "scope": ["phi4"], "view": "raw",
+%   "requires": ["miss_rate_bounded", "config_match"]}, ...],
+% "nodes": [ ...,
+%  {"type": "switch", "id": "s", "condition": "input_tainted",
+%   "then": "v2", "otherwise": "c"},
+%  {"type": "gate", "id": "c", "rule": "no_untrusted_input",
+%   "establishes": "phi3", "next": "n3",
+%   "provides": ["safe_on_this_text"]},
+%  {"type": "guard", "id": "n3", "layer": "L3", "next": null,
+%   "evidence": ["miss_rate_bounded", "config_match"]}, ...]
+% \end{lstlisting}
+% \end{figure}
+
+
+
+
 
 % =====================================================================
 \section{A Calculus of Guardrail Hierarchies}
@@ -655,18 +840,26 @@ Suppose a judge reads the raw issue, and its contract says that it blocks unsafe
 
 \subsection{Syntax}
 
-Fix a finite set of goals $\Goals$, the properties every accepted proposal must satisfy, and a set of obligation names. A \emph{layer} $\ell$ is the interface of a learned or human component. It declares $\req(\ell)$, the obligations its contract assumes, and $\scope(\ell)\subseteq\Goals$, the goals it covers when it accepts. A hierarchy is a term:
+Let $\Goals$ be a finite set of safety goals that every accepted proposal must satisfy, and let obligations denote conditions required by individual guardrails. A \emph{layer} $\ell$ represents the contract of a learned or human component. Its assumptions are given by $\req(\ell)$, while $\scope(\ell)\subseteq\Goals$ identifies the goals it guarantees when it accepts a proposal, provided those assumptions hold. We represent a guardrail hierarchy using the following syntax:
 \begin{align*}
 H ::={}& \deny \mid \gate(n,\varphi,\ell,\Omega,D,H)\\
 \mid{}& \guard(n,\ell,\Omega,H) \mid \switch(n,H,H)
 \end{align*}
-Here $n$ is a node identifier, and $\Omega$ is the \emph{evidence}: the obligations that the specification declares to hold for this one invocation. Evidence is a declaration. Nothing in the term makes it true, which is why the semantics below needs a separate component for what actually holds, and why declared evidence that is not established at runtime ends up on a list of assumptions.
+Here, $n$ identifies a stage and $\Omega$ contains obligations declared to hold for that particular invocation. Importantly, declaring evidence does not establish that it is true. We therefore distinguish declared evidence ($\Omega$) from the obligations that actually hold at runtime, as defined in the semantics below.
 
-A \emph{gate} can only stop a proposal. If it passes and its contract applies, it establishes the goal $\varphi$, if it has one ($\varphi$ may be absent, written $\bot$), and provides the facts $D$, which are obligations that hold from then on. A gate whose layer is the distinguished empty layer $\epsilon$ is a \emph{deterministic gate}, a reference monitor that decides $\varphi$ exactly. Any other gate is a \emph{veto stage}, such as a classifier that can only reject. A \emph{guard} can end a decision by accepting, can reject, or can pass the proposal on by escalating. A \emph{switch} routes on a condition and teaches the analysis nothing: taking a branch establishes no fact, even if the condition looks like a test, because a switch has no contract. To learn something, a stage must be a gate. Leaving the hierarchy denies, because $\deny$ is the only leaf. Every acceptance is therefore the act of a named guard, and we call each guard a \emph{route}, the way a proposal can get through. A stack with no such stage is modelled with a final guard of empty scope that releases what reaches it.
+The calculus defines four constructs. A \emph{gate} either blocks a proposal or allows it to proceed. When it passes and its contract assumptions hold, it establishes goal $\varphi$ (if specified; otherwise $\varphi=\bot$) and provides facts $D$ for subsequent stages. A gate using the distinguished empty layer $\epsilon$ is a \emph{deterministic gate}: it acts as a reference monitor that checks its goal exactly. Gates associated with other layers are \emph{veto stages}, such as classifiers that may reject a proposal but cannot accept it. A \emph{guard} produces one of three decisions: accept, block, or escalate to the next stage. A \emph{switch} selects a branch but establishes no facts, even when its branching condition resembles a security check; unlike a gate, it has no contract supporting such a conclusion.
+
+The only terminal construct is $\deny$, which rejects the proposal. Consequently, a proposal can be accepted only by a named guard. Each such guard defines an \emph{acceptance route}, representing one possible point at which the hierarchy authorizes an action. A stack that simply releases proposals after its checks can be represented by adding a final guard with empty scope.
+
+The final hierarchy argument of a gate or guard is its \emph{continuation}. A gate follows it only on passing; a guard follows it only on escalation. Acceptance ends execution immediately and does not invoke the guard's continuation. A switch's two subterms are alternatives, not consecutive stages.
 
 \subsection{Semantics}
 
-We do not model what a stage computes. We model what could happen. For one proposal, a \emph{model} $M=(P,V,W,E,S)$ fixes every stage's behavior: $P(n)$ says whether gate $n$ passes, $V(n)\in\{\acc,\blk,\esc\}$ is guard $n$'s verdict, $W(n)$ is switch $n$'s branch, $E(n)$ is the set of obligations that actually hold on invocation $n$, and $S$ is the set of goals the proposal satisfies. These components are free, meaning arbitrary: any combination of values is a possible model unless a contract excludes it. An attack is simply a model, typically one in which an obligation fails at some stage. Fig.~\ref{fig:semantics} gives the decision semantics and contract satisfaction.
+Our semantics abstracts away the internal algorithms of individual guardrails and instead considers every behavior permitted by their contracts. For a single proposal, a model $M=(P,V,W,E,S)$ describes the hierarchy's execution. Here, $P(n)$ indicates whether gate $n$ passes; $V(n)\in\{\acc,\blk,\esc\}$ records a guard's decision to accept, block, or escalate; $W(n)$ determines the branch selected by a switch; $E(n)$ contains the obligations actually satisfied at invocation $n$; and $S$ contains the safety goals satisfied by the proposal.
+
+These values are unrestricted except where a component contract imposes a condition. Thus, the semantics also includes adversarial or erroneous behavior when a contract's assumptions do not hold. Figure~\ref{fig:semantics} defines both the resulting decisions and the conditions under which an execution satisfies the hierarchy's contracts.
+
+The double brackets $\sem{H}{M}$ mean ``the decision of $H$ under $M$'': the result is $\denied$ or $\accepted(r)$, determined by $P,V,W$. In contrast, $M\models_F H$ is a true-or-false statement that this behavior respects the contract rules given provided facts $F$; it also uses $E,S$. Neither expression alone asserts safety.
 
 \begin{figure}[!t]
 \centering
@@ -690,18 +883,30 @@ M\models_F\;&\guard(n,\ell,\Omega,k)\text{ iff }\mathrm{Real}(n)\;\wedge\\
 &\quad\wedge(V(n)=\esc\Rightarrow M\models_F k)\\
 M\models_F\;&\switch(n,a,b)\text{ iff }M\models_F a\text{ if }W(n),\text{ else }M\models_F b
 \end{align*}
-\caption{Decision semantics (top) and contract satisfaction (bottom). $F$ is the set of facts provided so far on this run. All premises concern only the invocations this proposal reaches.}
+\caption{Operational decisions (top) and contract satisfaction (bottom). $F$ contains facts established earlier on the current execution path. Contract obligations apply only to reached invocations.}
 \label{fig:semantics}
 \end{figure}
 
-$M\models_F H$ reads ``this behavior respects every contract on the invocations the proposal reaches, given facts $F$''. Three rules carry the content. \emph{Realization:} declared evidence and provided facts must hold at the invocation; a false declaration is outside the guarantee. The test in a contract is on $E(n)$, what is true, while the checker below can only see $\Omega$, what is declared, and realization links the two. \emph{Conditionality:} a promise applies only if all of the stage's obligations hold on this invocation, so a stage may do anything otherwise. \emph{Locality:} $E$ is indexed by node, so that an obligation at $n$ says nothing about any other node. A fact in $F$ reaches later stages only through a gate whose contract applied. A verdict of $\esc$ asks nothing of a guard and adds nothing to $F$. Indexing by invocation is a modelling choice, justified by how guards work: each is called on its own view of the proposal, so that what held of the scorer's input need not hold of the judge's.
+The relation $M\models_F H$ means that the execution described by $M$ satisfies the contracts of all stages reached in hierarchy $H$, given previously established facts $F$. Its interpretation relies on three principles.
+
+\emph{First, evidence must be realized.} At each passing gate and reached guard, the declared obligations $\Omega$ and previously provided facts $F$ must actually hold, as expressed by $\Omega\cup F\subseteq E(n)$. A failed gate already denies, and its satisfaction rule imposes no further condition. Realization distinguishes facts recorded in a specification from facts supported by the execution. A model that violates this requirement does not satisfy the hierarchy's contracts.
+
+\emph{Second, guarantees are conditional.} A stage's guarantee applies only when its required obligations $\req(\ell)$ belong to $E(n)$. When they do not, the contract imposes no corresponding guarantee on the stage's outcome. For example, accepting a proposal does not establish a guard's goals unless its assumptions hold.
+
+\emph{Third, evidence is local to an invocation.} The set $E(n)$ describes what holds at stage $n$, not at other stages. This matters because two guardrails may inspect different representations of the same proposal. An assumption satisfied for a classifier's input need not be satisfied for a later LLM judge. Only a passing gate with an applicable contract can propagate its provided facts $D$ to subsequent stages through $F$. A guard's verdict, including escalation, does not establish or transfer such facts.
+
+For DevAgent's exposed-judge variant under the adversarial reading of Section~\ref{sec:practice}, all deterministic gates can pass and $V(n_3)=\acc$, giving $\sem{H}{M}=\accepted(n_3)$. If the required obligation \ob{safe\_on\_this\_text} fails without being declared or provided, the judge's promise is inapplicable: $M\models_\emptyset H$ can still hold while $\varphi_3\notin S$. Declaring that obligation would instead make realization fail in the same model. A missing assumption and a false evidence declaration are distinct.
 
 \begin{definition}[Safety]
 \label{def:safe}
 $H$ is \emph{safe from} $(A,B)$ if for every model $M$ with $A\subseteq S$ and $M\models_B H$: if $\sem{H}{M}=\accepted(r)$ for some $r$, then $\Goals\subseteq S$. $H$ is \emph{safe} if it is safe from $(\emptyset,\emptyset)$.
 \end{definition}
 
-Safety holds one proposal at a time and over all behaviors, but it is conditional on contracts, and an attacker who makes a contract false is outside it. It says nothing about usefulness: $\deny$ is safe. Table~\ref{tab:attackers} separates what each attacker class leaves standing; the drift $\eta$ is the total-variation distance between the calibration and deployment distributions (Section~\ref{sec:risk}).
+Definition~\ref{def:safe} requires every accepted proposal to satisfy all goals in $\Goals$, for every model that respects the specified contracts. The parameters $A$ and $B$ represent goals and previously established facts credited at the start of the analysis. Safety therefore concerns all contract-respecting behaviors, rather than a finite collection of test cases.
+
+This guarantee is conditional: it does not establish that deployed components satisfy their contracts or that their assumptions remain valid under attack. It also does not measure usefulness, since a hierarchy that rejects every proposal is trivially safe. Table~\ref{tab:attackers} summarizes how the guarantees depend on the threat model. Here, $\eta$ denotes the total-variation distance between the calibration and deployment distributions, as discussed in Section~\ref{sec:risk}.
+
+A false contract assumption need not exclude a behavior from the safety definition: the exposed judge can respect its conditional promise while accepting an unsafe proposal. A violation of contract satisfaction does exclude the model. Safety requires all accepted behaviors that remain in the model class to satisfy the goals, not merely one tested execution.
 
 \begin{table}[!t]
 \caption{What Remains Against Each Attacker Class}
@@ -735,16 +940,25 @@ $D$ & facts a gate provides (syntax) \\
 $E(n)$ & obligations actually true at invocation $n$ (model) \\
 $S$ & goals the proposal actually satisfies (model) \\
 $F$ & facts actually provided so far on the run (semantics) \\
-$A,B$ & goals and facts the checker has credited so far (analysis) \\
+$A$ & goals the checker has credited as established (analysis) \\
+$B$ & obligations the checker has credited as provided (analysis) \\
 \bottomrule
 \end{tabular}
 \\[2pt]
 \raggedright\scriptsize The analysis tracks declarations; soundness shows that $A\subseteq S$ and $B\subseteq F$ are preserved along a run.
 \end{table}
 
+Table~\ref{tab:sets} distinguishes three accounting records: $A$ is the achievement record of established goals, $B$ is the checker's evidence record of obligations justified for later stages, and $F$ is the semantic fact record of obligations provided along the modeled execution. Thus $A$ contains goals, whereas $B,F$ contain obligations. The checker takes only $A,B$; $F$ is semantic bookkeeping, not an independently measured runtime log. Realization and $B\subseteq F$ link credited obligations to $E(n)$, while $A\subseteq S$ links credited goals to satisfied goals.
+
 \subsection{The Specification Language}
 
-\Hsl{} is the concrete syntax: a closed JSON schema declaring goals, obligations, layers and an acyclic graph of stages. Stages can share successors, and a term is the graph's unfolding along paths. Obligations carry a \emph{kind} that records how they are established. A \emph{checked} obligation has a runtime predicate, and failing it denies. A \emph{construction} obligation is true of the code, such as the single function that builds a guard's input. An \emph{assumed} obligation is the deployer's to justify. Kind does not affect the composition condition; it determines what is left to argue. An obligation may be tied to a view. Evidence tied to another view than the stage's layer is dropped before analysis, with a warning. Fig.~\ref{fig:devagent} and Listing~\ref{lst:devagent} show DevAgent.
+To make the calculus usable in practice, we introduce \Hsl{}, a JSON-based specification language for defining guardrail hierarchies. A specification declares the safety goals, obligations, component layers, and stages of an acyclic directed graph. Multiple stages may share the same successor; the corresponding calculus term is obtained by unfolding the graph along its paths.
+
+Each obligation has a \emph{kind} describing how its validity is justified. A \emph{checked} obligation is enforced by a runtime predicate, and a failed check rejects the proposal. A \emph{construction} obligation follows from the system's implementation, such as a fixed function used to construct a guard's input. An \emph{assumed} obligation must be justified by the deployer. These classifications do not change the formal composition condition. Instead, they clarify which assumptions are enforced, guaranteed by construction, or still require external evidence.
+
+Obligations may also be associated with a particular input \emph{view}. Because evidence about one view may not apply to another, \Hsl{} excludes evidence whose view differs from that of the receiving stage and reports a warning. This prevents the specification from silently transferring assumptions across incompatible inputs.
+
+Figure~\ref{fig:devagent} illustrates the DevAgent hierarchy introduced in Section~\ref{sec:example}, and Listing~\ref{lst:devagent} shows part of its \Hsl{} specification. Three deterministic gates first enforce approval, secret-egress, and execution-environment requirements. A switch then selects a path based on whether the input is tainted, without itself establishing any safety property. On the tainted path, a scorer may veto the action before a human reviewer evaluates the remaining semantic goals. On the untainted path, a provenance-checking gate establishes $\varphi_3$ and provides evidence for the subsequent judge, which assesses $\varphi_4$. The key distinction is that the provenance gate, rather than the switch, supplies the evidence on which the judge may rely.
 
 \begin{figure}[!t]
 \centering
@@ -765,7 +979,7 @@ $A,B$ & goals and facts the checker has credited so far (analysis) \\
 \draw[arr] (s.east)--node[below left=-1pt,font=\tiny]{no}(c.west);
 \draw[arr] (v)--(h); \draw[arr] (c)--(j);
 \end{tikzpicture}
-\caption{DevAgent. Gates $g_1$--$g_3$ establish deterministic goals. Switch $s$ only routes. On the untainted arm, gate $c$ verifies by provenance that no untrusted text is present, which establishes $\varphi_3$ and provides a fact to the raw-text judge $n_3$, whose task is $\varphi_4$. Tainted input is triaged by scorer $v_2$ and goes to a person, who covers both goals. Denial edges are omitted; shaded stages are statistical or human.}
+\caption{DevAgent hierarchy. Deterministic gates $g_1$--$g_3$ enforce initial requirements. Switch $s$ selects a path but provides no evidence. On the untainted path, provenance gate $c$ establishes $\varphi_3$ and a fact used by judge $n_3$ to assess $\varphi_4$. On the tainted path, scorer $v_2$ may veto before human review of both goals. Rejection edges are omitted; shaded nodes represent statistical or human stages.}
 \label{fig:devagent}
 \end{figure}
 
@@ -783,6 +997,202 @@ $A,B$ & goals and facts the checker has credited so far (analysis) \\
   "evidence": ["miss_rate_bounded", "config_match"]}, ...]
 \end{lstlisting}
 \end{figure}
+
+
+
+
+
+% % =====================================================================
+% \section{Verifying a Hierarchy}
+% \label{sec:verify}
+% % =====================================================================
+
+% \subsection{The Composition Condition}
+
+% Walking from the entry, we track the goals $A$ established and the facts $B$ provided so far. A gate is \emph{credited} if its obligations are available as evidence or facts; then it adds its goal and facts. At a guard, acceptance ends the decision, so the goals still open must be in that guard's scope, and its contract must be usable. For evidence $e$:
+% \begin{align*}
+% \ok(\ell,e,A)&\triangleq\Goals\subseteq A\;\vee\\
+% &\quad\bigl(\req(\ell)\subseteq e\wedge\Goals\subseteq A\cup\scope(\ell)\bigr)
+% \end{align*}
+% \begingroup\small
+% \begin{align*}
+% \chk(\deny,A,B)&=\mathrm{true}\\
+% \chk(\gate(\ldots,k),A,B)&=\chk(k,A',B')\\
+% \text{with }(A',B')&=(A\cup\{\varphi\},B\cup D)\\
+% \text{if }\req(\ell)\subseteq\Omega\cup B,\ &\text{else }(A,B)\\
+% \chk(\guard(\ldots,k),A,B)&=\ok(\ell,\Omega\cup B,A)\\
+% &\quad\wedge\chk(k,A,B)\\
+% \chk(\switch(n,a,b),A,B)&=\chk(a,A,B)\wedge\chk(b,A,B)
+% \end{align*}
+% \endgroup
+% The first disjunct of $\ok$ avoids a false alarm: if gates have established every goal, a guard's acceptance is harmless whatever it does.
+
+% \subsection{Soundness and Completeness}
+
+% \begin{theorem}[Soundness]
+% \label{thm:sound}
+% If $\chk(H,A,B)$, then $H$ is safe from $(A,B)$.
+% \end{theorem}
+% \begin{IEEEproof}
+% By structural induction on $H$, generalizing over $A$, $B$ and $F\supseteq B$. Let $M\models_F H$, $A\subseteq S$ and $\sem{H}{M}=\accepted(r)$. The case $\deny$ is vacuous. \emph{Gate.} Acceptance implies $P(n)$. If the gate is credited, $\req(\ell)\subseteq\Omega\cup B\subseteq\Omega\cup F\subseteq E(n)$ by realization, so $\varphi\in S$ and $M\models_{F\cup D}k$, and the hypothesis applies with $A\cup\{\varphi\}$, $B\cup D$ and $F\cup D$. If it is not credited, $(A,B)$ is unchanged, and the hypothesis applies with $F$ or $F\cup D$, whichever the contract gives, since $B$ is contained in both. \emph{Guard.} If $V(n)=\esc$, then $M\models_F k$ and the hypothesis applies. If $V(n)=\acc$ and $\Goals\subseteq A$, we are done. Otherwise $\req(\ell)\subseteq\Omega\cup B\subseteq E(n)$, the contract gives $\scope(\ell)\subseteq S$, and $\Goals\subseteq A\cup\scope(\ell)\subseteq S$. \emph{Switch.} The chosen branch is checked and the hypothesis applies.
+% \end{IEEEproof}
+
+% Completeness needs that no identifier repeats along a path, written $\mathrm{uniq}(H)$; otherwise one node's behavior could not be chosen independently at two points. Identifiers may repeat across the branches of a switch, which lets a shared graph node appear twice in the unfolding.
+
+% \begin{lemma}[Frame]
+% \label{lem:frame}
+% If $n$ does not occur in $H$, changing $P$, $V$, $W$ or $E$ at $n$ changes neither $\sem{H}{M}$ nor whether $M\models_F H$.
+% \end{lemma}
+
+% \begin{theorem}[Completeness]
+% \label{thm:complete}
+% If $\neg\chk(H,A,B)$ and $\mathrm{uniq}(H)$, there are a model $M$ and a node $r$ with $A\subseteq S$, $M\models_B H$, $\sem{H}{M}=\accepted(r)$ and $\Goals\not\subseteq S$.
+% \end{theorem}
+% \begin{IEEEproof}
+% By structural induction, constructing $M$. $\deny$ always checks. \emph{Gate.} The continuation is rejected under $(A',B')$; take its witness and set $P(n)$ true, which by Lemma~\ref{lem:frame} and uniqueness leaves the continuation's run unchanged. If the gate is credited, let every obligation hold at $n$; the contract asks for $\varphi\in S$, which holds because $A'\subseteq S$ in the witness, and for $M\models_{B\cup D}k$, which is the witness. If not, some $o\in\req(\ell)\setminus(\Omega\cup B)$ exists; let $o$ alone fail at $n$, so that the contract is vacuous and the continuation runs under $B$. \emph{Switch.} Choose the rejected branch. \emph{Guard.} If the continuation is rejected, take its witness and let $n$ escalate, with every obligation holding at $n$. Otherwise $\ok(\ell,\Omega\cup B,A)$ fails, so an open goal exists, and either (a)~some $o\in\req(\ell)\setminus(\Omega\cup B)$ exists, with an open goal $\psi$, or (b)~some open goal $\psi\notin\scope(\ell)$ exists. Let $S$ be everything but $\psi$, which keeps $A\subseteq S$, and let $V(n)=\acc$. In (a) let $E(n)$ be everything but $o$, so that the contract is vacuous. In (b) let everything hold; the contract asks only for $\scope(\ell)\subseteq S$.
+% \end{IEEEproof}
+
+% So $\chk(H,\emptyset,\emptyset)$ holds exactly when $H$ is safe, under a stated abstraction: stages are free apart from contracts. A rejected hierarchy may be fine for the guards actually deployed, if they do more than they declare, or if two stages are correlated (Section~\ref{sec:complexity}). What a rejection says is that the declared contracts do not entail the goals. Declaring an assumption as supplied evidence silences the rejection, by design: the claim then moves to the residual list, where someone must answer for it.
+
+% The checker reports what its verdict rests on. The \emph{residual} is the set of (stage, assumed obligation) pairs declared at a stage that some goal or provided fact depends on. The \emph{claims} are the goals and facts that deterministic gates are trusted to establish; a gate with a trivial rule that claims a fact silences a rejection just as a false declaration does, so claims need review too. Not every residual entry is needed, since a goal may also be covered later. The checker therefore removes each entry alone and rechecks. Two entries that can stand in for each other both pass this test, so the test finds single points of dependence and not minimal sets.
+
+% \begin{corollary}[Necessary assumptions]
+% \label{cor:necessary}
+% If removing a residual entry from an accepted hierarchy makes it rejected, the entry is necessary: without it there is a contract-respecting violating run.
+% \end{corollary}
+% \begin{IEEEproof}
+% Theorem~\ref{thm:complete} applied to the thinned hierarchy, whose identifiers are unchanged.
+% \end{IEEEproof}
+
+% \subsection{Transitive Reasoning Is Unsound}
+
+% The usual informal argument for a stack is transitive: each stage was validated, and each trusts the next. For DevAgent's early scorer and judge, it runs: the scorer was validated on sanitized input, the judge comes after the scorer, so the judge's input can be taken as sanitized too. In our terms, evidence declared at one stage is taken to hold at later stages. Let $\chk^{*}$ be $\chk$ except that $\Omega$ is added to $B$ at every stage.
+
+% \begin{theorem}[Transitive reasoning]
+% \label{thm:transitive}
+% (a)~If $\chk(H,A,B)$, $A\subseteq A_2$ and $B\subseteq B_2$, then $\chk^{*}(H,A_2,B_2)$. (b)~The converse fails: there are hierarchies accepted by $\chk^{*}$ that have a contract-respecting violating run.
+% \end{theorem}
+% \begin{IEEEproof}
+% (a) By structural induction, generalizing over all four sets; credit under $\chk$ implies credit under $\chk^{*}$, and the sets stay ordered. (b) Let $H=\guard(n_1,\ell_1,\{o\},\guard(n_2,\ell_2,\emptyset,\deny))$ with $\req(\ell_1)=\req(\ell_2)=\{o\}$ and a goal in the scope of both. $\chk^{*}$ accepts, since $o$ is inherited. $\chk$ rejects at $n_2$, so Theorem~\ref{thm:complete} gives the run: $n_1$ escalates, $o$ fails at $n_2$ alone, and $n_2$ accepts a violating proposal.
+% \end{IEEEproof}
+
+% The result is close to the definition of the semantics, and that is its point: once evidence is scoped to an invocation, the argument above fails, and the proof exhibits the run where it does, with $n_2$ in the role of the judge. It also shows why the calculus has provided facts and no inheritance. If a property really does persist, a gate must establish it, and then the checker can credit it.
+
+% \subsection{When Order Matters}
+
+% \begin{theorem}[Order]
+% \label{thm:order}
+% (a)~Moving a gate before a guard preserves acceptance: if the hierarchy with $\guard(n,\ell,\Omega,\gate(m,\varphi,\ell',\Omega',D,k))$ checks, so does the one with $\gate(m,\varphi,\ell',\Omega',D,\guard(n,\ell,\Omega,k))$. (b)~Two adjacent deterministic gates that provide nothing commute. (c)~The converse of (a) fails, and gates do not commute when one provides what the other requires.
+% \end{theorem}
+% \begin{IEEEproof}
+% (a) Moving the gate leaves its credit unchanged, and $\ok$ is preserved by enlarging its goals and evidence (Lemma~\ref{lem:meet}), so the guard's condition still holds. (b) The sets reaching the continuation are equal. (c) A guard with empty scope followed by a gate for the only goal is rejected, and with the order swapped it is accepted. For gates, a gate requiring $o$ placed before the gate providing $o$ is not credited.
+% \end{IEEEproof}
+
+% For composition, then, a gate placed earlier never hurts, provided the gate's own evidence still holds at the earlier point, since evidence belongs to an invocation. The theorem concerns the guarantee only. Order also affects cost and what a stage sees, and neither appears in the check. Beyond these cases we have no general characterization.
+
+% \subsection{From Terms to Graphs: Algorithm and Complexity}
+% \label{sec:complexity}
+
+% A term unfolds an \Hsl{} graph, and $d$ diamonds give $2^{d}$ paths. Algorithm~\ref{alg:check} instead computes, by one pass in topological order, $\mathrm{avail}(n)$ and $\mathrm{facts}(n)$: the goals and facts established on every path to $n$.
+
+% \begin{algorithm}[!t]
+% \caption{Checking a hierarchy graph}
+% \label{alg:check}
+% \footnotesize
+% \begin{algorithmic}[1]
+% \STATE reject on dangling reference, undeclared name or cycle
+% \STATE $\mathrm{avail}(\mathit{entry}),\mathrm{facts}(\mathit{entry})\gets\emptyset,\emptyset$
+% \FOR{$n$ reachable, in topological order}
+%   \STATE $(\mathit{out},\mathit{known})\gets$ gate transfer of $n$ on $(\mathrm{avail}(n),\mathrm{facts}(n))$
+%   \FOR{each successor $c$ of $n$}
+%     \STATE $\mathrm{avail}(c)\gets\mathrm{avail}(c)\cap\mathit{out}$; $\mathrm{facts}(c)\gets\mathrm{facts}(c)\cap\mathit{known}$
+%   \ENDFOR
+% \ENDFOR
+% \STATE $W\gets$ each reachable guard failing $\ok$ on these sets, with a witness path
+% \IF{$W\neq\emptyset$ and some reachable gate provides a fact}
+%   \STATE explore every reachable $(n,A,B)$ in topological order
+%   \STATE $W\gets$ each $(n,A,B)$ at a guard failing $\ok(\ell_n,\Omega_n\cup B,A)$
+% \ENDIF
+% \end{algorithmic}
+% \end{algorithm}
+
+% \begin{lemma}[Meet]
+% \label{lem:meet}
+% (a)~If $A\subseteq A'$, $e\subseteq e'$ and $\ok(\ell,e,A)$, then $\ok(\ell,e',A')$. (b)~If $\ok(\ell,e,A)$ and $\ok(\ell,e,A')$, then $\ok(\ell,e,A\cap A')$.
+% \end{lemma}
+% \begin{IEEEproof}
+% (a) is immediate. For (b), if $\Goals\subseteq A\cap A'$ we are done. Otherwise a goal is open on one side, so $\req(\ell)\subseteq e$; and a goal open in $A\cap A'$ is open in $A$ or $A'$, and so is in $\scope(\ell)$.
+% \end{IEEEproof}
+
+% Lemma~\ref{lem:meet}(b) has one evidence set on purpose. The analogous statement with $\ok(\ell,e,A)$, $\ok(\ell,e',A')$ and $\ok(\ell,e\cap e',A\cap A')$ is false. One path may have every goal and no evidence, and another path the reverse. Each path is fine, while the componentwise meet is not.
+
+% For a graph $G$ with entry $e$, the unfolding is the term that replaces each edge to a node by that node's term and each missing successor by $\deny$. An acyclic graph's unfolding satisfies $\mathrm{uniq}$. A graph is \emph{flow-free} if no reachable gate provides a fact.
+
+% \begin{theorem}[Exactness of the algorithm]
+% \label{thm:dag}
+% For an acyclic graph with unfolding $H$, Algorithm~\ref{alg:check} ends with $W=\emptyset$ iff $\chk(H,\emptyset,\emptyset)$. Theorems~\ref{thm:sound} and~\ref{thm:complete} therefore hold for graphs.
+% \end{theorem}
+% \begin{IEEEproof}
+% For a path $\pi$ from the entry to $n$, let $(A_\pi,B_\pi)$ be the result of the gate transfers along $\pi$. Unfolding the equations of $\chk$ by induction on $H$ shows that $\chk(H,\emptyset,\emptyset)$ holds iff $\ok(\ell_n,\Omega_n\cup B_\pi,A_\pi)$ for every guard $n$ and every path $\pi$ to it. \emph{Flow-free case.} $B_\pi=\emptyset$ and credit is independent of the path. By induction along the topological order, $\mathrm{avail}(n)=\bigcap_\pi A_\pi$, because unions distribute over intersections. Then $\ok(\ell_n,\Omega_n,\mathrm{avail}(n))$ iff $\ok(\ell_n,\Omega_n,A_\pi)$ for all $\pi$, by Lemma~\ref{lem:meet}. \emph{General case.} The meets are subsets of each $(A_\pi,B_\pi)$, by induction, because gate transfer is monotone. So if the first pass finds nothing, each path passes by Lemma~\ref{lem:meet}(a). If it finds something, the exploration enumerates exactly the pairs $(A_\pi,B_\pi)$ at each node, and $W$ is the path-wise condition.
+% \end{IEEEproof}
+
+% A goal missing at $n$ is missing on a specific path, found by walking back through a predecessor whose out-set lacks it. The implementation turns this path into the model of Theorem~\ref{thm:complete}, so every rejection can be replayed.
+
+% \begin{theorem}[Complexity]
+% \label{thm:complexity}
+% Let $w$ be the word size, $\|H\|$ the size of the specification and $O$ the obligations.
+% (a)~For flow-free graphs, deciding safety takes $O((|V|+|E|)\lceil(|\Goals|+|O|)/w\rceil+\|H\|\log\|H\|)$ time, which is near-linear for bounded $\Goals$ and $O$, however many paths the graph has. Each witness adds at most $|V|$.
+% (b)~In general, deciding safety is coNP-complete.
+% (c)~In general, the first pass is sound, and the exploration takes time proportional to the number of reachable $(n,A,B)$ triples, which can be exponential.
+% \end{theorem}
+% \begin{IEEEproof}
+% (a) Depth-first search orders the graph. With sets as bit vectors, each node performs a union and each edge an intersection. Masks are built once per layer from its declared names; sorting names accounts for the logarithm. (b) A violating path with its model is a polynomial certificate, so the complement is in NP. For hardness, reduce from satisfiability of a CNF formula. For each variable, a switch chooses between two gates providing $t_v$ or $f_v$. Then, for each clause, a veto stage requires the facts falsifying its literals and provides \ob{bad}. A final guard with one open goal requires \ob{bad}. A path corresponds to an assignment, and \ob{bad} is provided on it iff the assignment falsifies a clause. The hierarchy is rejected iff some path lacks \ob{bad}, that is, iff the formula is satisfiable. (c) Soundness is shown in Theorem~\ref{thm:dag}.
+% \end{IEEEproof}
+
+% The source of hardness is credit that depends on facts. If only guards consume provided facts, credit is path-independent, and one can treat each (open goal, missing obligation) pair as a single fact in a must-analysis, which is polynomial; we have not implemented this middle case, since the exploration handles it. We expect hierarchies with few provided facts to have few states, and E9 measures a worst case.
+
+% A second source of hardness lies outside the calculus. Our switches are free: two switches on the same condition are treated as independent.
+
+% \begin{proposition}[Correlated conditions]
+% \label{prop:correlated}
+% If equal condition names denote one Boolean, safety is coNP-hard even for flow-free graphs. The free analysis stays sound, and it may reject a safe hierarchy.
+% \end{proposition}
+% \begin{IEEEproof}
+% Hardness: for each clause in turn, chain one switch per literal, on the literal's variable; a true literal jumps to the next clause, and falling through denies. A final guard with an open goal is then reachable iff some assignment satisfies every clause. Soundness: a correlated model is a free model. Incompleteness: let $s_1$ on $c$ lead to a gate for $\varphi$ and then to $s_2$, or directly to $s_2$; let $s_2$ on $c$ lead to a guard of empty scope or to $\deny$. No run reaches the guard without passing the gate, yet the free analysis rejects.
+% \end{IEEEproof}
+
+% \subsection{Structural Properties}
+% \label{sec:engineering}
+
+% \begin{theorem}[Structural properties]
+% \label{thm:mono}
+% \textbf{Monotonicity.} If $M'$ has the same branches as $M$, $P'(n)\Rightarrow P(n)$, $V'(n)=\acc\Rightarrow V(n)=\acc$ and $V'(n)=\esc\Rightarrow V(n)\in\{\esc,\acc\}$, then $M'$ accepts only if $M$ does.
+% \textbf{Routes.} If $\sem{H}{M}=\accepted(r)$, then $r$ is a guard of $H$ and $V(r)=\acc$.
+% \textbf{Prefix locality.} Replacing the continuation of guard $n$ does not change the decision of a proposal that does not escalate past $n$.
+% \textbf{Decision cost.} A decision visits at most $\mathrm{depth}(H)$ stages.
+% \textbf{Budget.} Along any sequence of costs, a gate that accepts cost $c$ only if $c\ge0$ and $s+c\le L$, and adds $c$ to $s$ only then, keeps $0\le s\le L$.
+% \textbf{Taint.} If a derived value takes the union of its sources' labels and its own, a label on any source is on every value derived from it.
+% \end{theorem}
+
+% Each part is a structural induction. The budget property applies to an agent only if the gate is on every route. The taint property is what lets a deterministic gate decide secret egress from labels, provided the host records every derivation.
+
+% \begin{corollary}[Affected routes]
+% \label{cor:affected}
+% If stage $c$ of a graph changes, the event ``accepted on route $r$'' is unchanged for every route $r$ such that $c$ is neither $r$ nor an ancestor of $r$ in the old and the new graph.
+% \end{corollary}
+% \begin{IEEEproof}
+% A run ending at $r$ visits only $r$ and its ancestors. If $c$ is none of these, the run never consults $c$, and the two models agree along it step by step. A run that visits $c$ cannot end at $r$ under either model.
+% \end{IEEEproof}
+
+% \begin{theorem}[Non-interference]
+% \label{thm:ni}
+% Let each stage be a function of a view of the proposal. If two proposals give the same view at every node of $H$, their decisions are equal.
+% \end{theorem}
+
+% A view therefore limits a contract. Two proposals with equal views get equal verdicts, so a guard can promise only what its view distinguishes. In the artifact the structured view is six Booleans and a score, and a judge reading only that cannot decide $\varphi_3$ on a patch, because a malicious and a benign patch can have equal views. A guard that must judge content has to read it, and then it can be addressed by it. DevAgent resolves the tension by splitting on provenance: the raw judge sees only input a deterministic gate has shown to carry no untrusted text, and tainted input goes to a person. Neither arm claims that a guard can read attacker text safely.
+
+
+
 
 % =====================================================================
 \section{Verifying a Hierarchy}
@@ -809,7 +1219,11 @@ Walking from the entry, we track the goals $A$ established and the facts $B$ pro
 \endgroup
 The first disjunct of $\ok$ avoids a false alarm: if gates have established every goal, a guard's acceptance is harmless whatever it does.
 
+In DevAgent, provenance gate $c$ illustrates the separate updates: its goal $\varphi_3$ joins $A$, while its provided obligation \ob{safe\_on\_this\_text} joins $B$. The former covers a safety goal; the latter helps make the judge's contract usable. The gate's local evidence $\Omega$ is not automatically inherited. Neither routing at $s$ nor escalation by a guard adds to these records. The checker analyzes both switch branches and each guard's continuation because either branch may run and a guard may escalate, although a single execution follows only one path.
+
 \subsection{Soundness and Completeness}
+
+The soundness proof generalizes over starting information because recursive calls need not start with empty records. After a credited, passing gate, the continuation uses $A\cup\{\varphi\}$, $B\cup D$ and semantic facts $F\cup D$. For DevAgent's gate $c$, these include $\varphi_3$ and \ob{safe\_on\_this\_text}. The induction hypothesis must therefore cover all $A,B,F$ satisfying $A\subseteq S$ and $B\subseteq F$, together with the check and contract-satisfaction premises. A hypothesis only about empty sets would not match this call; $F$ need not equal $B$.
 
 \begin{theorem}[Soundness]
 \label{thm:sound}
@@ -946,17 +1360,42 @@ Hardness: for each clause in turn, chain one switch per literal, on the literal'
 \subsection{Structural Properties}
 \label{sec:engineering}
 
+The following properties describe how a hierarchy's control flow constrains its decisions. They explain what happens when checks become more restrictive, which stages can influence an acceptance, and how much work one decision requires. The final two properties state the invariants needed by budget and provenance mechanisms.
+
 \begin{theorem}[Structural properties]
 \label{thm:mono}
-\textbf{Monotonicity.} If $M'$ has the same branches as $M$, $P'(n)\Rightarrow P(n)$, $V'(n)=\acc\Rightarrow V(n)=\acc$ and $V'(n)=\esc\Rightarrow V(n)\in\{\esc,\acc\}$, then $M'$ accepts only if $M$ does.
-\textbf{Routes.} If $\sem{H}{M}=\accepted(r)$, then $r$ is a guard of $H$ and $V(r)=\acc$.
-\textbf{Prefix locality.} Replacing the continuation of guard $n$ does not change the decision of a proposal that does not escalate past $n$.
-\textbf{Decision cost.} A decision visits at most $\mathrm{depth}(H)$ stages.
-\textbf{Budget.} Along any sequence of costs, a gate that accepts cost $c$ only if $c\ge0$ and $s+c\le L$, and adds $c$ to $s$ only then, keeps $0\le s\le L$.
-\textbf{Taint.} If a derived value takes the union of its sources' labels and its own, a label on any source is on every value derived from it.
+\begin{enumerate}
+\item \textbf{Monotonicity: restricting decisions cannot add accepted proposals.}
+Let $M'$ use the same switch branches as $M$ and satisfy, at every node $n$,
+\begin{align*}
+P'(n)&\Rightarrow P(n),\\
+V'(n)=\acc&\Rightarrow V(n)=\acc,\\
+V'(n)=\esc&\Rightarrow V(n)\in\{\esc,\acc\}.
+\end{align*}
+Then acceptance under $M'$ implies acceptance under $M$.
+
+\item \textbf{Routes: every acceptance has an identifiable decision point.}
+If $\sem{H}{M}=\accepted(r)$, then $r$ is a guard in $H$ and $V(r)=\acc$. Gates and switches cannot themselves authorize a proposal.
+
+\item \textbf{Prefix locality: an unused continuation cannot affect a decision.}
+Replacing the continuation of guard $n$ leaves the decision unchanged for any proposal that does not escalate past $n$. This includes proposals that never reach $n$, as well as those that $n$ accepts or blocks.
+
+\item \textbf{Decision cost: execution follows one path.}
+A decision visits at most $\mathrm{depth}(H)$ stages, where depth is the maximum number of gate, guard, and switch nodes on a path to $\deny$. The terminal $\deny$ contributes zero to this count.
+
+\item \textbf{Budget: admitted costs preserve a spending limit.}
+Let $s$ be cumulative spending and $L$ the limit, starting with $0\le s\le L$, for example $s=0$. If a gate admits a cost $c$ only when $c\ge0$ and $s+c\le L$, and updates $s$ to $s+c$ only when that cost is admitted, then $0\le s\le L$ remains true along every sequence of costs.
+
+\item \textbf{Taint: derivation preserves source labels.}
+If each derived value receives the union of its sources' labels and its own labels, then every label on a source remains on every value derived from that source.
+\end{enumerate}
 \end{theorem}
 
-Each part is a structural induction. The budget property applies to an agent only if the gate is on every route. The taint property is what lets a deterministic gate decide secret egress from labels, provided the host records every derivation.
+\textbf{Interpretation for DevAgent.} Monotonicity permits a gate to reject more proposals, or a guard to replace acceptance by escalation or blocking, while the switch choices remain fixed. The hierarchy can then accept fewer proposals, although the accepting route may change. Routes identifies $n_3$ and $n_4$ as the acceptance points used in risk accounting. Prefix locality means that changing what follows $n_3$ cannot affect a proposal that $n_3$ already accepts or blocks. Decision cost explains why execution visits the selected branch rather than every stage, even though the composition checker must analyze both branches.
+
+The budget and taint properties depend on enforcement by the host. If DevAgent is extended with a spending limit, every accepted action must pass through the budget gate for the bound to cover the whole agent. Taint preservation supports secret-egress gate $g_2$: a value derived from a secret-labeled source retains that label, allowing the gate to enforce the egress rule. This requires the host to record every derivation and prevent label loss or forgery.
+
+The first four properties follow by structural induction on the hierarchy. The budget invariant is preserved at each admitted cost, and the taint invariant is preserved at each derivation. These properties justify the change-locality result below, route-based risk accounting, and the host mechanisms on which deterministic guarantees depend.
 
 \begin{corollary}[Affected routes]
 \label{cor:affected}
@@ -973,28 +1412,42 @@ Let each stage be a function of a view of the proposal. If two proposals give th
 
 A view therefore limits a contract. Two proposals with equal views get equal verdicts, so a guard can promise only what its view distinguishes. In the artifact the structured view is six Booleans and a score, and a judge reading only that cannot decide $\varphi_3$ on a patch, because a malicious and a benign patch can have equal views. A guard that must judge content has to read it, and then it can be addressed by it. DevAgent resolves the tension by splitting on provenance: the raw judge sees only input a deterministic gate has shown to carry no untrusted text, and tainted input goes to a person. Neither arm claims that a guard can read attacker text safely.
 
+
+
 % =====================================================================
 \section{From Safety to Risk}
 \label{sec:risk}
 % =====================================================================
 
-So far contracts have been exact: if the obligations hold, the promise holds. A learned stage does not keep such a contract; it errs on some inputs. We use the exact analysis for learned stages in a limited sense, as an idealization that shows what depends on what: if the stage were right whenever its obligations held, would the composition be justified? An obligation such as \ob{miss\_rate\_bounded} is a claim about a population and does not hold ``at an invocation''. It stands for an external condition: a certificate for this configuration, or a bound stated by a source, exists. The actual guarantee for such goals comes from measurement, as follows.
+The preceding analysis establishes a conditional composition guarantee: if the relevant contracts hold, every accepted proposal satisfies the required goals. Learned and human stages, however, can make errors. For goals assigned to these stages, passing the composition check establishes that the declared guarantees would suffice; it does not establish that the deployed stages are error-free. We therefore distinguish two assurance questions: whether the contracts justify the composition, and how often the deployed hierarchy accepts an unsafe proposal. The checker answers the first; the route certificates developed below address the second.
 
-Split $\Goals=\Goals_{d}\uplus\Goals_{s}$ into \emph{exact} goals, which must hold on every accepted proposal, and \emph{statistical} goals, for which a rate of failure is tolerated. Let proposals $x$ come from a distribution $\mathcal{D}$, each determining one run of the deployed hierarchy, and let $Y(x)=1$ if $x$ violates a goal. The \emph{joint risk} of a deployed configuration, with closed routes denying, is $R=\Pr_{\mathcal{D}}[Y=1\wedge x\text{ accepted}]$.
+This distinction also determines how to interpret an obligation such as \ob{miss\_rate\_bounded}. Its presence at an invocation records reliance on external evidence, such as a certificate for the current configuration or a bound reported by a source. It does not mean that a population-level error bound makes that particular decision correct. The statistical guarantee must be stated separately, together with its sampling and deployment assumptions.
+
+Partition the goals as $\Goals=\Goals_d\uplus\Goals_s$. The \emph{exact goals} $\Goals_d$ must hold for every accepted proposal under the stated contract premises. For the \emph{statistical goals} $\Goals_s$, deployment permits a bounded rate of unsafe acceptance. For example, DevAgent treats approval, secret-egress and environment requirements as exact, while Section~\ref{sec:worked} assigns its two semantic goals to $\Goals_s$.
+
+Fix a deployed configuration and a proposal distribution $\mathcal{D}$. Each proposal $x$ determines one execution, and $Y(x)=1$ indicates that it violates at least one required goal. We measure \emph{joint risk},
+\[
+R=\Pr_{\mathcal{D}}[Y=1\wedge x\text{ accepted}],
+\]
+with closed routes denying. This is the probability that a proposal drawn from the deployment distribution is both unsafe and accepted. It is not the probability of acceptance conditional on the proposal being unsafe, nor the probability of unsafety conditional on acceptance.
 
 \subsection{Risk Is a Sum over Routes}
 
-A route $r$ is \emph{gated} if deterministic gates establish every goal of $\Goals_{s}$ on every path to $r$. Let $Q$ be the other routes, called \emph{statistical}. A gated route may still have a goal of $\Goals_d$ covered by a guard's exact contract. A route on which deterministic gates establish every goal is \emph{fully gated}, and only such routes stand against an adaptive attacker.
+Each acceptance occurs at exactly one named guard, its route. We classify routes by how their statistical goals are established. A route is \emph{gated} if deterministic gates establish every goal in $\Goals_s$ on every path to it. The remaining routes form $Q$, the set of \emph{statistical routes}, for which measured evidence is needed. In DevAgent, the provenance gate establishes $\varphi_3$ before judge $n_3$, but $\varphi_4$ still depends on the judge; this route therefore remains statistical.
+
+Gated and fully gated have different meanings. A gated route can still rely on a guard's exact contract for a goal in $\Goals_d$. A \emph{fully gated} route has every goal established by deterministic gates on every path to acceptance. Protection against adaptive inputs rests on such gates, subject to their correctness and complete mediation, rather than on a distribution-specific certificate.
 
 \begin{theorem}[Route risk]
 \label{thm:risk}
 Let $H$ pass Algorithm~\ref{alg:check}. Suppose that on the support of $\mathcal{D}$: (i)~deterministic gates decide their goals exactly, in $\Goals_d$ and in $\Goals_s$, and (ii)~realization holds and all contracts hold for goals in $\Goals_d$. Then $R=\sum_{r\in Q}R_r$, with $R_r=\Pr_{\mathcal{D}}[Y=1\wedge\accepted(r)]$.
 \end{theorem}
 \begin{IEEEproof}
-By Routes and determinism, acceptance splits into disjoint route events, so $R=\sum_r R_r$. Let $H_d$ be $H$ with goals $\Goals_d$, every scope intersected with $\Goals_d$, and goals outside $\Goals_d$ dropped from gates. With goals restricted, $\ok$ is implied at each guard by its value in $H$, so $H_d$ passes. The model of $x$ satisfies $H_d$'s contracts by (i) and (ii), so by Theorem~\ref{thm:dag} an accepted $x$ satisfies $\Goals_d$. If $x$ is accepted on a gated route, it passed on its path the deterministic gates for every goal of $\Goals_s$, which by (i) hold. So $Y(x)=0$ and $R_r=0$.
+By Routes and determinism, a proposal is accepted on at most one route. The acceptance events are therefore disjoint, giving $R=\sum_r R_r$.
+
+To show which terms vanish, restrict $H$ to the exact goals: retain goals $\Goals_d$, intersect each scope with $\Goals_d$, and drop gate goals outside $\Goals_d$. Call the result $H_d$. Restricting the required goals preserves the guard checks, so $H_d$ passes. Premises (i) and (ii) ensure that each deployed execution satisfies its contracts; Theorem~\ref{thm:dag} therefore gives $\Goals_d$ on every accepted proposal. If acceptance occurs on a gated route, deterministic gates also establish every goal in $\Goals_s$. Hence no goal is violated on that route, $R_r=0$, and only routes in $Q$ contribute to $R$.
 \end{IEEEproof}
 
-No statistical contract, independence assumption or per-layer rate appears here. That matters because per-layer rates mislead.
+The decomposition does not assume independent stage errors or derive system risk from individual error rates. It measures the joint event of unsafety and acceptance at each route. This matters because a hierarchy's control flow determines which errors can lead to acceptance.
 
 \begin{proposition}[Veto and cascade]
 \label{prop:veto}
@@ -1004,58 +1457,82 @@ Let guards have marginal miss probabilities $m_i$ on the unsafe population. (a)~
 (a) These are the Fr\'echet--Hoeffding bounds. (b) follows by construction and Routes.
 \end{IEEEproof}
 
-Note what the composition check does not do here. $R_r$ is measured on the deployed function, and a certificate for a raw-text judge is valid under $\mathcal{D}$ whether or not the check accepts the hierarchy. The check contributes three things: the guarantee for $\Goals_d$, which needs no distribution; the set $Q$ of routes needing evidence; and, by rejecting, the warning that a bound under $\mathcal{D}$ does not extend to text written to manipulate the guard.
+In a veto chain, an unsafe proposal must escape every veto, so dependence between errors matters. With early acceptance, a later guard cannot correct an unsafe proposal already released by an earlier guard. A low error rate at a downstream stage therefore does not certify the earlier acceptance route.
+
+The composition check and measurement have complementary roles. A route's joint risk can be measured on the deployed decision function even if its specification fails the composition check. Such a measurement alone does not establish the premises of Theorem~\ref{thm:risk}. The check supplies the conditional guarantee for exact goals and identifies which routes need statistical evidence. A rejection identifies unsupported contract dependencies; a bound under $\mathcal{D}$ does not by itself justify those dependencies under adversarial inputs.
 
 \subsection{Route Certificates}
 
-A \emph{route certificate} is a tuple $(r,f,c,u_r,\delta_r,N)$: route, prefix fingerprint, a context label naming the deployment it is for, upper bound, confidence share and sample count. The confidence budget $\delta$ is allocated to the routes of $Q$ before any calibration. Calibration runs the deployed decision function with certificates ignored on $N$ samples and counts $k_r$, the unsafe proposals accepted on $r$. Then
+A \emph{route certificate} records $(r,f,c,u_r,\delta_r,N)$: the route $r$, its prefix fingerprint $f$, a deployment-context label $c$, an upper risk bound $u_r$, a confidence share $\delta_r$, and the calibration sample count $N$. The fingerprint binds the evidence to the configuration that produced it; the incremental recertification procedure below specifies what it covers.
+
+Two budgets serve different purposes. The \emph{risk budget} $\varepsilon$ limits the total certified probability of unsafe acceptance. The \emph{confidence budget} $\delta$ limits the probability, over calibration sampling, that the simultaneous risk bounds fail. Before calibration, allocate shares to all routes in $Q$ such that $\sum_{r\in Q}\delta_r\le\delta$.
+
+Calibration evaluates the deployed decision function on $N$ labeled proposals, using shadow execution with certificate checks disabled. For each route $r$, count $k_r$, the proposals that are unsafe and accepted on that route. The denominator is all $N$ proposals, not only those reaching $r$: the certificate bounds joint route risk $R_r$, not a conditional error rate. The one-sided Clopper--Pearson upper bound is
 \begin{equation}
 u_r=\mathrm{Beta}^{-1}\bigl(1-\delta_r;\,k_r+1,\,N-k_r\bigr),\quad u_r=1\text{ if }k_r=N.
 \label{eq:cp}
 \end{equation}
-In plain words, $u_r$ is the largest loss rate still consistent with seeing only $k_r$ losses, at confidence $1-\delta_r$. At runtime a statistical route accepts only while a certificate for its current fingerprint is open. The engine refuses an allocation above $\delta$, a certificate above its route's share, two certificates for one route, and bounds that sum above the budget $\varepsilon$. A \emph{closed} route denies.
+Here $\mathrm{Beta}^{-1}$ denotes the beta-distribution quantile. The bound accounts for sampling uncertainty: observing $k_r/N$ unsafe acceptances does not establish that the true risk equals that observed fraction.
+
+At runtime, a statistical route can accept only if it has an \emph{open} certificate matching its current fingerprint and deployment context. Otherwise the route is closed and denies. The engine rejects a value of $\delta$, $\varepsilon$ or a share that is not a probability, confidence allocations exceeding $\delta$, certificates exceeding their route's allocated share, duplicate certificates for a route, and sets of open certificates whose bounds sum to more than $\varepsilon$. A route with a zero share therefore cannot open.
 
 \begin{theorem}[Certified risk]
 \label{thm:certified}
 Under the premises of Theorem~\ref{thm:risk}, fix a configuration whose stages on statistical routes do not read session state. Let shares $\delta_r$ be fixed before calibration with $\sum_{r\in Q}\delta_r\le\delta$, and let each certificate's samples be i.i.d.\ from $\mathcal{D}$, drawn after its route's prefix was fixed. With probability at least $1-\delta$, $R\le\sum_{r\text{ open}}u_r$. The runtime keeps this sum at most $\varepsilon$.
 \end{theorem}
 \begin{IEEEproof}
-Each $u_r$ is an upper bound on $R_r$ at level $\delta_r$~\cite{clopper1934use}, and the union bound over all of $Q$ needs no independence among certificates, so they may come from different runs. Because the shares cover $Q$ and are fixed in advance, which certificates end up open cannot affect the bound. Closing a route only removes acceptances (Monotonicity), and gated routes contribute zero by Theorem~\ref{thm:risk}.
+For each route, the Clopper--Pearson construction bounds its joint risk with confidence at least $1-\delta_r$~\cite{clopper1934use}. The union bound gives simultaneous coverage for all routes in $Q$ with confidence at least $1-\delta$; it requires no independence between route certificates, which may use different calibration runs. Because confidence is allocated to all of $Q$ in advance, selecting which certified routes to open does not invalidate simultaneous coverage. Closing a route only removes acceptances (Monotonicity), and gated routes contribute zero by Theorem~\ref{thm:risk}. Summing the bounds of the open statistical routes therefore bounds deployed risk.
 \end{IEEEproof}
 
-The statement is per configuration. Over a sequence of versions the chance that some deployed configuration is wrong accumulates, so a long-lived deployment should allocate shares across versions in advance. A deployer who expects to add routes must reserve shares for them, since the engine refuses old certificates whose shares no longer fit. Recalibrating until a bound passes is selection, and it voids the level unless the attempts are charged to $\delta$.
+The confidence statement concerns calibration uncertainty for a fixed configuration and distribution; it is not a guarantee against arbitrary future inputs. Its assumptions include i.i.d.\ sampling, fixing the route prefix before collecting its samples, and excluding session-state dependence on statistical routes. Independence of calibration samples is distinct from independence of guardrail errors, which the route decomposition does not require.
 
-Joint risk scales with the prevalence of attacks. With prevalence $\resWorkPrevalence$, a guard that misses every attack loses about $\resWorkBlindLosses$ of $\resWorkSamples$ samples, and its bound $\resWorkBlindUpper$ passes a budget of $\resWorkBudget$. A deployer should therefore also report the conditional miss rate, $R$ over the unsafe mass, by attack class, and should treat a joint bound as meaningful only with a calibration set that contains enough attacks. For scale: with $\delta_r=\resWorkShare$ and $N=\resWorkSamples$, zero losses give $u_r=\resWorkUpperZero$ and ten give $\resWorkUpperTen$. Where the samples and labels $Y$ come from is usually the hardest part of the exercise, and nothing here supplies them.
+Confidence must also be managed across changes. A sequence of versions accumulates opportunities for a certificate to fail, so a deployment requiring a guarantee across versions should allocate confidence shares across those versions in advance. Planned new routes likewise need reserved shares; the engine refuses certificates whose shares no longer fit. Repeatedly recalibrating until a bound passes introduces selection and does not preserve the claimed confidence unless those attempts are charged to $\delta$.
+
+\textbf{Interpreting a small joint-risk bound.} Joint risk depends on how frequently unsafe proposals occur in $\mathcal{D}$. With prevalence $\resWorkPrevalence$, a guard that misses every attack produces about $\resWorkBlindLosses$ losses among $\resWorkSamples$ samples, yet its bound $\resWorkBlindUpper$ passes a budget of $\resWorkBudget$. A small joint-risk bound can therefore coexist with poor attack detection. Deployers should also report conditional miss rates, obtained by dividing joint unsafe-acceptance risk by the unsafe population's probability mass, with separate results by attack class. Calibration must contain enough attacks to support the intended interpretation.
+
+For scale, with $\delta_r=\resWorkShare$ and $N=\resWorkSamples$, zero losses give $u_r=\resWorkUpperZero$, while ten losses give $\resWorkUpperTen$. These are uncertainty bounds derived from the data, not error rates guaranteed by the composition checker. Obtaining representative proposals and trustworthy labels $Y$ remains the deployer's responsibility.
 
 \subsection{Incremental Recertification}
 
-Each route is bound to a \emph{prefix fingerprint}, a Merkle hash in topological order. A node's fingerprint covers its stage and layer, the identities of its rule, guard or condition and of its checked predicates, obligation kinds, the labelled fingerprints of its predecessors, and a digest of the goals, the statistical goals and a label naming the oracle $Y$. A component's identity covers its direct source, closure values, defaults, partial arguments, reachable instance state, array contents and declared version and configuration. A component with no readable identity is refused. Code reached only through calls, state outside the object, and files such as model weights are not covered; the deployer must declare them in the configuration.
+A certificate applies to the route prefix that was calibrated: the stages and dependencies that can affect acceptance on that route. We identify this prefix using a \emph{prefix fingerprint}, computed as a Merkle hash in topological order. Each node's hash includes its stage and layer; the identities of its rule, guard or routing condition and checked predicates; obligation kinds; and the labeled hashes of its predecessors. A further digest binds the fingerprint to the required goals, the statistical goals, and a label identifying the safety oracle $Y$.
 
-By Corollary~\ref{cor:affected}, a change to a stage cannot alter the event of a route it does not precede, so only routes it precedes need new evidence. They close alone, and the others keep their certificates. The cost is a tighter guarantee foregone: for few routes, one whole-hierarchy bound beats a sum of route bounds at stricter levels. Closing a route is an outage for its traffic, so a deployment should calibrate the new prefix in shadow mode before switching. A change that only tightens a stage cannot raise $R_r$ on its own route (Monotonicity), but it can move traffic to later routes, so we keep the conservative rule.
+Component identities include direct source, closure values, defaults, partial arguments, reachable instance state held in dictionaries or slots, array contents, and declared version and configuration. The engine refuses components whose identity cannot be read. This mechanism does not automatically cover transitively called code, external state, or files such as model weights; these dependencies must be declared in the configuration. A matching fingerprint therefore supports reuse only to the extent that the declared identity captures the relevant deployment dependencies.
+
+Corollary~\ref{cor:affected} supplies the reuse rule: changing a stage cannot alter acceptance on a route that the stage does not precede. Routes with changed fingerprints close until recertified; unaffected routes retain their certificates, subject to the same deployment context and sampling assumptions. For DevAgent, changing the raw-text judge affects route $n_3$, whereas changing a shared gate before the switch affects both $n_3$ and $n_4$.
+
+Fingerprints are compared when an engine is constructed, not on each decision, so the check is a load-time check and not continuous identity monitoring. Components must stay fixed for an engine's lifetime, and any change requires constructing a new engine, whose fingerprints then determine which certificates still apply. A component mutated in place inside a running engine leaves the fixed configuration of Theorem~\ref{thm:certified}; the engine does not detect it, and the route's certificate stays open.
+
+Selective recertification trades statistical efficiency for reuse. With few routes, a single whole-hierarchy bound can be tighter than the sum of route bounds calibrated at smaller confidence shares. Closing a route also interrupts its traffic, motivating shadow calibration of the new prefix before deployment. We conservatively require recertification even for a change that appears more restrictive: although restricting acceptance at one guard cannot increase its own route risk (Monotonicity), sending more proposals onward can change the risk of later routes.
 
 % =====================================================================
 \section{Worked Example}
 \label{sec:worked}
 % =====================================================================
 
-We follow DevAgent through the tool, under the adversarial reading of Section~\ref{sec:practice}, in which a stage that reads raw text needs the claim \ob{safe\_on\_this\_text}: its contract holds on this input, either because the input carries no attacker text or because the stage resists it.
+We now apply composition checking, route certification, and change analysis to the DevAgent hierarchy in Fig.~\ref{fig:devagent}. We use the adversarial reading of Section~\ref{sec:practice}: a stage that reads raw text requires \ob{safe\_on\_this\_text}. This obligation states that the stage's contract applies to its input, either because the input contains no attacker text or because the stage resists manipulation.
 
-\textbf{Traces.} On $\Tstar$ and $\Tj$, gate $g_2$ denies, because a secret-labeled input goes to an external host. No learned stage is consulted, and the sentence for the judge is never read. On $\Tb$, the issue is tainted, so the proposal reaches the scorer and then a person, who accepts on route $n_4$. This is the cost of the design: benign work derived from untrusted text needs a person. On $\Tjp$ the patch is also tainted and takes the same path, so the sentence for the judge reaches a person and not the judge.
+\textbf{Execution on the four traces.} For $\Tstar$ and $\Tj$, gate $g_2$ rejects the attempt to send secret-labeled data to an external host. Neither trace reaches a learned stage, so the instruction addressed to the judge is never processed by that judge. For $\Tb$, the issue is tainted and follows the scorer-to-human path, where the person accepts at $n_4$. The design therefore requires human review even for benign work derived from untrusted text. The patch in $\Tjp$ is also tainted and follows this path: its injected instruction reaches the human rather than the raw-text judge. Routing to a human does not by itself prove that the human resists the injection; that remains an explicit contract assumption.
 
-\textbf{Checking.} Follow the untainted arm with $(A,B)$. After $g_1,g_2,g_3$ we have $A=\{\varphi_1,\varphi_2,\varphi_{\mathrm{env}}\}$ and $B=\emptyset$. Switch $s$ changes nothing. Gate $c$ is deterministic, so it is credited: $\varphi_3$ joins $A$ and \ob{safe\_on\_this\_text} joins $B$. At $n_3$ only $\varphi_4$ is open and it is in scope, and the judge's obligations are met by its evidence and by $B$. On the tainted arm, $v_2$ adds nothing, so $\varphi_3$ and $\varphi_4$ are open at $n_4$, both in scope. Its evidence declares \ob{safe\_on\_this\_text}, an assumption about people. The specification is accepted with routes $n_3$ and $n_4$. The residual list has three entries, all found necessary: \ob{miss\_rate\_bounded} at $n_3$, and \ob{human\_attentive} and \ob{safe\_on\_this\_text} at $n_4$. The claims list includes $c$'s goal and fact, so the correctness of taint tracking is on the record. Obligation \ob{config\_match} is checked at runtime. The scorer contributes nothing to any goal; it exists to reduce the person's workload.
+\textbf{Composition checking.} The checker tracks goals in $A$ and provided obligations in $B$. After $g_1,g_2,g_3$, these are $A=\{\varphi_1,\varphi_2,\varphi_{\mathrm{env}}\}$ and $B=\emptyset$. Switch $s$ changes neither set. On the untainted path, deterministic gate $c$ adds $\varphi_3$ to $A$ and \ob{safe\_on\_this\_text} to $B$. At judge $n_3$, the only remaining goal is $\varphi_4$, which lies in its scope. Its requirements are supplied by its local evidence together with $B$.
 
-The claim about people deserves a word. A person reading a diff is not immune to text addressed to them, and Non-interference rules out a person who decides $\varphi_3$ from a view without the content. So the person reads the content, and the hierarchy's guarantee on this route rests on an assumption stated in the open. Workload, fatigue and automation bias bear directly on it, and we have no data on them.
+On the tainted path, veto stage $v_2$ adds neither goals nor facts. Human reviewer $n_4$ must therefore cover both $\varphi_3$ and $\varphi_4$, and its evidence declares \ob{safe\_on\_this\_text} locally. The checker accepts the specification with acceptance routes $n_3$ and $n_4$; this verdict establishes sufficiency of the stated contracts, not correctness of every deployed decision. The scorer can reduce the person's workload by rejecting proposals, but contributes no established goal to the composition argument.
 
-\textbf{The exposed variant.} Now consider a simpler stack: no switch and no provenance gate, with one raw-text judge covering $\varphi_3$ and $\varphi_4$ for all input. It is rejected:
+The verdict makes its dependencies visible. The residual contains three assumed obligations, each found necessary: \ob{miss\_rate\_bounded} at $n_3$, and \ob{human\_attentive} and \ob{safe\_on\_this\_text} at $n_4$. The claims list records the provenance gate's goal and provided fact, making correctness of taint tracking an explicit dependency. The obligation \ob{config\_match} is checked at runtime.
+
+The human assumptions require justification. Non-interference explains why a reviewer cannot decide the content-dependent goal $\varphi_3$ from a view that omits the relevant content. The person must read that content and can therefore encounter instructions addressed to the reviewer. Human review does not remove this dependency; it exposes it as an assumption. Workload, fatigue, and automation bias can affect its validity, and this study provides no measurements of those effects.
+
+\textbf{Diagnosing an exposed judge.} Remove the switch and provenance gate, and use one raw-text judge to cover $\varphi_3$ and $\varphi_4$ for all inputs. Under the same adversarial reading, the checker rejects this variant:
 \begin{lstlisting}
 obligation at n3: safe_on_this_text
   goal: phi3   path: g1 g2 g3 n3
 \end{lstlisting}
-The witness is a complete model, which the artifact verifies against Fig.~\ref{fig:semantics}. All gates pass. At $n_3$ every obligation holds except the one reported, so the contract promises nothing, and $n_3$ accepts. The proposal satisfies $\varphi_1,\varphi_2,\varphi_{\mathrm{env}}$ and violates $\varphi_3$. This is $\Tjp$ of Section~\ref{sec:example}, reconstructed mechanically. Under a benign threat model, where the obligation is not required, the same stack is accepted, which is why a threat model has to be stated.
+The artifact constructs a witness model and checks it against Fig.~\ref{fig:semantics}. All deterministic gates pass. At $n_3$, every required obligation holds except \ob{safe\_on\_this\_text}, so the judge's conditional guarantee is inapplicable. The judge accepts a proposal satisfying $\varphi_1,\varphi_2,\varphi_{\mathrm{env}}$ but violating $\varphi_3$. This model reconstructs the failure illustrated by $\Tjp$: the declared contracts permit an unsafe acceptance. It is not a claim that a particular deployed judge necessarily makes that decision. Under a benign threat model that does not require the missing obligation, the same stack is accepted, illustrating why the threat model is part of the assurance claim.
 
-\textbf{Certifying.} Take $\Goals_s=\{\varphi_3,\varphi_4\}$. Route $n_3$ is statistical because of $\varphi_4$, and so is $n_4$, so $Q=\{n_3,n_4\}$. With $\delta=\resWorkShareTotal$, each route gets $\delta_r=\resWorkShare$. Suppose $N=\resWorkSamples$ labeled samples show ten unsafe acceptances on $n_3$: then $u_{n_3}=\resWorkUpperTen$. Route $n_4$ is certified the same way, from decisions recorded in shadow mode, so that the person's error rate is measured instead of assumed. That needs labels and a person's time.
+\textbf{Certifying the accepted design.} Return to the original DevAgent hierarchy and choose $\Goals_s=\{\varphi_3,\varphi_4\}$. Route $n_3$ needs a certificate because $\varphi_4$ depends on the judge, even though gate $c$ establishes $\varphi_3$. Route $n_4$ also needs a certificate, so $Q=\{n_3,n_4\}$. Allocate $\delta=\resWorkShareTotal$ in advance, with $\delta_r=\resWorkShare$ for each route.
 
-\textbf{Change.} Changing any of $g_1,g_2,g_3,s$ stales both routes, because every route descends from them. Changing $v_2$ or $n_4$ stales $n_4$ alone, and changing $c$ or $n_3$ stales $n_3$ alone. So the question from the introduction has a plain answer: a retrained scorer costs one route here, and a rule change costs all of them. Rule changes may be the most frequent, and for those the incremental scheme gains nothing.
+Suppose shadow evaluation of $N=\resWorkSamples$ labeled proposals records ten unsafe acceptances at $n_3$. Equation~\ref{eq:cp} gives $u_{n_3}=\resWorkUpperTen$. The sample count includes all calibration proposals, including those denied or accepted elsewhere. Certify $n_4$ in the same way using recorded human decisions and safety labels: this estimates joint unsafe acceptance on the human route rather than assigning the human an assumed numerical error rate. Both routes may open only when their certificates match the deployment and their bounds fit the risk budget. Conditional on the theorem's premises, their sum bounds joint risk with the allocated confidence. Collecting representative labels and human decisions remains necessary.
+
+\textbf{Recertifying after a change.} A change to any shared stage $g_1,g_2,g_3,s$ invalidates both route fingerprints. A change to $v_2$ or $n_4$ invalidates only $n_4$'s certificate; a change to $c$ or $n_3$ invalidates only $n_3$'s. Thus, retraining the scorer requires new evidence for one route, while changing a shared deterministic rule requires evidence for both. Unaffected routes retain their certificates under the same context and distributional assumptions. Incremental recertification saves work when changes are confined to one branch; it offers no such saving for changes to the shared prefix.
 
 % =====================================================================
 \section{Using the Approach}
@@ -1072,13 +1549,18 @@ The check is only as meaningful as the contracts, and three rules help.
 
 \emph{Make each assumed obligation someone's job.} A residual entry should have an owner and an argument, in the manner of an assurance case. The checker cannot tell a justified assumption from one added to silence it. Table~\ref{tab:catalog} gives starting points by guard class.
 
-\begin{table}[!t]
+\begin{table*}[!t]
 \caption{Contract Catalog by Guard Class}
 \label{tab:catalog}
 \centering
-\footnotesize
-\setlength{\tabcolsep}{2.5pt}
-\begin{tabular}{@{}p{1.45cm}p{1cm}p{3.4cm}p{2cm}@{}}
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}
+  >{\raggedright\arraybackslash}p{\dimexpr0.18\textwidth-1.5\tabcolsep\relax}
+  >{\raggedright\arraybackslash}p{\dimexpr0.13\textwidth-1.5\tabcolsep\relax}
+  >{\raggedright\arraybackslash}p{\dimexpr0.40\textwidth-1.5\tabcolsep\relax}
+  >{\raggedright\arraybackslash}p{\dimexpr0.29\textwidth-1.5\tabcolsep\relax}@{}}
 \toprule
 Class & Stage & Typical obligations & Discharged by \\
 \midrule
@@ -1090,7 +1572,7 @@ LLM judge & guard & same, plus \ob{config\_match} & calibration; a provided fact
 Human approver & guard & sees provenance; attentive; \ob{safe\_on\_this\_text} & interface design, audits \\
 \bottomrule
 \end{tabular}
-\end{table}
+\end{table*}
 
 \subsection{What the Language Covers}
 
@@ -1141,6 +1623,7 @@ Assumed evidence is true & Thm.~\ref{thm:sound} & an owner's argument; Cor.~\ref
 Stationarity & Thm.~\ref{thm:certified} & drift monitoring; a shift of size $\eta$ adds at most $\eta$ & bound does not apply; fails under adaptation \\
 Honest calibration & Thm.~\ref{thm:certified} & fresh data, one attempt per share; labels independent of the guards & confidence level is void \\
 Declared component identity & Sec.~\ref{sec:risk} & model files and callees named in the configuration & stale certificate stays open \\
+Fixed components & Thm.~\ref{thm:certified} & no mutation in place; a new engine after every change & stale certificate stays open \\
 Stateless prefix & Thm.~\ref{thm:certified} & no ledger-reading gate on statistical routes & route events depend on history \\
 Budget gate on every route & Budget & review of the specification & cost escapes the limit \\
 \bottomrule
@@ -1165,7 +1648,7 @@ Goals and obligations share one sort in the script, and $S$ is not constrained t
 \label{sec:impl}
 % =====================================================================
 
-The library \tint{} is written in Python. The parser enforces a closed schema, rejecting unknown fields and duplicate keys. The checker implements Algorithm~\ref{alg:check} with goal and fact sets as integers. Findings carry a code, a node, the missing name, a witness path and the violated goal, and a separate function turns a finding into a complete model. Warnings report evidence dropped for its view.
+The library \tint{} is written in Python. The parser enforces a closed schema, rejecting unknown fields and duplicate keys. The checker implements Algorithm~\ref{alg:check} with goal and fact sets as integers. Its decision-only mode follows the algorithm as written, and the decision times in the scale experiments measure that mode. The default reporting mode, which the engine's constructor also uses, runs the exploration whenever a reachable gate provides a fact, even if $W$ is empty, because the residual dependencies are read from exact states. By Theorem~\ref{thm:dag} this cannot change the verdict; it adds the cost of Theorem~\ref{thm:complexity}(c) to such hierarchies. Findings carry a code, a node, the missing name, a witness path and the violated goal, and a separate function turns a finding into a complete model. Warnings report evidence dropped for its view.
 
 The engine interprets a checked hierarchy and fails closed: an exception in a stage, a malformed verdict or a failed checked obligation denies. It has one decision path, used for deployment and, with certificates ignored, for calibration, so the certified function is the deployed one. Its constructor refuses a rejected specification, a stage without an implementation, and a checked obligation without a predicate. Guard inputs are built in one function, and veto stages with a non-raw view do not receive text. Table~\ref{tab:mapping} relates the formal concepts to the code and to the evidence for each.
 
@@ -1264,7 +1747,7 @@ Result & Goals & Z3 & cvc5 \\
 
 \textbf{E4.} On \resDiffSpecs{} random specifications (\resDiffAccepted{} accepted, \resDiffRejected{} rejected) and \resDiffDecisions{} decisions, checker, engine and reference gave \resDiffDisagreements{} disagreements, including failing checked predicates. Model search covered \resDiffSemantic{} small specifications, with \resDiffSemanticDisagreements{} disagreements. Sampled models, biased toward acceptance, gave \resDiffContractRuns{} contract-respecting runs on accepted specifications, of which \resDiffAcceptingRuns{} ended in acceptance, none unsafe (\resDiffUnsafeAccepted{}). The same sampling found a violation on \resDiffRejectedFound{} of \resDiffRejected{} rejected specifications, which gauges its power; it is partial. Residual lists agreed with a path-wise computation from the equations, with \resDiffResidualDisagreements{} disagreements. The equations agreed with the reference on \resAdequacyTerms{} terms and models for $\chk$, the semantics and $\models$, with \resAdequacyFailures{} failures.
 
-\textbf{E5.} We mutated the checker, engine, certificate and fingerprint code. Of \resMutationTotal{} mutants, the differential oracle alone detected \resMutationDifferential{}; \resMutationCrash{} more crashed or hung; and unit tests killed \resMutationUnit{} that the random oracle missed, because its generator produces no cycles, raising stages or missing certificates. Earlier runs showed these gaps, and we wrote unit tests after reading their survivors, so the combined figure of \resMutationKilled{} is biased upward, and the differential figure is the fairer measure of the random oracle. We read all \resMutationSurvived{} survivors: \resMutationEquivalent{} are equivalent, such as type annotations and changes that exact exploration repairs, and \resMutationGaps{} are untested differences in the form of a digest. The classification is in the artifact.
+\textbf{E5.} We mutated the checker, engine, certificate and fingerprint code. Of \resMutationTotal{} mutants, the differential oracle alone detected \resMutationDifferential{}; \resMutationCrash{} more crashed or hung; and unit tests killed \resMutationUnit{} that the random oracle missed, because its generator produces no cycles, raising stages or missing certificates. Earlier runs showed these gaps, and we wrote unit tests after reading their survivors, so the combined figure of \resMutationKilled{} is biased upward, and the differential figure is the fairer measure of the random oracle. We read all \resMutationSurvived{} survivors: \resMutationEquivalent{} are equivalent, such as type annotations and changes that exact exploration repairs, and \resMutationGaps{} are untested differences, three in the form of a digest and one in which of two refusals is raised. The classification is in the artifact.
 
 \textbf{E6.} Each of \resDiffWitnesses{} rejection witnesses is a complete model. Replayed on an engine with the check removed, each was accepted on the reported route, satisfied $\models$ and violated the reported goal (\resDiffWitnessFailures{} failures).
 
@@ -1345,7 +1828,7 @@ An earlier preregistered scripted study of one fixed pipeline remains in the art
 \subsection{Threats to Validity}
 \label{sec:threats}
 
-\textbf{Internal.} One author wrote the calculus, checker, reference, encodings and specifications, so oracles share assumptions; the proofs tie the reference to the equations only on sampled terms. The script applying induction is unchecked. An obligation could be misstated and still pass, although mutants and adequacy tests reduce that risk. The runs were made on one day from uncommitted code. Hand classification of mutants and the addition of unit tests after seeing survivors bias E5. The mutation operators are a small set.
+\textbf{Internal.} One author wrote the calculus, checker, reference, encodings and specifications, so oracles share assumptions; the proofs tie the reference to the equations only on sampled terms. The script applying induction is unchecked. An obligation could be misstated and still pass, although mutants and adequacy tests reduce that risk. The runs were made on one day from uncommitted code; a later audit of the paper against the code then found that the engine accepted invalid confidence shares and omitted slot state from the identity of a callable object. After we corrected both and added tests, we reran E3 to E6 and E11 to E14: only the mutant counts of E5 changed, because the corrected code adds mutation sites. E1, E2, E7 to E10 and E15 were not rerun. Hand classification of mutants and the addition of unit tests after seeing survivors bias E5. The mutation operators are a small set.
 
 \textbf{Construct.} ``Safe'' is relative to declared goals and contracts: weak goals are easily safe, a false contract voids the guarantee, and an assumed obligation can be written down to silence a rejection. Safety says nothing about utility: the calculus would accept a hierarchy that denies nearly everything. Per-decision risk is not session harm. A joint bound can look small because attacks are rare.
 
@@ -1393,18 +1876,328 @@ Layered A/G~\cite{arxiv260518672} & N & N & P & P & Y & N \\
 \raggedright\scriptsize Guards: evaluated with real guards. Attacks: with real attacks. Temp.: temporal properties. Check: composition check. Exact: a completeness result. ContrAgent and the layered paper were rated from their abstracts.
 \end{table}
 
-% =====================================================================
+% % =====================================================================
+% \section{Conclusion}
+% \label{sec:conclusion}
+% % =====================================================================
+
+% We gave guardrail hierarchies a calculus, in which guards are bound only by conditional contracts, evidence belongs to one invocation, and a credited gate can provide facts to later stages. The composition check is sound and, relative to free stages, complete. Transitive reasoning about evidence is unsound. Gates belong before guards. Without flow of facts the check is near-linear, and with flow or correlated conditions the exact problem is coNP-hard, with a sound fast analysis and an exact refinement in the first case. Risk is a sum over routes, certificates are bound to route prefixes, and a change invalidates only what it precedes.
+
+% The evidence covers the composition and not its parts. In the public example configurations we studied, stacks are short chains, and there the value of the approach is a list of assumptions and claims, rather than the graph analysis. Whether that list helps engineers is unknown. Next steps are to port the proofs to a proof assistant, to add rewriting stages and session properties, to run the method with practitioners and a second modeller, and to discharge contracts for real guards.
+
+% \section*{Data Availability}
+
+% The library, the \Hsl{} checker and engine, the proof obligations, the protocol, experiment drivers, raw results, errata and the source of this paper are in the project repository; \texttt{ARTIFACT.md} gives a table of claims, commands and times. The proofs run in under a minute on a laptop CPU, with no GPU or API key. The corpus file holds only the rails sections of public configurations, with the source commit.
+
 \section{Conclusion}
-\label{sec:conclusion}
-% =====================================================================
 
-We gave guardrail hierarchies a calculus, in which guards are bound only by conditional contracts, evidence belongs to one invocation, and a credited gate can provide facts to later stages. The composition check is sound and, relative to free stages, complete. Transitive reasoning about evidence is unsound. Gates belong before guards. Without flow of facts the check is near-linear, and with flow or correlated conditions the exact problem is coNP-hard, with a sound fast analysis and an exact refinement in the first case. Risk is a sum over routes, certificates are bound to route prefixes, and a change invalidates only what it precedes.
+In this study, we introduced a formal framework for specifying, verifying, and assessing the safety of composed guardrail hierarchies in large language model (LLM) agents. By modeling guardrails through explicit contracts and conditional evidence, our approach establishes when the guarantees of individual stages are sufficient to justify the safety requirements of the overall hierarchy, while identifying unsupported assumptions and providing counterexamples for invalid compositions. We established soundness and relative completeness of the composition check, characterized its computational complexity, and extended the framework with route-based risk assessment and incremental recertification to support the reassessment of modified configurations. The results support the correctness of the verification procedure, demonstrate efficient verification for common hierarchy structures, and illustrate how the framework can expose assurance gaps that are not apparent from evaluating individual guardrails in isolation. However, the framework establishes conditional guarantees about composition rather than the correctness of the underlying guardrails, and its practical effectiveness in supporting real-world deployment decisions remains to be investigated. Overall, this work provides a formal foundation for making the assumptions, dependencies, and limitations underlying LLM guardrail safety claims explicit, auditable, and amenable to systematic verification.
 
-The evidence covers the composition and not its parts. In the public example configurations we studied, stacks are short chains, and there the value of the approach is a list of assumptions and claims, rather than the graph analysis. Whether that list helps engineers is unknown. Next steps are to port the proofs to a proof assistant, to add rewriting stages and session properties, to run the method with practitioners and a second modeller, and to discharge contracts for real guards.
+% % =====================================================================
+% \section{Conclusion}
+% \label{sec:conclusion}
+% % =====================================================================
+
+% This paper introduced a formal framework for reasoning about the
+% safety of composed LLM guardrails. The framework models guardrail
+% hierarchies through conditional contracts, invocation-scoped
+% evidence, and gates that establish facts for subsequent stages.
+% We proved that the proposed composition checker is sound and
+% complete under free-stage semantics, and demonstrated why safety
+% guarantees cannot be transferred transitively across guardrails.
+% Our results also establish the importance of placing gates before
+% decision-making guards. For hierarchies without fact propagation,
+% verification is near-linear; more general compositions involving
+% propagated facts or correlated conditions introduce coNP-hardness.
+% To address these cases, we provide an efficient sound analysis
+% and an exact refinement procedure for fact-propagating hierarchies.
+
+% Beyond deterministic verification, the framework supports
+% quantitative safety assessment through route-based risk
+% decomposition, prefix-scoped statistical certificates, and
+% incremental recertification following configuration changes.
+% Importantly, the resulting guarantees concern the correctness
+% of guardrail composition, not the validity of individual
+% guardrail contracts. Our examination of public configurations
+% found that existing guardrail stacks are predominantly short
+% chains, for which explicitly identifying assumptions and safety
+% claims may be more valuable than advanced graph analysis.
+% Whether this information improves engineering decisions
+% remains an open empirical question.
+
+% These results also mark out what the framework cannot yet do,
+% and we see five directions that build on it.
+
+% \textbf{Stages that transform proposals.} The calculus assumes
+% that one fixed proposal flows through a hierarchy, yet
+% \resCorpusTransforming{} of the rails in E15 rewrite their input.
+% This is the most direct gap between the language and practice.
+% A rewriting stage raises a question that the present semantics
+% avoids: whether evidence and established goals survive a change
+% to the proposal they describe. Invocation-local evidence is a
+% natural starting point, because a rewrite could be treated as
+% invalidating evidence unless a contract states what it preserves.
+% Bounded retry, which is now unrolled, and $k$-of-$n$ voting, which
+% is expressible only by enumerating arms, could be added to the
+% same language. Soundness, completeness and the route decomposition
+% would each have to be reproved for these constructs.
+
+% \textbf{Risk over sessions and versions.} Safety and
+% Theorem~\ref{thm:certified} concern one proposal at a time, on
+% statistical routes whose stages do not read session state, and
+% per-decision risk is not session harm. Temporal goals over
+% sequences of actions would extend the budget gate, now the only
+% session construct, to policies that span a conversation. Their
+% risk accounting needs a replacement for i.i.d.\ calibration,
+% because events on a route would then depend on history. Time adds
+% a second problem: confidence must be divided across versions in
+% advance. In E11 one change stales \resRecertMeanFraction\% of
+% routes on average, and in a cascade changing the last layer stales
+% \resCascadeLast\% while an average layer stales \resCascadeMean\%. Share allocation could use this structure,
+% reserving more confidence for the routes that are most often
+% stale, and sequentially valid bounds could allow monitoring
+% without charging each look to $\delta$. Replaying stored labeled
+% data, and measuring what it saves in new labels against a
+% whole-policy bound, would test whether route-level certification
+% pays for itself.
+
+% \textbf{Grounding contracts in measurement.} All composition-level
+% assurance is conditional on contracts, and \resCorpusLlm{} of the
+% rails in E15 are prompted LLM tasks. The
+% checker already identifies what to measure: the residual list
+% names each dependency, Corollary~\ref{cor:necessary} shows which
+% entries are necessary, and Table~\ref{tab:cases} lists the
+% obligations that would flip each adversarial verdict. These lists
+% could direct contract validation at real guardrails, with
+% separate conditional miss rates by attack class, as joint risk
+% alone can conceal poor detection. Adversarial measurement matters
+% most here. The earlier scripted study found that no semantic
+% mechanism resisted a shift that the residual list had predicted,
+% and the contracts of statistical stages may simply be false
+% against an adaptive attacker. Such a study could also test
+% whether a route that is not fully gated should be redesigned so
+% that deterministic gates carry its goals.
+
+% \textbf{Stronger assurance of the implementation.} Porting the
+% proofs to a proof assistant would remove the unchecked induction
+% script from the trusted base, and it would also cover the results
+% that remain paper proofs, such as Theorems~\ref{thm:dag}
+% and~\ref{thm:certified}. A verified checker extracted from that
+% development would address the correspondence with Python, which
+% is now tested and not proved. Our alignment audit points to the
+% same weakness at the engine: conformance testing did not reveal
+% that invalid shares or slot state escaped enforcement. Runtime
+% work should therefore reach the identity assumptions themselves,
+% through immutable components or continuous identity monitoring
+% in place of a check at construction, and through fingerprints
+% that cover transitively called code and model files without
+% relying on a deployer's declaration.
+
+% \textbf{Evidence from practice.} Whether assumption lists improve
+% engineering decisions remains untested, so controlled studies
+% with practitioners are the clearest next step. E15 covers one
+% framework's teaching examples and E13 relies on one modeller.
+% Repeating them on production configurations, with independent
+% modellers and with the authors of the modelled designs, would
+% measure how far a rejection depends on who writes the
+% specification. Tools that derive \Hsl{} specifications from
+% existing rail configurations would lower the cost of adoption
+% and support such studies. Because no corpus configuration provides
+% facts, field data should also show whether fact propagation occurs
+% in practice, and so whether the polynomial case in which only
+% guards consume provided facts deserves implementation.
+
+
+
+% These findings motivate five directions for future research as follows.
+
+% \textbf{Supporting proposal transformations.}
+% The current calculus assumes that a proposal remains unchanged
+% as it passes through a guardrail hierarchy. However,
+% \resCorpusTransforming{} of the rails examined in E15 modify
+% their inputs, revealing an important gap between the formal
+% model and practical implementations. Supporting such stages
+% requires determining whether previously established evidence
+% and safety guarantees remain valid after a transformation.
+% One possible approach is to invalidate invocation-specific
+% evidence following a rewrite unless the stage contract
+% explicitly specifies which properties are preserved.
+% The language could also be extended to represent bounded
+% retries and $k$-of-$n$ voting directly, rather than relying
+% on loop unrolling or explicit enumeration of branches.
+% These extensions would require revisiting the soundness,
+% completeness, and route-decomposition results.
+
+% \textbf{Extending risk assurance across sessions and versions.}
+% The current safety model and
+% Theorem~\ref{thm:certified} address individual proposals,
+% assuming that statistical stages do not depend on session
+% state. Consequently, per-decision risk guarantees do not
+% necessarily characterize cumulative harm across a
+% conversation. Extending the framework to temporal safety
+% properties would enable reasoning about sequences of actions,
+% beyond the existing budget gate. Such an extension would
+% also require statistical methods that account for
+% dependencies between decisions rather than relying on
+% independent and identically distributed calibration data.
+
+% System evolution introduces a related challenge: maintaining
+% valid confidence guarantees across configuration versions.
+% In E11, a configuration change invalidates an average of
+% \resRecertMeanFraction\% of route certificates. In cascade
+% configurations, modifying the final layer invalidates
+% \resCascadeLast\% of routes, compared with
+% \resCascadeMean\% for an average layer. These findings
+% suggest opportunities for allocating confidence budgets
+% according to the likelihood of certificate invalidation.
+% Sequentially valid statistical bounds could further
+% support continuous monitoring without requiring a separate
+% confidence allocation for every observation. Future
+% experiments should quantify whether reusing previously
+% labeled data reduces recertification costs relative to
+% recomputing a whole-policy risk bound.
+
+% \textbf{Validating contracts against real-world threats.}
+% The framework establishes composition-level guarantees
+% only when the underlying guardrail contracts hold.
+% This limitation is particularly important for prompted
+% LLM-based stages, which account for \resCorpusLlm{}
+% of the rails examined in E15. The checker provides a
+% systematic starting point for contract validation:
+% its residual obligations identify unverified assumptions,
+% Corollary~\ref{cor:necessary} establishes which obligations
+% are necessary, and Table~\ref{tab:cases} identifies the
+% conditions that would change each adversarial verdict.
+
+% Future work should use these obligations to guide
+% empirical validation of individual guardrails, including
+% measurements of conditional miss rates across different
+% attack classes. Such measurements are important because
+% aggregate risk estimates can obscure weaknesses against
+% specific threats. Adversarial evaluation is especially
+% necessary: our earlier scripted study found that semantic
+% mechanisms did not withstand distribution shifts associated
+% with assumptions identified by the checker. More broadly,
+% contracts inferred from ordinary evaluation data may not
+% hold against adaptive attackers. These studies could also
+% investigate whether configurations with incomplete
+% deterministic coverage can be redesigned to establish
+% critical safety goals through explicit gates.
+
+% \textbf{Strengthening formal and implementation assurance.}
+% Although the current results provide formal guarantees,
+% parts of the verification process remain outside a
+% machine-checked trusted base. Formalizing the proofs in
+% a proof assistant would eliminate reliance on the
+% unchecked induction script and extend mechanized
+% verification to results currently established on paper,
+% including Theorems~\ref{thm:dag}
+% and~\ref{thm:certified}. Extracting an executable checker
+% from this formalization would also provide stronger
+% assurance than the current testing-based correspondence
+% between the formal model and Python implementation.
+
+% Runtime enforcement requires similar attention.
+% Our alignment audit identified weaknesses that conformance
+% tests did not detect, including insufficient enforcement
+% of share validity and slot-state constraints. Future
+% implementations should enforce component identity
+% through immutable configurations or continuous monitoring,
+% rather than relying solely on checks performed during
+% construction. More comprehensive fingerprints should
+% also capture transitively invoked code and model
+% artifacts without depending on manually declared
+% dependencies.
+
+% \textbf{Evaluating practical utility and generalizability.}
+% The framework makes safety assumptions and unmet
+% obligations explicit, but whether this information
+% improves engineering decisions remains an open question.
+% Controlled practitioner studies are therefore needed
+% to assess its usefulness for identifying unsafe
+% compositions, diagnosing configuration problems,
+% and guiding corrective actions.
+
+% The current empirical evidence also has limitations:
+% E15 examines teaching examples from a single framework,
+% while E13 relies on specifications developed by one
+% modeller. Replicating these studies on production
+% configurations, using independent modellers and involving
+% the original system developers, would help assess
+% generalizability and the sensitivity of verification
+% outcomes to modelling decisions. Automated extraction
+% of \Hsl{} specifications from existing guardrail
+% configurations could reduce adoption costs and enable
+% larger-scale evaluations. Finally, because none of
+% the examined corpus configurations propagates established
+% facts between stages, further empirical evidence is
+% needed to determine how frequently this capability
+% occurs in practice and whether specialized polynomial-time
+% verification for hierarchies in which only guards consume
+% provided facts is warranted.
+
+
+% \section*{Data Availability}
+
+% The library, the \Hsl{} checker and engine, the proof obligations, the protocol, experiment drivers, raw results, errata and the source of this paper are in the project repository; \texttt{ARTIFACT.md} gives a table of claims, commands and times. The proofs run in under a minute on a laptop CPU, with no GPU or API key. The corpus file holds only the rails sections of public configurations, with the source commit.
+
+
+% % =====================================================================
+% \section{Conclusion}
+% \label{sec:conclusion}
+% % =====================================================================
+
+% This paper introduced a formal framework for reasoning about the
+% safety of composed LLM guardrails. The framework models guardrail
+% hierarchies through conditional contracts, invocation-scoped
+% evidence, and gates that establish facts for subsequent stages.
+% We proved that the proposed composition checker is sound and
+% complete under free-stage semantics, and demonstrated why safety
+% guarantees cannot be transferred transitively across guardrails.
+% Our results also establish the importance of placing gates before
+% decision-making guards. For hierarchies without fact propagation,
+% verification is near-linear; more general compositions involving
+% propagated facts or correlated conditions introduce coNP-hardness.
+% To address these cases, we provide an efficient sound analysis
+% and an exact refinement procedure for fact-propagating hierarchies.
+
+% Beyond deterministic verification, the framework supports
+% quantitative safety assessment through route-based risk
+% decomposition, prefix-scoped statistical certificates, and
+% incremental recertification following configuration changes.
+% Importantly, the resulting guarantees concern the correctness
+% of guardrail composition, not the validity of individual
+% guardrail contracts. Our examination of public configurations
+% found that existing guardrail stacks are predominantly short
+% chains, for which explicitly identifying assumptions and safety
+% claims may be more valuable than advanced graph analysis.
+% Whether this information improves engineering decisions
+% remains an open empirical question.
+
+% Future work will focus on mechanizing the proofs in a proof
+% assistant, extending the framework to rewriting stages and
+% session-level properties, and evaluating its practical utility
+% through practitioner studies and independent modeling.
+% A further priority is to establish and validate contracts
+% for real-world guardrails, enabling composition-level
+% assurances to be grounded in component-level evidence.
+
 
 \section*{Data Availability}
 
-The library, the \Hsl{} checker and engine, the proof obligations, the protocol, experiment drivers, raw results, errata and the source of this paper are in the project repository; \texttt{ARTIFACT.md} gives a table of claims, commands and times. The proofs run in under a minute on a laptop CPU, with no GPU or API key. The corpus file holds only the rails sections of public configurations, with the source commit. Generated data are released under CC0 and code under the MIT license.
+The project repository contains the verification library,
+the \Hsl{} checker and execution engine, proof obligations,
+experimental protocol, evaluation drivers, raw results,
+errata, and manuscript source. The accompanying
+\texttt{ARTIFACT.md} maps the paper's claims to reproducible
+commands and their execution times. All proofs can be
+executed in under one minute on a laptop CPU, without
+requiring a GPU or API key. The evaluation corpus includes
+only the guardrail-related sections of publicly available
+configurations, together with their source commit identifiers.
+The generated datasets are released under the CC0 license,
+and the source code is distributed under the MIT license.
+
 
 \section*{Ethics Statement}
 

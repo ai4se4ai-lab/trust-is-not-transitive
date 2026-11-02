@@ -76,3 +76,10 @@ E12b's laws set unsafe labels to respect the Route risk premise, and it measures
 engine's decisions. E14 draws formulas near the satisfiability threshold. E13 uses
 `safe_on_this_text`, a clearer name for the adversarial obligation, and a redesigned DevAgent.
 E15 is rebuilt by `corpus_fetch.py` with Colang 2 flows and per-tool hook rails.
+
+## Amendment C (2026-11-02, after the implementation alignment review)
+
+Post hoc, like Amendments A and B. The engine now refuses budgets and confidence shares that are
+not probabilities, and component digests cover the slots of a direct callable instance. E5 targets
+the two new helpers, `_instance_state` and `_probability`. E3, E4, E5, E6 and E11-E14 were rerun on
+this code. Timing experiments E9 and E10 were not rerun.

@@ -13,7 +13,11 @@ def main():
     assert len(keys)==len(set(keys))
     rows=list(csv.DictReader((ROOT/'paper/refs_verification.csv').open(encoding='utf-8')))
     verified={r['key']:r for r in rows}
-    refresh_path=ROOT/'docs/literature/audit-2026-11-01/audit.json'
+    dates={r['date_checked'] for r in rows}
+    assert len(dates)==1, 'Verification records must refer to one reviewed audit date'
+    audit_date=next(iter(dates))
+    assert re.fullmatch(r'\d{4}-\d{2}-\d{2}',audit_date), 'Invalid audit date'
+    refresh_path=ROOT/f'docs/literature/audit-{audit_date}/audit.json'
     if refresh_path.exists():
         refreshed=json.loads(refresh_path.read_text(encoding='utf-8'))
         reviewed={r['key']:r for r in refreshed}
@@ -41,9 +45,9 @@ def main():
             text=re.sub(r'(?m)(?<!\\)%.*$','',tex.read_text(encoding='utf-8'))
             citations.update(k.strip() for group in re.findall(r'\\cite\w*\*?(?:\[[^\]]*\])*\{([^}]+)\}',text) for k in group.split(','))
         assert citations<=set(keys),citations-set(keys)
-        print(len(keys),'entries match the 2026-11-01 reviewed audit and evidence hashes;')
+        print(len(keys),f'entries match the {audit_date} reviewed audit and evidence hashes;')
         print(sum(r['changed'] for r in refreshed),'entries corrected. All citation keys resolve.')
-        print('Google Scholar was inaccessible (HTTP 429). Access and author-version limitations are recorded in REFERENCE_AUDIT.md.')
+        print('Source-access and author-version limitations are recorded in REFERENCE_AUDIT.md.')
         return
     records=json.loads((ROOT/'docs/literature/metadata.json').read_text(encoding='utf-8'))
     by_key={r['key']:r for r in records}

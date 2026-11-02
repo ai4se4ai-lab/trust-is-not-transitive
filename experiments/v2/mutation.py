@@ -19,7 +19,7 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[2]
 TARGETS = {'src/tint/hsl/__init__.py': {'check', 'credited', 'usable', '_order', '_structure', '_refine', '_mask', '_bits', 'successors', 'gated', 'necessary', 'witness_model', 'ancestors'},
            'src/tint/hsl/engine.py': {'_run', '_unestablished', '_holds', '_condition', '_established', '_consult', 'view_for', 'evaluate', 'certify', 'affected_routes',
-                                      'prefix_fingerprints', 'component_digest', '_value_digest', 'valid', '_identities', '__init__'}}
+                                      'prefix_fingerprints', 'component_digest', '_value_digest', '_instance_state', '_probability', 'valid', '_identities', '__init__'}}
 SWAPS = {ast.In: ast.NotIn, ast.NotIn: ast.In, ast.Eq: ast.NotEq, ast.NotEq: ast.Eq, ast.LtE: ast.Lt, ast.Is: ast.IsNot, ast.IsNot: ast.Is}
 BIN = {ast.BitAnd: ast.BitOr, ast.BitOr: ast.BitAnd, ast.Sub: ast.BitOr}
 

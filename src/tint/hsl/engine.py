@@ -13,6 +13,7 @@ import hashlib
 import inspect
 import json
 import math
+import numbers
 from typing import Any, Callable, Iterable, Mapping
 from . import Gate, Guard, Hierarchy, Layer, SpecError, Switch, ancestors, check, gated
 from ..calibration import binomial_upper
@@ -35,6 +36,20 @@ class Outcome:
     path: tuple[str, ...]  # stages visited, in order
 
 
+def _instance_state(value: Any) -> dict[str, Any]:
+    """An object's attributes, from its `__dict__` and from the slots of every class.
+
+    Slots are read from their descriptors, which already have private names mangled
+    and exist however `__slots__` was spelled.
+    """
+    state = dict(getattr(value, '__dict__', {}))
+    for cls in type(value).__mro__:
+        for name, member in vars(cls).items():
+            if inspect.ismemberdescriptor(member) and hasattr(value, name):
+                state[name] = getattr(value, name)
+    return state
+
+
 def _value_digest(value: Any, seen: set[int]) -> str:
     if isinstance(value, (str, bytes, int, float, bool, type(None))):
         return repr(value)
@@ -50,13 +65,8 @@ def _value_digest(value: Any, seen: set[int]) -> str:
     if isinstance(value, (list, tuple, set, frozenset)):
         items = [_value_digest(v, seen) for v in value]
         return repr(sorted(items) if isinstance(value, (set, frozenset)) else items)
-    state = dict(getattr(value, '__dict__', {}))
-    for cls in type(value).__mro__:
-        for slot in getattr(cls, '__slots__', ()):
-            if hasattr(value, slot):
-                state[slot] = getattr(value, slot)
     shown = repr(value) if type(value).__repr__ is not object.__repr__ else ''
-    return type(value).__qualname__ + shown + _value_digest(state, seen)
+    return type(value).__qualname__ + shown + _value_digest(_instance_state(value), seen)
 
 
 def component_digest(component: Any, seen: set[int] | None = None) -> str:
@@ -86,7 +96,7 @@ def component_digest(component: Any, seen: set[int] | None = None) -> str:
             source = inspect.getsource(type(component))
         except (OSError, TypeError) as exc:
             raise SpecError('component has no readable identity: ' + repr(type(component))) from exc
-        parts = ['instance', source, _value_digest(getattr(component, '__dict__', {}), seen)]
+        parts = ['instance', source, _value_digest(_instance_state(component), seen)]
     parts += [str(getattr(component, 'version', '')), str(getattr(component, 'config', ''))]
     return hashlib.sha256(json.dumps(parts).encode()).hexdigest()
 
@@ -138,6 +148,12 @@ class RouteCertificate:
                 and type(self.samples) is int and self.samples > 0)
 
 
+def _probability(value: Any, name: str) -> None:
+    """Refuse what is not a probability, before NaN can make a later comparison false."""
+    if isinstance(value, bool) or not isinstance(value, numbers.Real) or not 0 <= value <= 1:
+        raise SpecError(f'{name} must be a probability: {value!r}')
+
+
 Rule = Callable[[ActionView, Proposal, 'Ledger'], bool]
 
 
@@ -148,11 +164,20 @@ class Ledger:
 
 
 class Engine:
+    """Fingerprints are computed once, at construction, and acceptance does not recompute
+    them. Components must stay fixed for an engine's lifetime; after a change, build a new
+    engine, whose fingerprints then decide which certificates still apply.
+    """
+
     def __init__(self, h: Hierarchy, store: ProvenanceStore, approvals: ApprovalStore, rules: Mapping[str, Rule],
                  guards: Mapping[str, Callable], conditions: Mapping[str, Callable] | None = None,
                  checks: Mapping[str, Callable] | None = None, certificates: Iterable[RouteCertificate] = (),
                  context: str = '', statistical: frozenset[str] = frozenset(), budget: float = 1.0,
                  delta: float = 0.05, label: str = '', shares: Mapping[str, float] | None = None) -> None:
+        _probability(delta, 'confidence budget')
+        _probability(budget, 'risk budget')
+        for route, share in (shares or {}).items():
+            _probability(share, f'confidence share of {route}')
         report = check(h)
         if not report.ok:
             raise SpecError('specification rejected: ' + repr(report.findings[:3]))

@@ -1898,59 +1898,59 @@
   },
   "resMutationCrash": {
     "pointer": "/modes/crash_or_timeout",
-    "rendered": "175",
+    "rendered": "183",
     "source": "results/v2/e5_mutation.json",
-    "source_sha256": "2bf4f4f2c9a42629edfb604c45e52f9d3f42a2f05919d6fc68e204e342989b0a",
-    "value": 175
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
+    "value": 183
   },
   "resMutationDifferential": {
     "pointer": "/modes/differential_only",
     "rendered": "93",
     "source": "results/v2/e5_mutation.json",
-    "source_sha256": "2bf4f4f2c9a42629edfb604c45e52f9d3f42a2f05919d6fc68e204e342989b0a",
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
     "value": 93
   },
   "resMutationEquivalent": {
     "pointer": "/rows#equivalent",
     "rendered": "28",
     "source": "results/v2/e5_mutation.json",
-    "source_sha256": "2bf4f4f2c9a42629edfb604c45e52f9d3f42a2f05919d6fc68e204e342989b0a",
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
     "value": 28
   },
   "resMutationGaps": {
     "pointer": "/rows#gap",
     "rendered": "4",
     "source": "results/v2/e5_mutation.json",
-    "source_sha256": "2bf4f4f2c9a42629edfb604c45e52f9d3f42a2f05919d6fc68e204e342989b0a",
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
     "value": 4
   },
   "resMutationKilled": {
     "pointer": "/killed",
-    "rendered": "387",
+    "rendered": "396",
     "source": "results/v2/e5_mutation.json",
-    "source_sha256": "2bf4f4f2c9a42629edfb604c45e52f9d3f42a2f05919d6fc68e204e342989b0a",
-    "value": 387
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
+    "value": 396
   },
   "resMutationSurvived": {
     "pointer": "/rows#survived",
     "rendered": "32",
     "source": "results/v2/e5_mutation.json",
-    "source_sha256": "2bf4f4f2c9a42629edfb604c45e52f9d3f42a2f05919d6fc68e204e342989b0a",
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
     "value": 32
   },
   "resMutationTotal": {
     "pointer": "/mutants",
-    "rendered": "419",
+    "rendered": "428",
     "source": "results/v2/e5_mutation.json",
-    "source_sha256": "2bf4f4f2c9a42629edfb604c45e52f9d3f42a2f05919d6fc68e204e342989b0a",
-    "value": 419
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
+    "value": 428
   },
   "resMutationUnit": {
     "pointer": "/modes/unit_only",
-    "rendered": "119",
+    "rendered": "120",
     "source": "results/v2/e5_mutation.json",
-    "source_sha256": "2bf4f4f2c9a42629edfb604c45e52f9d3f42a2f05919d6fc68e204e342989b0a",
-    "value": 119
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
+    "value": 120
   },
   "resNominalConfidence": {
     "pointer": "/design/delta#one-minus-percent",
