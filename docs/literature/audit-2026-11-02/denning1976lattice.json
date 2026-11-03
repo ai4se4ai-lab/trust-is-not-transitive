@@ -1,0 +1,86 @@
+{
+  "key": "denning1976lattice",
+  "entry": {
+    "doi": "10.1145/360051.360056",
+    "year": "1976",
+    "pages": "236--243",
+    "number": "5",
+    "volume": "19",
+    "journal": "Communications of the ACM",
+    "title": "A Lattice Model of Secure Information Flow",
+    "author": "Denning, Dorothy E.",
+    "ENTRYTYPE": "article",
+    "ID": "denning1976lattice"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=A+Lattice+Model+of+Secure+Information+Flow",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1145/360051.360056",
+      "status": 200,
+      "file": "denning1976lattice.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/360051.360056",
+      "type": "journal-article",
+      "title": [
+        "A lattice model of secure information flow"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Dorothy E.",
+          "family": "Denning",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Purdue Univ., West Lafayette, IN"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Communications of the ACM"
+      ],
+      "volume": "19",
+      "issue": "5",
+      "page": "236-243",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1976,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1976,
+            5
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            1976,
+            5
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

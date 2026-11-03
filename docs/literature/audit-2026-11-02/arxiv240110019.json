@@ -1,0 +1,224 @@
+{
+  "key": "arxiv240110019",
+  "entry": {
+    "url": "https://doi.org/10.18653/v1/2024.findings-emnlp.79",
+    "doi": "10.18653/v1/2024.findings-emnlp.79",
+    "publisher": "Association for Computational Linguistics",
+    "year": "2024",
+    "pages": "1467--1490",
+    "booktitle": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    "title": "{R-Judge: Benchmarking Safety Risk Awareness for LLM Agents}",
+    "author": "Yuan, Tongxin and He, Zhiwei and Dong, Lingzhong and Wang, Yiming and Zhao, Ruijie and Xia, Tian and Xu, Lizhen and Zhou, Binglin and Li, Fangqi and Zhang, Zhuosheng and Wang, Rui and Liu, Gongshen",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv240110019"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=R-Judge%3A+Benchmarking+Safety+Risk+Awareness+for+LLM+Agents",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.18653/v1/2024.findings-emnlp.79",
+      "status": 200,
+      "file": "arxiv240110019.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.18653/v1/2024.findings-emnlp.79",
+      "type": "proceedings-article",
+      "title": [
+        "R-Judge: Benchmarking Safety Risk Awareness for LLM Agents"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Tongxin",
+          "family": "Yuan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhiwei",
+          "family": "He",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lingzhong",
+          "family": "Dong",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yiming",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ruijie",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tian",
+          "family": "Xia",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lizhen",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Binglin",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fangqi",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhuosheng",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rui",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gongshen",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EMNLP 2024"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1467-1490",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+        "location": "Miami, Florida, USA",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              11
+            ]
+          ]
+        }
+      },
+      "similarity": 1.0
+    }
+  ]
+}

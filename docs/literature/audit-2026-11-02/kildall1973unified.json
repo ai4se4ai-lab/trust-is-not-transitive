@@ -1,0 +1,99 @@
+{
+  "key": "kildall1973unified",
+  "entry": {
+    "doi": "10.1145/512927.512945",
+    "publisher": "ACM",
+    "year": "1973",
+    "pages": "194--206",
+    "booktitle": "Proceedings of the 1st Annual ACM SIGACT-SIGPLAN Symposium on Principles of Programming Languages (POPL '73)",
+    "title": "A unified approach to global program optimization",
+    "author": "Kildall, Gary A.",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "kildall1973unified"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=A+unified+approach+to+global+program+optimization",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1145/512927.512945",
+      "status": 200,
+      "file": "kildall1973unified.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/512927.512945",
+      "type": "proceedings-article",
+      "title": [
+        "A unified approach to global program optimization"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Gary A.",
+          "family": "Kildall",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 1st annual ACM SIGACT-SIGPLAN symposium on Principles of programming languages  - POPL '73"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "194-206",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1973
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1973
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "ACM Press",
+      "event": {
+        "name": "the 1st annual ACM SIGACT-SIGPLAN symposium",
+        "location": "Boston, Massachusetts",
+        "acronym": "POPL '73",
+        "number": "1",
+        "sponsor": [
+          "SIGPLAN, ACM Special Interest Group on Programming Languages",
+          "SIGACT, ACM Special Interest Group on Algorithms and Computation Theory"
+        ],
+        "start": {
+          "date-parts": [
+            [
+              1973,
+              10,
+              1
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              1973,
+              10,
+              3
+            ]
+          ]
+        }
+      },
+      "similarity": 1.0
+    }
+  ]
+}

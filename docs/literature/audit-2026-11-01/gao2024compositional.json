@@ -1,0 +1,127 @@
+{
+  "key": "gao2024compositional",
+  "entry": {
+    "doi": "10.1145/3635707",
+    "year": "2024",
+    "pages": "1--38",
+    "number": "3",
+    "volume": "33",
+    "journal": "ACM Transactions on Software Engineering and Methodology",
+    "title": "Compositional Verification of First-Order Masking Countermeasures against Power Side-Channel Attacks",
+    "author": "Gao, Pengfei and Song, Fu and Chen, Taolue",
+    "ENTRYTYPE": "article",
+    "ID": "gao2024compositional"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Compositional+Verification+of+First-Order+Masking+Countermeasures+against+Power+Side-Channel+Attacks",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1145/3635707",
+      "status": 200,
+      "file": "gao2024compositional.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/3635707",
+      "type": "journal-article",
+      "title": [
+        "Compositional Verification of First-Order Masking Countermeasures against Power Side-Channel Attacks"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3800-2565",
+          "authenticated-orcid": false,
+          "given": "Pengfei",
+          "family": "Gao",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Bytedance, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0581-2679",
+          "authenticated-orcid": false,
+          "given": "Fu",
+          "family": "Song",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences, Beijing, China, and University of Chinese Academy of Sciences, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5993-1665",
+          "authenticated-orcid": false,
+          "given": "Taolue",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Birkbeck, University of London, London, UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ACM Transactions on Software Engineering and Methodology"
+      ],
+      "volume": "33",
+      "issue": "3",
+      "page": "1-38",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            14
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            31
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            14
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

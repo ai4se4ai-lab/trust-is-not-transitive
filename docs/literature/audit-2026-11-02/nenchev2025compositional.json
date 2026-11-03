@@ -1,0 +1,118 @@
+{
+  "key": "nenchev2025compositional",
+  "entry": {
+    "doi": "10.1016/j.jss.2025.112499",
+    "year": "2025",
+    "pages": "112499",
+    "volume": "230",
+    "journal": "Journal of Systems and Software",
+    "title": "Compositional code-level safety verification for automated driving controllers",
+    "author": "Nenchev, Vladislav and Imrie, Calum and Gerasimou, Simos and Calinescu, Radu",
+    "ENTRYTYPE": "article",
+    "ID": "nenchev2025compositional"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Compositional+code-level+safety+verification+for+automated+driving+controllers",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1016/j.jss.2025.112499",
+      "status": 200,
+      "file": "nenchev2025compositional.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1016/j.jss.2025.112499",
+      "type": "journal-article",
+      "title": [
+        "Compositional code-level safety verification for automated driving controllers"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9261-2746",
+          "authenticated-orcid": false,
+          "given": "Vladislav",
+          "family": "Nenchev",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-3198-9226",
+          "authenticated-orcid": false,
+          "given": "Calum",
+          "family": "Imrie",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2706-5272",
+          "authenticated-orcid": false,
+          "given": "Simos",
+          "family": "Gerasimou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2678-9260",
+          "authenticated-orcid": false,
+          "given": "Radu",
+          "family": "Calinescu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Systems and Software"
+      ],
+      "volume": "230",
+      "issue": null,
+      "page": "112499",
+      "article-number": "112499",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

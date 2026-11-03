@@ -1,0 +1,244 @@
+{
+  "key": "arxiv250318813",
+  "entry": {
+    "url": "https://doi.org/10.1109/satml68715.2026.00040",
+    "doi": "10.1109/satml68715.2026.00040",
+    "publisher": "IEEE",
+    "year": "2026",
+    "pages": "587--618",
+    "booktitle": "2026 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)",
+    "title": "{Defeating Prompt Injections by Design}",
+    "author": "Debenedetti, Edoardo and Shumailov, Ilia and Fan, Tianqi and Hayes, Jamie and Carlini, Nicholas and Fabian, Daniel and Kern, Christoph and Shi, Chongyang and Terzis, Andreas and Tram{\\`e}r, Florian",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv250318813"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Defeating+Prompt+Injections+by+Design",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1109/satml68715.2026.00040",
+      "status": 200,
+      "file": "arxiv250318813.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/satml68715.2026.00040",
+      "type": "proceedings-article",
+      "title": [
+        "Defeating Prompt Injections by Design"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Edoardo",
+          "family": "Debenedetti",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Google"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ilia",
+          "family": "Shumailov",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tianqi",
+          "family": "Fan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jamie",
+          "family": "Hayes",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nicholas",
+          "family": "Carlini",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Fabian",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christoph",
+          "family": "Kern",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chongyang",
+          "family": "Shi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andreas",
+          "family": "Terzis",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Florian",
+          "family": "Tramèr",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "ETH Zurich"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "587-618",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "event": {
+        "name": "2026 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)",
+        "location": "Munich, Germany",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              23
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              25
+            ]
+          ]
+        }
+      },
+      "similarity": 1.0
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "key": "arxiv240718370",
+  "entry": {
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/08dabd5345b37fffcbe335bd578b15a0-Abstract-Conference.html",
+    "year": "2025",
+    "pages": "3101--3125",
+    "volume": "2025",
+    "booktitle": "International Conference on Learning Representations",
+    "title": "{Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement}",
+    "author": "Jung, Jaehun and Brahman, Faeze and Choi, Yejin",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv240718370"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Trust+or+Escalate%3A+LLM+Judges+with+Provable+Guarantees+for+Human+Agreement",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Trust+or+Escalate%3A+LLM+Judges+with+Provable+Guarantees+for+Human+Agreement&rows=3",
+      "status": 200,
+      "file": "arxiv240718370.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/08dabd5345b37fffcbe335bd578b15a0-Abstract-Conference.html",
+      "status": 200,
+      "file": "arxiv240718370.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.20944/preprints202610.2978.v1",
+      "type": "posted-content",
+      "title": [
+        "Why Escalate? Typed Escalation for LLM-Judge Panels with Per-Type Conformal Guarantees"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-7911-5879",
+          "authenticated-orcid": false,
+          "given": "Maikel",
+          "family": "Leyva-Vázquez",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            29
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "MDPI AG",
+      "event": null,
+      "similarity": 0.529
+    },
+    {
+      "DOI": "10.1145/3662158.3664933",
+      "type": "proceedings-article",
+      "title": [
+        "Keynote: Provable Slashing Guarantees"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7163-8306",
+          "authenticated-orcid": false,
+          "given": "Tim",
+          "family": "Roughgarden",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Computer Science, Columbia University, New York, NY, United States of America"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 43rd ACM Symposium on Principles of Distributed Computing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "2-2",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            17
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            17
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            17
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "event": {
+        "name": "PODC '24: 43rd ACM Symposium on Principles of Distributed Computing",
+        "sponsor": [
+          "SIGACT ACM Special Interest Group on Algorithms and Computation Theory",
+          "SIGOPS ACM Special Interest Group on Operating Systems"
+        ],
+        "location": "Nantes France",
+        "acronym": "PODC '24"
+      },
+      "similarity": 0.438
+    },
+    {
+      "DOI": "10.1145/3701551.3703531",
+      "type": "proceedings-article",
+      "title": [
+        "Sequential Diversification with Provable Guarantees"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0008-6463-392X",
+          "authenticated-orcid": false,
+          "given": "Honglian",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "KTH Royal Institute of Technology, Stockholm, Sweden"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5976-1993",
+          "authenticated-orcid": false,
+          "given": "Sijing",
+          "family": "Tu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "KTH Royal Institute of Technology, Stockholm, Sweden"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5211-112X",
+          "authenticated-orcid": false,
+          "given": "Aristides",
+          "family": "Gionis",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "KTH Royal Institute of Technology, Stockholm, Sweden"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the Eighteenth ACM International Conference on Web Search and Data Mining"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "345-353",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            10
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            10
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "event": {
+        "name": "WSDM '25: The Eighteenth ACM International Conference on Web Search and Data Mining",
+        "sponsor": [
+          "SIGMOD ACM Special Interest Group on Management of Data",
+          "SIGWEB ACM Special Interest Group on Hypertext, Hypermedia, and Web",
+          "SIGKDD ACM Special Interest Group on Knowledge Discovery in Data",
+          "SIGIR ACM Special Interest Group on Information Retrieval"
+        ],
+        "location": "Hannover Germany",
+        "acronym": "WSDM '25"
+      },
+      "similarity": 0.509
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement"
+    ],
+    "citation_author": [
+      "Jung, Jaehun",
+      "Brahman, Faeze",
+      "Choi, Yejin"
+    ],
+    "citation_journal_title": [
+      "International Conference on Learning Representations"
+    ],
+    "citation_volume": [
+      "2025"
+    ],
+    "citation_firstpage": [
+      "3101"
+    ],
+    "citation_lastpage": [
+      "3125"
+    ],
+    "citation_pdf_url": [
+      "https://proceedings.iclr.cc/paper_files/paper/2025/file/08dabd5345b37fffcbe335bd578b15a0-Paper-Conference.pdf"
+    ],
+    "citation_publication_date": [
+      "2025-05-01"
+    ]
+  },
+  "details": {},
+  "bibtex_links": [
+    "/paper_files/paper/500-/bibtex"
+  ]
+}

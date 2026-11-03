@@ -1,0 +1,3719 @@
+[
+  {
+    "key": "arxiv260918128",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2609.18128",
+      "url": "https://arxiv.org/abs/2609.18128",
+      "doi": "10.48550/arXiv.2609.18128",
+      "year": "2026",
+      "title": "{Symbolic Temporal Supervision of LLM Agents Using Contracts}",
+      "author": "Xiao, Yifeng and Nuzzo, Pierluigi",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv260918128"
+    },
+    "entry_sha256": "8ac4c5b8202b217e37a40e4d1e7373b14c1eb593ba3e06fb3f081057d07dc89c",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Symbolic+Temporal+Supervision+of+LLM+Agents+Using+Contracts&rows=3",
+      "https://arxiv.org/abs/2609.18128"
+    ],
+    "evidence": {
+      "arxiv260918128.crossref.json.gz": "fdc0a0b49053e845015caec332c52592a3dafad31b58053fbe7c41f02a062cf4",
+      "arxiv260918128.primary.html.gz": "f8f2700c80ff944c8f6b8c1b58ff7d1ecef43af3b8df32b296f67a7e3f132e66",
+      "arxiv260918128.json": "cd9d6c51a3564e4f6448607cdd9588af4eff0f085ec8010038b5bb77726cb527"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv260518672",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2605.18672",
+      "url": "https://arxiv.org/abs/2605.18672",
+      "doi": "10.48550/arXiv.2605.18672",
+      "year": "2026",
+      "title": "{Position: A Three-Layer Probabilistic Assume-Guarantee Architecture Is Structurally Required for Safe LLM Agent Deployment}",
+      "author": "Bensalem, S. and Dong, Y. and Franzle, M. and Huang, X. and Kroger, J. and Nickovic, D. and Nouri, A. and Roy, R. and Wu, C.",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv260518672"
+    },
+    "entry_sha256": "943100bd9d49a84b3469ba5707b1d4bc98937b6af5495ab2c361760fe700e6e5",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Position%3A+A+Three-Layer+Probabilistic+Assume-Guarantee+Architecture+Is+Structurally+Required+for+Safe+LLM+Agent+Deployment&rows=3",
+      "https://arxiv.org/abs/2605.18672"
+    ],
+    "evidence": {
+      "arxiv260518672.crossref.json.gz": "e290e8f6ff8dd21c8442249747eef2490841ab1726e63f132462fa0d464dae95",
+      "arxiv260518672.primary.html.gz": "fbacc4774fa2bc7563ae98c416a1274c12ca6769d3f24fea371fc60e4d33a5f8",
+      "arxiv260518672.json": "c7d6618193d01094950dea36f07b5050127f3d01e9333d3cea22ce1861aa39b7"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250600911",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.52202/085713-2364",
+      "doi": "10.52202/085713-2364",
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "year": "2025",
+      "pages": "78334--78366",
+      "booktitle": "Advances in Neural Information Processing Systems 38",
+      "title": "{Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models}",
+      "author": "Overman, William and Bayati, Mohsen",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250600911"
+    },
+    "entry_sha256": "4959dbec8c23c8b59c9a58ba9cc9361e5fe9da3c2ea5340dbfefefe74e715611",
+    "sources": [
+      "https://api.crossref.org/works/10.52202/085713-2364"
+    ],
+    "evidence": {
+      "arxiv250600911.crossref.json.gz": "c91922b508266e86352d8bbbd74b33cc01a670bb2f8c6a9f824c1f066ead2bb2",
+      "arxiv250600911.json": "d33a5855245bb0272617d995836ac32fd2f43aa280d4010e6f10eb99df7836d2"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv240718370",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/08dabd5345b37fffcbe335bd578b15a0-Abstract-Conference.html",
+      "year": "2025",
+      "pages": "3101--3125",
+      "volume": "2025",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement}",
+      "author": "Jung, Jaehun and Brahman, Faeze and Choi, Yejin",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240718370"
+    },
+    "entry_sha256": "75d54e7daa15013e67ee9e81dc8f6ca0ca66d41dea5d2a0e835211150a93514b",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Trust+or+Escalate%3A+LLM+Judges+with+Provable+Guarantees+for+Human+Agreement&rows=3",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/08dabd5345b37fffcbe335bd578b15a0-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/file/08dabd5345b37fffcbe335bd578b15a0-Bibtex-Conference.bib"
+    ],
+    "evidence": {
+      "arxiv240718370.crossref.json.gz": "c104c75f8bdf515fe0908b7d258b975930bdcdc4b29b5684b58eebbb3586bd35",
+      "arxiv240718370.primary.html.gz": "81f6da38ddbd28294b9503791363a22750e4abb9b193a95a68dd189fc45c0e7d",
+      "arxiv240718370.json": "d2f56aebaaf52f13ffa408ea01f61ac789c1c5f39ca6bd5c9c122d0bb864d125",
+      "arxiv240718370-bibtex.supplement.gz": "d65e6db013046f91a01e1f9dcd3b3f488b38b4af916d7eb8af494ee0bdcd128a"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv260215391",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2602.15391",
+      "url": "https://arxiv.org/abs/2602.15391",
+      "doi": "10.48550/arXiv.2602.15391",
+      "year": "2026",
+      "title": "{Improving LLM Reliability through Hybrid Abstention and Adaptive Detection}",
+      "author": "Sharma, Ankit and Tapas, Nachiket and Patra, Jyotiprakash",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv260215391"
+    },
+    "entry_sha256": "7b37fa446b6699420ef054e38b0711154ead0baf60f11f774c3c0cba5d1b3f2d",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Improving+LLM+Reliability+through+Hybrid+Abstention+and+Adaptive+Detection&rows=3",
+      "https://arxiv.org/abs/2602.15391"
+    ],
+    "evidence": {
+      "arxiv260215391.crossref.json.gz": "73e1d55c56c615c9e14275a97a57e2765d8da54b023954a8e0051c9fdf02f2ef",
+      "arxiv260215391.primary.html.gz": "e60a4e7736a0a518651b5632996f0ddac21304d5a2ba1f487af0e796d96bffc1",
+      "arxiv260215391.json": "9fd5ae05a589a3f17112fac677fa02b0eeb3ce4884f1b59c4505bc21fcf1fb44"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv230505176",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://openreview.net/forum?id=cSimKw5p6R",
+      "year": "2024",
+      "journal": "Transactions on Machine Learning Research",
+      "title": "{FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance}",
+      "author": "Chen, Lingjiao and Zaharia, Matei and Zou, James",
+      "ENTRYTYPE": "article",
+      "ID": "arxiv230505176"
+    },
+    "entry_sha256": "b25732e25ccbd9faff46578d19777bf69943a24e101972ac0fbf64bccc930731",
+    "sources": [
+      "https://api.crossref.org/works?query.title=FrugalGPT%3A+How+to+Use+Large+Language+Models+While+Reducing+Cost+and+Improving+Performance&rows=3",
+      "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DcSimKw5p6R",
+      "https://lingjiaochen.com/papers/2024_FrugalGPT_TMLR.pdf"
+    ],
+    "evidence": {
+      "arxiv230505176.crossref.json.gz": "9cdd8d701ed0a9773339320ce4df4c689b84de6ca0dda999ecfe9f633bdaacc0",
+      "arxiv230505176.primary.html.gz": "ed308d590e3af45f3f8902cf49b12a4a159855672de7eb12be808b6b7fa7d54b",
+      "arxiv230505176.json": "edf0208c84da9d092e9a1820b87ba6b5af0e6fd76aa0840d524fc8cc8ec092d5",
+      "frugalgpt-published.supplement.gz": "968d9cd74c8e9b0aef6ff06d5259ef1b2ac852183fe41ef413b6bd567b8ebd57"
+    },
+    "note": "Published TMLR version confirmed using the author-hosted December 2024 published PDF. OpenReview responds with a browser challenge, which was not treated as verification.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250503574",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2505.03574",
+      "url": "https://arxiv.org/abs/2505.03574",
+      "doi": "10.48550/arXiv.2505.03574",
+      "year": "2025",
+      "title": "{LlamaFirewall: An open source guardrail system for building secure AI agents}",
+      "author": "Chennabasappa, Sahana and Nikolaidis, Cyrus and Song, Daniel and Molnar, David and Ding, Stephanie and Wan, Shengye and Whitman, Spencer and Deason, Lauren and Doucette, Nicholas and Montilla, Abraham and Gampa, Alekhya and de Paola, Beto and Gabi, Dominik and Crnkovich, James and Testud, Jean-Christophe and He, Kat and Chaturvedi, Rashnil and Zhou, Wu and Saxe, Joshua",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv250503574"
+    },
+    "entry_sha256": "c5609f30573323f69fd234fb5fe7c6a5674015f7ca396924effb59434b0cfca7",
+    "sources": [
+      "https://api.crossref.org/works?query.title=LlamaFirewall%3A+An+open+source+guardrail+system+for+building+secure+AI+agents&rows=3",
+      "https://arxiv.org/abs/2505.03574"
+    ],
+    "evidence": {
+      "arxiv250503574.crossref.json.gz": "622d7427875d636a9469db20df4c12e4033f234fec56870d7a0cb59b298e702f",
+      "arxiv250503574.primary.html.gz": "4c8e122c601c667e864d08331498c565031a2fef60e2320645f11ac81e1a64a9",
+      "arxiv250503574.json": "79dc451b62610de6aba6c341928e498299b3de06cb6fe299aee86e3dbc855596"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv231206674",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2312.06674",
+      "url": "https://arxiv.org/abs/2312.06674",
+      "doi": "10.48550/arXiv.2312.06674",
+      "year": "2023",
+      "title": "{Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations}",
+      "author": "Inan, Hakan and Upasani, Kartikeya and Chi, Jianfeng and Rungta, Rashi and Iyer, Krithika and Mao, Yuning and Tontchev, Michael and Hu, Qing and Fuller, Brian and Testuggine, Davide and Khabsa, Madian",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv231206674"
+    },
+    "entry_sha256": "583ccb1a58ba23796a61bd39c39cfed0bf04aea156d8bfde482826a6bf6c88e8",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Llama+Guard%3A+LLM-based+Input-Output+Safeguard+for+Human-AI+Conversations&rows=3",
+      "https://arxiv.org/abs/2312.06674"
+    ],
+    "evidence": {
+      "arxiv231206674.crossref.json.gz": "173246bfd9d1e6fdeb4fe68446119d07cc739e6ab28a0006e2c450fd462411a6",
+      "arxiv231206674.primary.html.gz": "0455fd2070ab8a0f2d61685a81a92eea652c144048db4a3a0187d694a1296fb8",
+      "arxiv231206674.json": "7320e77208082da1e915f7462714e57f67cc05c8ae7eb7550533e2be46d161e6"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv240618495",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/0f69b4b96a46f284b726fbd70f74fb3b-Abstract-Datasets_and_Benchmarks_Track.html",
+      "doi": "10.52202/079017-0261",
+      "publisher": "Curran Associates, Inc.",
+      "year": "2024",
+      "pages": "8093--8131",
+      "volume": "37",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "title": "{WildGuard: Open One-stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs}",
+      "author": "Han, Seungju and Rao, Kavel and Ettinger, Allyson and Jiang, Liwei and Lin, Bill Yuchen and Lambert, Nathan and Choi, Yejin and Dziri, Nouha",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240618495"
+    },
+    "entry_sha256": "6502a1dccc66a4dd475f17da6137c0750e9534200e5864a6c1a76ba7126a4ac0",
+    "sources": [
+      "https://api.crossref.org/works/10.52202/079017-0261",
+      "https://proceedings.neurips.cc/paper_files/paper/2024/hash/0f69b4b96a46f284b726fbd70f74fb3b-Abstract-Datasets_and_Benchmarks_Track.html",
+      "https://proceedings.neurips.cc/paper_files/paper/2024/file/0f69b4b96a46f284b726fbd70f74fb3b-Bibtex-Datasets_and_Benchmarks_Track.bib"
+    ],
+    "evidence": {
+      "arxiv240618495.crossref.json.gz": "3e3aa55b4f932f0e5e975c1d0502d7657038210612599d7e39ab4d820aababe8",
+      "arxiv240618495.primary.html.gz": "603b818374148e9f655b1b84b57168da8af3aa4f2519ae107ae2d551c9819cc4",
+      "arxiv240618495.json": "96f654c357312035ad2df97bbb28cc44e4da5f5f2099c6892f5859074fc5602c",
+      "arxiv240618495-bibtex.supplement.gz": "8e233d4fd6b0ae998f7d7f46011ed66e1eb29addf0fad93ae9813d6120f95bf0"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250118837",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2501.18837",
+      "url": "https://arxiv.org/abs/2501.18837",
+      "doi": "10.48550/arXiv.2501.18837",
+      "year": "2025",
+      "title": "{Constitutional Classifiers: Defending against Universal Jailbreaks across Thousands of Hours of Red Teaming}",
+      "author": "Sharma, Mrinank and Tong, Meg and Mu, Jesse and Wei, Jerry and Kruthoff, Jorrit and Goodfriend, Scott and Ong, Euan and Peng, Alwin and Agarwal, Raj and Anil, Cem and Askell, Amanda and Bailey, Nathan and Benton, Joe and Bluemke, Emma and Bowman, Samuel R. and Christiansen, Eric and Cunningham, Hoagy and Dau, Andy and Gopal, Anjali and Gilson, Rob and Graham, Logan and Howard, Logan and Kalra, Nimit and Lee, Taesung and Lin, Kevin and Lofgren, Peter and Mosconi, Francesco and O'Hara, Clare and Olsson, Catherine and Petrini, Linda and Rajani, Samir and Saxena, Nikhil and Silverstein, Alex and Singh, Tanya and Sumers, Theodore and Tang, Leonard and Troy, Kevin K. and Weisser, Constantin and Zhong, Ruiqi and Zhou, Giulio and Leike, Jan and Kaplan, Jared and Perez, Ethan",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv250118837"
+    },
+    "entry_sha256": "7b3683e1d567f8dffc5c44e913b086575028519ee01a1b8b0ec6ca38c0433006",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Constitutional+Classifiers%3A+Defending+against+Universal+Jailbreaks+across+Thousands+of+Hours+of+Red+Teaming&rows=3",
+      "https://arxiv.org/abs/2501.18837"
+    ],
+    "evidence": {
+      "arxiv250118837.crossref.json.gz": "9441925131f41ea3d1fcb5f3d06fe4261f55376e217a56a3caf96b25705ee0f5",
+      "arxiv250118837.primary.html.gz": "89fd8a221709b7ba0d92bb3e2a4926c6bc61de97e01f8b8e58fe7c96161d85ed",
+      "arxiv250118837.json": "96f344ec5798262ab7258cb856de8542f9a595b8724a8b428dd3eba6ba32bcf2"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250926238",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/5a829e299ebc1c1615ddb09e98fb6ce8-Abstract-Conference.html",
+      "year": "2026",
+      "pages": "55192--55229",
+      "volume": "2026",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{Beyond Linear Probes: Dynamic Safety Monitoring for Language Models}",
+      "author": "Oldfield, James and Torr, Philip and Patras, Ioannis and Bibi, Adel and Barez, Fazl",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250926238"
+    },
+    "entry_sha256": "fc4833b631846792e24fda05577e9a4d40baa10f56056c909a34aa32873e28fd",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Beyond+Linear+Probes%3A+Dynamic+Safety+Monitoring+for+Language+Models&rows=3",
+      "https://proceedings.iclr.cc/paper_files/paper/2026/hash/5a829e299ebc1c1615ddb09e98fb6ce8-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/2026/file/5a829e299ebc1c1615ddb09e98fb6ce8-Bibtex-Conference.bib"
+    ],
+    "evidence": {
+      "arxiv250926238.crossref.json.gz": "dea8cc29225d984ec6a79e86e45c37d1ab6c01d482bafcccdb0b53c9af77fefc",
+      "arxiv250926238.primary.html.gz": "15496e39f1b9f850264b0c8b886308bf80c9f032d5641f56c973c2bf92ea8487",
+      "arxiv250926238.json": "c56433f049163f9dbcd7afc6ed12f55c96b22502d7eab5c86e78a452da8cd4cd",
+      "arxiv250926238-bibtex.supplement.gz": "d8e97c226ea7cec788e42a26f813387e2a072e60713a48fdb63df2e09358ea38"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv231010501",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.18653/v1/2023.emnlp-demo.40",
+      "doi": "10.18653/v1/2023.emnlp-demo.40",
+      "publisher": "Association for Computational Linguistics",
+      "year": "2023",
+      "pages": "431--445",
+      "booktitle": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+      "title": "{NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails}",
+      "author": "Rebedea, Traian and Dinu, Razvan and Sreedhar, Makesh Narsimhan and Parisien, Christopher and Cohen, Jonathan",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv231010501"
+    },
+    "entry_sha256": "4c355184ba46b32ced81e163543db6fbd5ac82dea50dbcef525a53ac359f17ff",
+    "sources": [
+      "https://api.crossref.org/works/10.18653/v1/2023.emnlp-demo.40"
+    ],
+    "evidence": {
+      "arxiv231010501.crossref.json.gz": "2aec365fd405ffa32a22d82adc0e5a491841b3383d19b13910ef956b6d4b5828",
+      "arxiv231010501.json": "903f63198a754fcbea5b3137785a776b43f70e94e214e5b660bd23b27e6eb8a6"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250213458",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.18653/v1/2025.findings-acl.704",
+      "doi": "10.18653/v1/2025.findings-acl.704",
+      "publisher": "Association for Computational Linguistics",
+      "year": "2025",
+      "pages": "13698--13713",
+      "booktitle": "Findings of the Association for Computational Linguistics: ACL 2025",
+      "title": "{ThinkGuard: Deliberative Slow Thinking Leads to Cautious Guardrails}",
+      "author": "Wen, Xiaofei and Zhou, Wenxuan and Mo, Wenjie Jacky and Chen, Muhao",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250213458"
+    },
+    "entry_sha256": "2ffd4447e55bf58ac157063af0c269d5fd679d35ab5068acaf81af93e3031076",
+    "sources": [
+      "https://api.crossref.org/works/10.18653/v1/2025.findings-acl.704"
+    ],
+    "evidence": {
+      "arxiv250213458.crossref.json.gz": "e10a1dbd6dc3f3ab8080951e8d2eb0127a0423b18c1b9a71c03520e88ae66681",
+      "arxiv250213458.json": "e0f28254755639d347b7fa4d2171fc0d69bbc408f0997696af5674b77d554f67"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250318666",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.1145/3744916.3764546",
+      "doi": "10.1145/3744916.3764546",
+      "publisher": "ACM",
+      "year": "2026",
+      "pages": "2938--2950",
+      "booktitle": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+      "title": "{AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents}",
+      "author": "Wang, Haoyu and Poskitt, Christopher M. and Sun, Jun",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250318666"
+    },
+    "entry_sha256": "444214b23154724c2678670af5135534abd4dd1a44f8b1efccdc57fae560b6fe",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3744916.3764546"
+    ],
+    "evidence": {
+      "arxiv250318666.crossref.json.gz": "3917db5e032162455b5d1eea4e24d6eaff5d7d57bb8406d1f2cb875ec1c82711",
+      "arxiv250318666.json": "ec5df1a403c151c20d9578ba08c0b2796283dcc495252e6d15de650ac8d9b84c"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "shamsujjoha2025swiss",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.1109/ICSA65012.2025.00014",
+      "doi": "10.1109/ICSA65012.2025.00014",
+      "publisher": "IEEE",
+      "year": "2025",
+      "pages": "37--48",
+      "booktitle": "2025 IEEE 22nd International Conference on Software Architecture (ICSA)",
+      "title": "{Swiss Cheese Model for AI Safety: A Taxonomy and Reference Architecture for Multi-Layered Guardrails of Foundation Model Based Agents}",
+      "author": "Shamsujjoha, Md and Lu, Qinghua and Zhao, Dehai and Zhu, Liming",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "shamsujjoha2025swiss"
+    },
+    "entry_sha256": "0f9cbbdc236eb0e6c305a964a7632d8b5dfa537a4d997e21acb15886fbb156f8",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/ICSA65012.2025.00014"
+    ],
+    "evidence": {
+      "shamsujjoha2025swiss.crossref.json.gz": "3f92954a18528cc8d17ae37bb8f5448190451122390949335d026daffaf6a1f4",
+      "shamsujjoha2025swiss.json": "8fa4773d8f1879ce1cdeead00de6ee0924c3246f1da50f339541487dcb08e604"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250800500",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.1145/3832783.3837413",
+      "doi": "10.1145/3832783.3837413",
+      "publisher": "ACM",
+      "year": "2026",
+      "pages": "1470--1482",
+      "booktitle": "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering",
+      "title": "{ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via Probabilistic Prediction}",
+      "author": "Wang, Haoyu and Poskitt, Christopher M. and Wei, Jiali and Sun, Jun",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250800500"
+    },
+    "entry_sha256": "bbda5b24abb4260c97cac7b64934fb87376639b18c3d13effd8d6ca16998ab7a",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3832783.3837413"
+    ],
+    "evidence": {
+      "arxiv250800500.crossref.json.gz": "42b7f1bfdb1b48971e21c35ba7459387da0998b470703fb609926ff731a4da1c",
+      "arxiv250800500.json": "3581f12e4e95c13ecb89e0711f3495ccde3fbc9d5d6ab373981c0a2892455e28"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250318813",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.1109/satml68715.2026.00040",
+      "doi": "10.1109/satml68715.2026.00040",
+      "publisher": "IEEE",
+      "year": "2026",
+      "pages": "587--618",
+      "booktitle": "2026 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)",
+      "title": "{Defeating Prompt Injections by Design}",
+      "author": "Debenedetti, Edoardo and Shumailov, Ilia and Fan, Tianqi and Hayes, Jamie and Carlini, Nicholas and Fabian, Daniel and Kern, Christoph and Shi, Chongyang and Terzis, Andreas and Tram{\\`e}r, Florian",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250318813"
+    },
+    "entry_sha256": "51f046ac37e2d7482ed1d17c8445806dc18255622554acd088e74c2e8cb22f8d",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/satml68715.2026.00040"
+    ],
+    "evidence": {
+      "arxiv250318813.crossref.json.gz": "0ce0d29c6e2350cf898bec6e7d782e0668822bc83c8b84b8e7b5a5c297cc33c7",
+      "arxiv250318813.json": "5064aad4305dd8e1d23767ab6537f6764f61d97dcc926fd759cc49ed1a700a93"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250523643",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2505.23643",
+      "url": "https://arxiv.org/abs/2505.23643",
+      "doi": "10.48550/arXiv.2505.23643",
+      "year": "2025",
+      "title": "{Securing AI Agents with Information-Flow Control}",
+      "author": "Costa, Manuel and Köpf, Boris and Kolluri, Aashish and Paverd, Andrew and Russinovich, Mark and Salem, Ahmed and Tople, Shruti and Wutschitz, Lukas and Zanella-Béguelin, Santiago",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv250523643"
+    },
+    "entry_sha256": "c87c711f5f858098484d5757ce01c0f73e4f85c672c54b54121ad9e1263f53c8",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Securing+AI+Agents+with+Information-Flow+Control&rows=3",
+      "https://arxiv.org/abs/2505.23643"
+    ],
+    "evidence": {
+      "arxiv250523643.crossref.json.gz": "55fbf6c423455956283e07c22b080735680bd7dae31e702b668a3fce326a2389",
+      "arxiv250523643.primary.html.gz": "d8a95878ec6c37af76bf499432dd69a3abfaf12bc45492fa701aa59dd176b053",
+      "arxiv250523643.json": "652f9152185864c7336d57d83e1696c0bec9f4041924c6872f784575d422628d"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv220802814",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/f3549ef9b5ff520a7e41ff3cc306ab2b-Abstract-Conference.html",
+      "year": "2024",
+      "pages": "55198--55218",
+      "volume": "2024",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{Conformal Risk Control}",
+      "author": "Angelopoulos, Anastasios N. and Bates, Stephen and Fisch, Adam and Lei, Lihua and Schuster, Tal",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv220802814"
+    },
+    "entry_sha256": "483097ca6198f9c902d824e87c026766e61b066ea284328cec9b25047fc3563c",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Conformal+Risk+Control&rows=3",
+      "https://proceedings.iclr.cc/paper_files/paper/2024/hash/f3549ef9b5ff520a7e41ff3cc306ab2b-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/2024/file/f3549ef9b5ff520a7e41ff3cc306ab2b-Bibtex-Conference.bib"
+    ],
+    "evidence": {
+      "arxiv220802814.crossref.json.gz": "71701f1e42b9b4b72ef46dc93bbcba2665eb8786578b56cb6f545717f9b0c049",
+      "arxiv220802814.primary.html.gz": "d11148cb2f608013ea2e9a6ed7172e9bc83f525c4ed50fdae0a7c2613266d585",
+      "arxiv220802814.json": "85d870cd47ba1648e91f0cedb0dbf3c26fb16ffa7412e1457230b88de293a66e",
+      "arxiv220802814-bibtex.supplement.gz": "43414b61117aa45b8d3d4e116d5e81c4192aa13342309827483b3835bc578179"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv210707511",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.1561/2200000101",
+      "doi": "10.1561/2200000101",
+      "publisher": "Emerald",
+      "year": "2023",
+      "pages": "494--591",
+      "number": "4",
+      "volume": "16",
+      "journal": "Foundations and Trends in Machine Learning",
+      "title": "{Conformal Prediction: A Gentle Introduction}",
+      "author": "Angelopoulos, Anastasios N. and Bates, Stephen",
+      "ENTRYTYPE": "article",
+      "ID": "arxiv210707511"
+    },
+    "entry_sha256": "f8f8086e322e108a10a095a1f7b6571378cf19d517aa3bcadb9e52dfb27e3761",
+    "sources": [
+      "https://api.crossref.org/works/10.1561/2200000101"
+    ],
+    "evidence": {
+      "arxiv210707511.crossref.json.gz": "81391f307f0c100c0aafec0f3086492817d783273f4a903583dd387cfd26940d",
+      "arxiv210707511.json": "11054c3332bf719eb6daf19ad6bea728b632dc729204ca015f6da8c12016aae9"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv200602544",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2020/hash/244edd7e85dc81602b7615cd705545f5-Abstract.html",
+      "publisher": "Curran Associates, Inc.",
+      "year": "2020",
+      "pages": "3581--3591",
+      "volume": "33",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "title": "{Classification with Valid and Adaptive Coverage}",
+      "author": "Romano, Yaniv and Sesia, Matteo and Candès, Emmanuel J.",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv200602544"
+    },
+    "entry_sha256": "39085d59b4d40ca3d343ea46feb4b7ff2102047b02019eadc01b081cff7ed26d",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Classification+with+Valid+and+Adaptive+Coverage&rows=3",
+      "https://proceedings.neurips.cc/paper_files/paper/2020/hash/244edd7e85dc81602b7615cd705545f5-Abstract.html",
+      "https://proceedings.neurips.cc/paper_files/paper/2020/file/244edd7e85dc81602b7615cd705545f5-Bibtex.bib"
+    ],
+    "evidence": {
+      "arxiv200602544.crossref.json.gz": "2f9eb776e852b77faccf05ed28bf73445cc55498195a599a6eebe63004bc8096",
+      "arxiv200602544.primary.html.gz": "ad35eacea333821adcf7bb8a9bfdb47729f4bc15b398eb03937e0cf99240fb01",
+      "arxiv200602544.json": "db77f848565b810bafefc2df5d8da440eedc4387dc98abe37b3c9d904e8ca0b2",
+      "arxiv200602544-bibtex.supplement.gz": "31ce706db7f94e02a76a92d1f59cd8d5710b8f9fb2e59f0c25a4e091ef3f6b80"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv210600170",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/0d441de75945e5acbc865406fc9a2559-Abstract.html",
+      "publisher": "Curran Associates, Inc.",
+      "year": "2021",
+      "pages": "1660--1672",
+      "volume": "34",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "title": "{Adaptive Conformal Inference Under Distribution Shift}",
+      "author": "Gibbs, Isaac and Candès, Emmanuel",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv210600170"
+    },
+    "entry_sha256": "6e60ca9db2a0ff6ad7b980695c78928ad47c29c85bbcae5ace3618443ee62828",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Adaptive+Conformal+Inference+Under+Distribution+Shift&rows=3",
+      "https://proceedings.neurips.cc/paper_files/paper/2021/hash/0d441de75945e5acbc865406fc9a2559-Abstract.html",
+      "https://proceedings.neurips.cc/paper_files/paper/2021/file/0d441de75945e5acbc865406fc9a2559-Bibtex.bib"
+    ],
+    "evidence": {
+      "arxiv210600170.crossref.json.gz": "a01154fe1ef0bb2a952b543e111ef4bc38c37f3c06198264c3886268046e6bb7",
+      "arxiv210600170.primary.html.gz": "83c8e320c47422405d3156ce903f6049d6424399a2da71099c71b7a2a359b1ec",
+      "arxiv210600170.json": "d9b5a58c2c46cf3c9087dba3c83c51691a4f9ac45f3977d15a9c31a38b35d589",
+      "arxiv210600170-bibtex.supplement.gz": "f405f9135edcec2c345f65ccac568538a74710942b026841b21b203bf20fe2f8"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv240613352",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/97091a5177d8dc64b1da8bf3e1f6fb54-Abstract-Datasets_and_Benchmarks_Track.html",
+      "doi": "10.52202/079017-2636",
+      "publisher": "Curran Associates, Inc.",
+      "year": "2024",
+      "pages": "82895--82920",
+      "volume": "37",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "title": "{AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents}",
+      "author": "Debenedetti, Edoardo and Zhang, Jie and Balunović, Mislav and Beurer-Kellner, Luca and Fischer, Marc and Tramèr, Florian",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240613352"
+    },
+    "entry_sha256": "5f0c43f6cfb3d1a8c99c52fad41758e7045dfc8e971aa763a475fbb44c1d1a02",
+    "sources": [
+      "https://api.crossref.org/works/10.52202/079017-2636",
+      "https://proceedings.neurips.cc/paper_files/paper/2024/hash/97091a5177d8dc64b1da8bf3e1f6fb54-Abstract-Datasets_and_Benchmarks_Track.html",
+      "https://proceedings.neurips.cc/paper_files/paper/2024/file/97091a5177d8dc64b1da8bf3e1f6fb54-Bibtex-Datasets_and_Benchmarks_Track.bib"
+    ],
+    "evidence": {
+      "arxiv240613352.crossref.json.gz": "e8e9d4f52e8427ebc03a8019a8cdea7883e1bf7814c20e162ea1135e6db9b79b",
+      "arxiv240613352.primary.html.gz": "0a97932ad8f15258f03607ae997ed06f8a0c1e4a3b52af653700637e8c262da4",
+      "arxiv240613352.json": "6b101ade9ab7ad7f5322d1ad629bfa8503676bd5146252061c768f6c3fb19c8c",
+      "arxiv240613352-bibtex.supplement.gz": "df420d0d0253f32aa56a4fa5696479802920c34deb20c44c23cf94a8fa13aa24"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv241009024",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/c493d23af93118975cdbc32cbe7323f5-Abstract-Conference.html",
+      "year": "2025",
+      "pages": "79185--79220",
+      "volume": "2025",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents}",
+      "author": "Andriushchenko, Maksym and Souly, Alexandra and Dziemian, Mateusz and Duenas, Derek and Lin, Maxwell and Wang, Justin and Hendrycks, Dan and Zou, Andy and Kolter, Zico and Fredrikson, Matt  and Gal, Yarin and Davies, Xander",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv241009024"
+    },
+    "entry_sha256": "7d90a0b04320ed2fd742d5183e8d92ec429533c3b3113fcc7bc5af4eff2baf44",
+    "sources": [
+      "https://api.crossref.org/works?query.title=AgentHarm%3A+A+Benchmark+for+Measuring+Harmfulness+of+LLM+Agents&rows=3",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/c493d23af93118975cdbc32cbe7323f5-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/file/c493d23af93118975cdbc32cbe7323f5-Bibtex-Conference.bib"
+    ],
+    "evidence": {
+      "arxiv241009024.crossref.json.gz": "a89310a3a5575dfb64c9dad7ab5bb05da2216ac8497e8705660c56a629f92788",
+      "arxiv241009024.primary.html.gz": "8527303cc0cb4ff652bc286ddafb62a7fde711f29714b9efefb8ae3af7a7bb9b",
+      "arxiv241009024.json": "10c7acf72e7e7b20f46bee7acc982c6c3e19b2d1dd6e0a897b48af3f0217aba6",
+      "arxiv241009024-bibtex.supplement.gz": "acbd35b8a06d97f74b0ec70f8c8fc2bc58295f62ea27f417199243d94098c63e"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv230915817",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/7274ed909a312d4d869cc328ad1c5f04-Abstract-Conference.html",
+      "year": "2024",
+      "pages": "27031--27098",
+      "volume": "2024",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{Identifying the Risks of LM Agents with an LM-Emulated Sandbox}",
+      "author": "Ruan, Yangjun and Dong, Honghua and Wang, Andrew and Pitis, Silviu and Zhou, Yongchao and Ba, Jimmy and Dubois, Yann and Maddison, Chris J. and Hashimoto, Tatsunori",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv230915817"
+    },
+    "entry_sha256": "bb6e7c97e6609415864e08c64e232933225022d5bd8006364ea2fce5ca05ca70",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Identifying+the+Risks+of+LM+Agents+with+an+LM-Emulated+Sandbox&rows=3",
+      "https://proceedings.iclr.cc/paper_files/paper/2024/hash/7274ed909a312d4d869cc328ad1c5f04-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/2024/file/7274ed909a312d4d869cc328ad1c5f04-Bibtex-Conference.bib"
+    ],
+    "evidence": {
+      "arxiv230915817.crossref.json.gz": "33df2766c4a8d43ba8e471d5cff76022ec0df523095167cb1bdcd98e1ef87b7e",
+      "arxiv230915817.primary.html.gz": "0c227aeda378e42b8714943be615160490fe39cf2aa978ce84e12643964096c3",
+      "arxiv230915817.json": "a0e9d98a44f395e360d0213f8a60e9f7c21c1743abb61cf8c01ac0cb60a5c247",
+      "arxiv230915817-bibtex.supplement.gz": "8cf5619c652490f50c71317545454818dc2ef46f73a92e44f28dabd61fb1338c"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv240110019",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.18653/v1/2024.findings-emnlp.79",
+      "doi": "10.18653/v1/2024.findings-emnlp.79",
+      "publisher": "Association for Computational Linguistics",
+      "year": "2024",
+      "pages": "1467--1490",
+      "booktitle": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+      "title": "{R-Judge: Benchmarking Safety Risk Awareness for LLM Agents}",
+      "author": "Yuan, Tongxin and He, Zhiwei and Dong, Lingzhong and Wang, Yiming and Zhao, Ruijie and Xia, Tian and Xu, Lizhen and Zhou, Binglin and Li, Fangqi and Zhang, Zhuosheng and Wang, Rui and Liu, Gongshen",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240110019"
+    },
+    "entry_sha256": "0ae5550f61c097296290a129f9644888350c898a8a35f47b784dd3bccf98a1c9",
+    "sources": [
+      "https://api.crossref.org/works/10.18653/v1/2024.findings-emnlp.79"
+    ],
+    "evidence": {
+      "arxiv240110019.crossref.json.gz": "cc7722d4633ad7ba0a634f50186b37b49019c858aeb1a5bef53d3b6480b36f53",
+      "arxiv240110019.json": "b20201f932a20a0f26dac818da3cc61b76c191dc80c01ccf20a52859598d2a6c"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv230212173",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.1145/3605764.3623985",
+      "doi": "10.1145/3605764.3623985",
+      "publisher": "ACM",
+      "year": "2023",
+      "pages": "79--90",
+      "booktitle": "Proceedings of the 16th ACM Workshop on Artificial Intelligence and Security",
+      "title": "{Not What You\\textquotesingle ve Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection}",
+      "author": "Greshake, Kai and Abdelnabi, Sahar and Mishra, Shailesh and Endres, Christoph and Holz, Thorsten and Fritz, Mario",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv230212173"
+    },
+    "entry_sha256": "5ec7594e31288d697bc3b54d0fd74b975f4e6bad8de295a446f90f9771dbaa3d",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3605764.3623985"
+    ],
+    "evidence": {
+      "arxiv230212173.crossref.json.gz": "c78ad125ec00c23dbd8687784c707968c929aec9e319064c6992663b182ab627",
+      "arxiv230212173.json": "d81129b6c618fc27f0d00b1b73a4bd1fdfbffb7e666d540d76a0fc9902e4c0de"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv241002644",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/5750f91d8fb9d5c02bd8ad2c3b44456b-Abstract-Conference.html",
+      "year": "2025",
+      "pages": "35331--35366",
+      "volume": "2025",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents}",
+      "author": "Zhang, Hanrong and Huang, Jingyuan and Mei, Kai and Yao, Yifei and Wang, Zhenting and Zhan, Chenlu and Wang, Hongwei and Zhang, Yongfeng",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv241002644"
+    },
+    "entry_sha256": "8905962a52034c4938666d37788afe71de19c98c1098ef0d3c91ff0ccaa177ec",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Agent+Security+Bench+%28ASB%29%3A+Formalizing+and+Benchmarking+Attacks+and+Defenses+in+LLM-based+Agents&rows=3",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/5750f91d8fb9d5c02bd8ad2c3b44456b-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/file/5750f91d8fb9d5c02bd8ad2c3b44456b-Bibtex-Conference.bib"
+    ],
+    "evidence": {
+      "arxiv241002644.crossref.json.gz": "609d40a20dfccb275503fed2eadff93d5ca5faf3519a73eac96ab51d3782e917",
+      "arxiv241002644.primary.html.gz": "9a98b095a8b01cf58e157fd3d355c9186e4969da299c08b6f3b72de988f733b1",
+      "arxiv241002644.json": "df76a80fa7e586a88141c39d8593d2d5cd3148b6b5b81d7f9da83c408ea9e64c",
+      "arxiv241002644-bibtex.supplement.gz": "9fc83a176a7a7504c18a8111eecf6e62dd258d4ed9e69ca743bba67c31e683af"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv241107781",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/bfd082c452dffb450d5a5202b0419205-Abstract-Datasets_and_Benchmarks_Track.html",
+      "doi": "10.52202/079017-3369",
+      "publisher": "Curran Associates, Inc.",
+      "year": "2024",
+      "pages": "106190--106236",
+      "volume": "37",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "title": "{RedCode: Risky Code Execution and Generation Benchmark for Code Agents}",
+      "author": "Guo, Chengquan and Liu, Xun and Xie, Chulin and Zhou, Andy and Zeng, Yi and Lin, Zinan and Song, Dawn and Li, Bo",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv241107781"
+    },
+    "entry_sha256": "d9cb1adea4c123a556dff038270894c65032cb675495f167960b34cb2b883e21",
+    "sources": [
+      "https://api.crossref.org/works/10.52202/079017-3369",
+      "https://proceedings.neurips.cc/paper_files/paper/2024/hash/bfd082c452dffb450d5a5202b0419205-Abstract-Datasets_and_Benchmarks_Track.html",
+      "https://proceedings.neurips.cc/paper_files/paper/2024/file/bfd082c452dffb450d5a5202b0419205-Bibtex-Datasets_and_Benchmarks_Track.bib"
+    ],
+    "evidence": {
+      "arxiv241107781.crossref.json.gz": "af49322f286ae33f4a069c83ab475f883a1332089c320a557cb99ba1f3f41042",
+      "arxiv241107781.primary.html.gz": "d64639e82c9d0195535b875a0c0099028f338f4b5451fd2afc60d15ecddaf161",
+      "arxiv241107781.json": "f5cbd338f0ef9986a3a39fb81026d37e0802a3c18a011300b5f704201cf029d0",
+      "arxiv241107781-bibtex.supplement.gz": "8d5ca3774341d33696b772010d013ad968f4a64e1c7c476b633ea37bc457f376"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv230715043",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2307.15043",
+      "url": "https://arxiv.org/abs/2307.15043",
+      "doi": "10.48550/arXiv.2307.15043",
+      "year": "2023",
+      "title": "{Universal and Transferable Adversarial Attacks on Aligned Language Models}",
+      "author": "Zou, Andy and Wang, Zifan and Carlini, Nicholas and Nasr, Milad and Kolter, J. Zico and Fredrikson, Matt",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv230715043"
+    },
+    "entry_sha256": "cdf57a0d2966489f539bb9105598ecaf4f3b7d7232b8a4079e721afb2e8f460a",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Universal+and+Transferable+Adversarial+Attacks+on+Aligned+Language+Models&rows=3",
+      "https://arxiv.org/abs/2307.15043"
+    ],
+    "evidence": {
+      "arxiv230715043.crossref.json.gz": "047839fce2c37aa0acc20af512e9760d6b6b93e21c3e99f7d227b08ae05f9854",
+      "arxiv230715043.primary.html.gz": "8340ac4b8693b2acbf99499fbfbf18dd2ae72467e6d1d11116f5c6f45976c8ad",
+      "arxiv230715043.json": "44736eb4ab5ffda55af63085d36dfa9f9cc2e46dc71ee31e778970326e97be06"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv241209565",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/ed687a5f52b651b19e7c18f702907b8b-Abstract-Conference.html",
+      "year": "2026",
+      "pages": "146838--146882",
+      "volume": "2026",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{Obfuscated Activations Bypass LLM Latent-Space Defenses}",
+      "author": "Bailey, Luke and Serrano, Alex and Sheshadri, Abhay and Seleznyov, Mikhail and Taylor, Jordan and Jenner, Erik and Hilton, Jacob and Casper, Stephen and Guestrin, Carlos and Emmons, Scott",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv241209565"
+    },
+    "entry_sha256": "85e18eca5328b459db874293432f203884dbae23b81acb7aaebc344623a69612",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Obfuscated+Activations+Bypass+LLM+Latent-Space+Defenses&rows=3",
+      "https://proceedings.iclr.cc/paper_files/paper/2026/hash/ed687a5f52b651b19e7c18f702907b8b-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/2026/file/ed687a5f52b651b19e7c18f702907b8b-Bibtex-Conference.bib"
+    ],
+    "evidence": {
+      "arxiv241209565.crossref.json.gz": "927c9d94924cac706269bf9dcb72e729b86f6f1a3bdb4106d9f4cdc0897b6f7c",
+      "arxiv241209565.primary.html.gz": "39e78022aa40e54fb2218d26e798ed33ebae8e0918d595fe253e320a0483dbb3",
+      "arxiv241209565.json": "9de10cca3b0203f932b52e838e535f858a6a8e0215dccc5797e3bf39e3de16ed",
+      "arxiv241209565-bibtex.supplement.gz": "c96bea7b090a95b0d9d3841dd6d4e49ecf8fa57222d574985183d08fb69de144"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250305264",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2503.05264",
+      "url": "https://arxiv.org/abs/2503.05264",
+      "doi": "10.48550/arXiv.2503.05264",
+      "year": "2025",
+      "title": "{Jailbreaking is (Mostly) Simpler Than You Think}",
+      "author": "Russinovich, Mark and Salem, Ahmed",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv250305264"
+    },
+    "entry_sha256": "c7fcc52ede1087a20a0f77090281030d7b4c55d3bd3aca8de75ffa1f950cfefa",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Jailbreaking+is+%28Mostly%29+Simpler+Than+You+Think&rows=3",
+      "https://arxiv.org/abs/2503.05264"
+    ],
+    "evidence": {
+      "arxiv250305264.crossref.json.gz": "046f89d4722136c0cbcc800d10627d1a4cee0a811f2f40556284c86c70745a89",
+      "arxiv250305264.primary.html.gz": "2601a108061171029082580a556347af8eb4c045d295fdaa1050bc9825251687",
+      "arxiv250305264.json": "201618c0986217288681dfc0f9e3fb8afcdf051757ac14bfbfe32e8844e45859"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250411168",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://aclanthology.org/2025.llmsec-1.8/",
+      "publisher": "Association for Computational Linguistics",
+      "year": "2025",
+      "pages": "101--114",
+      "booktitle": "Proceedings of the First Workshop on {LLM} Security ({LLMSEC})",
+      "title": "{Bypassing {LLM} Guardrails: An Empirical Analysis of Evasion Attacks against Prompt Injection and Jailbreak Detection Systems}",
+      "author": "Hackett, William and Birch, Lewis and Trawicki, Stefan and Suri, Neeraj and Garraghan, Peter",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250411168"
+    },
+    "entry_sha256": "52197eec7068e8afe809859642a2236585afcbd25bc27423bad0759fd282d4c4",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Bypassing+LLM+Guardrails%3A+An+Empirical+Analysis+of+Evasion+Attacks+against+Prompt+Injection+and+Jailbreak+Detection+Systems&rows=3",
+      "https://aclanthology.org/2025.llmsec-1.8/",
+      "https://aclanthology.org/2025.llmsec-1.8/#citeBibtex"
+    ],
+    "evidence": {
+      "arxiv250411168.crossref.json.gz": "78e1a69f5226f08e6033da6e0f11145458f7190565c4f96f81682f790f41ae2f",
+      "arxiv250411168.primary.html.gz": "2d42add588028666113517c19008cdca291fede66297f59c343107f051098a40",
+      "arxiv250411168.json": "b5b8072a6d5529268ff2c9800b5c33516f07db5101e230e3e53dbc7a9cedc899",
+      "arxiv250411168-bibtex.supplement.gz": "2d42add588028666113517c19008cdca291fede66297f59c343107f051098a40"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv251002609",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/d51ce6040fe3dafd260411593f05a1fa-Abstract-Conference.html",
+      "year": "2026",
+      "pages": "131116--131151",
+      "volume": "2026",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{RedCodeAgent: Automatic Red-teaming Agent against Diverse Code Agents}",
+      "author": "Guo, Chengquan and Xie, Chulin and Yang, Yu and Chen, Zhaorun and Lin, Zinan and Davies, Xander and Gal, Yarin and Song, Dawn and Li, Bo",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv251002609"
+    },
+    "entry_sha256": "4a34b697ac0477f6c9fe07692b48791874503040fc77bd81bc072095e167dba5",
+    "sources": [
+      "https://api.crossref.org/works?query.title=RedCodeAgent%3A+Automatic+Red-teaming+Agent+against+Diverse+Code+Agents&rows=3",
+      "https://proceedings.iclr.cc/paper_files/paper/2026/hash/d51ce6040fe3dafd260411593f05a1fa-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/2026/file/d51ce6040fe3dafd260411593f05a1fa-Bibtex-Conference.bib"
+    ],
+    "evidence": {
+      "arxiv251002609.crossref.json.gz": "03e2d6dceedf45579e7dbf65e5bd7e5560a4d3b72c9ec9da759d23d9e25c6c73",
+      "arxiv251002609.primary.html.gz": "29a5ad3669579c7359863e1248e9bf40e48fefad50a98deb9be1dc94d5c40c51",
+      "arxiv251002609.json": "b04a7193dda1503bb85a04130e9568c446153ff199808862c8263655bbee3a32",
+      "arxiv251002609-bibtex.supplement.gz": "eaf297f32f5eeaf75208e62a51cebe6b87bcd74dcb6f5f178fc81ea16cd07649"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv261003585",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2610.03585",
+      "url": "https://arxiv.org/abs/2610.03585",
+      "doi": "10.48550/arXiv.2610.03585",
+      "year": "2026",
+      "title": "{Threat-Preserving Representation Sensitivity in Agent-Security Benchmarks}",
+      "author": "Karamchandani, Neeraj and Nagasubramaniam, Piyush and Xie, Xinhong and Zhu, Sencun and Wu, Dinghao",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv261003585"
+    },
+    "entry_sha256": "226bd126175f6ff95ed1ef7db8f206127c922ffff9487401b278afdd26744372",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Threat-Preserving+Representation+Sensitivity+in+Agent-Security+Benchmarks&rows=3",
+      "https://arxiv.org/abs/2610.03585"
+    ],
+    "evidence": {
+      "arxiv261003585.crossref.json.gz": "1bf8376ce61e87e3c956fa623955312c19a54a82454a2fd170515a279b8d7410",
+      "arxiv261003585.primary.html.gz": "05209698e90a69260eb05201975835e81edbe29f5106f480b0a0f117bbcbe7a5",
+      "arxiv261003585.json": "d2ad71484f29cbf377afa460729b50202661a2153bb8561267c03b711277c36a"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250217419",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.1109/tpami.2025.3637037",
+      "doi": "10.1109/tpami.2025.3637037",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "year": "2026",
+      "pages": "3335--3354",
+      "number": "3",
+      "volume": "48",
+      "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "title": "{From System 1 to System 2: A Survey of Reasoning Large Language Models}",
+      "author": "Zhang, Duzhen and Li, Zhong-Zhi and Zhang, Ming-Liang and Zhang, Jiaxin and Liu, Zengyan and Yao, Yuxuan and Xu, Haotian and Zheng, Junhao and Chen, Xiuyi and Zhang, Yingying and Yin, Fei and Dong, Jiahua and Guo, Zhijiang and Song, Le and Liu, Cheng-Lin",
+      "ENTRYTYPE": "article",
+      "ID": "arxiv250217419"
+    },
+    "entry_sha256": "b2bcd37e1aa025d643c4638aa90df14d6f5ea918fa524ac04777f145a4c30a05",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/tpami.2025.3637037"
+    ],
+    "evidence": {
+      "arxiv250217419.crossref.json.gz": "dbce2ca3416e167f2d5c6863231d4df27be0ce8f189fa14768ad1c8fe9195d0f",
+      "arxiv250217419.json": "8fea2d91248813e1a0d21500681afd2e1fd78bdfdf9a901848014cd02fbdeb08"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv150102573",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.1007/978-3-662-46681-0_51",
+      "doi": "10.1007/978-3-662-46681-0_51",
+      "publisher": "Springer Berlin Heidelberg",
+      "year": "2015",
+      "pages": "533--548",
+      "volume": "9035",
+      "series": "Lecture Notes in Computer Science",
+      "booktitle": "Tools and Algorithms for the Construction and Analysis of Systems",
+      "title": "{Shield Synthesis: Runtime Enforcement for Reactive Systems}",
+      "author": "Bloem, Roderick and K{\\\"o}nighofer, Bettina and K{\\\"o}nighofer, Robert and Wang, Chao",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv150102573"
+    },
+    "entry_sha256": "d41031ccc4f45c35fea03f08f1fe02d4c4bdaebbc41fee22bbd741aece9e3dd1",
+    "sources": [
+      "https://api.crossref.org/works/10.1007/978-3-662-46681-0_51"
+    ],
+    "evidence": {
+      "arxiv150102573.crossref.json.gz": "51c362f97d759e9d8aedd9f697255120a71edd682525f2ecb0dc62524cd770dc",
+      "arxiv150102573.json": "f9c4323991db531e7cb37a9b0333c5f0ec8abdf83f4f926bfe05d67b89162933"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv170808611",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.1609/aaai.v32i1.11797",
+      "doi": "10.1609/aaai.v32i1.11797",
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "year": "2018",
+      "number": "1",
+      "volume": "32",
+      "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "title": "{Safe Reinforcement Learning via Shielding}",
+      "author": "Alshiekh, Mohammed and Bloem, Roderick and Ehlers, R{\\\"u}diger and K{\\\"o}nighofer, Bettina and Niekum, Scott and Topcu, Ufuk",
+      "ENTRYTYPE": "article",
+      "ID": "arxiv170808611"
+    },
+    "entry_sha256": "5e1c2c03bf04f54b3d1a8458cdc315c92fd4b03e2fa3a489c606e591bcb57398",
+    "sources": [
+      "https://api.crossref.org/works/10.1609/aaai.v32i1.11797"
+    ],
+    "evidence": {
+      "arxiv170808611.crossref.json.gz": "fa2219f5a6e9ff407a0bbf0aa7d5af141c295c476ba175aec9bc076f8fb3fd76",
+      "arxiv170808611.json": "ac7f6bf56f674ab0e59a91d7ff68be7e1fff27032287dd048752b2183040ea45"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv190805402",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.23919/fmcad.2019.8894264",
+      "doi": "10.23919/fmcad.2019.8894264",
+      "publisher": "IEEE",
+      "year": "2019",
+      "pages": "129--137",
+      "booktitle": "2019 Formal Methods in Computer Aided Design (FMCAD)",
+      "title": "{Shield Synthesis for Real: Enforcing Safety in Cyber-Physical Systems}",
+      "author": "Wu, Meng and Wang, Jingbo and Deshmukh, Jyotirmoy and Wang, Chao",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv190805402"
+    },
+    "entry_sha256": "592c20f652c6ddd275e2a6b5f82b110c141961a425f75cee600be704e781761d",
+    "sources": [
+      "https://api.crossref.org/works/10.23919/fmcad.2019.8894264"
+    ],
+    "evidence": {
+      "arxiv190805402.crossref.json.gz": "62a77615fff815b13ee7ed6c525260e77d46524d7579fb51675ee68c41814202",
+      "arxiv190805402.json": "7a0bb0dcfa682ff708c4640cc89e47c2fc1fa5361724a1d97669f2f4d7325ec1"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv240604184",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.1609/aaai.v39i14.33660",
+      "doi": "10.1609/aaai.v39i14.33660",
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "year": "2025",
+      "pages": "15134--15142",
+      "number": "14",
+      "volume": "39",
+      "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "title": "{Shield Synthesis for LTL Modulo Theories}",
+      "author": "Rodr{\\'\\i}guez, Andoni and Amir, Guy and Corsi, Davide and S{\\'a}nchez, C{\\'e}sar and Katz, Guy",
+      "ENTRYTYPE": "article",
+      "ID": "arxiv240604184"
+    },
+    "entry_sha256": "f58ef245bb9b6434b76d14dea716895346e28a7ee667165a358aca36e4d05c83",
+    "sources": [
+      "https://api.crossref.org/works/10.1609/aaai.v39i14.33660"
+    ],
+    "evidence": {
+      "arxiv240604184.crossref.json.gz": "7375f147034d460c960f37ac5b1814c4318a78da49fdb14efbf80bf5044e2e63",
+      "arxiv240604184.json": "64021962464340c9929a665ff090c267132625b0669432589008824ca4961605"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250322738",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.mlr.press/v267/chen25ae.html",
+      "publisher": "PMLR",
+      "year": "2025",
+      "pages": "8313--8344",
+      "volume": "267",
+      "series": "Proceedings of Machine Learning Research",
+      "booktitle": "Proceedings of the 42nd International Conference on Machine Learning",
+      "title": "{{S}hield{A}gent: Shielding Agents via Verifiable Safety Policy Reasoning}",
+      "author": "Chen, Zhaorun and Kang, Mintong and Li, Bo",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250322738"
+    },
+    "entry_sha256": "e89992583739e8ef15aececcc03749e11f754e69875ed12785e869ac4863aa65",
+    "sources": [
+      "https://api.crossref.org/works?query.title=ShieldAgent%3A+Shielding+Agents+via+Verifiable+Safety+Policy+Reasoning&rows=3",
+      "https://proceedings.mlr.press/v267/chen25ae.html"
+    ],
+    "evidence": {
+      "arxiv250322738.crossref.json.gz": "4a1f38a8d77191bf94992e59b28569ce8647a5dcbeba2fe70abcb9e69fe832d2",
+      "arxiv250322738.primary.html.gz": "cef7de4637898adc033d51b95b7601b5629b1fa74324c3ca86f79f28c47d4b84",
+      "arxiv250322738.json": "6ba38c666536a6aaecb67019b4f9c364e0c02ce8ccc363aacfd6afe565c7cbb6"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv251005156",
+    "checked": "2026-11-02",
+    "status": "institution-confirmed conference citation; final record incomplete",
+    "entry": {
+      "url": "https://research.google/pubs/veriguard-enhancing-llm-agent-safety-via-verified-code-generation-2/",
+      "year": "2026",
+      "booktitle": "ACL 2026",
+      "title": "{VeriGuard: Enhancing LLM Agent Safety via Verified Code Generation}",
+      "author": "Miculicich, Lesly and Parmar, Mihir and Palangi, Hamid and Dvijotham, Dj and Montanari, Mirko and Pfister, Tomas and Le, Long",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv251005156"
+    },
+    "entry_sha256": "8193c9ff10b319222be2507b71354ddb68936453cd3d9b60fc78bc53880ff9ef",
+    "sources": [
+      "https://api.crossref.org/works?query.title=VeriGuard%3A+Enhancing+LLM+Agent+Safety+via+Verified+Code+Generation&rows=3",
+      "https://research.google/pubs/veriguard-enhancing-llm-agent-safety-via-verified-code-generation-2/"
+    ],
+    "evidence": {
+      "arxiv251005156.crossref.json.gz": "b286a42c7ab003c5404d3c2ec2215b651d56b4cd969b067b98e6a73f8a097668",
+      "arxiv251005156.primary.html.gz": "6a42478e7044f979f42f1ba4940ca414bbc95696742a0d56180a38d0363ae75f",
+      "arxiv251005156.json": "db698f01595243a9fa63ea7c9d040dddefeead82cd8638483512330754e5a526"
+    },
+    "note": "Google Research confirms ACL 2026 and all seven authors. No final ACL Anthology record, DOI or pagination was located. Retained the institutional conference citation without inventing missing fields.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv260222302",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2602.22302",
+      "url": "https://arxiv.org/abs/2602.22302",
+      "doi": "10.48550/arXiv.2602.22302",
+      "year": "2026",
+      "title": "{Agent Behavioral Contracts: Formal Specification and Runtime Enforcement for Reliable Autonomous AI Agents}",
+      "author": "Bhardwaj, Varun Pratap",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv260222302"
+    },
+    "entry_sha256": "63ed80500fc272ff5d34fb8594e891e65fb2dbc4168a08061664406760690b05",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Agent+Behavioral+Contracts%3A+Formal+Specification+and+Runtime+Enforcement+for+Reliable+Autonomous+AI+Agents&rows=3",
+      "https://arxiv.org/abs/2602.22302"
+    ],
+    "evidence": {
+      "arxiv260222302.crossref.json.gz": "c947cf5db065803512e9ab98ac1f8ca788251651e54efdd240b92b7f0e5088f5",
+      "arxiv260222302.primary.html.gz": "7bb2e902b70fa892e7cc1bdd89828897f6cd2f3bc11a1e66169be8e7d6ccd114",
+      "arxiv260222302.json": "e1bb8fb758d12979ad3dd3d916479f72727686bea1fba356c0ed79f5e6829ee2"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250613028",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2506.13028",
+      "url": "https://arxiv.org/abs/2506.13028",
+      "doi": "10.48550/arXiv.2506.13028",
+      "year": "2025",
+      "title": "{NaSh: Guardrails for an LLM-Powered Natural Language Shell}",
+      "author": "Gyawali, Bimal Raj and Achalla, Saikrishna and Kallas, Konstantinos and Kumar, Sam",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv250613028"
+    },
+    "entry_sha256": "ff3db84d558d6924e4ecac2c92830c34aaf7226d82c29043ce0a1584fdfc1962",
+    "sources": [
+      "https://api.crossref.org/works?query.title=NaSh%3A+Guardrails+for+an+LLM-Powered+Natural+Language+Shell&rows=3",
+      "https://arxiv.org/abs/2506.13028"
+    ],
+    "evidence": {
+      "arxiv250613028.crossref.json.gz": "9e37e7a3288720438a592d5a31fb4beee93c85ee14d754809124840f8740d754",
+      "arxiv250613028.primary.html.gz": "5592a687a62075878f9f52a1951b8a6ded005cf4d438f270bf8cde4a23f3cfc5",
+      "arxiv250613028.json": "53160550543c384a809b090ee92bb869c3a21fd1836e935d78f6ee9d9e477002"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250307885",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.1109/lra.2026.3667488",
+      "doi": "10.1109/lra.2026.3667488",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "year": "2026",
+      "pages": "4649--4656",
+      "number": "4",
+      "volume": "11",
+      "journal": "IEEE Robotics and Automation Letters",
+      "title": "{Safety Guardrails for LLM-Enabled Robots}",
+      "author": "Ravichandran, Zachary and Robey, Alexander and Kumar, Vijay and Pappas, George J. and Hassani, Hamed",
+      "ENTRYTYPE": "article",
+      "ID": "arxiv250307885"
+    },
+    "entry_sha256": "d039a78628122ce7f84918bcc6b18c7861e8661268fe2723b8b64d8b06f102ac",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/lra.2026.3667488"
+    ],
+    "evidence": {
+      "arxiv250307885.crossref.json.gz": "e1577cb02d88012c4ac291d464c58dee3dc65f4f872be0f5346aa72f90140b09",
+      "arxiv250307885.json": "ec60c197a8095383e3bc1b9f410697a845bf386112c3f7fc5cee9a508953a675"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250300600",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.14778/3749646.3749677",
+      "doi": "10.14778/3749646.3749677",
+      "publisher": "Association for Computing Machinery (ACM)",
+      "year": "2025",
+      "pages": "4073--4080",
+      "number": "11",
+      "volume": "18",
+      "journal": "Proceedings of the VLDB Endowment",
+      "title": "{Semantic Integrity Constraints: Declarative Guardrails for AI-Augmented Data Processing Systems}",
+      "author": "Lee, Alexander W. and Chan, Justin and Fu, Michael and Kim, Nicolas and Mehta, Akshay and Raghavan, Deepti and {\\c C}etintemel, U{\\u g}ur",
+      "ENTRYTYPE": "article",
+      "ID": "arxiv250300600"
+    },
+    "entry_sha256": "587a754e13ea8dd89b274f669b5bab171ecfd47b528bb24d8a64b4f86e650f5e",
+    "sources": [
+      "https://api.crossref.org/works/10.14778/3749646.3749677"
+    ],
+    "evidence": {
+      "arxiv250300600.crossref.json.gz": "c8001844e612acb10f1d94d4f605d8aba241c6fe89f789ca823794f9d49e2486",
+      "arxiv250300600.json": "240287a9db6f80ca4b641d8bff10bc7d90dca160303ed271b46f811d825dfd35"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv251005310",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2510.05310",
+      "url": "https://arxiv.org/abs/2510.05310",
+      "doi": "10.48550/arXiv.2510.05310",
+      "year": "2025",
+      "title": "{RAG Makes Guardrails Unsafe? Investigating Robustness of Guardrails under RAG-style Contexts}",
+      "author": "She, Yining and Peterson, Daniel W. and Liu, Marianne Menglin and Upadhyay, Vikas and Chaghazardi, Mohammad Hossein and Kang, Eunsuk and Roth, Dan",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv251005310"
+    },
+    "entry_sha256": "563fc193279cdde45d2f86e1406e76ccc8e9ac816ab649277ad5021188e41a5d",
+    "sources": [
+      "https://api.crossref.org/works?query.title=RAG+Makes+Guardrails+Unsafe%3F+Investigating+Robustness+of+Guardrails+under+RAG-style+Contexts&rows=3",
+      "https://arxiv.org/abs/2510.05310"
+    ],
+    "evidence": {
+      "arxiv251005310.crossref.json.gz": "ab9b8f6bb33f0b7d4d19adc1cb0570b90d22ffea6dd14c45e2fd9c2e8606f804",
+      "arxiv251005310.primary.html.gz": "627e0af148cf22e6417792a82bf6223d45ffd9e3f84b50fc795f2ee17d40195c",
+      "arxiv251005310.json": "d81f91d446e85a3799d41c6a211ba45c341e8d052aa28df27a7ecbaf0f1f990d"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250721170",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2507.21170",
+      "url": "https://arxiv.org/abs/2507.21170",
+      "doi": "10.48550/arXiv.2507.21170",
+      "year": "2025",
+      "title": "{OneShield -- the Next Generation of LLM Guardrails}",
+      "author": "DeLuca, Chad and Gentile, Anna Lisa and Asthana, Shubhi and Zhang, Bing and Chowdhary, Pawan and Cheng, Kellen and Shbita, Basel and Li, Pengyuan and Ren, Guang-Jie and Gopisetty, Sandeep",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv250721170"
+    },
+    "entry_sha256": "7f31d938e05104279deea71a19a03a368213c0adf371b00f64618e856c2508fb",
+    "sources": [
+      "https://api.crossref.org/works?query.title=OneShield+--+the+Next+Generation+of+LLM+Guardrails&rows=3",
+      "https://arxiv.org/abs/2507.21170"
+    ],
+    "evidence": {
+      "arxiv250721170.crossref.json.gz": "3264e3d4fb99e9efecf65558591da5176c7672f419cb01987433d81d0837aa15",
+      "arxiv250721170.primary.html.gz": "00d64ec33c1804e840bcc0f38824d2191cd622764729749e1349bd08079a6f6d",
+      "arxiv250721170.json": "5f362fd0b70e2e2bef7040d389f836638fa88a5bb5fa772215b25009e5c987f5"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250315707",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.1109/iros60139.2025.11246041",
+      "doi": "10.1109/iros60139.2025.11246041",
+      "publisher": "IEEE",
+      "year": "2025",
+      "pages": "21024--21031",
+      "booktitle": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "title": "{Safety Aware Task Planning via Large Language Models in Robotics}",
+      "author": "Khan, Azal Ahmad and Andrev, Michael and Murtaza, Muhammad Ali and Aguilera, Sergio and Zhang, Rui and Ding, Jie and Hutchinson, Seth and Anwar, Ali",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250315707"
+    },
+    "entry_sha256": "9cf8fbd6491ecac8b8c0915ea2c9d593ad61a05a940f4dbfd272570aaa1896b0",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/iros60139.2025.11246041"
+    ],
+    "evidence": {
+      "arxiv250315707.crossref.json.gz": "6439aba19e50ebf04199ebfa02d30d35ac7a7a66ab4341ae033dbd38b719cfb9",
+      "arxiv250315707.json": "4969083fcf8d38e431617357ba8be76971244ada762dd04930c3fa4771d71ff6"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250816481",
+    "checked": "2026-11-02",
+    "status": "pre-proceedings",
+    "entry": {
+      "note": "Pre-proceedings",
+      "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/8b54ecd9823fff6d37e61ece8f87e534-Abstract-Conference.html",
+      "year": "2026",
+      "booktitle": "Conference on Language Modeling (COLM)",
+      "title": "{Benchmarking the Robustness of Agentic Systems to Adversarially-Induced Harmful Behaviors}",
+      "author": "Nöther, Jonathan and Singla, Adish and Radanovic, Goran",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250816481"
+    },
+    "entry_sha256": "0a67becc1c3db307b8ed96345b26598136e5ce2fb1b0491cb43e93fa2877293f",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Benchmarking+the+Robustness+of+Agentic+Systems+to+Adversarially-Induced+Harmful+Behaviors&rows=3",
+      "https://proceedings.colm.cc/paper_files/paper/2026/hash/8b54ecd9823fff6d37e61ece8f87e534-Abstract-Conference.html"
+    ],
+    "evidence": {
+      "arxiv250816481.crossref.json.gz": "55e47ea383111fa8158c63e06693208cb53509fde63380c0eb7422bb5d52514c",
+      "arxiv250816481.primary.html.gz": "12041053adf797e53286214f497982a35b772d98035a3cc819c22e42e76a7add",
+      "arxiv250816481.json": "6fe151fcdd35cd747ac986c772bc6f6cee63af78dbaafbadf53f89eda558a0f0"
+    },
+    "note": "Official COLM 2026 page still labels itself pre-proceedings. Title and three authors confirmed; retained the explicit pre-proceedings note. No final pagination verified.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv251102164",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2511.02164",
+      "url": "https://arxiv.org/abs/2511.02164",
+      "doi": "10.48550/arXiv.2511.02164",
+      "year": "2025",
+      "title": "{ScenicProver: A Framework for Compositional Probabilistic Verification of Learning-Enabled Systems}",
+      "author": "Vin, Eric and Miller, Kyle A. and Incer, Inigo and Seshia, Sanjit A. and Fremont, Daniel J.",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv251102164"
+    },
+    "entry_sha256": "026f822898f0d9a0290ddfda1f2e17d38d15952bc7f182836d990fd8ccb381d6",
+    "sources": [
+      "https://api.crossref.org/works?query.title=ScenicProver%3A+A+Framework+for+Compositional+Probabilistic+Verification+of+Learning-Enabled+Systems&rows=3",
+      "https://arxiv.org/abs/2511.02164"
+    ],
+    "evidence": {
+      "arxiv251102164.crossref.json.gz": "64ae3ebd81447471abcdc29e501be8e07bee936dc1a7aca6bf5bd81c4937746b",
+      "arxiv251102164.primary.html.gz": "d68dc8fec66bfa4ff75eaf0446b76cb359c0bd772b985b95da41838eadec0cf0",
+      "arxiv251102164.json": "fa061167ea4acd9bd2695f0ea039582a45315ecffbcef14ad038eeaba33a5842"
+    },
+    "note": "arXiv still describes a submission to TACAS 2026. No matching published record was confirmed; submission is not publication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv251221220",
+    "checked": "2026-11-02",
+    "status": "workshop publication; author/institution confirmed",
+    "entry": {
+      "url": "https://openreview.net/forum?id=wyKCkQ2GyO",
+      "year": "2026",
+      "booktitle": "The First Workshop on Efficient Spatial Reasoning at ICLR 2026",
+      "title": "{RoboSafe: Safeguarding Embodied Agents via Executable Safety Logic}",
+      "author": "Wang, Le and Ying, Zonghao and Yang, Xiao and Zou, Quanchen and Yin, Zhenfei and Li, Tianlin and Yang, Jian and Yang, Yaodong and Sheng, Lu and Liu, Aishan and Liu, Xianglong",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv251221220"
+    },
+    "entry_sha256": "af8e2e0627c34ee818e28242461d4e2b5f9c9cf2caf1f7cc05e5169f1899acb8",
+    "sources": [
+      "https://api.crossref.org/works?query.title=RoboSafe%3A+Safeguarding+Embodied+Agents+via+Executable+Safety+Logic&rows=3",
+      "https://arxiv.org/abs/2512.21220",
+      "https://sites.google.com/ucsd.edu/efficient-spatial-reasoning/",
+      "https://yangyaodong.com/en/publications?kw=RoboSafe"
+    ],
+    "evidence": {
+      "arxiv251221220.crossref.json.gz": "705555e6c4710092fa2e24cef2c0cc039391409d65bdace2afb10d967f7aa423",
+      "arxiv251221220.primary.html.gz": "a0a7b083e6e12976c57c3c84c40595bc060252a199075cb003e01547a57ff2fb",
+      "arxiv251221220.json": "5e9edbdb6faafc76e4cb6ac3beb71249657028413e30bad205c7bc4087143fa9",
+      "robosafe-workshop.supplement.gz": "9b682b10e12bf85f9e97202fa9df43c108f13ddc0cd7e4e634cc05d7e66945df",
+      "robosafe-author.supplement.gz": "0239dce0935fd24f916d01ed6196d601510b9339d1a6c30ef44f2a8015fa8687",
+      "robosafe-author.json": "96d822ad6cb2494912eb9bad4884a171a3ea93b79214cba74db78c4d48e127cd",
+      "iclr2026-index.html.gz": "b39604e3f7c3bd5d8ef80521411f977899721e106f8f035f11874b59da2f10d5"
+    },
+    "note": "Replaced the 2025 arXiv citation with the 2026 Efficient Spatial Reasoning workshop version. The official workshop confirms acceptance and an outstanding paper award; coauthor Yaodong Yang’s publication page confirms the workshop designation and all 11 authors, including Lu Sheng. This is an ICLR workshop paper, not a main-conference paper. OpenReview itself remains blocked; no DOI or pagination was verified.",
+    "changed": true,
+    "upgraded_from_arxiv": true,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv260223719",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2602.23719",
+      "url": "https://arxiv.org/abs/2602.23719",
+      "doi": "10.48550/arXiv.2602.23719",
+      "year": "2026",
+      "title": "{SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision}",
+      "author": "Zhao, Wenzhe and Zhao, Yang and Liu, Ganchao and Jiang, Zhiyu and Ma, Dandan and Li, Zihao and Li, Xuelong",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv260223719"
+    },
+    "entry_sha256": "6fa3998d7f89ab6fe9231125b9bec27461eaa72aa3e4d6895883b045a3618765",
+    "sources": [
+      "https://api.crossref.org/works?query.title=SAGE-LLM%3A+Towards+Safe+and+Generalizable+LLM+Controller+with+Fuzzy-CBF+Verification+and+Graph-Structured+Knowledge+Retrieval+for+UAV+Decision&rows=3",
+      "https://arxiv.org/abs/2602.23719"
+    ],
+    "evidence": {
+      "arxiv260223719.crossref.json.gz": "109504ecc14e62aa8b192fd23886590b574184afe864cb374bbea52537295e0e",
+      "arxiv260223719.primary.html.gz": "4dc79aa8e2dd49c4da409e6641e95db73692c3936358a09e5a3cf33b22f3b4f5",
+      "arxiv260223719.json": "599deb9a7a0382ce918a6c0c6d916df991fad8b2972b514dc2bd1fec963b28a0"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv240501563",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2405.01563",
+      "url": "https://arxiv.org/abs/2405.01563",
+      "doi": "10.48550/arXiv.2405.01563",
+      "year": "2024",
+      "title": "{Mitigating LLM Hallucinations via Conformal Abstention}",
+      "author": "Yadkori, Yasin Abbasi and Kuzborskij, Ilja and Stutz, David and György, András and Fisch, Adam and Doucet, Arnaud and Beloshapka, Iuliya and Weng, Wei-Hung and Yang, Yao-Yuan and Szepesvári, Csaba and Cemgil, Ali Taylan and Tomasev, Nenad",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv240501563"
+    },
+    "entry_sha256": "36e38589e7b06218df618b538bf519e96befdf4689206afe6d61b96ca6806635",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Mitigating+LLM+Hallucinations+via+Conformal+Abstention&rows=3",
+      "https://arxiv.org/abs/2405.01563"
+    ],
+    "evidence": {
+      "arxiv240501563.crossref.json.gz": "a2b7747cc475fbdf0b036bea2553f9bc4e7d380b9854bdfcfafadbe61c915440",
+      "arxiv240501563.primary.html.gz": "f01427d3b9c49f8bc3f07020b14e009033bec488054164df110af86bb5bfcf09",
+      "arxiv240501563.json": "55f9bf55524a698d2270d3ebbeaf54d01dac6f5e117e6ee0a53f7954914a128d"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv220405862",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2204.05862",
+      "url": "https://arxiv.org/abs/2204.05862",
+      "doi": "10.48550/arXiv.2204.05862",
+      "year": "2022",
+      "title": "{Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback}",
+      "author": "Bai, Yuntao and Jones, Andy and Ndousse, Kamal and Askell, Amanda and Chen, Anna and DasSarma, Nova and Drain, Dawn and Fort, Stanislav and Ganguli, Deep and Henighan, Tom and Joseph, Nicholas and Kadavath, Saurav and Kernion, Jackson and Conerly, Tom and El-Showk, Sheer and Elhage, Nelson and Hatfield-Dodds, Zac and Hernandez, Danny and Hume, Tristan and Johnston, Scott and Kravec, Shauna and Lovitt, Liane and Nanda, Neel and Olsson, Catherine and Amodei, Dario and Brown, Tom and Clark, Jack and McCandlish, Sam and Olah, Chris and Mann, Ben and Kaplan, Jared",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv220405862"
+    },
+    "entry_sha256": "bdfd892d817aab0b7c00aa3c305a4e170b804159099900aeba0368e9fcd28333",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Training+a+Helpful+and+Harmless+Assistant+with+Reinforcement+Learning+from+Human+Feedback&rows=3",
+      "https://arxiv.org/abs/2204.05862"
+    ],
+    "evidence": {
+      "arxiv220405862.crossref.json.gz": "9c54258562481bed2679ee213ce09bef3902e425a68e69f393c1b61f56f7204a",
+      "arxiv220405862.primary.html.gz": "ef225e7bc2a1788b09f2935759742fee5345ea814b149610e3c5a6d91148796a",
+      "arxiv220405862.json": "b66276a33eff5a26ef5c1a0160199e0f171b488e5ce19117dcc327f054c28e78"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv221208073",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2212.08073",
+      "url": "https://arxiv.org/abs/2212.08073",
+      "doi": "10.48550/arXiv.2212.08073",
+      "year": "2022",
+      "title": "{Constitutional AI: Harmlessness from AI Feedback}",
+      "author": "Bai, Yuntao and Kadavath, Saurav and Kundu, Sandipan and Askell, Amanda and Kernion, Jackson and Jones, Andy and Chen, Anna and Goldie, Anna and Mirhoseini, Azalia and McKinnon, Cameron and Chen, Carol and Olsson, Catherine and Olah, Christopher and Hernandez, Danny and Drain, Dawn and Ganguli, Deep and Li, Dustin and Tran-Johnson, Eli and Perez, Ethan and Kerr, Jamie and Mueller, Jared and Ladish, Jeffrey and Landau, Joshua and Ndousse, Kamal and Lukosuite, Kamile and Lovitt, Liane and Sellitto, Michael and Elhage, Nelson and Schiefer, Nicholas and Mercado, Noemi and DasSarma, Nova and Lasenby, Robert and Larson, Robin and Ringer, Sam and Johnston, Scott and Kravec, Shauna and Showk, Sheer El and Fort, Stanislav and Lanham, Tamera and Telleen-Lawton, Timothy and Conerly, Tom and Henighan, Tom and Hume, Tristan and Bowman, Samuel R. and Hatfield-Dodds, Zac and Mann, Ben and Amodei, Dario and Joseph, Nicholas and McCandlish, Sam and Brown, Tom and Kaplan, Jared",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv221208073"
+    },
+    "entry_sha256": "3325eadd181eabf646df12178b578755ada9cf38bf2d29521019766ad37c0df5",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Constitutional+AI%3A+Harmlessness+from+AI+Feedback&rows=3",
+      "https://arxiv.org/abs/2212.08073"
+    ],
+    "evidence": {
+      "arxiv221208073.crossref.json.gz": "1bc871094f73e0313c22ee10f9cbb8e194bc6593ac53ec074eda9e596ade8cf9",
+      "arxiv221208073.primary.html.gz": "2a94ebe2a7f4a26e0e5b2550794bd45714e2a5440bc4ac55f4048f95737c0aec",
+      "arxiv221208073.json": "a185f27f3a31c3cddff83f31e25270b2dfd18f6a6861e70a570da3790420eccb"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv240617819",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.mlr.press/v258/blot25a.html",
+      "publisher": "PMLR",
+      "year": "2025",
+      "pages": "19--27",
+      "volume": "258",
+      "series": "Proceedings of Machine Learning Research",
+      "booktitle": "Proceedings of The 28th International Conference on Artificial Intelligence and Statistics",
+      "title": "{Automatically Adaptive Conformal Risk Control}",
+      "author": "Blot, Vincent and Angelopoulos, Anastasios N and Jordan, Michael I and Brunel, Nicolas J-B",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240617819"
+    },
+    "entry_sha256": "0965c9951d07a947fd0adf00bc7ea9b1ab5d8d871261132ec00ac18741d9cb73",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Automatically+Adaptive+Conformal+Risk+Control&rows=3",
+      "https://proceedings.mlr.press/v258/blot25a.html"
+    ],
+    "evidence": {
+      "arxiv240617819.crossref.json.gz": "a585379c8a251fe0a782d19e429de321d46d2029c5c3eaba96ea3b6024eb007c",
+      "arxiv240617819.primary.html.gz": "9469ef455cb6408023b2979ac7b311189a75c47032d545e8821ffa894453dead",
+      "arxiv240617819.json": "9425023ccf4a2f8ff8a04a6c0fbd6915793f71e9204905d3323ada89908e4f6b"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv250220285",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.mlr.press/v267/chen25bd.html",
+      "publisher": "PMLR",
+      "year": "2025",
+      "pages": "8955--8978",
+      "volume": "267",
+      "series": "Proceedings of Machine Learning Research",
+      "booktitle": "Proceedings of the 42nd International Conference on Machine Learning",
+      "title": "{Conformal Tail Risk Control for Large Language Model Alignment}",
+      "author": "Chen, Catherine Yu-Chi and Shen, Jingyan and Deng, Zhun and Lei, Lihua",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv250220285"
+    },
+    "entry_sha256": "8ca05a25373a490914068874692cfbd614a89dba60943782b95f48994e4c4c1b",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Conformal+Tail+Risk+Control+for+Large+Language+Model+Alignment&rows=3",
+      "https://proceedings.mlr.press/v267/chen25bd.html"
+    ],
+    "evidence": {
+      "arxiv250220285.crossref.json.gz": "41455116e545b6ee9762d408f3d470366a90b12b4bf3cd4171c15ef5af5bc204",
+      "arxiv250220285.primary.html.gz": "bdd6faffc7e77470727085b79a8f55058e82857231759c31562700da2591c362",
+      "arxiv250220285.json": "b34d85a8b6b91479bc08b465405c9f263195487a33b9a09d8e95269668eadec5"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv230518404",
+    "checked": "2026-11-02",
+    "status": "workshop publication; indexed primary PDF",
+    "entry": {
+      "url": "https://openreview.net/pdf?id=0yN9RW1Vac",
+      "year": "2023",
+      "booktitle": "ICML 2023 Workshop on Neural Conversational AI (TEACH)",
+      "title": "{Conformal Prediction with Large Language Models for Multi-Choice Question Answering}",
+      "author": "Kumar, Bhavesh and Lu, Charles and Gupta, Gauri and Palepu, Anil and Bellamy, David and Raskar, Ramesh and Beam, Andrew",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv230518404"
+    },
+    "entry_sha256": "c6215f81415b3e4eccafb2f96c6665026f1b0a02bb65fa8a14f7f57ecdd9a69a",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Conformal+Prediction+with+Large+Language+Models+for+Multi-Choice+Question+Answering&rows=3",
+      "https://openreview.net/pdf?id=0yN9RW1Vac"
+    ],
+    "evidence": {
+      "arxiv230518404.crossref.json.gz": "607fa709fc297f1aed0a5af9195d00126808f403823d5b6937954f24d9ac628e",
+      "arxiv230518404.primary.html.gz": "86489d80cb4677b6bf9aa568b2880f63d214efb0d216c5f8652f5acd56414540",
+      "arxiv230518404.json": "350678bd838375d555d882f8050fb064a6e86022842e1340248d95f9e6df7006",
+      "mcqa-indexed-primary.json": "00e9c908dae2ebe416a442b3cdfd3b1711531d260733449bf99f0f2d0429e976"
+    },
+    "note": "Used Bhavesh Kumar and Charles Lu as printed in the indexed primary workshop PDF, rather than mixing Bhawesh (arXiv) with Charles (workshop). Workshop footnote confirms ICML 2023 TEACH. Direct OpenReview PDF access remains HTTP 403; author spelling is checked against the web index of the primary PDF, not a newly downloaded PDF.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": [
+      "primary: 403 Client Error: Forbidden for url: https://openreview.net/pdf?id=0yN9RW1Vac"
+    ]
+  },
+  {
+    "key": "arxiv210907958",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.18653/v1/2022.acl-long.229",
+      "doi": "10.18653/v1/2022.acl-long.229",
+      "publisher": "Association for Computational Linguistics",
+      "year": "2022",
+      "pages": "3214--3252",
+      "booktitle": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "title": "{TruthfulQA: Measuring How Models Mimic Human Falsehoods}",
+      "author": "Lin, Stephanie and Hilton, Jacob and Evans, Owain",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv210907958"
+    },
+    "entry_sha256": "ccdfa7add85d329a0cac6579051636d367e9034d07d24a58ba2795e9c755c06e",
+    "sources": [
+      "https://api.crossref.org/works/10.18653/v1/2022.acl-long.229"
+    ],
+    "evidence": {
+      "arxiv210907958.crossref.json.gz": "5bac47e6e13d46c8eec3ffd8180cee8fb026297b173f9fba01348446a217953e",
+      "arxiv210907958.json": "70de401cadcaf6d7b7df509d254e38ae73baeb62e5fe6f1030bce9ae34e7f4ec"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv240210978",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.mlr.press/v235/mohri24a.html",
+      "publisher": "PMLR",
+      "year": "2024",
+      "pages": "36029--36047",
+      "volume": "235",
+      "series": "Proceedings of Machine Learning Research",
+      "booktitle": "Proceedings of the 41st International Conference on Machine Learning",
+      "title": "{Language Models with Conformal Factuality Guarantees}",
+      "author": "Mohri, Christopher and Hashimoto, Tatsunori",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240210978"
+    },
+    "entry_sha256": "07e6937a8fe5a96fe093cdeed2e4be31510a1d3b946428bf60fb3f72b8b01a53",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Language+Models+with+Conformal+Factuality+Guarantees&rows=3",
+      "https://proceedings.mlr.press/v235/mohri24a.html"
+    ],
+    "evidence": {
+      "arxiv240210978.crossref.json.gz": "4e9cb9c56f13a067c0ffba07cc142d2c3da9453a92c0e07632b743ce2bc58b76",
+      "arxiv240210978.primary.html.gz": "df3cc98361c59525002cd188d3e7fdf6d95aa93d42464fb4f076ff82ac03758a",
+      "arxiv240210978.json": "3688747fb7fbdcf8a420c235bc54f6de3d2308444226f80f0e805bc750344d37"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv230610193",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/31421b112e5f7faf4fc577b74e45dab2-Abstract-Conference.html",
+      "year": "2024",
+      "pages": "11654--11681",
+      "volume": "2024",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{Conformal Language Modeling}",
+      "author": "Quach, Victor and Fisch, Adam and Schuster, Tal and Yala, Adam and Sohn, Jae Ho and Jaakkola, Tommi S. and Barzilay, Regina",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv230610193"
+    },
+    "entry_sha256": "6db1986f9e84e2783d0a95146cdef0a3895b2cd977a86c9b58862a456833fa20",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Conformal+Language+Modeling&rows=3",
+      "https://proceedings.iclr.cc/paper_files/paper/2024/hash/31421b112e5f7faf4fc577b74e45dab2-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/2024/file/31421b112e5f7faf4fc577b74e45dab2-Bibtex-Conference.bib"
+    ],
+    "evidence": {
+      "arxiv230610193.crossref.json.gz": "1f3cb74bd494cda29a2b17a7a62f8e0d8ae9c1a8a6c4901f0a172429ea7a5dde",
+      "arxiv230610193.primary.html.gz": "f57eb5c53667d6cc3c69fccc1fd8cf7b187600faee6f009a2f0c3c64fa0d51cc",
+      "arxiv230610193.json": "c1494dfb7f0b08df7bceb8416335a004b8103dce087443d838473ce6066dc527",
+      "arxiv230610193-bibtex.supplement.gz": "9975ad88442347f978d00131e014947132ed00bdd193bf3d57e2df06d725f590"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv240301216",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.18653/v1/2024.findings-emnlp.54",
+      "doi": "10.18653/v1/2024.findings-emnlp.54",
+      "publisher": "Association for Computational Linguistics",
+      "year": "2024",
+      "pages": "979--995",
+      "booktitle": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+      "title": "{API Is Enough: Conformal Prediction for Large Language Models Without Logit-Access}",
+      "author": "Su, Jiayuan and Luo, Jing and Wang, Hongwei and Cheng, Lu",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240301216"
+    },
+    "entry_sha256": "d474ca1ee6f1d1a15bf56463ce90aaf18867d7689827ac9f9a01c581213d3a8b",
+    "sources": [
+      "https://api.crossref.org/works/10.18653/v1/2024.findings-emnlp.54"
+    ],
+    "evidence": {
+      "arxiv240301216.crossref.json.gz": "a308bc54d74c6ef5b58eb6e8356d8efb644e3ed501276c3d3dfb69a9b8059ea3",
+      "arxiv240301216.json": "1677d17706f3d0750dc7ebf7cb42a4179e01ad99c9997818e22050772125ee1c"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv240314720",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://ceur-ws.org/Vol-3920/paper03.pdf",
+      "year": "2025",
+      "pages": "48--62",
+      "volume": "3920",
+      "series": "CEUR Workshop Proceedings",
+      "booktitle": "Proceedings of the Conference on Applied Machine Learning in Information Security (CAMLIS 2024)",
+      "title": "{Defending Against Indirect Prompt Injection Attacks With Spotlighting}",
+      "author": "Hines, Keegan and Lopez, Gary and Hall, Matthew and Zarfati, Federico and Zunger, Yonatan and Kiciman, Emre",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv240314720"
+    },
+    "entry_sha256": "a0d5de374186f7863b8ea55a35f18269135bcd5ab953f2bc6cc09eadde630ead",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Defending+Against+Indirect+Prompt+Injection+Attacks+With+Spotlighting&rows=3",
+      "https://ceur-ws.org/Vol-3920/paper03.pdf"
+    ],
+    "evidence": {
+      "arxiv240314720.crossref.json.gz": "fa9eacf21ed00409ecca43d657c3ce3ed0ca9aee0e2922c736709a70b175cf6a",
+      "arxiv240314720.primary.html.gz": "2bbc3beb108f1c724c1ade61c2195e49432220a6054790612fedd4c03c914c8f",
+      "arxiv240314720.json": "4d44259d18bc9a79849d9e80b1336990a882e6f96e08577e31891c87cea6febe"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv230900614",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2309.00614",
+      "url": "https://arxiv.org/abs/2309.00614",
+      "doi": "10.48550/arXiv.2309.00614",
+      "year": "2023",
+      "title": "{Baseline Defenses for Adversarial Attacks Against Aligned Language Models}",
+      "author": "Jain, Neel and Schwarzschild, Avi and Wen, Yuxin and Somepalli, Gowthami and Kirchenbauer, John and Chiang, Ping-yeh and Goldblum, Micah and Saha, Aniruddha and Geiping, Jonas and Goldstein, Tom",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv230900614"
+    },
+    "entry_sha256": "3998dfec238b6485d52d4fc2b3e33e420b1b1ac098f3aabeb1e4932bbdc27a47",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Baseline+Defenses+for+Adversarial+Attacks+Against+Aligned+Language+Models&rows=3",
+      "https://arxiv.org/abs/2309.00614"
+    ],
+    "evidence": {
+      "arxiv230900614.crossref.json.gz": "bf45be055bc0826825d5ad8ecbfd3f37b1c61e700b6f0823346c3bae2d69ff1a",
+      "arxiv230900614.primary.html.gz": "3cffff04403275ee664b0387d86789bf1ee1a3b277cb5e657fd0835c5bfce710",
+      "arxiv230900614.json": "e62808b2e2a23a8db965fc610ab93fe62d73c972d8a5a76d5f8865913dcbf8c3"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv241216682",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.18653/v1/2025.acl-long.1435",
+      "doi": "10.18653/v1/2025.acl-long.1435",
+      "publisher": "Association for Computational Linguistics",
+      "year": "2025",
+      "pages": "29680--29697",
+      "booktitle": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "title": "{The Task Shield: Enforcing Task Alignment to Defend Against Indirect Prompt Injection in LLM Agents}",
+      "author": "Jia, Feiran and Wu, Tong and Qin, Xin and Squicciarini, Anna",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arxiv241216682"
+    },
+    "entry_sha256": "195401abf28a1bf5135f0736364efce15840dfd0cc4dc7214efd87a78b128a45",
+    "sources": [
+      "https://api.crossref.org/works/10.18653/v1/2025.acl-long.1435"
+    ],
+    "evidence": {
+      "arxiv241216682.crossref.json.gz": "e83557ada965fe7b79709c834378ac3e307f167a9f2f7fcc11ea4c94f0516761",
+      "arxiv241216682.json": "9c248a73cdafce655b2b4520ac4f0eb6539750db58562b4ad8baa106b426c4ed"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv240413208",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2404.13208",
+      "url": "https://arxiv.org/abs/2404.13208",
+      "doi": "10.48550/arXiv.2404.13208",
+      "year": "2024",
+      "title": "{The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions}",
+      "author": "Wallace, Eric and Xiao, Kai and Leike, Reimar and Weng, Lilian and Heidecke, Johannes and Beutel, Alex",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv240413208"
+    },
+    "entry_sha256": "c23a97613a3aafc86a3642ea42486cf1078b3645f1db88b2db9497486435e595",
+    "sources": [
+      "https://api.crossref.org/works?query.title=The+Instruction+Hierarchy%3A+Training+LLMs+to+Prioritize+Privileged+Instructions&rows=3",
+      "https://arxiv.org/abs/2404.13208"
+    ],
+    "evidence": {
+      "arxiv240413208.crossref.json.gz": "73f731b820853167434fc5ffa97744ab2768f042b7d54f30bc89e91527f15c92",
+      "arxiv240413208.primary.html.gz": "209c4702c9dd4421dc3454cba9f15f130c7e8fe9de903bcf3beae9f560ce0785",
+      "arxiv240413208.json": "4d5bd46dd082d15da99af1585a077b6ebc24af410f903b87fd8e8856cb26a55f"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arxiv240801605",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2408.01605",
+      "url": "https://arxiv.org/abs/2408.01605",
+      "doi": "10.48550/arXiv.2408.01605",
+      "year": "2024",
+      "title": "{CYBERSECEVAL 3: Advancing the Evaluation of Cybersecurity Risks and Capabilities in Large Language Models}",
+      "author": "Wan, Shengye and Nikolaidis, Cyrus and Song, Daniel and Molnar, David and Crnkovich, James and Grace, Jayson and Bhatt, Manish and Chennabasappa, Sahana and Whitman, Spencer and Ding, Stephanie and Ionescu, Vlad and Li, Yue and Saxe, Joshua",
+      "ENTRYTYPE": "misc",
+      "ID": "arxiv240801605"
+    },
+    "entry_sha256": "131f9136afe14b73176afa39ca4bf72319c4bd50586cd970b3df65270823aab8",
+    "sources": [
+      "https://api.crossref.org/works?query.title=CYBERSECEVAL+3%3A+Advancing+the+Evaluation+of+Cybersecurity+Risks+and+Capabilities+in+Large+Language+Models&rows=3",
+      "https://arxiv.org/abs/2408.01605"
+    ],
+    "evidence": {
+      "arxiv240801605.crossref.json.gz": "e60cd0fe4a22f285d227d39670086f616d1055964254c566e52c9e23920acba9",
+      "arxiv240801605.primary.html.gz": "37c40b963e5008f664a54f2d820ab3d88fb1ee6f081c2f17be30a5abdfd04697",
+      "arxiv240801605.json": "3b5633f618ae4f6e6f99ff48366b091ed05bcd2b3b0456df7d33b6b5e097a9a5"
+    },
+    "note": "Title, author list, year and arXiv DOI checked on the primary arXiv page. Publication discovery did not confirm a matching published version; this is not proof of nonpublication.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "saltzer1975protection",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1109/PROC.1975.9939",
+      "year": "1975",
+      "pages": "1278--1308",
+      "number": "9",
+      "volume": "63",
+      "journal": "Proceedings of the IEEE",
+      "title": "The Protection of Information in Computer Systems",
+      "author": "Saltzer, Jerome H. and Schroeder, Michael D.",
+      "ENTRYTYPE": "article",
+      "ID": "saltzer1975protection"
+    },
+    "entry_sha256": "c386775352e7e8bb2a243b464f2c2e8daf60ab5228ff09cf5220f2956f53be21",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/PROC.1975.9939"
+    ],
+    "evidence": {
+      "saltzer1975protection.crossref.json.gz": "ff7a0797dd4bdeb7be7bca73dc43e8258260984bfb89d1964212e378adca1d11",
+      "saltzer1975protection.json": "70b31acf7c423ba043bf6832e0fd551007c280b040e25ad64c14c7e24198016e"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "anderson1972computer",
+    "checked": "2026-11-02",
+    "status": "technical report",
+    "entry": {
+      "url": "https://conferences.computer.org/sp/pdfs/early/ande72.pdf",
+      "institution": "U.S. Air Force Electronic Systems Division",
+      "year": "1972",
+      "number": "ESD-TR-73-51",
+      "title": "Computer Security Technology Planning Study",
+      "author": "Anderson, James P.",
+      "ENTRYTYPE": "techreport",
+      "ID": "anderson1972computer"
+    },
+    "entry_sha256": "c094883bf0f026c4b7eae2e7852bca5f9d5bdb0b91e9d4070bfdb9619e74ba92",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Computer+Security+Technology+Planning+Study&rows=3",
+      "https://conferences.computer.org/sp/pdfs/early/ande72.pdf"
+    ],
+    "evidence": {
+      "anderson1972computer.crossref.json.gz": "8efdc646e3d4e1b83e7fc63fa2dca4e0ca56a71f391ef03d7d4bcf6c8255073e",
+      "anderson1972computer.primary.html.gz": "f7e7e76152ceace6ab045a2aad871364a42a07cfef272a7303ea3c99ff672cca",
+      "anderson1972computer.json": "32a250d3767c1d3ca174e7e57b3d4df868cc65363c7fbab96cd86a1590a936d7"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "denning1976lattice",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/360051.360056",
+      "year": "1976",
+      "pages": "236--243",
+      "number": "5",
+      "volume": "19",
+      "journal": "Communications of the ACM",
+      "title": "A Lattice Model of Secure Information Flow",
+      "author": "Denning, Dorothy E.",
+      "ENTRYTYPE": "article",
+      "ID": "denning1976lattice"
+    },
+    "entry_sha256": "53595f8607f61831d2cedcddacf7582ce76ea1ef8cb4c7d458b4bb1d89117333",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/360051.360056"
+    ],
+    "evidence": {
+      "denning1976lattice.crossref.json.gz": "272b7dae6fd8f33d361c07acf023f99130e53603de4c8fc315a7f40f55cc46c1",
+      "denning1976lattice.json": "d608243864f1c64177481d98485cd90023dbe33b24ea92fabc594d0440dc2e6e"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "schneider2000enforceable",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/353323.353382",
+      "year": "2000",
+      "pages": "30--50",
+      "number": "1",
+      "volume": "3",
+      "journal": "ACM Transactions on Information and System Security",
+      "title": "Enforceable Security Policies",
+      "author": "Schneider, Fred B.",
+      "ENTRYTYPE": "article",
+      "ID": "schneider2000enforceable"
+    },
+    "entry_sha256": "086b220a4762bc40b25936097cab2e42e1df3ffb819601a79d7dca12daec5bd1",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/353323.353382"
+    ],
+    "evidence": {
+      "schneider2000enforceable.crossref.json.gz": "75a548f2c9fc61726ae4f5af0df8f6d01f5bd75cdeae28935b1a936d507dab26",
+      "schneider2000enforceable.json": "6f1573e76524a0767f092a5b81facb0521a018ed47167c92f3dbc63c60f672a1"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "sabelfeld2003language",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1109/JSAC.2002.806121",
+      "year": "2003",
+      "pages": "5--19",
+      "number": "1",
+      "volume": "21",
+      "journal": "IEEE Journal on Selected Areas in Communications",
+      "title": "Language-Based Information-Flow Security",
+      "author": "Sabelfeld, Andrei and Myers, Andrew C.",
+      "ENTRYTYPE": "article",
+      "ID": "sabelfeld2003language"
+    },
+    "entry_sha256": "e9b3b79bd238ed6fcf70c212dbe514ebfa97eee97729fa31b74ea6d4e582d2de",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/JSAC.2002.806121"
+    ],
+    "evidence": {
+      "sabelfeld2003language.crossref.json.gz": "09cb39bca48faa8a9ca1c1748e2cb751bdd8587750635e8c4869d8245f96a6ca",
+      "sabelfeld2003language.json": "6ce4ae818182345487acc545a28b69ec126ca192553ad5209446cfe72469ff2f"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "misra1981proofs",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1109/TSE.1981.230844",
+      "year": "1981",
+      "pages": "417--426",
+      "number": "4",
+      "volume": "SE-7",
+      "journal": "IEEE Transactions on Software Engineering",
+      "title": "Proofs of Networks of Processes",
+      "author": "Misra, Jayadev and Chandy, K. Mani",
+      "ENTRYTYPE": "article",
+      "ID": "misra1981proofs"
+    },
+    "entry_sha256": "29e87907dfcc0fbdfc42a1067eb502b8c768d62f47bcbcd7f1c2f860e8fd5af8",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/TSE.1981.230844"
+    ],
+    "evidence": {
+      "misra1981proofs.crossref.json.gz": "694a45f08a6fe6e7907e30828e9f1d9d365cc23ff810727b25abc33d467493ad",
+      "misra1981proofs.json": "9c01ebf868b831b77924de31d033d2f6f97c187354c11a83dee260f91aad846c"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "jones1983tentative",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/69575.69577",
+      "year": "1983",
+      "pages": "596--619",
+      "number": "4",
+      "volume": "5",
+      "journal": "ACM Transactions on Programming Languages and Systems",
+      "title": "Tentative Steps Toward a Development Method for Interfering Programs",
+      "author": "Jones, Cliff B.",
+      "ENTRYTYPE": "article",
+      "ID": "jones1983tentative"
+    },
+    "entry_sha256": "23eb94a37d07907fee55a861bf04f6a5e73868de5666439fb64f6a0760c5a482",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/69575.69577"
+    ],
+    "evidence": {
+      "jones1983tentative.crossref.json.gz": "20f4b5550a911ad2bcb5b4d340efd377b24735bc108aef90999fd48e84160059",
+      "jones1983tentative.json": "2006e66c0e458e8d40aaa674dc8c2efbd6a6a8b02fcbdd8497b2cae7a3069c07"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "abadi1993composing",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/151646.151649",
+      "year": "1993",
+      "pages": "73--132",
+      "number": "1",
+      "volume": "15",
+      "journal": "ACM Transactions on Programming Languages and Systems",
+      "title": "Composing Specifications",
+      "author": "Abadi, Mart{\\'\\i}n and Lamport, Leslie",
+      "ENTRYTYPE": "article",
+      "ID": "abadi1993composing"
+    },
+    "entry_sha256": "18d16baf3fc65d98273ddcbd60a274e6045fe3232121b1ce58488d87d81fd597",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/151646.151649"
+    ],
+    "evidence": {
+      "abadi1993composing.crossref.json.gz": "ab060dd30ea0f18f10bcaa02bb0a3f8cc1a7c11401bac01927ec32b9cf217ab3",
+      "abadi1993composing.json": "5726bdfefaf81911c5cb7ac76de454ee748b809c50580393f0959a56e5b65140"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "benveniste2018contracts",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1561/1000000053",
+      "year": "2018",
+      "pages": "124--400",
+      "number": "2--3",
+      "volume": "12",
+      "journal": "Foundations and Trends in Electronic Design Automation",
+      "title": "Contracts for System Design",
+      "author": "Benveniste, Albert and Caillaud, Beno{\\^\\i}t and Nickovic, Dejan and Passerone, Roberto and Raclet, Jean-Baptiste and Reinkemeier, Philipp and Sangiovanni-Vincentelli, Alberto and Damm, Werner and Henzinger, Thomas A. and Larsen, Kim G.",
+      "ENTRYTYPE": "article",
+      "ID": "benveniste2018contracts"
+    },
+    "entry_sha256": "e5bb94483b60855514f4dc972dc26943fb8cc20ab0d377e23d595a9e8c6df5c1",
+    "sources": [
+      "https://api.crossref.org/works/10.1561/1000000053"
+    ],
+    "evidence": {
+      "benveniste2018contracts.crossref.json.gz": "a70fda21a9bf41a0a5dc1d4ef1baa07c976908ff076dc757b56eae7537e52d7d",
+      "benveniste2018contracts.json": "b82ae9ff610995f355e76c52007950cba6b2e5612ba3d096eafc51f2505b1c79"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "meyer1992applying",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1109/2.161279",
+      "year": "1992",
+      "pages": "40--51",
+      "number": "10",
+      "volume": "25",
+      "journal": "Computer",
+      "title": "Applying ``Design by Contract''",
+      "author": "Meyer, Bertrand",
+      "ENTRYTYPE": "article",
+      "ID": "meyer1992applying"
+    },
+    "entry_sha256": "992da0df556eb96962b0c73d3d78677e9e36f344036c0e7dbcd3a7eda875cd6e",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/2.161279"
+    ],
+    "evidence": {
+      "meyer1992applying.crossref.json.gz": "a68bc20075bfac5fac74df53ca3e5bf06018bf54d439118c8bb1a6e6bd0d45a6",
+      "meyer1992applying.json": "0fcc47fd5ae689ddd9bcb14c609bb35c06176471684c3b743ce9f5331e7fce54"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "leucker2009brief",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1016/j.jlap.2008.08.004",
+      "year": "2009",
+      "pages": "293--303",
+      "number": "5",
+      "volume": "78",
+      "journal": "The Journal of Logic and Algebraic Programming",
+      "title": "A Brief Account of Runtime Verification",
+      "author": "Leucker, Martin and Schallhart, Christian",
+      "ENTRYTYPE": "article",
+      "ID": "leucker2009brief"
+    },
+    "entry_sha256": "3914469e149002cf37013c4ca69c56d69efc4b547339326d58939f4512c98c0e",
+    "sources": [
+      "https://api.crossref.org/works/10.1016/j.jlap.2008.08.004"
+    ],
+    "evidence": {
+      "leucker2009brief.crossref.json.gz": "c6a7c422113606fa7adaf7d67d39eab979ef756ecfc37679f0d8f734696b7352",
+      "leucker2009brief.json": "8887f248285e41309d9dfa2f022eb0732d266783b8dbf8c13969b09be20aa6e4"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "sha2001using",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1109/MS.2001.936213",
+      "year": "2001",
+      "pages": "20--28",
+      "number": "4",
+      "volume": "18",
+      "journal": "IEEE Software",
+      "title": "Using Simplicity to Control Complexity",
+      "author": "Sha, Lui",
+      "ENTRYTYPE": "article",
+      "ID": "sha2001using"
+    },
+    "entry_sha256": "07ff264346701df8d769f5a53607a1b98bc9bbe75c3cc22a3f596071c90575d1",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/MS.2001.936213"
+    ],
+    "evidence": {
+      "sha2001using.crossref.json.gz": "880516ad93fa098e4c3cacc33e1c9a334d33cd18f97c367f046f0991356f1403",
+      "sha2001using.json": "cb51e753aa8b40fe95daa4e342b983406d88aecc55a82b51821f5965ce9468e8"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "kwiatkowska2011prism",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1007/978-3-642-22110-1_47",
+      "publisher": "Springer",
+      "year": "2011",
+      "pages": "585--591",
+      "volume": "6806",
+      "series": "LNCS",
+      "booktitle": "Proc. Int. Conf. Computer Aided Verification (CAV)",
+      "title": "{PRISM} 4.0: Verification of Probabilistic Real-Time Systems",
+      "author": "Kwiatkowska, Marta and Norman, Gethin and Parker, David",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "kwiatkowska2011prism"
+    },
+    "entry_sha256": "56ce78f5df42c210540b4e466c006cb705a0d8d7e4f75ec62a59089f7d0e6dfa",
+    "sources": [
+      "https://api.crossref.org/works/10.1007/978-3-642-22110-1_47"
+    ],
+    "evidence": {
+      "kwiatkowska2011prism.crossref.json.gz": "180d8b7386f36e9bdb08d49cba27d7166053e5e63dc113cd356180febb67b0fc",
+      "kwiatkowska2011prism.json": "b5a8b9d5260c251784f6573384f5ef24f32b2b9f33379a8524b7435e92a31faa"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "viola2001rapid",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1109/CVPR.2001.990517",
+      "year": "2001",
+      "pages": "I-511--I-518",
+      "volume": "1",
+      "booktitle": "Proc. IEEE Computer Society Conf. Computer Vision and Pattern Recognition (CVPR)",
+      "title": "Rapid Object Detection Using a Boosted Cascade of Simple Features",
+      "author": "Viola, Paul and Jones, Michael",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "viola2001rapid"
+    },
+    "entry_sha256": "046b9bbfa10298348ae60862aca82867c8c76d232488a0aea75dafe3307ec490",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/CVPR.2001.990517"
+    ],
+    "evidence": {
+      "viola2001rapid.crossref.json.gz": "9996a2fd99876f99f10ceea7b7b7faff6a9e77f27e79a5bc56bd970fa1a9304c",
+      "viola2001rapid.json": "281d5ec4fd885713f5a911dd6b48c5410a1c5c318366ce998e019026e74c59cc"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "clopper1934use",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1093/biomet/26.4.404",
+      "year": "1934",
+      "pages": "404--413",
+      "number": "4",
+      "volume": "26",
+      "journal": "Biometrika",
+      "title": "The Use of Confidence or Fiducial Limits Illustrated in the Case of the Binomial",
+      "author": "Clopper, C. J. and Pearson, E. S.",
+      "ENTRYTYPE": "article",
+      "ID": "clopper1934use"
+    },
+    "entry_sha256": "36aa0cc769d57c806e03855738c44a15a447c9dcacd8b793f87569b0b5efb4a1",
+    "sources": [
+      "https://api.crossref.org/works/10.1093/biomet/26.4.404"
+    ],
+    "evidence": {
+      "clopper1934use.crossref.json.gz": "5597cb931e825acd4538722fa406bd3aa37cf3557b1d51a42ac627bbdf2643eb",
+      "clopper1934use.json": "fa84fef56bd11cfe6351b4be976ed0f21baa96bb5a832966db3186d07249ce7b"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "bates2021distribution",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/3478535",
+      "year": "2021",
+      "pages": "1--34",
+      "number": "6",
+      "volume": "68",
+      "journal": "Journal of the ACM",
+      "title": "Distribution-Free, Risk-Controlling Prediction Sets",
+      "author": "Bates, Stephen and Angelopoulos, Anastasios and Lei, Lihua and Malik, Jitendra and Jordan, Michael",
+      "ENTRYTYPE": "article",
+      "ID": "bates2021distribution"
+    },
+    "entry_sha256": "5ba225f20b49799baf749ff137b053bf40ac4c1c91d43962e04e82fe50c30410",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3478535"
+    ],
+    "evidence": {
+      "bates2021distribution.crossref.json.gz": "38262cefdba9da72510f8db56d1b5ff49566d0e85689097a8d2d0782f49e42ff",
+      "bates2021distribution.json": "56ba126e03471524440c4e47f9f7e9706e097b6d22718f267a25403f6b175e31"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "angelopoulos2021learn",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://doi.org/10.1214/24-aoas1998",
+      "doi": "10.1214/24-aoas1998",
+      "publisher": "Institute of Mathematical Statistics",
+      "year": "2025",
+      "pages": "1641--1662",
+      "number": "2",
+      "volume": "19",
+      "journal": "The Annals of Applied Statistics",
+      "title": "{Learn then test: Calibrating predictive algorithms to achieve risk control}",
+      "author": "Angelopoulos, Anastasios N. and Bates, Stephen and Cand{\\`e}s, Emmanuel J. and Jordan, Michael I. and Lei, Lihua",
+      "ENTRYTYPE": "article",
+      "ID": "angelopoulos2021learn"
+    },
+    "entry_sha256": "a2b942b5eb23b42912d20bf0144f5d04c11fd36f204c6d7e612798b3f2eb7928",
+    "sources": [
+      "https://api.crossref.org/works/10.1214/24-aoas1998"
+    ],
+    "evidence": {
+      "angelopoulos2021learn.crossref.json.gz": "e4928e65068d1bb6f0a9ccac2734447c7fe2b1794ab4f510b98c77525bfbedb6",
+      "angelopoulos2021learn.json": "b8d7e7b2d3837bcf2aa5509a9f4f90935edfe26f2f96fe552348b2693c8ed2df"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "tibshirani2019conformal",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2019/hash/8fb21ee7a2207526da55a679f0332de2-Abstract.html",
+      "publisher": "Curran Associates, Inc.",
+      "year": "2019",
+      "volume": "32",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "title": "{Conformal Prediction Under Covariate Shift}",
+      "author": "Tibshirani, Ryan J. and Foygel Barber, Rina and Cand{\\`e}s, Emmanuel J. and Ramdas, Aaditya",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "tibshirani2019conformal"
+    },
+    "entry_sha256": "91948f39c04d85224cfded713edd8c32b318ae7d65b08a6273d09aa95629c5b2",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Conformal+Prediction+Under+Covariate+Shift&rows=3",
+      "https://proceedings.neurips.cc/paper_files/paper/2019/hash/8fb21ee7a2207526da55a679f0332de2-Abstract.html",
+      "https://proceedings.neurips.cc/paper_files/paper/2019/file/8fb21ee7a2207526da55a679f0332de2-Bibtex.bib"
+    ],
+    "evidence": {
+      "tibshirani2019conformal.crossref.json.gz": "b448cc1584ea3438c6d1d487a80f9beb8560289e419ff328105421cbcb48564d",
+      "tibshirani2019conformal.primary.html.gz": "e95b2a060c6f2737982e61ca7e9a283a1f05a413efe3e5c21f21bfa4847ceadd",
+      "tibshirani2019conformal.json": "c81404e7adc63509969ae9f5c897ba854f15c9e5c45b1a5276e7580eacf8e344",
+      "tibshirani2019conformal-bibtex.supplement.gz": "08b02f92a8f66a3a538b5d5abb5b6c6480b038e60757ef78968d1291c5501051"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "jimenez2023swebench",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html",
+      "year": "2024",
+      "pages": "54107--54157",
+      "volume": "2024",
+      "booktitle": "International Conference on Learning Representations",
+      "title": "{SWE-bench: Can Language Models Resolve Real-world Github Issues?}",
+      "author": "Jimenez, Carlos E. and Yang, John and Wettig, Alexander and Yao, Shunyu and Pei, Kexin and Press, Ofir and Narasimhan, Karthik",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "jimenez2023swebench"
+    },
+    "entry_sha256": "2259e719ee0e9df35875153bea8ff0575a1df471c6a44a9e58557fcf0f854c50",
+    "sources": [
+      "https://api.crossref.org/works?query.title=SWE-bench%3A+Can+Language+Models+Resolve+Real-world+Github+Issues%3F&rows=3",
+      "https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/2024/file/edac78c3e300629acfe6cbe9ca88fb84-Bibtex-Conference.bib"
+    ],
+    "evidence": {
+      "jimenez2023swebench.crossref.json.gz": "1dc01372e8cde8b0abd2b85828c21c2e185067ab8ceb048bc2946a8f541abffd",
+      "jimenez2023swebench.primary.html.gz": "0c9b3b2497e130a903f91292be352c6cb2ac50fe7d790129ac46e9cf0a840f11",
+      "jimenez2023swebench.json": "4d1d4bd2bf16d1cd600f24ed379a8d61f74dcba3f165fc2eea4e43a17b321874",
+      "jimenez2023swebench-bibtex.supplement.gz": "af9410f585488dd24915ddf9bd1cac7f086b2648a70f8715c333a98927f136c5"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "ralph2020empirical",
+    "checked": "2026-11-02",
+    "status": "preprint",
+    "entry": {
+      "howpublished": "arXiv:2010.03525",
+      "url": "https://arxiv.org/abs/2010.03525",
+      "doi": "10.48550/arXiv.2010.03525",
+      "year": "2020",
+      "title": "{Empirical Standards for Software Engineering Research}",
+      "author": "Ralph, Paul and Ali, Nauman bin and Baltes, Sebastian and Bianculli, Domenico and Diaz, Jessica and Dittrich, Yvonne and Ernst, Neil and Felderer, Michael and Feldt, Robert and Filieri, Antonio and de França, Breno Bernard Nicolau and Furia, Carlo Alberto and Gay, Greg and Gold, Nicolas and Graziotin, Daniel and He, Pinjia and Hoda, Rashina and Juristo, Natalia and Kitchenham, Barbara and Lenarduzzi, Valentina and Martínez, Jorge and Melegati, Jorge and Mendez, Daniel and Menzies, Tim and Molleri, Jefferson and Pfahl, Dietmar and Robbes, Romain and Russo, Daniel and Saarimäki, Nyyti and Sarro, Federica and Taibi, Davide and Siegmund, Janet and Spinellis, Diomidis and Staron, Miroslaw and Stol, Klaas and Storey, Margaret-Anne and Tamburri, Damian and Torchiano, Marco and Treude, Christoph and Turhan, Burak and Wang, Xiaofeng and Vegas, Sira",
+      "ENTRYTYPE": "misc",
+      "ID": "ralph2020empirical"
+    },
+    "entry_sha256": "aecd0f4c911ed3b469936bc1d2285bf7f4769abc2b128a14dc8349a80d53015f",
+    "sources": [
+      "https://api.crossref.org/works?query.title=Empirical+Standards+for+Software+Engineering+Research&rows=3",
+      "https://arxiv.org/abs/2010.03525",
+      "https://raw.githubusercontent.com/acmsigsoft/EmpiricalStandards/master/CITATION.cff"
+    ],
+    "evidence": {
+      "ralph2020empirical.crossref.json.gz": "2da4b7d455ca986219442e944c5f42d783bf78ae96aa2b8a99726c9b6f699a76",
+      "ralph2020empirical.primary.html.gz": "3fcf40f075529160ecc6a2f92bdef849759fab5641a242fd31e508e10063641b",
+      "ralph2020empirical.json": "19b3eff47343f70e2a1dc69bf4132d300122f7308202b125f514bf6234360763",
+      "ralph2020empirical-bibtex.supplement.gz": "9af5edc0811a8bad742c9fc2f5452aaf6577dcfb91cb92001abcf34abeeeb248",
+      "empirical-citation.supplement.gz": "ee3e648bd35fc51d8b86c01599db554cd494f4d927486508c6c7e401e553ae42"
+    },
+    "note": "Replaced “and others” with all 42 authors in the official ACM SIGSOFT CITATION.cff preferred citation. This avoids the duplicate Davide Taibi in the arXiv metadata. The official citation specifies 2020 and the arXiv report; no journal version was confirmed.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "holm1979simple",
+    "checked": "2026-11-02",
+    "status": "historical evidence; current access blocked",
+    "entry": {
+      "url": "https://www.jstor.org/stable/4615733",
+      "year": "1979",
+      "pages": "65--70",
+      "number": "2",
+      "volume": "6",
+      "journal": "Scandinavian Journal of Statistics",
+      "title": "A Simple Sequentially Rejective Multiple Test Procedure",
+      "author": "Holm, Sture",
+      "ENTRYTYPE": "article",
+      "ID": "holm1979simple"
+    },
+    "entry_sha256": "129728bfb52dacf64435426c310e76552e00e6b6c954533b7df158970a38a8cf",
+    "sources": [
+      "https://api.crossref.org/works?query.title=A+Simple+Sequentially+Rejective+Multiple+Test+Procedure&rows=3"
+    ],
+    "evidence": {
+      "holm1979simple.crossref.json.gz": "b11170bdf7596c4830bbdedca46bcb15f92b744cfbede4ec4ceafa525012331d",
+      "holm1979simple.primary.html.gz": "d2c49ed8905a2192aa1430b4e1eecfd95da48a1ebf6f787b70c88bdf32270b76",
+      "holm1979simple.json": "3541ab62de6ab6e6c7bf012a74abd2d0ee167193423291a463f9be82cb613be5"
+    },
+    "note": "JSTOR currently returns HTTP 420. Identity and fields retain the earlier archived audit evidence; current primary revalidation is incomplete. No DOI was located.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": [
+      "primary: 420 Client Error: Enhance Your Calm for url: https://www.jstor.org/stable/4615733"
+    ],
+    "historical_audit": {
+      "key": "holm1979simple",
+      "checked": "2026-10-29",
+      "status": "published",
+      "upgraded_from_arxiv": false,
+      "entry": {
+        "url": "https://www.jstor.org/stable/4615733",
+        "year": "1979",
+        "pages": "65--70",
+        "number": "2",
+        "volume": "6",
+        "journal": "Scandinavian Journal of Statistics",
+        "title": "A Simple Sequentially Rejective Multiple Test Procedure",
+        "author": "Holm, Sture",
+        "ENTRYTYPE": "article",
+        "ID": "holm1979simple"
+      },
+      "entry_sha256": "129728bfb52dacf64435426c310e76552e00e6b6c954533b7df158970a38a8cf",
+      "sources": [
+        "https://www.ime.usp.br/~abe/lista/pdf4R8xPVzCnX.pdf",
+        "https://www.jstor.org/stable/4615733"
+      ],
+      "note": "Metadata checked against primary bibliographic records.",
+      "evidence": {
+        "holm1979simple.json": "2c3a7101afdbb90ec65bc7ac2508e50c3bfb0d184480b72391b816d07858ce3f",
+        "holm1979simple.crossref.json.gz": "f4d553ad37aa0c35451041636a717f2b55a99981b0f497c665b7517b8c9bf49f",
+        "supplemental-web-evidence.json": "1162c49ef9b4ee7c745cae8d3fbd27438f4fe33afdc44d2c192a05b24b0de279"
+      }
+    }
+  },
+  {
+    "key": "wilcoxon1945individual",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.2307/3001968",
+      "year": "1945",
+      "pages": "80--83",
+      "number": "6",
+      "volume": "1",
+      "journal": "Biometrics Bulletin",
+      "title": "Individual Comparisons by Ranking Methods",
+      "author": "Wilcoxon, Frank",
+      "ENTRYTYPE": "article",
+      "ID": "wilcoxon1945individual"
+    },
+    "entry_sha256": "45fa2b65fc4d4ef106e84c2a4a9216da7f06917e27f0f7d77432704184e81d89",
+    "sources": [
+      "https://api.crossref.org/works/10.2307/3001968"
+    ],
+    "evidence": {
+      "wilcoxon1945individual.crossref.json.gz": "2fded4084c4c57fa66ae797ecc74bc79dc15abb2971d2e1959789c37e6277a2f",
+      "wilcoxon1945individual.json": "875c5a0113baae419a64fef193c930e0f46b8eae745e19d482dfbbf4060aabfe"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "vargha2000critique",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.3102/10769986025002101",
+      "year": "2000",
+      "pages": "101--132",
+      "number": "2",
+      "volume": "25",
+      "journal": "Journal of Educational and Behavioral Statistics",
+      "title": "A Critique and Improvement of the {CL} Common Language Effect Size Statistics of {McGraw} and {Wong}",
+      "author": "Vargha, Andr{\\'a}s and Delaney, Harold D.",
+      "ENTRYTYPE": "article",
+      "ID": "vargha2000critique"
+    },
+    "entry_sha256": "743f3c31d16830defc4a860b273cdb11db7ac1fbdb482e73f4e63fc286433460",
+    "sources": [
+      "https://api.crossref.org/works/10.3102/10769986025002101"
+    ],
+    "evidence": {
+      "vargha2000critique.crossref.json.gz": "472f6895dc5de03b3ceee09d1d38cf84fbfd6227a3b90bca1fd633a9461b805c",
+      "vargha2000critique.json": "2b1c61c7bafecc58c4b40c9e2a448ff5fa93ce84a78aed220cf5ee0db1b58453"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "arcuri2011practical",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/1985793.1985795",
+      "year": "2011",
+      "pages": "1--10",
+      "booktitle": "Proc. 33rd Int. Conf. Software Engineering (ICSE)",
+      "title": "A Practical Guide for Using Statistical Tests to Assess Randomized Algorithms in Software Engineering",
+      "author": "Arcuri, Andrea and Briand, Lionel",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "arcuri2011practical"
+    },
+    "entry_sha256": "9969ee5363d0995ab8eb6b1e038032b59cf483c864a5e1287370a894c8ee2146",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/1985793.1985795"
+    ],
+    "evidence": {
+      "arcuri2011practical.crossref.json.gz": "48ff677c54c2d8fbfec1309e39308c4245d612316f9753f9e6949bdf68141280",
+      "arcuri2011practical.json": "dedf011214aaf771a2a57f41a36286a1f9f2ebb55ad8a43349f3ce7cc78d6707"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "efron1994introduction",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1201/9780429246593",
+      "year": "1994",
+      "publisher": "Chapman \\& Hall/CRC",
+      "title": "An Introduction to the Bootstrap",
+      "author": "Efron, Bradley and Tibshirani, Robert J.",
+      "ENTRYTYPE": "book",
+      "ID": "efron1994introduction"
+    },
+    "entry_sha256": "e1c4e855975c3b9e9c52d5f0636bdac085c92bbf81f04eca4821550427cca45a",
+    "sources": [
+      "https://api.crossref.org/works/10.1201/9780429246593"
+    ],
+    "evidence": {
+      "efron1994introduction.crossref.json.gz": "c9993d1eba0b472f408f17db29b6a35010b96684783229cb105e69c89a8dd796",
+      "efron1994introduction.json": "ae8ca0bd96444e0cafbb46c06123cad3b503fef71a7b0971c07a3737c6a08f6a"
+    },
+    "note": "Retained 1994 for this exact Chapman and Hall/CRC DOI edition, as registered by the publisher; the original 1993 edition is frequently cited under other edition records.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "wohlin2012experimentation",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1007/978-3-642-29044-2",
+      "year": "2012",
+      "publisher": "Springer",
+      "title": "Experimentation in Software Engineering",
+      "author": "Wohlin, Claes and Runeson, Per and H{\\\"o}st, Martin and Ohlsson, Magnus C. and Regnell, Bj{\\\"o}rn and Wessl{\\'e}n, Anders",
+      "ENTRYTYPE": "book",
+      "ID": "wohlin2012experimentation"
+    },
+    "entry_sha256": "cf8903c3b35b51d0989a52f13f6d696e64c410c7a1120870513f4145da96341a",
+    "sources": [
+      "https://api.crossref.org/works/10.1007/978-3-642-29044-2"
+    ],
+    "evidence": {
+      "wohlin2012experimentation.crossref.json.gz": "a5042a0ef5dc2ee270447640c5bfe731ac90214e74124e2deb9520b3f4f986fa",
+      "wohlin2012experimentation.json": "06c7a8252856e8adfe3bf1f52c6a1ff4e7be4e581ff4b0d48042cfcf4f0220fa"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "christianson1997why",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1007/3-540-62494-5_16",
+      "publisher": "Springer",
+      "year": "1997",
+      "pages": "171--176",
+      "volume": "1189",
+      "series": "LNCS",
+      "booktitle": "Security Protocols (Proc. Int. Workshop, 1996)",
+      "title": "Why Isn't Trust Transitive?",
+      "author": "Christianson, Bruce and Harbison, William S.",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "christianson1997why"
+    },
+    "entry_sha256": "8ba5fcaf9cc7783153f8758e1aa9e4e48c17a4e31c1805610edcc2ebfc935ad2",
+    "sources": [
+      "https://api.crossref.org/works/10.1007/3-540-62494-5_16"
+    ],
+    "evidence": {
+      "christianson1997why.crossref.json.gz": "54d71ae6b4979a08759aded8d2060bb9f5437c1c157ddccba5e7872b510b8657",
+      "christianson1997why.json": "f50e973fe9f474ef6c98bdd07b018ff18cbde5c1c646cd9e6edaf8f7502ea90c"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "delahaye2011probabilistic",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1007/s10703-010-0107-8",
+      "year": "2011",
+      "pages": "1--32",
+      "number": "1",
+      "volume": "38",
+      "journal": "Formal Methods in System Design",
+      "title": "Probabilistic Contracts: A Compositional Reasoning Methodology for the Design of Systems with Stochastic and/or Non-Deterministic Aspects",
+      "author": "Delahaye, Beno{\\^\\i}t and Caillaud, Beno{\\^\\i}t and Legay, Axel",
+      "ENTRYTYPE": "article",
+      "ID": "delahaye2011probabilistic"
+    },
+    "entry_sha256": "22df442d0fcfe06c1a2bb21b4b7f6acf805e8ca7c70ee96253a7fe1bad47be8a",
+    "sources": [
+      "https://api.crossref.org/works/10.1007/s10703-010-0107-8"
+    ],
+    "evidence": {
+      "delahaye2011probabilistic.crossref.json.gz": "5e7a9bcc4777822ee2fd5fac207266325aade763f2c81843893d3c2824ee7cfe",
+      "delahaye2011probabilistic.json": "bcbb98563a90a664d9c7e3d2091ccacb248aca260d8350250b32523539f7914f"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "nuzzo2019stochastic",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/3243216",
+      "year": "2019",
+      "pages": "1--26",
+      "number": "1",
+      "volume": "18",
+      "journal": "ACM Transactions on Embedded Computing Systems",
+      "title": "Stochastic Assume-Guarantee Contracts for Cyber-Physical System Design",
+      "author": "Nuzzo, Pierluigi and Li, Jiwei and Sangiovanni-Vincentelli, Alberto L. and Xi, Yugeng and Li, Dewei",
+      "ENTRYTYPE": "article",
+      "ID": "nuzzo2019stochastic"
+    },
+    "entry_sha256": "bae062d07947175e033ff961c49bb7c54531b44253c55827c56cba1a3fa4de3a",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3243216"
+    ],
+    "evidence": {
+      "nuzzo2019stochastic.crossref.json.gz": "fa5506069c4b6542ff751fcde85c18e09433437255a7f2c4a6b7d840b41faa5b",
+      "nuzzo2019stochastic.json": "582bf1ba313b21ba7895bb26b8fe48992be57885ec9057ca064474c34095862e"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "ligatti2005edit",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1007/s10207-004-0046-8",
+      "year": "2005",
+      "pages": "2--16",
+      "number": "1--2",
+      "volume": "4",
+      "journal": "International Journal of Information Security",
+      "title": "Edit Automata: Enforcement Mechanisms for Run-Time Security Policies",
+      "author": "Ligatti, Jay and Bauer, Lujo and Walker, David",
+      "ENTRYTYPE": "article",
+      "ID": "ligatti2005edit"
+    },
+    "entry_sha256": "1e7da4aee017b665767101bfcd030c804b9450565135100004ad7b55e11f18f9",
+    "sources": [
+      "https://api.crossref.org/works/10.1007/s10207-004-0046-8"
+    ],
+    "evidence": {
+      "ligatti2005edit.crossref.json.gz": "a04b417e180bfaeb556ae9d51f5ed366d45e8c1d56bfa655848cfe88ac09816a",
+      "ligatti2005edit.json": "32965af59eaa4f1253f77633c765afcc4358f7f79da45d61661e5b9d7edc3840"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "lindemann2023conformal",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/3576841.3585927",
+      "year": "2023",
+      "pages": "142--153",
+      "booktitle": "Proc. ACM/IEEE 14th Int. Conf. Cyber-Physical Systems (ICCPS)",
+      "title": "Conformal Prediction for {STL} Runtime Verification",
+      "author": "Lindemann, Lars and Qin, Xin and Deshmukh, Jyotirmoy V. and Pappas, George J.",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "lindemann2023conformal"
+    },
+    "entry_sha256": "3b1176fed48eac2d08b5a01517facbcd9d63e3cb878f51871d3725dc89e46b8e",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3576841.3585927"
+    ],
+    "evidence": {
+      "lindemann2023conformal.crossref.json.gz": "570753fa9770d909f81cdfc5eb61844aa5e2fb36c4ff05e09f2fcbd57fc26073",
+      "lindemann2023conformal.json": "807277f01d61196af38cf8670a12ebc6e7cf3212fe258871f7d3c32b8587a2e1"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "willison2023dual",
+    "checked": "2026-11-02",
+    "status": "blog post",
+    "entry": {
+      "url": "https://simonwillison.net/2023/Apr/25/dual-llm-pattern/",
+      "month": "April",
+      "year": "2023",
+      "howpublished": "Blog post",
+      "title": "The Dual {LLM} Pattern for Building {AI} Assistants That Can Resist Prompt Injection",
+      "author": "Willison, Simon",
+      "ENTRYTYPE": "misc",
+      "ID": "willison2023dual"
+    },
+    "entry_sha256": "65cccada9d94cdce74d0d9bbdb683ab253f161cafd503d72bddd8dede532898f",
+    "sources": [
+      "https://api.crossref.org/works?query.title=The+Dual+LLM+Pattern+for+Building+AI+Assistants+That+Can+Resist+Prompt+Injection&rows=3",
+      "https://simonwillison.net/2023/Apr/25/dual-llm-pattern/"
+    ],
+    "evidence": {
+      "willison2023dual.crossref.json.gz": "8fddbf15c0c424fd4bc9b24dbbbd426186484a3b89aeffc9653befd1ef281c65",
+      "willison2023dual.primary.html.gz": "89738ef9f913f406145f6c4ab9977661b23d989761b0ca363e5504670369372c",
+      "willison2023dual.json": "c6f8af1ba06c3a9358c73ce5b076118979ca3a3c170377f7f2cf21b97b2e3138"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "bagheri2015covert",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1109/tse.2015.2419611",
+      "year": "2015",
+      "pages": "866--886",
+      "number": "9",
+      "volume": "41",
+      "journal": "IEEE Transactions on Software Engineering",
+      "title": "COVERT: Compositional Analysis of Android Inter-App Permission Leakage",
+      "author": "Bagheri, Hamid and Sadeghi, Alireza and Garcia, Joshua and Malek, Sam",
+      "ENTRYTYPE": "article",
+      "ID": "bagheri2015covert"
+    },
+    "entry_sha256": "1a6e5b4c173d90d71aede0bc068ea8f586db0801ebc3851620e7ad76c3ce0365",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/tse.2015.2419611"
+    ],
+    "evidence": {
+      "bagheri2015covert.crossref.json.gz": "8e0f55ce9049b809389add9089814813b50687dd57a57aa6d6bed16b1b1db7c9",
+      "bagheri2015covert.json": "fa5d8f25573b0066cfdabfebf6735ba3822c7b89e9cf09238f576aaeceff4c14"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "carnevali2013compositional",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1109/tse.2012.54",
+      "year": "2013",
+      "pages": "638--657",
+      "number": "5",
+      "volume": "39",
+      "journal": "IEEE Transactions on Software Engineering",
+      "title": "Compositional Verification for Hierarchical Scheduling of Real-Time Systems",
+      "author": "Carnevali, Laura and Pinzuti, Alessandro and Vicario, Enrico",
+      "ENTRYTYPE": "article",
+      "ID": "carnevali2013compositional"
+    },
+    "entry_sha256": "d98505a9bebc7f814ad73589c1ca28308cf645cc2823b0070bd7bdfd5206be3a",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/tse.2012.54"
+    ],
+    "evidence": {
+      "carnevali2013compositional.crossref.json.gz": "dc9bf1822998f3ebef1eb60bbad1f115110f92e51b402b6b742f9bae23419184",
+      "carnevali2013compositional.json": "ceb21499be66f657363b4aacd57210b13ec8d7b0b56cdc0eaadeb2746e2586c6"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "carnevali2022compositional",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1109/tse.2021.3125720",
+      "year": "2022",
+      "pages": "4762--4788",
+      "number": "12",
+      "volume": "48",
+      "journal": "IEEE Transactions on Software Engineering",
+      "title": "Compositional Analysis of Hierarchical UML Statecharts",
+      "author": "Carnevali, Laura and German, Reinhard and Santoni, Francesco and Vicario, Enrico",
+      "ENTRYTYPE": "article",
+      "ID": "carnevali2022compositional"
+    },
+    "entry_sha256": "47ba2c420762ab4e1e46404265a4ceca7bccbcf1e26f4df4ca09ea146208c479",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/tse.2021.3125720",
+      "https://cris.fau.de/publications/287477378/"
+    ],
+    "evidence": {
+      "carnevali2022compositional.crossref.json.gz": "9ba43822b1aa88078ab89e749d270a95e91548aa7f988f0736f32f1eb7b695dc",
+      "carnevali2022compositional.json": "620a566eb093d790ef37f034c548937890bd26fbb389c741880c440787f4c420",
+      "statecharts-final.supplement.gz": "c5e6e102e591fb332f5a1a179f116b3c300308339a7dee8c5761c0d073e1ac8c"
+    },
+    "note": "Retained final volume 48, issue 12, pages 4762–4788 from coauthor institution FAU. The Crossref placeholder 1–1 is not the final pagination.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "bu2024clopper",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1109/tse.2024.3392720",
+      "year": "2024",
+      "pages": "1726--1746",
+      "number": "7",
+      "volume": "50",
+      "journal": "IEEE Transactions on Software Engineering",
+      "title": "Clopper-Pearson Algorithms for Efficient Statistical Model Checking Estimation",
+      "author": "Bu, Hao and Sun, Meng",
+      "ENTRYTYPE": "article",
+      "ID": "bu2024clopper"
+    },
+    "entry_sha256": "a4e92541ee1b6025d1f6c31af448e50fc10d8915ebd1866967ccf4cf062b1867",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/tse.2024.3392720"
+    ],
+    "evidence": {
+      "bu2024clopper.crossref.json.gz": "653136372bde91db6946a5f865c76e8967f3f91770859018df09ba4b5572d392",
+      "bu2024clopper.json": "c0d0658db8a435a8148cfb342c521a5ae091d6cf923ef4944cbd4f42b756254f"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "he2016learning",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/2907943",
+      "year": "2016",
+      "pages": "1--39",
+      "number": "3",
+      "volume": "25",
+      "journal": "ACM Transactions on Software Engineering and Methodology",
+      "title": "Learning Weighted Assumptions for Compositional Verification of Markov Decision Processes",
+      "author": "He, Fei and Gao, Xiaowei and Wang, Miaofei and Wang, Bow-Yaw and Zhang, Lijun",
+      "ENTRYTYPE": "article",
+      "ID": "he2016learning"
+    },
+    "entry_sha256": "9200066a6acb180944f22483a223272fbdd08eeea0e8f44c7f2facea8f2ed112",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/2907943"
+    ],
+    "evidence": {
+      "he2016learning.crossref.json.gz": "4acf571dc69c99564448da70d26521083657f0630109325163875419cad7d3eb",
+      "he2016learning.json": "5545a664303cbc39370322b8b2d10ce015066d6252cb3903ef793e8aff61c57e"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "foster2025unifying",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/3702981",
+      "year": "2025",
+      "pages": "1--40",
+      "number": "4",
+      "volume": "34",
+      "journal": "ACM Transactions on Software Engineering and Methodology",
+      "title": "Unifying Model Execution and Deductive Verification with Interaction Trees in Isabelle/HOL",
+      "author": "Foster, Simon and Hur, Chung-Kil and Woodcock, Jim",
+      "ENTRYTYPE": "article",
+      "ID": "foster2025unifying"
+    },
+    "entry_sha256": "c09f336eccece824c07f144bd837de4e305371d27861a9065f27324830d798e5",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3702981"
+    ],
+    "evidence": {
+      "foster2025unifying.crossref.json.gz": "181643315d75cbb761f722a6aa30eb5819e70296645609f475fb662085a78283",
+      "foster2025unifying.json": "c02f60b694424834376989411faa936d3075cc9c52ff387d396a8ce9718d1ab1"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "wang2023kst",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1109/tse.2023.3315292",
+      "year": "2023",
+      "pages": "4796--4813",
+      "number": "10",
+      "volume": "49",
+      "journal": "IEEE Transactions on Software Engineering",
+      "title": "K-ST: A Formal Executable Semantics of the Structured Text Language for PLCs",
+      "author": "Wang, Kun and Wang, Jingyi and Poskitt, Christopher M. and Chen, Xiangxiang and Sun, Jun and Cheng, Peng",
+      "ENTRYTYPE": "article",
+      "ID": "wang2023kst"
+    },
+    "entry_sha256": "bb5931d453e5cbac72c77c4c44838d127acd28283fac73bbca17f57b924ab399",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/tse.2023.3315292"
+    ],
+    "evidence": {
+      "wang2023kst.crossref.json.gz": "01d2e7f1e4d6b809f427287a8dd6c20f7db330ccf7c54b7f3b620719860f3465",
+      "wang2023kst.json": "a66dd7e2ecced902d8b3bc427f0e8cc415690a47d8e0e065e2d637c4dc126834"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "gao2024compositional",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/3635707",
+      "year": "2024",
+      "pages": "1--38",
+      "number": "3",
+      "volume": "33",
+      "journal": "ACM Transactions on Software Engineering and Methodology",
+      "title": "Compositional Verification of First-Order Masking Countermeasures against Power Side-Channel Attacks",
+      "author": "Gao, Pengfei and Song, Fu and Chen, Taolue",
+      "ENTRYTYPE": "article",
+      "ID": "gao2024compositional"
+    },
+    "entry_sha256": "1149901d8ebd7e0c7f72a896840e9836b342990186b2d5cdf8350551b0f73fca",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3635707"
+    ],
+    "evidence": {
+      "gao2024compositional.crossref.json.gz": "bdb0978a4d82c2d68569bf6d7b89631df9470b77b9f977ef1a3ec961f887db9d",
+      "gao2024compositional.json": "664fbaad29fa997492aead3133e09b0b3970589d77dabef55514f95597b623ac"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "nenchev2025compositional",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1016/j.jss.2025.112499",
+      "year": "2025",
+      "pages": "112499",
+      "volume": "230",
+      "journal": "Journal of Systems and Software",
+      "title": "Compositional code-level safety verification for automated driving controllers",
+      "author": "Nenchev, Vladislav and Imrie, Calum and Gerasimou, Simos and Calinescu, Radu",
+      "ENTRYTYPE": "article",
+      "ID": "nenchev2025compositional"
+    },
+    "entry_sha256": "daf7b3cc1022ff5117bacff9b5054d82bf515926e85b58788cc63d96618b6960",
+    "sources": [
+      "https://api.crossref.org/works/10.1016/j.jss.2025.112499"
+    ],
+    "evidence": {
+      "nenchev2025compositional.crossref.json.gz": "4028f30ec2eddd226388cb6542f8c3ba8112d9a1ca9f889375549f2c60ef6e33",
+      "nenchev2025compositional.json": "a3fde656e0144c40ef1ce4afc20d43a6b11997e1d0bba56bdcff872e130c8eef"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "bonfanti2023component",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1016/j.jss.2022.111605",
+      "year": "2023",
+      "pages": "111605",
+      "volume": "198",
+      "journal": "Journal of Systems and Software",
+      "title": "A component framework for the runtime enforcement of safety properties",
+      "author": "Bonfanti, Silvia and Riccobene, Elvinia and Scandurra, Patrizia",
+      "ENTRYTYPE": "article",
+      "ID": "bonfanti2023component"
+    },
+    "entry_sha256": "a27fbc1e5c23e654cb0a8f92f68877ee64a49872224fc7c9a78593297a5a3dcf",
+    "sources": [
+      "https://api.crossref.org/works/10.1016/j.jss.2022.111605"
+    ],
+    "evidence": {
+      "bonfanti2023component.crossref.json.gz": "b5d6cbcb78b52c17953f201835776ca6911716d543c5647c28fe7c4ebd8c3784",
+      "bonfanti2023component.json": "4447b285accc4a9a58a5c8de16ede74f129186ea4b1f362f1a370b2ecd3e9589"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "kroher2022incremental",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1007/s10664-021-10090-6",
+      "year": "2022",
+      "pages": "68",
+      "number": "3",
+      "volume": "27",
+      "journal": "Empirical Software Engineering",
+      "title": "Incremental software product line verification - A performance analysis with dead variable code",
+      "author": "Kr{\\\"o}her, Christian and Fl{\\\"o}ter, Moritz and Gerling, Lea and Schmid, Klaus",
+      "ENTRYTYPE": "article",
+      "ID": "kroher2022incremental"
+    },
+    "entry_sha256": "19fdf70da8046a891d126dc86ffad4d18d6f4f2217cb1e4fc2cc8c7ffd4191f4",
+    "sources": [
+      "https://api.crossref.org/works/10.1007/s10664-021-10090-6"
+    ],
+    "evidence": {
+      "kroher2022incremental.crossref.json.gz": "9be0321dd046f781d60f18a429b098c07cfb0a2ed9fbc745db8b63e39f50579f",
+      "kroher2022incremental.json": "ac22240120389bbe25bbe2b94811c65089ab1c1a80f864f6005bd140bf7d22ed"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "su2016asymptotic",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1109/tse.2015.2508444",
+      "year": "2016",
+      "pages": "623--639",
+      "number": "7",
+      "volume": "42",
+      "journal": "IEEE Transactions on Software Engineering",
+      "title": "Asymptotic Perturbation Bounds for Probabilistic Model Checking with Empirically Determined Probability Parameters",
+      "author": "Su, Guoxin and Feng, Yuan and Chen, Taolue and Rosenblum, David S.",
+      "ENTRYTYPE": "article",
+      "ID": "su2016asymptotic"
+    },
+    "entry_sha256": "6f5ccb6046c902770f9b011e1ba1a4b014824973e3fdd303c1a2fe967193065a",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/tse.2015.2508444"
+    ],
+    "evidence": {
+      "su2016asymptotic.crossref.json.gz": "9188e6550c9c172f2f02db7a1be4a78ab0f03cddb8f8c6a5bf9fac099d91a41f",
+      "su2016asymptotic.json": "1874f8910ebfc76a9240c484720dc0cd7367f3eaf2c8b834345e6eb862c8d2e2"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "tian2019differential",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/3355048",
+      "year": "2019",
+      "pages": "1--37",
+      "number": "4",
+      "volume": "28",
+      "journal": "ACM Transactions on Software Engineering and Methodology",
+      "title": "{Differential Testing of Certificate Validation in SSL/TLS Implementations: An RFC-guided Approach}",
+      "author": "Tian, Cong and Chen, Chu and Duan, Zhenhua and Zhao, Liang",
+      "ENTRYTYPE": "article",
+      "ID": "tian2019differential"
+    },
+    "entry_sha256": "9a6778b778b9a4206836f80a73c4efb7da7d865265d0317c80e871318b7da40e",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3355048"
+    ],
+    "evidence": {
+      "tian2019differential.crossref.json.gz": "81e03156919be43694638a10f098c90a3c481a25863b21e5b673e3fe77dbd6a2",
+      "tian2019differential.json": "ea192bb3ae274583068137d4f4a3a4b6225fc6270552ca3b6932f165bcc35cbe"
+    },
+    "note": "Restored the subtitle from the DOI registry: An RFC-guided Approach.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "robol2023consent",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/3490754",
+      "year": "2023",
+      "pages": "1--33",
+      "number": "1",
+      "volume": "32",
+      "journal": "ACM Transactions on Software Engineering and Methodology",
+      "title": "Consent Verification Monitoring",
+      "author": "Robol, Marco and Breaux, Travis D. and Paja, Elda and Giorgini, Paolo",
+      "ENTRYTYPE": "article",
+      "ID": "robol2023consent"
+    },
+    "entry_sha256": "a9f956c8b4edbab9ecf90a9998efa8b011950289e95cc84ebb84f6d56c3210ae",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3490754"
+    ],
+    "evidence": {
+      "robol2023consent.crossref.json.gz": "fe228a37df5a6855d0bbda9860c4ba45b0daba3dee6086f7ae5bdcc79daa0c2e",
+      "robol2023consent.json": "b4550f1f4a9a7be93d1538e5c76322d474b95643ce17b8595f6ba7abf5f4254e"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "zhang2026enhancing",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1016/j.jss.2025.112614",
+      "year": "2026",
+      "pages": "112614",
+      "volume": "231",
+      "journal": "Journal of Systems and Software",
+      "title": "Enhancing reliability in LLM-integrated robotic systems: A unified approach to security and safety",
+      "author": "Zhang, Wenxiao and Kong, Xiangrui and Dewitt, Conan and Br{\\\"a}unl, Thomas and Hong, Jin B.",
+      "ENTRYTYPE": "article",
+      "ID": "zhang2026enhancing"
+    },
+    "entry_sha256": "f5f4fe75a632e08d90208f0eb808b0e8ef52c39a2cccca286c4d9597b13aa6e1",
+    "sources": [
+      "https://api.crossref.org/works/10.1016/j.jss.2025.112614"
+    ],
+    "evidence": {
+      "zhang2026enhancing.crossref.json.gz": "36d10d9df853f286bc8d85dbea6b7e3332ec6e36ab9fccf7fd53652fefd792fc",
+      "zhang2026enhancing.json": "1ebcc91eeefcad390938a0905f982402595076e57c475b253340f8c162f34125"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "chaki2013verification",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/2430545.2430550",
+      "year": "2013",
+      "pages": "1--12",
+      "number": "2",
+      "volume": "22",
+      "journal": "ACM Transactions on Software Engineering and Methodology",
+      "title": "Verification across Intellectual Property Boundaries",
+      "author": "Chaki, Sagar and Schallhart, Christian and Veith, Helmut",
+      "ENTRYTYPE": "article",
+      "ID": "chaki2013verification"
+    },
+    "entry_sha256": "9b6769f030cf53a9d67a051d75e104bdc6b6d08a8e1024962477fe526d9c3fba",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/2430545.2430550"
+    ],
+    "evidence": {
+      "chaki2013verification.crossref.json.gz": "507416e2098bdc52cfbc3f39e9a76616abfdedea2ef4d365206706f37510998d",
+      "chaki2013verification.json": "6b3720828316c51fa37c2b82193308bb8c6a8fc51c7b21b2f6d660d0f72bce0c"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "demoura2008z3",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1007/978-3-540-78800-3_24",
+      "publisher": "Springer",
+      "year": "2008",
+      "pages": "337--340",
+      "volume": "4963",
+      "series": "Lecture Notes in Computer Science",
+      "booktitle": "Tools and Algorithms for the Construction and Analysis of Systems",
+      "title": "{Z3: An Efficient SMT Solver}",
+      "author": "de Moura, Leonardo and Bjørner, Nikolaj",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "demoura2008z3"
+    },
+    "entry_sha256": "2a8f7dcf85d64cc8189e0727bfeced4ec0495185a78d716f00586347d5ec11c6",
+    "sources": [
+      "https://api.crossref.org/works/10.1007/978-3-540-78800-3_24"
+    ],
+    "evidence": {
+      "demoura2008z3.crossref.json.gz": "deaf970bf2e6f6cf5607eedb32c7cae2cbf39930f921eb48f692666e0c55e94b",
+      "demoura2008z3.json": "3bcbee222afea077f74dcc0488c1fa68b770b9614908d92f7178497d0d91bd34"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "barbosa2022cvc5",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1007/978-3-030-99524-9_24",
+      "publisher": "Springer",
+      "year": "2022",
+      "pages": "415--442",
+      "volume": "13243",
+      "series": "Lecture Notes in Computer Science",
+      "booktitle": "Tools and Algorithms for the Construction and Analysis of Systems",
+      "title": "{cvc5: A Versatile and Industrial-Strength SMT Solver}",
+      "author": "Barbosa, Haniel and Barrett, Clark and Brain, Martin and Kremer, Gereon and Lachnitt, Hanna and Mann, Makai and Mohamed, Abdalrhman and Mohamed, Mudathir and Niemetz, Aina and N{\\\"o}tzli, Andres and Ozdemir, Alex and Preiner, Mathias and Reynolds, Andrew and Sheng, Ying and Tinelli, Cesare and Zohar, Yoni",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "barbosa2022cvc5"
+    },
+    "entry_sha256": "816fe607f83a216f9c6a17e8f14c443df004327ea6721931f47b850c7554eb16",
+    "sources": [
+      "https://api.crossref.org/works/10.1007/978-3-030-99524-9_24"
+    ],
+    "evidence": {
+      "barbosa2022cvc5.crossref.json.gz": "c621705e5ecd39509247b9202e92486e7cd8e51432bf6527751380d8050049ad",
+      "barbosa2022cvc5.json": "c1e4ef6aa091af0db8e336cbae0a52cc2b4da6e4aa1b6457a184b0a9b1998694"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "kildall1973unified",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/512927.512945",
+      "publisher": "ACM",
+      "year": "1973",
+      "pages": "194--206",
+      "booktitle": "Proceedings of the 1st Annual ACM SIGACT-SIGPLAN Symposium on Principles of Programming Languages (POPL '73)",
+      "title": "A unified approach to global program optimization",
+      "author": "Kildall, Gary A.",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "kildall1973unified"
+    },
+    "entry_sha256": "ae26072b32f89d7b423cb9d89153e83eff5b7635d35d0925ea399337c19f0fb0",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/512927.512945"
+    ],
+    "evidence": {
+      "kildall1973unified.crossref.json.gz": "9a80a3a22ac9ecb3fbebf6f8f6d0414062bdd29c0e58c8d19906c515ed3b7bc5",
+      "kildall1973unified.json": "cb3e1ac0348222568615ff92e36c84237860dcccd323f9b5e2368923792e59cf"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "kam1977monotone",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1007/bf00290339",
+      "year": "1977",
+      "pages": "305--317",
+      "number": "3",
+      "volume": "7",
+      "journal": "Acta Informatica",
+      "title": "Monotone data flow analysis frameworks",
+      "author": "Kam, John B. and Ullman, Jeffrey D.",
+      "ENTRYTYPE": "article",
+      "ID": "kam1977monotone"
+    },
+    "entry_sha256": "c1e795ef9b9e61b0b576f033c6b488359838bc31af4ca9b3c1409747e6110387",
+    "sources": [
+      "https://api.crossref.org/works/10.1007/bf00290339"
+    ],
+    "evidence": {
+      "kam1977monotone.crossref.json.gz": "3ced7045aaa9674a7c543b06f07b0037ab689849c0f2dc4cb67d79c510ba82f4",
+      "kam1977monotone.json": "8d8cea8f895b22b94998d78ab06db6d6eba565205851eb3196c82be6e8ea18ad"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "barnett2005weakest",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/1108792.1108813",
+      "publisher": "ACM",
+      "year": "2005",
+      "pages": "82--87",
+      "booktitle": "Proceedings of the 6th ACM SIGPLAN-SIGSOFT Workshop on Program Analysis for Software Tools and Engineering",
+      "title": "Weakest-precondition of unstructured programs",
+      "author": "Barnett, Mike and Leino, K. Rustan M.",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "barnett2005weakest"
+    },
+    "entry_sha256": "ce5285b41e23a5cd08ef365ebd1e6aad720df59a1c4f3398412a2ea8cf200da0",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/1108792.1108813"
+    ],
+    "evidence": {
+      "barnett2005weakest.crossref.json.gz": "14848a8e78a66d5f01f01d29843169abc6c54b3e48ad76daa96c41d5af0df604",
+      "barnett2005weakest.json": "9be7cbea3e2e47476fa1d985df11e1b4ede299f3dc3b49c3a3385df7172f3b26"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "jia2011analysis",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1109/tse.2010.62",
+      "year": "2011",
+      "pages": "649--678",
+      "number": "5",
+      "volume": "37",
+      "journal": "IEEE Transactions on Software Engineering",
+      "title": "An Analysis and Survey of the Development of Mutation Testing",
+      "author": "Jia, Yue and Harman, Mark",
+      "ENTRYTYPE": "article",
+      "ID": "jia2011analysis"
+    },
+    "entry_sha256": "a5f4b414121e495e1fb6e82183b8ad540cb17d4bd318c47e1f35e8a9fe63ee75",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/tse.2010.62"
+    ],
+    "evidence": {
+      "jia2011analysis.crossref.json.gz": "75085303be1add70995a311c5ecd35ac018dd713c376a268f98355d357e35f50",
+      "jia2011analysis.json": "6088c095a25a6dd91b9facfb172515d9fe5600af8490f012c512580e0943e403"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "jackson2019alloy",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1145/3338843",
+      "year": "2019",
+      "pages": "66--76",
+      "number": "9",
+      "volume": "62",
+      "journal": "Communications of the ACM",
+      "title": "{Alloy: A Language and Tool for Exploring Software Designs}",
+      "author": "Jackson, Daniel",
+      "ENTRYTYPE": "article",
+      "ID": "jackson2019alloy"
+    },
+    "entry_sha256": "ebc33e447e1ad6c9a7f56105582de2675137e80358ccad85eb51411913809bcd",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3338843"
+    ],
+    "evidence": {
+      "jackson2019alloy.crossref.json.gz": "9134be270962f9a6ab0c40430b5d8ba0e4c59bfe01b28d256638f6244fda5d5a",
+      "jackson2019alloy.json": "83c7c8a4bba887b339faf5039bf0883ce4f42ddea8a607c73aa7d90c1d590af4"
+    },
+    "note": "Restored the subtitle from the DOI registry: A Language and Tool for Exploring Software Designs.",
+    "changed": true,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  },
+  {
+    "key": "littlewood2004redundancy",
+    "checked": "2026-11-02",
+    "status": "published",
+    "entry": {
+      "doi": "10.1007/978-3-540-30108-0_26",
+      "publisher": "Springer",
+      "year": "2004",
+      "pages": "423--438",
+      "volume": "3193",
+      "series": "Lecture Notes in Computer Science",
+      "booktitle": "Computer Security -- ESORICS 2004",
+      "title": "Redundancy and Diversity in Security",
+      "author": "Littlewood, Bev and Strigini, Lorenzo",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "littlewood2004redundancy"
+    },
+    "entry_sha256": "9f3cd8708bb6a569d676435d00568557b8f7500f36477b40af410886f9706a19",
+    "sources": [
+      "https://api.crossref.org/works/10.1007/978-3-540-30108-0_26"
+    ],
+    "evidence": {
+      "littlewood2004redundancy.crossref.json.gz": "05eab4262dc04cce16c1db7b15b153cb87bb63055a737de4526d972a9429859f",
+      "littlewood2004redundancy.json": "52835614174cd05d88e08e85bd842f2a94978a97773db863eb8fd52221d97e1b"
+    },
+    "note": "Checked identity, author order, title, year and available volume/issue/pages against the publisher-deposited DOI record or official proceedings metadata. Expanded author names and diacritics retained where the registry abbreviates them.",
+    "changed": false,
+    "upgraded_from_arxiv": false,
+    "access_errors": []
+  }
+]

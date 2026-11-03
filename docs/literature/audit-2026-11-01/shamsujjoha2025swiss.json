@@ -1,0 +1,431 @@
+{
+  "key": "shamsujjoha2025swiss",
+  "entry": {
+    "year": "2025",
+    "booktitle": "Proceedings of the 22nd IEEE International Conference on Software Architecture (ICSA)",
+    "title": "{Swiss Cheese Model for AI Safety: A Taxonomy and Reference Architecture for Multi-Layered Guardrails of Foundation Model Based Agents}",
+    "author": "Shamsujjoha, Md and Lu, Qinghua and Zhao, Dehai and Zhu, Liming",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "shamsujjoha2025swiss"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Swiss+Cheese+Model+for+AI+Safety%3A+A+Taxonomy+and+Reference+Architecture+for+Multi-Layered+Guardrails+of+Foundation+Model+Based+Agents",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Swiss+Cheese+Model+for+AI+Safety%3A+A+Taxonomy+and+Reference+Architecture+for+Multi-Layered+Guardrails+of+Foundation+Model+Based+Agents&rows=3",
+      "status": 200,
+      "file": "shamsujjoha2025swiss.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/icsa65012.2025.00014",
+      "type": "proceedings-article",
+      "title": [
+        "Swiss Cheese Model for AI Safety: A Taxonomy and Reference Architecture for Multi-Layered Guardrails of Foundation Model Based Agents"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Md",
+          "family": "Shamsujjoha",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Data61, CSIRO,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Qinghua",
+          "family": "Lu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Data61, CSIRO,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dehai",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Data61, CSIRO,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Liming",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Data61, CSIRO,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE 22nd International Conference on Software Architecture (ICSA)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "37-48",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            31
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            31
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "event": {
+        "name": "2025 IEEE 22nd International Conference on Software Architecture (ICSA)",
+        "location": "Odense, Denmark",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              31
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              4
+            ]
+          ]
+        }
+      },
+      "similarity": 1.0
+    },
+    {
+      "DOI": "10.1109/icsa-c63560.2024.00028",
+      "type": "proceedings-article",
+      "title": [
+        "Towards Responsible Generative AI: A Reference Architecture for Designing Foundation Model Based Agents"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Qinghua",
+          "family": "Lu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Data61, CSIRO,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Liming",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Data61, CSIRO,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiwei",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Data61, CSIRO,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhenchang",
+          "family": "Xing",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Data61, CSIRO,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stefan",
+          "family": "Harrer",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Data61, CSIRO,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jon",
+          "family": "Whittle",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Data61, CSIRO,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2024 IEEE 21st International Conference on Software Architecture Companion (ICSA-C)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "119-126",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            4
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            4
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "event": {
+        "name": "2024 IEEE 21st International Conference on Software Architecture Companion (ICSA-C)",
+        "location": "Hyderabad, India",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              4
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              8
+            ]
+          ]
+        }
+      },
+      "similarity": 0.621
+    },
+    {
+      "DOI": "10.1016/j.jss.2026.113109",
+      "type": "journal-article",
+      "title": [
+        "Analysis of architecture options for foundation-model-based agents: A taxonomy and decision model"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4055-162X",
+          "authenticated-orcid": false,
+          "given": "Jingwen",
+          "family": "Zhou",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Qinghua",
+          "family": "Lu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2700-7478",
+          "authenticated-orcid": false,
+          "given": "Jieshan",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5839-3765",
+          "authenticated-orcid": false,
+          "given": "Liming",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2273-1862",
+          "authenticated-orcid": false,
+          "given": "Xiwei",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhenchang",
+          "family": "Xing",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stefan",
+          "family": "Harrer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Systems and Software"
+      ],
+      "volume": "243",
+      "issue": null,
+      "page": "113109",
+      "article-number": "113109",
+      "published": {
+        "date-parts": [
+          [
+            2027,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2027,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "event": null,
+      "similarity": 0.469
+    }
+  ]
+}

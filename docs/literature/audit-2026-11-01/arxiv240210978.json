@@ -1,0 +1,402 @@
+{
+  "key": "arxiv240210978",
+  "entry": {
+    "url": "https://proceedings.mlr.press/v235/mohri24a.html",
+    "publisher": "PMLR",
+    "year": "2024",
+    "pages": "36029--36047",
+    "volume": "235",
+    "series": "Proceedings of Machine Learning Research",
+    "booktitle": "Proceedings of the 41st International Conference on Machine Learning",
+    "title": "{Language Models with Conformal Factuality Guarantees}",
+    "author": "Mohri, Christopher and Hashimoto, Tatsunori",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv240210978"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Language+Models+with+Conformal+Factuality+Guarantees",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Language+Models+with+Conformal+Factuality+Guarantees&rows=3",
+      "status": 200,
+      "file": "arxiv240210978.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v235/mohri24a.html",
+      "status": 200,
+      "file": "arxiv240210978.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.18653/2026.emnlp-main.2585",
+      "type": "proceedings-article",
+      "title": [
+        "IntroConformal: Conformal Factuality Guarantees for Large Vision-Language Models via Introspective Signals"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Md.",
+          "family": "Atabuzzaman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christian",
+          "family": "Alexander",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chris",
+          "family": "Thomas",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "58747-58764",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "event": {
+        "name": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "similarity": 0.426
+    },
+    {
+      "DOI": "10.1201/9781003599913-7",
+      "type": "book-chapter",
+      "title": [
+        "Factuality of Large Language Models"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Baixiang",
+          "family": "Huang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Haoran",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kai",
+          "family": "Shu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Online Trust and Safety"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "95-111",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            16
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            16
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "CRC Press",
+      "event": null,
+      "similarity": 0.359
+    },
+    {
+      "DOI": "10.18653/v1/2024.findings-emnlp.404",
+      "type": "proceedings-article",
+      "title": [
+        "ConU: Conformal Uncertainty in Large Language Models with Correctness Coverage Guarantees"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Zhiyuan",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jinhao",
+          "family": "Duan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lu",
+          "family": "Cheng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yue",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Qingni",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiaoshuang",
+          "family": "Shi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kaidi",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Heng Tao",
+          "family": "Shen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiaofeng",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EMNLP 2024"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "6886-6898",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+        "location": "Miami, Florida, USA",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              11
+            ]
+          ]
+        }
+      },
+      "similarity": 0.544
+    }
+  ],
+  "meta": {
+    "citation_publisher": [
+      "PMLR"
+    ],
+    "citation_title": [
+      "Language Models with Conformal Factuality Guarantees"
+    ],
+    "citation_language": [
+      "en"
+    ],
+    "citation_abstract_html_url": [
+      "https://proceedings.mlr.press/v235/mohri24a.html"
+    ],
+    "citation_pdf_url": [
+      "https://raw.githubusercontent.com/mlresearch/v235/main/assets/mohri24a/mohri24a.pdf"
+    ],
+    "citation_firstpage": [
+      "36029"
+    ],
+    "citation_lastpage": [
+      "36047"
+    ],
+    "citation_author": [
+      "Christopher Mohri",
+      "Tatsunori Hashimoto"
+    ],
+    "citation_publication_date": [
+      "2024/07/08"
+    ],
+    "citation_inbook_title": [
+      "International Conference on Machine Learning"
+    ],
+    "citation_conference_title": [
+      "International Conference on Machine Learning"
+    ],
+    "citation_issn": [
+      "2640-3498"
+    ]
+  },
+  "details": {
+    "authors": "Christopher Mohri, Tatsunori Hashimoto"
+  },
+  "bibtex_links": []
+}

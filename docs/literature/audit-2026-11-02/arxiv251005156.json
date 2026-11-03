@@ -1,0 +1,296 @@
+{
+  "key": "arxiv251005156",
+  "entry": {
+    "url": "https://research.google/pubs/veriguard-enhancing-llm-agent-safety-via-verified-code-generation-2/",
+    "year": "2026",
+    "booktitle": "ACL 2026",
+    "title": "{VeriGuard: Enhancing LLM Agent Safety via Verified Code Generation}",
+    "author": "Miculicich, Lesly and Parmar, Mihir and Palangi, Hamid and Dvijotham, Dj and Montanari, Mirko and Pfister, Tomas and Le, Long",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv251005156"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=VeriGuard%3A+Enhancing+LLM+Agent+Safety+via+Verified+Code+Generation",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=VeriGuard%3A+Enhancing+LLM+Agent+Safety+via+Verified+Code+Generation&rows=3",
+      "status": 200,
+      "file": "arxiv251005156.crossref.json.gz"
+    },
+    {
+      "url": "https://research.google/pubs/veriguard-enhancing-llm-agent-safety-via-verified-code-generation-2/",
+      "status": 200,
+      "file": "arxiv251005156.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.18653/v1/2025.findings-acl.784",
+      "type": "proceedings-article",
+      "title": [
+        "Enhancing LLM Agent Safety via Causal Influence Prompting"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Dongyoon",
+          "family": "Hahm",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Woogyeol",
+          "family": "Jin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "June Suk",
+          "family": "Choi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sungsoo",
+          "family": "Ahn",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Kimin",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: ACL 2025"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "15143-15168",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: ACL 2025",
+        "location": "Vienna, Austria",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        }
+      },
+      "similarity": 0.654
+    },
+    {
+      "DOI": "10.71465/ajeet3630",
+      "type": "journal-article",
+      "title": [
+        "Security Knowledge Distillation for Enhancing LLM Safety in Code Generation"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "family": "Daniel Thompson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "family": "Sarah Mitchell",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "family": "Jason Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "American Journal of Electrical Engineering and Technology"
+      ],
+      "volume": "7",
+      "issue": "1",
+      "page": "88-94",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            31
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            31
+          ]
+        ]
+      },
+      "publisher": "International Study Counselor",
+      "event": null,
+      "similarity": 0.634
+    },
+    {
+      "DOI": "10.2139/ssrn.6143886",
+      "type": "posted-content",
+      "title": [
+        "Security Knowledge Distillation for Enhancing LLM Safety in Code Generation Authors"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Sarah",
+          "family": "Mitchell",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jason",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Thompson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "event": null,
+      "similarity": 0.6
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "VeriGuard: Enhancing LLM Agent Safety via Verified Code Generation"
+    ],
+    "citation_publication_date": [
+      "2026"
+    ],
+    "citation_author": [
+      "Lesly Miculicich",
+      "Mihir Parmar",
+      "Hamid Palangi",
+      "Dj Dvijotham",
+      "Mirko Montanari",
+      "Tomas Pfister",
+      "Long Le"
+    ]
+  },
+  "details": {},
+  "bibtex_links": []
+}

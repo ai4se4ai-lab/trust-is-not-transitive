@@ -1,0 +1,134 @@
+{
+  "key": "arxiv250318666",
+  "entry": {
+    "url": "https://doi.org/10.1145/3744916.3764546",
+    "doi": "10.1145/3744916.3764546",
+    "publisher": "ACM",
+    "year": "2026",
+    "pages": "2938--2950",
+    "booktitle": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+    "title": "{AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents}",
+    "author": "Wang, Haoyu and Poskitt, Christopher M. and Sun, Jun",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv250318666"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=AgentSpec%3A+Customizable+Runtime+Enforcement+for+Safe+and+Reliable+LLM+Agents",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1145/3744916.3764546",
+      "status": 200,
+      "file": "arxiv250318666.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/3744916.3764546",
+      "type": "proceedings-article",
+      "title": [
+        "AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0000-6379-5312",
+          "authenticated-orcid": false,
+          "given": "Haoyu",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Singapore Management University, Singapore, Singapore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9376-2471",
+          "authenticated-orcid": false,
+          "given": "Christopher M.",
+          "family": "Poskitt",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Singapore Management University, Singapore, Singapore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3545-1392",
+          "authenticated-orcid": false,
+          "given": "Jun",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Singapore Management University, Singapore, Singapore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "2938-2950",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            12
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            12
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            11
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "event": {
+        "name": "ICSE '26: 2026 IEEE/ACM 48th International Conference on Software Engineering",
+        "location": "Rio de Janeiro Brazil",
+        "acronym": "ICSE '26",
+        "sponsor": [
+          "SIGSOFT ACM Special Interest Group on Software Engineering"
+        ]
+      },
+      "similarity": 1.0
+    }
+  ]
+}

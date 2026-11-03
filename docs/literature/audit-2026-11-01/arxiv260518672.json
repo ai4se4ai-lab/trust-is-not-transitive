@@ -1,0 +1,293 @@
+{
+  "key": "arxiv260518672",
+  "entry": {
+    "url": "https://arxiv.org/abs/2605.18672",
+    "howpublished": "arXiv:2605.18672",
+    "year": "2026",
+    "author": "Bensalem, S. and Dong, Y. and Franzle, M. and Huang, X. and Kroger, J. and Nickovic, D. and Nouri, A. and Roy, R. and Wu, C.",
+    "title": "{Position: A Three-Layer Probabilistic Assume-Guarantee Architecture Is Structurally Required for Safe LLM Agent Deployment}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv260518672"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Position%3A+A+Three-Layer+Probabilistic+Assume-Guarantee+Architecture+Is+Structurally+Required+for+Safe+LLM+Agent+Deployment",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Position%3A+A+Three-Layer+Probabilistic+Assume-Guarantee+Architecture+Is+Structurally+Required+for+Safe+LLM+Agent+Deployment&rows=3",
+      "status": 200,
+      "file": "arxiv260518672.crossref.json.gz"
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.18672",
+      "status": 200,
+      "file": "arxiv260518672.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1007/978-3-642-12002-2_3",
+      "type": "book-chapter",
+      "title": [
+        "Assume-Guarantee Verification for Probabilistic Systems"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Marta",
+          "family": "Kwiatkowska",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gethin",
+          "family": "Norman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Parker",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hongyang",
+          "family": "Qu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Tools and Algorithms for the Construction and Analysis of Systems"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "23-37",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "event": null,
+      "similarity": 0.295
+    },
+    {
+      "DOI": "10.1007/978-3-642-31424-7_25",
+      "type": "book-chapter",
+      "title": [
+        "Assume-Guarantee Abstraction Refinement for Probabilistic Systems"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Anvesh",
+          "family": "Komuravelli",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Corina S.",
+          "family": "Păsăreanu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Edmund M.",
+          "family": "Clarke",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Computer Aided Verification"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "310-326",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "event": null,
+      "similarity": 0.352
+    },
+    {
+      "DOI": "10.1007/978-3-642-35861-6_6",
+      "type": "book-chapter",
+      "title": [
+        "Assume-Guarantee Reasoning for Safe Component Behaviours"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Chris",
+          "family": "Chilton",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bengt",
+          "family": "Jonsson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Marta",
+          "family": "Kwiatkowska",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Formal Aspects of Component Software"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "92-109",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "event": null,
+      "similarity": 0.397
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "Position: A Three-Layer Probabilistic Assume-Guarantee Architecture Is Structurally Required for Safe LLM Agent Deployment"
+    ],
+    "citation_author": [
+      "Bensalem, S.",
+      "Dong, Y.",
+      "Franzle, M.",
+      "Huang, X.",
+      "Kroger, J.",
+      "Nickovic, D.",
+      "Nouri, A.",
+      "Roy, R.",
+      "Wu, C."
+    ],
+    "citation_date": [
+      "2026/05/18"
+    ],
+    "citation_online_date": [
+      "2026/05/18"
+    ],
+    "citation_pdf_url": [
+      "https://arxiv.org/pdf/2605.18672"
+    ],
+    "citation_arxiv_id": [
+      "2605.18672"
+    ],
+    "citation_abstract": [
+      "This position paper argues that enforcing LLM agent safety within a single abstraction layer is not merely suboptimal but categorically insufficient for deployed LLM agents -- a structural consequence of how agent execution works, not a contingent limitation of current systems. The three dimensions that jointly constitute safe operation -- semantic intent and policy compliance, environmental validity, and dynamical feasibility -- each depend on a strictly distinct set of information that becomes available at different stages of execution. No single guardrail can certify all three. We argue that the community must respond with a contract-based architecture in which each safety dimension is enforced by an independently certified layer whose probabilistic guarantee satisfies the next layer's assumption. We sketch such an architecture and derive the compositional system-level safety bounds it admits via the chain rule of probability. Three open problems stand between this and a deployable standard: bound estimation from non-i.i.d.\\ traces, graceful degradation of contracts under deployment drift, and extension to multi-agent settings -- the most important unfinished business in LLM agent runtime assurance."
+    ]
+  },
+  "details": {
+    "title": "Title: Position: A Three-Layer Probabilistic Assume-Guarantee Architecture Is Structurally Required for Safe LLM Agent Deployment",
+    "authors": "Authors: S.Bensalem , Y. Dong , M. Franzle , X. Huang , J. Kroger , D. Nickovic , A. Nouri , R. Roy , C. Wu",
+    "dateline": "[Submitted on 18 May 2026]"
+  },
+  "bibtex_links": []
+}

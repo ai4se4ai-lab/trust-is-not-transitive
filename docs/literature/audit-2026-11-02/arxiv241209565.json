@@ -1,0 +1,400 @@
+{
+  "key": "arxiv241209565",
+  "entry": {
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/ed687a5f52b651b19e7c18f702907b8b-Abstract-Conference.html",
+    "year": "2026",
+    "pages": "146838--146882",
+    "volume": "2026",
+    "booktitle": "International Conference on Learning Representations",
+    "title": "{Obfuscated Activations Bypass LLM Latent-Space Defenses}",
+    "author": "Bailey, Luke and Serrano, Alex and Sheshadri, Abhay and Seleznyov, Mikhail and Taylor, Jordan and Jenner, Erik and Hilton, Jacob and Casper, Stephen and Guestrin, Carlos and Emmons, Scott",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv241209565"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Obfuscated+Activations+Bypass+LLM+Latent-Space+Defenses",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Obfuscated+Activations+Bypass+LLM+Latent-Space+Defenses&rows=3",
+      "status": 200,
+      "file": "arxiv241209565.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/ed687a5f52b651b19e7c18f702907b8b-Abstract-Conference.html",
+      "status": 200,
+      "file": "arxiv241209565.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/saci66288.2025.11030191",
+      "type": "proceedings-article",
+      "title": [
+        "Turning LLM Activations Quantization-Friendly"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Patrik",
+          "family": "Czakó",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Doctoral School of Applied, Informatics and Applied, Mathematics, Obuda University,Budapest,Hungary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gábor",
+          "family": "Kertész",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Obuda University,John von Neumann Faculty of Informatics,Budapest,Hungary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sándor",
+          "family": "Szénási",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Obuda University,John von Neumann Faculty of Informatics,Budapest,Hungary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE 19th International Symposium on Applied Computational Intelligence and Informatics (SACI)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "000211-000216",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            19
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            19
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "event": {
+        "name": "2025 IEEE 19th International Symposium on Applied Computational Intelligence and Informatics (SACI)",
+        "location": "Timisoara, Romania",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              19
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              24
+            ]
+          ]
+        }
+      },
+      "similarity": 0.4
+    },
+    {
+      "DOI": "10.1109/acsacw69556.2025.00057",
+      "type": "proceedings-article",
+      "title": [
+        "Attacks &amp; Defenses Against LLM Fingerprinting"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Kevin",
+          "family": "Kurian",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Oak Ridge National Laboratory"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ethan",
+          "family": "Holland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Oak Ridge National Laboratory"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sean",
+          "family": "Oesch",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Oak Ridge National Laboratory"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 Annual Computer Security Applications Conference Workshops (ACSAC Workshops)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "480-490",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "event": {
+        "name": "2025 Annual Computer Security Applications Conference Workshops (ACSAC Workshops)",
+        "location": "Honolulu, HI, USA",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              8
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              9
+            ]
+          ]
+        }
+      },
+      "similarity": 0.308
+    },
+    {
+      "DOI": "10.1101/2020.07.01.168849",
+      "type": "posted-content",
+      "title": [
+        "Hyperrealistic neural decoding: Reconstructing faces from fMRI activations via the GAN latent space"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4462-4256",
+          "authenticated-orcid": false,
+          "given": "Thirza",
+          "family": "Dado",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yağmur",
+          "family": "Güçlütürk",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Luca",
+          "family": "Ambrogioni",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gabriëlle",
+          "family": "Ras",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sander E.",
+          "family": "Bosch",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Marcel",
+          "family": "van Gerven",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Umut",
+          "family": "Güçlü",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            2
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "openRxiv",
+      "event": null,
+      "similarity": 0.385
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "Obfuscated Activations Bypass LLM Latent-Space Defenses"
+    ],
+    "citation_author": [
+      "Bailey, Luke",
+      "Serrano, Alex",
+      "Sheshadri, Abhay",
+      "Seleznyov, Mikhail",
+      "Taylor, Jordan",
+      "Jenner, Erik",
+      "Hilton, Jacob",
+      "Casper, Stephen",
+      "Guestrin, Carlos",
+      "Emmons, Scott"
+    ],
+    "citation_journal_title": [
+      "International Conference on Learning Representations"
+    ],
+    "citation_volume": [
+      "2026"
+    ],
+    "citation_firstpage": [
+      "146838"
+    ],
+    "citation_lastpage": [
+      "146882"
+    ],
+    "citation_pdf_url": [
+      "https://proceedings.iclr.cc/paper_files/paper/2026/file/ed687a5f52b651b19e7c18f702907b8b-Paper-Conference.pdf"
+    ],
+    "citation_publication_date": [
+      "2026-04-20"
+    ]
+  },
+  "details": {},
+  "bibtex_links": [
+    "/paper_files/paper/6905-/bibtex"
+  ]
+}

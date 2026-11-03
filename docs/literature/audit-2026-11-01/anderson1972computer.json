@@ -1,0 +1,181 @@
+{
+  "key": "anderson1972computer",
+  "entry": {
+    "url": "https://conferences.computer.org/sp/pdfs/early/ande72.pdf",
+    "institution": "U.S. Air Force Electronic Systems Division",
+    "year": "1972",
+    "number": "ESD-TR-73-51",
+    "title": "Computer Security Technology Planning Study",
+    "author": "Anderson, James P.",
+    "ENTRYTYPE": "techreport",
+    "ID": "anderson1972computer"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Computer+Security+Technology+Planning+Study",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Computer+Security+Technology+Planning+Study&rows=3",
+      "status": 200,
+      "file": "anderson1972computer.crossref.json.gz"
+    },
+    {
+      "url": "https://conferences.computer.org/sp/pdfs/early/ande72.pdf",
+      "status": 200,
+      "file": "anderson1972computer.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.21236/ad0772806",
+      "type": "report",
+      "title": [
+        "Computer Security Technology Planning Study. Volume 2"
+      ],
+      "subtitle": [
+        ""
+      ],
+      "author": [
+        {
+          "given": "James P.",
+          "family": "Anderson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1972,
+            10,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1972,
+            10,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Defense Technical Information Center",
+      "event": null,
+      "similarity": 0.918
+    },
+    {
+      "DOI": "10.1016/0306-4573(86)90059-2",
+      "type": "journal-article",
+      "title": [
+        "Computer-security technology"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Gerald",
+          "family": "Salton",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Information Processing &amp; Management"
+      ],
+      "volume": "22",
+      "issue": "3",
+      "page": "269-270",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1986,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1986,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "event": null,
+      "similarity": 0.8
+    },
+    {
+      "DOI": "10.1016/0142-0496(94)90187-2",
+      "type": "journal-article",
+      "title": [
+        "Fundamentals of computer security technology"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Peter",
+          "family": "Sommer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Computer Fraud &amp; Security Bulletin"
+      ],
+      "volume": "1994",
+      "issue": "9",
+      "page": "18-19",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1994,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1994,
+            9
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Mark Allen Group",
+      "event": null,
+      "similarity": 0.658
+    }
+  ],
+  "meta": {},
+  "details": {},
+  "bibtex_links": []
+}

@@ -1,0 +1,84 @@
+{
+  "key": "demoura2008z3",
+  "entry": {
+    "doi": "10.1007/978-3-540-78800-3_24",
+    "year": "2008",
+    "pages": "337--340",
+    "journal": "Lecture Notes in Computer Science",
+    "title": "Z3: An Efficient SMT Solver",
+    "author": "de Moura, Leonardo and Bjørner, Nikolaj",
+    "ENTRYTYPE": "article",
+    "ID": "demoura2008z3"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Z3%3A+An+Efficient+SMT+Solver",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1007/978-3-540-78800-3_24",
+      "status": 200,
+      "file": "demoura2008z3.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1007/978-3-540-78800-3_24",
+      "type": "book-chapter",
+      "title": [
+        "Z3: An Efficient SMT Solver"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Leonardo",
+          "family": "de Moura",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nikolaj",
+          "family": "Bjørner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Tools and Algorithms for the Construction and Analysis of Systems"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "337-340",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2008
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2008
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "key": "arxiv241216682",
+  "entry": {
+    "url": "https://doi.org/10.18653/v1/2025.acl-long.1435",
+    "doi": "10.18653/v1/2025.acl-long.1435",
+    "publisher": "Association for Computational Linguistics",
+    "year": "2025",
+    "pages": "29680--29697",
+    "booktitle": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "title": "{The Task Shield: Enforcing Task Alignment to Defend Against Indirect Prompt Injection in LLM Agents}",
+    "author": "Jia, Feiran and Wu, Tong and Qin, Xin and Squicciarini, Anna",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv241216682"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=The+Task+Shield%3A+Enforcing+Task+Alignment+to+Defend+Against+Indirect+Prompt+Injection+in+LLM+Agents",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.18653/v1/2025.acl-long.1435",
+      "status": 200,
+      "file": "arxiv241216682.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.18653/v1/2025.acl-long.1435",
+      "type": "proceedings-article",
+      "title": [
+        "The Task Shield: Enforcing Task Alignment to Defend Against Indirect Prompt Injection in LLM Agents"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Feiran",
+          "family": "Jia",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tong",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xin",
+          "family": "Qin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anna",
+          "family": "Squicciarini",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "29680-29697",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "event": {
+        "name": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "location": "Vienna, Austria",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        }
+      },
+      "similarity": 1.0
+    }
+  ]
+}

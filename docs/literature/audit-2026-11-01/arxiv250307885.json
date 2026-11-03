@@ -1,0 +1,155 @@
+{
+  "key": "arxiv250307885",
+  "entry": {
+    "url": "https://doi.org/10.1109/lra.2026.3667488",
+    "doi": "10.1109/lra.2026.3667488",
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "year": "2026",
+    "pages": "4649--4656",
+    "number": "4",
+    "volume": "11",
+    "journal": "IEEE Robotics and Automation Letters",
+    "title": "{Safety Guardrails for LLM-Enabled Robots}",
+    "author": "Ravichandran, Zachary and Robey, Alexander and Kumar, Vijay and Pappas, George J. and Hassani, Hamed",
+    "ENTRYTYPE": "article",
+    "ID": "arxiv250307885"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Safety+Guardrails+for+LLM-Enabled+Robots",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1109/lra.2026.3667488",
+      "status": 200,
+      "file": "arxiv250307885.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/lra.2026.3667488",
+      "type": "journal-article",
+      "title": [
+        "Safety Guardrails for LLM-Enabled Robots"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-4380-3212",
+          "authenticated-orcid": false,
+          "given": "Zachary",
+          "family": "Ravichandran",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelpha, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-5693-2819",
+          "authenticated-orcid": false,
+          "given": "Alexander",
+          "family": "Robey",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Carnegie Mellon University, Pittsburgh, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3902-9391",
+          "authenticated-orcid": false,
+          "given": "Vijay",
+          "family": "Kumar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelpha, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9081-0637",
+          "authenticated-orcid": false,
+          "given": "George J.",
+          "family": "Pappas",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelpha, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9448-8750",
+          "authenticated-orcid": false,
+          "given": "Hamed",
+          "family": "Hassani",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelpha, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Robotics and Automation Letters"
+      ],
+      "volume": "11",
+      "issue": "4",
+      "page": "4649-4656",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            4
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

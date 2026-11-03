@@ -1,0 +1,137 @@
+{
+  "key": "robol2023consent",
+  "entry": {
+    "doi": "10.1145/3490754",
+    "year": "2023",
+    "pages": "1--33",
+    "number": "1",
+    "volume": "32",
+    "journal": "ACM Transactions on Software Engineering and Methodology",
+    "title": "Consent Verification Monitoring",
+    "author": "Robol, Marco and Breaux, Travis D. and Paja, Elda and Giorgini, Paolo",
+    "ENTRYTYPE": "article",
+    "ID": "robol2023consent"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Consent+Verification+Monitoring",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1145/3490754",
+      "status": 200,
+      "file": "robol2023consent.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/3490754",
+      "type": "journal-article",
+      "title": [
+        "Consent Verification Monitoring"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Marco",
+          "family": "Robol",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "DISI, University of Trento, Trento, Italy"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Travis D.",
+          "family": "Breaux",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Software Research, Carnegie Mellon University, Pittsburgh, PA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elda",
+          "family": "Paja",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Computer Science Department, IT University of Copenhagen, Copenhagen, Denmark"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Paolo",
+          "family": "Giorgini",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "DISI, University of Trento, Trento, Italy"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ACM Transactions on Software Engineering and Methodology"
+      ],
+      "volume": "32",
+      "issue": "1",
+      "page": "1-33",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            1,
+            31
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            1,
+            31
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            22
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

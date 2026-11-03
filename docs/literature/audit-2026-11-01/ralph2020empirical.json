@@ -1,0 +1,307 @@
+{
+  "key": "ralph2020empirical",
+  "entry": {
+    "url": "https://arxiv.org/abs/2010.03525",
+    "year": "2020",
+    "howpublished": "arXiv:2010.03525",
+    "title": "{Empirical Standards for Software Engineering Research}",
+    "author": "Ralph, Paul and others",
+    "ENTRYTYPE": "misc",
+    "ID": "ralph2020empirical"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Empirical+Standards+for+Software+Engineering+Research",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Empirical+Standards+for+Software+Engineering+Research&rows=3",
+      "status": 200,
+      "file": "ralph2020empirical.crossref.json.gz"
+    },
+    {
+      "url": "https://arxiv.org/abs/2010.03525",
+      "status": 200,
+      "file": "ralph2020empirical.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1201/b19292",
+      "type": "reference-book",
+      "title": [
+        "Empirical Research in Software Engineering"
+      ],
+      "subtitle": [
+        "Concepts, Analysis, and Applications"
+      ],
+      "author": [
+        {
+          "given": "Ruchika",
+          "family": "Malhotra",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            3,
+            9
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            3,
+            9
+          ]
+        ]
+      },
+      "publisher": "Chapman and Hall/CRC",
+      "event": null,
+      "similarity": 0.721
+    },
+    {
+      "DOI": "10.1109/metric.1999.809754",
+      "type": "proceedings-article",
+      "title": [
+        "Empirical Software Engineering Research Ethics"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "J.",
+          "family": "Singer",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "National Research Council Canada"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "N.",
+          "family": "Vinson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings Sixth International Software Metrics Symposium (Cat. No.PR00403)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "326-326",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1999
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1999
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "event": {
+        "name": "Proceedings of METRICS '99: Sixth International Symposium on Software Metrics",
+        "start": {
+          "date-parts": [
+            [
+              1999,
+              11,
+              4
+            ]
+          ]
+        },
+        "location": "Boca Raton, FL, USA",
+        "end": {
+          "date-parts": [
+            [
+              1999,
+              11,
+              6
+            ]
+          ]
+        }
+      },
+      "similarity": 0.8
+    },
+    {
+      "DOI": "10.1145/311963.311998",
+      "type": "journal-article",
+      "title": [
+        "Empirical research in software engineering"
+      ],
+      "subtitle": [
+        "a workshop"
+      ],
+      "author": [
+        {
+          "given": "Susan S.",
+          "family": "Brilliant",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "John C.",
+          "family": "Knight",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ACM SIGSOFT Software Engineering Notes"
+      ],
+      "volume": "24",
+      "issue": "3",
+      "page": "44-52",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1999,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1999,
+            5
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            1999,
+            5
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "event": null,
+      "similarity": 0.721
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "Empirical Standards for Software Engineering Research"
+    ],
+    "citation_author": [
+      "Ralph, Paul",
+      "Ali, Nauman bin",
+      "Baltes, Sebastian",
+      "Bianculli, Domenico",
+      "Diaz, Jessica",
+      "Dittrich, Yvonne",
+      "Ernst, Neil",
+      "Felderer, Michael",
+      "Feldt, Robert",
+      "Filieri, Antonio",
+      "de França, Breno Bernard Nicolau",
+      "Furia, Carlo Alberto",
+      "Gay, Greg",
+      "Gold, Nicolas",
+      "Graziotin, Daniel",
+      "He, Pinjia",
+      "Hoda, Rashina",
+      "Juristo, Natalia",
+      "Kitchenham, Barbara",
+      "Lenarduzzi, Valentina",
+      "Martínez, Jorge",
+      "Melegati, Jorge",
+      "Mendez, Daniel",
+      "Menzies, Tim",
+      "Molleri, Jefferson",
+      "Pfahl, Dietmar",
+      "Robbes, Romain",
+      "Russo, Daniel",
+      "Saarimäki, Nyyti",
+      "Sarro, Federica",
+      "Taibi, Davide",
+      "Siegmund, Janet",
+      "Spinellis, Diomidis",
+      "Staron, Miroslaw",
+      "Stol, Klaas",
+      "Storey, Margaret-Anne",
+      "Taibi, Davide",
+      "Tamburri, Damian",
+      "Torchiano, Marco",
+      "Treude, Christoph",
+      "Turhan, Burak",
+      "Wang, Xiaofeng",
+      "Vegas, Sira"
+    ],
+    "citation_date": [
+      "2020/10/07"
+    ],
+    "citation_online_date": [
+      "2021/03/04"
+    ],
+    "citation_pdf_url": [
+      "https://arxiv.org/pdf/2010.03525"
+    ],
+    "citation_arxiv_id": [
+      "2010.03525"
+    ],
+    "citation_abstract": [
+      "Empirical Standards are natural-language models of a scientific community's expectations for a specific kind of study (e.g. a questionnaire survey). The ACM SIGSOFT Paper and Peer Review Quality Initiative generated empirical standards for research methods commonly used in software engineering. These living documents, which should be continuously revised to reflect evolving consensus around research best practices, will improve research quality and make peer review more effective, reliable, transparent and fair."
+    ]
+  },
+  "details": {
+    "title": "Title: Empirical Standards for Software Engineering Research",
+    "authors": "Authors: Paul Ralph , Nauman bin Ali , Sebastian Baltes , Domenico Bianculli , Jessica Diaz , Yvonne Dittrich , Neil Ernst , Michael Felderer , Robert Feldt , Antonio Filieri , Breno Bernard Nicolau de França , Carlo Alberto Furia , Greg Gay , Nicolas Gold , Daniel Graziotin , Pinjia He , Rashina Hoda , Natalia Juristo , Barbara Kitchenham , Valentina Lenarduzzi , Jorge Martínez , Jorge Melegati , Daniel Mendez , Tim Menzies , Jefferson Molleri , Dietmar Pfahl , Romain Robbes , Daniel Russo , Nyyti Saarimäki , Federica Sarro , Davide Taibi , Janet Siegmund , Diomidis Spinellis , Miroslaw Staron , Klaas Stol , Margaret-Anne Storey , Davide Taibi , Damian Tamburri , Marco Torchiano , Christoph Treude , Burak Turhan , Xiaofeng Wang , Sira Vegas",
+    "comments": "For the complete standards, supplements and other resources, see this https URL",
+    "dateline": "[Submitted on 7 Oct 2020 ( v1 ), last revised 4 Mar 2021 (this version, v2)]"
+  },
+  "bibtex_links": [
+    "https://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-2010-03525"
+  ]
+}

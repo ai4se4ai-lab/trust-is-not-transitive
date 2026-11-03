@@ -1,0 +1,130 @@
+{
+  "key": "zhang2026enhancing",
+  "entry": {
+    "doi": "10.1016/j.jss.2025.112614",
+    "year": "2026",
+    "pages": "112614",
+    "volume": "231",
+    "journal": "Journal of Systems and Software",
+    "title": "Enhancing reliability in LLM-integrated robotic systems: A unified approach to security and safety",
+    "author": "Zhang, Wenxiao and Kong, Xiangrui and Dewitt, Conan and Br{\\\"a}unl, Thomas and Hong, Jin B.",
+    "ENTRYTYPE": "article",
+    "ID": "zhang2026enhancing"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Enhancing+reliability+in+LLM-integrated+robotic+systems%3A+A+unified+approach+to+security+and+safety",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1016/j.jss.2025.112614",
+      "status": 200,
+      "file": "zhang2026enhancing.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1016/j.jss.2025.112614",
+      "type": "journal-article",
+      "title": [
+        "Enhancing reliability in LLM-integrated robotic systems: A unified approach to security and safety"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0000-5196-8562",
+          "authenticated-orcid": false,
+          "given": "Wenxiao",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiangrui",
+          "family": "Kong",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-2514-1643",
+          "authenticated-orcid": false,
+          "given": "Conan",
+          "family": "Dewitt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3215-0161",
+          "authenticated-orcid": false,
+          "given": "Thomas",
+          "family": "Bräunl",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1359-3813",
+          "authenticated-orcid": false,
+          "given": "Jin B.",
+          "family": "Hong",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Systems and Software"
+      ],
+      "volume": "231",
+      "issue": null,
+      "page": "112614",
+      "article-number": "112614",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

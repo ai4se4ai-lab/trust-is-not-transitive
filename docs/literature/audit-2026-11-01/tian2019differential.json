@@ -1,0 +1,141 @@
+{
+  "key": "tian2019differential",
+  "entry": {
+    "doi": "10.1145/3355048",
+    "year": "2019",
+    "pages": "1--37",
+    "number": "4",
+    "volume": "28",
+    "journal": "ACM Transactions on Software Engineering and Methodology",
+    "title": "Differential Testing of Certificate Validation in SSL/TLS Implementations",
+    "author": "Tian, Cong and Chen, Chu and Duan, Zhenhua and Zhao, Liang",
+    "ENTRYTYPE": "article",
+    "ID": "tian2019differential"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Differential+Testing+of+Certificate+Validation+in+SSL%2FTLS+Implementations",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1145/3355048",
+      "status": 200,
+      "file": "tian2019differential.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/3355048",
+      "type": "journal-article",
+      "title": [
+        "Differential Testing of Certificate Validation in SSL/TLS Implementations"
+      ],
+      "subtitle": [
+        "An RFC-guided Approach"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5429-4580",
+          "authenticated-orcid": false,
+          "given": "Cong",
+          "family": "Tian",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "ICTT and ISN Laboratory, Xidian University, Xi’an, P.R. China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chu",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "ICTT and ISN Laboratory, Xidian University, P.R. China and School of Information Science and Engineering, Qufu Normal University, Rizhao, Shandong, P.R. China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhenhua",
+          "family": "Duan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "ICTT and ISN Laboratory, Xidian University, Xi’an, P.R. China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Liang",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "ICTT and ISN Laboratory, Xidian University, Xi’an, P.R. China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ACM Transactions on Software Engineering and Methodology"
+      ],
+      "volume": "28",
+      "issue": "4",
+      "page": "1-37",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            31
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            9
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

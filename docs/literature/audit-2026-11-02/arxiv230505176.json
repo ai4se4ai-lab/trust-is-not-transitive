@@ -1,0 +1,284 @@
+{
+  "key": "arxiv230505176",
+  "entry": {
+    "url": "https://openreview.net/forum?id=cSimKw5p6R",
+    "year": "2024",
+    "journal": "Transactions on Machine Learning Research",
+    "title": "{FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance}",
+    "author": "Chen, Lingjiao and Zaharia, Matei and Zou, James",
+    "ENTRYTYPE": "article",
+    "ID": "arxiv230505176"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=FrugalGPT%3A+How+to+Use+Large+Language+Models+While+Reducing+Cost+and+Improving+Performance",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=FrugalGPT%3A+How+to+Use+Large+Language+Models+While+Reducing+Cost+and+Improving+Performance&rows=3",
+      "status": 200,
+      "file": "arxiv230505176.crossref.json.gz"
+    },
+    {
+      "url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DcSimKw5p6R",
+      "status": 200,
+      "file": "arxiv230505176.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/3306446.3340813",
+      "type": "proceedings-article",
+      "title": [
+        "Reducing procrastination while improving performance"
+      ],
+      "subtitle": [
+        "a wiki-powered experiment with students"
+      ],
+      "author": [
+        {
+          "given": "Antonio",
+          "family": "Balderas",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Cadiz, Puerto Real, Spain"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Andrea",
+          "family": "Capiluppi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Brunel University London, Uxbridge, UK"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Manuel",
+          "family": "Palomo-Duarte",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cadiz, Puerto Real, Spain"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Alessio",
+          "family": "Malizia",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Hertfordshire, Hatfield, Hertfordshire, UK"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Juan Manuel",
+          "family": "Dodero",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cadiz, Puerto Real, Spain"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 15th International Symposium on Open Collaboration"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-10",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            20
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            20
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            20
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "event": {
+        "name": "OpenSym '19: The 15th International Symposium on Open Collaboration",
+        "sponsor": [
+          "SIGWEB ACM Special Interest Group on Hypertext, Hypermedia, and Web",
+          "SIGSOFT ACM Special Interest Group on Software Engineering"
+        ],
+        "location": "Skövde Sweden",
+        "acronym": "OpenSym '19"
+      },
+      "similarity": 0.532
+    },
+    {
+      "DOI": "10.1002/jcaf.20484",
+      "type": "journal-article",
+      "title": [
+        "How strategic budgeting can control cost while improving performance"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Audrey",
+          "family": "Taylor",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Corporate Accounting &amp; Finance"
+      ],
+      "volume": "20",
+      "issue": "3",
+      "page": "53-58",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2009,
+            2,
+            20
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            3
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2009,
+            2,
+            20
+          ]
+        ]
+      },
+      "publisher": "Wiley",
+      "event": null,
+      "similarity": 0.544
+    },
+    {
+      "DOI": "10.69554/fldq4873",
+      "type": "journal-article",
+      "title": [
+        "Reducing inventories while improving delivery performance"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Karsten",
+          "family": "Eller",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Beckers Group, Wilh. Becker Holding GmbH",
+              "place": [
+                "Germany"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Supply Chain Management, Logistics and Procurement"
+      ],
+      "volume": "3",
+      "issue": "1",
+      "page": "46",
+      "article-number": "JSCM-vol3-iss1-pg46",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            1
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            1
+          ]
+        ]
+      },
+      "publisher": "Henry Stewart Publications",
+      "event": null,
+      "similarity": 0.469
+    }
+  ],
+  "meta": {},
+  "details": {},
+  "bibtex_links": []
+}

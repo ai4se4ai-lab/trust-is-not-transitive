@@ -1,0 +1,113 @@
+{
+  "key": "su2016asymptotic",
+  "entry": {
+    "doi": "10.1109/tse.2015.2508444",
+    "year": "2016",
+    "pages": "623--639",
+    "number": "7",
+    "volume": "42",
+    "journal": "IEEE Transactions on Software Engineering",
+    "title": "Asymptotic Perturbation Bounds for Probabilistic Model Checking with Empirically Determined Probability Parameters",
+    "author": "Su, Guoxin and Feng, Yuan and Chen, Taolue and Rosenblum, David S.",
+    "ENTRYTYPE": "article",
+    "ID": "su2016asymptotic"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Asymptotic+Perturbation+Bounds+for+Probabilistic+Model+Checking+with+Empirically+Determined+Probability+Parameters",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1109/tse.2015.2508444",
+      "status": 200,
+      "file": "su2016asymptotic.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/tse.2015.2508444",
+      "type": "journal-article",
+      "title": [
+        "Asymptotic Perturbation Bounds for Probabilistic Model Checking with Empirically Determined Probability Parameters"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Guoxin",
+          "family": "Su",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yuan",
+          "family": "Feng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Taolue",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "David S.",
+          "family": "Rosenblum",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Software Engineering"
+      ],
+      "volume": "42",
+      "issue": "7",
+      "page": "623-639",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

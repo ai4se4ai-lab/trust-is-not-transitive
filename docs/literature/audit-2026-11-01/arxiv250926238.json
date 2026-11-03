@@ -1,0 +1,266 @@
+{
+  "key": "arxiv250926238",
+  "entry": {
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/5a829e299ebc1c1615ddb09e98fb6ce8-Abstract-Conference.html",
+    "year": "2026",
+    "pages": "55192--55229",
+    "volume": "2026",
+    "booktitle": "International Conference on Learning Representations",
+    "title": "{Beyond Linear Probes: Dynamic Safety Monitoring for Language Models}",
+    "author": "Oldfield, James and Torr, Philip and Patras, Ioannis and Bibi, Adel and Barez, Fazl",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv250926238"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Beyond+Linear+Probes%3A+Dynamic+Safety+Monitoring+for+Language+Models",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Beyond+Linear+Probes%3A+Dynamic+Safety+Monitoring+for+Language+Models&rows=3",
+      "status": 200,
+      "file": "arxiv250926238.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/5a829e299ebc1c1615ddb09e98fb6ce8-Abstract-Conference.html",
+      "status": 200,
+      "file": "arxiv250926238.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1081/sac-120023879",
+      "type": "journal-article",
+      "title": [
+        "Monitoring Residual Autocorrelations in Dynamic Linear Models"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Pilar",
+          "family": "Gargallo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Manuel",
+          "family": "Salvador",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Communications in Statistics - Simulation and Computation"
+      ],
+      "volume": "32",
+      "issue": "4",
+      "page": "1079-1104",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2003,
+            1,
+            11
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2003,
+            1,
+            11
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Informa UK Limited",
+      "event": null,
+      "similarity": 0.407
+    },
+    {
+      "DOI": "10.2172/1122210",
+      "type": "report",
+      "title": [
+        "Network Traffic Monitoring Using Poisson Dynamic Linear Models"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "name": "Lawrence Livermore National Lab. (LLNL), Livermore, CA (United States)",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "D.",
+          "family": "Merl",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Lawrence Livermore National Lab. (LLNL), Livermore, CA (United States)"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "name": "USDOE",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            5,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2011,
+            5,
+            9
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Office of Scientific and Technical Information (OSTI)",
+      "event": null,
+      "similarity": 0.442
+    },
+    {
+      "DOI": "10.1002/stc.2035",
+      "type": "journal-article",
+      "title": [
+        "Bayesian dynamic linear models for structural health monitoring"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0604-7008",
+          "authenticated-orcid": false,
+          "given": "James‐A.",
+          "family": "Goulet",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Civil, Geologic and Mining EngineeringPolytechnique Montreal Montreal Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Structural Control and Health Monitoring"
+      ],
+      "volume": "24",
+      "issue": "12",
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2017,
+            12
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            5
+          ]
+        ]
+      },
+      "publisher": "Wiley",
+      "event": null,
+      "similarity": 0.439
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "Beyond Linear Probes: Dynamic Safety Monitoring for Language Models"
+    ],
+    "citation_author": [
+      "Oldfield, James",
+      "Torr, Philip",
+      "Patras, Ioannis",
+      "Bibi, Adel",
+      "Barez, Fazl"
+    ],
+    "citation_journal_title": [
+      "International Conference on Learning Representations"
+    ],
+    "citation_volume": [
+      "2026"
+    ],
+    "citation_firstpage": [
+      "55192"
+    ],
+    "citation_lastpage": [
+      "55229"
+    ],
+    "citation_pdf_url": [
+      "https://proceedings.iclr.cc/paper_files/paper/2026/file/5a829e299ebc1c1615ddb09e98fb6ce8-Paper-Conference.pdf"
+    ],
+    "citation_publication_date": [
+      "2026-04-20"
+    ]
+  },
+  "details": {},
+  "bibtex_links": [
+    "/paper_files/paper/10874-/bibtex"
+  ]
+}

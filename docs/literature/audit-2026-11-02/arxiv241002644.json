@@ -1,0 +1,399 @@
+{
+  "key": "arxiv241002644",
+  "entry": {
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/5750f91d8fb9d5c02bd8ad2c3b44456b-Abstract-Conference.html",
+    "year": "2025",
+    "pages": "35331--35366",
+    "volume": "2025",
+    "booktitle": "International Conference on Learning Representations",
+    "title": "{Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents}",
+    "author": "Zhang, Hanrong and Huang, Jingyuan and Mei, Kai and Yao, Yifei and Wang, Zhenting and Zhan, Chenlu and Wang, Hongwei and Zhang, Yongfeng",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv241002644"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Agent+Security+Bench+%28ASB%29%3A+Formalizing+and+Benchmarking+Attacks+and+Defenses+in+LLM-based+Agents",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Agent+Security+Bench+%28ASB%29%3A+Formalizing+and+Benchmarking+Attacks+and+Defenses+in+LLM-based+Agents&rows=3",
+      "status": 200,
+      "file": "arxiv241002644.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/5750f91d8fb9d5c02bd8ad2c3b44456b-Abstract-Conference.html",
+      "status": 200,
+      "file": "arxiv241002644.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1016/j.inffus.2025.103941",
+      "type": "journal-article",
+      "title": [
+        "Security of LLM-based agents regarding attacks, defenses, and applications: A comprehensive survey"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0009-5845-0550",
+          "authenticated-orcid": false,
+          "given": "Yaxin",
+          "family": "Tang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4437-4368",
+          "authenticated-orcid": false,
+          "given": "Yijia",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0009-6595-4546",
+          "authenticated-orcid": false,
+          "given": "Jiahe",
+          "family": "Lan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9697-2108",
+          "authenticated-orcid": false,
+          "given": "Zheng",
+          "family": "Yan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9688-2201",
+          "authenticated-orcid": false,
+          "given": "Erol",
+          "family": "Gelenbe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Information Fusion"
+      ],
+      "volume": "127",
+      "issue": null,
+      "page": "103941",
+      "article-number": "103941",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "event": null,
+      "similarity": 0.28
+    },
+    {
+      "DOI": "10.52202/085713-3878",
+      "type": "proceedings-article",
+      "title": [
+        "SEC-bench: Automated Benchmarking of LLM Agents on Real-World Software Security Tasks"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Hwiwon",
+          "family": "Lee",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Illinois at Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ziqi",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Illinois at Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hanxiao",
+          "family": "Lu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Purdue University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "LINGMING",
+          "family": "ZHANG",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Illinois Urbana-Champaign"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 38"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "128940-128976",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 38",
+        "theme": "39th Conference on Neural Information Processing Systems (NeurIPS 2025)",
+        "location": "San Diego, California, USA and Mexico City, Mexico",
+        "acronym": "NeurIPS 2025",
+        "number": "38",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              30
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              7
+            ]
+          ]
+        }
+      },
+      "similarity": 0.458
+    },
+    {
+      "DOI": "10.18653/v1/2025.findings-naacl.395",
+      "type": "proceedings-article",
+      "title": [
+        "Adaptive Attacks Break Defenses Against Indirect Prompt Injection Attacks on LLM Agents"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Qiusi",
+          "family": "Zhan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Richard",
+          "family": "Fang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Henil Shalin",
+          "family": "Panchal",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Kang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: NAACL 2025"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "7101-7117",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: NAACL 2025",
+        "location": "Albuquerque, New Mexico",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        }
+      },
+      "similarity": 0.369
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents"
+    ],
+    "citation_author": [
+      "Zhang, Hanrong",
+      "Huang, Jingyuan",
+      "Mei, Kai",
+      "Yao, Yifei",
+      "Wang, Zhenting",
+      "Zhan, Chenlu",
+      "Wang, Hongwei",
+      "Zhang, Yongfeng"
+    ],
+    "citation_journal_title": [
+      "International Conference on Learning Representations"
+    ],
+    "citation_volume": [
+      "2025"
+    ],
+    "citation_firstpage": [
+      "35331"
+    ],
+    "citation_lastpage": [
+      "35366"
+    ],
+    "citation_pdf_url": [
+      "https://proceedings.iclr.cc/paper_files/paper/2025/file/5750f91d8fb9d5c02bd8ad2c3b44456b-Paper-Conference.pdf"
+    ],
+    "citation_publication_date": [
+      "2025-05-01"
+    ]
+  },
+  "details": {},
+  "bibtex_links": [
+    "/paper_files/paper/2898-/bibtex"
+  ]
+}

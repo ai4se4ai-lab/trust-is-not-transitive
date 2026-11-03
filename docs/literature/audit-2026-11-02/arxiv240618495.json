@@ -1,0 +1,227 @@
+{
+  "key": "arxiv240618495",
+  "entry": {
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/0f69b4b96a46f284b726fbd70f74fb3b-Abstract-Datasets_and_Benchmarks_Track.html",
+    "doi": "10.52202/079017-0261",
+    "publisher": "Curran Associates, Inc.",
+    "year": "2024",
+    "pages": "8093--8131",
+    "volume": "37",
+    "booktitle": "Advances in Neural Information Processing Systems",
+    "title": "{WildGuard: Open One-stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs}",
+    "author": "Han, Seungju and Rao, Kavel and Ettinger, Allyson and Jiang, Liwei and Lin, Bill Yuchen and Lambert, Nathan and Choi, Yejin and Dziri, Nouha",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv240618495"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=WildGuard%3A+Open+One-stop+Moderation+Tools+for+Safety+Risks%2C+Jailbreaks%2C+and+Refusals+of+LLMs",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.52202/079017-0261",
+      "status": 200,
+      "file": "arxiv240618495.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/0f69b4b96a46f284b726fbd70f74fb3b-Abstract-Datasets_and_Benchmarks_Track.html",
+      "status": 200,
+      "file": "arxiv240618495.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.52202/079017-0261",
+      "type": "proceedings-article",
+      "title": [
+        "WildGuard: Open One-stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Seungju",
+          "family": "Han",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kavel",
+          "family": "Rao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Allyson",
+          "family": "Ettinger",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Liwei",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bill Yuchen",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nathan",
+          "family": "Lambert",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yejin",
+          "family": "Choi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nouha",
+          "family": "Dziri",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 37"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "8093-8131",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 37",
+        "theme": "38th Conference on Neural Information Processing Systems (NeurIPS 2024)",
+        "location": "Vancouver, BC, Canada",
+        "acronym": "NeurIPS 2024",
+        "number": "37",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              15
+            ]
+          ]
+        }
+      },
+      "similarity": 1.0
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "WildGuard: Open One-stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs"
+    ],
+    "citation_author": [
+      "Han, Seungju",
+      "Rao, Kavel",
+      "Ettinger, Allyson",
+      "Jiang, Liwei",
+      "Lin, Bill Yuchen",
+      "Lambert, Nathan",
+      "Choi, Yejin",
+      "Dziri, Nouha"
+    ],
+    "citation_journal_title": [
+      "Advances in Neural Information Processing Systems"
+    ],
+    "citation_volume": [
+      "37"
+    ],
+    "citation_doi": [
+      "10.52202/079017-0261"
+    ],
+    "citation_firstpage": [
+      "8093"
+    ],
+    "citation_lastpage": [
+      "8131"
+    ],
+    "citation_pdf_url": [
+      "https://proceedings.neurips.cc/paper_files/paper/2024/file/0f69b4b96a46f284b726fbd70f74fb3b-Paper-Datasets_and_Benchmarks_Track.pdf"
+    ],
+    "citation_publication_date": [
+      "2024-12-16"
+    ]
+  },
+  "details": {},
+  "bibtex_links": [
+    "/paper_files/paper/25449-/bibtex"
+  ]
+}

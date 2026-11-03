@@ -1,0 +1,201 @@
+{
+  "key": "arxiv240613352",
+  "entry": {
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/97091a5177d8dc64b1da8bf3e1f6fb54-Abstract-Datasets_and_Benchmarks_Track.html",
+    "doi": "10.52202/079017-2636",
+    "publisher": "Curran Associates, Inc.",
+    "year": "2024",
+    "pages": "82895--82920",
+    "volume": "37",
+    "booktitle": "Advances in Neural Information Processing Systems",
+    "title": "{AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents}",
+    "author": "Debenedetti, Edoardo and Zhang, Jie and Balunović, Mislav and Beurer-Kellner, Luca and Fischer, Marc and Tramèr, Florian",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv240613352"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=AgentDojo%3A+A+Dynamic+Environment+to+Evaluate+Prompt+Injection+Attacks+and+Defenses+for+LLM+Agents",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.52202/079017-2636",
+      "status": 200,
+      "file": "arxiv240613352.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/97091a5177d8dc64b1da8bf3e1f6fb54-Abstract-Datasets_and_Benchmarks_Track.html",
+      "status": 200,
+      "file": "arxiv240613352.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.52202/079017-2636",
+      "type": "proceedings-article",
+      "title": [
+        "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Edoardo",
+          "family": "Debenedetti",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jie",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mislav",
+          "family": "Balunovic",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Luca",
+          "family": "Beurer-Kellner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Marc",
+          "family": "Fischer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Florian",
+          "family": "Tramèr",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 37"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "82895-82920",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 37",
+        "theme": "38th Conference on Neural Information Processing Systems (NeurIPS 2024)",
+        "location": "Vancouver, BC, Canada",
+        "acronym": "NeurIPS 2024",
+        "number": "37",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              15
+            ]
+          ]
+        }
+      },
+      "similarity": 1.0
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents"
+    ],
+    "citation_author": [
+      "Debenedetti, Edoardo",
+      "Zhang, Jie",
+      "Balunovic, Mislav",
+      "Beurer-Kellner, Luca",
+      "Fischer, Marc",
+      "Tramèr, Florian"
+    ],
+    "citation_journal_title": [
+      "Advances in Neural Information Processing Systems"
+    ],
+    "citation_volume": [
+      "37"
+    ],
+    "citation_doi": [
+      "10.52202/079017-2636"
+    ],
+    "citation_firstpage": [
+      "82895"
+    ],
+    "citation_lastpage": [
+      "82920"
+    ],
+    "citation_pdf_url": [
+      "https://proceedings.neurips.cc/paper_files/paper/2024/file/97091a5177d8dc64b1da8bf3e1f6fb54-Paper-Datasets_and_Benchmarks_Track.pdf"
+    ],
+    "citation_publication_date": [
+      "2024-12-16"
+    ]
+  },
+  "details": {},
+  "bibtex_links": [
+    "/paper_files/paper/23699-/bibtex"
+  ]
+}

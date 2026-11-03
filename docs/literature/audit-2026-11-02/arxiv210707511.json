@@ -1,0 +1,113 @@
+{
+  "key": "arxiv210707511",
+  "entry": {
+    "url": "https://doi.org/10.1561/2200000101",
+    "doi": "10.1561/2200000101",
+    "publisher": "Emerald",
+    "year": "2023",
+    "pages": "494--591",
+    "number": "4",
+    "volume": "16",
+    "journal": "Foundations and Trends in Machine Learning",
+    "title": "{Conformal Prediction: A Gentle Introduction}",
+    "author": "Angelopoulos, Anastasios N. and Bates, Stephen",
+    "ENTRYTYPE": "article",
+    "ID": "arxiv210707511"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Conformal+Prediction%3A+A+Gentle+Introduction",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1561/2200000101",
+      "status": 200,
+      "file": "arxiv210707511.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1561/2200000101",
+      "type": "journal-article",
+      "title": [
+        "Conformal Prediction: A Gentle Introduction"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Anastasios N.",
+          "family": "Angelopoulos",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of California , ,",
+              "place": [
+                "Berkeley, USA"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephen",
+          "family": "Bates",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of California , ,",
+              "place": [
+                "Berkeley, USA"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Foundations and Trends® in Machine Learning"
+      ],
+      "volume": "16",
+      "issue": "4",
+      "page": "494-591",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            27
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            27
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            27
+          ]
+        ]
+      },
+      "publisher": "Emerald",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

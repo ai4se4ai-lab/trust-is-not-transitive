@@ -1,0 +1,75 @@
+{
+  "key": "meyer1992applying",
+  "entry": {
+    "doi": "10.1109/2.161279",
+    "year": "1992",
+    "pages": "40--51",
+    "number": "10",
+    "volume": "25",
+    "journal": "Computer",
+    "title": "Applying ``Design by Contract''",
+    "author": "Meyer, Bertrand",
+    "ENTRYTYPE": "article",
+    "ID": "meyer1992applying"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Applying+%60%60Design+by+Contract%27%27",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1109/2.161279",
+      "status": 200,
+      "file": "meyer1992applying.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/2.161279",
+      "type": "journal-article",
+      "title": [
+        "Applying 'design by contract'"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "B.",
+          "family": "Meyer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Computer"
+      ],
+      "volume": "25",
+      "issue": "10",
+      "page": "40-51",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1992,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1992,
+            10
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

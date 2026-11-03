@@ -1,0 +1,85 @@
+{
+  "key": "clopper1934use",
+  "entry": {
+    "doi": "10.1093/biomet/26.4.404",
+    "year": "1934",
+    "pages": "404--413",
+    "number": "4",
+    "volume": "26",
+    "journal": "Biometrika",
+    "title": "The Use of Confidence or Fiducial Limits Illustrated in the Case of the Binomial",
+    "author": "Clopper, C. J. and Pearson, E. S.",
+    "ENTRYTYPE": "article",
+    "ID": "clopper1934use"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=The+Use+of+Confidence+or+Fiducial+Limits+Illustrated+in+the+Case+of+the+Binomial",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1093/biomet/26.4.404",
+      "status": 200,
+      "file": "clopper1934use.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1093/biomet/26.4.404",
+      "type": "journal-article",
+      "title": [
+        "THE USE OF CONFIDENCE OR FIDUCIAL LIMITS ILLUSTRATED IN THE CASE OF THE BINOMIAL"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "C. J.",
+          "family": "CLOPPER",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "E. S.",
+          "family": "PEARSON",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Biometrika"
+      ],
+      "volume": "26",
+      "issue": "4",
+      "page": "404-413",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1934
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1934
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Oxford University Press (OUP)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

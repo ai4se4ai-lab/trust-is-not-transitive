@@ -1,0 +1,84 @@
+{
+  "key": "efron1994introduction",
+  "entry": {
+    "doi": "10.1201/9780429246593",
+    "year": "1994",
+    "publisher": "Chapman \\& Hall/CRC",
+    "title": "An Introduction to the Bootstrap",
+    "author": "Efron, Bradley and Tibshirani, Robert J.",
+    "ENTRYTYPE": "book",
+    "ID": "efron1994introduction"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=An+Introduction+to+the+Bootstrap",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1201/9780429246593",
+      "status": 200,
+      "file": "efron1994introduction.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1201/9780429246593",
+      "type": "book",
+      "title": [
+        "An Introduction to the Bootstrap"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Bradley",
+          "family": "Efron",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "R.J.",
+          "family": "Tibshirani",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1994,
+            5,
+            15
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            1994,
+            5,
+            15
+          ]
+        ]
+      },
+      "publisher": "Chapman and Hall/CRC",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

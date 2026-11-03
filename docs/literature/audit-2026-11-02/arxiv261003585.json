@@ -1,0 +1,318 @@
+{
+  "key": "arxiv261003585",
+  "entry": {
+    "url": "https://arxiv.org/abs/2610.03585",
+    "howpublished": "arXiv:2610.03585",
+    "year": "2026",
+    "author": "Karamchandani, Neeraj and Nagasubramaniam, Piyush and Xie, Xinhong and Zhu, Sencun and Wu, Dinghao",
+    "title": "{Threat-Preserving Representation Sensitivity in Agent-Security Benchmarks}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv261003585"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Threat-Preserving+Representation+Sensitivity+in+Agent-Security+Benchmarks",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Threat-Preserving+Representation+Sensitivity+in+Agent-Security+Benchmarks&rows=3",
+      "status": 200,
+      "file": "arxiv261003585.crossref.json.gz"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.03585",
+      "status": 200,
+      "file": "arxiv261003585.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.24963/ijcai.2025/867",
+      "type": "proceedings-article",
+      "title": [
+        "Advancing Embodied Agent Security: From Safety Benchmarks to Input Moderation"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Ning",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "College of computer science, Chongqing University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Zihan",
+          "family": "Yan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of computer science, Chongqing University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Weiyang",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of computer science, Chongqing University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Chuan",
+          "family": "Ma",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of computer science, Chongqing University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "He",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Information Engineering, The Chinese University of Hong Kong"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Tao",
+          "family": "Xiang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of computer science, Chongqing University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "7795-7803",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            9
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "International Joint Conferences on Artificial Intelligence Organization",
+      "event": {
+        "number": "34",
+        "sponsor": [
+          "International Joint Conferences on Artificial Intelligence Organization (IJCAI)"
+        ],
+        "acronym": "IJCAI-2025",
+        "name": "Thirty-Fourth International Joint Conference on Artificial Intelligence {IJCAI-25}",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              16
+            ]
+          ]
+        },
+        "theme": "Artificial Intelligence",
+        "location": "Montreal, Canada",
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              22
+            ]
+          ]
+        }
+      },
+      "similarity": 0.451
+    },
+    {
+      "DOI": "10.2139/ssrn.7489098",
+      "type": "posted-content",
+      "title": [
+        "SecTest-Agent: From API Security Hypotheses to Evidence-Preserving Security Regression Tests"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-7872-3722",
+          "authenticated-orcid": true,
+          "given": "Mukund",
+          "family": "Chenna",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "event": null,
+      "similarity": 0.342
+    },
+    {
+      "DOI": "10.1007/979-8-8688-2758-7_23",
+      "type": "book-chapter",
+      "title": [
+        "Agent Evals and Benchmarks"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Martin",
+          "family": "Hander",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Building AI Systems with Python"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "245-254",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            31
+          ]
+        ]
+      },
+      "publisher": "Apress",
+      "event": null,
+      "similarity": 0.36
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "Threat-Preserving Representation Sensitivity in Agent-Security Benchmarks"
+    ],
+    "citation_author": [
+      "Karamchandani, Neeraj",
+      "Nagasubramaniam, Piyush",
+      "Xie, Xinhong",
+      "Zhu, Sencun",
+      "Wu, Dinghao"
+    ],
+    "citation_date": [
+      "2026/10/02"
+    ],
+    "citation_online_date": [
+      "2026/10/02"
+    ],
+    "citation_pdf_url": [
+      "https://arxiv.org/pdf/2610.03585"
+    ],
+    "citation_arxiv_id": [
+      "2610.03585"
+    ],
+    "citation_abstract": [
+      "Security benchmarks for LLM-based agents often report the attack success rate (ASR) as a measure of model robustness and use these scores to compare different models and defense mechanisms, assuming that they describe the security of the agent. In this paper, we explore whether it also influences the benchmark's measurement. To measure the effect of the benchmark representation, we introduce threat-preserving representation sensitivity (TPRS), which measures how much the ASR changes when we change the agent-visible representation while holding the underlying task, harmful action, security policy, ground truth, environment, and the evaluation criteria fixed. On Agent Security Bench (ASB), replacing threat-related tool names with threat-neutral names raises the committed attack success rate by 11.67 percentage points on GPT-5-mini and by 13.21 points on Claude Haiku 4.5. On MCPTox, replacing the original neutral tool name with an explicit threat-related name lowers the ASR by 11.00 percentage points on GPT-5-mini and 4.11 points on Claude Haiku 4.5. On AgentDojo, adding threat-related wording to the attack-relevant tool changes ASR by only 0.50 percentage points on GPT-4o-mini, yet the benign utility falls by 5.36 points on tasks requiring that tool. We ran an experiment on MCPTox where we observed that a threat-neutral name matched on token count, length, and casing reproduces most of the shift produced by the threat-explicit name (8.54 of 11.00 points on GPT-5-mini). The results show that a security score measured under one representation may fail to generalize across threat-preserving representations of the same security problem. Robustness claims should therefore be supported by performance across a controlled set of threat-preserving representations rather than relying on a single representation-dependent score."
+    ]
+  },
+  "details": {
+    "title": "Title: Threat-Preserving Representation Sensitivity in Agent-Security Benchmarks",
+    "authors": "Authors: Neeraj Karamchandani , Piyush Nagasubramaniam , Xinhong Xie , Sencun Zhu , Dinghao Wu",
+    "comments": "12 pages, 2 figures",
+    "dateline": "[Submitted on 2 Oct 2026]"
+  },
+  "bibtex_links": []
+}

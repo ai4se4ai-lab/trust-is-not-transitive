@@ -1,0 +1,127 @@
+{
+  "key": "arxiv240604184",
+  "entry": {
+    "url": "https://doi.org/10.1609/aaai.v39i14.33660",
+    "doi": "10.1609/aaai.v39i14.33660",
+    "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+    "year": "2025",
+    "pages": "15134--15142",
+    "number": "14",
+    "volume": "39",
+    "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "title": "{Shield Synthesis for LTL Modulo Theories}",
+    "author": "Rodr{\\'\\i}guez, Andoni and Amir, Guy and Corsi, Davide and S{\\'a}nchez, C{\\'e}sar and Katz, Guy",
+    "ENTRYTYPE": "article",
+    "ID": "arxiv240604184"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Shield+Synthesis+for+LTL+Modulo+Theories",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1609/aaai.v39i14.33660",
+      "status": 200,
+      "file": "arxiv240604184.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1609/aaai.v39i14.33660",
+      "type": "journal-article",
+      "title": [
+        "Shield Synthesis for LTL Modulo Theories"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Andoni",
+          "family": "Rodríguez",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Guy",
+          "family": "Amir",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Davide",
+          "family": "Corsi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "César",
+          "family": "Sánchez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Guy",
+          "family": "Katz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the AAAI Conference on Artificial Intelligence"
+      ],
+      "volume": "39",
+      "issue": "14",
+      "page": "15134-15142",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            11
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            11
+          ]
+        ]
+      },
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

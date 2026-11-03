@@ -1,0 +1,150 @@
+{
+  "key": "shamsujjoha2025swiss",
+  "entry": {
+    "url": "https://doi.org/10.1109/ICSA65012.2025.00014",
+    "doi": "10.1109/ICSA65012.2025.00014",
+    "publisher": "IEEE",
+    "year": "2025",
+    "pages": "37--48",
+    "booktitle": "2025 IEEE 22nd International Conference on Software Architecture (ICSA)",
+    "title": "{Swiss Cheese Model for AI Safety: A Taxonomy and Reference Architecture for Multi-Layered Guardrails of Foundation Model Based Agents}",
+    "author": "Shamsujjoha, Md and Lu, Qinghua and Zhao, Dehai and Zhu, Liming",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "shamsujjoha2025swiss"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Swiss+Cheese+Model+for+AI+Safety%3A+A+Taxonomy+and+Reference+Architecture+for+Multi-Layered+Guardrails+of+Foundation+Model+Based+Agents",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1109/ICSA65012.2025.00014",
+      "status": 200,
+      "file": "shamsujjoha2025swiss.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/icsa65012.2025.00014",
+      "type": "proceedings-article",
+      "title": [
+        "Swiss Cheese Model for AI Safety: A Taxonomy and Reference Architecture for Multi-Layered Guardrails of Foundation Model Based Agents"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Md",
+          "family": "Shamsujjoha",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Data61, CSIRO,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Qinghua",
+          "family": "Lu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Data61, CSIRO,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dehai",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Data61, CSIRO,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Liming",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Data61, CSIRO,Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE 22nd International Conference on Software Architecture (ICSA)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "37-48",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            31
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            31
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "event": {
+        "name": "2025 IEEE 22nd International Conference on Software Architecture (ICSA)",
+        "location": "Odense, Denmark",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              31
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              4
+            ]
+          ]
+        }
+      },
+      "similarity": 1.0
+    }
+  ]
+}

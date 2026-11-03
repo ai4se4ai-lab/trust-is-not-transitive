@@ -1,0 +1,401 @@
+{
+  "key": "arxiv200602544",
+  "entry": {
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2020/hash/244edd7e85dc81602b7615cd705545f5-Abstract.html",
+    "publisher": "Curran Associates, Inc.",
+    "year": "2020",
+    "pages": "3581--3591",
+    "volume": "33",
+    "booktitle": "Advances in Neural Information Processing Systems",
+    "title": "{Classification with Valid and Adaptive Coverage}",
+    "author": "Romano, Yaniv and Sesia, Matteo and Candès, Emmanuel J.",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv200602544"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Classification+with+Valid+and+Adaptive+Coverage",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Classification+with+Valid+and+Adaptive+Coverage&rows=3",
+      "status": 200,
+      "file": "arxiv200602544.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2020/hash/244edd7e85dc81602b7615cd705545f5-Abstract.html",
+      "status": 200,
+      "file": "arxiv200602544.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/tkde.2025.3547968",
+      "type": "journal-article",
+      "title": [
+        "Valid Coverage Oriented Item Perspective Recommendation"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0008-2972-9897",
+          "authenticated-orcid": false,
+          "given": "Ruijia",
+          "family": "Ma",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "College of Computer Science, TJ Key Lab of NDST, DISSec, TMCC, TBI Center, Nankai University, Tianjin, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2820-5273",
+          "authenticated-orcid": false,
+          "given": "Yahong",
+          "family": "Lian",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Computer Science, TJ Key Lab of NDST, DISSec, TMCC, TBI Center, Nankai University, Tianjin, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0002-0879-3140",
+          "authenticated-orcid": false,
+          "given": "Rongbo",
+          "family": "Qi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Computer Science, TJ Key Lab of NDST, DISSec, TMCC, TBI Center, Nankai University, Tianjin, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5715-5092",
+          "authenticated-orcid": false,
+          "given": "Chunyao",
+          "family": "Song",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Computer Science, TJ Key Lab of NDST, DISSec, TMCC, TBI Center, Nankai University, Tianjin, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2225-8291",
+          "authenticated-orcid": false,
+          "given": "Tingjian",
+          "family": "Ge",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, University of Massachusetts Lowell, Lowell, MA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Knowledge and Data Engineering"
+      ],
+      "volume": "37",
+      "issue": "6",
+      "page": "3810-3823",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "event": null,
+      "similarity": 0.283
+    },
+    {
+      "DOI": "10.1109/raeeucci57140.2023.10134483",
+      "type": "proceedings-article",
+      "title": [
+        "Classification of Valid Test Patterns Using Autoencoder for Adaptive Testing In VLSI"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Kunal",
+          "family": "Nikhade",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "SRM Institute of Science and Technology,Dept. of Electronics and Communication Engineering,Chennai,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sowmiya",
+          "family": "G",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "SRM Institute of Science and Technology,Dept. of Electronics and Communication Engineering,Chennai,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Malarvizhi",
+          "family": "S",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "SRM Institute of Science and Technology,Dept. of Electronics and Communication Engineering,Chennai,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2023 International Conference on Recent Advances in Electrical, Electronics, Ubiquitous Communication, and Computational Intelligence (RAEEUCCI)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-5",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            19
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            19
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "event": {
+        "name": "2023 International Conference on Recent Advances in Electrical, Electronics, Ubiquitous Communication, and Computational Intelligence (RAEEUCCI)",
+        "location": "Chennai, India",
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              4,
+              19
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2023,
+              4,
+              21
+            ]
+          ]
+        }
+      },
+      "similarity": 0.539
+    },
+    {
+      "DOI": "10.1145/2483760.2483787",
+      "type": "proceedings-article",
+      "title": [
+        "Semi-valid input coverage for fuzz testing"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Petar",
+          "family": "Tsankov",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "ETH Zurich, Switzerland"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Mohammad Torabi",
+          "family": "Dashti",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "ETH Zurich, Switzerland"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Basin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "ETH Zurich, Switzerland"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2013 International Symposium on Software Testing and Analysis"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "56-66",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            15
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            15
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            15
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "event": {
+        "name": "ISSTA '13: Iitsnternational Symposium on Software Testing and Analysis",
+        "sponsor": [
+          "SIGSOFT ACM Special Interest Group on Software Engineering",
+          "SIGPLAN ACM Special Interest Group on Programming Languages"
+        ],
+        "location": "Lugano Switzerland",
+        "acronym": "ISSTA '13"
+      },
+      "similarity": 0.462
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "Classification with Valid and Adaptive Coverage"
+    ],
+    "citation_author": [
+      "Romano, Yaniv",
+      "Sesia, Matteo",
+      "Candes, Emmanuel"
+    ],
+    "citation_journal_title": [
+      "Advances in Neural Information Processing Systems"
+    ],
+    "citation_volume": [
+      "33"
+    ],
+    "citation_firstpage": [
+      "3581"
+    ],
+    "citation_lastpage": [
+      "3591"
+    ],
+    "citation_pdf_url": [
+      "https://proceedings.neurips.cc/paper_files/paper/2020/file/244edd7e85dc81602b7615cd705545f5-Paper.pdf"
+    ],
+    "citation_publication_date": [
+      "2020"
+    ]
+  },
+  "details": {},
+  "bibtex_links": [
+    "/paper_files/paper/10026-/bibtex"
+  ]
+}

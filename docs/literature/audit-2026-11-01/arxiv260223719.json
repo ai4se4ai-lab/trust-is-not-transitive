@@ -1,0 +1,477 @@
+{
+  "key": "arxiv260223719",
+  "entry": {
+    "url": "https://arxiv.org/abs/2602.23719",
+    "howpublished": "arXiv:2602.23719",
+    "year": "2026",
+    "author": "Zhao, Wenzhe and Zhao, Yang and Liu, Ganchao and Jiang, Zhiyu and Ma, Dandan and Li, Zihao and Li, Xuelong",
+    "title": "{SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv260223719"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=SAGE-LLM%3A+Towards+Safe+and+Generalizable+LLM+Controller+with+Fuzzy-CBF+Verification+and+Graph-Structured+Knowledge+Retrieval+for+UAV+Decision",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=SAGE-LLM%3A+Towards+Safe+and+Generalizable+LLM+Controller+with+Fuzzy-CBF+Verification+and+Graph-Structured+Knowledge+Retrieval+for+UAV+Decision&rows=3",
+      "status": 200,
+      "file": "arxiv260223719.crossref.json.gz"
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.23719",
+      "status": 200,
+      "file": "arxiv260223719.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/3776759.3776823",
+      "type": "proceedings-article",
+      "title": [
+        "HR-LLM: Towards Semantically Enhanced Personnel Retrieval in SOEs with Knowledge Graph and LLM Fine-Tuning"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0008-3862-8246",
+          "authenticated-orcid": false,
+          "given": "Liang",
+          "family": "Chen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "NARI INFORMATION &amp; COMMUNICATION TECHNOLOGY CO., LTD, Nanjing, Jiangsu, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0002-7805-8491",
+          "authenticated-orcid": false,
+          "given": "Jun",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "NARI INFORMATION &amp; COMMUNICATION TECHNOLOGY CO., LTD, Nanjing, Jiangsu, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0002-6331-5889",
+          "authenticated-orcid": false,
+          "given": "Hong-Yu",
+          "family": "Ding",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "NARI INFORMATION &amp; COMMUNICATION TECHNOLOGY CO., LTD, Nanjing, Jiangsu, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-8183-3166",
+          "authenticated-orcid": false,
+          "given": "Yu-Qing",
+          "family": "Gao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "NARI INFORMATION &amp; COMMUNICATION TECHNOLOGY CO., LTD, Nanjing, Jiangsu, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-7311-5855",
+          "authenticated-orcid": false,
+          "given": "Xian-Min",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "NARI INFORMATION &amp; COMMUNICATION TECHNOLOGY CO., LTD, Nanjing, Jiangsu, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-2009-7280",
+          "authenticated-orcid": false,
+          "given": "Yang",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "NARI INFORMATION &amp; COMMUNICATION TECHNOLOGY CO., LTD, Nanjing, Jiangsu, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-9012-8266",
+          "authenticated-orcid": false,
+          "given": "Xuan",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "NARI INFORMATION &amp; COMMUNICATION TECHNOLOGY CO., LTD, Nanjing, Jiangsu, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2025 International Symposium on Artificial Intelligence and Computational Social Sciences"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "418-425",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            19
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            19
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            19
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "event": {
+        "name": "AICSS 2025: 2025 International Symposium on Artificial Intelligence and Computational Social Sciences",
+        "acronym": "AICSS 2025",
+        "location": "Beijing China"
+      },
+      "similarity": 0.379
+    },
+    {
+      "DOI": "10.1609/aaai.v40i36.40322",
+      "type": "journal-article",
+      "title": [
+        "Graph of Verification: Structured Verification of LLM Reasoning with Directed Acyclic Graphs"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Jiwei",
+          "family": "Fang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bin",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Changwei",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jin",
+          "family": "Wan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhiwei",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the AAAI Conference on Artificial Intelligence"
+      ],
+      "volume": "40",
+      "issue": "36",
+      "page": "30665-30672",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            14
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            14
+          ]
+        ]
+      },
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "event": null,
+      "similarity": 0.328
+    },
+    {
+      "DOI": "10.18653/v1/2025.acl-long.1317",
+      "type": "proceedings-article",
+      "title": [
+        "Knowledge Graph Retrieval-Augmented Generation for LLM-based Recommendation"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Shijie",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wenqi",
+          "family": "Fan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yue",
+          "family": "Feng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lin",
+          "family": "Shanru",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xinyu",
+          "family": "Ma",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shuaiqiang",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dawei",
+          "family": "Yin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "27152-27168",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "event": {
+        "name": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "location": "Vienna, Austria",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        }
+      },
+      "similarity": 0.298
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision"
+    ],
+    "citation_author": [
+      "Zhao, Wenzhe",
+      "Zhao, Yang",
+      "Liu, Ganchao",
+      "Jiang, Zhiyu",
+      "Ma, Dandan",
+      "Li, Zihao",
+      "Li, Xuelong"
+    ],
+    "citation_date": [
+      "2026/02/27"
+    ],
+    "citation_online_date": [
+      "2026/02/27"
+    ],
+    "citation_pdf_url": [
+      "https://arxiv.org/pdf/2602.23719"
+    ],
+    "citation_arxiv_id": [
+      "2602.23719"
+    ],
+    "citation_abstract": [
+      "In UAV dynamic decision, complex and variable hazardous factors pose severe challenges to the generalization capability of algorithms. Despite offering semantic understanding and scene generalization, Large Language Models (LLM) lack domain-specific UAV control knowledge and formal safety assurances, restricting their direct applicability. To bridge this gap, this paper proposes a train-free two-layer decision architecture based on LLMs, integrating high-level safety planning with low-level precise control. The framework introduces three key contributions: 1) A fuzzy Control Barrier Function verification mechanism for semantically-augmented actions, providing provable safety certification for LLM outputs. 2) A star-hierarchical graph-based retrieval-augmented generation system, enabling efficient, elastic, and interpretable scene adaptation. 3) Systematic experimental validation in pursuit-evasion scenarios with unknown obstacles and emergent threats, demonstrating that our SAGE-LLM maintains performance while significantly enhancing safety and generalization without online training. The proposed framework demonstrates strong extensibility, suggesting its potential for generalization to broader embodied intelligence systems and safety-critical control domains."
+    ]
+  },
+  "details": {
+    "title": "Title: SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision",
+    "authors": "Authors: Wenzhe Zhao , Yang Zhao , Ganchao Liu , Zhiyu Jiang , Dandan Ma , Zihao Li , Xuelong Li",
+    "dateline": "[Submitted on 27 Feb 2026]"
+  },
+  "bibtex_links": []
+}

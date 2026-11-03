@@ -1,0 +1,85 @@
+{
+  "key": "saltzer1975protection",
+  "entry": {
+    "doi": "10.1109/PROC.1975.9939",
+    "year": "1975",
+    "pages": "1278--1308",
+    "number": "9",
+    "volume": "63",
+    "journal": "Proceedings of the IEEE",
+    "title": "The Protection of Information in Computer Systems",
+    "author": "Saltzer, Jerome H. and Schroeder, Michael D.",
+    "ENTRYTYPE": "article",
+    "ID": "saltzer1975protection"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=The+Protection+of+Information+in+Computer+Systems",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1109/PROC.1975.9939",
+      "status": 200,
+      "file": "saltzer1975protection.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/proc.1975.9939",
+      "type": "journal-article",
+      "title": [
+        "The protection of information in computer systems"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "J.H.",
+          "family": "Saltzer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "M.D.",
+          "family": "Schroeder",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the IEEE"
+      ],
+      "volume": "63",
+      "issue": "9",
+      "page": "1278-1308",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1975
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1975
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

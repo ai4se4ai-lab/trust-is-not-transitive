@@ -1,0 +1,188 @@
+{
+  "key": "arxiv230212173",
+  "entry": {
+    "url": "https://doi.org/10.1145/3605764.3623985",
+    "doi": "10.1145/3605764.3623985",
+    "publisher": "ACM",
+    "year": "2023",
+    "pages": "79--90",
+    "booktitle": "Proceedings of the 16th ACM Workshop on Artificial Intelligence and Security",
+    "title": "{Not What You\\textquotesingle ve Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection}",
+    "author": "Greshake, Kai and Abdelnabi, Sahar and Mishra, Shailesh and Endres, Christoph and Holz, Thorsten and Fritz, Mario",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv230212173"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Not+What+You%5Ctextquotesingle+ve+Signed+Up+For%3A+Compromising+Real-World+LLM-Integrated+Applications+with+Indirect+Prompt+Injection",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1145/3605764.3623985",
+      "status": 200,
+      "file": "arxiv230212173.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/3605764.3623985",
+      "type": "proceedings-article",
+      "title": [
+        "Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0005-0460-5327",
+          "authenticated-orcid": false,
+          "given": "Kai",
+          "family": "Greshake",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Saarland University, Saarbrücken, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-5269-951X",
+          "authenticated-orcid": false,
+          "given": "Sahar",
+          "family": "Abdelnabi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "CISPA Helmholtz Center for Information Security, Saarbrücken, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-7330-1912",
+          "authenticated-orcid": false,
+          "given": "Shailesh",
+          "family": "Mishra",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Saarland University, Saarbrücken, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0005-7653-4417",
+          "authenticated-orcid": false,
+          "given": "Christoph",
+          "family": "Endres",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "sequire technology GmbH, Saarbrücken, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2783-1264",
+          "authenticated-orcid": false,
+          "given": "Thorsten",
+          "family": "Holz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "CISPA Helmholtz Center for Information Security, Saarbrücken, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8949-9896",
+          "authenticated-orcid": false,
+          "given": "Mario",
+          "family": "Fritz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "CISPA Helmholtz Center for Information Security, Saarbrücken, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 16th ACM Workshop on Artificial Intelligence and Security"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "79-90",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            26
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            30
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            26
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "event": {
+        "name": "CCS '23: ACM SIGSAC Conference on Computer and Communications Security",
+        "location": "Copenhagen Denmark",
+        "acronym": "CCS '23",
+        "sponsor": [
+          "SIGSAC ACM Special Interest Group on Security, Audit, and Control"
+        ]
+      },
+      "similarity": 0.928
+    }
+  ]
+}

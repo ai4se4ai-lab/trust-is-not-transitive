@@ -1,0 +1,87 @@
+{
+  "key": "littlewood2004redundancy",
+  "entry": {
+    "doi": "10.1007/978-3-540-30108-0_26",
+    "publisher": "Springer",
+    "year": "2004",
+    "pages": "423--438",
+    "volume": "3193",
+    "series": "Lecture Notes in Computer Science",
+    "booktitle": "Computer Security -- ESORICS 2004",
+    "title": "Redundancy and Diversity in Security",
+    "author": "Littlewood, Bev and Strigini, Lorenzo",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "littlewood2004redundancy"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Redundancy+and+Diversity+in+Security",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1007/978-3-540-30108-0_26",
+      "status": 200,
+      "file": "littlewood2004redundancy.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1007/978-3-540-30108-0_26",
+      "type": "book-chapter",
+      "title": [
+        "Redundancy and Diversity in Security"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Bev",
+          "family": "Littlewood",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lorenzo",
+          "family": "Strigini",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Computer Security – ESORICS 2004"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "423-438",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2004
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2004
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

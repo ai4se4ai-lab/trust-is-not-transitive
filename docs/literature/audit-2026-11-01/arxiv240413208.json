@@ -1,0 +1,229 @@
+{
+  "key": "arxiv240413208",
+  "entry": {
+    "url": "https://arxiv.org/abs/2404.13208",
+    "howpublished": "arXiv:2404.13208",
+    "year": "2024",
+    "author": "Wallace, Eric and Xiao, Kai and Leike, Reimar and Weng, Lilian and Heidecke, Johannes and Beutel, Alex",
+    "title": "{The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv240413208"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=The+Instruction+Hierarchy%3A+Training+LLMs+to+Prioritize+Privileged+Instructions",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=The+Instruction+Hierarchy%3A+Training+LLMs+to+Prioritize+Privileged+Instructions&rows=3",
+      "status": 200,
+      "file": "arxiv240413208.crossref.json.gz"
+    },
+    {
+      "url": "https://arxiv.org/abs/2404.13208",
+      "status": 200,
+      "file": "arxiv240413208.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.18653/2026.emnlp-main.2153",
+      "type": "proceedings-article",
+      "title": [
+        "Language Shapes Instruction Hierarchy Compliance in Multilingual LLMs"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Jiwon",
+          "family": "Moon",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yerin",
+          "family": "Hwang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kyomin",
+          "family": "Jung",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "48968-49004",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "event": {
+        "name": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "similarity": 0.489
+    },
+    {
+      "DOI": "10.1007/springerreference_22103",
+      "type": "reference-entry",
+      "title": [
+        "privileged instruction"
+      ],
+      "subtitle": null,
+      "author": null,
+      "container-title": [
+        "SpringerReference"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": null,
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Springer-Verlag",
+      "event": null,
+      "similarity": 0.467
+    },
+    {
+      "DOI": "10.1007/1-4020-0613-6_14699",
+      "type": "book-chapter",
+      "title": [
+        "privileged instruction"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Martin H.",
+          "family": "Weik",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Computer Science and Communications Dictionary"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1336-1336",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2000
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2000
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            11,
+            30
+          ]
+        ]
+      },
+      "publisher": "Springer US",
+      "event": null,
+      "similarity": 0.467
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions"
+    ],
+    "citation_author": [
+      "Wallace, Eric",
+      "Xiao, Kai",
+      "Leike, Reimar",
+      "Weng, Lilian",
+      "Heidecke, Johannes",
+      "Beutel, Alex"
+    ],
+    "citation_date": [
+      "2024/04/19"
+    ],
+    "citation_online_date": [
+      "2024/04/19"
+    ],
+    "citation_pdf_url": [
+      "https://arxiv.org/pdf/2404.13208"
+    ],
+    "citation_arxiv_id": [
+      "2404.13208"
+    ],
+    "citation_abstract": [
+      "Today's LLMs are susceptible to prompt injections, jailbreaks, and other attacks that allow adversaries to overwrite a model's original instructions with their own malicious prompts. In this work, we argue that one of the primary vulnerabilities underlying these attacks is that LLMs often consider system prompts (e.g., text from an application developer) to be the same priority as text from untrusted users and third parties. To address this, we propose an instruction hierarchy that explicitly defines how models should behave when instructions of different priorities conflict. We then propose a data generation method to demonstrate this hierarchical instruction following behavior, which teaches LLMs to selectively ignore lower-privileged instructions. We apply this method to GPT-3.5, showing that it drastically increases robustness -- even for attack types not seen during training -- while imposing minimal degradations on standard capabilities."
+    ]
+  },
+  "details": {
+    "title": "Title: The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+    "authors": "Authors: Eric Wallace , Kai Xiao , Reimar Leike , Lilian Weng , Johannes Heidecke , Alex Beutel",
+    "dateline": "[Submitted on 19 Apr 2024]"
+  },
+  "bibtex_links": []
+}

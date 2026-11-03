@@ -1,0 +1,111 @@
+{
+  "key": "barnett2005weakest",
+  "entry": {
+    "doi": "10.1145/1108792.1108813",
+    "year": "2005",
+    "pages": "82--87",
+    "journal": "Proceedings of the 6th ACM SIGPLAN-SIGSOFT workshop on Program analysis for software tools and engineering",
+    "title": "Weakest-precondition of unstructured programs",
+    "author": "Barnett, Mike and Leino, K. Rustan M.",
+    "ENTRYTYPE": "article",
+    "ID": "barnett2005weakest"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Weakest-precondition+of+unstructured+programs",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1145/1108792.1108813",
+      "status": 200,
+      "file": "barnett2005weakest.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/1108792.1108813",
+      "type": "proceedings-article",
+      "title": [
+        "Weakest-precondition of unstructured programs"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Mike",
+          "family": "Barnett",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Microsoft Research, Redmond, WA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "K. Rustan M.",
+          "family": "Leino",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft Research, Redmond, WA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 6th ACM SIGPLAN-SIGSOFT workshop on Program analysis for software tools and engineering"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "82-87",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            9,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2005,
+            9,
+            5
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2005,
+            9,
+            5
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "event": {
+        "name": "PASTE05: PASTE '05 - ACM SIGPLAN-SIGSOFT Workshop on Program Analysis for Software Tools and Engineering",
+        "location": "Lisbon Portugal",
+        "acronym": "PASTE05",
+        "sponsor": [
+          "SIGPLAN ACM Special Interest Group on Programming Languages",
+          "SIGSOFT ACM Special Interest Group on Software Engineering"
+        ]
+      },
+      "similarity": 1.0
+    }
+  ]
+}

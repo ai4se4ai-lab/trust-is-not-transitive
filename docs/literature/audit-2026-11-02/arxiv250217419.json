@@ -1,0 +1,323 @@
+{
+  "key": "arxiv250217419",
+  "entry": {
+    "url": "https://doi.org/10.1109/tpami.2025.3637037",
+    "doi": "10.1109/tpami.2025.3637037",
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "year": "2026",
+    "pages": "3335--3354",
+    "number": "3",
+    "volume": "48",
+    "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "title": "{From System 1 to System 2: A Survey of Reasoning Large Language Models}",
+    "author": "Zhang, Duzhen and Li, Zhong-Zhi and Zhang, Ming-Liang and Zhang, Jiaxin and Liu, Zengyan and Yao, Yuxuan and Xu, Haotian and Zheng, Junhao and Chen, Xiuyi and Zhang, Yingying and Yin, Fei and Dong, Jiahua and Guo, Zhijiang and Song, Le and Liu, Cheng-Lin",
+    "ENTRYTYPE": "article",
+    "ID": "arxiv250217419"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=From+System+1+to+System+2%3A+A+Survey+of+Reasoning+Large+Language+Models",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1109/tpami.2025.3637037",
+      "status": 200,
+      "file": "arxiv250217419.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/tpami.2025.3637037",
+      "type": "journal-article",
+      "title": [
+        "From System 1 to System 2: A Survey of Reasoning Large Language Models"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4280-431X",
+          "authenticated-orcid": false,
+          "given": "Duzhen",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Mohamed bin Zayed University of Artificial Intelligence, Abu Dhabi, UAE"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhong-Zhi",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Automation, Chinese Academy of Sciences, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ming-Liang",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Automation, Chinese Academy of Sciences, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiaxin",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Strathclyde, Glasgow, U.K."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3825-5474",
+          "authenticated-orcid": false,
+          "given": "Zengyan",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "City University of Hong Kong, Kowloon Tong, Hong Kong"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0009-3955-7272",
+          "authenticated-orcid": false,
+          "given": "Yuxuan",
+          "family": "Yao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "City University of Hong Kong, Kowloon Tong, Hong Kong"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Haotian",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Xiaohongshu Inc, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9124-2467",
+          "authenticated-orcid": false,
+          "given": "Junhao",
+          "family": "Zheng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "South China University of Technology, Guangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiuyi",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Automation, Chinese Academy of Sciences, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yingying",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "East China Normal University, Shanghai, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6412-9140",
+          "authenticated-orcid": false,
+          "given": "Fei",
+          "family": "Yin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Automation, Chinese Academy of Sciences, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8545-4447",
+          "authenticated-orcid": false,
+          "given": "Jiahua",
+          "family": "Dong",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Mohamed bin Zayed University of Artificial Intelligence, Abu Dhabi, UAE"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6232-5957",
+          "authenticated-orcid": false,
+          "given": "Zhijiang",
+          "family": "Guo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "City University of Hong Kong, Kowloon Tong, Hong Kong"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0345-9899",
+          "authenticated-orcid": false,
+          "given": "Le",
+          "family": "Song",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Mohamed bin Zayed University of Artificial Intelligence, Abu Dhabi, UAE"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6743-4175",
+          "authenticated-orcid": false,
+          "given": "Cheng-Lin",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Automation, Chinese Academy of Sciences, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+      ],
+      "volume": "48",
+      "issue": "3",
+      "page": "3335-3354",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}
