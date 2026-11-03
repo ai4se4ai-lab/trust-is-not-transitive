@@ -665,7 +665,7 @@ def e11():
         changed = rng.choice(list(report.order))
         variant = wired_engine_stat(h, table, change=changed)
         affected = affected_routes(base, variant)
-        rows.append({'routes': len(report.routes), 'affected': len(affected), 'stage': type(h.nodes[changed]).__name__})
+        rows.append({'nodes': len(report.order), 'routes': len(report.routes), 'affected': len(affected), 'stage': type(h.nodes[changed]).__name__})
         term = term_of(h)
         for _ in range(40):
             table.clear()
@@ -694,7 +694,13 @@ def e11():
     table = {}
     base = wired_engine_stat(devagent, table)
     matrix = {name: sorted(affected_routes(base, wired_engine_stat(devagent, table, change=name))) for name in check(devagent).order}
-    summary = {'random_hierarchies': len(rows), 'attempts': attempts, 'mean_routes': statistics.mean(r['routes'] for r in rows),
+    by_size = []
+    for low, high in [(2, 4), (5, 8), (9, 16), (17, 40)]:
+        band = [r for r in rows if low <= r['nodes'] <= high]
+        if band:
+            by_size.append({'min_nodes': low, 'max_nodes': high, 'hierarchies': len(band), 'mean_routes': statistics.mean(r['routes'] for r in band),
+                            'mean_affected': statistics.mean(r['affected'] for r in band), 'mean_fraction': statistics.mean(r['affected'] / r['routes'] for r in band)})
+    summary = {'random_hierarchies': len(rows), 'attempts': attempts, 'mean_routes': statistics.mean(r['routes'] for r in rows), 'by_size': by_size,
                'mean_fraction_affected': statistics.mean(r['affected'] / r['routes'] for r in rows),
                'median_fraction_affected': statistics.median(r['affected'] / r['routes'] for r in rows),
                'locality_checks': locality_checks, 'locality_violations': locality_violations, 'cascade': cascade, 'devagent_matrix': matrix}

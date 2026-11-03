@@ -444,6 +444,13 @@
 \newcommand{\resCascadeRoutes}{64}
 \newcommand{\resCascadeLast}{1.6}
 \newcommand{\resCascadeMean}{50.8}
+\newcommand{\resCascadeStale}{32.5}
+\newcommand{\resRecertSmallRoutes}{2.1}
+\newcommand{\resRecertSmallStale}{1.4}
+\newcommand{\resRecertSmallFraction}{64}
+\newcommand{\resRecertLargeRoutes}{7.2}
+\newcommand{\resRecertLargeStale}{1.3}
+\newcommand{\resRecertLargeFraction}{19}
 \newcommand{\resBoundLaws}{40}
 \newcommand{\resBoundCoverageRoutes}{0.949}
 \newcommand{\resBoundProductUnder}{18}
@@ -528,6 +535,18 @@ Taint & 2 & 2 & 2 \\
 64 & 193 & $1.8\times 10^{19}$ & 0.9 & 26.9 & skipped & 1521.0 \\
 256 & 769 & $1.2\times 10^{77}$ & 3.2 & 97.5 & skipped & 2690.0 \\
 }
+\newcommand{\resRecertTable}{%
+Random, 2--4 nodes & 81 & 2.1 & 1.4 & 64 \\
+Random, 5--8 nodes & 473 & 2.7 & 1.3 & 48 \\
+Random, 9--16 nodes & 1{,}046 & 4.1 & 1.2 & 29 \\
+Random, 17--40 nodes & 400 & 7.2 & 1.3 & 19 \\
+Cascade & 1 & 2 & 1.5 & 75 \\
+Cascade & 1 & 4 & 2.5 & 62 \\
+Cascade & 1 & 8 & 4.5 & 56 \\
+Cascade & 1 & 16 & 8.5 & 53 \\
+Cascade & 1 & 32 & 16.5 & 52 \\
+Cascade & 1 & 64 & 32.5 & 51 \\
+}
 \newcommand{\resCasesTable}{%
 DevAgent & accepted & accepted & 2 & rests on: \ob{human\_attentive}, \ob{miss\_rate\_bounded}, \ob{safe\_on\_this\_text} \\
 DevAgent, exposed judge & accepted & rejected & 1 & supply: \ob{safe\_on\_this\_text} \\
@@ -582,7 +601,7 @@ Conformal Arbitrage & accepted & rejected & 2 & supply: \ob{safe\_on\_this\_text
 \maketitle
 
 \begin{abstract}
-Large language model (LLM) agents increasingly rely on multiple guardrails to control their behavior, yet the safety of individual guardrails does not necessarily guarantee the safety of their composition. Existing approaches primarily evaluate guardrails independently, leaving uncertainty about whether their assumptions and guarantees remain valid when combined. To address this gap, we introduce a formal framework for specifying and verifying guardrail hierarchies through contract-based compositional reasoning. Our approach determines whether a hierarchy satisfies its safety requirements, identifies unsupported assumptions, and supports risk certification and incremental reassessment following system changes. We establish soundness and completeness guarantees, characterize the computational complexity of verification, and evaluate the approach through mechanized proof checks, implementation conformance testing, scalability experiments, and analyses of existing guardrail designs. The results support the correctness of the verification procedure, demonstrate efficient checking for common hierarchy structures, and reveal important assurance gaps in existing configurations. Overall, our work provides a principled foundation for reasoning about the safety of composed LLM guardrails while making explicit the assumptions on which their guarantees depend.
+Large language model (LLM) agents increasingly rely on multiple guardrails to control their behavior, yet the safety of individual guardrails does not necessarily guarantee the safety of their composition. Existing approaches primarily evaluate guardrails independently, leaving uncertainty about whether their assumptions and guarantees remain valid when combined. To address this gap, we introduce a formal framework for specifying and verifying guardrail hierarchies through contract-based compositional reasoning. In this framework, evidence holds only for the stage invocation that produced it and moves forward only through explicit gates. Our approach determines whether a hierarchy satisfies its safety requirements, identifies unsupported assumptions, and supports risk certification and incremental reassessment following system changes. We prove the composition check sound, and complete relative to stages constrained only by their contracts, and we show that it is near-linear for hierarchies without fact propagation and coNP-complete in general. We evaluate the approach through mechanized proof checks, implementation conformance testing, scalability experiments, a structural analysis of public guardrail configurations, and an exploratory analysis of published designs. The proofs and conformance tests support the correctness of the verification procedure, the measurements confirm near-linear checking of large fact-free hierarchies, and the design analysis shows which assumptions their safety claims would need to support. No LLM is run in this study, so the guarantees are conditional on the stated contracts and do not show that any agent became safer. Overall, our work provides a principled foundation for reasoning about the safety of composed LLM guardrails while making explicit the assumptions on which their guarantees depend.
 \end{abstract}
 
 
@@ -617,10 +636,10 @@ These questions arise because each stage's guarantee is conditional, and that is
 
 \textbf{Research questions.} We evaluate the framework through four questions.
 \begin{description}
-\item[\textbf{RQ1:}] Are the theoretical claims supported by valid proofs, and do the proofs depend on the definitions?
+\item[\textbf{RQ1:}] Are the core theorems mechanically proved, do those proofs depend on the definitions, and do the results proved on paper hold on tested instances?
 \item[\textbf{RQ2:}] Does the implementation conform to the formal semantics, and are reported violations supported by valid counterexamples?
-\item[\textbf{RQ3:}] How do verification and recertification costs grow with the size and complexity of hierarchies?
-\item[\textbf{RQ4:}] What do public guardrail configurations look like, and what composition issues does the framework find in them and in published designs?
+\item[\textbf{RQ3:}] How do verification cost and the scope of recertification grow with the size and structure of hierarchies?
+\item[\textbf{RQ4:}] What structures do public guardrail configurations have, and which composition assumptions does the framework expose in published designs?
 \end{description}
 
 \textbf{Scope.} We ask whether a composition is justified given its parts' contracts. We do not ask whether any LLM meets a contract, and we make no claim that any agent became safer. No LLM is run in the study: a theorem over all contract-respecting guards needs no sample of them. Against an adaptive attacker a statistical contract may simply be false, and Table~\ref{tab:attackers} states what then remains.
@@ -1760,6 +1779,13 @@ Across these laws, minimum simultaneous route coverage was \resPipelineCoverageR
 
 On E12's laws, the product of per-layer miss probabilities underestimated true risk on \resBoundProductUnder{} of \resBoundLaws{} laws, by up to a factor of \resBoundMaxUnder{}, and overestimated it on the remaining laws. The minimum per-layer miss probability underestimated risk on \resBoundMinUnder{} laws. The sum of route bounds averaged \resBoundSumRatio{} times a single whole-hierarchy bound.
 
+\subsection{Answer to RQ1}
+\label{sec:answer1}
+
+\textbf{Yes for the mechanized results, within a stated trusted base; the remaining results have paper proofs, some of which are corroborated by tests.} Z3 and cvc5 each proved all \resProofObligations{} proof goals (Table~\ref{tab:proofs}). No contradictory premises were found, although one premise-satisfiability check remains unresolved. All \resProofMutants{} definition mutants produced a countermodel, so the proofs depend on the intended rules, in particular the rule that evidence is not inherited. These results rest on the trusted base of Section~\ref{sec:mechanization}: no solver checks the script that applies the induction schema.
+
+The results listed there as paper proofs are not mechanized. For some of them, the tests agree with the claims. The reduction of Theorem~\ref{thm:complexity} matched brute-force SAT on all \resReductionFormulas{} formulas. Route coverage in E12 and E12b is consistent with the nominal level within sampling error. However, E12 fell below the protocol's original rule of coverage at least $0.95$ on \resBoundBelowNominal{} laws, and it passes only under the relaxed rule adopted after those results were seen. These tests raise confidence in the paper proofs on the instances tried; they do not replace those proofs.
+
 \subsection{RQ2: Does the Implementation Conform?}
 \label{sec:rq2}
 
@@ -1782,6 +1808,13 @@ We added those unit tests after inspecting survivors from earlier runs. The comb
 \textbf{E7.} We compared checker verdicts with a Z3 encoding of Fig.~\ref{fig:semantics} on \resMonoZthree{} hierarchies and with a PRISM model on \resMonoPrism{} hierarchies. In the PRISM model, each stage chooses which obligations hold. These comparisons produced \resMonoDisagreements{} disagreements.
 
 \textbf{E8.} Replaying \resContinuityCompared{} preserved decisions from an earlier study through the engine produced \resContinuityDisagreements{} disagreements.
+
+\subsection{Answer to RQ2}
+\label{sec:answer2}
+
+\textbf{Yes on everything tested, and every rejection witness was valid; this is evidence from testing, not a proof of conformance.} There were no disagreements in any comparison: all \resExhaustiveTotal{} small hierarchies in E3, \resDiffSpecs{} random specifications and \resDiffDecisions{} decisions in E4, the monolithic encodings in E7, and the preserved decisions in E8. None of the \resDiffAcceptingRuns{} sampled accepting runs on accepted specifications was unsafe. All \resDiffWitnesses{} rejection witnesses were accepted on the reported route, satisfied the contract relation, and violated the reported goal, so reported violations are backed by valid counterexamples.
+
+Three limits apply. The random differential oracle detected only \resMutationDifferential{} of \resMutationTotal{} mutants on its own, and much of the remaining detection came from crashes and from unit tests added after inspecting survivors. Of the surviving mutants, \resMutationGaps{} expose untested differences, in digest form and in the choice of rejection error. Finally, the checker and its oracles share one author, so they could share a misreading of the semantics.
 
 \subsection{RQ3: Scalability}
 \label{sec:rq3}
@@ -1829,12 +1862,39 @@ $d$ & Nodes & Paths & \tint{} & Z3 & Enum. & PRISM \\
 
 \textbf{E11.} Across \resRecertHierarchies{} random hierarchies, with an average of \resRecertMeanRoutes{} routes each, changing one randomly selected stage made certificates stale for an average of \resRecertMeanFraction\% of routes. In a cascade with \resCascadeRoutes{} routes, changing the last layer affected \resCascadeLast\% of routes, whereas the average across layer changes was \resCascadeMean\%. We performed \resLocalityChecks{} checks that acceptance events on unaffected routes remained unchanged and found \resLocalityViolations{} violations.
 
+Table~\ref{tab:recert} shows how this scope grows with size. We added this breakdown after the first results, without changing the sampled hierarchies. On random hierarchies, the mean number of stale routes stayed nearly flat, at \resRecertSmallStale{} for the smallest band and \resRecertLargeStale{} for the largest, while the mean number of routes rose from \resRecertSmallRoutes{} to \resRecertLargeRoutes{}. The stale fraction therefore fell from \resRecertSmallFraction\% to \resRecertLargeFraction\%. On cascades, the behavior differs: a change to layer $i$ of $q$ stales that layer's route and every later one, so the mean is $(q+1)/2$ routes, which is linear in $q$, and the stale fraction approaches one half. A change to the last layer stales one route at every size.
+
+\begin{table}[!t]
+\caption{Stale Routes After One Stage Changes (E11)}
+\label{tab:recert}
+\centering
+\footnotesize
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Family & Cases & Routes & Stale routes & Stale \% \\
+\midrule
+\resRecertTable
+\bottomrule
+\end{tabular}
+\\[2pt]
+\raggedright\scriptsize Means. Nodes are reachable nodes. Random: one stage changed per hierarchy. Cascade: every layer changed once.
+\end{table}
+
 These counts alone do not establish a cost advantage over whole-policy recertification, which can also replay stored labeled data. A fair comparison should measure the need for new labels. Any saving depends on where the change occurs, as the worked example in Section~\ref{sec:worked} illustrates.
+
+\subsection{Answer to RQ3}
+\label{sec:answer3}
+
+\textbf{Verification cost grows near-linearly for flow-free hierarchies and can grow exponentially with fact propagation; recertification scope depends more on structure than on size.} Theorem~\ref{thm:complexity}(a) proves the near-linear bound for flow-free graphs, and E9 agrees with it: the fitted node slopes of \resSlopeChain{} and \resSlopeDiamonds{} are below the protocol's threshold of $1.2$, and graphs with \resMillionNodes{} nodes took at most \resMillionSeconds{}~s. Path count does not drive this cost, as Table~\ref{tab:versus} shows. Two costs are higher. Storing a separate witness path for each finding grew quadratically, with a fitted slope of \resSlopeRejectedWitness{}. In general the problem is coNP-complete, and on the family built to force exact exploration the checker visited \resFlowStates{} states at depth \resFlowDepth{}, in \resFlowSeconds{}~s. At run time, a decision costs about \resStageMicroseconds{}~$\mu$s of engine time per stage.
+
+For recertification, the number of stale routes stayed nearly flat as random hierarchies grew, but it grew linearly with length in cascades, where a mean of \resCascadeStale{} of \resCascadeRoutes{} routes went stale (Table~\ref{tab:recert}). A change affects only the routes that pass through it, so early stages in long chains are the costly ones. No locality violation was found in \resLocalityChecks{} checks.
+
+This answer measures recertification by routes, not by time or new labels, so it does not show a cost saving over whole-policy recertification. The random hierarchies are also small, and the timing experiments E9 and E10 were not rerun after the last engine change, which added only constructor checks.
 
 \subsection{RQ4: Real Configurations and Published Designs}
 \label{sec:rq4}
 
-\textbf{E15.} We analyzed \resCorpusConfigs{} example configurations from a single commit of the NeMo Guardrails repository, including Colang 2 flows and agent hook rails. Rails were classified by name using the rules recorded in the artifact. Of these configurations, \resCorpusWithRails{} contain guardrails, using \resCorpusFlows{} distinct flows. The median configuration has \resCorpusMedian{} stages, and the largest has \resCorpusMax{}. The framework has no escalation construct: the rails within a stage form a chain in which any rail can stop the request.
+\textbf{E15.} We analyzed \resCorpusConfigs{} example configurations from a single commit of the NeMo Guardrails repository, including Colang 2 flows and agent hook rails. Rails were classified by name using the rules recorded in the artifact. Of these configurations, \resCorpusWithRails{} contain guardrails, using \resCorpusFlows{} distinct flows. The median configuration has \resCorpusMedian{} stages, and the largest has \resCorpusMax{}. The framework has no escalation construct: the rails within a stage form a chain in which any rail can stop the request. E15 describes structure only: we did not encode these configurations in \Hsl{}, so it yields no composition verdicts.
 
 The rail classification identified \resCorpusLlm{} prompted LLM tasks, \resCorpusService{} other models or external services, \resCorpusDeterministic{} deterministic rails, and \resCorpusTransforming{} rails that rewrite their inputs. The rewriting rails cannot be expressed in our language. Among the configurations, \resCorpusAllStat{} are entirely statistical, \resCorpusAllDet{} are entirely deterministic, and \resCorpusTool{} guard tool calls. The deterministic configurations include regex rails for coding-agent hooks.
 
@@ -1861,6 +1921,15 @@ NeMo Guardrails~\cite{arxiv231010501} and LlamaFirewall~\cite{arxiv250503574} re
 CaMeL~\cite{arxiv250318813} passes under both threat models, conditional on its residual assumptions, including a trusted query and adequate policies. Our model assumes that its planner reads only the trusted query. Classifying that planner's view as raw would cause rejection, so the verdict depends on the design's stated isolation premise. The encoding also simplifies the design: planning generates proposals, and policy failures may lead to a user query.
 
 Trust or Escalate~\cite{arxiv240718370} and Conformal Arbitrage~\cite{arxiv250600911} pass only under the benign threat model, which matches their intended setting. Neither is presented as a security mechanism. Trust or Escalate concerns the evaluation of model outputs, while Conformal Arbitrage uses one threshold and provides a whole-policy expected-loss guarantee. Our route model simplifies the latter guarantee.
+
+\subsection{Answer to RQ4}
+\label{sec:answer4}
+
+\textbf{Public configurations are mostly short chains of statistical stages, and the framework makes explicit the assumptions that published designs would need to support.} Of the \resCorpusConfigs{} configurations examined, \resCorpusWithRails{} contain guardrails, with a median of \resCorpusMedian{} stages and a maximum of \resCorpusMax{}. Of those, \resCorpusAllStat{} are entirely statistical, \resCorpusAllDet{} are entirely deterministic, and \resCorpusTool{} guard tool calls. None has an escalation construct or provides facts, and \resCorpusTransforming{} rails rewrite their inputs, which our language cannot express.
+
+Under the uniform encoding rule, Table~\ref{tab:cases} shows three outcomes for the published designs. LlamaFirewall and NeMo Guardrails are rejected under both threat models until \ob{miss\_rate\_bounded} and \ob{safe\_on\_this\_text} are supplied. Trust or Escalate and Conformal Arbitrage pass under the benign threat model only, which matches their intended setting. CaMeL passes under both, conditional on its residual assumptions, including a trusted query and adequate policies.
+
+These findings are exploratory. They describe assumptions under one encoding rule applied by one modeller, and a rejection does not show that a deployed system is insecure. The corpus comes from teaching examples of a single framework, so it does not characterize production deployments, and it received no composition verdicts. No practitioner has assessed whether these outputs are useful.
 
 \subsection{Failures, Deviations and Continuity}
 \label{sec:failures}
@@ -1939,7 +2008,7 @@ Layered A/G~\cite{arxiv260518672} & N & N & P & P & Y & N \\
 
 \section{Conclusion}
 
-In this study, we introduced a formal framework for specifying, verifying, and assessing the safety of composed guardrail hierarchies in large language model (LLM) agents. By modeling guardrails through explicit contracts and conditional evidence, our approach establishes when the guarantees of individual stages are sufficient to justify the safety requirements of the overall hierarchy, while identifying unsupported assumptions and providing counterexamples for invalid compositions. We established soundness and relative completeness of the composition check, characterized its computational complexity, and extended the framework with route-based risk assessment and incremental recertification to support the reassessment of modified configurations. The results support the correctness of the verification procedure, demonstrate efficient verification for common hierarchy structures, and illustrate how the framework can expose assurance gaps that are not apparent from evaluating individual guardrails in isolation. However, the framework establishes conditional guarantees about composition rather than the correctness of the underlying guardrails, and its practical effectiveness in supporting real-world deployment decisions remains to be investigated. Overall, this work provides a formal foundation for making the assumptions, dependencies, and limitations underlying LLM guardrail safety claims explicit, auditable, and amenable to systematic verification.
+In this study, we introduced a formal framework for specifying, verifying, and assessing the safety of composed guardrail hierarchies in large language model (LLM) agents. By modeling guardrails through explicit contracts and conditional evidence, our approach establishes when the guarantees of individual stages are sufficient to justify the safety requirements of the overall hierarchy, while identifying unsupported assumptions and providing counterexamples for invalid compositions. We established soundness and relative completeness of the composition check, characterized its computational complexity, and extended the framework with route-based risk assessment and incremental recertification to support the reassessment of modified configurations. The results support the correctness of the verification procedure within a stated trusted base, confirm near-linear checking for hierarchies without fact propagation, although the general problem is coNP-complete, and show that recertification scope depends more on a hierarchy's structure than on its size. An exploratory analysis of published designs illustrates how the framework can expose assumptions that are not apparent from evaluating individual guardrails in isolation. However, the framework establishes conditional guarantees about composition rather than the correctness of the underlying guardrails, the public configurations we examined received no composition verdicts, and its practical effectiveness in supporting real-world deployment decisions remains to be investigated. Overall, this work provides a formal foundation for making the assumptions, dependencies, and limitations underlying LLM guardrail safety claims explicit, auditable, and amenable to systematic verification.
 
 % % =====================================================================
 % \section{Conclusion}

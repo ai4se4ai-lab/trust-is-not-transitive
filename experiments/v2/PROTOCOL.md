@@ -83,3 +83,11 @@ Post hoc, like Amendments A and B. The engine now refuses budgets and confidence
 not probabilities, and component digests cover the slots of a direct callable instance. E5 targets
 the two new helpers, `_instance_state` and `_probability`. E3, E4, E5, E6 and E11-E14 were rerun on
 this code. Timing experiments E9 and E10 were not rerun.
+
+## Amendment D (2026-11-03, after an audit of the research questions)
+
+Post hoc, like the amendments above. E11 records reachable nodes per hierarchy and reports stale routes
+by size band, so that RQ3 can state how recertification scope grows. The sampled hierarchies are
+unchanged, and the rerun reproduced every earlier E11 value. The cascade data already existed; the
+paper now reports all of it. RQ1, RQ3 and RQ4 were reworded to match what the experiments measure:
+E15 gives no composition verdicts, and E11 measures routes, not recertification time or labels.

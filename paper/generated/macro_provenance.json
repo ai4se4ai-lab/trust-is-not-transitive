@@ -108,22 +108,29 @@
     "pointer": "/cascade/-1/last_layer_fraction#percent",
     "rendered": "1.6",
     "source": "results/v2/e11_recertification.json",
-    "source_sha256": "6604262f265077898852b33a78e62bdd2f97f4d74fe2d4061d6df337c979b031",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
     "value": 1.5625
   },
   "resCascadeMean": {
     "pointer": "/cascade/-1/mean_fraction#percent",
     "rendered": "50.8",
     "source": "results/v2/e11_recertification.json",
-    "source_sha256": "6604262f265077898852b33a78e62bdd2f97f4d74fe2d4061d6df337c979b031",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
     "value": 50.78125
   },
   "resCascadeRoutes": {
     "pointer": "/cascade/-1/routes",
     "rendered": "64",
     "source": "results/v2/e11_recertification.json",
-    "source_sha256": "6604262f265077898852b33a78e62bdd2f97f4d74fe2d4061d6df337c979b031",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
     "value": 64
+  },
+  "resCascadeStale": {
+    "pointer": "/cascade/-1#mean-stale-routes",
+    "rendered": "32.5",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 32.5
   },
   "resCheckerMaxEdges": {
     "pointer": "/studies/primary/checker/scalability#max-edges",
@@ -1851,14 +1858,14 @@
     "pointer": "/locality_checks",
     "rendered": "94{,}840",
     "source": "results/v2/e11_recertification.json",
-    "source_sha256": "6604262f265077898852b33a78e62bdd2f97f4d74fe2d4061d6df337c979b031",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
     "value": 94840
   },
   "resLocalityViolations": {
     "pointer": "/locality_violations",
     "rendered": "0",
     "source": "results/v2/e11_recertification.json",
-    "source_sha256": "6604262f265077898852b33a78e62bdd2f97f4d74fe2d4061d6df337c979b031",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
     "value": 0
   },
   "resMillionNodes": {
@@ -2943,22 +2950,64 @@
     "pointer": "/random_hierarchies",
     "rendered": "2000",
     "source": "results/v2/e11_recertification.json",
-    "source_sha256": "6604262f265077898852b33a78e62bdd2f97f4d74fe2d4061d6df337c979b031",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
     "value": 2000
+  },
+  "resRecertLargeFraction": {
+    "pointer": "/by_size/-1/mean_fraction#percent",
+    "rendered": "19",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 18.85987554112554
+  },
+  "resRecertLargeRoutes": {
+    "pointer": "/by_size/-1/mean_routes",
+    "rendered": "7.2",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 7.2425
+  },
+  "resRecertLargeStale": {
+    "pointer": "/by_size/-1/mean_affected",
+    "rendered": "1.3",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 1.275
   },
   "resRecertMeanFraction": {
     "pointer": "/mean_fraction_affected#percent",
     "rendered": "33",
     "source": "results/v2/e11_recertification.json",
-    "source_sha256": "6604262f265077898852b33a78e62bdd2f97f4d74fe2d4061d6df337c979b031",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
     "value": 32.797987012987015
   },
   "resRecertMeanRoutes": {
     "pointer": "/mean_routes",
     "rendered": "4.3",
     "source": "results/v2/e11_recertification.json",
-    "source_sha256": "6604262f265077898852b33a78e62bdd2f97f4d74fe2d4061d6df337c979b031",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
     "value": 4.325
+  },
+  "resRecertSmallFraction": {
+    "pointer": "/by_size/0/mean_fraction#percent",
+    "rendered": "64",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 64.19753086419753
+  },
+  "resRecertSmallRoutes": {
+    "pointer": "/by_size/0/mean_routes",
+    "rendered": "2.1",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 2.0987654320987654
+  },
+  "resRecertSmallStale": {
+    "pointer": "/by_size/0/mean_affected",
+    "rendered": "1.4",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 1.3580246913580247
   },
   "resReductionDisagreements": {
     "pointer": "/disagreements",

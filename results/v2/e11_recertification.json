@@ -1,5 +1,39 @@
 {
  "attempts": 9040,
+ "by_size": [
+  {
+   "hierarchies": 81,
+   "max_nodes": 4,
+   "mean_affected": 1.3580246913580247,
+   "mean_fraction": 0.6419753086419753,
+   "mean_routes": 2.0987654320987654,
+   "min_nodes": 2
+  },
+  {
+   "hierarchies": 473,
+   "max_nodes": 8,
+   "mean_affected": 1.276955602536998,
+   "mean_fraction": 0.4791050035236082,
+   "mean_routes": 2.6744186046511627,
+   "min_nodes": 5
+  },
+  {
+   "hierarchies": 1046,
+   "max_nodes": 16,
+   "mean_affected": 1.2036328871892925,
+   "mean_fraction": 0.28862674132750615,
+   "mean_routes": 4.128107074569789,
+   "min_nodes": 9
+  },
+  {
+   "hierarchies": 400,
+   "max_nodes": 40,
+   "mean_affected": 1.275,
+   "mean_fraction": 0.1885987554112554,
+   "mean_routes": 7.2425,
+   "min_nodes": 17
+  }
+ ],
  "cascade": [
   {
    "last_layer_fraction": 0.5,

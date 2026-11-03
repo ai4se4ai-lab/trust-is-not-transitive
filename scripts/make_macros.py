@@ -126,6 +126,13 @@ def verification(macro,macros,tables):
     put('LocalityChecks',d['locality_checks'],'/locality_checks');put('LocalityViolations',d['locality_violations'],'/locality_violations')
     c=d['cascade'][-1]
     put('CascadeRoutes',c['routes'],'/cascade/-1/routes');put('CascadeLast',100*c['last_layer_fraction'],'/cascade/-1/last_layer_fraction#percent','.1f');put('CascadeMean',100*c['mean_fraction'],'/cascade/-1/mean_fraction#percent','.1f')
+    put('CascadeStale',c['routes']*c['mean_fraction'],'/cascade/-1#mean-stale-routes','.1f')
+    small,large=d['by_size'][0],d['by_size'][-1]
+    put('RecertSmallRoutes',small['mean_routes'],'/by_size/0/mean_routes','.1f');put('RecertSmallStale',small['mean_affected'],'/by_size/0/mean_affected','.1f');put('RecertSmallFraction',100*small['mean_fraction'],'/by_size/0/mean_fraction#percent','.0f')
+    put('RecertLargeRoutes',large['mean_routes'],'/by_size/-1/mean_routes','.1f');put('RecertLargeStale',large['mean_affected'],'/by_size/-1/mean_affected','.1f');put('RecertLargeFraction',100*large['mean_fraction'],'/by_size/-1/mean_fraction#percent','.0f')
+    rows=[f"Random, {b['min_nodes']}--{b['max_nodes']} nodes & {b['hierarchies']:,} & {b['mean_routes']:.1f} & {b['mean_affected']:.1f} & {100*b['mean_fraction']:.0f} \\\\".replace(',','{,}').replace('Random{,}','Random,') for b in d['by_size']]
+    rows+=[f"Cascade & 1 & {b['routes']} & {b['routes']*b['mean_fraction']:.1f} & {100*b['mean_fraction']:.0f} \\\\" for b in d['cascade']]
+    tables['recert']='\n'.join(rows)
     d,put=group('e12_route_bounds')
     put('BoundLaws',d['laws'],'/laws')
     put('BoundCoverageRoutes',d['min_coverage_routes'],'/min_coverage_routes','.3f')
