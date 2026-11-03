@@ -1,0 +1,120 @@
+{
+  "id": "fallback-review",
+  "title": "A fallback reviewer inherits no evidence",
+  "audience": "Teams building agents with primary and fallback reviewers",
+  "problem": "The primary reviewer has declared contract evidence. Escalation reaches a fallback with no evidence for its own invocation.",
+  "repair": "Supply independently justified evidence for the fallback contract. This repaired model explicitly assumes that evidence; it does not validate either reviewer.",
+  "prompt": "Use tint-review and get_example(\"fallback-review\"). Explain why the first reviewer's evidence does not transfer to the fallback. Check both versions and list remaining assumptions.",
+  "broken": {
+    "version": "hsl-1",
+    "goals": [
+      "policy_compliant"
+    ],
+    "obligations": [
+      {
+        "name": "contract_valid_here",
+        "kind": "assumed"
+      }
+    ],
+    "layers": [
+      {
+        "name": "primary",
+        "scope": [
+          "policy_compliant"
+        ],
+        "requires": [
+          "contract_valid_here"
+        ],
+        "view": "raw"
+      },
+      {
+        "name": "fallback",
+        "scope": [
+          "policy_compliant"
+        ],
+        "requires": [
+          "contract_valid_here"
+        ],
+        "view": "raw"
+      }
+    ],
+    "entry": "review",
+    "nodes": [
+      {
+        "type": "guard",
+        "id": "review",
+        "layer": "primary",
+        "evidence": [
+          "contract_valid_here"
+        ],
+        "next": "second_review"
+      },
+      {
+        "type": "guard",
+        "id": "second_review",
+        "layer": "fallback",
+        "evidence": [],
+        "next": null
+      }
+    ]
+  },
+  "repaired": {
+    "version": "hsl-1",
+    "goals": [
+      "policy_compliant"
+    ],
+    "obligations": [
+      {
+        "name": "contract_valid_here",
+        "kind": "assumed"
+      }
+    ],
+    "layers": [
+      {
+        "name": "primary",
+        "scope": [
+          "policy_compliant"
+        ],
+        "requires": [
+          "contract_valid_here"
+        ],
+        "view": "raw"
+      },
+      {
+        "name": "fallback",
+        "scope": [
+          "policy_compliant"
+        ],
+        "requires": [
+          "contract_valid_here"
+        ],
+        "view": "raw"
+      }
+    ],
+    "entry": "review",
+    "nodes": [
+      {
+        "type": "guard",
+        "id": "review",
+        "layer": "primary",
+        "evidence": [
+          "contract_valid_here"
+        ],
+        "next": "second_review"
+      },
+      {
+        "type": "guard",
+        "id": "second_review",
+        "layer": "fallback",
+        "evidence": [
+          "contract_valid_here"
+        ],
+        "next": null
+      }
+    ]
+  },
+  "expected": {
+    "broken": false,
+    "repaired": true
+  }
+}

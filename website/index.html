@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Review the trust assumptions in your agent pipeline. Connect TINT's composition checker to Codex, Claude Code and other MCP clients.">
+  <meta name="theme-color" content="#f4f5ef">
+  <title>TINT — Trust Is Not Transitive</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav wrap">
+  <a class="brand" href="#"><img src="./favicon.svg" alt="" width="32" height="32">TINT<span>AI4SE4AI LAB</span></a>
+  <nav aria-label="Main navigation"><a href="#why">Why TINT</a><a href="#examples">Examples</a><a href="#connect">Connect</a><a href="#reference">Tools</a></nav>
+  <div class="nav-end"><button id="theme" aria-label="Switch to dark theme" type="button">◐</button><a class="source" href="https://github.com/ai4se4ai-lab/trust-is-not-transitive">GitHub ↗</a></div>
+</header>
+<main id="main">
+  <section class="hero wrap">
+    <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> COMPOSITION CHECKER / MCP + AGENT SKILL</p>
+      <h1>Another guard.<br>Another assumption.<br><em>Does it compose?</em></h1>
+      <p class="intro">Ask your agent to find the trust gaps between your guardrails. TINT checks every accepting route against the contracts you declare—and shows where the reasoning breaks.</p>
+      <div class="actions"><a class="button primary" href="#connect">Connect your agent <span>↗</span></a><a class="button" href="#examples">Explore a counterexample ↓</a></div>
+      <p class="compat">LOCAL STDIO <b>·</b> Codex <b>·</b> Claude Code <b>·</b> Cursor <b>·</b> VS Code</p>
+    </div>
+    <div class="hero-diagram" aria-label="Primary reviewer escalates to a fallback. Evidence at the primary does not establish evidence at the fallback.">
+      <div class="diagram-header"><span>PIPELINE / REVIEW</span><span class="chip">ILLUSTRATIVE MODEL</span></div>
+      <div class="node"><span class="node-symbol">01</span><div><small>PRIMARY REVIEWER</small><strong>Contract evidence declared</strong></div><span class="node-mark">✓</span></div>
+      <div class="edge"><span>escalate</span><span>↓</span><span>evidence stays local</span></div>
+      <div class="node missing"><span class="node-symbol">02</span><div><small>FALLBACK REVIEWER</small><strong>What supports this contract?</strong></div><span class="node-mark">?</span></div>
+      <div class="edge last"><span>accept</span><span>↓</span></div>
+      <div class="finding"><span class="finding-tag">OBLIGATION MISSING</span><code>review → second_review</code><p>Adding a reviewer does not transfer evidence to it.</p></div>
+      <a href="#examples">Inspect the actual checker output <span>↗</span></a>
+    </div>
+  </section>
+  <div class="principle"><div class="wrap"><span>THE QUESTION TINT ANSWERS</span><p>Under these contracts, does <em>every accepting route</em> cover every goal?</p></div></div>
+
+  <section id="why" class="wrap section">
+    <p class="eyebrow">01 / A PRACTICAL DESIGN REVIEW</p>
+    <div class="section-heading"><h2>Find the gap<br><em>between the guards.</em></h2><p>A second opinion, an approval step or a path check can look reassuring in a diagram. TINT makes their contribution—and their assumptions—explicit.</p></div>
+    <div class="use-grid">
+      <article><span class="number">01 / AGENT DEVELOPERS</span><h3>Review a fallback chain.</h3><p>Find the invocation that lacks its own contract evidence. Avoid treating an upstream check as evidence for a different reviewer.</p><a href="#examples" data-choose="fallback-review">Explore reviewer evidence ↗</a></article>
+      <article><span class="number">02 / TOOL BUILDERS</span><h3>Place an action boundary.</h3><p>See which accepting paths lack a workspace constraint. Model a deterministic gate and inspect the claims its implementation must uphold.</p><a href="#examples" data-choose="workspace-write">Explore file-write boundaries ↗</a></article>
+      <article><span class="number">03 / WORKFLOW OWNERS</span><h3>Catch a branch bypass.</h3><p>An approval on one branch does not protect the other. Inspect a witness path before shipping a change to the workflow.</p><a href="#examples" data-choose="approval-branch">Explore approval routing ↗</a></article>
+    </div>
+    <div class="boundary-note"><strong>The model is part of the review.</strong><p>Your agent translates your design into HSL. You inspect that mapping. A passing verdict depends on the contracts, evidence and trusted gate claims actually being true.</p></div>
+  </section>
+
+  <section id="examples" class="lab-section section">
+    <div class="wrap"><p class="eyebrow">02 / FOLLOW A COUNTEREXAMPLE</p>
+      <div class="section-heading"><h2>A broken route.<br><em>A reviewable repair.</em></h2><p>Choose a scenario and compare both specifications. These observations come from the Python checker; the browser displays saved results.</p></div>
+      <div class="lab">
+        <div class="lab-top"><label for="scenario">Scenario</label><select id="scenario"><option value="fallback-review">Fallback reviewer</option><option value="workspace-write">Workspace file write</option><option value="approval-branch">Approval branch</option></select><span class="chip">PRECOMPUTED CHECKER OUTPUT</span></div>
+        <div class="lab-body"><aside><p class="eyebrow" id="example-audience">AGENT PIPELINE REVIEW</p><h3 id="example-title">A fallback reviewer inherits no evidence</h3><p id="example-problem">Load an example to inspect the missing premise.</p><div class="repair-note"><strong>Proposed repair</strong><p id="example-repair">Each repaired model discloses its remaining premises.</p></div><a id="example-download" href="./examples/fallback-review.json" download>Download the example JSON ↗</a></aside>
+          <div class="lab-output"><div class="tabs" role="tablist" aria-label="Example version"><button id="broken-tab" type="button" role="tab" aria-controls="example-panel" aria-selected="true" tabindex="0" data-variant="broken">Before / broken</button><button id="repaired-tab" type="button" role="tab" aria-controls="example-panel" aria-selected="false" tabindex="-1" data-variant="repaired">After / repaired</button></div>
+          <div id="example-panel" role="tabpanel" aria-labelledby="broken-tab" tabindex="0"><div class="verdict-row"><strong id="verdict">Loading observations…</strong><span id="route-count"></span></div><p id="example-explanation" aria-live="polite"></p><details open><summary>Checker report</summary><pre id="report-code"></pre></details><details><summary>Input specification / HSL JSON</summary><pre id="spec-code"></pre></details><details id="witness-details"><summary>Abstract countermodel</summary><pre id="witness-code"></pre></details></div></div>
+        </div><div class="lab-bottom"><span>No server connection or live verification in this browser.</span><a href="./data/examples.json" download>Download all observations ↓</a></div>
+      </div>
+      <div class="prompt-box"><span class="eyebrow">TRY THIS WITH YOUR AGENT</span><p id="example-prompt">Use tint-review and load the fallback-review example.</p><button type="button" data-copy="example-prompt">Copy prompt</button></div>
+      <noscript><p>The interactive examples need JavaScript. <a href="./data/examples.json">Read the specifications and checker observations as JSON</a>, or <a href="./connect.md">read the connection guide</a>.</p></noscript>
+    </div>
+  </section>
+
+  <section id="connect" class="wrap section">
+    <p class="eyebrow">03 / CONNECT IN YOUR OWN ENVIRONMENT</p>
+    <div class="section-heading"><h2>Your agent.<br><em>One shared checker.</em></h2><p>Run TINT locally with Python 3.11+. The MCP server supplies tools; the portable skill guides the review. No API key or GPU is needed by TINT.</p></div>
+    <div class="setup-grid"><div class="setup-step"><span class="number">01 / INSTALL THE SERVER</span><h3>Clone. Create an environment.</h3><p>Use a separate environment to keep research dependencies and agent tooling distinct.</p><div class="code-head"><label for="os">Operating system</label><select id="os"><option value="unix">macOS / Linux</option><option value="windows">Windows PowerShell</option></select><button data-copy="install-code" type="button">Copy</button></div><pre id="install-code">git clone https://github.com/ai4se4ai-lab/trust-is-not-transitive.git
+cd trust-is-not-transitive
+python -m venv .venv
+.venv/bin/python -m pip install -e ".[mcp]"</pre><p class="fine">Install from source; no published PyPI package is assumed. Pin a repository commit when reproducing results.</p></div>
+    <div class="setup-step"><span class="number">02 / REGISTER THE MCP SERVER</span><h3>Choose your client.</h3><p>Use the absolute interpreter path printed below. It keeps the server available when the agent opens a different project.</p><div class="code-head"><label for="client">Agent client</label><select id="client"><option value="codex">Codex</option><option value="claude">Claude Code</option><option value="cursor">Cursor / Claude Desktop</option><option value="vscode">VS Code / Copilot</option></select><button data-copy="connect-code" type="button">Copy</button></div><pre id="connect-code">codex mcp add tint -- /absolute/path/to/.venv/bin/python -m tint.mcp.server
+codex mcp list</pre><p class="fine" id="client-note">Replace the example interpreter path with your actual absolute path.</p></div></div>
+    <div class="skill-panel"><div><span class="number">03 / ADD THE REVIEW WORKFLOW</span><h3>Install the complete skill folder.</h3><p>Copy <code>skills/tint-review/</code> from the clone to your target project's <code>.agents/skills/</code> for Codex or <code>.claude/skills/</code> for Claude Code. Keep its references and metadata. The skill and server are installed separately.</p></div><div><p>Restart your agent session and ask:</p><blockquote>Use tint-review to check our guardrail pipeline. Show the model, explain any counterexample, propose a repair and recheck. List the assumptions that remain.</blockquote><a href="./connect.md">Full setup & troubleshooting ↗</a><span class="link-separator"> / </span><a href="./skill/SKILL.md">Read the skill ↗</a></div></div>
+    <p class="connection-note"><span class="dot"></span> Connection test: ask your agent to call <code>list_examples</code>. This website's URL is documentation, not an MCP endpoint.</p>
+  </section>
+
+  <section id="reference" class="reference-section section"><div class="wrap"><p class="eyebrow">04 / SMALL TOOLS, EXPLICIT RESULTS</p><div class="section-heading"><h2>From a diagram<br><em>to a checked argument.</em></h2><p>All analysis operates on inline HSL JSON. No supplied rules execute, no file paths are opened, and no real tool actions are performed.</p></div>
+    <div class="table-scroll"><table><thead><tr><th scope="col">Tool</th><th scope="col">What it gives your agent</th></tr></thead><tbody>
+      <tr><td><code>list_examples / get_example</code></td><td>Complete starting models, proposed repairs and practical prompts.</td></tr>
+      <tr><td><code>check_hierarchy</code></td><td>A composition verdict, findings, accepting routes and declared assumptions.</td></tr>
+      <tr><td><code>explain_finding</code></td><td>An abstract countermodel for a behavioural finding, or a structural error.</td></tr>
+      <tr><td><code>necessary_obligations</code></td><td>Assumed evidence whose individual removal breaks a passing model.</td></tr>
+      <tr><td><code>compare_hierarchies</code></td><td>Conservative route impact from specification changes; no runtime freshness verdict.</td></tr>
+    </tbody></table></div>
+    <div class="reference-links"><a href="./guide.md">HSL schema & semantics ↗</a><a href="./llms.txt">Agent-readable index ↗</a><a href="https://github.com/ai4se4ai-lab/trust-is-not-transitive/blob/main/paper/main.pdf">Research manuscript ↗</a></div>
+    <div class="limits"><h3>Know what a passing check means.</h3><div><p>It establishes composition under the declared premises. It does not prove a learned guard accurate, validate calibration, or enforce the agent's actions. A deterministic gate remains a claim about a real implementation.</p><p>The local service accepts up to 128 nodes and 32 goals, layers and obligations each, with a 128 KiB input limit and a 10-second analysis timeout. An error or timeout means no verdict. Provided facts can require exponential analysis.</p><p>The research study evaluates the calculus and its implementation. This integration does not establish effectiveness on live agents. Runtime protection requires a trusted host and complete mediation.</p></div></div>
+  </div></section>
+  <section class="wrap section faq"><p class="eyebrow">05 / BEFORE YOU START</p><h2>A few practical questions.</h2>
+    <details><summary>Do I need to move my agent into this repository?</summary><p>No. Install the server once in its own clone, register its absolute Python path, and copy the skill into the project you want to review. Supply a model of that project's pipeline through the MCP tools.</p></details>
+    <details><summary>Can I paste a prompt and ask whether it is safe?</summary><p>TINT is a checker for declared guardrail composition. It is not a prompt classifier. Your agent first needs an explicit model of goals, contracts, evidence and routing.</p></details>
+    <details><summary>Does the fallback repair prove that the reviewers are reliable?</summary><p>No. It makes the required evidence explicit at both invocations. The repaired example still assumes the contracts hold there. Inspect the residual assumptions in the report.</p></details>
+    <details><summary>Is there a public hosted MCP endpoint?</summary><p>This release supplies a local stdio server. GitHub Pages hosts these instructions and examples. Public HTTP hosting would need a separate service with authentication, resource controls and deployment operations.</p></details>
+    <details><summary>How do I check my own architecture?</summary><p>Describe the policy goals, each guard's contract, the evidence supporting it and all branches. Ask your agent to follow tint-review, show you its HSL mapping, call the checker and explain the remaining assumptions.</p></details>
+  </section>
+</main>
+<footer class="wrap"><a class="brand" href="#">TINT<span>TRUST IS NOT TRANSITIVE</span></a><p>A research artifact from AI4SE4AI Lab.</p><div><a href="https://github.com/ai4se4ai-lab/trust-is-not-transitive">Source ↗</a><a href="./connect.md">Documentation ↗</a><a href="./LICENSE">License</a></div></footer>
+<div id="copy-status" class="sr-only" role="status" aria-live="polite"></div>
+</body>
+</html>

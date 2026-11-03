@@ -1,0 +1,90 @@
+{
+  "id": "approval-branch",
+  "title": "An approval on one branch is not enough",
+  "audience": "Teams reviewing deployment or payment approval workflows",
+  "problem": "The policy requires approval for every accepting action, but the non-production branch bypasses the approval gate.",
+  "repair": "Route both branches through approval. If only production needs approval, model that different policy explicitly rather than silently weakening this goal.",
+  "prompt": "Use tint-review and get_example(\"approval-branch\"). Find the path bypassing approval and recheck the repaired branch structure.",
+  "broken": {
+    "version": "hsl-1",
+    "goals": [
+      "approved"
+    ],
+    "obligations": [],
+    "layers": [
+      {
+        "name": "finish",
+        "scope": [],
+        "requires": [],
+        "view": "metadata"
+      }
+    ],
+    "entry": "dispatch",
+    "nodes": [
+      {
+        "type": "switch",
+        "id": "dispatch",
+        "condition": "is_production",
+        "then": "approval",
+        "otherwise": "accept"
+      },
+      {
+        "type": "gate",
+        "id": "approval",
+        "rule": "verify_scoped_approval",
+        "establishes": "approved",
+        "next": "accept"
+      },
+      {
+        "type": "guard",
+        "id": "accept",
+        "layer": "finish",
+        "evidence": [],
+        "next": null
+      }
+    ]
+  },
+  "repaired": {
+    "version": "hsl-1",
+    "goals": [
+      "approved"
+    ],
+    "obligations": [],
+    "layers": [
+      {
+        "name": "finish",
+        "scope": [],
+        "requires": [],
+        "view": "metadata"
+      }
+    ],
+    "entry": "dispatch",
+    "nodes": [
+      {
+        "type": "switch",
+        "id": "dispatch",
+        "condition": "is_production",
+        "then": "approval",
+        "otherwise": "approval"
+      },
+      {
+        "type": "gate",
+        "id": "approval",
+        "rule": "verify_scoped_approval",
+        "establishes": "approved",
+        "next": "accept"
+      },
+      {
+        "type": "guard",
+        "id": "accept",
+        "layer": "finish",
+        "evidence": [],
+        "next": null
+      }
+    ]
+  },
+  "expected": {
+    "broken": false,
+    "repaired": true
+  }
+}

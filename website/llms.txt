@@ -1,0 +1,20 @@
+# TINT — Trust Is Not Transitive
+
+TINT is a research composition checker for explicitly declared guardrail contracts.
+This static website is documentation, not an MCP endpoint.
+
+- [Connect clients](./connect.md): local stdio setup for Codex, Claude Code, Cursor and VS Code.
+- [Tool semantics and HSL](./guide.md): schema, limits and interpretation.
+- [Portable skill](./skill/SKILL.md): pipeline review workflow; keep its references with it.
+- [Examples and checker observations](./data/examples.json): broken/repaired specifications and precomputed outputs.
+- [Source repository](https://github.com/ai4se4ai-lab/trust-is-not-transitive)
+
+Install from a clone using python -m pip install -e ".[mcp]" in a dedicated environment.
+Launch that environment's Python with -m tint.mcp.server over stdio.
+Tools: list_examples, get_example, check_hierarchy, explain_finding,
+necessary_obligations, compare_hierarchies. Resource: tint://guide.
+Prompt: review_guardrail_pipeline.
+
+A passing verdict is conditional on declared premises. No real guard accuracy,
+calibration, runtime certificate or action safety is established by this service.
+This advisory integration does not mediate an assistant's actions.

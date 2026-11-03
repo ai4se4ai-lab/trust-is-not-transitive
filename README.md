@@ -41,6 +41,20 @@ calibration and finite-family synthesis. Its lexical scorer and judges are
 explicit test doubles. The in-memory sandbox executes no OS shell or network
 request and is not a production guard for arbitrary tools.
 
+## Agent integration and website
+
+Use the optional local MCP server and portable `tint-review` skill to check a
+declared guardrail pipeline from Codex, Claude Code or another MCP client.
+Install with `python -m pip install -e ".[mcp]"`; see [connection instructions and
+practical examples](docs/MCP.md). The service is advisory composition analysis,
+conditional on declared premises; it does not enforce real tool actions.
+
+The [website source](website/README.md) includes installation instructions and
+three examples with checker-generated observations. The `website` GitHub Actions
+workflow tests/builds it and deploys the default branch to GitHub Pages after
+Pages is configured. Expected URL after deployment:
+https://ai4se4ai-lab.github.io/trust-is-not-transitive/.
+
 ## Repository layout and reproduction
 
 The active artifact stays at the root: `src/` and `tests/` contain the library

@@ -1,0 +1,5 @@
+interface:
+  display_name: "TINT Pipeline Review"
+  short_description: "Check guardrail composition and explain trust gaps"
+  brand_color: "#176B51"
+  default_prompt: "Use $tint-review to model this guardrail pipeline, check its composition, and explain a concrete repair."

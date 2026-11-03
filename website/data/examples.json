@@ -1,0 +1,517 @@
+[
+  {
+    "audience": "Teams reviewing deployment or payment approval workflows",
+    "broken": {
+      "entry": "dispatch",
+      "goals": [
+        "approved"
+      ],
+      "layers": [
+        {
+          "name": "finish",
+          "requires": [],
+          "scope": [],
+          "view": "metadata"
+        }
+      ],
+      "nodes": [
+        {
+          "condition": "is_production",
+          "id": "dispatch",
+          "otherwise": "accept",
+          "then": "approval",
+          "type": "switch"
+        },
+        {
+          "establishes": "approved",
+          "id": "approval",
+          "next": "accept",
+          "rule": "verify_scoped_approval",
+          "type": "gate"
+        },
+        {
+          "evidence": [],
+          "id": "accept",
+          "layer": "finish",
+          "next": null,
+          "type": "guard"
+        }
+      ],
+      "obligations": [],
+      "version": "hsl-1"
+    },
+    "expected": {
+      "broken": false,
+      "repaired": true
+    },
+    "id": "approval-branch",
+    "observations": {
+      "broken": {
+        "checked": [],
+        "claims": [
+          [
+            "approval",
+            "approved"
+          ]
+        ],
+        "construction": [],
+        "exact_states": 0,
+        "findings": [
+          {
+            "code": "coverage",
+            "detail": "approved",
+            "goal": "approved",
+            "node": "accept",
+            "path": [
+              "dispatch",
+              "accept"
+            ]
+          }
+        ],
+        "limitation": "Composition verdict under the declared contracts and evidence. Evidence is a declaration, not a verified fact. No real guard, tool action, runtime certificate or calibration data is validated by this service.",
+        "ok": false,
+        "order": [
+          "dispatch",
+          "approval",
+          "accept"
+        ],
+        "residual": [],
+        "routes": [
+          "accept"
+        ],
+        "service_version": "1",
+        "specification_sha256": "b075771e420c2f8cb4fa7bd632c36e252dbfcff96010b6bc98b5d31080ac2e52",
+        "warnings": []
+      },
+      "repaired": {
+        "checked": [],
+        "claims": [
+          [
+            "approval",
+            "approved"
+          ]
+        ],
+        "construction": [],
+        "exact_states": 0,
+        "findings": [],
+        "limitation": "Composition verdict under the declared contracts and evidence. Evidence is a declaration, not a verified fact. No real guard, tool action, runtime certificate or calibration data is validated by this service.",
+        "ok": true,
+        "order": [
+          "dispatch",
+          "approval",
+          "accept"
+        ],
+        "residual": [],
+        "routes": [
+          "accept"
+        ],
+        "service_version": "1",
+        "specification_sha256": "eac93088f37df7c026b8203b1dc0b81dd45f4b70dc9c382f8d4ab826a47d52ce",
+        "warnings": []
+      }
+    },
+    "problem": "The policy requires approval for every accepting action, but the non-production branch bypasses the approval gate.",
+    "prompt": "Use tint-review and get_example(\"approval-branch\"). Find the path bypassing approval and recheck the repaired branch structure.",
+    "repair": "Route both branches through approval. If only production needs approval, model that different policy explicitly rather than silently weakening this goal.",
+    "repaired": {
+      "entry": "dispatch",
+      "goals": [
+        "approved"
+      ],
+      "layers": [
+        {
+          "name": "finish",
+          "requires": [],
+          "scope": [],
+          "view": "metadata"
+        }
+      ],
+      "nodes": [
+        {
+          "condition": "is_production",
+          "id": "dispatch",
+          "otherwise": "approval",
+          "then": "approval",
+          "type": "switch"
+        },
+        {
+          "establishes": "approved",
+          "id": "approval",
+          "next": "accept",
+          "rule": "verify_scoped_approval",
+          "type": "gate"
+        },
+        {
+          "evidence": [],
+          "id": "accept",
+          "layer": "finish",
+          "next": null,
+          "type": "guard"
+        }
+      ],
+      "obligations": [],
+      "version": "hsl-1"
+    },
+    "title": "An approval on one branch is not enough",
+    "witness": {
+      "branch": {
+        "dispatch": false
+      },
+      "failing_obligation": null,
+      "holds": {
+        "accept": [],
+        "dispatch": []
+      },
+      "passes": {},
+      "safe": [],
+      "verdict": {
+        "accept": "acc"
+      },
+      "violated": "approved"
+    }
+  },
+  {
+    "audience": "Teams building agents with primary and fallback reviewers",
+    "broken": {
+      "entry": "review",
+      "goals": [
+        "policy_compliant"
+      ],
+      "layers": [
+        {
+          "name": "primary",
+          "requires": [
+            "contract_valid_here"
+          ],
+          "scope": [
+            "policy_compliant"
+          ],
+          "view": "raw"
+        },
+        {
+          "name": "fallback",
+          "requires": [
+            "contract_valid_here"
+          ],
+          "scope": [
+            "policy_compliant"
+          ],
+          "view": "raw"
+        }
+      ],
+      "nodes": [
+        {
+          "evidence": [
+            "contract_valid_here"
+          ],
+          "id": "review",
+          "layer": "primary",
+          "next": "second_review",
+          "type": "guard"
+        },
+        {
+          "evidence": [],
+          "id": "second_review",
+          "layer": "fallback",
+          "next": null,
+          "type": "guard"
+        }
+      ],
+      "obligations": [
+        {
+          "kind": "assumed",
+          "name": "contract_valid_here"
+        }
+      ],
+      "version": "hsl-1"
+    },
+    "expected": {
+      "broken": false,
+      "repaired": true
+    },
+    "id": "fallback-review",
+    "observations": {
+      "broken": {
+        "checked": [],
+        "claims": [],
+        "construction": [],
+        "exact_states": 0,
+        "findings": [
+          {
+            "code": "obligation",
+            "detail": "contract_valid_here",
+            "goal": "policy_compliant",
+            "node": "second_review",
+            "path": [
+              "review",
+              "second_review"
+            ]
+          }
+        ],
+        "limitation": "Composition verdict under the declared contracts and evidence. Evidence is a declaration, not a verified fact. No real guard, tool action, runtime certificate or calibration data is validated by this service.",
+        "ok": false,
+        "order": [
+          "review",
+          "second_review"
+        ],
+        "residual": [
+          [
+            "review",
+            "contract_valid_here"
+          ]
+        ],
+        "routes": [
+          "review",
+          "second_review"
+        ],
+        "service_version": "1",
+        "specification_sha256": "e35885ccec65285c77ab2f51edfcc9fa1282c62dc6155d0fac663b443a34800d",
+        "warnings": []
+      },
+      "repaired": {
+        "checked": [],
+        "claims": [],
+        "construction": [],
+        "exact_states": 0,
+        "findings": [],
+        "limitation": "Composition verdict under the declared contracts and evidence. Evidence is a declaration, not a verified fact. No real guard, tool action, runtime certificate or calibration data is validated by this service.",
+        "ok": true,
+        "order": [
+          "review",
+          "second_review"
+        ],
+        "residual": [
+          [
+            "review",
+            "contract_valid_here"
+          ],
+          [
+            "second_review",
+            "contract_valid_here"
+          ]
+        ],
+        "routes": [
+          "review",
+          "second_review"
+        ],
+        "service_version": "1",
+        "specification_sha256": "b16ead34d2aadb0f2ecc2905c396cd26c83ec464fd548a9c0262c84af881910c",
+        "warnings": []
+      }
+    },
+    "problem": "The primary reviewer has declared contract evidence. Escalation reaches a fallback with no evidence for its own invocation.",
+    "prompt": "Use tint-review and get_example(\"fallback-review\"). Explain why the first reviewer's evidence does not transfer to the fallback. Check both versions and list remaining assumptions.",
+    "repair": "Supply independently justified evidence for the fallback contract. This repaired model explicitly assumes that evidence; it does not validate either reviewer.",
+    "repaired": {
+      "entry": "review",
+      "goals": [
+        "policy_compliant"
+      ],
+      "layers": [
+        {
+          "name": "primary",
+          "requires": [
+            "contract_valid_here"
+          ],
+          "scope": [
+            "policy_compliant"
+          ],
+          "view": "raw"
+        },
+        {
+          "name": "fallback",
+          "requires": [
+            "contract_valid_here"
+          ],
+          "scope": [
+            "policy_compliant"
+          ],
+          "view": "raw"
+        }
+      ],
+      "nodes": [
+        {
+          "evidence": [
+            "contract_valid_here"
+          ],
+          "id": "review",
+          "layer": "primary",
+          "next": "second_review",
+          "type": "guard"
+        },
+        {
+          "evidence": [
+            "contract_valid_here"
+          ],
+          "id": "second_review",
+          "layer": "fallback",
+          "next": null,
+          "type": "guard"
+        }
+      ],
+      "obligations": [
+        {
+          "kind": "assumed",
+          "name": "contract_valid_here"
+        }
+      ],
+      "version": "hsl-1"
+    },
+    "title": "A fallback reviewer inherits no evidence",
+    "witness": {
+      "branch": {},
+      "failing_obligation": "contract_valid_here",
+      "holds": {
+        "review": [
+          "contract_valid_here"
+        ],
+        "second_review": []
+      },
+      "passes": {},
+      "safe": [],
+      "verdict": {
+        "review": "esc",
+        "second_review": "acc"
+      },
+      "violated": "policy_compliant"
+    }
+  },
+  {
+    "audience": "Developers giving coding agents file-write tools",
+    "broken": {
+      "entry": "accept",
+      "goals": [
+        "inside_workspace"
+      ],
+      "layers": [
+        {
+          "name": "finish",
+          "requires": [],
+          "scope": [],
+          "view": "metadata"
+        }
+      ],
+      "nodes": [
+        {
+          "evidence": [],
+          "id": "accept",
+          "layer": "finish",
+          "next": null,
+          "type": "guard"
+        }
+      ],
+      "obligations": [],
+      "version": "hsl-1"
+    },
+    "expected": {
+      "broken": false,
+      "repaired": true
+    },
+    "id": "workspace-write",
+    "observations": {
+      "broken": {
+        "checked": [],
+        "claims": [],
+        "construction": [],
+        "exact_states": 0,
+        "findings": [
+          {
+            "code": "coverage",
+            "detail": "inside_workspace",
+            "goal": "inside_workspace",
+            "node": "accept",
+            "path": [
+              "accept"
+            ]
+          }
+        ],
+        "limitation": "Composition verdict under the declared contracts and evidence. Evidence is a declaration, not a verified fact. No real guard, tool action, runtime certificate or calibration data is validated by this service.",
+        "ok": false,
+        "order": [
+          "accept"
+        ],
+        "residual": [],
+        "routes": [
+          "accept"
+        ],
+        "service_version": "1",
+        "specification_sha256": "be11dc72e7d192b6b6e679833bf778a32c72c7f770cd2f52fb0535bb891e5b3c",
+        "warnings": []
+      },
+      "repaired": {
+        "checked": [],
+        "claims": [
+          [
+            "boundary",
+            "inside_workspace"
+          ]
+        ],
+        "construction": [],
+        "exact_states": 0,
+        "findings": [],
+        "limitation": "Composition verdict under the declared contracts and evidence. Evidence is a declaration, not a verified fact. No real guard, tool action, runtime certificate or calibration data is validated by this service.",
+        "ok": true,
+        "order": [
+          "boundary",
+          "accept"
+        ],
+        "residual": [],
+        "routes": [
+          "accept"
+        ],
+        "service_version": "1",
+        "specification_sha256": "e40234baea07de2484f50567a77b3c43e2f0620b93dfc0af1608c0e1c90a2c3a",
+        "warnings": []
+      }
+    },
+    "problem": "The accepting route has no contract or gate establishing that a write stays inside the workspace.",
+    "prompt": "Use tint-review and get_example(\"workspace-write\"). Check the broken route, show its witness, and explain the obligations behind the proposed path-boundary repair.",
+    "repair": "Add a deterministic path-boundary gate before acceptance. Its real implementation and complete mediation remain trusted premises.",
+    "repaired": {
+      "entry": "boundary",
+      "goals": [
+        "inside_workspace"
+      ],
+      "layers": [
+        {
+          "name": "finish",
+          "requires": [],
+          "scope": [],
+          "view": "metadata"
+        }
+      ],
+      "nodes": [
+        {
+          "establishes": "inside_workspace",
+          "id": "boundary",
+          "next": "accept",
+          "rule": "canonical_path_boundary",
+          "type": "gate"
+        },
+        {
+          "evidence": [],
+          "id": "accept",
+          "layer": "finish",
+          "next": null,
+          "type": "guard"
+        }
+      ],
+      "obligations": [],
+      "version": "hsl-1"
+    },
+    "title": "Put a boundary before file writes",
+    "witness": {
+      "branch": {},
+      "failing_obligation": null,
+      "holds": {
+        "accept": []
+      },
+      "passes": {},
+      "safe": [],
+      "verdict": {
+        "accept": "acc"
+      },
+      "violated": "inside_workspace"
+    }
+  }
+]

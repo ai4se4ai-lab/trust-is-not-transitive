@@ -1,0 +1,69 @@
+{
+  "id": "workspace-write",
+  "title": "Put a boundary before file writes",
+  "audience": "Developers giving coding agents file-write tools",
+  "problem": "The accepting route has no contract or gate establishing that a write stays inside the workspace.",
+  "repair": "Add a deterministic path-boundary gate before acceptance. Its real implementation and complete mediation remain trusted premises.",
+  "prompt": "Use tint-review and get_example(\"workspace-write\"). Check the broken route, show its witness, and explain the obligations behind the proposed path-boundary repair.",
+  "broken": {
+    "version": "hsl-1",
+    "goals": [
+      "inside_workspace"
+    ],
+    "obligations": [],
+    "layers": [
+      {
+        "name": "finish",
+        "scope": [],
+        "requires": [],
+        "view": "metadata"
+      }
+    ],
+    "entry": "accept",
+    "nodes": [
+      {
+        "type": "guard",
+        "id": "accept",
+        "layer": "finish",
+        "evidence": [],
+        "next": null
+      }
+    ]
+  },
+  "repaired": {
+    "version": "hsl-1",
+    "goals": [
+      "inside_workspace"
+    ],
+    "obligations": [],
+    "layers": [
+      {
+        "name": "finish",
+        "scope": [],
+        "requires": [],
+        "view": "metadata"
+      }
+    ],
+    "entry": "boundary",
+    "nodes": [
+      {
+        "type": "gate",
+        "id": "boundary",
+        "rule": "canonical_path_boundary",
+        "establishes": "inside_workspace",
+        "next": "accept"
+      },
+      {
+        "type": "guard",
+        "id": "accept",
+        "layer": "finish",
+        "evidence": [],
+        "next": null
+      }
+    ]
+  },
+  "expected": {
+    "broken": false,
+    "repaired": true
+  }
+}

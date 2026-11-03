@@ -15,5 +15,7 @@ paper/*.synctex.gz
 build/
 archive/local/
 .tools/
+website/dist/
+website/node_modules/
 docs/literature/evidence/*.html
 docs/literature/*

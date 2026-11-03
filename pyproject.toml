@@ -9,8 +9,17 @@ description = "Executable conditioned-trust contracts for a local guardrail rese
 requires-python = ">=3.11"
 dependencies = ["numpy==2.2.5", "scipy==1.16.2"]
 
+[project.optional-dependencies]
+mcp = ["mcp==1.26.0"]
+
+[project.scripts]
+tint-mcp = "tint.mcp.server:main"
+
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+"tint.mcp" = ["examples/*.json", "guide.md"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src", "."]
