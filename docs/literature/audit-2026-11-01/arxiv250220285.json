@@ -1,0 +1,625 @@
+{
+  "key": "arxiv250220285",
+  "entry": {
+    "url": "https://proceedings.mlr.press/v267/chen25bd.html",
+    "publisher": "PMLR",
+    "year": "2025",
+    "pages": "8955--8978",
+    "volume": "267",
+    "series": "Proceedings of Machine Learning Research",
+    "booktitle": "Proceedings of the 42nd International Conference on Machine Learning",
+    "title": "{Conformal Tail Risk Control for Large Language Model Alignment}",
+    "author": "Chen, Catherine Yu-Chi and Shen, Jingyan and Deng, Zhun and Lei, Lihua",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv250220285"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Conformal+Tail+Risk+Control+for+Large+Language+Model+Alignment",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Conformal+Tail+Risk+Control+for+Large+Language+Model+Alignment&rows=3",
+      "status": 200,
+      "file": "arxiv250220285.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v267/chen25bd.html",
+      "status": 200,
+      "file": "arxiv250220285.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1007/978-3-032-30539-8_28",
+      "type": "book-chapter",
+      "title": [
+        "Control Point Detection for Network Alignment Using Large Language Model"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8737-8262",
+          "authenticated-orcid": false,
+          "given": "Müslüm",
+          "family": "Hacar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9017-9651",
+          "authenticated-orcid": false,
+          "given": "Özge Öztürk",
+          "family": "Hacar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Computational Science and Its Applications – ICCSA 2026 Workshops"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "365-373",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            2
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2027
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            2
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Switzerland",
+      "event": null,
+      "similarity": 0.479
+    },
+    {
+      "DOI": "10.52202/075280-2064",
+      "type": "proceedings-article",
+      "title": [
+        "OpenAssistant Conversations - Democratizing Large Language Model Alignment"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Andreas",
+          "family": "Köpf",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yannic",
+          "family": "Kilcher",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dimitri Von",
+          "family": "Rütte",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sotiris",
+          "family": "Anagnostidis",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhi Rui",
+          "family": "Tam",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Keith",
+          "family": "Stevens",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Abdullah",
+          "family": "Barhoum",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Duc",
+          "family": "Nguyen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Oliver",
+          "family": "Stanley",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Richárd",
+          "family": "Nagyfi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shahul",
+          "family": "Es",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sameer",
+          "family": "Suri",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Glushkov",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Arnav",
+          "family": "Dantuluri",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrew",
+          "family": "Maguire",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christoph",
+          "family": "Schuhmann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Huu",
+          "family": "Nguyen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alexander",
+          "family": "Mattick",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 36"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "47669-47681",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 36",
+        "theme": "37th Conference on Neural Information Processing Systems (NeurIPS 2023)",
+        "location": "New Orleans, Louisiana, USA",
+        "acronym": "NeurIPS 2023",
+        "number": "36",
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              16
+            ]
+          ]
+        }
+      },
+      "similarity": 0.617
+    },
+    {
+      "DOI": "10.1145/3711896.3737204",
+      "type": "proceedings-article",
+      "title": [
+        "Complicated Semantic Alignment for Long-Tail Query Rewriting in Taobao Search Based on Large Language Model"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-2727-0003",
+          "authenticated-orcid": false,
+          "given": "Yunling",
+          "family": "Feng",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Taobao &amp; Tmall Group of Alibaba, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-4407-7794",
+          "authenticated-orcid": false,
+          "given": "Gui",
+          "family": "Ling",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Taobao &amp; Tmall Group of Alibaba, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-5134-8900",
+          "authenticated-orcid": false,
+          "given": "Yue",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Taobao &amp; Tmall Group of Alibaba, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6861-7742",
+          "authenticated-orcid": false,
+          "given": "Jianfeng",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Taobao &amp; Tmall Group of Alibaba, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0009-9838-5343",
+          "authenticated-orcid": false,
+          "given": "Dan",
+          "family": "Ou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Taobao &amp; Tmall Group of Alibaba, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9463-7410",
+          "authenticated-orcid": false,
+          "given": "Qingwen",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Taobao &amp; Tmall Group of Alibaba, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5918-093X",
+          "authenticated-orcid": false,
+          "given": "Fuyu",
+          "family": "Lv",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Taobao &amp; Tmall Group of Alibaba, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7290-9585",
+          "authenticated-orcid": false,
+          "given": "Yajing",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Researcher, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "4435-4446",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            3
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            3
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "event": {
+        "name": "KDD '25: The 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+        "location": "Toronto ON Canada",
+        "acronym": "KDD '25",
+        "sponsor": [
+          "SIGKDD ACM Special Interest Group on Knowledge Discovery in Data",
+          "SIGMOD ACM Special Interest Group on Management of Data"
+        ]
+      },
+      "similarity": 0.479
+    }
+  ],
+  "meta": {
+    "citation_publisher": [
+      "PMLR"
+    ],
+    "citation_title": [
+      "Conformal Tail Risk Control for Large Language Model Alignment"
+    ],
+    "citation_language": [
+      "en"
+    ],
+    "citation_abstract_html_url": [
+      "https://proceedings.mlr.press/v267/chen25bd.html"
+    ],
+    "citation_pdf_url": [
+      "https://raw.githubusercontent.com/mlresearch/v267/main/assets/chen25bd/chen25bd.pdf"
+    ],
+    "citation_firstpage": [
+      "8955"
+    ],
+    "citation_lastpage": [
+      "8978"
+    ],
+    "citation_author": [
+      "Catherine Chen",
+      "Jingyan Shen",
+      "Zhun Deng",
+      "Lihua Lei"
+    ],
+    "citation_publication_date": [
+      "2025/10/06"
+    ],
+    "citation_inbook_title": [
+      "International Conference on Machine Learning"
+    ],
+    "citation_conference_title": [
+      "International Conference on Machine Learning"
+    ],
+    "citation_issn": [
+      "2640-3498"
+    ]
+  },
+  "details": {
+    "authors": "Catherine Chen, Jingyan Shen, Zhun Deng, Lihua Lei"
+  },
+  "bibtex_links": []
+}

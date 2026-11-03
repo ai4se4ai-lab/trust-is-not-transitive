@@ -1,0 +1,147 @@
+{
+  "key": "angelopoulos2021learn",
+  "entry": {
+    "url": "https://doi.org/10.1214/24-aoas1998",
+    "doi": "10.1214/24-aoas1998",
+    "publisher": "Institute of Mathematical Statistics",
+    "year": "2025",
+    "pages": "1641--1662",
+    "number": "2",
+    "volume": "19",
+    "journal": "The Annals of Applied Statistics",
+    "title": "{Learn then test: Calibrating predictive algorithms to achieve risk control}",
+    "author": "Angelopoulos, Anastasios N. and Bates, Stephen and Cand{\\`e}s, Emmanuel J. and Jordan, Michael I. and Lei, Lihua",
+    "ENTRYTYPE": "article",
+    "ID": "angelopoulos2021learn"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Learn+then+test%3A+Calibrating+predictive+algorithms+to+achieve+risk+control",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1214/24-aoas1998",
+      "status": 200,
+      "file": "angelopoulos2021learn.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1214/24-aoas1998",
+      "type": "journal-article",
+      "title": [
+        "Learn then test: Calibrating predictive algorithms to achieve risk control"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Anastasios N.",
+          "family": "Angelopoulos",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Science, University of California, Berkeley"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephen",
+          "family": "Bates",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Emmanuel J.",
+          "family": "Candès",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Statistics, Stanford University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael I.",
+          "family": "Jordan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Science, University of California, Berkeley"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lihua",
+          "family": "Lei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Stanford Graduate School of Business"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Annals of Applied Statistics"
+      ],
+      "volume": "19",
+      "issue": "2",
+      "page": "1641-1662",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Mathematical Statistics",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

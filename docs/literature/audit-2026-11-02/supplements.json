@@ -1,0 +1,196 @@
+[
+  {
+    "key": "arxiv240718370-bibtex",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/08dabd5345b37fffcbe335bd578b15a0-Bibtex-Conference.bib",
+    "status": 200,
+    "file": "arxiv240718370-bibtex.supplement.gz",
+    "text": "@inproceedings{ICLR2025_08dabd53,\n author = {Jung, Jaehun and Brahman, Faeze and Choi, Yejin},\n booktitle = {International Conference on Learning Representations},\n editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},\n pages = {3101--3125},\n title = {Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement},\n url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/08dabd5345b37fffcbe335bd578b15a0-Paper-Conference.pdf},\n volume = {2025},\n year = {2025}\n}",
+    "links": []
+  },
+  {
+    "key": "arxiv240618495-bibtex",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/0f69b4b96a46f284b726fbd70f74fb3b-Bibtex-Datasets_and_Benchmarks_Track.bib",
+    "status": 200,
+    "file": "arxiv240618495-bibtex.supplement.gz",
+    "text": "@inproceedings{NEURIPS2024_0f69b4b9,\n author = {Han, Seungju and Rao, Kavel and Ettinger, Allyson and Jiang, Liwei and Lin, Bill Yuchen and Lambert, Nathan and Choi, Yejin and Dziri, Nouha},\n booktitle = {Advances in Neural Information Processing Systems},\n doi = {10.52202/079017-0261},\n editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},\n pages = {8093--8131},\n publisher = {Curran Associates, Inc.},\n title = {WildGuard: Open One-stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs},\n url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/0f69b4b96a46f284b726fbd70f74fb3b-Paper-Datasets_and_Benchmarks_Track.pdf},\n volume = {37},\n year = {2024}\n}",
+    "links": []
+  },
+  {
+    "key": "arxiv250926238-bibtex",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/5a829e299ebc1c1615ddb09e98fb6ce8-Bibtex-Conference.bib",
+    "status": 200,
+    "file": "arxiv250926238-bibtex.supplement.gz",
+    "text": "@inproceedings{ICLR2026_5a829e29,\n author = {Oldfield, James and Torr, Philip and Patras, Ioannis and Bibi, Adel and Barez, Fazl},\n booktitle = {International Conference on Learning Representations},\n editor = {C. Vondrick and B. Hariharan and C. Raffel and L. Pinto and D. Yang and A. Faust},\n pages = {55192--55229},\n title = {Beyond Linear Probes: Dynamic Safety Monitoring for Language Models},\n url = {https://proceedings.iclr.cc/paper_files/paper/2026/file/5a829e299ebc1c1615ddb09e98fb6ce8-Paper-Conference.pdf},\n volume = {2026},\n year = {2026}\n}",
+    "links": []
+  },
+  {
+    "key": "arxiv220802814-bibtex",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/f3549ef9b5ff520a7e41ff3cc306ab2b-Bibtex-Conference.bib",
+    "status": 200,
+    "file": "arxiv220802814-bibtex.supplement.gz",
+    "text": "@inproceedings{ICLR2024_f3549ef9,\n author = {Angelopoulos, Anastasios and Bates, Stephen and Fisch, Adam and Lei, Lihua and Schuster, Tal},\n booktitle = {International Conference on Learning Representations},\n editor = {B. Kim and Y. Yue and S. Chaudhuri and K. Fragkiadaki and M. Khan and Y. Sun},\n pages = {55198--55218},\n title = {Conformal Risk Control},\n url = {https://proceedings.iclr.cc/paper_files/paper/2024/file/f3549ef9b5ff520a7e41ff3cc306ab2b-Paper-Conference.pdf},\n volume = {2024},\n year = {2024}\n}",
+    "links": []
+  },
+  {
+    "key": "arxiv200602544-bibtex",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2020/file/244edd7e85dc81602b7615cd705545f5-Bibtex.bib",
+    "status": 200,
+    "file": "arxiv200602544-bibtex.supplement.gz",
+    "text": "@inproceedings{NEURIPS2020_244edd7e,\n author = {Romano, Yaniv and Sesia, Matteo and Candes, Emmanuel},\n booktitle = {Advances in Neural Information Processing Systems},\n editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},\n pages = {3581--3591},\n publisher = {Curran Associates, Inc.},\n title = {Classification with Valid and Adaptive Coverage},\n url = {https://proceedings.neurips.cc/paper_files/paper/2020/file/244edd7e85dc81602b7615cd705545f5-Paper.pdf},\n volume = {33},\n year = {2020}\n}",
+    "links": []
+  },
+  {
+    "key": "arxiv210600170-bibtex",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2021/file/0d441de75945e5acbc865406fc9a2559-Bibtex.bib",
+    "status": 200,
+    "file": "arxiv210600170-bibtex.supplement.gz",
+    "text": "@inproceedings{NEURIPS2021_0d441de7,\n author = {Gibbs, Isaac and Candes, Emmanuel},\n booktitle = {Advances in Neural Information Processing Systems},\n editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},\n pages = {1660--1672},\n publisher = {Curran Associates, Inc.},\n title = {Adaptive Conformal Inference Under Distribution Shift},\n url = {https://proceedings.neurips.cc/paper_files/paper/2021/file/0d441de75945e5acbc865406fc9a2559-Paper.pdf},\n volume = {34},\n year = {2021}\n}",
+    "links": []
+  },
+  {
+    "key": "arxiv240613352-bibtex",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/97091a5177d8dc64b1da8bf3e1f6fb54-Bibtex-Datasets_and_Benchmarks_Track.bib",
+    "status": 200,
+    "file": "arxiv240613352-bibtex.supplement.gz",
+    "text": "@inproceedings{NEURIPS2024_97091a51,\n author = {Debenedetti, Edoardo and Zhang, Jie and Balunovic, Mislav and Beurer-Kellner, Luca and Fischer, Marc and Tram\\`{e}r, Florian},\n booktitle = {Advances in Neural Information Processing Systems},\n doi = {10.52202/079017-2636},\n editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},\n pages = {82895--82920},\n publisher = {Curran Associates, Inc.},\n title = {AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents},\n url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/97091a5177d8dc64b1da8bf3e1f6fb54-Paper-Datasets_and_Benchmarks_Track.pdf},\n volume = {37},\n year = {2024}\n}",
+    "links": []
+  },
+  {
+    "key": "arxiv241009024-bibtex",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/c493d23af93118975cdbc32cbe7323f5-Bibtex-Conference.bib",
+    "status": 200,
+    "file": "arxiv241009024-bibtex.supplement.gz",
+    "text": "@inproceedings{ICLR2025_c493d23a,\n author = {Andriushchenko, Maksym and Souly, Alexandra and Dziemian, Mateusz and Duenas, Derek and Lin, Maxwell and Wang, Justin and Hendrycks, Dan and Zou, Andy and Kolter, Zico and Fredrikson, Matt  and Gal, Yarin and Davies, Xander},\n booktitle = {International Conference on Learning Representations},\n editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},\n pages = {79185--79220},\n title = {AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents},\n url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/c493d23af93118975cdbc32cbe7323f5-Paper-Conference.pdf},\n volume = {2025},\n year = {2025}\n}",
+    "links": []
+  },
+  {
+    "key": "arxiv230915817-bibtex",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/7274ed909a312d4d869cc328ad1c5f04-Bibtex-Conference.bib",
+    "status": 200,
+    "file": "arxiv230915817-bibtex.supplement.gz",
+    "text": "@inproceedings{ICLR2024_7274ed90,\n author = {Ruan, Yangjun and Dong, Honghua and Wang, Andrew and Pitis, Silviu and Zhou, Yongchao and Ba, Jimmy and Dubois, Yann and Maddison, Chris and Hashimoto, Tatsunori},\n booktitle = {International Conference on Learning Representations},\n editor = {B. Kim and Y. Yue and S. Chaudhuri and K. Fragkiadaki and M. Khan and Y. Sun},\n pages = {27031--27098},\n title = {Identifying the Risks of LM Agents with an LM-Emulated Sandbox},\n url = {https://proceedings.iclr.cc/paper_files/paper/2024/file/7274ed909a312d4d869cc328ad1c5f04-Paper-Conference.pdf},\n volume = {2024},\n year = {2024}\n}",
+    "links": []
+  },
+  {
+    "key": "arxiv241002644-bibtex",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/5750f91d8fb9d5c02bd8ad2c3b44456b-Bibtex-Conference.bib",
+    "status": 200,
+    "file": "arxiv241002644-bibtex.supplement.gz",
+    "text": "@inproceedings{ICLR2025_5750f91d,\n author = {Zhang, Hanrong and Huang, Jingyuan and Mei, Kai and Yao, Yifei and Wang, Zhenting and Zhan, Chenlu and Wang, Hongwei and Zhang, Yongfeng},\n booktitle = {International Conference on Learning Representations},\n editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},\n pages = {35331--35366},\n title = {Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents},\n url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/5750f91d8fb9d5c02bd8ad2c3b44456b-Paper-Conference.pdf},\n volume = {2025},\n year = {2025}\n}",
+    "links": []
+  },
+  {
+    "key": "arxiv241107781-bibtex",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/bfd082c452dffb450d5a5202b0419205-Bibtex-Datasets_and_Benchmarks_Track.bib",
+    "status": 200,
+    "file": "arxiv241107781-bibtex.supplement.gz",
+    "text": "@inproceedings{NEURIPS2024_bfd082c4,\n author = {Guo, Chengquan and Liu, Xun and Xie, Chulin and Zhou, Andy and Zeng, Yi and Lin, Zinan and Song, Dawn and Li, Bo},\n booktitle = {Advances in Neural Information Processing Systems},\n doi = {10.52202/079017-3369},\n editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},\n pages = {106190--106236},\n publisher = {Curran Associates, Inc.},\n title = {RedCode: Risky Code Execution and Generation Benchmark for Code Agents},\n url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/bfd082c452dffb450d5a5202b0419205-Paper-Datasets_and_Benchmarks_Track.pdf},\n volume = {37},\n year = {2024}\n}",
+    "links": []
+  },
+  {
+    "key": "arxiv241209565-bibtex",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/ed687a5f52b651b19e7c18f702907b8b-Bibtex-Conference.bib",
+    "status": 200,
+    "file": "arxiv241209565-bibtex.supplement.gz",
+    "text": "@inproceedings{ICLR2026_ed687a5f,\n author = {Bailey, Luke and Serrano, Alex and Sheshadri, Abhay and Seleznyov, Mikhail and Taylor, Jordan and Jenner, Erik and Hilton, Jacob and Casper, Stephen and Guestrin, Carlos and Emmons, Scott},\n booktitle = {International Conference on Learning Representations},\n editor = {C. Vondrick and B. Hariharan and C. Raffel and L. Pinto and D. Yang and A. Faust},\n pages = {146838--146882},\n title = {Obfuscated Activations Bypass LLM Latent-Space Defenses},\n url = {https://proceedings.iclr.cc/paper_files/paper/2026/file/ed687a5f52b651b19e7c18f702907b8b-Paper-Conference.pdf},\n volume = {2026},\n year = {2026}\n}",
+    "links": []
+  },
+  {
+    "key": "arxiv250411168-bibtex",
+    "url": "https://aclanthology.org/2025.llmsec-1.8/#citeBibtex",
+    "status": 200,
+    "file": "arxiv250411168-bibtex.supplement.gz",
+    "text": "Bypassing LLM Guardrails: An Empirical Analysis of Evasion Attacks against Prompt Injection and Jailbreak Detection Systems - ACL Anthology ACL Anthology About Announcements Communication channels Related work Copyright Credits Volunteer Development Feedback Using Author directory Citing papers Links in the Anthology Data access All FAQs Details Anthology identifiers Names ORCID iDs DOIs Verified authors Contributions Submissions Corrections Maintain author pages Attachments GitHub Bypassing LLM Guardrails: An Empirical Analysis of Evasion Attacks against Prompt Injection and Jailbreak Detection Systems William Hackett , Lewis Birch , Stefan Trawicki , Neeraj Suri , Peter Garraghan Correct Metadata for Use this form to create a GitHub issue with structured data describing the correction. You will need a GitHub account.\nOnce you create that issue, the correction will be reviewed by a staff member. ⚠️ Mobile Users: Submitting this form to create a new issue will only work with github.com, not the GitHub Mobile app. Important : The Anthology treat PDFs as authoritative. Please use this form only to correct data\nthat is out of line with the PDF. See our corrections\nguidelines if you need to change the PDF. Title Adjust the title. Retain tags such as\n<fixed-case>. Authors Adjust author names and order to match the\nPDF. Add Author Abstract Correct abstract if needed. Retain XML formatting tags such as <tex-math>. You may use <b>...</b> for bold , <i>...</i> for italic , <u>...</u> for underline , <sc>...</sc> for small-caps , <tt>...<tt> for typewriter text , <url>...</url> for URLs, <a href=...> for hyperlinks, and <par/> for paragraph breaks. Verification against PDF Ensure that the new title/authors match the snapshot below. (If there\nis no snapshot or it is too small, consult the PDF .) Authors concatenated from the text boxes above: ALL author names match the snapshot above—including\nmiddle initials, hyphens, and accents. Create GitHub issue for staff review Abstract Large Language Models (LLMs) guardrail systems are designed to protect against prompt injection and jailbreak attacks. However, they remain vulnerable to evasion techniques. We demonstrate two approaches for bypassing LLM prompt injection and jailbreak detection systems via traditional character injection methods and algorithmic Adversarial Machine Learning (AML) evasion techniques. Through testing against six prominent protection systems, including Microsoft’s Azure Prompt Shield and Meta’s Prompt Guard, we show that both methods can be used to evade detection while maintaining adversarial utility achieving in some instances up to 100% evasion success. Furthermore, we demonstrate that adversaries can enhance Attack Success Rates (ASR) against black-box targets by leveraging word importance ranking computed by offline white-box models. Our findings reveal vulnerabilities within current LLM protection mechanisms and highlight the need for more robust guardrail systems. Anthology ID: 2025.llmsec-1.8 Volume: Proceedings of the First Workshop on LLM Security (LLMSEC) Month: August Year: 2025 Address: Vienna, Austria Editors: Leon Derczynski , Jekaterina Novikova , Muhao Chen Venues: LLMSEC | WS SIG: SIGSEC Publisher: Association for Computational Linguistics Note: Pages: 101–114 Language: URL: https://aclanthology.org/2025.llmsec-1.8/ DOI: Bibkey: hackett-etal-2025-bypassing Cite (ACL): William Hackett, Lewis Birch, Stefan Trawicki, Neeraj Suri, and Peter Garraghan. 2025. Bypassing LLM Guardrails: An Empirical Analysis of Evasion Attacks against Prompt Injection and Jailbreak Detection Systems . In Proceedings of the First Workshop on LLM Security (LLMSEC) , pages 101–114, Vienna, Austria. Association for Computational Linguistics. Cite (Informal): Bypassing LLM Guardrails: An Empirical Analysis of Evasion Attacks against Prompt Injection and Jailbreak Detection Systems (Hackett et al., LLMSEC 2025) Copy Citation: BibTeX Markdown MODS XML Endnote More\noptions… PDF: https://aclanthology.org/2025.llmsec-1.8.pdf Supplementarymaterial: 2025.llmsec-1.8.SupplementaryMaterial.zip Supplementarymaterial: 2025.llmsec-1.8.SupplementaryMaterial.txt Supplementarymaterial: 2025.llmsec-1.8.SupplementaryMaterial.zip PDF Cite Search Supplementarymaterial Supplementarymaterial Supplementarymaterial Fix data Export citation BibTeX MODS XML Endnote Preformatted @inproceedings{hackett-etal-2025-bypassing,\n    title = \"Bypassing {LLM} Guardrails: An Empirical Analysis of Evasion Attacks against Prompt Injection and Jailbreak Detection Systems\",\n    author = \"Hackett, William  and\n      Birch, Lewis  and\n      Trawicki, Stefan  and\n      Suri, Neeraj  and\n      Garraghan, Peter\",\n    editor = \"Derczynski, Leon  and\n      Novikova, Jekaterina  and\n      Chen, Muhao\",\n    booktitle = \"Proceedings of the First Workshop on {LLM} Security ({LLMSEC})\",\n    month = aug,\n    year = \"2025\",\n    address = \"Vienna, Austria\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2025.llmsec-1.8/\",\n    pages = \"101--114\",\n    ISBN = \"979-8-89176-279-4\",\n    abstract = \"Large Language Models (LLMs) guardrail systems are designed to protect against prompt injection and jailbreak attacks. However, they remain vulnerable to evasion techniques. We demonstrate two approaches for bypassing LLM prompt injection and jailbreak detection systems via traditional character injection methods and algorithmic Adversarial Machine Learning (AML) evasion techniques. Through testing against six prominent protection systems, including Microsoft{'}s Azure Prompt Shield and Meta{'}s Prompt Guard, we show that both methods can be used to evade detection while maintaining adversarial utility achieving in some instances up to 100{\\%} evasion success. Furthermore, we demonstrate that adversaries can enhance Attack Success Rates (ASR) against black-box targets by leveraging word importance ranking computed by offline white-box models. Our findings re",
+    "links": [
+      "https://aclanthology.org/2025.llmsec-1.8/#citeBibtex"
+    ]
+  },
+  {
+    "key": "arxiv251002609-bibtex",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/d51ce6040fe3dafd260411593f05a1fa-Bibtex-Conference.bib",
+    "status": 200,
+    "file": "arxiv251002609-bibtex.supplement.gz",
+    "text": "@inproceedings{ICLR2026_d51ce604,\n author = {Guo, Chengquan and Xie, Chulin and Yang, Yu and Chen, Zhaorun and Lin, Zinan and Davies, Xander and Gal, Yarin and Song, Dawn and Li, Bo},\n booktitle = {International Conference on Learning Representations},\n editor = {C. Vondrick and B. Hariharan and C. Raffel and L. Pinto and D. Yang and A. Faust},\n pages = {131116--131151},\n title = {RedCodeAgent: Automatic Red-teaming Agent against Diverse Code Agents},\n url = {https://proceedings.iclr.cc/paper_files/paper/2026/file/d51ce6040fe3dafd260411593f05a1fa-Paper-Conference.pdf},\n volume = {2026},\n year = {2026}\n}",
+    "links": []
+  },
+  {
+    "key": "arxiv230610193-bibtex",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/31421b112e5f7faf4fc577b74e45dab2-Bibtex-Conference.bib",
+    "status": 200,
+    "file": "arxiv230610193-bibtex.supplement.gz",
+    "text": "@inproceedings{ICLR2024_31421b11,\n author = {Quach, Victor and Fisch, Adam and Schuster, Tal and Yala, Adam and Sohn, Jae Ho and Jaakkola, Tommi and Barzilay, Regina },\n booktitle = {International Conference on Learning Representations},\n editor = {B. Kim and Y. Yue and S. Chaudhuri and K. Fragkiadaki and M. Khan and Y. Sun},\n pages = {11654--11681},\n title = {Conformal Language Modeling},\n url = {https://proceedings.iclr.cc/paper_files/paper/2024/file/31421b112e5f7faf4fc577b74e45dab2-Paper-Conference.pdf},\n volume = {2024},\n year = {2024}\n}",
+    "links": []
+  },
+  {
+    "key": "tibshirani2019conformal-bibtex",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2019/file/8fb21ee7a2207526da55a679f0332de2-Bibtex.bib",
+    "status": 200,
+    "file": "tibshirani2019conformal-bibtex.supplement.gz",
+    "text": "@inproceedings{NEURIPS2019_8fb21ee7,\n author = {Tibshirani, Ryan J and Foygel Barber, Rina and Candes, Emmanuel and Ramdas, Aaditya},\n booktitle = {Advances in Neural Information Processing Systems},\n editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\\textquotesingle Alch\\'{e}-Buc and E. Fox and R. Garnett},\n pages = {},\n publisher = {Curran Associates, Inc.},\n title = {Conformal Prediction Under Covariate Shift},\n url = {https://proceedings.neurips.cc/paper_files/paper/2019/file/8fb21ee7a2207526da55a679f0332de2-Paper.pdf},\n volume = {32},\n year = {2019}\n}",
+    "links": []
+  },
+  {
+    "key": "jimenez2023swebench-bibtex",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/edac78c3e300629acfe6cbe9ca88fb84-Bibtex-Conference.bib",
+    "status": 200,
+    "file": "jimenez2023swebench-bibtex.supplement.gz",
+    "text": "@inproceedings{ICLR2024_edac78c3,\n author = {Jimenez, Carlos E and Yang, John and Wettig, Alexander and Yao, Shunyu and Pei, Kexin and Press, Ofir and Narasimhan, Karthik},\n booktitle = {International Conference on Learning Representations},\n editor = {B. Kim and Y. Yue and S. Chaudhuri and K. Fragkiadaki and M. Khan and Y. Sun},\n pages = {54107--54157},\n title = {SWE-bench: Can Language Models Resolve Real-world Github Issues?},\n url = {https://proceedings.iclr.cc/paper_files/paper/2024/file/edac78c3e300629acfe6cbe9ca88fb84-Paper-Conference.pdf},\n volume = {2024},\n year = {2024}\n}",
+    "links": []
+  },
+  {
+    "key": "ralph2020empirical-bibtex",
+    "url": "https://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-2010-03525",
+    "status": 202,
+    "file": "ralph2020empirical-bibtex.supplement.gz",
+    "text": "Making sure you're not a bot! Making sure you're not a bot! Loading... Please wait a moment while we ensure the security of your connection. Protected by Anubis From Techaro . Made with ❤️ in 🇨🇦. Mascot design by CELPHASE . This website is running Anubis version v1.27.0 .",
+    "links": []
+  },
+  {
+    "key": "robosafe-workshop",
+    "url": "https://sites.google.com/ucsd.edu/efficient-spatial-reasoning/",
+    "status": 200,
+    "file": "robosafe-workshop.supplement.gz",
+    "text": "Workshop Search this site Embedded Files Skip to main content Skip to navigation Workshop Home Schedule Speakers Organizers Program Committee Venue Call for Papers Workshop Home Schedule Speakers Organizers Program Committee Venue Call for Papers More Home Schedule Speakers Organizers Program Committee Venue Call for Papers The First Workshop on Efficient Spatial Reasoning at ICLR 2026, Rio de Janeiro, Brazil April 27th, 2026 Making Spatial Reasoning Systems More Adaptive, Robust, and Efficient for Real-World Deployment. Spatial reasoning—the ability to understand and manipulate spatial relations among objects and environments—is essential for both human cognition and AI applications such as robotics, autonomous navigation, and 3D perception. While traditional geometric and symbolic methods have enabled structured spatial analysis, modern foundation models embed spatial reasoning within large-scale learning systems, yielding impressive results in tasks like 3D reconstruction and multimodal reasoning. However, these models often rely on large parameters and inefficient inference strategies, leading to poor performance on complex, multi-step spatial reasoning tasks. Recent advances in efficient reasoning aim to improve interpretability and reduce computational cost, yet they rarely address the unique robustness and safety demands of spatial reasoning in embodied and real-world settings. To bridge this gap, the proposed workshop will unite researchers and practitioners to explore adaptive, efficient, and reliable spatial reasoning for foundation models, fostering dialogue across AI, cognitive science, and applied domains. Goals of our workshop: Bringing together researchers working on efficient spatial reasoning. Foster interdisciplinary collaboration and facilitate the exchange of ideas across traditionally siloed research communities. Accepted papers have been released on our OpenReview portal. Best Papers Award: 1. SpatialTree: How Spatial Abilities Branch Out in MLLMs 2. Demystifying Action Space Design for Robotic Manipulation Policies Outstanding Papers Award: 1. RoboSafe: Safeguarding Embodied Agents via Executable Safety Logic 2. VisGym: Diverse, Customizable, Scalable Environments for Multimodal Agents 3. Solving Spatial Supersensing Without Spatial Supersensing Keynote Speakers Jiajun Wu Assistant Professor Stanford Heng Ji Professor UIUC Soumalya Sarkar Senior Principal Scientist RTX Mengdi Wang Professor Princeton University Emad Barsoum VP of AI AMD Parisa Kordjamshidi Associate Professor Michigan State University Organizers William Yijiang Li PhD Student UC San Diego Robin Haozheng Luo PhD Student Northwestern University Zhenyu Pan PhD Student Northwestern University Manling Li Assistant Professor Northwestern University Weiyang Liu Assistant Professor Chinese University of Hong Kong Zhijian Liu Research Scientist at NVIDIA Assistant Professor at UC San Diego Nuno Vasconcelos Professor UC San Diego Ruiyang Qin Assistant Professor Villanova University Acknowledgement We gratefully acknowledge the support of the Qualcomm and ICLR organizing committee for their generous sponsorship of this workshop. Their support has been instrumental in making this event possible and in fostering discussions on efficient spatial reasoning. We sincerely thank them for their commitment to advancing research and supporting the broader machine learning community. Venue Rio Convention & Exhibition Center Rio de Janeiro, Brazil The Rio Convention & Exhibition Center is the primary convention venue of Rio de Janeiro, Brazil. It is situated in the vibrant Barra da Tijuca district, close to the city’s coastal attractions and major business hubs. Report abuse Page details Page updated Report abuse",
+    "links": []
+  },
+  {
+    "key": "robosafe-openreview",
+    "url": "https://api2.openreview.net/notes?id=wyKCkQ2GyO",
+    "status": 429,
+    "file": "robosafe-openreview.supplement.gz"
+  },
+  {
+    "key": "mcqa-openreview",
+    "url": "https://api.openreview.net/notes?id=0yN9RW1Vac",
+    "status": 429,
+    "file": "mcqa-openreview.supplement.gz"
+  },
+  {
+    "key": "empirical-citation",
+    "url": "https://raw.githubusercontent.com/acmsigsoft/EmpiricalStandards/master/CITATION.cff",
+    "status": 200,
+    "file": "empirical-citation.supplement.gz",
+    "text": "cff-version: 1.2.0\nmessage: Please use the following when citing the Empirical Standards.\ntitle: Empirical Standards for Software Engineering Research\nauthors:\n- family-names: Ralph\n  given-names: Paul\n- family-names: Ali\n  given-names: Nauman bin\n- family-names: Baltes\n  given-names: Sebastian\n- family-names: Bianculli\n  given-names: Domenico\n- family-names: Diaz\n  given-names: Jessica\n- family-names: Dittrich\n  given-names: Yvonne\n- family-names: Ernst\n  given-names: Neil\n- family-names: Felderer\n  given-names: Michael\n- family-names: Feldt\n  given-names: Robert\n- family-names: Filieri\n  given-names: Antonio\n- family-names: de França\n  given-names: Breno Bernard Nicolau\n- family-names: Furia\n  given-names: Carlo Alberto\n- family-names: Gay\n  given-names: Greg\n- family-names: Gold\n  given-names: Nicolas\n- family-names: Graziotin\n  given-names: Daniel\n- family-names: He\n  given-names: Pinjia\n- family-names: Hoda\n  given-names: Rashina\n- family-names: Juristo\n  given-names: Natalia\n- family-names: Kitchenham\n  given-names: Barbara\n- family-names: Lenarduzzi\n  given-names: Valentina\n- family-names: Martínez\n  given-names: Jorge\n- family-names: Melegati\n  given-names: Jorge\n- family-names: Mendez\n  given-names: Daniel\n- family-names: Menzies\n  given-names: Tim\n- family-names: Molleri\n  given-names: Jefferson\n- family-names: Pfahl\n  given-names: Dietmar\n- family-names: Robbes\n  given-names: Romain\n- family-names: Russo\n  given-names: Daniel\n- family-names: Saarimäki\n  given-names: Nyyti\n- family-names: Sarro\n  given-names: Federica\n- family-names: Taibi\n  given-names: Davide\n- family-names: Siegmund\n  given-names: Janet\n- family-names: Spinellis\n  given-names: Diomidis\n- family-names: Staron\n  given-names: Miroslaw\n- family-names: Stol\n  given-names: Klaas\n- family-names: Storey\n  given-names: Margaret-Anne\n- family-names: Tamburri\n  given-names: Damian\n- family-names: Torchiano\n  given-names: Marco\n- family-names: Treude\n  given-names: Christoph\n- family-names: Turhan\n  given-names: Burak\n- family-names: Wang\n  given-names: Xiaofeng\n- family-names: Vegas\n  given-names: Sira\npreferred-citation:\n  authors:\n    - family-names: Ralph\n      given-names: Paul\n    - family-names: Ali\n      given-names: Nauman bin\n    - family-names: Baltes\n      given-names: Sebastian\n    - family-names: Bianculli\n      given-names: Domenico\n    - family-names: Diaz\n      given-names: Jessica\n    - family-names: Dittrich\n      given-names: Yvonne\n    - family-names: Ernst\n      given-names: Neil\n    - family-names: Felderer\n      given-names: Michael\n    - family-names: Feldt\n      given-names: Robert\n    - family-names: Filieri\n      given-names: Antonio\n    - family-names: de França\n      given-names: Breno Bernard Nicolau\n    - family-names: Furia\n      given-names: Carlo Alberto\n    - family-names: Gay\n      given-names: Greg\n    - family-names: Gold\n      given-names: Nicolas\n    - family-names: Graziotin\n      given-names: Daniel\n    - family-names: He\n      given-names: Pinjia\n    - family-names: Hoda\n      given-names: Rashina\n    - family-names: Juristo\n      given-names: Natalia\n    - family-names: Kitchenham\n      given-names: Barbara\n    - family-names: Lenarduzzi\n      given-names: Valentina\n    - family-names: Martínez\n      given-names: Jorge\n    - family-names: Melegati\n      given-names: Jorge\n    - family-names: Mendez\n      given-names: Daniel\n    - family-names: Menzies\n      given-names: Tim\n    - family-names: Molleri\n      given-names: Jefferson\n    - family-names: Pfahl\n      given-names: Dietmar\n    - family-names: Robbes\n      given-names: Romain\n    - family-names: Russo\n      given-names: Daniel\n    - family-names: Saarimäki\n      given-names: Nyyti\n    - family-names: Sarro\n      given-names: Federica\n    - family-names: Taibi\n      given-names: Davide\n    - family-names: Siegmund\n      given-names: Janet\n    - family-names: Spinellis\n      given-names: Diomidis\n    - family-names: Staron\n      given-names: Miroslaw\n    - family-names: Stol\n      given-names: Klaas\n    - family-names: Storey\n      given-names: Margaret-Anne\n    - family-names: Tamburri\n      given-names: Damian\n    - family-names: Torchiano\n      given-names: Marco\n    - family-names: Treude\n      given-names: Christoph\n    - family-names: Turhan\n      given-names: Burak\n    - family-names: Wang\n      given-names: Xiaofeng\n    - family-names: Vegas\n      given-names: Sira\n  doi: 10.48550/ARXIV.2010.03525\n  identifiers:\n    - type: doi\n      value: 10.48550/ARXIV.2010.03525\n    - type: url\n      value: https://arxiv.org/abs/2010.03525\n    - type: other\n      value: arXiv:2010.03525v2\n  title: Empirical Standards for Software Engineering Research\n  url: https://arxiv.org/abs/2010.03525\n  date-published: \"2020-10-07\"\n  year: 2020\n  type: report\n  license: \"CC0-1.0\"",
+    "links": []
+  },
+  {
+    "key": "frugalgpt-published",
+    "url": "https://lingjiaochen.com/papers/2024_FrugalGPT_TMLR.pdf",
+    "status": 200,
+    "file": "frugalgpt-published.supplement.gz"
+  },
+  {
+    "key": "statecharts-final",
+    "url": "https://cris.fau.de/publications/287477378/",
+    "status": 200,
+    "file": "statecharts-final.supplement.gz",
+    "text": "Compositional Analysis of Hierarchical UML Statecharts - FAU CRIS FAU.de Deutsch Login Home Publications Research Data Research Grants Equipment Inventions & Patents Awards Additional Research Activities Faculties & Institutions Research Areas Compositional Analysis of Hierarchical UML Statecharts Carnevali L, German R, Santoni F, Vicario E (2022) Publication Type: Journal article Publication year: 2022 Journal IEEE Transactions on Software Engineering Institute of Electrical and Electronics Engineers (IEEE) Book Volume: 48 Pages Range: 4762-4788 Journal Issue: 12 DOI: 10.1109/TSE.2021.3125720 Abstract Quantitative evaluation of stochastic models supports early verification of design choices and assessment of non-functional requirements. Model Driven Engineering (MDE) leverages automated derivation of formal stochastic models from semi-formal artifacts of the Unified Modeling Language (UML) to facilitate deployment of quantitative evaluation methods without disrupting industrial practices. As a major limitation, when generally distributed (GEN) temporal parameters are considered to enhance the model expressivity, the structure and complexity of the underlying stochastic process cannot be easily controlled, possibly impairing the model analyzability. We present a hierarchical modeling formalism based on UML statecharts with GEN durations, designed to guarantee ease of modeling and efficient evaluation of steady-state or transient behaviour until absorption. To this end, fairly lax restrictions are applied to the model syntax to enable separate analysis of the Semi-Markov Process (SMP) underlying each model component. Scalability of solution is assessed by analyzing a suite of synthetic models referred to the context of timed Failure Logic Analysis (FLA) of component-based systems, specifically designed to point out each factor of computational complexity. Notably, the analysis derives both the probability that the system is in each step before failure and the Cumulative Distribution Function (CDF) of the duration of the overall failure process. A challenging case study that significantly and jointly stresses the main factors of computational complexity is finally addressed, performing steady-state analysis of a non-Markovian variant of a server virtualized system from the literature on software rejuvenation. Authors with CRIS profile Reinhard German Computer Science 7 (Computer Networks and Communication Systems) Involved external institutions Università degli Studi di Firenze / University of Florence Italy (IT) How to cite APA: Carnevali, L., German, R., Santoni, F., & Vicario, E. (2022). Compositional Analysis of Hierarchical UML Statecharts. IEEE Transactions on Software Engineering , 48 (12), 4762-4788. https://doi.org/10.1109/TSE.2021.3125720 MLA: Carnevali, Laura, et al. \"Compositional Analysis of Hierarchical UML Statecharts.\" IEEE Transactions on Software Engineering 48.12 (2022): 4762-4788. BibTeX: Download Friedrich-Alexander-Universität Erlangen-Nürnberg Schloßplatz 4 91054 Erlangen Friedrich-Alexander-Universität Erlangen-Nürnberg Current Research Information System | CRIS Mail: cris-support@fau.de Imprint / Privacy / Accessibility CRIS-Blog CRIS-Handbuch",
+    "links": []
+  },
+  {
+    "key": "bootstrap-publisher",
+    "url": "https://www.taylorfrancis.com/books/mono/10.1201/9780429246593/introduction-bootstrap-bradley-efron-tibshirani",
+    "status": 403,
+    "file": "bootstrap-publisher.supplement.gz"
+  }
+]

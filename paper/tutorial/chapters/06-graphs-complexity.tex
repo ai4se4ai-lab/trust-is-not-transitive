@@ -1,0 +1,217 @@
+% =====================================================================
+\section{From Terms to Graphs: A Fast Algorithm and Its Limits}
+\label{ch:graphs}
+% =====================================================================
+
+\begin{bigidea}
+Writing a hierarchy as a tree can make it astronomically large: branches that rejoin must be duplicated. Real specifications are \emph{graphs}. When no gate provides facts, a classic \emph{dataflow} idea checks the whole graph in one pass, in near-linear time, no matter how many paths there are, and the paper proves that this pass is exactly right. When gates do provide facts, the exact problem becomes \textbf{coNP-complete}: one cannot expect a fast exact algorithm in general. The tool therefore runs the fast pass and only explores more when the fast pass raises an alarm.
+\end{bigidea}
+
+\subsection{The problem: paths explode}
+
+Consider a hierarchy where, at each of $d$ stages, the proposal may go left or right and then both ways meet again (a ``diamond''). Written as a term, each rejoining node must be copied into both arms. After $d$ diamonds the term has $2^d$ paths. For $d=64$ that is $1.8\times10^{19}$ paths; for $d=256$ about $1.2\times10^{77}$ (the number the paper reports). Checking every path one by one is hopeless.
+
+\begin{center}
+\begin{tikzpicture}[font=\scriptsize,
+  nd/.style={draw=tintblue,circle,fill=tintblue!8,minimum size=0.6cm,inner sep=0},
+  arr/.style={-{Stealth[length=1.8mm]}}]
+\node[nd] (a) at (0,0) {$s_1$};
+\node[nd] (b1) at (1.2,0.6) {}; \node[nd] (b2) at (1.2,-0.6) {};
+\node[nd] (c) at (2.4,0) {$s_2$};
+\node[nd] (d1) at (3.6,0.6) {}; \node[nd] (d2) at (3.6,-0.6) {};
+\node[nd] (e) at (4.8,0) {$s_3$};
+\node[nd] (f1) at (6.0,0.6) {}; \node[nd] (f2) at (6.0,-0.6) {};
+\node[nd] (g) at (7.2,0) {$g$};
+\foreach \x/\y in {a/b1,a/b2,b1/c,b2/c,c/d1,c/d2,d1/e,d2/e,e/f1,e/f2,f1/g,f2/g}{\draw[arr] (\x)--(\y);}
+\node[right=0.2cm of g,font=\small,align=left]{3 diamonds,\\$2^3=8$ paths,\\but only 10 nodes};
+\end{tikzpicture}
+\end{center}
+
+\subsection{Background: dataflow analysis, DAGs, topological order}
+
+\begin{toolbox}{graphs, DAGs and topological order}
+A \textbf{directed graph} has nodes and arrows. A \textbf{DAG} (directed acyclic graph) has no cycles: you can never follow arrows and come back. A \textbf{path} from the entry to a node is a sequence of arrows. A \textbf{topological order} lists the nodes so that every arrow goes from earlier to later; it exists exactly for DAGs and is found by one depth-first search in time proportional to (nodes + arrows).
+\end{toolbox}
+
+\begin{toolbox}{a ``must'' dataflow analysis}
+Compilers need to know facts like ``variable $x$ has definitely been assigned by this point'', true on \emph{every} path to the point. This is a forward \textbf{must} analysis. The idea:
+\begin{enumerate}
+\item Each node has a \emph{transfer function} describing how it changes the known facts.
+\item At a node where paths \emph{join}, the facts known are the \textbf{intersection} of what each incoming path knows (a fact must hold on all of them; this is why we intersect and not unite).
+\item On a DAG, process nodes in topological order: when you reach a node, all its predecessors are done. One pass suffices.
+\end{enumerate}
+For a certain class of transfer functions (``distributive'': $f(X\cap Y)=f(X)\cap f(Y)$) the result of this iteration equals the \emph{meet over all paths}, i.e.\ the intersection of the results along each path, without enumerating paths. The theory is from Kildall (1973) and Kam--Ullman (1977).
+\end{toolbox}
+
+\begin{toolbox}{sets as bit vectors}
+If the universe has $m$ elements, a subset is a string of $m$ bits. Union is bitwise OR, intersection is bitwise AND. A machine word of $w$ bits handles $w$ elements per operation, so a set operation costs $\lceil m/w\rceil$ steps. The paper's implementation stores goal and fact sets as Python integers.
+\end{toolbox}
+
+\subsection{Algorithm}
+
+\begin{center}
+\begin{minipage}{0.92\textwidth}
+\begin{tcolorbox}[enhanced,colback=tintblue!4,colframe=tintblue,title={Algorithm: checking a hierarchy graph (paper, Algorithm 1)},fonttitle=\bfseries]
+\begin{enumerate}[leftmargin=1.4em,itemsep=0.1em]
+\item Reject on a dangling reference, an undeclared name, or a cycle.
+\item $\mathrm{avail}(\mathit{entry})\gets\emptyset$ and $\mathrm{facts}(\mathit{entry})\gets\emptyset$.
+\item For each reachable node $n$ in topological order:
+  \begin{enumerate}[label=(\alph*),itemsep=0.05em]
+  \item compute $(\mathit{out},\mathit{known})$ = the gate transfer of $n$ applied to $(\mathrm{avail}(n),\mathrm{facts}(n))$;
+  \item for each successor $c$ of $n$: $\mathrm{avail}(c)\gets\mathrm{avail}(c)\cap\mathit{out}$ and $\mathrm{facts}(c)\gets\mathrm{facts}(c)\cap\mathit{known}$.
+  \end{enumerate}
+\item $W\gets$ each reachable guard failing $\ok$ on these sets, with a witness path.
+\item If $W\ne\emptyset$ and some reachable gate provides a fact: explore every reachable $(n,A,B)$ in topological order, and let $W$ be each $(n,A,B)$ at a guard failing $\ok(\ell_n,\Omega_n\cup B,A)$.
+\end{enumerate}
+\end{tcolorbox}
+\end{minipage}
+\end{center}
+
+Here ``gate transfer'' is exactly the clause for a gate in the definition of $\chk$: add $\varphi$ and $D$ if credited; do nothing for a guard or a switch. The first pass is the dataflow analysis; step 5 is a refinement used only when facts flow.
+
+\begin{example}{a diamond}
+Goals $\Goals=\{\varphi_1,\varphi_2\}$. A switch $s$ sends a proposal either to gate $x$ (deterministic, establishes $\varphi_1$) or to gate $y$ (deterministic, establishes $\varphi_1$ and, via a second gate, $\varphi_2$). Both arrows lead to guard $j$ with $\scope(\ell_j)=\{\varphi_2\}$, $\req(\ell_j)=\emptyset$.
+
+Pass: after $x$: $\{\varphi_1\}$; after $y$: $\{\varphi_1,\varphi_2\}$. At the join $j$:
+\[
+\mathrm{avail}(j)=\{\varphi_1\}\cap\{\varphi_1,\varphi_2\}=\{\varphi_1\}.
+\]
+Open goal $\varphi_2\in\scope(\ell_j)$, so $\ok$ holds. If $\scope(\ell_j)$ were empty, the guard would fail on the path through $x$, and the intersection correctly reports $\varphi_2$ missing.
+\end{example}
+
+\subsection{The Meet lemma: why intersecting is allowed}
+
+The pass intersects the sets from different paths and then tests $\ok$ \emph{once}. To trust this we need: ``$\ok$ on each path implies $\ok$ on the intersection''. That is the second part of the Meet lemma.
+
+\begin{statement}{Lemma (Meet, part b) \hfill\normalfont paper: Lemma 2(b)}
+If $\ok(\ell,e,A)$ and $\ok(\ell,e,A')$, then $\ok(\ell,e,A\cap A')$. (Note: the \emph{same} evidence $e$ on both sides.)
+\end{statement}
+
+\begin{plainproof}{Meet}
+If $\Goals\subseteq A\cap A'$ we are done (first disjunct). Otherwise some goal is missing from $A\cap A'$, so it is missing from $A$ or from $A'$; say from $A$. Then the first disjunct of $\ok(\ell,e,A)$ is false, so its second disjunct holds, giving $\req(\ell)\subseteq e$. That is exactly the first half we need. For the second half take any goal $g$ not in $A\cap A'$. Then $g\notin A$ or $g\notin A'$. In the first case $\ok(\ell,e,A)$ must have used the second disjunct, so $g\in\scope(\ell)$ (as $g\notin A$ and $\Goals\subseteq A\cup\scope(\ell)$); the second case is symmetric. So $\Goals\subseteq (A\cap A')\cup\scope(\ell)$. \hfill$\blacksquare$
+\end{plainproof}
+
+\begin{warning}{Why the lemma insists on one evidence set}
+The tempting generalization is: from $\ok(\ell,e,A)$ and $\ok(\ell,e',A')$ conclude $\ok(\ell,e\cap e',A\cap A')$. It is \textbf{false}. Take a path 1 where every goal is already established but there is no evidence ($A=\Goals$, $e=\emptyset$), and a path 2 where nothing is established but the evidence is complete and the scope covers everything ($A=\emptyset$, $e$ full). Each path is fine, the first through disjunct one, the second through disjunct two. The componentwise meet $A\cap A'=\emptyset$, $e\cap e'=\emptyset$ is not fine (if $\req(\ell)\ne\emptyset$). The paper reports that its authors' own attempt to prove the generalized lemma failed, which is how the complexity theorem below was discovered.
+\end{warning}
+
+\subsection{Why the pass is exact when no facts flow}
+
+First some definitions. For a graph with entry $e$, the \textbf{unfolding} is the term obtained by replacing each edge to a node by that node's term (copying shared nodes) and each missing successor by $\deny$. An acyclic graph's unfolding satisfies $\uniq$. A graph is \textbf{flow-free} if no reachable gate provides a fact.
+
+\begin{statement}{Theorem (Exactness of the algorithm) \hfill\normalfont paper: Theorem 5}
+For an acyclic graph with unfolding $H$, the algorithm ends with $W=\emptyset$ iff $\chk(H,\emptyset,\emptyset)$. Therefore soundness and completeness hold for graphs.
+\end{statement}
+
+\begin{plainproof}{Exactness}
+For a path $\pi$ from the entry to a node $n$, let $(A_\pi,B_\pi)$ be the result of applying the gate transfers along $\pi$ from $(\emptyset,\emptyset)$. Unfolding the equations of $\chk$ by induction on $H$ shows:
+\[
+\chk(H,\emptyset,\emptyset)\iff \ok(\ell_n,\Omega_n\cup B_\pi,A_\pi)\text{ for every guard }n\text{ and every path }\pi\text{ to it.}
+\]
+(the check visits every path and tests each guard it meets).
+
+\emph{Flow-free case.} No gate provides facts, so $B_\pi=\emptyset$ on every path, and whether a gate is credited depends only on the gate, not on the path. By induction along the topological order,
+\[
+\mathrm{avail}(n)=\bigcap_\pi A_\pi
+\]
+(because each step either adds a fixed goal or does nothing, and adding a fixed set distributes over intersection: $(X\cup\{\varphi\})\cap(Y\cup\{\varphi\})=(X\cap Y)\cup\{\varphi\}$). The evidence set is the same on all paths ($\Omega_n$), so the Meet lemma gives: $\ok(\ell_n,\Omega_n,\mathrm{avail}(n))$ iff $\ok(\ell_n,\Omega_n,A_\pi)$ for all $\pi$.
+
+\emph{General case.} The meets $\mathrm{avail}(n)$ and $\mathrm{facts}(n)$ are subsets of every $(A_\pi,B_\pi)$, by induction, because the gate transfer is monotone. So if the first pass finds nothing, each path passes by the monotone part of the Meet lemma (smaller sets passing implies larger sets pass). If the pass finds something, the exploration enumerates exactly the pairs $(A_\pi,B_\pi)$ that arise at each node, and $W$ is the path-wise condition itself. \hfill$\blacksquare$
+\end{plainproof}
+
+Intuitively: the first pass computes a \emph{safe under-approximation} (it knows no more than any path knows), so if even this passes, every path passes. In the flow-free case, the under-approximation loses nothing. When facts flow, it can lose the \emph{correlation} between which goals and which facts arrive together, so it can raise a false alarm, and the exploration repairs that. In the paper's experiment on 3000 random formulas the first pass rejected a safe hierarchy 740 times and exploration corrected every one.
+
+\begin{example}{a false alarm}
+Path 1 arrives at guard $j$ with all goals established but no facts; path 2 arrives with no goals established but with fact $o$, and $\req(\ell_j)=\{o\}$ and $\scope(\ell_j)\supseteq\Goals$. Each path is fine for $j$. The intersection has no goals and no fact: $\ok$ fails, a \emph{false alarm}. The exploration step processes the two pairs $(A_1,B_1)$ and $(A_2,B_2)$ separately and finds no real violation.
+\end{example}
+
+\textbf{Witnesses.} If a goal is missing at $n$, it is missing on a specific path, found by walking backward through a predecessor whose out-set lacks it. The tool turns this path into the model of the Completeness theorem, so every rejection can be replayed as a concrete attack.
+
+\subsection{Background: how hard is a problem?}
+
+The next theorem classifies the difficulty of the checking problem. The classification uses concepts from complexity theory; here is what you need.
+
+\begin{toolbox}{P, NP, coNP, and reductions}
+A \emph{decision problem} has a yes/no answer for each input. \textbf{P} is the class of problems solvable in time polynomial in the input size (``fast''). \textbf{NP} is the class of problems where a ``yes'' answer has a short \emph{certificate} that can be verified quickly. Example: SAT.
+
+\textbf{SAT.} A formula in conjunctive normal form (CNF) is an AND of \emph{clauses}, each an OR of \emph{literals} (a variable or its negation): $(x\vee y)\wedge(\neg x\vee y)\wedge(\neg y\vee z)$. SAT asks: is there a true/false assignment of the variables making the whole formula true? A satisfying assignment is a certificate that is quick to check, so SAT is in NP. No fast algorithm for SAT is known; it is the canonical \textbf{NP-complete} problem (Cook--Levin, 1971).
+
+\textbf{coNP} is the class of problems whose \emph{complement} is in NP: a ``no'' answer has a short certificate. Example: ``is this formula unsatisfiable?'' is coNP-complete (a certificate of \emph{satisfiability} refutes it).
+
+\textbf{Reductions.} To prove a problem $X$ is hard, show that a known hard problem $Y$ can be translated, in polynomial time, into an instance of $X$ with the same answer. Then a fast algorithm for $X$ would give a fast algorithm for $Y$. If the translation is from SAT into ``is this hierarchy \emph{un}safe?'', then unsafety is NP-hard and safety is coNP-hard.
+\end{toolbox}
+
+\subsection{The complexity theorem}
+
+\begin{statement}{Theorem (Complexity) \hfill\normalfont paper: Theorem 6}
+Let $w$ be the word size, $\|H\|$ the size of the specification, and $O$ the set of obligations.\\
+(a)~\textbf{Flow-free graphs.} Deciding safety takes $O\bigl((|V|+|E|)\lceil(|\Goals|+|O|)/w\rceil+\|H\|\log\|H\|\bigr)$ time: near-linear for bounded $\Goals$ and $O$, however many paths the graph has. Each witness adds at most $|V|$.\\
+(b)~\textbf{In general}, deciding safety is coNP-complete.\\
+(c)~\textbf{In general}, the first pass is sound, and the exploration takes time proportional to the number of reachable $(n,A,B)$ triples, which can be exponential.
+\end{statement}
+
+\begin{plainproof}{Complexity}
+\textbf{(a)} A depth-first search orders the graph in $O(|V|+|E|)$. With sets as bit vectors, each node performs a union and each edge an intersection, each costing $\lceil(|\Goals|+|O|)/w\rceil$ word operations. Masks for each layer are built once from its declared names; sorting the names accounts for the $\|H\|\log\|H\|$ term. Exactness is the previous theorem.
+
+\textbf{(b), membership in coNP.} If the hierarchy is \emph{un}safe, a violating path together with a model is a certificate that can be verified in polynomial time. So the complement of safety is in NP, and safety is in coNP.
+
+\textbf{(b), hardness.} We reduce SAT to unsafety. Given a CNF formula, build this hierarchy:
+\begin{itemize}
+\item For each variable $v$, a \emph{switch} that chooses between two deterministic gates: one that provides a fact $t_v$ (``$v$ is true''), the other providing $f_v$ (``$v$ is false''). A path through all these switches \emph{is} an assignment.
+\item For each clause $C$, a \emph{veto stage} (a gate whose contract requires exactly the facts that falsify every literal of $C$, for example a clause $x\vee\neg y$ is falsified by $f_x$ and $t_y$) which provides a fact $\ob{bad}$. It is credited iff the assignment on this path falsifies the clause.
+\item A final guard with one open goal, of full scope, that requires $\ob{bad}$.
+\end{itemize}
+The guard's $\ok$ holds on a path iff $\ob{bad}$ was provided on it, i.e.\ iff the path's assignment falsifies some clause. The hierarchy is rejected iff some path lacks $\ob{bad}$, i.e.\ iff some assignment falsifies \emph{no} clause, i.e.\ iff the formula is satisfiable. The hierarchy has size polynomial in the formula. This proves coNP-hardness of safety.
+
+\textbf{(c)} Soundness of the first pass follows from exactness. The exploration visits each reachable $(n,A,B)$ once, and the number of such triples can be exponential (the construction in (b) is an example). \hfill$\blacksquare$
+\end{plainproof}
+
+\begin{example}{the reduction on a tiny formula}
+Take $(x\vee y)\wedge(\neg x\vee y)$.
+\begin{center}
+\begin{tikzpicture}[font=\scriptsize,
+  nd/.style={draw=tintblue,rounded corners=2pt,fill=tintblue!8,align=center,minimum height=0.6cm},
+  vt/.style={draw=tintorange,rounded corners=2pt,fill=tintorange!10,align=center,minimum height=0.6cm},
+  gd/.style={draw=tintpurple,rounded corners=2pt,fill=tintpurple!10,align=center,minimum height=0.6cm},
+  arr/.style={-{Stealth[length=1.8mm]}}]
+\node[nd] (sx) at (0,0) {switch on $x$};
+\node[nd] (tx) at (-1.4,-1.1) {provides $t_x$}; \node[nd] (fx) at (1.4,-1.1) {provides $f_x$};
+\node[nd] (sy) at (0,-2.3) {switch on $y$};
+\node[nd] (ty) at (-1.4,-3.4) {provides $t_y$}; \node[nd] (fy) at (1.4,-3.4) {provides $f_y$};
+\node[vt] (c1) at (0,-4.6) {clause $x\vee y$: needs $f_x,f_y$\\provides \ob{bad}};
+\node[vt] (c2) at (0,-5.8) {clause $\neg x\vee y$: needs $t_x,f_y$\\provides \ob{bad}};
+\node[gd] (g) at (0,-7.0) {final guard: open goal, requires \ob{bad}};
+\draw[arr] (sx)--(tx); \draw[arr] (sx)--(fx); \draw[arr] (tx)--(sy); \draw[arr] (fx)--(sy);
+\draw[arr] (sy)--(ty); \draw[arr] (sy)--(fy); \draw[arr] (ty)--(c1); \draw[arr] (fy)--(c1);
+\draw[arr] (c1)--(c2); \draw[arr] (c2)--(g);
+\end{tikzpicture}
+\end{center}
+Path $x{=}F,y{=}F$ (facts $f_x,f_y$): clause 1 is falsified, so \ob{bad} is provided, and the guard is fine. Path $x{=}T,y{=}F$: clause 2 ($\neg x\vee y$) is falsified ($t_x,f_y$), \ob{bad} is provided. Path $x{=}T,y{=}T$ (facts $t_x,t_y$): neither clause is falsified, no \ob{bad}, so the guard fails $\ok$: \textbf{rejected}. And indeed $x=y=\text{true}$ satisfies the formula.
+\end{example}
+
+\textbf{Where the hardness comes from.} Credit that depends on facts. If only \emph{guards} consume provided facts (gates never need them), credit is path-independent and the problem is polynomial: one can treat each (open goal, missing obligation) pair as a single fact in a must-analysis. The authors have not implemented this middle case because the exploration already handles it. They also expect hierarchies with few provided facts to have few states.
+
+\subsection{A second source of hardness: correlated switches}
+
+Our switches are \emph{free}: two switches on the same condition name are treated as independent. In reality, ``input is tainted'' asked twice gives the same answer.
+
+\begin{statement}{Proposition (Correlated conditions) \hfill\normalfont paper: Proposition 1}
+If equal condition names denote one Boolean, safety is coNP-hard even for flow-free graphs. The free analysis stays sound, and it may reject a safe hierarchy.
+\end{statement}
+
+\begin{plainproof}{Correlated conditions}
+\emph{Hardness.} For each clause in turn, chain one switch per literal, on the literal's variable; a true literal jumps to the start of the next clause, and falling through all the literals of a clause denies. A final guard with an open goal is reachable iff some assignment satisfies every clause. (Same SAT idea as before, now encoded in the switch conditions rather than in facts.)
+
+\emph{Soundness.} A correlated model is a special case of a free model, so what holds for all free models holds for all correlated models.
+
+\emph{Incompleteness.} Let switch $s_1$ on condition $c$ lead, when $c$ is true, to a gate for $\varphi$ and then to $s_2$, and when $c$ is false directly to $s_2$; let $s_2$ also be on $c$, leading when $c$ is true to a guard of empty scope and when false to $\deny$. With correlation, a run reaches the guard only if $c$ is true, and then it has also passed the gate, so the guard's acceptance is harmless. The free analysis allows $s_1$ to take the ``false'' arm (skipping the gate) and $s_2$ the ``true'' arm (reaching the guard), a combination no real run has, so it rejects a hierarchy that is actually safe. \hfill$\blacksquare$
+\end{plainproof}
+
+\begin{recap}
+\begin{itemize}
+\item Terms blow up ($2^d$ paths); \Hsl{} graphs share nodes. The algorithm is a forward must-analysis: intersect at joins, one pass in topological order.
+\item The Meet lemma allows testing $\ok$ once on the intersection, but only with one evidence set.
+\item Exactness: without facts, the pass equals the path-wise check. With facts, the pass is sound and may false-alarm; exploring $(n,A,B)$ triples makes it exact.
+\item Complexity: near-linear when no facts flow; coNP-complete in general (reduce SAT with switches and fact-providing gates); correlated conditions are a further source of coNP-hardness, where the free analysis remains sound but incomplete.
+\end{itemize}
+\end{recap}

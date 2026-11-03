@@ -1,0 +1,102 @@
+{
+  "key": "bonfanti2023component",
+  "entry": {
+    "doi": "10.1016/j.jss.2022.111605",
+    "year": "2023",
+    "pages": "111605",
+    "volume": "198",
+    "journal": "Journal of Systems and Software",
+    "title": "A component framework for the runtime enforcement of safety properties",
+    "author": "Bonfanti, Silvia and Riccobene, Elvinia and Scandurra, Patrizia",
+    "ENTRYTYPE": "article",
+    "ID": "bonfanti2023component"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=A+component+framework+for+the+runtime+enforcement+of+safety+properties",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1016/j.jss.2022.111605",
+      "status": 200,
+      "file": "bonfanti2023component.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1016/j.jss.2022.111605",
+      "type": "journal-article",
+      "title": [
+        "A component framework for the runtime enforcement of safety properties"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9679-4551",
+          "authenticated-orcid": false,
+          "given": "Silvia",
+          "family": "Bonfanti",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elvinia",
+          "family": "Riccobene",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9209-3624",
+          "authenticated-orcid": false,
+          "given": "Patrizia",
+          "family": "Scandurra",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Systems and Software"
+      ],
+      "volume": "198",
+      "issue": null,
+      "page": "111605",
+      "article-number": "111605",
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            4
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "key": "wohlin2012experimentation",
+  "entry": {
+    "doi": "10.1007/978-3-642-29044-2",
+    "year": "2012",
+    "publisher": "Springer",
+    "title": "Experimentation in Software Engineering",
+    "author": "Wohlin, Claes and Runeson, Per and H{\\\"o}st, Martin and Ohlsson, Magnus C. and Regnell, Bj{\\\"o}rn and Wessl{\\'e}n, Anders",
+    "ENTRYTYPE": "book",
+    "ID": "wohlin2012experimentation"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Experimentation+in+Software+Engineering",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1007/978-3-642-29044-2",
+      "status": 200,
+      "file": "wohlin2012experimentation.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1007/978-3-642-29044-2",
+      "type": "book",
+      "title": [
+        "Experimentation in Software Engineering"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Claes",
+          "family": "Wohlin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Per",
+          "family": "Runeson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Höst",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Magnus C.",
+          "family": "Ohlsson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Björn",
+          "family": "Regnell",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anders",
+          "family": "Wesslén",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

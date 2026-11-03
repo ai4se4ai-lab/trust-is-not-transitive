@@ -1,0 +1,14 @@
+{
+ "commit": "3833cae474548ddbc9ecd9477c4062b97dc36e18",
+ "cpus": 22,
+ "llm_calls": 0,
+ "platform": "Windows-11-10.0.26100-SP0",
+ "python": "3.13.14",
+ "tree_clean": false,
+ "versions": {
+  "cvc5": "1.4.2",
+  "numpy": "2.2.5",
+  "scipy": "1.16.2",
+  "z3-solver": "5.3.3.0"
+ }
+}

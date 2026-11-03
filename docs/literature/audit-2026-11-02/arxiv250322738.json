@@ -1,0 +1,520 @@
+{
+  "key": "arxiv250322738",
+  "entry": {
+    "url": "https://proceedings.mlr.press/v267/chen25ae.html",
+    "publisher": "PMLR",
+    "year": "2025",
+    "pages": "8313--8344",
+    "volume": "267",
+    "series": "Proceedings of Machine Learning Research",
+    "booktitle": "Proceedings of the 42nd International Conference on Machine Learning",
+    "title": "{{S}hield{A}gent: Shielding Agents via Verifiable Safety Policy Reasoning}",
+    "author": "Chen, Zhaorun and Kang, Mintong and Li, Bo",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv250322738"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=ShieldAgent%3A+Shielding+Agents+via+Verifiable+Safety+Policy+Reasoning",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=ShieldAgent%3A+Shielding+Agents+via+Verifiable+Safety+Policy+Reasoning&rows=3",
+      "status": 200,
+      "file": "arxiv250322738.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v267/chen25ae.html",
+      "status": 200,
+      "file": "arxiv250322738.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.18653/2026.findings-emnlp.691",
+      "type": "proceedings-article",
+      "title": [
+        "Monitorable Chart Reasoning Agents via Verifiable Process Rewards"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Sanchit",
+          "family": "Sinha",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Oana",
+          "family": "Frunza",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kashif",
+          "family": "Rasul",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aidong",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EMNLP 2026"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "14488-14511",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "similarity": 0.492
+    },
+    {
+      "DOI": "10.18653/2026.emnlp-main.1513",
+      "type": "proceedings-article",
+      "title": [
+        "Enhancing Long-Context Reasoning via Verifiable Atomic Skills"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Yanling",
+          "family": "Xiao",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Huaibing",
+          "family": "Xie",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Guoliang",
+          "family": "Zhao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shihan",
+          "family": "Dou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nantao",
+          "family": "Zheng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shaolei",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yiting",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Cheng",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Pluto",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhisong",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lemao",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "34516-34532",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "event": {
+        "name": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+        "location": "Budapest, Hungary",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "similarity": 0.526
+    },
+    {
+      "DOI": "10.1109/bibm66473.2025.11356264",
+      "type": "proceedings-article",
+      "title": [
+        "Diagno-S: Towards Verifiable Medical Reasoning via Diagnostic Decomposition"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Xunfei",
+          "family": "Zhu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Sunwoda Electronic Co., Ltd.,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Chenhan",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Jiangnan University,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Shangkeng",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shantou University,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Puyuan",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Swansea University,UK"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Tianxiang",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Peking University,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Kang",
+          "family": "Liang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Sunwoda Electronic Co., Ltd.,China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "3412-3417",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            15
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            15
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "event": {
+        "name": "2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)",
+        "location": "Wuhan, China",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              15
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              18
+            ]
+          ]
+        }
+      },
+      "similarity": 0.444
+    }
+  ],
+  "meta": {
+    "citation_publisher": [
+      "PMLR"
+    ],
+    "citation_title": [
+      "ShieldAgent: Shielding Agents via Verifiable Safety Policy Reasoning"
+    ],
+    "citation_language": [
+      "en"
+    ],
+    "citation_abstract_html_url": [
+      "https://proceedings.mlr.press/v267/chen25ae.html"
+    ],
+    "citation_pdf_url": [
+      "https://raw.githubusercontent.com/mlresearch/v267/main/assets/chen25ae/chen25ae.pdf"
+    ],
+    "citation_firstpage": [
+      "8313"
+    ],
+    "citation_lastpage": [
+      "8344"
+    ],
+    "citation_author": [
+      "Zhaorun Chen",
+      "Mintong Kang",
+      "Bo Li"
+    ],
+    "citation_publication_date": [
+      "2025/10/06"
+    ],
+    "citation_inbook_title": [
+      "International Conference on Machine Learning"
+    ],
+    "citation_conference_title": [
+      "International Conference on Machine Learning"
+    ],
+    "citation_issn": [
+      "2640-3498"
+    ]
+  },
+  "details": {
+    "authors": "Zhaorun Chen, Mintong Kang, Bo Li"
+  },
+  "bibtex_links": []
+}

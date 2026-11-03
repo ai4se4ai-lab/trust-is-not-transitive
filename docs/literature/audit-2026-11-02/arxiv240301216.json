@@ -1,0 +1,128 @@
+{
+  "key": "arxiv240301216",
+  "entry": {
+    "url": "https://doi.org/10.18653/v1/2024.findings-emnlp.54",
+    "doi": "10.18653/v1/2024.findings-emnlp.54",
+    "publisher": "Association for Computational Linguistics",
+    "year": "2024",
+    "pages": "979--995",
+    "booktitle": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    "title": "{API Is Enough: Conformal Prediction for Large Language Models Without Logit-Access}",
+    "author": "Su, Jiayuan and Luo, Jing and Wang, Hongwei and Cheng, Lu",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv240301216"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=API+Is+Enough%3A+Conformal+Prediction+for+Large+Language+Models+Without+Logit-Access",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.18653/v1/2024.findings-emnlp.54",
+      "status": 200,
+      "file": "arxiv240301216.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.18653/v1/2024.findings-emnlp.54",
+      "type": "proceedings-article",
+      "title": [
+        "API Is Enough: Conformal Prediction for Large Language Models Without Logit-Access"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Jiayuan",
+          "family": "Su",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jing",
+          "family": "Luo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hongwei",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lu",
+          "family": "Cheng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Findings of the Association for Computational Linguistics: EMNLP 2024"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "979-995",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "event": {
+        "name": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+        "location": "Miami, Florida, USA",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              11
+            ]
+          ]
+        }
+      },
+      "similarity": 1.0
+    }
+  ]
+}

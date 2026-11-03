@@ -1,0 +1,139 @@
+% =====================================================================
+\section{Using the Approach in Practice}
+\label{ch:practice}
+% =====================================================================
+
+\begin{bigidea}
+The check is only as meaningful as the contracts you feed it. This chapter is the practical manual: how to choose goals, how to write contracts that are neither vacuous nor absurd, what the language can and cannot express, how to fit the tool into a development process, and which premises sit underneath every guarantee.
+\end{bigidea}
+
+\subsection{Three rules for writing contracts}
+
+\subsubsection{Rule 1: choose goals independently of the tools}
+
+\begin{warning}{A tautology trap}
+``CodeShield found nothing'' is a \emph{tautology} if the goal is defined by the tool's output: the tool trivially establishes it. A meaningful goal is ``the emitted code has no injectable SQL''. A static analyzer is then a \emph{veto stage with a recall obligation} (it misses some), not a deterministic gate.
+\end{warning}
+
+A stage is a \textbf{deterministic gate} only if it decides the goal \emph{exactly}, which usually needs the goal to be a property of typed actions and trusted metadata (``this request carries label \emph{secret} and goes to host outside the allow-list''). If you catch yourself writing a gate for a fuzzy goal such as ``the text is not malicious'', you are really describing a classifier.
+
+\subsubsection{Rule 2: state what a stage assumes about adversaries once, uniformly}
+
+An obligation ``the input is clean'' makes no sense for a \emph{detector of unclean input}: it would assume away its own job. The paper uses two uniform obligations instead:
+
+\begin{itemize}
+\item Every learned stage requires \ob{miss\_rate\_bounded}, supplied only if a certificate for the deployment or a bound stated by a source exists.
+\item Under an \emph{adversarial threat model}, every stage that reads raw text also requires \ob{safe\_on\_this\_text}.
+\end{itemize}
+
+These can be applied mechanically (the repository function \code{run.adversarial} does it). Verdicts still depend on the labels a modeller gives a stage, such as its \emph{view} or whether it is \emph{learned}, so those labels should be justified in a specification's review.
+
+\subsubsection{Rule 3: make each assumed obligation someone's job}
+
+A residual entry should have an \textbf{owner} and an \textbf{argument}, in the manner of an \emph{assurance case} (a structured argument that a system is acceptably safe, supported by evidence). The checker cannot tell a justified assumption from one added to silence it.
+
+\subsection{A catalog of contracts by guard class}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\small
+\begin{tabularx}{\textwidth}{@{}p{2.7cm}p{1.9cm}XX@{}}
+\toprule
+\textbf{Class} & \textbf{Stage} & \textbf{Typical obligations} & \textbf{Discharged by}\\
+\midrule
+Rule on typed action & det.\ gate & none; complete mediation is a host premise & review, tests\\
+Provenance gate & det.\ gate & provides \ob{safe\_on\_this\_text}, put on a claims list & label store, taint property\\
+Static analyzer & veto & \ob{miss\_rate\_bounded} & certificate on the code base\\
+Classifier & veto or guard & \ob{miss\_rate\_bounded}, robustness if reads raw text & calibration; adversarial testing\\
+LLM judge & guard & same, plus \ob{config\_match} & calibration; a provided fact\\
+Human approver & guard & sees provenance; attentive; \ob{safe\_on\_this\_text} & interface design, audits\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{What the language covers (and does not)}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\small
+\begin{tabularx}{\textwidth}{@{}p{4.5cm}X@{}}
+\toprule
+\textbf{Construct} & \textbf{Encoding}\\
+\midrule
+Veto chain & gates, then a release guard of empty scope\\
+Escalation cascade & guards linked by $\esc$\\
+Routing, multi-way & nested switches; free conditions\\
+Human approval & a guard with an obligation on what is shown\\
+Sequential checks that all must pass & gates\\
+Retry or reask, bounded & unrolled; loops are not expressible\\
+$k$-of-$n$ voting & not expressible except by enumerating arms\\
+Rewriting, masking & \textbf{not expressible}\\
+Session policies & budget gate only; no temporal goals\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+The gaps are real. A \emph{rewriting stage} (for example, one that masks personal information in text) changes the proposal, but the calculus assumes that one fixed proposal flows through. Rail frameworks offer masking stages, so this is the first extension the authors would make.
+
+\subsection{In a development process}
+
+Treat an \Hsl{} specification as a \emph{reviewed artifact}, kept with the code and checked in continuous integration (CI), like a build file. On a \textbf{rejection}, the finding offers three options:
+
+\begin{enumerate}
+\item \textbf{Add a stage} (for example a provenance gate that can provide the missing fact).
+\item \textbf{Change the stage's view or evidence} (for example give the judge a structured view that cannot be addressed by text; but see Non-interference for the cost).
+\item \textbf{Accept the assumption and name its owner} (it moves to the residual list).
+\end{enumerate}
+
+The residual list goes to whoever owns the safety case. For statistical routes the steps are: (1) collect labelled data, including attacks, for each configuration in shadow mode; (2) certify with shares reserved; (3) switch; (4) monitor for drift, because a certificate says nothing about data it has not seen. When a route closes, decide in advance whether its traffic is denied or sent to a person.
+
+The paper is candid that \textbf{none of this process has been evaluated with practitioners}. It also notes the list of assumptions may be most useful when it is \emph{short}: a team with a two-stage stack could write it by hand.
+
+\subsection{The premises underneath everything}
+
+Every theorem has premises. The paper collects them in one table; learn to look for them whenever someone cites the guarantees.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}p{2.9cm}p{2.2cm}XX@{}}
+\toprule
+\textbf{Premise} & \textbf{Needed by} & \textbf{How to discharge} & \textbf{If false}\\
+\midrule
+Complete mediation & all & every effect passes through the engine; no raw shell or unmodelled tool & actions bypass the hierarchy\\
+Trusted host & all & honest label, approval and certificate stores; correct action interpreter & gates decide on forged data\\
+Deterministic gates are exact & Route risk, Certified risk & testing of rules against the goal & goal fails with no warning\\
+Contract truth & Soundness & measurement, for bounded stages; argument otherwise & guarantee for that goal is void\\
+Claims of deterministic gates & Soundness & review of each claim on the claims list & a fact or goal is credited falsely\\
+Assumed evidence is true & Soundness & an owner's argument; the necessity corollary shows which are needed & contract promises nothing there\\
+Stationarity & Certified risk & drift monitoring; a shift of size $\eta$ adds at most $\eta$ & bound does not apply; fails under adaptation\\
+Honest calibration & Certified risk & fresh data, one attempt per share; labels independent of the guards & confidence level is void\\
+Declared component identity & fingerprints & model files and callees named in the configuration & stale certificate stays open\\
+Stateless prefix & Certified risk & no ledger-reading gate on statistical routes & route events depend on history\\
+Budget gate on every route & Budget & review of the specification & cost escapes the limit\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\pauseq{Pick any three rows of this table and, for each, describe a realistic failure that would make the premise false in a deployed coding agent.}{Examples. \emph{Complete mediation:} the agent has a general-purpose shell tool, so it can run \texttt{curl} on a secret without passing the egress gate. \emph{Trusted host:} the taint-label store is writable by a plugin, so an attacker can relabel a tainted string as clean. \emph{Stationarity:} after launch, a new family of attacks appears that was absent from the calibration set; the measured miss rate no longer applies. \emph{Declared component identity:} the judge's weights are swapped on the inference server without changing the configuration, so the old certificate stays open for a different model.}
+
+\subsection{Mini-project: model your own stack}
+
+A good exercise for a student group: take a guardrail configuration you know (for example, a chatbot with an input filter, an output moderation model and an escalation to a human), and:
+
+\begin{enumerate}
+\item List its goals and classify each as exact or statistical.
+\item Draw it with gates, guards and switches (Figure~\ref{fig:devagent-term} style).
+\item Write a contract $(\req,\scope)$ for every learned stage using the uniform obligations.
+\item Run the check by hand with the $(A,B)$ table. Where does it fail, and why?
+\item Propose the smallest change (a stage, a view, or an assumption with an owner) that makes it pass; and write the one-paragraph argument the owner must defend.
+\end{enumerate}
+
+\begin{recap}
+\begin{itemize}
+\item Goals independent of tools; uniform adversarial obligations; each assumption has an owner.
+\item The language cannot express rewriting, voting, loops or temporal session goals.
+\item A rejection offers three options: add a stage, change the view/evidence, or accept an owned assumption.
+\item Learn the premises table; each guarantee is conditional on several of them.
+\end{itemize}
+\end{recap}

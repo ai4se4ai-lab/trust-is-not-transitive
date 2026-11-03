@@ -1,0 +1,200 @@
+% =====================================================================
+% Title page, reading guide, roadmap
+% =====================================================================
+\begin{titlepage}
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[tintblue] (current page.north west) rectangle ([yshift=-9.5cm]current page.north east);
+  \fill[tintorange] ([yshift=-9.5cm]current page.north west) rectangle ([yshift=-9.75cm]current page.north east);
+\end{tikzpicture}
+\vspace*{1.2cm}
+{\color{white}\fontsize{34}{40}\selectfont\bfseries Trust Is\\[2pt] Not Transitive\par}
+\vspace{0.6cm}
+{\color{white}\Large Why a stack of safety checks can still let danger through,\\and how to prove when it cannot\par}
+\vspace{0.3cm}
+{\color{white!85!tintblue}\large A tutorial for undergraduates on the paper \emph{``Trust Is Not Transitive: Verifying the Composition of LLM Guardrail Hierarchies''}, its theorems, its proofs, its code and its experiments\par}
+\vspace{4.6cm}
+
+\begin{center}
+\begin{tikzpicture}[font=\small,
+  lay/.style={draw=tintblue,rounded corners=3pt,fill=tintblue!8,minimum width=2.4cm,minimum height=0.9cm,align=center},
+  arr/.style={-{Stealth[length=2.4mm]},thick,tintblue}]
+  \node[lay] (a) {Rules\\{\scriptsize cheap, exact}};
+  \node[lay,right=0.8cm of a] (b) {Scorer\\{\scriptsize learned}};
+  \node[lay,right=0.8cm of b] (c) {LLM judge\\{\scriptsize learned}};
+  \node[lay,right=0.8cm of c] (d) {Human\\{\scriptsize expensive}};
+  \draw[arr] (a)--(b); \draw[arr] (b)--(c); \draw[arr] (c)--(d);
+\end{tikzpicture}
+\end{center}
+\vspace{0.8cm}
+\begin{center}
+\begin{minipage}{0.86\textwidth}
+\textbf{The question.} An AI agent's actions pass through a chain of safety checks. Suppose \emph{each} check does exactly what it promises. Can a dangerous action still get through?
+
+\smallskip
+\textbf{The answer in one line.} Yes. A promise made by a check is \emph{conditional}: it holds only if some assumption about the input is true. The fact that the check before it was careful does not make that assumption true. The paper builds a small mathematical language in which this can be checked by a program, and proves that the program is right.
+
+\medskip
+\textbf{You will learn to:} read and write the paper's formal definitions; follow every proof, step by step; explain why the algorithm is fast in the easy case and provably hard in the general case; compute a statistical risk bound for an LLM-based guard; and run the authors' code to see each idea in action.
+\end{minipage}
+\end{center}
+\vfill
+{\small\color{gray} Written for students who have had a first programming course and a first discrete-mathematics course. Everything else is explained when it is first needed. No page limit was imposed: when an idea is difficult, this text slows down.}
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+% =====================================================================
+\section*{How to Use This Tutorial}
+\addcontentsline{toc}{section}{How to Use This Tutorial}
+\markboth{How to use this tutorial}{}
+% =====================================================================
+
+\subsection*{What the paper is, in one paragraph}
+
+Modern AI agents (for example, a coding assistant that reads a bug report, edits files and calls web services) are protected by \emph{guardrails}: pattern rules, classifiers, a second AI model acting as a ``judge'', and sometimes a human who approves. These guards are usually \emph{stacked}. The paper asks a software-engineering question: \textbf{when is a stack of guards justified?} It answers by (1) defining a tiny language (a \emph{calculus}) for describing stacks, (2) defining what ``safe'' means for a described stack, (3) giving a checking procedure and \emph{proving} that it is sound (it never approves an unsafe design) and complete (it rejects every design that can be broken), (4) proving that a popular informal argument, ``trust is transitive'', is wrong, (5) analysing how hard the checking problem is, (6) connecting the exact analysis to statistics, so that learned guards, which are never perfect, can still be given a number, and (7) testing the implementation heavily.
+
+\subsection*{The boxes you will meet}
+
+The tutorial uses colored boxes so that you always know what kind of text you are reading.
+
+\begin{bigidea}
+A blue box states the main point of a chapter or section. If you remember only one thing, remember this.
+\end{bigidea}
+
+\begin{toolbox}{an example of a background box}
+A teal box teaches something from outside the paper (sets, logic, induction, probability, \dots) \emph{right before} the paper needs it. If you already know the topic, skip it.
+\end{toolbox}
+
+\begin{defbox}{an example}
+A definition from the paper, restated in plain words, with the exact symbols next to it.
+\end{defbox}
+
+\begin{statement}{Theorem (an example) \hfill\normalfont paper: Theorem N}
+A formal statement. Each is followed by a purple ``proof in plain words'' box.
+\end{statement}
+
+\begin{plainproof}{an example}
+The same proof as in the paper, but with every step explained and with the reason for each step.
+\end{plainproof}
+
+\begin{example}{a worked example}
+A concrete, small instance with real numbers or real names, so that you can see the symbols do something.
+\end{example}
+
+\begin{warning}{A common mistake}
+A red box marks a misunderstanding that is easy to fall into.
+\end{warning}
+
+\begin{story}{An analogy}
+A gray box tells a story from everyday life, to build intuition before the formalism.
+\end{story}
+
+\begin{tryit}{run the authors' code}
+# green boxes contain code you can run in the repository
+print("hello")
+\end{tryit}
+
+\pauseq{Orange boxes ask you to stop and think before reading on. Try to answer them yourself.}{Answers appear only in the instructor edition of this document.}
+
+\subsection*{Suggested path}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}lXp{3.2cm}@{}}
+\toprule
+\textbf{Reader} & \textbf{Path} & \textbf{Time}\\
+\midrule
+Wants the idea only & Chapters~\ref{ch:motivation}, \ref{ch:calculus} (first half), \ref{ch:transitive}, \ref{ch:worked}, \ref{ch:wrapup} & about 3 hours\\
+Wants every theorem and proof & Chapters~\ref{ch:motivation}--\ref{ch:risk}, then \ref{ch:worked} & about 12 hours\\
+Wants to also trust the experiments & everything, plus the lab in Chapter~\ref{ch:evaluation} & about 18 hours\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+A possible 8-week course schedule is in Appendix~C.
+
+% ---------------------------------------------------------------------
+\subsection*{The roadmap}
+% ---------------------------------------------------------------------
+
+Figure~\ref{fig:roadmap} shows how the chapters depend on each other. Each arrow points from a chapter to one that builds on it, and its label says what is carried over. The dashed arrow means Chapter~11 re-proves the theorems of Chapters~4--7.
+
+\begin{figure}[p]
+\centering
+\begin{tikzpicture}[font=\small,
+  ch/.style={draw=tintblue,rounded corners=3pt,fill=tintblue!8,minimum width=3.4cm,minimum height=1.0cm,align=center},
+  th/.style={draw=tintpurple,rounded corners=3pt,fill=tintpurple!8,minimum width=3.4cm,minimum height=1.0cm,align=center},
+  ex/.style={draw=tintgreen,rounded corners=3pt,fill=tintgreen!8,minimum width=3.4cm,minimum height=1.0cm,align=center},
+  arr/.style={-{Stealth[length=2.2mm]},thick,gray},
+  lab/.style={fill=white,inner sep=1.5pt,font=\scriptsize,text=black!70,align=center}]
+\node[ch] (c1) at (0,0) {1. The problem};
+\node[ch] (c2) at (0,-2.0) {2. Toolkit\\{\scriptsize sets, logic, contracts, induction}};
+\node[th] (c3) at (0,-4.0) {3. The calculus\\{\scriptsize syntax, semantics, safety}};
+\node[th] (c4) at (0,-6.0) {4. The check\\{\scriptsize soundness, completeness}};
+\node[th] (c5) at (-6,-8.6) {5. Transitivity\\and order};
+\node[th] (c6) at (0,-8.6) {6. Graphs,\\complexity};
+\node[th] (c7) at (6,-8.6) {7. Structural facts};
+\node[ch] (c10) at (-6,-11.2) {10. Using it\\in practice};
+\node[ch] (c9) at (0,-11.2) {9. Worked example};
+\node[th] (c8) at (6,-11.2) {8. Risk and\\certificates};
+\node[ex] (c11) at (-6,-13.8) {11. Machine-checked\\proofs};
+\node[ex] (c12) at (0,-13.8) {12. Experiments};
+\node[ch] (c13) at (6,-13.8) {13. Wrap-up};
+\draw[arr] (c1)--node[lab]{why a framework\\is needed}(c2);
+\draw[arr] (c2)--node[lab]{sets, contracts,\\induction}(c3);
+\draw[arr] (c3)--node[lab]{definition of\\``safe''}(c4);
+\draw[arr] (c4.south)--node[lab,pos=0.55]{the check is\\not transitive}(c5.north);
+\draw[arr] (c4)--node[lab,pos=0.5]{the check as\\an algorithm}(c6);
+\draw[arr] (c4.south)--node[lab,pos=0.55]{same proof\\technique}(c7.north);
+\draw[arr] (c5)--node[lab]{facts, order}(c10);
+\draw[arr] (c6)--node[lab]{fast pass}(c9);
+\draw[arr] (c7)--node[lab]{routes,\\locality}(c8);
+\draw[arr] (c8)--node[lab]{certificates}(c9);
+\draw[arr] (c9)--node[lab]{lessons}(c10);
+\draw[arr] (c9)--node[lab]{what to\\test}(c12);
+\draw[arr] (c11)--node[lab]{proofs\\checked}(c12);
+\draw[arr] (c12)--node[lab]{evidence}(c13);
+\draw[arr,dashed] (c4.west) -- (-7.9,-6.0) |- (c11.west)
+  node[lab,pos=0.45,xshift=-0.55cm]{theorems\\to prove};
+\end{tikzpicture}
+\caption{Chapter dependencies. Blue: ideas and practice. Purple: theorems and proofs. Green: evidence.}
+\label{fig:roadmap}
+\end{figure}
+
+% ---------------------------------------------------------------------
+\subsection*{Where each theorem of the paper is in this tutorial}
+% ---------------------------------------------------------------------
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}p{4.1cm}p{2.1cm}X@{}}
+\toprule
+\textbf{Result (paper's name)} & \textbf{Paper} & \textbf{In this tutorial}\\
+\midrule
+Soundness & Thm.~1 & Chapter~\ref{ch:check}, Section~\ref{sec:sound}\\
+Frame lemma & Lem.~1 & Chapter~\ref{ch:check}, Section~\ref{sec:complete}\\
+Completeness & Thm.~2 & Chapter~\ref{ch:check}, Section~\ref{sec:complete}\\
+Necessary assumptions & Cor.~1 & Chapter~\ref{ch:check}, Section~\ref{sec:necessary}\\
+Transitive reasoning is unsound & Thm.~3 & Chapter~\ref{ch:transitive}\\
+Order & Thm.~4 & Chapter~\ref{ch:transitive}\\
+Meet lemma & Lem.~2 & Chapter~\ref{ch:transitive} (part a), Chapter~\ref{ch:graphs} (part b)\\
+Exactness of the algorithm & Thm.~5 & Chapter~\ref{ch:graphs}\\
+Complexity & Thm.~6 & Chapter~\ref{ch:graphs}\\
+Correlated conditions & Prop.~1 & Chapter~\ref{ch:graphs}\\
+Structural properties & Thm.~7 & Chapter~\ref{ch:structural}\\
+Affected routes & Cor.~2 & Chapter~\ref{ch:structural}\\
+Non-interference & Thm.~8 & Chapter~\ref{ch:structural}\\
+Route risk & Thm.~9 & Chapter~\ref{ch:risk}\\
+Veto and cascade & Prop.~2 & Chapter~\ref{ch:risk}\\
+Certified risk & Thm.~10 & Chapter~\ref{ch:risk}\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection*{About the numbers and the code}
+
+All experiment numbers quoted here are copied from the paper's result files (they are produced by the repository's scripts, not typed by hand). The code examples were run against the repository at the time of writing. The paper itself is explicit that \emph{no LLM was run}: its claims are theorems and tests of software, not measurements of how safe any real AI is. Keep this in mind; Chapter~\ref{ch:evaluation} returns to it.
+
+\clearpage
+\setcounter{q}{0}

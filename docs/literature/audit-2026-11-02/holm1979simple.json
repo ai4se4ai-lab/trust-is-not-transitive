@@ -1,0 +1,194 @@
+{
+  "key": "holm1979simple",
+  "entry": {
+    "url": "https://www.jstor.org/stable/4615733",
+    "year": "1979",
+    "pages": "65--70",
+    "number": "2",
+    "volume": "6",
+    "journal": "Scandinavian Journal of Statistics",
+    "title": "A Simple Sequentially Rejective Multiple Test Procedure",
+    "author": "Holm, Sture",
+    "ENTRYTYPE": "article",
+    "ID": "holm1979simple"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=A+Simple+Sequentially+Rejective+Multiple+Test+Procedure",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=A+Simple+Sequentially+Rejective+Multiple+Test+Procedure&rows=3",
+      "status": 200,
+      "file": "holm1979simple.crossref.json.gz"
+    },
+    {
+      "url": "https://www.jstor.org/stable/4615733",
+      "status": 420,
+      "file": "holm1979simple.primary.html.gz"
+    }
+  ],
+  "errors": [
+    "primary: 420 Client Error: Enhance Your Calm for url: https://www.jstor.org/stable/4615733"
+  ],
+  "candidates": [
+    {
+      "DOI": "10.2307/2531823",
+      "type": "journal-article",
+      "title": [
+        "An Improved Sequentially Rejective Bonferroni Test Procedure"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Burt S.",
+          "family": "Holland",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Margaret DiPonzio",
+          "family": "Copenhaver",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Biometrics"
+      ],
+      "volume": "43",
+      "issue": "2",
+      "page": "417",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1987,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1987,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "JSTOR",
+      "event": null,
+      "similarity": 0.777
+    },
+    {
+      "DOI": "10.1080/01621459.1986.10478341",
+      "type": "journal-article",
+      "title": [
+        "Modified Sequentially Rejective Multiple Test Procedures"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Juliet Popper",
+          "family": "Shaffer",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of California",
+              "place": [
+                "USA"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of the American Statistical Association"
+      ],
+      "volume": "81",
+      "issue": "395",
+      "page": "826-831",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1986,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1986,
+            9
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2012,
+            3,
+            12
+          ]
+        ]
+      },
+      "publisher": "Informa UK Limited",
+      "event": null,
+      "similarity": 0.88
+    },
+    {
+      "DOI": "10.2307/2532027",
+      "type": "journal-article",
+      "title": [
+        "Correction: An Improved Sequentially Rejective Bonferroni Test Procedure"
+      ],
+      "subtitle": null,
+      "author": null,
+      "container-title": [
+        "Biometrics"
+      ],
+      "volume": "43",
+      "issue": "3",
+      "page": "737",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1987,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1987,
+            9
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "JSTOR",
+      "event": null,
+      "similarity": 0.708
+    }
+  ]
+}

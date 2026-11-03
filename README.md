@@ -1,10 +1,17 @@
 # Trust Is Not Transitive (TINT)
 
-Executable conditioned-trust contracts for a local typed agent sandbox,
-scoped composition proofs, reproducible experiments and an IEEE-format
-manuscript. This is a feasibility artifact; real-LLM/external validation is
-unfinished. The frozen primary study found no useful certified policy; a
-disclosed numeric correction is evaluated separately on fresh seeds.
+A formal calculus of guardrail hierarchies, a sound and complete linear-time
+composition check, a fail-closed engine with route-level certificates, SMT-checked
+proofs and an IEEE-format manuscript. The verification study lives in `src/tint/hsl`,
+`formal/calculus`, `experiments/v2` and `results/v2`; run it with
+`python scripts/tasks.py proofs` (under a minute) and
+`python scripts/tasks.py verification` (about half an hour). It uses no LLM, and it
+does not show that any guard meets its contract.
+
+An earlier scripted sandbox study remains here unchanged. Its frozen primary study
+found no useful certified policy; a disclosed numeric correction is evaluated
+separately on fresh seeds. `src/tint/bench` is unrelated Ollama tooling, unused by
+either study.
 
 ```powershell
 python -m pip install -r requirements-paper.lock
@@ -21,6 +28,9 @@ documents full reproduction, PRISM/TeX setup, licensing and limitations.
 Read the [manuscript](paper/main.pdf), [formal framework](formal/FRAMEWORK.md),
 [preregistration](experiments/PREREGISTRATION.md),
 [amendments](experiments/AMENDMENTS.md) and [final report](docs/FINAL_REPORT.md).
+For teaching, use the [undergraduate tutorial](paper/tutorial.md),
+[instructor answer key](paper/tutorial-instructor-notes.md), and
+`python scripts/tutorial_lab.py` for the accompanying local lab.
 The paper is a single [main.tex](paper/main.tex) with one bibliography,
 [references.bib](paper/references.bib). Result macros are generated into a marked block at
 the top of `main.tex` by `scripts/make_macros.py`; do not hand-edit that block.

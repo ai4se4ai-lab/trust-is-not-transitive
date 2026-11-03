@@ -1,0 +1,304 @@
+{
+  "key": "arxiv230915817",
+  "entry": {
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/7274ed909a312d4d869cc328ad1c5f04-Abstract-Conference.html",
+    "year": "2024",
+    "pages": "27031--27098",
+    "volume": "2024",
+    "booktitle": "International Conference on Learning Representations",
+    "title": "{Identifying the Risks of LM Agents with an LM-Emulated Sandbox}",
+    "author": "Ruan, Yangjun and Dong, Honghua and Wang, Andrew and Pitis, Silviu and Zhou, Yongchao and Ba, Jimmy and Dubois, Yann and Maddison, Chris J. and Hashimoto, Tatsunori",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv230915817"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Identifying+the+Risks+of+LM+Agents+with+an+LM-Emulated+Sandbox",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Identifying+the+Risks+of+LM+Agents+with+an+LM-Emulated+Sandbox&rows=3",
+      "status": 200,
+      "file": "arxiv230915817.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/7274ed909a312d4d869cc328ad1c5f04-Abstract-Conference.html",
+      "status": 200,
+      "file": "arxiv230915817.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/1810295.1810370",
+      "type": "proceedings-article",
+      "title": [
+        "LM"
+      ],
+      "subtitle": [
+        "a miner for scenario-based specifications"
+      ],
+      "author": [
+        {
+          "given": "Tuan-Anh",
+          "family": "Doan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "National University of Singapore"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Lo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Singapore Management University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Shahar",
+          "family": "Maoz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Software Engineering, RWTH-Aachen, Germany"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Siau-Cheng",
+          "family": "Khoo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "National University of Singapore"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering - Volume 2"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "319-320",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2010,
+            5
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2010,
+            5
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "event": {
+        "name": "ICSE '10: 32nd International Conference on Software Engineering",
+        "sponsor": [
+          "SIGSOFT ACM Special Interest Group on Software Engineering",
+          "IEEE CS"
+        ],
+        "location": "Cape Town South Africa",
+        "acronym": "ICSE '10"
+      },
+      "similarity": 0.074
+    },
+    {
+      "DOI": "10.1007/978-3-642-96868-6_125",
+      "type": "book-chapter",
+      "title": [
+        "LM"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Alan",
+          "family": "Bundy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Lincoln",
+          "family": "Wallen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Catalogue of Artificial Intelligence Tools"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "62-62",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1984
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1984
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "event": null,
+      "similarity": 0.074
+    },
+    {
+      "DOI": "10.1007/s40319-023-01390-z",
+      "type": "journal-article",
+      "title": [
+        "“LM”"
+      ],
+      "subtitle": [
+        "Decision of the Court of Justice of the European Union (Tenth Chamber) 27 April 2023 – Case No. C-654/21; ECLI:EU:C:2023:462"
+      ],
+      "author": [
+        {
+          "name": "LM v. KP Regulation (EU) 2017/1001, Arts. 124, 128, 129(3)",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IIC - International Review of Intellectual Property and Competition Law"
+      ],
+      "volume": "54",
+      "issue": "10",
+      "page": "1613-1613",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            11
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            5
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "event": null,
+      "similarity": 0.074
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "Identifying the Risks of LM Agents with an LM-Emulated Sandbox"
+    ],
+    "citation_author": [
+      "Ruan, Yangjun",
+      "Dong, Honghua",
+      "Wang, Andrew",
+      "Pitis, Silviu",
+      "Zhou, Yongchao",
+      "Ba, Jimmy",
+      "Dubois, Yann",
+      "Maddison, Chris",
+      "Hashimoto, Tatsunori"
+    ],
+    "citation_journal_title": [
+      "International Conference on Learning Representations"
+    ],
+    "citation_volume": [
+      "2024"
+    ],
+    "citation_firstpage": [
+      "27031"
+    ],
+    "citation_lastpage": [
+      "27098"
+    ],
+    "citation_pdf_url": [
+      "https://proceedings.iclr.cc/paper_files/paper/2024/file/7274ed909a312d4d869cc328ad1c5f04-Paper-Conference.pdf"
+    ],
+    "citation_publication_date": [
+      "2024-05-31"
+    ]
+  },
+  "details": {},
+  "bibtex_links": [
+    "/paper_files/paper/4437-/bibtex"
+  ]
+}

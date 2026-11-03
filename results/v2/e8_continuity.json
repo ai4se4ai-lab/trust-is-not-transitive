@@ -1,0 +1,12 @@
+{
+ "exploratory": {
+  "compared": 24000,
+  "disagreements": 0,
+  "policy": "checked_quarantine"
+ },
+ "primary": {
+  "compared": 24000,
+  "disagreements": 0,
+  "policy": "checked_uncalibrated"
+ }
+}

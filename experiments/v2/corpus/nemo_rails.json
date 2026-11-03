@@ -1,0 +1,1220 @@
+{
+ "repository": "NVIDIA-NeMo/Guardrails",
+ "commit": "8d027fd81a2f7bffd145e7a40ac6e190a57cd11d",
+ "configurations": [
+  {
+   "path": "examples",
+   "rails": {
+    "input": [
+     "self check input",
+     "check sensitive data",
+     "activefence moderation on input",
+     "check toxicity",
+     "some other moderation thing"
+    ],
+    "retrieval": [
+     "check retrieval sensitive data"
+    ],
+    "output": [
+     "self check facts",
+     "self check hallucination",
+     "activefence moderation on output",
+     "check sensitive data"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/bots/abc",
+   "rails": {
+    "input": [
+     "self check input"
+    ],
+    "output": [
+     "self check output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/bots/abc_v2",
+   "rails": {
+    "input": [
+     "self check input"
+    ],
+    "output": [
+     "self check output"
+    ]
+   },
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/bots/hello_world",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/agent_hooks/claude_code",
+   "rails": {
+    "tool_call": [
+     "regex check tool call $argument=command [Bash]",
+     "regex check tool call $argument=file_path [Read]",
+     "regex check tool call $argument=file_path [Write]",
+     "regex check tool call $argument=file_path [Edit]"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/agent_hooks/codex",
+   "rails": {
+    "tool_call": [
+     "regex check tool call $argument=command [Bash]",
+     "regex check tool call $argument=command [apply_patch]"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/agent_hooks/nemo_relay",
+   "rails": {
+    "tool_call": [
+     "regex check tool call $argument=query [search]"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/ai_defense",
+   "rails": {
+    "input": [
+     "ai defense inspect prompt"
+    ],
+    "output": [
+     "ai defense inspect response"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/ai_defense_v2",
+   "rails": {
+    "input": [
+     "ai defense inspect prompt $input_text"
+    ],
+    "output": [
+     "ai defense inspect response $output_text"
+    ]
+   },
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/configs/autoalign/autoalign_config",
+   "rails": {
+    "input": [
+     "autoalign check input"
+    ],
+    "output": [
+     "autoalign check output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/autoalign/autoalign_factcheck_config",
+   "rails": {
+    "output": [
+     "autoalign factcheck output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/autoalign/autoalign_groundness_config",
+   "rails": {
+    "output": [
+     "autoalign groundedness output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/clavata",
+   "rails": {
+    "input": [
+     "clavata check input"
+    ],
+    "output": [
+     "clavata check output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/clavata_v2",
+   "rails": {
+    "input": [
+     "clavata check for ($input_text, \"Toxicity\", [\"Hate Speech\"])"
+    ],
+    "output": [
+     "clavata check for ($output_text, \"Threats\")"
+    ]
+   },
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/configs/content_safety",
+   "rails": {
+    "input": [
+     "content safety check input $model=content_safety"
+    ],
+    "output": [
+     "content safety check output $model=content_safety"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/content_safety_api_keys",
+   "rails": {
+    "input": [
+     "content safety check input $model=content_safety"
+    ],
+    "output": [
+     "content safety check output $model=content_safety"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/content_safety_local",
+   "rails": {
+    "input": [
+     "content safety check input $model=content_safety"
+    ],
+    "output": [
+     "content safety check output $model=content_safety"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/content_safety_multilingual",
+   "rails": {
+    "input": [
+     "content safety check input $model=content_safety"
+    ],
+    "output": [
+     "content safety check output $model=content_safety"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/content_safety_reasoning",
+   "rails": {
+    "input": [
+     "content safety check input $model=content_safety_reasoning"
+    ],
+    "output": [
+     "content safety check output $model=content_safety_reasoning"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/content_safety_vision",
+   "rails": {
+    "input": [
+     "content safety check input $model=vision_rails"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/crowdstrike_aidr",
+   "rails": {
+    "input": [
+     "crowdstrike aidr guard input"
+    ],
+    "output": [
+     "crowdstrike aidr guard output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/crowdstrike_aidr_v2",
+   "rails": {
+    "input": [
+     "crowdstrike aidr guard input"
+    ],
+    "output": [
+     "crowdstrike aidr guard output"
+    ]
+   },
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/configs/f5_guardrails",
+   "rails": {
+    "input": [
+     "f5 guardrails scan input"
+    ],
+    "output": [
+     "f5 guardrails scan output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/f5_guardrails_v2",
+   "rails": {
+    "input": [
+     "f5 guardrails scan input $input_text"
+    ],
+    "output": [
+     "f5 guardrails scan output $output_text"
+    ]
+   },
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/configs/gliner/pii_detection",
+   "rails": {
+    "input": [
+     "gliner detect pii on input"
+    ],
+    "output": [
+     "gliner detect pii on output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/gliner/pii_masking",
+   "rails": {
+    "input": [
+     "gliner mask pii on input"
+    ],
+    "output": [
+     "gliner mask pii on output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/gs_content_safety/config",
+   "rails": {
+    "input": [
+     "content safety check input $model=content_safety"
+    ],
+    "output": [
+     "content safety check output $model=content_safety"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/guardrails_ai",
+   "rails": {
+    "input": [
+     "guardrailsai check input $validator=\"guardrails_pii\"",
+     "guardrailsai check input $validator=\"competitor_check\""
+    ],
+    "output": [
+     "guardrailsai check output $validator=\"restricttotopic\""
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/guardrails_only/input",
+   "rails": {
+    "input": [
+     "dummy input rail",
+     "allow input"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/guardrails_only/output",
+   "rails": {
+    "output": [
+     "dummy output rail",
+     "allow output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/injection_detection/config",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/jailbreak_detection",
+   "rails": {
+    "input": [
+     "jailbreak detection heuristics",
+     "jailbreak detection model"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/jailbreak_detection_nim",
+   "rails": {
+    "input": [
+     "jailbreak detection model"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/llama_guard",
+   "rails": {
+    "input": [
+     "llama guard check input"
+    ],
+    "output": [
+     "llama guard check output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/llm/deepseek-r1",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/llm/hf_endpoint",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/llm/hf_pipeline_dolly",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/llm/hf_pipeline_falcon",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/llm/hf_pipeline_llama2",
+   "rails": {
+    "output": [
+     "self check facts"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/llm/hf_pipeline_mosaic",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/llm/hf_pipeline_vicuna",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/llm/llama-3",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/llm/nim",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/llm/openai-responses-api",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/llm/vertexai",
+   "rails": {
+    "input": [
+     "self check input"
+    ],
+    "output": [
+     "self check output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/nemoguards",
+   "rails": {
+    "input": [
+     "content safety check input $model=content_safety",
+     "topic safety check input $model=topic_control",
+     "jailbreak detection model"
+    ],
+    "output": [
+     "content safety check output $model=content_safety"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/nemoguards_cache",
+   "rails": {
+    "input": [
+     "jailbreak detection model",
+     "content safety check input $model=content_safety",
+     "topic safety check input $model=topic_control"
+    ],
+    "output": [
+     "content safety check output $model=content_safety"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/nemoguards_v2",
+   "rails": {
+    "input": [
+     "content safety check input $model=\"content_safety\"",
+     "topic safety check input $model=\"topic_control\"",
+     "jailbreak detection model"
+    ],
+    "output": [
+     "content safety check output $model=\"content_safety\""
+    ]
+   },
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/configs/nemotron",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/nemotron-3.5-content-safety",
+   "rails": {
+    "input": [
+     "content safety check input $model=content_safety"
+    ],
+    "output": [
+     "content safety check output $model=content_safety"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/pangea",
+   "rails": {
+    "input": [
+     "pangea ai guard input"
+    ],
+    "output": [
+     "pangea ai guard output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/pangea_v2",
+   "rails": {
+    "input": [
+     "pangea ai guard input"
+    ],
+    "output": [
+     "pangea ai guard output"
+    ]
+   },
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/configs/pangea_v2_no_llm",
+   "rails": {
+    "input": [
+     "pangea ai guard input"
+    ],
+    "output": [
+     "pangea ai guard output"
+    ]
+   },
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/configs/patronusai",
+   "rails": {
+    "output": [
+     "patronus lynx check output hallucination"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/polygraf/pii_detection",
+   "rails": {
+    "input": [
+     "polygraf detect pii on input"
+    ],
+    "output": [
+     "polygraf detect pii on output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/polygraf/pii_masking",
+   "rails": {
+    "input": [
+     "polygraf mask pii on input"
+    ],
+    "output": [
+     "polygraf mask pii on output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/privateai/pii_detection",
+   "rails": {
+    "input": [
+     "detect pii on input"
+    ],
+    "output": [
+     "detect pii on output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/privateai/pii_masking",
+   "rails": {
+    "input": [
+     "mask pii on input"
+    ],
+    "output": [
+     "mask pii on output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/prompt_security",
+   "rails": {
+    "input": [
+     "protect prompt"
+    ],
+    "output": [
+     "protect response"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/rag/custom_rag_output_rails",
+   "rails": {
+    "output": [
+     "self check facts",
+     "self check hallucination"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/rag/fact_checking",
+   "rails": {
+    "output": [
+     "alignscore check facts"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/rag/pinecone",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/sample",
+   "rails": {
+    "input": [
+     "dummy input rail"
+    ],
+    "output": [
+     "dummy output rail"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/self_check_thinking",
+   "rails": {
+    "output": [
+     "self check output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/sensitive_data_detection_v2",
+   "rails": {
+    "input": [
+     "mask sensitive data on input"
+    ],
+    "output": [
+     "mask sensitive data on output"
+    ]
+   },
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/configs/streaming",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/threads/config_1",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/tool_safety_check",
+   "rails": {
+    "tool_call": [
+     "tool call validation",
+     "tool safety check tool call $model=llama_guard $variant=run_sql_check $argument=query [run_sql]"
+    ],
+    "tool_result": [
+     "tool result validation",
+     "tool safety check tool result $model=llama_guard $variant=run_sql_check [run_sql]"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/topic_safety",
+   "rails": {
+    "input": [
+     "topic safety check input $model=topic_control"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/tracing",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/trend_micro",
+   "rails": {
+    "input": [
+     "trend ai guard input"
+    ],
+    "output": [
+     "trend ai guard output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/configs/trend_micro_v2",
+   "rails": {
+    "input": [
+     "trend ai guard input $input_text"
+    ],
+    "output": [
+     "trend ai guard output $output_text"
+    ]
+   },
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/server_configs/atomic/input_checking",
+   "rails": {
+    "input": [
+     "self check input"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/server_configs/atomic/main",
+   "rails": {},
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/server_configs/atomic/output_checking",
+   "rails": {
+    "output": [
+     "self check output"
+    ]
+   },
+   "colang2": false,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/actions/action_events",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/actions/action_grouping",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/actions/await_keyword",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/actions/dialog_pattern",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/actions/omit_wait_keyword",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/actions/start_keyword",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/actions/stop_action",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/actions/wait_for_first_action_only",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/control_flow_tools/catch_failing_flow",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/control_flow_tools/catch_failing_flow copy",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/control_flow_tools/concurrent_patterns",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/control_flow_tools/conditional_branching",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/control_flow_tools/event_branching",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/control_flow_tools/loop",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/development_and_debugging/flows_info",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/development_and_debugging/print_statement",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/events/dictionary_parameters",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/events/event_grouping",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/events/event_grouping_advanced",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/events/event_groups",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/events/event_matching",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/events/integer_parameter_match",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/events/list_parameters",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/events/match_event_reference",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/events/regular_expression_parameters",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/events/send_event_reference",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/events/set_parameters",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/flows/action_conflict_resolution",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/flows/call_a_flow",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/flows/concurrent_flows_basics",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/flows/concurrent_flows_basics_wrapper",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/flows/flow_hierarchy",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/flows/flow_parameters",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/flows/flows_failing",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/flows/parallel_flows",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/flows/start_flow",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/flows/undefined_flow",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/internal_events/undefined_flow/hello_world",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/introduction/hello_world",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/introduction/hello_world_umim",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/introduction/interaction_sequence",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/more_on_flows/activate_flow",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/more_on_flows/interaction_loops",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/more_on_flows/non-repeating-flows",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/more_on_flows/restart_flow_instance",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/more_on_flows/start_new_flow_instance",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/use_llms/bot_intent_generation_example",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/use_llms/interaction_loop",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/use_llms/nld_example",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/use_llms/user_intent_match_example",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/variables/assignment",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/variables/flow_attributes",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/variables/global_variables",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/variables/references",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/language_reference/variables/string_expression_evaluation",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/other/llm_flow",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/tutorial/guardrails_1",
+   "rails": {
+    "input": [
+     "$input_safe = await check user utterance $input_text",
+     "if not $input_safe",
+     "bot say \"I'm sorry, I can't respond to that.\"",
+     "abort"
+    ]
+   },
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/tutorial/hello_world_1",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/tutorial/hello_world_2",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/tutorial/hello_world_3",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/tutorial/interaction_loop",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/tutorial/llm_flows",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  },
+  {
+   "path": "examples/v2_x/tutorial/multi_modal",
+   "rails": {},
+   "colang2": true,
+   "config": true
+  }
+ ]
+}

@@ -1,0 +1,2043 @@
+{
+ "bagheri2015covert": {
+  "DOI": "10.1109/tse.2015.2419611",
+  "title": [
+   "COVERT: Compositional Analysis of Android Inter-App Permission Leakage"
+  ],
+  "author": [
+   {
+    "given": "Hamid",
+    "family": "Bagheri",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Alireza",
+    "family": "Sadeghi",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Joshua",
+    "family": "Garcia",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Sam",
+    "family": "Malek",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "IEEE Transactions on Software Engineering"
+  ],
+  "volume": "41",
+  "issue": "9",
+  "page": "866-886",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2015,
+     9,
+     1
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2015,
+     9,
+     1
+    ]
+   ]
+  }
+ },
+ "carnevali2013compositional": {
+  "DOI": "10.1109/tse.2012.54",
+  "title": [
+   "Compositional Verification for Hierarchical Scheduling of Real-Time Systems"
+  ],
+  "author": [
+   {
+    "given": "Laura",
+    "family": "Carnevali",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Alessandro",
+    "family": "Pinzuti",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Enrico",
+    "family": "Vicario",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "IEEE Transactions on Software Engineering"
+  ],
+  "volume": "39",
+  "issue": "5",
+  "page": "638-657",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2013,
+     5
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2013,
+     5
+    ]
+   ]
+  }
+ },
+ "carnevali2022compositional": {
+  "DOI": "10.1109/tse.2021.3125720",
+  "title": [
+   "Compositional Analysis of Hierarchical UML Statecharts"
+  ],
+  "author": [
+   {
+    "given": "Laura",
+    "family": "Carnevali",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   },
+   {
+    "given": "Reinhard",
+    "family": "German",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   },
+   {
+    "given": "Francesco",
+    "family": "Santoni",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   },
+   {
+    "given": "Enrico",
+    "family": "Vicario",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "IEEE Transactions on Software Engineering"
+  ],
+  "volume": null,
+  "issue": null,
+  "page": "1-1",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2022
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2022
+    ]
+   ]
+  }
+ },
+ "bu2024clopper": {
+  "DOI": "10.1109/tse.2024.3392720",
+  "title": [
+   "Clopper-Pearson Algorithms for Efficient Statistical Model Checking Estimation"
+  ],
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0001-5209-596X",
+    "authenticated-orcid": false,
+    "given": "Hao",
+    "family": "Bu",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "School of Mathematical Sciences, Peking University, Beijing, China"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-6550-7396",
+    "authenticated-orcid": false,
+    "given": "Meng",
+    "family": "Sun",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "School of Mathematical Sciences, Peking University, Beijing, China"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "IEEE Transactions on Software Engineering"
+  ],
+  "volume": "50",
+  "issue": "7",
+  "page": "1726-1746",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2024,
+     7
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2024,
+     7
+    ]
+   ]
+  }
+ },
+ "he2016learning": {
+  "DOI": "10.1145/2907943",
+  "title": [
+   "Learning Weighted Assumptions for Compositional Verification of Markov Decision Processes"
+  ],
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0002-4266-875X",
+    "authenticated-orcid": false,
+    "given": "Fei",
+    "family": "He",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "KLiss, MoE; TNList; School of Software, Tsinghua University, Beijing, China"
+     }
+    ],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   },
+   {
+    "given": "Xiaowei",
+    "family": "Gao",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "KLiss, MoE; TNList; School of Software, Tsinghua University, Beijing, China"
+     }
+    ],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   },
+   {
+    "given": "Miaofei",
+    "family": "Wang",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "KLiss, MoE; TNList; School of Software, Tsinghua University, Beijing, China"
+     }
+    ],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   },
+   {
+    "given": "Bow-Yaw",
+    "family": "Wang",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Academia Sinica, Taiwan"
+     }
+    ],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   },
+   {
+    "given": "Lijun",
+    "family": "Zhang",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Chinese Academy of Sciences, Beijing, China"
+     }
+    ],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "ACM Transactions on Software Engineering and Methodology"
+  ],
+  "volume": "25",
+  "issue": "3",
+  "page": "1-39",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2016,
+     6,
+     6
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2016,
+     6,
+     6
+    ]
+   ]
+  }
+ },
+ "foster2025unifying": {
+  "DOI": "10.1145/3702981",
+  "title": [
+   "Unifying Model Execution and Deductive Verification with Interaction Trees in Isabelle/HOL"
+  ],
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0002-9889-9514",
+    "authenticated-orcid": false,
+    "given": "Simon",
+    "family": "Foster",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "University of York, York, UK"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-1656-0913",
+    "authenticated-orcid": false,
+    "given": "Chung-Kil",
+    "family": "Hur",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Seoul National University, Seoul, South Korea"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-7955-2702",
+    "authenticated-orcid": false,
+    "given": "Jim",
+    "family": "Woodcock",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Southwest University, Chongqing, China and Aarhus University, Aarhus, Denmark and University of York, York, UK"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "ACM Transactions on Software Engineering and Methodology"
+  ],
+  "volume": "34",
+  "issue": "4",
+  "page": "1-40",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2025,
+     4,
+     29
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2025,
+     4,
+     29
+    ]
+   ]
+  }
+ },
+ "wang2023kst": {
+  "DOI": "10.1109/tse.2023.3315292",
+  "title": [
+   "K-ST: A Formal Executable Semantics of the Structured Text Language for PLCs"
+  ],
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0001-5523-1330",
+    "authenticated-orcid": false,
+    "given": "Kun",
+    "family": "Wang",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "College of Control Science and Engineering, Zhejiang University, Zhejiang, China"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-7113-7635",
+    "authenticated-orcid": false,
+    "given": "Jingyi",
+    "family": "Wang",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "College of Control Science and Engineering, Zhejiang University, Zhejiang, China"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-9376-2471",
+    "authenticated-orcid": false,
+    "given": "Christopher M.",
+    "family": "Poskitt",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "School of Computing and Information Systems, Singapore Management University, Singapore"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0009-0006-4482-3430",
+    "authenticated-orcid": false,
+    "given": "Xiangxiang",
+    "family": "Chen",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "College of Control Science and Engineering, Zhejiang University, Zhejiang, China"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-3545-1392",
+    "authenticated-orcid": false,
+    "given": "Jun",
+    "family": "Sun",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "School of Computing and Information Systems, Singapore Management University, Singapore"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-4453-2274",
+    "authenticated-orcid": false,
+    "given": "Peng",
+    "family": "Cheng",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "College of Control Science and Engineering, Zhejiang University, Zhejiang, China"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "IEEE Transactions on Software Engineering"
+  ],
+  "volume": "49",
+  "issue": "10",
+  "page": "4796-4813",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2023,
+     10,
+     1
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2023,
+     10,
+     1
+    ]
+   ]
+  }
+ },
+ "gao2024compositional": {
+  "DOI": "10.1145/3635707",
+  "title": [
+   "Compositional Verification of First-Order Masking Countermeasures against Power Side-Channel Attacks"
+  ],
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0003-3800-2565",
+    "authenticated-orcid": false,
+    "given": "Pengfei",
+    "family": "Gao",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "Bytedance, Beijing, China"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-0581-2679",
+    "authenticated-orcid": false,
+    "given": "Fu",
+    "family": "Song",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences, Beijing, China, and University of Chinese Academy of Sciences, Beijing, China"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-5993-1665",
+    "authenticated-orcid": false,
+    "given": "Taolue",
+    "family": "Chen",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Birkbeck, University of London, London, UK"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "ACM Transactions on Software Engineering and Methodology"
+  ],
+  "volume": "33",
+  "issue": "3",
+  "page": "1-38",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2024,
+     3,
+     14
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2024,
+     3,
+     14
+    ]
+   ]
+  }
+ },
+ "nenchev2025compositional": {
+  "DOI": "10.1016/j.jss.2025.112499",
+  "title": [
+   "Compositional code-level safety verification for automated driving controllers"
+  ],
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0002-9261-2746",
+    "authenticated-orcid": false,
+    "given": "Vladislav",
+    "family": "Nenchev",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0009-0004-3198-9226",
+    "authenticated-orcid": false,
+    "given": "Calum",
+    "family": "Imrie",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-2706-5272",
+    "authenticated-orcid": false,
+    "given": "Simos",
+    "family": "Gerasimou",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-2678-9260",
+    "authenticated-orcid": false,
+    "given": "Radu",
+    "family": "Calinescu",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "Journal of Systems and Software"
+  ],
+  "volume": "230",
+  "issue": null,
+  "page": "112499",
+  "article-number": "112499",
+  "issued": {
+   "date-parts": [
+    [
+     2025,
+     12
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2025,
+     12
+    ]
+   ]
+  }
+ },
+ "bonfanti2023component": {
+  "DOI": "10.1016/j.jss.2022.111605",
+  "title": [
+   "A component framework for the runtime enforcement of safety properties"
+  ],
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0001-9679-4551",
+    "authenticated-orcid": false,
+    "given": "Silvia",
+    "family": "Bonfanti",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Elvinia",
+    "family": "Riccobene",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-9209-3624",
+    "authenticated-orcid": false,
+    "given": "Patrizia",
+    "family": "Scandurra",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "Journal of Systems and Software"
+  ],
+  "volume": "198",
+  "issue": null,
+  "page": "111605",
+  "article-number": "111605",
+  "issued": {
+   "date-parts": [
+    [
+     2023,
+     4
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2023,
+     4
+    ]
+   ]
+  }
+ },
+ "kroher2022incremental": {
+  "DOI": "10.1007/s10664-021-10090-6",
+  "title": [
+   "Incremental software product line verification - A performance analysis with dead variable code"
+  ],
+  "author": [
+   {
+    "given": "Christian",
+    "family": "Kröher",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Moritz",
+    "family": "Flöter",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Lea",
+    "family": "Gerling",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Klaus",
+    "family": "Schmid",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "Empirical Software Engineering"
+  ],
+  "volume": "27",
+  "issue": "3",
+  "page": null,
+  "article-number": "68",
+  "issued": {
+   "date-parts": [
+    [
+     2022,
+     3,
+     17
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2022,
+     3,
+     17
+    ]
+   ]
+  }
+ },
+ "su2016asymptotic": {
+  "DOI": "10.1109/tse.2015.2508444",
+  "title": [
+   "Asymptotic Perturbation Bounds for Probabilistic Model Checking with Empirically Determined Probability Parameters"
+  ],
+  "author": [
+   {
+    "given": "Guoxin",
+    "family": "Su",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   },
+   {
+    "given": "Yuan",
+    "family": "Feng",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   },
+   {
+    "given": "Taolue",
+    "family": "Chen",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   },
+   {
+    "given": "David S.",
+    "family": "Rosenblum",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "IEEE Transactions on Software Engineering"
+  ],
+  "volume": "42",
+  "issue": "7",
+  "page": "623-639",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2016,
+     7,
+     1
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2016,
+     7,
+     1
+    ]
+   ]
+  }
+ },
+ "tian2019differential": {
+  "DOI": "10.1145/3355048",
+  "title": [
+   "Differential Testing of Certificate Validation in SSL/TLS Implementations"
+  ],
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0002-5429-4580",
+    "authenticated-orcid": false,
+    "given": "Cong",
+    "family": "Tian",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "ICTT and ISN Laboratory, Xidian University, Xi’an, P.R. China"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Chu",
+    "family": "Chen",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "ICTT and ISN Laboratory, Xidian University, P.R. China and School of Information Science and Engineering, Qufu Normal University, Rizhao, Shandong, P.R. China"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Zhenhua",
+    "family": "Duan",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "ICTT and ISN Laboratory, Xidian University, Xi’an, P.R. China"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Liang",
+    "family": "Zhao",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "ICTT and ISN Laboratory, Xidian University, Xi’an, P.R. China"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "ACM Transactions on Software Engineering and Methodology"
+  ],
+  "volume": "28",
+  "issue": "4",
+  "page": "1-37",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2019,
+     10,
+     9
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2019,
+     10,
+     9
+    ]
+   ]
+  }
+ },
+ "robol2023consent": {
+  "DOI": "10.1145/3490754",
+  "title": [
+   "Consent Verification Monitoring"
+  ],
+  "author": [
+   {
+    "given": "Marco",
+    "family": "Robol",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "DISI, University of Trento, Trento, Italy"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Travis D.",
+    "family": "Breaux",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Institute of Software Research, Carnegie Mellon University, Pittsburgh, PA, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Elda",
+    "family": "Paja",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Computer Science Department, IT University of Copenhagen, Copenhagen, Denmark"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Paolo",
+    "family": "Giorgini",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "DISI, University of Trento, Trento, Italy"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "ACM Transactions on Software Engineering and Methodology"
+  ],
+  "volume": "32",
+  "issue": "1",
+  "page": "1-33",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2023,
+     1,
+     31
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2023,
+     1,
+     31
+    ]
+   ]
+  }
+ },
+ "zhang2026enhancing": {
+  "DOI": "10.1016/j.jss.2025.112614",
+  "title": [
+   "Enhancing reliability in LLM-integrated robotic systems: A unified approach to security and safety"
+  ],
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0009-0000-5196-8562",
+    "authenticated-orcid": false,
+    "given": "Wenxiao",
+    "family": "Zhang",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Xiangrui",
+    "family": "Kong",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0009-0003-2514-1643",
+    "authenticated-orcid": false,
+    "given": "Conan",
+    "family": "Dewitt",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0003-3215-0161",
+    "authenticated-orcid": false,
+    "given": "Thomas",
+    "family": "Bräunl",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0003-1359-3813",
+    "authenticated-orcid": false,
+    "given": "Jin B.",
+    "family": "Hong",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "Journal of Systems and Software"
+  ],
+  "volume": "231",
+  "issue": null,
+  "page": "112614",
+  "article-number": "112614",
+  "issued": {
+   "date-parts": [
+    [
+     2026,
+     1
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2026,
+     1
+    ]
+   ]
+  }
+ },
+ "chaki2013verification": {
+  "DOI": "10.1145/2430545.2430550",
+  "title": [
+   "Verification across Intellectual Property Boundaries"
+  ],
+  "author": [
+   {
+    "given": "Sagar",
+    "family": "Chaki",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "Software Engineering Institute"
+     }
+    ],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   },
+   {
+    "given": "Christian",
+    "family": "Schallhart",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Oxford University"
+     }
+    ],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   },
+   {
+    "given": "Helmut",
+    "family": "Veith",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Vienna University of Technology"
+     }
+    ],
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "ACM Transactions on Software Engineering and Methodology"
+  ],
+  "volume": "22",
+  "issue": "2",
+  "page": "1-12",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2013,
+     3
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2013,
+     3
+    ]
+   ]
+  }
+ },
+ "demoura2008z3": {
+  "DOI": "10.1007/978-3-540-78800-3_24",
+  "title": [
+   "Z3: An Efficient SMT Solver"
+  ],
+  "author": [
+   {
+    "given": "Leonardo",
+    "family": "de Moura",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Nikolaj",
+    "family": "Bjørner",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "Lecture Notes in Computer Science",
+   "Tools and Algorithms for the Construction and Analysis of Systems"
+  ],
+  "volume": null,
+  "issue": null,
+  "page": "337-340",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2008
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2008
+    ]
+   ]
+  }
+ },
+ "barbosa2022cvc5": {
+  "DOI": "10.1007/978-3-030-99524-9_24",
+  "title": [
+   "cvc5: A Versatile and Industrial-Strength SMT Solver"
+  ],
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0003-0188-2300",
+    "authenticated-orcid": false,
+    "given": "Haniel",
+    "family": "Barbosa",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-9522-3084",
+    "authenticated-orcid": false,
+    "given": "Clark",
+    "family": "Barrett",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0003-4216-7151",
+    "authenticated-orcid": false,
+    "given": "Martin",
+    "family": "Brain",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-0393-5739",
+    "authenticated-orcid": false,
+    "given": "Gereon",
+    "family": "Kremer",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0003-3355-7828",
+    "authenticated-orcid": false,
+    "given": "Hanna",
+    "family": "Lachnitt",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-1555-5784",
+    "authenticated-orcid": false,
+    "given": "Makai",
+    "family": "Mann",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0003-1414-7073",
+    "authenticated-orcid": false,
+    "given": "Abdalrhman",
+    "family": "Mohamed",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-4644-5756",
+    "authenticated-orcid": false,
+    "given": "Mudathir",
+    "family": "Mohamed",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0003-2600-5283",
+    "authenticated-orcid": false,
+    "given": "Aina",
+    "family": "Niemetz",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-8669-0011",
+    "authenticated-orcid": false,
+    "given": "Andres",
+    "family": "Nötzli",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-0181-6752",
+    "authenticated-orcid": false,
+    "given": "Alex",
+    "family": "Ozdemir",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-7142-6258",
+    "authenticated-orcid": false,
+    "given": "Mathias",
+    "family": "Preiner",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-3529-8682",
+    "authenticated-orcid": false,
+    "given": "Andrew",
+    "family": "Reynolds",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-1883-2126",
+    "authenticated-orcid": false,
+    "given": "Ying",
+    "family": "Sheng",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-6726-775X",
+    "authenticated-orcid": false,
+    "given": "Cesare",
+    "family": "Tinelli",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-2972-6695",
+    "authenticated-orcid": false,
+    "given": "Yoni",
+    "family": "Zohar",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "Lecture Notes in Computer Science",
+   "Tools and Algorithms for the Construction and Analysis of Systems"
+  ],
+  "volume": null,
+  "issue": null,
+  "page": "415-442",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2022
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2022
+    ]
+   ]
+  }
+ },
+ "kildall1973unified": {
+  "DOI": "10.1145/512927.512945",
+  "title": [
+   "A unified approach to global program optimization"
+  ],
+  "author": [
+   {
+    "given": "Gary A.",
+    "family": "Kildall",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "Proceedings of the 1st annual ACM SIGACT-SIGPLAN symposium on Principles of programming languages  - POPL '73"
+  ],
+  "volume": null,
+  "issue": null,
+  "page": "194-206",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     1973
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     1973
+    ]
+   ]
+  }
+ },
+ "kam1977monotone": {
+  "DOI": "10.1007/bf00290339",
+  "title": [
+   "Monotone data flow analysis frameworks"
+  ],
+  "author": [
+   {
+    "given": "John B.",
+    "family": "Kam",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Jeffrey D.",
+    "family": "Ullman",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "Acta Informatica"
+  ],
+  "volume": "7",
+  "issue": "3",
+  "page": "305-317",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     1977
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     1977
+    ]
+   ]
+  }
+ },
+ "barnett2005weakest": {
+  "DOI": "10.1145/1108792.1108813",
+  "title": [
+   "Weakest-precondition of unstructured programs"
+  ],
+  "author": [
+   {
+    "given": "Mike",
+    "family": "Barnett",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "Microsoft Research, Redmond, WA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "K. Rustan M.",
+    "family": "Leino",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Microsoft Research, Redmond, WA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "Proceedings of the 6th ACM SIGPLAN-SIGSOFT workshop on Program analysis for software tools and engineering"
+  ],
+  "volume": null,
+  "issue": null,
+  "page": "82-87",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2005,
+     9,
+     5
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2005,
+     9,
+     5
+    ]
+   ]
+  }
+ },
+ "jia2011analysis": {
+  "DOI": "10.1109/tse.2010.62",
+  "title": [
+   "An Analysis and Survey of the Development of Mutation Testing"
+  ],
+  "author": [
+   {
+    "given": "Yue",
+    "family": "Jia",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Mark",
+    "family": "Harman",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "IEEE Transactions on Software Engineering"
+  ],
+  "volume": "37",
+  "issue": "5",
+  "page": "649-678",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2011,
+     9
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2011,
+     9
+    ]
+   ]
+  }
+ },
+ "jackson2019alloy": {
+  "DOI": "10.1145/3338843",
+  "title": [
+   "Alloy"
+  ],
+  "author": [
+   {
+    "given": "Daniel",
+    "family": "Jackson",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "Massachusetts Institute of Technology, Cambridge, MA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "Communications of the ACM"
+  ],
+  "volume": "62",
+  "issue": "9",
+  "page": "66-76",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2019,
+     8,
+     21
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2019,
+     8,
+     21
+    ]
+   ]
+  }
+ },
+ "littlewood2004redundancy": {
+  "DOI": "10.1007/978-3-540-30108-0_26",
+  "title": [
+   "Redundancy and Diversity in Security"
+  ],
+  "author": [
+   {
+    "given": "Bev",
+    "family": "Littlewood",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Lorenzo",
+    "family": "Strigini",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "Lecture Notes in Computer Science",
+   "Computer Security – ESORICS 2004"
+  ],
+  "volume": null,
+  "issue": null,
+  "page": "423-438",
+  "article-number": null,
+  "issued": {
+   "date-parts": [
+    [
+     2004
+    ]
+   ]
+  },
+  "published": {
+   "date-parts": [
+    [
+     2004
+    ]
+   ]
+  }
+ }
+}

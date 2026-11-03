@@ -1,0 +1,228 @@
+% =====================================================================
+\section{From Safety to Risk: Statistics for Learned Guards}
+\label{ch:risk}
+% =====================================================================
+
+\begin{bigidea}
+So far a guard's contract was \emph{exact}: if the assumptions hold, the promise holds. But a classifier or LLM judge is never exactly right; it errs on some inputs. The paper's answer is not to model each error rate and multiply them (per-layer rates \emph{mislead}). Instead it measures the \textbf{deployed function, route by route}: total risk is the \emph{sum over acceptance routes}; each statistical route gets a \textbf{Clopper--Pearson certificate} (an upper confidence bound from counting losses); a union bound makes all certificates hold together; and a hash of each route's prefix tells you exactly which certificates a change invalidates.
+\end{bigidea}
+
+\subsection{Why the exact analysis is not enough}
+
+The composition check of Chapter~\ref{ch:check} treats a guard as if it were right whenever its obligations hold. For a learned guard, an obligation such as \ob{miss\_rate\_bounded} is not a fact about one invocation. It is a claim about a \emph{population}: ``this classifier misses at most such-and-such fraction of attacks''. It stands for an external condition, \emph{a certificate for this configuration, or a bound stated by a source, exists}. The exact analysis tells us \emph{what depends on what} (an idealization: ``if the stage were right whenever its obligations held, would the composition be justified?''). The actual guarantee for statistical goals must come from \textbf{measurement}.
+
+\subsection{Background: just enough probability}
+
+\begin{toolbox}{probability for this chapter}
+\textbf{Probability space.} We model proposals $x$ as random draws from a distribution $\mathcal D$ (``the traffic''). An \emph{event} is a set of outcomes, e.g.\ ``$x$ is unsafe and accepted''. $\Pr_{\mathcal D}[E]$ is its probability.
+
+\textbf{Independent and identically distributed (i.i.d.).} A sample of $N$ proposals drawn independently from the same $\mathcal D$. The number $k$ of ``losses'' (unsafe and accepted) among them follows a \textbf{binomial distribution} with parameters $N$ and $p=\Pr[\text{loss}]$.
+
+\textbf{Upper confidence bound.} We never know $p$; we see $k$ out of $N$. A $(1-\delta)$ \emph{upper confidence bound} $u=u(k,N,\delta)$ is a number computed from the sample such that $\Pr[p\le u]\ge 1-\delta$ over the randomness of the sample. For instance $\delta=0.05$ gives a 95\% bound.
+
+\textbf{Union bound (Boole's inequality).} For any events $E_1,\dots,E_m$: $\Pr[E_1\cup\cdots\cup E_m]\le\sum_i\Pr[E_i]$. No independence needed. If each of $m$ statements fails with probability at most $\delta_i$, all hold simultaneously with probability at least $1-\sum_i\delta_i$.
+
+\textbf{Total variation distance.} For two distributions $\mathcal D,\mathcal D'$: $\eta=\sup_E|\mathcal D(E)-\mathcal D'(E)|$ over events $E$, the largest disagreement about any event's probability. If the traffic changes from $\mathcal D$ to $\mathcal D'$ with distance $\eta$, the probability of any event changes by at most $\eta$.
+\end{toolbox}
+
+\subsection{The setup: exact goals, statistical goals, joint risk}
+
+Split the goals into two kinds: $\Goals=\Goals_d\uplus\Goals_s$.
+
+\begin{itemize}
+\item $\Goals_d$: \textbf{exact goals}, which must hold on \emph{every} accepted proposal (deterministic gates, exact contracts).
+\item $\Goals_s$: \textbf{statistical goals}, for which a rate of failure is tolerated (semantic goals that rest on learned guards).
+\end{itemize}
+
+Let $Y(x)=1$ if proposal $x$ violates a goal and $0$ otherwise. The \textbf{joint risk} of a deployed configuration (closed routes deny) is
+\[
+R=\Pr_{\mathcal D}\bigl[Y=1\ \wedge\ x\text{ is accepted}\bigr].
+\]
+This is the chance that a random proposal is both unsafe \emph{and} let through, the quantity we want small. Note that it is a joint probability. If attacks are rare, $R$ can be tiny even for a useless guard; we return to this below.
+
+\subsection{Risk is a sum over routes}
+
+Recall that every acceptance is on a named route (the Routes property). Group the routes:
+
+\begin{itemize}
+\item A route is \textbf{gated} if deterministic gates establish every goal of $\Goals_s$ on every path to it.
+\item The other routes form the set $Q$, called \textbf{statistical routes}.
+\item A route on which deterministic gates establish \emph{every} goal (exact and statistical) is \textbf{fully gated}; only such routes stand up to an adaptive attacker.
+\end{itemize}
+
+\begin{statement}{Theorem (Route risk) \hfill\normalfont paper: Theorem 9}
+Let $H$ pass Algorithm~1. Suppose on the support of $\mathcal D$: (i)~deterministic gates decide their goals exactly, in $\Goals_d$ and in $\Goals_s$; and (ii)~realization holds and all contracts hold for goals in $\Goals_d$. Then
+\[
+R=\sum_{r\in Q}R_r,\qquad R_r=\Pr_{\mathcal D}[Y=1\wedge\accepted(r)].
+\]
+\end{statement}
+
+\begin{plainproof}{Route risk}
+\emph{Step 1: split acceptance into routes.} By the Routes property, an accepted proposal is accepted at exactly one guard. So ``accepted'' is the disjoint union of the events $\accepted(r)$, and $R=\sum_rR_r$ over all routes.
+
+\emph{Step 2: exact goals never fail.} Let $H_d$ be the hierarchy $H$ restricted to $\Goals_d$: replace the goals by $\Goals_d$, intersect each scope with $\Goals_d$, and drop goals outside $\Goals_d$ from gates. Restricting the goals only makes $\ok$ easier at each guard, so $H_d$ passes the check too. By (i) and (ii) the model of $x$ satisfies the contracts of $H_d$, so by Soundness/Exactness an accepted $x$ satisfies $\Goals_d$.
+
+\emph{Step 3: gated routes contribute nothing.} If $x$ is accepted on a gated route, it passed on its path the deterministic gates for every goal of $\Goals_s$, which hold by (i). With Step 2, $x$ violates no goal: $Y(x)=0$, so $R_r=0$ for gated routes. Only the routes in $Q$ remain in the sum. \hfill$\blacksquare$
+\end{plainproof}
+
+\textbf{What the theorem is about.} Notice what it does \emph{not} mention: no statistical contract, no independence assumption, no per-layer rate. It says: \emph{the risk of the whole system is the sum of route risks, and routes that deterministic gates have fully covered contribute zero.} The composition check thus tells you which routes ($Q$) need statistical evidence.
+
+\begin{example}{DevAgent routes}
+With $\Goals_s=\{\varphi_3,\varphi_4\}$: route $n_3$ (the judge) has $\varphi_3$ established by gate $c$ but $\varphi_4$ is covered only by the learned judge, so it is statistical. Route $n_4$ (the human) covers both. So $Q=\{n_3,n_4\}$, and $R=R_{n_3}+R_{n_4}$.
+\end{example}
+
+\subsection{Per-layer rates mislead}
+
+A frequent informal argument says: ``Layer 1 misses 10\% of attacks, layer 2 misses 20\%, layer 3 misses 30\%. All three must miss for an attack to succeed, so the system misses $0.1\times0.2\times0.3=0.6\%$.'' This multiplies marginal rates, which is correct \emph{only if the layers' misses are independent}. They are typically not: an attack that fools one classifier tends to fool similar ones.
+
+\begin{statement}{Proposition (Veto and cascade) \hfill\normalfont paper: Proposition 2}
+Let guards have marginal miss probabilities $m_i$ on the unsafe population.\\
+(a)~In a \emph{veto chain}, the joint miss probability can be anything from $\max\bigl(0,\,1-\sum_i(1-m_i)\bigr)$ to $\min_im_i$, and $\prod_im_i$ is one value in that range, attained under conditional independence.\\
+(b)~In a \emph{cascade with early acceptance}, neither $\min_im_i$ nor $\prod_im_i$ bounds risk: if a first guard accepts a share $\rho$ of unsafe proposals and a later guard blocks all it sees, the later guard's miss probability is zero, so the minimum and the product are zero, while the risk is $\rho$ times the unsafe mass.
+\end{statement}
+
+\begin{plainproof}{Veto and cascade}
+\textbf{(a)} These are the \textbf{Fr\'echet--Hoeffding bounds}. The intuition: ``missed by guard $i$'' is an event $M_i$ with $\Pr[M_i]=m_i$. The joint event $\bigcap_iM_i$ is smallest if the misses are spread out as much as possible (no overlap beyond what is forced), and largest if the misses are nested ($M_i$ contained in the smaller one). The upper bound $\min_im_i$ is attained when the misses are nested: $\Pr[\bigcap M_i]\le\Pr[M_i]$ for each $i$. The lower bound comes from the union bound applied to the complements: $\Pr[\bigcap M_i]=1-\Pr[\bigcup M_i^c]\ge1-\sum_i(1-m_i)$.
+
+\textbf{(b)} By construction and the Routes property: unsafe proposals accepted by the first guard never meet the later one; the later guard's miss probability is measured on the population it \emph{sees}. \hfill$\blacksquare$
+\end{plainproof}
+
+\begin{example}{the numbers $0.1$, $0.2$, $0.3$}
+With $m=(0.1,0.2,0.3)$: lower bound $\max(0,1-(0.9+0.8+0.7))=\max(0,-1.4)=0$; upper bound $\min=0.1$; independence gives $0.006$. All values in $[0,0.1]$ are possible. The repository's lab computes joint risk under a ``common-shock'' knob that interpolates between independence and nesting: weight $0\to0.006$, $0.5\to0.053$, $1\to0.100$. A factor of about $17$ separates the optimistic and pessimistic readings of the \emph{same} three miss rates.
+\end{example}
+
+\begin{tryit}{see the spread yourself}
+# from the repository root
+python scripts/tutorial_lab.py
+# part 1: same guard miss rates, different joint risks (0.006 ... 0.100)
+# part 2: pairwise independence does not determine triple risk
+# part 3: zero observed errors still leave uncertainty
+\end{tryit}
+
+\begin{example}{why the cascade product is wrong}
+Suppose 10\% of the unsafe proposals are accepted by an early, weak guard $G_1$ (it escalates the other 90\%). A later guard $G_2$ blocks everything it sees. Then $G_2$'s miss rate (on what it sees) is $0$, so $\min_im_i=0$ and $\prod_im_i=0$, and a naive calculation announces ``risk 0''. But 10\% of the unsafe mass escapes via $G_1$. The route-sum picture gets it right: $R_{G_1}=0.10\times(\text{unsafe mass})$.
+\end{example}
+
+\subsection{Route certificates}
+
+\textbf{The plan.} Do not model the guards. Instead, for each statistical route $r$, \emph{run the deployed decision function} on $N$ labelled samples, and count how many were unsafe and accepted at that route. Turn the count into an upper confidence bound.
+
+\begin{defbox}{route certificate}
+A tuple $(r,f,c,u_r,\delta_r,N)$: the route $r$; a \textbf{prefix fingerprint} $f$ (a hash of everything upstream of $r$, see below); a context label $c$ naming the deployment; an upper bound $u_r$; the confidence share $\delta_r$; and the sample count $N$.
+\end{defbox}
+
+The confidence budget $\delta$ (e.g.\ $0.05$) is split into shares $\delta_r$ over the routes of $Q$ \emph{before} any calibration: $\sum_{r\in Q}\delta_r\le\delta$.
+
+\subsubsection{The Clopper--Pearson bound}
+
+If $k_r$ is the number of unsafe proposals accepted on $r$ among $N$ samples, then
+\[
+u_r=\mathrm{Beta}^{-1}\bigl(1-\delta_r;\ k_r+1,\ N-k_r\bigr),\qquad u_r=1\text{ if }k_r=N.
+\]
+The inverse Beta function looks intimidating. Here is the idea behind it, and a special case that you can compute by hand.
+
+\begin{toolbox}{the Clopper--Pearson idea}
+Suppose the true loss probability were $p$. Then the number of losses among $N$ samples is $\mathrm{Bin}(N,p)$. We observed $k$ losses. \textbf{The bound $u$ is the largest $p$ that is still ``plausible''}, precisely: the value of $p$ at which the probability of seeing $k$ \emph{or fewer} losses equals $\delta$:
+\[
+\Pr[\mathrm{Bin}(N,u)\le k]=\delta.
+\]
+For any true $p>u$, seeing $\le k$ losses would have probability less than $\delta$. So with probability at least $1-\delta$ (over the sample), the true $p$ is at most $u$. The Beta-function formula is simply a closed form for this equation.
+
+\smallskip
+\textbf{The case $k=0$ by hand.} $\Pr[\mathrm{Bin}(N,u)=0]=(1-u)^N=\delta$ gives $u=1-\delta^{1/N}$. For $N=1800$ and $\delta=0.025$: $\ln\delta=-3.689$, so $\delta^{1/1800}=e^{-0.00205}\approx0.99795$ and $u\approx0.00205$. This matches the paper's value $0.0020$. For small $u$, $u\approx\ln(1/\delta)/N$. (This is the ``rule of three'' for $\delta=0.05$: $u\approx3/N$.) The other number in the paper, ten losses, gives $0.0102$; zero observed losses still leaves an upper bound above zero.
+\end{toolbox}
+
+\begin{example}{DevAgent certificate}
+$\delta=0.05$ split evenly across the two routes: $\delta_r=0.025$. Take $N=1800$ labelled samples. If ten unsafe proposals were accepted on route $n_3$, then $u_{n_3}=0.0102$: with 97.5\% confidence, the chance that a random proposal is unsafe \emph{and} accepted by the judge is at most about 1\%. Route $n_4$ (the person) is certified the same way from decisions recorded in shadow mode, so that the person's error rate is measured instead of assumed.
+\end{example}
+
+\begin{tryit}{compute a bound}
+import sys; sys.path[:0] = ["src"]
+from tint.calibration import binomial_upper
+print(binomial_upper(0, 1800, 0.025))    # about 0.0020 (zero losses)
+print(binomial_upper(10, 1800, 0.025))   # about 0.0102 (ten losses)
+\end{tryit}
+
+\subsubsection{The runtime rules}
+
+At runtime a statistical route accepts only while a certificate for its \emph{current} fingerprint is open. The engine refuses (i) an allocation above $\delta$, (ii) a certificate above its route's share, (iii) two certificates for one route, and (iv) bounds that sum above the risk budget $\varepsilon$. A \textbf{closed} route denies. So a route with a stale or missing certificate fails \emph{closed}: its traffic is denied (or, as a policy choice, sent to a person).
+
+\subsubsection{The certified-risk theorem}
+
+\begin{statement}{Theorem (Certified risk) \hfill\normalfont paper: Theorem 10}
+Under the premises of Theorem~9 (Route risk), fix a configuration whose stages on statistical routes do not read session state. Let shares $\delta_r$ be fixed before calibration with $\sum_{r\in Q}\delta_r\le\delta$, and let each certificate's samples be i.i.d.\ from $\mathcal D$, drawn after its route's prefix was fixed. With probability at least $1-\delta$,
+\[
+R\ \le\ \sum_{r\ \text{open}}u_r.
+\]
+The runtime keeps this sum at most $\varepsilon$.
+\end{statement}
+
+\begin{plainproof}{Certified risk}
+Each $u_r$ is an upper bound on $R_r$ at level $\delta_r$ (the Clopper--Pearson guarantee: $\Pr[R_r>u_r]\le\delta_r$). By the union bound, the probability that \emph{some} route has $R_r>u_r$ is at most $\sum_{r\in Q}\delta_r\le\delta$ \emph{without any independence among the certificates}, so they may come from different runs. Because the shares cover $Q$ and are fixed in advance, which certificates end up open cannot influence the bound. With probability $\ge1-\delta$, then, $R_r\le u_r$ for all $r\in Q$. Now: $R=\sum_{r\in Q}R_r$ (Route risk). Closing a route only removes acceptances (Monotonicity), so closed routes contribute zero; open ones contribute at most $u_r$. Gated routes contribute zero by the Route risk theorem. Therefore $R\le\sum_{r\text{ open}}u_r$. \hfill$\blacksquare$
+\end{plainproof}
+
+\subsubsection{Reading the fine print}
+
+\begin{warning}{Four ways to misuse a certificate}
+\begin{enumerate}
+\item \textbf{Selection.} The statement is per configuration. If you recalibrate repeatedly until some bound passes, you have run many tests and reported the winner; that voids the level unless every attempt is charged to $\delta$. Likewise, over a long-lived deployment with many versions, allocate shares across versions in advance, and reserve shares for routes you expect to add (the engine refuses old certificates whose shares no longer fit).
+\item \textbf{Rare attacks make joint bounds look good.} With prevalence $0.001$ of attacks, a guard that misses \emph{every} attack loses only about $2$ of $1800$ samples, and its bound $0.0040$ passes a budget of $0.01$. So also report the \emph{conditional} miss rate ($R$ divided by the unsafe mass), by attack class, and use a calibration set with enough attacks.
+\item \textbf{Drift.} A certificate is about the distribution $\mathcal D$ it was calibrated on. If deployment traffic is $\mathcal D'$ at total-variation distance $\eta$, the risk can be higher by at most $\eta$ (risk is the probability of an event), and monitoring should track it.
+\item \textbf{Labels.} Where the labels $Y$ come from is usually the hardest part. Nothing in the paper supplies them.
+\end{enumerate}
+\end{warning}
+
+\subsection{Incremental recertification}
+
+\textbf{Motivation.} Engineers change stages all the time: retrain the scorer, tweak a rule, update the judge's prompt. After each change, which certificates are still valid? Recomputing all of them wastes labelled data and time.
+
+\begin{toolbox}{hash functions and Merkle-style fingerprints}
+A \textbf{cryptographic hash function} maps any input to a short fixed-size string (a \emph{digest}); a tiny change to the input changes the digest completely, and it is practically impossible to find two different inputs with the same digest. A \textbf{Merkle} construction hashes a structure by hashing each part together with the digests of the parts it depends on. If anything upstream changes, the digest of everything downstream changes.
+\end{toolbox}
+
+Each route is bound to a \textbf{prefix fingerprint}, a Merkle hash computed in topological order. A node's fingerprint covers: its stage and layer; the identities of its rule, guard or condition and of its checked predicates; obligation kinds; the labelled fingerprints of its predecessors; and a digest of the goals, the statistical goals and a label naming the oracle $Y$. A component's \emph{identity} covers its source code, closure values, defaults, partial arguments, reachable instance state, array contents and declared version and configuration. A component with no readable identity is refused. What is \emph{not} covered (code reached only through calls, state outside the object, model-weight files) the deployer must declare in the configuration.
+
+\begin{center}
+\begin{tikzpicture}[font=\scriptsize,
+  nd/.style={draw=tintblue,rounded corners=2pt,fill=tintblue!8,align=center,minimum height=0.7cm,minimum width=1.3cm},
+  st/.style={draw=tintred,rounded corners=2pt,fill=tintred!12,align=center,minimum height=0.7cm,minimum width=1.3cm},
+  arr/.style={-{Stealth[length=1.8mm]}}]
+\node[nd] (g) at (0,0) {$g_1..g_3,s$};
+\node[nd] (v) at (-3,-1.4) {$v_2$}; \node[nd] (h) at (-3,-2.8) {$n_4$ route};
+\node[nd] (c) at (3,-1.4) {$c$}; \node[nd] (j) at (3,-2.8) {$n_3$ route};
+\draw[arr] (g)--(v); \draw[arr] (v)--(h); \draw[arr] (g)--(c); \draw[arr] (c)--(j);
+\node[st,right=1.0cm of v] (vv) {retrain $v_2$};
+\node[font=\scriptsize,below=0.1cm of h,text=tintred] {fingerprint changes: certificate closed};
+\node[font=\scriptsize,below=0.1cm of j,text=tintgreen!60!black] {fingerprint unchanged: certificate still open};
+\end{tikzpicture}
+\end{center}
+
+By Corollary 2 (Affected routes), a change to a stage cannot alter the event of a route it does not precede, so only routes it precedes need new evidence. They close alone, and the others keep their certificates. Two caveats from the paper: the cost is a tighter guarantee foregone (for few routes, one whole-hierarchy bound beats a sum of route bounds at stricter levels); and closing a route is an outage for its traffic, so calibrate the new prefix in \emph{shadow mode} before switching. A change that only tightens a stage cannot raise $R_r$ on its own route (Monotonicity), but it can move traffic to later routes, so the conservative rule is kept.
+
+\begin{example}{what a change stales in DevAgent}
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Changed stage(s)} & \textbf{Certificates closed}\\
+\midrule
+$g_1,g_2,g_3,s$ (rules, taint switch) & both routes ($n_3$ and $n_4$)\\
+$v_2$ or $n_4$ (scorer, human) & route $n_4$ only\\
+$c$ or $n_3$ (provenance gate, judge) & route $n_3$ only\\
+\bottomrule
+\end{tabular}
+\end{center}
+So a retrained scorer costs one route; a rule change costs all of them. Rule changes may be the most frequent, and for those the incremental scheme gains nothing.
+\end{example}
+
+\pauseq{A team replaces the judge $n_3$ by a newer model. Which certificates are stale? Now suppose instead the team adds a new deterministic gate right after $g_3$. What happens?}{Only the certificate of route $n_3$ is stale in the first case (the judge precedes no other route; the route $n_4$'s fingerprint is built from $g_1,g_2,g_3,s,v_2,n_4$ and does not include $n_3$). In the second case, the new gate is an ancestor of both routes, so both fingerprints change and both certificates close until recalibrated.}
+
+\begin{recap}
+\begin{itemize}
+\item Exact analysis tells \emph{what depends on what}; statistics supplies numbers for learned stages.
+\item $R=\sum_{r\in Q}R_r$: risk is a sum over statistical routes; gated routes contribute zero. No independence assumption is needed.
+\item Per-layer rates mislead: Fr\'echet--Hoeffding says the joint miss rate can be anywhere between $\max(0,1-\sum(1-m_i))$ and $\min m_i$; for cascades with early acceptance even those bounds fail.
+\item Clopper--Pearson: the largest loss rate consistent with $k$ losses in $N$ samples at level $\delta_r$. Union bound makes all route certificates hold together.
+\item Fingerprints (Merkle hashes of the prefix) tell exactly which certificates a change invalidates; they are only as good as the declared component identity.
+\end{itemize}
+\end{recap}

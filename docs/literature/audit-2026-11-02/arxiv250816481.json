@@ -1,0 +1,436 @@
+{
+  "key": "arxiv250816481",
+  "entry": {
+    "note": "Pre-proceedings",
+    "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/8b54ecd9823fff6d37e61ece8f87e534-Abstract-Conference.html",
+    "year": "2026",
+    "booktitle": "Conference on Language Modeling (COLM)",
+    "title": "{Benchmarking the Robustness of Agentic Systems to Adversarially-Induced Harmful Behaviors}",
+    "author": "Nöther, Jonathan and Singla, Adish and Radanovic, Goran",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv250816481"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Benchmarking+the+Robustness+of+Agentic+Systems+to+Adversarially-Induced+Harmful+Behaviors",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Benchmarking+the+Robustness+of+Agentic+Systems+to+Adversarially-Induced+Harmful+Behaviors&rows=3",
+      "status": 200,
+      "file": "arxiv250816481.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/8b54ecd9823fff6d37e61ece8f87e534-Abstract-Conference.html",
+      "status": 200,
+      "file": "arxiv250816481.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1007/978-3-032-18070-4_6",
+      "type": "book-chapter",
+      "title": [
+        "Benchmarking Considerations for Agentic AI Systems"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Ajay",
+          "family": "Dholakia",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sachin Gopal",
+          "family": "Wani",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Ellison",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Miro",
+          "family": "Hodak",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Debojyoti",
+          "family": "Dutta",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shishir",
+          "family": "Nagaraja",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Raj",
+          "family": "Ranjan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Performance Evaluation and Benchmarking"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "89-98",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            1
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Switzerland",
+      "event": null,
+      "similarity": 0.5
+    },
+    {
+      "DOI": "10.1109/aiotc71250.2026.11688714",
+      "type": "proceedings-article",
+      "title": [
+        "SafeHierarchy: Benchmarking and Mitigating Hierarchy-Induced Harmful Compliance in LLM Multi-Agent Systems"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Zhitao",
+          "family": "Lv",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Beijing University of Posts and Telecommunications",
+              "place": [
+                "Beijing, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Liuyu",
+          "family": "Xiang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beijing University of Posts and Telecommunications",
+              "place": [
+                "Beijing, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dianyun",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beijing University of Posts and Telecommunications",
+              "place": [
+                "Beijing, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Huijia",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beijing University of Posts and Telecommunications",
+              "place": [
+                "Beijing, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhenyu",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "North China Electric Power University",
+              "place": [
+                "Beijing, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhaofeng",
+          "family": "He",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Beijing University of Posts and Telecommunications",
+              "place": [
+                "Beijing, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 5th International Conference on Artificial Intelligence, Internet of Things and Cloud Computing Technology (AIoTC)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "359-365",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "event": {
+        "name": "2026 5th International Conference on Artificial Intelligence, Internet of Things and Cloud Computing Technology (AIoTC)",
+        "location": "Nanchang, China",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              17
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              19
+            ]
+          ]
+        }
+      },
+      "similarity": 0.419
+    },
+    {
+      "DOI": "10.52202/075280-1725",
+      "type": "proceedings-article",
+      "title": [
+        "Robustness Guarantees for Adversarially Trained Neural Networks"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Poorya",
+          "family": "Mianjy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Raman",
+          "family": "Arora",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 36"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "39703-39718",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 36",
+        "theme": "37th Conference on Neural Information Processing Systems (NeurIPS 2023)",
+        "location": "New Orleans, Louisiana, USA",
+        "acronym": "NeurIPS 2023",
+        "number": "36",
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              16
+            ]
+          ]
+        }
+      },
+      "similarity": 0.559
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "Benchmarking the Robustness of Agentic Systems to Adversarially-Induced Harmful Behaviors"
+    ],
+    "citation_author": [
+      "Nöther, Jonathan",
+      "Singla, Adish",
+      "Radanovic, Goran"
+    ],
+    "citation_journal_title": [
+      "Conference On Language Models"
+    ],
+    "citation_volume": [
+      "3"
+    ],
+    "citation_pdf_url": [
+      "proceedings.colm.cc/paper_files/paper/2026/file/8b54ecd9823fff6d37e61ece8f87e534-Paper-Conference.pdf"
+    ],
+    "citation_publication_date": [
+      "2026-10-15"
+    ]
+  },
+  "details": {},
+  "bibtex_links": []
+}

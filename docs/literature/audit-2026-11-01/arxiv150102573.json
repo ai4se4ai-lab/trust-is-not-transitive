@@ -1,0 +1,114 @@
+{
+  "key": "arxiv150102573",
+  "entry": {
+    "url": "https://doi.org/10.1007/978-3-662-46681-0_51",
+    "doi": "10.1007/978-3-662-46681-0_51",
+    "publisher": "Springer Berlin Heidelberg",
+    "year": "2015",
+    "pages": "533--548",
+    "volume": "9035",
+    "series": "Lecture Notes in Computer Science",
+    "booktitle": "Tools and Algorithms for the Construction and Analysis of Systems",
+    "title": "{Shield Synthesis: Runtime Enforcement for Reactive Systems}",
+    "author": "Bloem, Roderick and K{\\\"o}nighofer, Bettina and K{\\\"o}nighofer, Robert and Wang, Chao",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv150102573"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Shield+Synthesis%3A+Runtime+Enforcement+for+Reactive+Systems",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1007/978-3-662-46681-0_51",
+      "status": 200,
+      "file": "arxiv150102573.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1007/978-3-662-46681-0_51",
+      "type": "book-chapter",
+      "title": [
+        "Shield Synthesis:"
+      ],
+      "subtitle": [
+        "Runtime Enforcement for Reactive Systems"
+      ],
+      "author": [
+        {
+          "given": "Roderick",
+          "family": "Bloem",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bettina",
+          "family": "Könighofer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Robert",
+          "family": "Könighofer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chao",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Tools and Algorithms for the Construction and Analysis of Systems"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "533-548",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Berlin Heidelberg",
+      "event": null,
+      "similarity": 0.455
+    }
+  ]
+}

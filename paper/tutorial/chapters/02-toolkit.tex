@@ -1,0 +1,327 @@
+% =====================================================================
+\section{The Toolkit: Sets, Logic, Contracts and Induction}
+\label{ch:toolkit}
+% =====================================================================
+
+\begin{bigidea}
+The whole paper is built from four small ideas: \textbf{sets} (to keep track of ``which goals are done, which assumptions hold''), \textbf{logic} (especially the ``if \dots\ then \dots'' that a contract is made of), \textbf{contracts} (promises with conditions), and \textbf{induction on trees} (the proof technique for almost every theorem). This chapter teaches exactly what you need of each, using small examples, so that Chapter~\ref{ch:calculus} can go fast.
+\end{bigidea}
+
+Later chapters add more background just before it is needed: dataflow and complexity in Chapter~\ref{ch:graphs}, probability in Chapter~\ref{ch:risk}, solvers in Chapter~\ref{ch:proofs}.
+
+% ---------------------------------------------------------------------
+\subsection{Sets}
+% ---------------------------------------------------------------------
+
+\textbf{Why we need them.} The checker walks through a stack and keeps two ``to-do and done'' lists: \emph{which goals have already been guaranteed} and \emph{which facts have been established}. Lists without order or repetition are sets.
+
+\begin{toolbox}{sets in five minutes}
+A \textbf{set} is a collection of distinct things, written with braces: $\{a,b,c\}$. The order does not matter and repeating a member changes nothing.
+
+\smallskip
+\begin{tabular}{@{}lll@{}}
+\toprule
+Symbol & Reads as & Example with $X=\{1,2,3\}$, $Y=\{3,4\}$\\
+\midrule
+$x\in X$ & ``$x$ is a member of $X$'' & $2\in X$\\
+$\emptyset$ & the empty set & $\emptyset=\{\}$\\
+$X\subseteq Y$ & ``every member of $X$ is in $Y$'' & $\{3\}\subseteq Y$ is true, $X\subseteq Y$ is false\\
+$X\cup Y$ & union: members of $X$ \emph{or} $Y$ & $\{1,2,3,4\}$\\
+$X\cap Y$ & intersection: members of \emph{both} & $\{3\}$\\
+$X\setminus Y$ & difference: in $X$ but not $Y$ & $\{1,2\}$\\
+\bottomrule
+\end{tabular}
+
+\smallskip
+Two facts we use constantly:
+\begin{itemize}
+\item $\emptyset\subseteq X$ for every $X$ (the condition ``every member of $\emptyset$ is in $X$'' has no members to check).
+\item Union gets bigger, intersection gets smaller: $X\subseteq X\cup Y$ and $X\cap Y\subseteq X$. And if $X\subseteq X'$ and $Y\subseteq Y'$ then $X\cup Y\subseteq X'\cup Y'$ (``enlarging the inputs enlarges the union'').
+\end{itemize}
+\end{toolbox}
+
+\begin{example}{goals as sets}
+Let the goals of DevAgent be $\Goals=\{\varphi_1,\varphi_2,\varphi_{\mathrm{env}},\varphi_3,\varphi_4\}$. After the three deterministic gates the checker has $A=\{\varphi_1,\varphi_2,\varphi_{\mathrm{env}}\}$. Is $\Goals\subseteq A$? No, because $\varphi_3\in\Goals$ but $\varphi_3\notin A$. The goals still \emph{open} are $\Goals\setminus A=\{\varphi_3,\varphi_4\}$. A later stage whose scope is $\{\varphi_4\}$ cannot cover $\varphi_3$, and the check will say so.
+\end{example}
+
+% ---------------------------------------------------------------------
+\subsection{Logic: ``if \dots\ then \dots'' and the surprise of vacuous truth}
+% ---------------------------------------------------------------------
+
+\textbf{Why we need it.} A contract is an implication. The central puzzle of Chapter~\ref{ch:motivation} (``every component kept its contract, yet the stack failed'') is exactly the behavior of implications whose condition is false. Please read this section slowly.
+
+\begin{toolbox}{propositional logic and quantifiers}
+Statements are true or false. We combine them with $\wedge$ (and), $\vee$ (or), $\neg$ (not) and $\Rightarrow$ (implies).
+
+\begin{center}
+\begin{tabular}{cc|cc}
+\toprule
+$P$ & $Q$ & $P\wedge Q$ & $P\Rightarrow Q$\\
+\midrule
+true & true & true & true\\
+true & false & false & \textbf{false}\\
+false & true & false & true\\
+false & false & false & true\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+An implication $P\Rightarrow Q$ is false in \emph{exactly one} situation: when $P$ is true and $Q$ is false. If $P$ is false, the implication is true no matter what $Q$ is. This is called \textbf{vacuous truth}.
+
+Quantifiers: $\forall x\,\psi(x)$ means ``for \emph{all} $x$, $\psi$ holds''; $\exists x\,\psi(x)$ means ``there exists an $x$ with $\psi$''. The negation of ``for all'' is ``there exists a counterexample'': $\neg\forall x\,\psi \equiv \exists x\,\neg\psi$.
+\end{toolbox}
+
+\begin{story}{A vacuously kept promise}
+A parent says: ``If it rains tomorrow, I will drive you to school.'' It does not rain; the parent does not drive you. Was the promise broken? No. The promise only said something about rainy days. Now suppose the promise were ``If you are ready at 7:00, I will drive you.'' You are ready at 7:05; the parent leaves without you. Again the promise is intact, although something bad happened to you. This is how the LLM judge's promise behaves when its assumption is false.
+\end{story}
+
+\pauseq{Which of these implications are true? (a) ``If $2+2=5$ then the moon is cheese.'' (b) ``If $2+2=4$ then the moon is cheese.'' (c) ``If the input is not manipulative then the judge blocks the unsafe action'', on an input that \emph{is} manipulative and where the judge accepts.}{(a) True (false condition). (b) False (true condition, false conclusion). (c) True: the condition is false, so the contract holds vacuously even though the judge accepted an unsafe action. This is exactly the loophole the paper formalises.}
+
+\textbf{The two directions of ``for all'' and ``there exists''.} Safety will be defined as ``for \emph{every} behavior of the stages that respects the contracts, no unsafe action is accepted''. To \emph{prove} safety we must handle every behavior (this is what soundness does). To \emph{refute} safety it suffices to exhibit \emph{one} behavior in which all contracts are respected and an unsafe action is accepted (this is what completeness does: it constructs one). Keep this asymmetry in mind: proving a ``for all'' is hard and general; refuting it needs a single example.
+
+% ---------------------------------------------------------------------
+\subsection{Contracts: promises with conditions}
+% ---------------------------------------------------------------------
+
+\textbf{Why we need them.} Each guard must be described without knowing how it works inside. We cannot look inside an LLM. We can only write down what we \emph{require} of it and what we \emph{get}.
+
+\begin{toolbox}{assume--guarantee contracts}
+A contract for a component is a pair $(A,G)$ of an \textbf{assumption} $A$ and a \textbf{guarantee} $G$, read:
+\[
+\text{if the environment satisfies } A \text{, then the component ensures } G.
+\]
+This idea is old (Hoare logic in the 1960s, assume--guarantee reasoning from the 1980s onward) and underlies design-by-contract in programming languages. Examples:
+
+\begin{itemize}
+\item A square-root function: assumes $x\ge 0$; guarantees $r^2=x$ and $r\ge0$. If you call it with $x=-4$ the function has not misbehaved; you violated its assumption.
+\item A sort routine: assumes the comparison function is a total order; guarantees the output is sorted.
+\end{itemize}
+\textbf{Composition rule (informal).} If component $B$ assumes $A_B$, then in a system $B$'s guarantee can be used only if some other part of the system \emph{establishes} $A_B$ (by the environment or another component's guarantee). A guarantee that depends on an unestablished assumption is a gap in the argument. The paper's whole subject is bookkeeping for this gap.
+\end{toolbox}
+
+For guardrails, the contract of a guard $g$ has two parts:
+
+\begin{itemize}
+\item the \emph{assumption}: a set of named \textbf{obligations}, for example $\ob{miss\_rate\_bounded}$ (``a certificate bounds this classifier's miss rate'') or $\ob{safe\_on\_this\_text}$ (``this guard's contract holds on this text, because it contains no attacker text or because the guard resists it''); and
+\item the \emph{guarantee}: a set of \textbf{goals} it ``covers'' when it accepts, called its \emph{scope}: ``if I accept and my obligations hold, then these goals are really satisfied''.
+\end{itemize}
+
+\begin{example}{a contract in three lines}
+LLM judge $n_3$: requires $\{\ob{miss\_rate\_bounded},\ \ob{safe\_on\_this\_text}\}$; scope $\{\varphi_4\}$.\\
+Reading: ``If both obligations hold on this invocation and I accept, then $\varphi_4$ (the change does what was asked) is satisfied. If either obligation fails, I promise nothing; I may accept anything.''
+\end{example}
+
+\subsubsection*{Three modelling decisions to notice now}
+
+These come back in the formal semantics, and each is a place where the paper makes a choice that you could imagine making differently.
+
+\begin{enumerate}
+\item \textbf{Conditionality.} The promise is made only if \emph{all} the guard's obligations hold. If any fails, the guard may do anything (vacuous truth).
+\item \textbf{Locality (``evidence belongs to one invocation'').} Whether an obligation holds is a property of \emph{one stage for one proposal}. The scorer saw a sanitized summary; the judge may see raw text. That the obligation ``input is clean'' held at the scorer does not imply it holds at the judge.
+\item \textbf{Free behavior.} We never model what a guard computes. A guard is allowed to behave in \emph{any} way that is consistent with its contract. This is how we can quantify over ``every possible implementation'', including adversarial ones.
+\end{enumerate}
+
+% ---------------------------------------------------------------------
+\subsection{Trees, recursive definitions and structural induction}
+\label{sec:trees-induction}
+% ---------------------------------------------------------------------
+
+\textbf{Why we need them.} The paper defines a hierarchy as a \emph{term}, i.e.\ a tree of nested constructors, and defines everything (what it means to run it, whether it is safe, whether it checks) by \emph{recursion} on that tree. Nearly every proof is by \emph{structural induction}. If you understand this subsection, you understand the shape of every proof in the tutorial.
+
+\subsubsection{Start with a payment workflow}
+
+\begin{story}{One payment, three agents}
+A Requester creates a payment request, an Approver authorizes it, and an Executor transfers the money. Our rule is: \textbf{never execute a payment without approval}. To keep this first example small, assume there is just one fixed payment, approval is genuine and remains valid, and no agent changes the request.
+
+Use two constructors: $\mathrm{Agent}(a)$ is one agent, and $\mathrm{Then}(X,Y)$ means ``run $X$, then $Y$''. The whole workflow is
+\[
+\mathrm{Then}\bigl(\mathrm{Then}(\mathrm{Agent}(R),\mathrm{Agent}(P)),
+                         \mathrm{Agent}(E)\bigr),
+\]
+where $R,P,E$ stand for Requester, Approver and Executor. The outer \texttt{Then} is the \textbf{root}; its left child is another \texttt{Then}; the three agents are \textbf{leaves}. A constructor is simply a building rule: one makes an agent, the other combines two smaller workflows. Reusing these rules builds any finite workflow in this toy language.
+
+\begin{center}
+\begin{tikzpicture}[font=\small,
+  part/.style={draw=tintteal,rounded corners,fill=tintteal!6,inner sep=5pt},
+  edge/.style={-{Stealth[length=1.8mm]}}]
+\node[part] (root) at (0,0) {Then (root)};
+\node[part] (left) at (-2,-1) {Then};
+\node[part] (exec) at (2,-1) {Executor};
+\node[part] (request) at (-3.2,-2) {Requester};
+\node[part] (approve) at (-0.8,-2) {Approver};
+\draw[edge] (root)--(left);
+\draw[edge] (root)--(exec);
+\draw[edge] (left)--(request);
+\draw[edge] (left)--(approve);
+\end{tikzpicture}
+
+\small Tree edges mean ``contains this component''; execution order is Requester, Approver, Executor.
+\end{center}
+
+The tree describes how the system is assembled. It does not itself transfer money. Also, \texttt{Agent} and \texttt{Then} are teaching devices; Chapter~\ref{ch:calculus} introduces the paper's actual four constructors.
+\end{story}
+
+\textbf{Recursion: write a rule for each constructor.} A toy static checker carries a Boolean $b$, meaning ``approval is available for this payment''. It returns the updated Boolean or \texttt{error}:
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+\textbf{Component} & \textbf{Checker rule}\\
+\midrule
+Requester & Return $b$ unchanged.\\
+Approver & Return $\mathrm{true}$.\\
+Executor & Return $\mathrm{true}$ if $b=\mathrm{true}$; otherwise return \texttt{error}.\\
+$\mathrm{Then}(X,Y)$ & Check $X$ with $b$. If it returns \texttt{error}, reject; otherwise check $Y$ with the Boolean returned by $X$.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+The last rule is recursive: checking a composite calls the same checker on its smaller parts. Starting with no approval, the walk is
+\[
+\underbrace{\mathrm{false}}_{\text{start}}
+\xrightarrow{\text{Requester}}\mathrm{false}
+\xrightarrow{\text{Approver}}\mathrm{true}
+\xrightarrow{\text{Executor}}\mathrm{true}.
+\]
+It succeeds. Remove the Approver and the Executor receives $\mathrm{false}$, so the checker rejects. These are checks of two concrete workflows, not yet a proof for every workflow.
+
+\textbf{Structural induction: prove the rules work for every tree.}
+The useful claim is: for either starting Boolean $b$, if the checker succeeds, execution from the matching approval state makes no unapproved transfer and ends with the Boolean predicted by the checker.
+\begin{itemize}
+\item \textbf{Base cases:} Requester and Approver make no transfer and update approval as specified. Executor is checked successfully only with approval, and preserves it.
+\item \textbf{Step case:} for $\mathrm{Then}(X,Y)$, assume the claim for the smaller trees $X$ and $Y$. The claim for $X$ makes its execution safe and identifies its final approval state. This is exactly the state supplied to $Y$; the claim for $Y$ therefore makes the rest safe and identifies the final state of the whole workflow.
+\end{itemize}
+This is not assuming the conclusion for the whole workflow. The assumptions concern \emph{strictly smaller} trees, eventually reaching individual agents. Because every tree in this language is finite, the cases cover all of them. Tracking the returned state matters: two parts that are safe under different assumptions cannot simply be declared safe together.
+
+\begin{warning}{Recursion and induction answer different questions}
+\textbf{Recursion} defines how to compute a result from smaller parts.
+\textbf{Structural induction} proves a claim about every structure made from the constructors. Running a checker on one workflow illustrates recursion; proving that its rules preserve safety establishes correctness for all finite workflows in the language, under the stated assumptions.
+\end{warning}
+
+\begin{toolbox}{recursive definitions on trees}
+Consider arithmetic expressions built with three constructors: a \texttt{num(n)} (a leaf), \texttt{add(e1,e2)} and \texttt{mul(e1,e2)}. For example $\texttt{add(num(2), mul(num(3), num(4)))}$ is the tree for $2+3\cdot4$.
+
+A function on such trees is defined by \textbf{one equation per constructor}, each using the function on the \emph{smaller} subtrees:
+\begin{align*}
+\mathrm{value}(\texttt{num}(n)) &= n,\\
+\mathrm{value}(\texttt{add}(e_1,e_2)) &= \mathrm{value}(e_1)+\mathrm{value}(e_2),\\
+\mathrm{value}(\texttt{mul}(e_1,e_2)) &= \mathrm{value}(e_1)\cdot\mathrm{value}(e_2).
+\end{align*}
+Such a definition always terminates, because every recursive call is on a strictly smaller tree. We will define the check $\chk$, the semantics $\sem{H}{M}$ and the contract-satisfaction relation $\models$ just like this.
+
+Do not let the new symbols hide the questions. $\sem{H}{M}$ reads ``the decision made by hierarchy $H$ under behavior $M$''; its result is acceptance or denial. $M\models_F H$ reads ``behavior $M$ respects the hierarchy's contracts, starting with provided facts $F$''; this is a true-or-false statement. Neither alone says that the hierarchy is safe. Section~\ref{sec:reading-semantics} unpacks the notation and Section~\ref{sec:contracts-versus-safety} works through the distinction.
+\end{toolbox}
+
+\begin{toolbox}{proof by structural induction}
+To prove a statement $\Psi(t)$ for \emph{every} tree $t$ of a datatype, it is enough to prove it \emph{once per constructor}:
+\begin{itemize}
+\item \textbf{Base cases} (constructors with no subtrees, e.g.\ a leaf): prove $\Psi$ directly.
+\item \textbf{Step cases} (constructors with subtrees): \emph{assume} $\Psi$ holds for the immediate subtrees (this assumption is called the \textbf{induction hypothesis}) and prove $\Psi$ for the whole tree.
+\end{itemize}
+Why is this valid? Every tree is built from leaves by finitely many constructor applications. $\Psi$ holds for the leaves (base). If it holds for the parts, it holds for the whole (step). So it holds for everything, by building up. It is ordinary induction, where ``size of tree'' replaces ``$n$''.
+
+\medskip
+\textbf{Example.} Claim: for the arithmetic trees above, the number of leaves is exactly (number of \texttt{add} and \texttt{mul} nodes) $+1$. Write $\ell(t)$ for leaves and $i(t)$ for inner nodes.\\
+\emph{Base:} $t=\texttt{num}(n)$: $\ell=1$, $i=0$, and $1=0+1$. \checkmark\\
+\emph{Step:} $t=\texttt{add}(e_1,e_2)$. By the induction hypothesis $\ell(e_1)=i(e_1)+1$ and $\ell(e_2)=i(e_2)+1$. Then $\ell(t)=\ell(e_1)+\ell(e_2)=i(e_1)+i(e_2)+2$ and $i(t)=i(e_1)+i(e_2)+1$, so $\ell(t)=i(t)+1$. \checkmark\ The case \texttt{mul} is identical.
+\end{toolbox}
+
+\subsubsection{Why proving more can make the induction work}
+\label{sec:generalization}
+
+In the payment example, the whole workflow starts with $b=\mathrm{false}$, but the Executor subtree starts with $b=\mathrm{true}$. A hypothesis about smaller workflows \emph{only when started without approval} cannot justify that recursive call. We need the hypothesis for \emph{either} starting Boolean, with execution started in the matching state. Generalization changes the statement we prove; it does not change the checker or pretend approval exists.
+
+\begin{example}{the accumulator: see exactly where the weak hypothesis fails}
+Consider this function on a finite list of integers:
+\begin{lstlisting}
+def sum_numbers(numbers, acc):
+    if numbers == []:
+        return acc
+    return sum_numbers(numbers[1:], acc + numbers[0])
+\end{lstlisting}
+Its recursive calls on one input are
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Call} & \textbf{Accumulator} & \textbf{Accumulator + remaining total}\\
+\midrule
+\texttt{sum\_numbers([2,3,4], 0)} & $0$ & $0+9=9$\\
+\texttt{sum\_numbers([3,4], 2)} & $2$ & $2+7=9$\\
+\texttt{sum\_numbers([4], 5)} & $5$ & $5+4=9$\\
+\texttt{sum\_numbers([], 9)} & $9$ & $9+0=9$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Our original goal is $\mathrm{sum\_numbers}(L,0)=\mathrm{total}(L)$.
+If we induct on $L$ using only this statement, the hypothesis for the tail $[3,4]$ tells us about accumulator $0$, whereas the actual recursive call uses $2$. It does not match.
+
+Instead, prove the stronger statement
+\[
+Q(L):\quad\forall a\in\mathbb Z,\qquad
+\mathrm{sum\_numbers}(L,a)=a+\mathrm{total}(L).
+\]
+\textbf{Base:} for the empty list, the function returns $a$, and $a+\mathrm{total}([])=a+0=a$ for arbitrary $a$.
+
+\textbf{Step:} write $L=x::R$, meaning head $x$ followed by the smaller tail $R$. The induction hypothesis is $Q(R)$, so it is available for \emph{every} accumulator. For arbitrary $a$, use it at $a+x$:
+\begin{align*}
+\mathrm{sum\_numbers}(x::R,a)
+ &=\mathrm{sum\_numbers}(R,a+x) &&\text{function definition}\\
+ &=(a+x)+\mathrm{total}(R) &&\text{hypothesis at }a+x\\
+ &=a+\mathrm{total}(x::R). &&\text{definition of total}
+\end{align*}
+That proves $Q(x::R)$. Finally choose $a=0$ to recover the original goal.
+\textbf{We did not test infinitely many accumulators}: we proved the equation using an arbitrary symbol $a$. The stronger claim gives a stronger hypothesis for the smaller list, exactly matching the recursive call.
+\end{example}
+
+\subsubsection{Why $A$, $B$ and $F$? Why not $J$, $K$ and $L$?}
+
+The letters are just names; consistent renaming changes nothing. Their \emph{roles} are different:
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}llX@{}}
+\toprule
+\textbf{Set} & \textbf{Used by} & \textbf{Meaning}\\
+\midrule
+$A$ & Checker & Goals credited as established by earlier gates.\\
+$B$ & Checker & Obligations credited as provided by earlier gates.\\
+$F$ & Semantics and proof & Obligations actually provided along the modeled run.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+The checker is $\chk(H,A,B)$, \textbf{not} $\chk(H,A,B,F)$. The proof uses the additional semantic set $F$ to show that credited facts are supported: $B\subseteq F$. It also assumes $A\subseteq S$, where $S$ is the set of goals the proposal actually satisfies. These are conditions of the generalized claim; it does not assert safety for arbitrary unsupported information.
+
+Here $A$ contains \emph{goals}, while $B$ and $F$ contain \emph{obligations}. A goal might be ``the change contains no exposed credentials''; an obligation might be ``the judge's input satisfies the sanitization policy''. Establishing one does not automatically establish the other: the gate must explicitly promise the relevant goal or provide the relevant obligation. Section~\ref{sec:accounting-example} follows all three sets through two gates and a guard.
+
+A credited, passing gate with goal $\varphi$ and provided facts $D$ changes the states used in the proof to
+\[
+A'=A\cup\{\varphi\},\qquad B'=B\cup D,\qquad F'=F\cup D.
+\]
+Thus a hypothesis restricted to empty sets would not cover the continuation. As with the accumulator, we prove correctness for all starting sets satisfying the required premises, then instantiate the hypothesis with the updated sets. Chapter~\ref{ch:check} gives those premises and the full proof. There is no universal rule requiring three sets: this argument distinguishes goals, statically credited obligations, and semantically provided obligations. They could be packaged in a record while retaining their separate roles.
+
+\begin{story}{Final intuition: three accounting records}
+Think of the sets as three accounting records:
+\begin{itemize}
+\item $A$ = \textbf{Achievement record:} Which safety goals have we established?
+\item $B$ = \textbf{Checker evidence record:} Which obligations have we justified for later stages?
+\item $F$ = \textbf{Semantic fact record:} Which obligations are carried forward as actually provided in the modeled execution?
+\end{itemize}
+\end{story}
+
+\pauseq{In the accumulator proof, why may we use the hypothesis at $a+x$? In the payment proof, why must the hypothesis cover an Executor starting with approval?}{The hypothesis is $Q(R)$, which quantifies over every accumulator, so $a+x$ is an allowed instance. The payment check passes the Approver's returned state $\mathrm{true}$ to the Executor. A hypothesis covering only initial state $\mathrm{false}$ does not describe that call. In both cases the tree or list gets smaller while the carried information changes.}
+
+\pauseq{Prove by structural induction that the \emph{depth} of the arithmetic tree (longest path from root to a leaf, counting the leaf as depth $0$) is at most the number of inner nodes. Then say which constructors are the base and step cases.}{Let $d(t)$ be the depth. Base: $\texttt{num}$: $d=0\le i=0$. Step: $t=\texttt{add}(e_1,e_2)$: $d(t)=1+\max(d(e_1),d(e_2))\le 1+\max(i(e_1),i(e_2))\le 1+i(e_1)+i(e_2)=i(t)$. Same for \texttt{mul}. The hierarchy version of this ('a decision visits at most depth(H) stages') appears in Chapter~\ref{ch:structural}.}
+
+% ---------------------------------------------------------------------
+\subsection{Proving ``it can happen'': building a counterexample}
+% ---------------------------------------------------------------------
+
+Soundness says ``every behavior is safe''. Completeness says: if the checker rejects, then \emph{some} behavior is unsafe. The proof of completeness therefore \emph{builds} a behavior. This is a \textbf{constructive existence proof}. Typically one defines the object piece by piece, choosing each piece to make the target property true, and then verifies the result. You have probably seen this when proving that a function is not injective (``take $x=1$ and $y=-1$'').
+
+For a hierarchy the pieces to choose are: does each gate pass, which verdict does each guard give, which branch does each switch take, and which obligations hold at each stage. Because we decided that guards are free (modelled only by their contracts), \emph{we are allowed to choose all of this} as long as we stay inside the contracts. That freedom is what makes a matching completeness theorem possible.
+
+\begin{recap}
+\begin{itemize}
+\item Sets: $\subseteq$, $\cup$, $\cap$, $\setminus$. The checker tracks sets of established goals and facts.
+\item A contract is an implication; if its condition is false it is vacuously kept.
+\item Three modelling choices: conditionality, locality (evidence per invocation), free behavior.
+\item Trees are defined and analysed by one equation / one proof case per constructor; generalize the induction hypothesis over the carried sets.
+\item To refute ``for all'' you only need one explicit counterexample, and the completeness proof constructs it.
+\end{itemize}
+\end{recap}

@@ -1,0 +1,214 @@
+{
+  "key": "arxiv250315707",
+  "entry": {
+    "url": "https://doi.org/10.1109/iros60139.2025.11246041",
+    "doi": "10.1109/iros60139.2025.11246041",
+    "publisher": "IEEE",
+    "year": "2025",
+    "pages": "21024--21031",
+    "booktitle": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "title": "{Safety Aware Task Planning via Large Language Models in Robotics}",
+    "author": "Khan, Azal Ahmad and Andrev, Michael and Murtaza, Muhammad Ali and Aguilera, Sergio and Zhang, Rui and Ding, Jie and Hutchinson, Seth and Anwar, Ali",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv250315707"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Safety+Aware+Task+Planning+via+Large+Language+Models+in+Robotics",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1109/iros60139.2025.11246041",
+      "status": 200,
+      "file": "arxiv250315707.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/iros60139.2025.11246041",
+      "type": "proceedings-article",
+      "title": [
+        "Safety Aware Task Planning via Large Language Models in Robotics"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Azal Ahmad",
+          "family": "Khan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Minnesota &#x2013; Twin Cities"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael",
+          "family": "Andrev",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Minnesota &#x2013; Twin Cities"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Muhammad Ali",
+          "family": "Murtaza",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Georgia Institute of Technology,Institute for Robotics and Intelligent Machines (IRIM),Atlanta"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sergio",
+          "family": "Aguilera",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Pontificia Universidad Cat&#x00F3;lica de Chile,School of Engineering,Department of Mechanical and Metallurgical Engineering,Santiago,Chile"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rui",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Minnesota &#x2013; Twin Cities"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jie",
+          "family": "Ding",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Minnesota &#x2013; Twin Cities"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Seth",
+          "family": "Hutchinson",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Northeastern University,Khoury College of Computer Sciences"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ali",
+          "family": "Anwar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Minnesota &#x2013; Twin Cities"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "21024-21031",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            19
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            19
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "event": {
+        "name": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+        "location": "Hangzhou, China",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              19
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              25
+            ]
+          ]
+        }
+      },
+      "similarity": 1.0
+    }
+  ]
+}

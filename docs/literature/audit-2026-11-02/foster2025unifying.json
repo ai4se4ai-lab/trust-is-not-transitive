@@ -1,0 +1,127 @@
+{
+  "key": "foster2025unifying",
+  "entry": {
+    "doi": "10.1145/3702981",
+    "year": "2025",
+    "pages": "1--40",
+    "number": "4",
+    "volume": "34",
+    "journal": "ACM Transactions on Software Engineering and Methodology",
+    "title": "Unifying Model Execution and Deductive Verification with Interaction Trees in Isabelle/HOL",
+    "author": "Foster, Simon and Hur, Chung-Kil and Woodcock, Jim",
+    "ENTRYTYPE": "article",
+    "ID": "foster2025unifying"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Unifying+Model+Execution+and+Deductive+Verification+with+Interaction+Trees+in+Isabelle%2FHOL",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1145/3702981",
+      "status": 200,
+      "file": "foster2025unifying.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/3702981",
+      "type": "journal-article",
+      "title": [
+        "Unifying Model Execution and Deductive Verification with Interaction Trees in Isabelle/HOL"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9889-9514",
+          "authenticated-orcid": false,
+          "given": "Simon",
+          "family": "Foster",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of York, York, UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1656-0913",
+          "authenticated-orcid": false,
+          "given": "Chung-Kil",
+          "family": "Hur",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Seoul National University, Seoul, South Korea"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7955-2702",
+          "authenticated-orcid": false,
+          "given": "Jim",
+          "family": "Woodcock",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Southwest University, Chongqing, China and Aarhus University, Aarhus, Denmark and University of York, York, UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ACM Transactions on Software Engineering and Methodology"
+      ],
+      "volume": "34",
+      "issue": "4",
+      "page": "1-40",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            29
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            31
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            29
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

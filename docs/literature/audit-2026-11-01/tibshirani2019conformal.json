@@ -1,0 +1,336 @@
+{
+  "key": "tibshirani2019conformal",
+  "entry": {
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2019/hash/8fb21ee7a2207526da55a679f0332de2-Abstract.html",
+    "publisher": "Curran Associates, Inc.",
+    "year": "2019",
+    "pages": "",
+    "volume": "32",
+    "booktitle": "Advances in Neural Information Processing Systems",
+    "title": "{Conformal Prediction Under Covariate Shift}",
+    "author": "Tibshirani, Ryan J. and Barber, Rina Foygel and Cand{\\`e}s, Emmanuel J. and Ramdas, Aaditya",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "tibshirani2019conformal"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Conformal+Prediction+Under+Covariate+Shift",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Conformal+Prediction+Under+Covariate+Shift&rows=3",
+      "status": 200,
+      "file": "tibshirani2019conformal.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2019/hash/8fb21ee7a2207526da55a679f0332de2-Abstract.html",
+      "status": 200,
+      "file": "tibshirani2019conformal.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1080/10618600.2026.2703276",
+      "type": "journal-article",
+      "title": [
+        "Generative Conformal Prediction Under Covariate Shift"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Cheng",
+          "family": "Li",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Statistics and Data Science, The Chinese University of Hong Kong",
+              "place": [
+                "Hong Kong, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4126-2547",
+          "authenticated-orcid": false,
+          "given": "Siming",
+          "family": "Zheng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Statistics and Data Science, Southeast University",
+              "place": [
+                "Nanjing, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuanyuan",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Statistics and Data Science, The Chinese University of Hong Kong",
+              "place": [
+                "Hong Kong, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Computational and Graphical Statistics"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-9",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            20
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            20
+          ]
+        ]
+      },
+      "publisher": "Informa UK Limited",
+      "event": null,
+      "similarity": 0.884
+    },
+    {
+      "DOI": "10.1073/pnas.2204569119",
+      "type": "journal-article",
+      "title": [
+        "Conformal prediction under feedback covariate shift for biomolecular design"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Clara",
+          "family": "Fannjiang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, CA 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephen",
+          "family": "Bates",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Statistics, University of California, Berkeley, CA 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anastasios N.",
+          "family": "Angelopoulos",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, CA 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jennifer",
+          "family": "Listgarten",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, CA 94720"
+            },
+            {
+              "name": "Center for Computational Biology, University of California, Berkeley, CA 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8935-817X",
+          "authenticated-orcid": false,
+          "given": "Michael I.",
+          "family": "Jordan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, CA 94720"
+            },
+            {
+              "name": "Department of Statistics, University of California, Berkeley, CA 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the National Academy of Sciences"
+      ],
+      "volume": "119",
+      "issue": "43",
+      "page": null,
+      "article-number": "e2204569119",
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            18
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            25
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            18
+          ]
+        ]
+      },
+      "publisher": "National Academy of Sciences",
+      "event": null,
+      "similarity": 0.724
+    },
+    {
+      "DOI": "10.21203/rs.3.rs-9822449/v1",
+      "type": "posted-content",
+      "title": [
+        "Conformal Prediction Sets for Tabular Regression Under Covariate Shift"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Debarun",
+          "family": "Banerjee",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Independent Researcher"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            27
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Springer Science and Business Media LLC",
+      "event": null,
+      "similarity": 0.76
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "Conformal Prediction Under Covariate Shift"
+    ],
+    "citation_author": [
+      "Tibshirani, Ryan J.",
+      "Foygel Barber, Rina",
+      "Candes, Emmanuel",
+      "Ramdas, Aaditya"
+    ],
+    "citation_journal_title": [
+      "Advances in Neural Information Processing Systems"
+    ],
+    "citation_volume": [
+      "32"
+    ],
+    "citation_pdf_url": [
+      "https://proceedings.neurips.cc/paper_files/paper/2019/file/8fb21ee7a2207526da55a679f0332de2-Paper.pdf"
+    ],
+    "citation_publication_date": [
+      "2019"
+    ]
+  },
+  "details": {},
+  "bibtex_links": [
+    "/paper_files/paper/2019/file/8fb21ee7a2207526da55a679f0332de2-Bibtex.bib"
+  ]
+}

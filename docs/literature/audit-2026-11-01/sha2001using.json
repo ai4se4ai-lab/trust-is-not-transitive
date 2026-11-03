@@ -1,0 +1,74 @@
+{
+  "key": "sha2001using",
+  "entry": {
+    "doi": "10.1109/MS.2001.936213",
+    "year": "2001",
+    "pages": "20--28",
+    "number": "4",
+    "volume": "18",
+    "journal": "IEEE Software",
+    "title": "Using Simplicity to Control Complexity",
+    "author": "Sha, Lui",
+    "ENTRYTYPE": "article",
+    "ID": "sha2001using"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Using+Simplicity+to+Control+Complexity",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1109/MS.2001.936213",
+      "status": 200,
+      "file": "sha2001using.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/ms.2001.936213",
+      "type": "journal-article",
+      "title": [
+        "Using simplicity to control complexity"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "family": "Lui Sha",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Software"
+      ],
+      "volume": "18",
+      "issue": "4",
+      "page": "20-28",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2001,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2001,
+            7
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

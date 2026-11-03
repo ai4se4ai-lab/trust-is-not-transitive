@@ -1,0 +1,742 @@
+[
+ {
+  "adversarial": {
+   "accepted": true,
+   "case": "camel_style",
+   "checked": 0,
+   "claims": [],
+   "construction": 0,
+   "findings": [],
+   "hard_routes": 0,
+   "necessary": [
+    [
+     "plan",
+     "memory_uncompromised"
+    ],
+    [
+     "plan",
+     "trusted_query_and_interpreter"
+    ],
+    [
+     "policy",
+     "policy_adequate"
+    ]
+   ],
+   "residual": [
+    [
+     "plan",
+     "memory_uncompromised"
+    ],
+    [
+     "plan",
+     "trusted_query_and_interpreter"
+    ],
+    [
+     "policy",
+     "policy_adequate"
+    ]
+   ],
+   "routes": 1
+  },
+  "benign": {
+   "accepted": true,
+   "case": "camel_style",
+   "checked": 0,
+   "claims": [],
+   "construction": 0,
+   "findings": [],
+   "hard_routes": 0,
+   "necessary": [
+    [
+     "plan",
+     "memory_uncompromised"
+    ],
+    [
+     "plan",
+     "trusted_query_and_interpreter"
+    ],
+    [
+     "policy",
+     "policy_adequate"
+    ]
+   ],
+   "residual": [
+    [
+     "plan",
+     "memory_uncompromised"
+    ],
+    [
+     "plan",
+     "trusted_query_and_interpreter"
+    ],
+    [
+     "policy",
+     "policy_adequate"
+    ]
+   ],
+   "routes": 1
+  },
+  "case": "camel_style",
+  "repair_adversarial": {
+   "accepted_after": true,
+   "supply": [],
+   "uncovered": []
+  }
+ },
+ {
+  "adversarial": {
+   "accepted": false,
+   "case": "conformal_arbitrage",
+   "checked": 0,
+   "claims": [],
+   "construction": 0,
+   "findings": [
+    [
+     "obligation",
+     "p",
+     "safe_on_this_text",
+     [
+      "p"
+     ]
+    ],
+    [
+     "obligation",
+     "g",
+     "safe_on_this_text",
+     [
+      "p",
+      "g"
+     ]
+    ]
+   ],
+   "hard_routes": 0,
+   "necessary": [],
+   "residual": [
+    [
+     "p",
+     "miss_rate_bounded"
+    ],
+    [
+     "g",
+     "miss_rate_bounded"
+    ]
+   ],
+   "routes": 2
+  },
+  "benign": {
+   "accepted": true,
+   "case": "conformal_arbitrage",
+   "checked": 0,
+   "claims": [],
+   "construction": 0,
+   "findings": [],
+   "hard_routes": 0,
+   "necessary": [
+    [
+     "p",
+     "miss_rate_bounded"
+    ],
+    [
+     "g",
+     "miss_rate_bounded"
+    ]
+   ],
+   "residual": [
+    [
+     "p",
+     "miss_rate_bounded"
+    ],
+    [
+     "g",
+     "miss_rate_bounded"
+    ]
+   ],
+   "routes": 2
+  },
+  "case": "conformal_arbitrage",
+  "repair_adversarial": {
+   "accepted_after": true,
+   "supply": [
+    [
+     "g",
+     "safe_on_this_text"
+    ],
+    [
+     "p",
+     "safe_on_this_text"
+    ]
+   ],
+   "uncovered": []
+  }
+ },
+ {
+  "adversarial": {
+   "accepted": true,
+   "case": "devagent",
+   "checked": 1,
+   "claims": [
+    [
+     "g1",
+     "phi1"
+    ],
+    [
+     "g2",
+     "phi2"
+    ],
+    [
+     "g3",
+     "env"
+    ],
+    [
+     "c",
+     "phi3"
+    ],
+    [
+     "c",
+     "safe_on_this_text"
+    ]
+   ],
+   "construction": 1,
+   "findings": [],
+   "hard_routes": 0,
+   "necessary": [
+    [
+     "n3",
+     "miss_rate_bounded"
+    ],
+    [
+     "n4",
+     "human_attentive"
+    ],
+    [
+     "n4",
+     "safe_on_this_text"
+    ]
+   ],
+   "residual": [
+    [
+     "n3",
+     "miss_rate_bounded"
+    ],
+    [
+     "n4",
+     "human_attentive"
+    ],
+    [
+     "n4",
+     "safe_on_this_text"
+    ]
+   ],
+   "routes": 2
+  },
+  "benign": {
+   "accepted": true,
+   "case": "devagent",
+   "checked": 1,
+   "claims": [
+    [
+     "g1",
+     "phi1"
+    ],
+    [
+     "g2",
+     "phi2"
+    ],
+    [
+     "g3",
+     "env"
+    ],
+    [
+     "c",
+     "phi3"
+    ],
+    [
+     "c",
+     "safe_on_this_text"
+    ]
+   ],
+   "construction": 1,
+   "findings": [],
+   "hard_routes": 0,
+   "necessary": [
+    [
+     "n3",
+     "miss_rate_bounded"
+    ],
+    [
+     "n4",
+     "human_attentive"
+    ]
+   ],
+   "residual": [
+    [
+     "n3",
+     "miss_rate_bounded"
+    ],
+    [
+     "n4",
+     "human_attentive"
+    ]
+   ],
+   "routes": 2
+  },
+  "case": "devagent",
+  "repair_adversarial": {
+   "accepted_after": true,
+   "supply": [],
+   "uncovered": []
+  }
+ },
+ {
+  "adversarial": {
+   "accepted": false,
+   "case": "devagent_exposed_judge",
+   "checked": 1,
+   "claims": [
+    [
+     "g1",
+     "phi1"
+    ],
+    [
+     "g2",
+     "phi2"
+    ],
+    [
+     "g3",
+     "env"
+    ]
+   ],
+   "construction": 0,
+   "findings": [
+    [
+     "obligation",
+     "n3",
+     "safe_on_this_text",
+     [
+      "g1",
+      "g2",
+      "g3",
+      "n3"
+     ]
+    ]
+   ],
+   "hard_routes": 0,
+   "necessary": [],
+   "residual": [
+    [
+     "n3",
+     "miss_rate_bounded"
+    ]
+   ],
+   "routes": 1
+  },
+  "benign": {
+   "accepted": true,
+   "case": "devagent_exposed_judge",
+   "checked": 1,
+   "claims": [
+    [
+     "g1",
+     "phi1"
+    ],
+    [
+     "g2",
+     "phi2"
+    ],
+    [
+     "g3",
+     "env"
+    ]
+   ],
+   "construction": 0,
+   "findings": [],
+   "hard_routes": 0,
+   "necessary": [
+    [
+     "n3",
+     "miss_rate_bounded"
+    ]
+   ],
+   "residual": [
+    [
+     "n3",
+     "miss_rate_bounded"
+    ]
+   ],
+   "routes": 1
+  },
+  "case": "devagent_exposed_judge",
+  "repair_adversarial": {
+   "accepted_after": true,
+   "supply": [
+    [
+     "n3",
+     "safe_on_this_text"
+    ]
+   ],
+   "uncovered": []
+  }
+ },
+ {
+  "adversarial": {
+   "accepted": false,
+   "case": "llamafirewall_composition",
+   "checked": 0,
+   "claims": [],
+   "construction": 0,
+   "findings": [
+    [
+     "coverage",
+     "done",
+     "goal_alignment",
+     [
+      "pg",
+      "ac",
+      "cs",
+      "done"
+     ]
+    ],
+    [
+     "coverage",
+     "done",
+     "injection",
+     [
+      "pg",
+      "ac",
+      "cs",
+      "done"
+     ]
+    ],
+    [
+     "coverage",
+     "done",
+     "no_insecure_code",
+     [
+      "pg",
+      "ac",
+      "cs",
+      "done"
+     ]
+    ]
+   ],
+   "hard_routes": 0,
+   "necessary": [],
+   "residual": [],
+   "routes": 1
+  },
+  "benign": {
+   "accepted": false,
+   "case": "llamafirewall_composition",
+   "checked": 0,
+   "claims": [],
+   "construction": 0,
+   "findings": [
+    [
+     "coverage",
+     "done",
+     "goal_alignment",
+     [
+      "pg",
+      "ac",
+      "cs",
+      "done"
+     ]
+    ],
+    [
+     "coverage",
+     "done",
+     "injection",
+     [
+      "pg",
+      "ac",
+      "cs",
+      "done"
+     ]
+    ],
+    [
+     "coverage",
+     "done",
+     "no_insecure_code",
+     [
+      "pg",
+      "ac",
+      "cs",
+      "done"
+     ]
+    ]
+   ],
+   "hard_routes": 0,
+   "necessary": [],
+   "residual": [],
+   "routes": 1
+  },
+  "case": "llamafirewall_composition",
+  "repair_adversarial": {
+   "accepted_after": true,
+   "supply": [
+    [
+     "ac",
+     "miss_rate_bounded"
+    ],
+    [
+     "ac",
+     "safe_on_this_text"
+    ],
+    [
+     "cs",
+     "miss_rate_bounded"
+    ],
+    [
+     "cs",
+     "safe_on_this_text"
+    ],
+    [
+     "pg",
+     "miss_rate_bounded"
+    ],
+    [
+     "pg",
+     "safe_on_this_text"
+    ]
+   ],
+   "uncovered": []
+  }
+ },
+ {
+  "adversarial": {
+   "accepted": false,
+   "case": "nemo_rails",
+   "checked": 0,
+   "claims": [],
+   "construction": 0,
+   "findings": [
+    [
+     "coverage",
+     "ret",
+     "dialogue_flow",
+     [
+      "in",
+      "flow",
+      "out",
+      "ret"
+     ]
+    ],
+    [
+     "coverage",
+     "ret",
+     "input_policy",
+     [
+      "in",
+      "flow",
+      "out",
+      "ret"
+     ]
+    ],
+    [
+     "coverage",
+     "ret",
+     "output_policy",
+     [
+      "in",
+      "flow",
+      "out",
+      "ret"
+     ]
+    ]
+   ],
+   "hard_routes": 0,
+   "necessary": [],
+   "residual": [],
+   "routes": 1
+  },
+  "benign": {
+   "accepted": false,
+   "case": "nemo_rails",
+   "checked": 0,
+   "claims": [],
+   "construction": 0,
+   "findings": [
+    [
+     "coverage",
+     "ret",
+     "dialogue_flow",
+     [
+      "in",
+      "flow",
+      "out",
+      "ret"
+     ]
+    ],
+    [
+     "coverage",
+     "ret",
+     "input_policy",
+     [
+      "in",
+      "flow",
+      "out",
+      "ret"
+     ]
+    ],
+    [
+     "coverage",
+     "ret",
+     "output_policy",
+     [
+      "in",
+      "flow",
+      "out",
+      "ret"
+     ]
+    ]
+   ],
+   "hard_routes": 0,
+   "necessary": [],
+   "residual": [],
+   "routes": 1
+  },
+  "case": "nemo_rails",
+  "repair_adversarial": {
+   "accepted_after": true,
+   "supply": [
+    [
+     "flow",
+     "miss_rate_bounded"
+    ],
+    [
+     "flow",
+     "safe_on_this_text"
+    ],
+    [
+     "in",
+     "miss_rate_bounded"
+    ],
+    [
+     "in",
+     "safe_on_this_text"
+    ],
+    [
+     "out",
+     "miss_rate_bounded"
+    ],
+    [
+     "out",
+     "safe_on_this_text"
+    ]
+   ],
+   "uncovered": []
+  }
+ },
+ {
+  "adversarial": {
+   "accepted": false,
+   "case": "trust_or_escalate",
+   "checked": 0,
+   "claims": [],
+   "construction": 0,
+   "findings": [
+    [
+     "obligation",
+     "m1",
+     "safe_on_this_text",
+     [
+      "m1"
+     ]
+    ],
+    [
+     "obligation",
+     "m2",
+     "safe_on_this_text",
+     [
+      "m1",
+      "m2"
+     ]
+    ],
+    [
+     "obligation",
+     "m3",
+     "safe_on_this_text",
+     [
+      "m1",
+      "m2",
+      "m3"
+     ]
+    ]
+   ],
+   "hard_routes": 0,
+   "necessary": [],
+   "residual": [
+    [
+     "m1",
+     "miss_rate_bounded"
+    ],
+    [
+     "m2",
+     "miss_rate_bounded"
+    ],
+    [
+     "m3",
+     "miss_rate_bounded"
+    ]
+   ],
+   "routes": 3
+  },
+  "benign": {
+   "accepted": true,
+   "case": "trust_or_escalate",
+   "checked": 0,
+   "claims": [],
+   "construction": 0,
+   "findings": [],
+   "hard_routes": 0,
+   "necessary": [
+    [
+     "m1",
+     "miss_rate_bounded"
+    ],
+    [
+     "m2",
+     "miss_rate_bounded"
+    ],
+    [
+     "m3",
+     "miss_rate_bounded"
+    ]
+   ],
+   "residual": [
+    [
+     "m1",
+     "miss_rate_bounded"
+    ],
+    [
+     "m2",
+     "miss_rate_bounded"
+    ],
+    [
+     "m3",
+     "miss_rate_bounded"
+    ]
+   ],
+   "routes": 3
+  },
+  "case": "trust_or_escalate",
+  "repair_adversarial": {
+   "accepted_after": true,
+   "supply": [
+    [
+     "m1",
+     "safe_on_this_text"
+    ],
+    [
+     "m2",
+     "safe_on_this_text"
+    ],
+    [
+     "m3",
+     "safe_on_this_text"
+    ]
+   ],
+   "uncovered": []
+  }
+ }
+]

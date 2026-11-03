@@ -1,0 +1,154 @@
+{
+  "key": "arxiv250800500",
+  "entry": {
+    "url": "https://doi.org/10.1145/3832783.3837413",
+    "doi": "10.1145/3832783.3837413",
+    "publisher": "ACM",
+    "year": "2026",
+    "pages": "1470--1482",
+    "booktitle": "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering",
+    "title": "{ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via Probabilistic Prediction}",
+    "author": "Wang, Haoyu and Poskitt, Christopher M. and Wei, Jiali and Sun, Jun",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv250800500"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=ProbGuard%3A+Proactive+Runtime+Monitoring+for+LLM+Agent+Safety+via+Probabilistic+Prediction",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1145/3832783.3837413",
+      "status": 200,
+      "file": "arxiv250800500.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/3832783.3837413",
+      "type": "proceedings-article",
+      "title": [
+        "ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via Probabilistic Prediction"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0000-6379-5312",
+          "authenticated-orcid": false,
+          "given": "Haoyu",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Singapore Management University, Singapore, Singapore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9376-2471",
+          "authenticated-orcid": false,
+          "given": "Christopher M.",
+          "family": "Poskitt",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Singapore Management University, Singapore, Singapore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1842-0196",
+          "authenticated-orcid": false,
+          "given": "Jiali",
+          "family": "Wei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Xi'an Jiaotong University, Xi'an, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3545-1392",
+          "authenticated-orcid": false,
+          "given": "Jun",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Singapore Management University, Singapore, Singapore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1470-1482",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            7
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            7
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "event": {
+        "name": "ASE '26: 41st IEEE/ACM International Conference on Automated Software Engineering",
+        "location": "Munich Germany",
+        "acronym": "ASE '26",
+        "sponsor": [
+          "SIGSOFT ACM Special Interest Group on Software Engineering",
+          "SIGAI ACM Special Interest Group on Artificial Intelligence",
+          "IEEE CS"
+        ]
+      },
+      "similarity": 1.0
+    }
+  ]
+}

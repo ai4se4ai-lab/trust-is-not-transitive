@@ -1,0 +1,83 @@
+{
+ "version": "hsl-1",
+ "goals": [
+  "input_policy",
+  "dialogue_flow",
+  "output_policy"
+ ],
+ "entry": "in",
+ "obligations": [
+  {
+   "name": "miss_rate_bounded",
+   "kind": "assumed"
+  }
+ ],
+ "layers": [
+  {
+   "name": "InputRail",
+   "scope": [],
+   "requires": [
+    "miss_rate_bounded"
+   ],
+   "view": "raw"
+  },
+  {
+   "name": "DialogueRail",
+   "scope": [],
+   "requires": [
+    "miss_rate_bounded"
+   ],
+   "view": "raw"
+  },
+  {
+   "name": "OutputRail",
+   "scope": [],
+   "requires": [
+    "miss_rate_bounded"
+   ],
+   "view": "raw"
+  },
+  {
+   "name": "Return",
+   "scope": [],
+   "requires": [],
+   "view": "metadata"
+  }
+ ],
+ "nodes": [
+  {
+   "type": "gate",
+   "id": "in",
+   "rule": "moderation_input",
+   "establishes": "input_policy",
+   "next": "flow",
+   "layer": "InputRail",
+   "evidence": []
+  },
+  {
+   "type": "gate",
+   "id": "flow",
+   "rule": "colang_flow",
+   "establishes": "dialogue_flow",
+   "next": "out",
+   "layer": "DialogueRail",
+   "evidence": []
+  },
+  {
+   "type": "gate",
+   "id": "out",
+   "rule": "moderation_output",
+   "establishes": "output_policy",
+   "next": "ret",
+   "layer": "OutputRail",
+   "evidence": []
+  },
+  {
+   "type": "guard",
+   "id": "ret",
+   "layer": "Return",
+   "evidence": [],
+   "next": null
+  }
+ ]
+}

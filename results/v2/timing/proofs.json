@@ -1,0 +1,398 @@
+[
+ {
+  "theorem": "T1-soundness",
+  "case": "deny",
+  "z3_seconds": 0.0037,
+  "cvc5_seconds": 0.0287
+ },
+ {
+  "theorem": "T1-soundness",
+  "case": "gate",
+  "z3_seconds": 0.0065,
+  "cvc5_seconds": 0.0262
+ },
+ {
+  "theorem": "T1-soundness",
+  "case": "guard",
+  "z3_seconds": 0.0032,
+  "cvc5_seconds": 0.0081
+ },
+ {
+  "theorem": "T1-soundness",
+  "case": "switch",
+  "z3_seconds": 0.0017,
+  "cvc5_seconds": 0.0028
+ },
+ {
+  "theorem": "L1-frame-P",
+  "case": "deny",
+  "z3_seconds": 0.0002,
+  "cvc5_seconds": 0.0018
+ },
+ {
+  "theorem": "L1-frame-P",
+  "case": "gate",
+  "z3_seconds": 0.002,
+  "cvc5_seconds": 0.0044
+ },
+ {
+  "theorem": "L1-frame-P",
+  "case": "guard",
+  "z3_seconds": 0.0019,
+  "cvc5_seconds": 0.0036
+ },
+ {
+  "theorem": "L1-frame-P",
+  "case": "switch",
+  "z3_seconds": 0.003,
+  "cvc5_seconds": 0.0038
+ },
+ {
+  "theorem": "L1-frame-V",
+  "case": "deny",
+  "z3_seconds": 0.0002,
+  "cvc5_seconds": 0.002
+ },
+ {
+  "theorem": "L1-frame-V",
+  "case": "gate",
+  "z3_seconds": 0.0019,
+  "cvc5_seconds": 0.0034
+ },
+ {
+  "theorem": "L1-frame-V",
+  "case": "guard",
+  "z3_seconds": 0.0021,
+  "cvc5_seconds": 0.0044
+ },
+ {
+  "theorem": "L1-frame-V",
+  "case": "switch",
+  "z3_seconds": 0.0017,
+  "cvc5_seconds": 0.0034
+ },
+ {
+  "theorem": "L1-frame-W",
+  "case": "deny",
+  "z3_seconds": 0.0002,
+  "cvc5_seconds": 0.0026
+ },
+ {
+  "theorem": "L1-frame-W",
+  "case": "gate",
+  "z3_seconds": 0.002,
+  "cvc5_seconds": 0.0037
+ },
+ {
+  "theorem": "L1-frame-W",
+  "case": "guard",
+  "z3_seconds": 0.002,
+  "cvc5_seconds": 0.0038
+ },
+ {
+  "theorem": "L1-frame-W",
+  "case": "switch",
+  "z3_seconds": 0.0021,
+  "cvc5_seconds": 0.0036
+ },
+ {
+  "theorem": "L1-frame-E",
+  "case": "deny",
+  "z3_seconds": 0.0002,
+  "cvc5_seconds": 0.0018
+ },
+ {
+  "theorem": "L1-frame-E",
+  "case": "gate",
+  "z3_seconds": 0.0022,
+  "cvc5_seconds": 0.0101
+ },
+ {
+  "theorem": "L1-frame-E",
+  "case": "guard",
+  "z3_seconds": 0.003,
+  "cvc5_seconds": 0.0066
+ },
+ {
+  "theorem": "L1-frame-E",
+  "case": "switch",
+  "z3_seconds": 0.0018,
+  "cvc5_seconds": 0.0031
+ },
+ {
+  "theorem": "T2-completeness",
+  "case": "deny",
+  "z3_seconds": 0.0001,
+  "cvc5_seconds": 0.0016
+ },
+ {
+  "theorem": "T2-completeness",
+  "case": "gate-reduction",
+  "z3_seconds": 0.0015,
+  "cvc5_seconds": 0.0021
+ },
+ {
+  "theorem": "T2-completeness",
+  "case": "gate-credited",
+  "z3_seconds": 0.0061,
+  "cvc5_seconds": 0.0047
+ },
+ {
+  "theorem": "T2-completeness",
+  "case": "gate-uncredited",
+  "z3_seconds": 0.0019,
+  "cvc5_seconds": 0.0044
+ },
+ {
+  "theorem": "T2-completeness",
+  "case": "gate-cases",
+  "z3_seconds": 0.0013,
+  "cvc5_seconds": 0.0024
+ },
+ {
+  "theorem": "T2-completeness",
+  "case": "guard-reduction",
+  "z3_seconds": 0.0008,
+  "cvc5_seconds": 0.0024
+ },
+ {
+  "theorem": "T2-completeness",
+  "case": "guard-cases",
+  "z3_seconds": 0.0016,
+  "cvc5_seconds": 0.0027
+ },
+ {
+  "theorem": "T2-completeness",
+  "case": "guard-continue",
+  "z3_seconds": 0.0018,
+  "cvc5_seconds": 0.0031
+ },
+ {
+  "theorem": "T2-completeness",
+  "case": "guard-obligation",
+  "z3_seconds": 0.0019,
+  "cvc5_seconds": 0.0051
+ },
+ {
+  "theorem": "T2-completeness",
+  "case": "guard-coverage",
+  "z3_seconds": 0.0019,
+  "cvc5_seconds": 0.0048
+ },
+ {
+  "theorem": "T2-completeness",
+  "case": "switch-reduction",
+  "z3_seconds": 0.0002,
+  "cvc5_seconds": 0.0017
+ },
+ {
+  "theorem": "T2-completeness",
+  "case": "switch-then",
+  "z3_seconds": 0.0006,
+  "cvc5_seconds": 0.0024
+ },
+ {
+  "theorem": "T2-completeness",
+  "case": "switch-else",
+  "z3_seconds": 0.0008,
+  "cvc5_seconds": 0.0026
+ },
+ {
+  "theorem": "T3-monotonicity",
+  "case": "deny",
+  "z3_seconds": 0.0001,
+  "cvc5_seconds": 0.0016
+ },
+ {
+  "theorem": "T3-monotonicity",
+  "case": "gate",
+  "z3_seconds": 0.002,
+  "cvc5_seconds": 0.0029
+ },
+ {
+  "theorem": "T3-monotonicity",
+  "case": "guard",
+  "z3_seconds": 0.0017,
+  "cvc5_seconds": 0.0032
+ },
+ {
+  "theorem": "T3-monotonicity",
+  "case": "switch",
+  "z3_seconds": 0.0018,
+  "cvc5_seconds": 0.0029
+ },
+ {
+  "theorem": "T4-routes",
+  "case": "deny",
+  "z3_seconds": 0.0002,
+  "cvc5_seconds": 0.0018
+ },
+ {
+  "theorem": "T4-routes",
+  "case": "gate",
+  "z3_seconds": 0.0013,
+  "cvc5_seconds": 0.0024
+ },
+ {
+  "theorem": "T4-routes",
+  "case": "guard",
+  "z3_seconds": 0.0017,
+  "cvc5_seconds": 0.003
+ },
+ {
+  "theorem": "T4-routes",
+  "case": "switch",
+  "z3_seconds": 0.0016,
+  "cvc5_seconds": 0.0026
+ },
+ {
+  "theorem": "T5-prefix-locality",
+  "case": "deny",
+  "z3_seconds": 0.0002,
+  "cvc5_seconds": 0.0021
+ },
+ {
+  "theorem": "T5-prefix-locality",
+  "case": "gate",
+  "z3_seconds": 0.0016,
+  "cvc5_seconds": 0.0023
+ },
+ {
+  "theorem": "T5-prefix-locality",
+  "case": "guard",
+  "z3_seconds": 0.0016,
+  "cvc5_seconds": 0.003
+ },
+ {
+  "theorem": "T5-prefix-locality",
+  "case": "switch",
+  "z3_seconds": 0.0015,
+  "cvc5_seconds": 0.0023
+ },
+ {
+  "theorem": "T6-noninterference",
+  "case": "deny",
+  "z3_seconds": 0.0002,
+  "cvc5_seconds": 0.0021
+ },
+ {
+  "theorem": "T6-noninterference",
+  "case": "gate",
+  "z3_seconds": 0.0021,
+  "cvc5_seconds": 0.0042
+ },
+ {
+  "theorem": "T6-noninterference",
+  "case": "guard",
+  "z3_seconds": 0.0016,
+  "cvc5_seconds": 0.0042
+ },
+ {
+  "theorem": "T6-noninterference",
+  "case": "switch",
+  "z3_seconds": 0.006,
+  "cvc5_seconds": 0.0093
+ },
+ {
+  "theorem": "T7-decision-cost",
+  "case": "deny",
+  "z3_seconds": 0.0002,
+  "cvc5_seconds": 0.0016
+ },
+ {
+  "theorem": "T7-decision-cost",
+  "case": "gate",
+  "z3_seconds": 0.0036,
+  "cvc5_seconds": 0.003
+ },
+ {
+  "theorem": "T7-decision-cost",
+  "case": "guard",
+  "z3_seconds": 0.0024,
+  "cvc5_seconds": 0.0029
+ },
+ {
+  "theorem": "T7-decision-cost",
+  "case": "switch",
+  "z3_seconds": 0.0017,
+  "cvc5_seconds": 0.0043
+ },
+ {
+  "theorem": "T8-budget",
+  "case": "nil",
+  "z3_seconds": 0.0007,
+  "cvc5_seconds": 0.0023
+ },
+ {
+  "theorem": "T8-budget",
+  "case": "cons",
+  "z3_seconds": 0.0009,
+  "cvc5_seconds": 0.0025
+ },
+ {
+  "theorem": "T9-taint",
+  "case": "leaf",
+  "z3_seconds": 0.0015,
+  "cvc5_seconds": 0.0017
+ },
+ {
+  "theorem": "T9-taint",
+  "case": "derive",
+  "z3_seconds": 0.0014,
+  "cvc5_seconds": 0.002
+ },
+ {
+  "theorem": "T10-meet",
+  "case": "antitone",
+  "z3_seconds": 0.0026,
+  "cvc5_seconds": 0.0036
+ },
+ {
+  "theorem": "T10-meet",
+  "case": "preserved",
+  "z3_seconds": 0.0018,
+  "cvc5_seconds": 0.0052
+ },
+ {
+  "theorem": "T11-transitive",
+  "case": "deny",
+  "z3_seconds": 0.0001,
+  "cvc5_seconds": 0.0015
+ },
+ {
+  "theorem": "T11-transitive",
+  "case": "gate",
+  "z3_seconds": 0.0019,
+  "cvc5_seconds": 0.0272
+ },
+ {
+  "theorem": "T11-transitive",
+  "case": "guard",
+  "z3_seconds": 0.002,
+  "cvc5_seconds": 0.0061
+ },
+ {
+  "theorem": "T11-transitive",
+  "case": "switch",
+  "z3_seconds": 0.0002,
+  "cvc5_seconds": 0.0027
+ },
+ {
+  "theorem": "T11-transitive",
+  "case": "separation",
+  "z3_seconds": 0.0022,
+  "cvc5_seconds": 0.0092
+ },
+ {
+  "theorem": "T12-order",
+  "case": "hoist",
+  "z3_seconds": 0.0022,
+  "cvc5_seconds": 0.0053
+ },
+ {
+  "theorem": "T12-order",
+  "case": "commute",
+  "z3_seconds": 0.004,
+  "cvc5_seconds": 0.0164
+ }
+]

@@ -1,0 +1,155 @@
+{
+  "key": "he2016learning",
+  "entry": {
+    "doi": "10.1145/2907943",
+    "year": "2016",
+    "pages": "1--39",
+    "number": "3",
+    "volume": "25",
+    "journal": "ACM Transactions on Software Engineering and Methodology",
+    "title": "Learning Weighted Assumptions for Compositional Verification of Markov Decision Processes",
+    "author": "He, Fei and Gao, Xiaowei and Wang, Miaofei and Wang, Bow-Yaw and Zhang, Lijun",
+    "ENTRYTYPE": "article",
+    "ID": "he2016learning"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Learning+Weighted+Assumptions+for+Compositional+Verification+of+Markov+Decision+Processes",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1145/2907943",
+      "status": 200,
+      "file": "he2016learning.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/2907943",
+      "type": "journal-article",
+      "title": [
+        "Learning Weighted Assumptions for Compositional Verification of Markov Decision Processes"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4266-875X",
+          "authenticated-orcid": false,
+          "given": "Fei",
+          "family": "He",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "KLiss, MoE; TNList; School of Software, Tsinghua University, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Xiaowei",
+          "family": "Gao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "KLiss, MoE; TNList; School of Software, Tsinghua University, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Miaofei",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "KLiss, MoE; TNList; School of Software, Tsinghua University, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bow-Yaw",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Academia Sinica, Taiwan"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Lijun",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Chinese Academy of Sciences, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ACM Transactions on Software Engineering and Methodology"
+      ],
+      "volume": "25",
+      "issue": "3",
+      "page": "1-39",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            6,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            8,
+            22
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            6,
+            6
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+ "accepted": true,
+ "budget": 0.01,
+ "checked": [
+  [
+   "n3",
+   "config_match"
+  ]
+ ],
+ "claims": [
+  [
+   "g1",
+   "phi1"
+  ],
+  [
+   "g2",
+   "phi2"
+  ],
+  [
+   "g3",
+   "env"
+  ],
+  [
+   "c",
+   "phi3"
+  ],
+  [
+   "c",
+   "safe_on_this_text"
+  ]
+ ],
+ "construction": [
+  [
+   "n4",
+   "human_sees_provenance"
+  ]
+ ],
+ "expected_losses_blind_guard": 2,
+ "finding": {
+  "code": "obligation",
+  "detail": "safe_on_this_text",
+  "goal": "phi3",
+  "node": "n3",
+  "path": [
+   "g1",
+   "g2",
+   "g3",
+   "n3"
+  ]
+ },
+ "prevalence": 0.001,
+ "residual": [
+  [
+   "n3",
+   "miss_rate_bounded"
+  ],
+  [
+   "n4",
+   "human_attentive"
+  ],
+  [
+   "n4",
+   "safe_on_this_text"
+  ]
+ ],
+ "routes": [
+  "n3",
+  "n4"
+ ],
+ "samples": 1800,
+ "share": 0.025,
+ "upper_blind_guard": 0.0040078944793294205,
+ "upper_by_losses": {
+  "0": 0.0020472789343030334,
+  "10": 0.010193059003761334
+ },
+ "witness_holds_final": [
+  "config_match",
+  "human_attentive",
+  "human_sees_provenance",
+  "miss_rate_bounded"
+ ],
+ "witness_safe": [
+  "env",
+  "phi1",
+  "phi2",
+  "phi4"
+ ]
+}

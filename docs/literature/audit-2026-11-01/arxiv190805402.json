@@ -1,0 +1,132 @@
+{
+  "key": "arxiv190805402",
+  "entry": {
+    "url": "https://doi.org/10.23919/fmcad.2019.8894264",
+    "doi": "10.23919/fmcad.2019.8894264",
+    "publisher": "IEEE",
+    "year": "2019",
+    "pages": "129--137",
+    "booktitle": "2019 Formal Methods in Computer Aided Design (FMCAD)",
+    "title": "{Shield Synthesis for Real: Enforcing Safety in Cyber-Physical Systems}",
+    "author": "Wu, Meng and Wang, Jingbo and Deshmukh, Jyotirmoy and Wang, Chao",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv190805402"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Shield+Synthesis+for+Real%3A+Enforcing+Safety+in+Cyber-Physical+Systems",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.23919/fmcad.2019.8894264",
+      "status": 200,
+      "file": "arxiv190805402.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.23919/fmcad.2019.8894264",
+      "type": "proceedings-article",
+      "title": [
+        "Shield Synthesis for Real: Enforcing Safety in Cyber-Physical Systems"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Meng",
+          "family": "Wu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jingbo",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jyotirmoy",
+          "family": "Deshmukh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chao",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2019 Formal Methods in Computer Aided Design (FMCAD)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "129-137",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            10
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "event": {
+        "name": "2019 Formal Methods in Computer Aided Design (FMCAD)",
+        "location": "San Jose, CA, USA",
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              10,
+              22
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2019,
+              10,
+              25
+            ]
+          ]
+        }
+      },
+      "similarity": 1.0
+    }
+  ]
+}

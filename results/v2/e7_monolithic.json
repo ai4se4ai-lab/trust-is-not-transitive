@@ -1,0 +1,13 @@
+{
+ "prism": {
+  "compared": 200,
+  "disagreements": 0,
+  "not_decided": 0
+ },
+ "with_flow": 399,
+ "z3": {
+  "compared": 3000,
+  "disagreements": 0,
+  "not_decided": 0
+ }
+}

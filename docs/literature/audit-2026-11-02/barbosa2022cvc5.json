@@ -1,0 +1,295 @@
+{
+  "key": "barbosa2022cvc5",
+  "entry": {
+    "doi": "10.1007/978-3-030-99524-9_24",
+    "publisher": "Springer",
+    "year": "2022",
+    "pages": "415--442",
+    "volume": "13243",
+    "series": "Lecture Notes in Computer Science",
+    "booktitle": "Tools and Algorithms for the Construction and Analysis of Systems",
+    "title": "{cvc5: A Versatile and Industrial-Strength SMT Solver}",
+    "author": "Barbosa, Haniel and Barrett, Clark and Brain, Martin and Kremer, Gereon and Lachnitt, Hanna and Mann, Makai and Mohamed, Abdalrhman and Mohamed, Mudathir and Niemetz, Aina and N{\\\"o}tzli, Andres and Ozdemir, Alex and Preiner, Mathias and Reynolds, Andrew and Sheng, Ying and Tinelli, Cesare and Zohar, Yoni",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "barbosa2022cvc5"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=cvc5%3A+A+Versatile+and+Industrial-Strength+SMT+Solver",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1007/978-3-030-99524-9_24",
+      "status": 200,
+      "file": "barbosa2022cvc5.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1007/978-3-030-99524-9_24",
+      "type": "book-chapter",
+      "title": [
+        "cvc5: A Versatile and Industrial-Strength SMT Solver"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0188-2300",
+          "authenticated-orcid": false,
+          "given": "Haniel",
+          "family": "Barbosa",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9522-3084",
+          "authenticated-orcid": false,
+          "given": "Clark",
+          "family": "Barrett",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4216-7151",
+          "authenticated-orcid": false,
+          "given": "Martin",
+          "family": "Brain",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0393-5739",
+          "authenticated-orcid": false,
+          "given": "Gereon",
+          "family": "Kremer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3355-7828",
+          "authenticated-orcid": false,
+          "given": "Hanna",
+          "family": "Lachnitt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1555-5784",
+          "authenticated-orcid": false,
+          "given": "Makai",
+          "family": "Mann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1414-7073",
+          "authenticated-orcid": false,
+          "given": "Abdalrhman",
+          "family": "Mohamed",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4644-5756",
+          "authenticated-orcid": false,
+          "given": "Mudathir",
+          "family": "Mohamed",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2600-5283",
+          "authenticated-orcid": false,
+          "given": "Aina",
+          "family": "Niemetz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8669-0011",
+          "authenticated-orcid": false,
+          "given": "Andres",
+          "family": "Nötzli",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0181-6752",
+          "authenticated-orcid": false,
+          "given": "Alex",
+          "family": "Ozdemir",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7142-6258",
+          "authenticated-orcid": false,
+          "given": "Mathias",
+          "family": "Preiner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3529-8682",
+          "authenticated-orcid": false,
+          "given": "Andrew",
+          "family": "Reynolds",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1883-2126",
+          "authenticated-orcid": false,
+          "given": "Ying",
+          "family": "Sheng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6726-775X",
+          "authenticated-orcid": false,
+          "given": "Cesare",
+          "family": "Tinelli",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2972-6695",
+          "authenticated-orcid": false,
+          "given": "Yoni",
+          "family": "Zohar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Tools and Algorithms for the Construction and Analysis of Systems"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "415-442",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            30
+          ]
+        ]
+      },
+      "publisher": "Springer International Publishing",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

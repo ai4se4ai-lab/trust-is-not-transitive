@@ -1,0 +1,85 @@
+{
+  "key": "kam1977monotone",
+  "entry": {
+    "doi": "10.1007/bf00290339",
+    "year": "1977",
+    "pages": "305--317",
+    "number": "3",
+    "volume": "7",
+    "journal": "Acta Informatica",
+    "title": "Monotone data flow analysis frameworks",
+    "author": "Kam, John B. and Ullman, Jeffrey D.",
+    "ENTRYTYPE": "article",
+    "ID": "kam1977monotone"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Monotone+data+flow+analysis+frameworks",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1007/bf00290339",
+      "status": 200,
+      "file": "kam1977monotone.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1007/bf00290339",
+      "type": "journal-article",
+      "title": [
+        "Monotone data flow analysis frameworks"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "John B.",
+          "family": "Kam",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jeffrey D.",
+          "family": "Ullman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Acta Informatica"
+      ],
+      "volume": "7",
+      "issue": "3",
+      "page": "305-317",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1977
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1977
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Science and Business Media LLC",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

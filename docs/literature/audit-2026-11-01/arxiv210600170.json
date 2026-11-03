@@ -1,0 +1,299 @@
+{
+  "key": "arxiv210600170",
+  "entry": {
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/0d441de75945e5acbc865406fc9a2559-Abstract.html",
+    "publisher": "Curran Associates, Inc.",
+    "year": "2021",
+    "pages": "1660--1672",
+    "volume": "34",
+    "booktitle": "Advances in Neural Information Processing Systems",
+    "title": "{Adaptive Conformal Inference Under Distribution Shift}",
+    "author": "Gibbs, Isaac and Candès, Emmanuel",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv210600170"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Adaptive+Conformal+Inference+Under+Distribution+Shift",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Adaptive+Conformal+Inference+Under+Distribution+Shift&rows=3",
+      "status": 200,
+      "file": "arxiv210600170.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/0d441de75945e5acbc865406fc9a2559-Abstract.html",
+      "status": 200,
+      "file": "arxiv210600170.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/3819836.3819892",
+      "type": "proceedings-article",
+      "title": [
+        "Adaptive Quantization Strategies for Robust ML Inference Under Distribution Shift"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0005-0759-6075",
+          "authenticated-orcid": false,
+          "given": "Yinghao",
+          "family": "Sang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Pennsylvania, Philadelphia, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2026 5th International Conference on Cyber Security, Artificial Intelligence and Digital Economy"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "362-368",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            13
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            13
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            3
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "event": {
+        "name": "CSAIDE 2026: 2026 5th International Conference on Cyber Security, Artificial Intelligence and Digital Economy",
+        "location": "Salamanca Spain",
+        "acronym": "CSAIDE 2026"
+      },
+      "similarity": 0.767
+    },
+    {
+      "DOI": "10.20944/preprints202609.2642.v1",
+      "type": "posted-content",
+      "title": [
+        "Regime-Adaptive Conformal Guardrails for Prompt Injection Attacks Under Distribution Shift"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0000-0282-3308",
+          "authenticated-orcid": false,
+          "given": "Sagar Pradip",
+          "family": "Chaudhari",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            30
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "MDPI AG",
+      "event": null,
+      "similarity": 0.688
+    },
+    {
+      "DOI": "10.1109/sam68950.2026.11687984",
+      "type": "proceedings-article",
+      "title": [
+        "Robust Wind Power Interval Forecasting via Adaptive Graph Conformal Inference Under Distribution Shifts"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Yang",
+          "family": "Bian",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Huaiyin Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jie",
+          "family": "Bao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Huaiyin Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Suqun",
+          "family": "Cao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Huaiyin Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rui",
+          "family": "Luo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "City University of Hong Kong",
+              "place": [
+                "Hong Kong, China"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 IEEE 14th Sensor Array and Multichannel Signal Processing Workshop (SAM)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-5",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "event": {
+        "name": "2026 IEEE 14th Sensor Array and Multichannel Signal Processing Workshop (SAM)",
+        "location": "Shenzhen, China",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              13
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              16
+            ]
+          ]
+        }
+      },
+      "similarity": 0.691
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "Adaptive Conformal Inference Under Distribution Shift"
+    ],
+    "citation_author": [
+      "Gibbs, Isaac",
+      "Candes, Emmanuel"
+    ],
+    "citation_journal_title": [
+      "Advances in Neural Information Processing Systems"
+    ],
+    "citation_volume": [
+      "34"
+    ],
+    "citation_firstpage": [
+      "1660"
+    ],
+    "citation_lastpage": [
+      "1672"
+    ],
+    "citation_pdf_url": [
+      "https://proceedings.neurips.cc/paper_files/paper/2021/file/0d441de75945e5acbc865406fc9a2559-Paper.pdf"
+    ],
+    "citation_publication_date": [
+      "2021-12-06"
+    ]
+  },
+  "details": {},
+  "bibtex_links": [
+    "/paper_files/paper/11751-/bibtex"
+  ]
+}

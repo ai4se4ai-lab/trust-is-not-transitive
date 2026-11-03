@@ -1,0 +1,294 @@
+{
+  "key": "arxiv250503574",
+  "entry": {
+    "url": "https://arxiv.org/abs/2505.03574",
+    "howpublished": "arXiv:2505.03574",
+    "year": "2025",
+    "author": "Chennabasappa, Sahana and Nikolaidis, Cyrus and Song, Daniel and Molnar, David and Ding, Stephanie and Wan, Shengye and Whitman, Spencer and Deason, Lauren and Doucette, Nicholas and Montilla, Abraham and Gampa, Alekhya and de Paola, Beto and Gabi, Dominik and Crnkovich, James and Testud, Jean-Christophe and He, Kat and Chaturvedi, Rashnil and Zhou, Wu and Saxe, Joshua",
+    "title": "{LlamaFirewall: An open source guardrail system for building secure AI agents}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250503574"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=LlamaFirewall%3A+An+open+source+guardrail+system+for+building+secure+AI+agents",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=LlamaFirewall%3A+An+open+source+guardrail+system+for+building+secure+AI+agents&rows=3",
+      "status": 200,
+      "file": "arxiv250503574.crossref.json.gz"
+    },
+    {
+      "url": "https://arxiv.org/abs/2505.03574",
+      "status": 200,
+      "file": "arxiv250503574.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.2139/ssrn.4614280",
+      "type": "posted-content",
+      "title": [
+        "Building Open-Source AI"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2699-4723",
+          "authenticated-orcid": true,
+          "given": "Yash Raj",
+          "family": "Shrestha",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1203-3569",
+          "authenticated-orcid": true,
+          "given": "Georg",
+          "family": "von Krogh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7856-8729",
+          "authenticated-orcid": true,
+          "given": "Stefan",
+          "family": "Feuerriegel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "event": null,
+      "similarity": 0.353
+    },
+    {
+      "DOI": "10.1038/s43588-023-00540-0",
+      "type": "journal-article",
+      "title": [
+        "Building open-source AI"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Yash Raj",
+          "family": "Shrestha",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Georg",
+          "family": "von Krogh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7856-8729",
+          "authenticated-orcid": false,
+          "given": "Stefan",
+          "family": "Feuerriegel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Nature Computational Science"
+      ],
+      "volume": "3",
+      "issue": "11",
+      "page": "908-911",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            26
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            26
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "event": null,
+      "similarity": 0.353
+    },
+    {
+      "DOI": "10.1109/ms.2026.3672189",
+      "type": "journal-article",
+      "title": [
+        "Secure Code Generation With Open Source Generative AI Models"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8756-0582",
+          "authenticated-orcid": false,
+          "given": "Mithilesh",
+          "family": "Pandey",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Indian Institute of Technology Roorkee, Roorkee, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3250-4866",
+          "authenticated-orcid": false,
+          "given": "Sandeep",
+          "family": "Kumar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Indian Institute of Technology Roorkee, Roorkee, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Software"
+      ],
+      "volume": "43",
+      "issue": "4",
+      "page": "76-86",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            7
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "event": null,
+      "similarity": 0.376
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "LlamaFirewall: An open source guardrail system for building secure AI agents"
+    ],
+    "citation_author": [
+      "Chennabasappa, Sahana",
+      "Nikolaidis, Cyrus",
+      "Song, Daniel",
+      "Molnar, David",
+      "Ding, Stephanie",
+      "Wan, Shengye",
+      "Whitman, Spencer",
+      "Deason, Lauren",
+      "Doucette, Nicholas",
+      "Montilla, Abraham",
+      "Gampa, Alekhya",
+      "de Paola, Beto",
+      "Gabi, Dominik",
+      "Crnkovich, James",
+      "Testud, Jean-Christophe",
+      "He, Kat",
+      "Chaturvedi, Rashnil",
+      "Zhou, Wu",
+      "Saxe, Joshua"
+    ],
+    "citation_date": [
+      "2025/05/06"
+    ],
+    "citation_online_date": [
+      "2025/05/06"
+    ],
+    "citation_pdf_url": [
+      "https://arxiv.org/pdf/2505.03574"
+    ],
+    "citation_arxiv_id": [
+      "2505.03574"
+    ],
+    "citation_abstract": [
+      "Large language models (LLMs) have evolved from simple chatbots into autonomous agents capable of performing complex tasks such as editing production code, orchestrating workflows, and taking higher-stakes actions based on untrusted inputs like webpages and emails. These capabilities introduce new security risks that existing security measures, such as model fine-tuning or chatbot-focused guardrails, do not fully address. Given the higher stakes and the absence of deterministic solutions to mitigate these risks, there is a critical need for a real-time guardrail monitor to serve as a final layer of defense, and support system level, use case specific safety policy definition and enforcement. We introduce LlamaFirewall, an open-source security focused guardrail framework designed to serve as a final layer of defense against security risks associated with AI Agents. Our framework mitigates risks such as prompt injection, agent misalignment, and insecure code risks through three powerful guardrails: PromptGuard 2, a universal jailbreak detector that demonstrates clear state of the art performance; Agent Alignment Checks, a chain-of-thought auditor that inspects agent reasoning for prompt injection and goal misalignment, which, while still experimental, shows stronger efficacy at preventing indirect injections in general scenarios than previously proposed approaches; and CodeShield, an online static analysis engine that is both fast and extensible, aimed at preventing the generation of insecure or dangerous code by coding agents. Additionally, we include easy-to-use customizable scanners that make it possible for any developer who can write a regular expression or an LLM prompt to quickly update an agent's security guardrails."
+    ]
+  },
+  "details": {
+    "title": "Title: LlamaFirewall: An open source guardrail system for building secure AI agents",
+    "authors": "Authors: Sahana Chennabasappa , Cyrus Nikolaidis , Daniel Song , David Molnar , Stephanie Ding , Shengye Wan , Spencer Whitman , Lauren Deason , Nicholas Doucette , Abraham Montilla , Alekhya Gampa , Beto de Paola , Dominik Gabi , James Crnkovich , Jean-Christophe Testud , Kat He , Rashnil Chaturvedi , Wu Zhou , Joshua Saxe",
+    "dateline": "[Submitted on 6 May 2025]"
+  },
+  "bibtex_links": []
+}

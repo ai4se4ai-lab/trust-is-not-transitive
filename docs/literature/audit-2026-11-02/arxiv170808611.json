@@ -1,0 +1,138 @@
+{
+  "key": "arxiv170808611",
+  "entry": {
+    "url": "https://doi.org/10.1609/aaai.v32i1.11797",
+    "doi": "10.1609/aaai.v32i1.11797",
+    "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+    "year": "2018",
+    "number": "1",
+    "volume": "32",
+    "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "title": "{Safe Reinforcement Learning via Shielding}",
+    "author": "Alshiekh, Mohammed and Bloem, Roderick and Ehlers, R{\\\"u}diger and K{\\\"o}nighofer, Bettina and Niekum, Scott and Topcu, Ufuk",
+    "ENTRYTYPE": "article",
+    "ID": "arxiv170808611"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Safe+Reinforcement+Learning+via+Shielding",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1609/aaai.v32i1.11797",
+      "status": 200,
+      "file": "arxiv170808611.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1609/aaai.v32i1.11797",
+      "type": "journal-article",
+      "title": [
+        "Safe Reinforcement Learning via Shielding"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Mohammed",
+          "family": "Alshiekh",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Roderick",
+          "family": "Bloem",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rüdiger",
+          "family": "Ehlers",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bettina",
+          "family": "Könighofer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Scott",
+          "family": "Niekum",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ufuk",
+          "family": "Topcu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the AAAI Conference on Artificial Intelligence"
+      ],
+      "volume": "32",
+      "issue": "1",
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            29
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            29
+          ]
+        ]
+      },
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

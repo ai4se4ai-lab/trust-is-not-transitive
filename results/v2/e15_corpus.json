@@ -1,0 +1,31 @@
+{
+ "all_deterministic": 3,
+ "all_statistical": 47,
+ "colang2_with_rails": 11,
+ "commit": "8d027fd81a2f7bffd145e7a40ac6e190a57cd11d",
+ "configurations": 138,
+ "declared_parallel": 0,
+ "distinct_flows": 78,
+ "kinds": {
+  "deterministic": 10,
+  "llm_prompted": 42,
+  "model_or_service": 60,
+  "placeholder": 7,
+  "transforming": 8
+ },
+ "max_stages": 9,
+ "median_stages": 2.0,
+ "repository": "NVIDIA-NeMo/Guardrails",
+ "stages_used": {
+  "input": 44,
+  "output": 46,
+  "retrieval": 1,
+  "tool_call": 4,
+  "tool_result": 1
+ },
+ "unreadable": 0,
+ "with_deterministic": 5,
+ "with_rails": 56,
+ "with_tool_rails": 4,
+ "with_transforming": 4
+}

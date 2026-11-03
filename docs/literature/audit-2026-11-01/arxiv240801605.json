@@ -1,0 +1,273 @@
+{
+  "key": "arxiv240801605",
+  "entry": {
+    "url": "https://arxiv.org/abs/2408.01605",
+    "howpublished": "arXiv:2408.01605",
+    "year": "2024",
+    "author": "Wan, Shengye and Nikolaidis, Cyrus and Song, Daniel and Molnar, David and Crnkovich, James and Grace, Jayson and Bhatt, Manish and Chennabasappa, Sahana and Whitman, Spencer and Ding, Stephanie and Ionescu, Vlad and Li, Yue and Saxe, Joshua",
+    "title": "{CYBERSECEVAL 3: Advancing the Evaluation of Cybersecurity Risks and Capabilities in Large Language Models}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv240801605"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=CYBERSECEVAL+3%3A+Advancing+the+Evaluation+of+Cybersecurity+Risks+and+Capabilities+in+Large+Language+Models",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=CYBERSECEVAL+3%3A+Advancing+the+Evaluation+of+Cybersecurity+Risks+and+Capabilities+in+Large+Language+Models&rows=3",
+      "status": 200,
+      "file": "arxiv240801605.crossref.json.gz"
+    },
+    {
+      "url": "https://arxiv.org/abs/2408.01605",
+      "status": 200,
+      "file": "arxiv240801605.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/access.2026.3659205",
+      "type": "journal-article",
+      "title": [
+        "ChatNVD: Advancing Cybersecurity Vulnerability Assessment With Large Language Models"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0003-4001-5610",
+          "authenticated-orcid": false,
+          "given": "Shivansh",
+          "family": "Chopra",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "The University of Adelaide, Adelaide, SA, Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8815-7587",
+          "authenticated-orcid": false,
+          "given": "Hussain",
+          "family": "Ahmad",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The University of Adelaide, Adelaide, SA, Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8212-8793",
+          "authenticated-orcid": false,
+          "given": "Diksha",
+          "family": "Goel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "CSIRO&#x2019;s Data61, Melbourne, VIC, Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2501-1155",
+          "authenticated-orcid": false,
+          "given": "Claudia",
+          "family": "Szabo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The University of Adelaide, Adelaide, SA, Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Access"
+      ],
+      "volume": "14",
+      "issue": null,
+      "page": "18595-18610",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "event": null,
+      "similarity": 0.639
+    },
+    {
+      "DOI": "10.70382/caijmasr.v11i9.053",
+      "type": "journal-article",
+      "title": [
+        "ADVANCING REASONING IN LARGE LANGUAGE MODELS (LLMs):  ENHANCING COGNITIVE CAPABILITIES"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "HOSEA",
+          "family": "KOLO",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "FAITH ABIBA",
+          "family": "OGALA",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "International Journal of Modeling and Applied Science Research"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            13
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            13
+          ]
+        ]
+      },
+      "publisher": "Mediterranean Publications and Research International",
+      "event": null,
+      "similarity": 0.439
+    },
+    {
+      "DOI": "10.1007/978-3-031-54827-7",
+      "type": "book",
+      "title": [
+        "Large Language Models in Cybersecurity"
+      ],
+      "subtitle": [
+        "Threats, Exposure and Mitigation"
+      ],
+      "author": null,
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Springer Nature Switzerland",
+      "event": null,
+      "similarity": 0.304
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "CYBERSECEVAL 3: Advancing the Evaluation of Cybersecurity Risks and Capabilities in Large Language Models"
+    ],
+    "citation_author": [
+      "Wan, Shengye",
+      "Nikolaidis, Cyrus",
+      "Song, Daniel",
+      "Molnar, David",
+      "Crnkovich, James",
+      "Grace, Jayson",
+      "Bhatt, Manish",
+      "Chennabasappa, Sahana",
+      "Whitman, Spencer",
+      "Ding, Stephanie",
+      "Ionescu, Vlad",
+      "Li, Yue",
+      "Saxe, Joshua"
+    ],
+    "citation_date": [
+      "2024/08/02"
+    ],
+    "citation_online_date": [
+      "2024/09/06"
+    ],
+    "citation_pdf_url": [
+      "https://arxiv.org/pdf/2408.01605"
+    ],
+    "citation_arxiv_id": [
+      "2408.01605"
+    ],
+    "citation_abstract": [
+      "We are releasing a new suite of security benchmarks for LLMs, CYBERSECEVAL 3, to continue the conversation on empirically measuring LLM cybersecurity risks and capabilities. CYBERSECEVAL 3 assesses 8 different risks across two broad categories: risk to third parties, and risk to application developers and end users. Compared to previous work, we add new areas focused on offensive security capabilities: automated social engineering, scaling manual offensive cyber operations, and autonomous offensive cyber operations. In this paper we discuss applying these benchmarks to the Llama 3 models and a suite of contemporaneous state-of-the-art LLMs, enabling us to contextualize risks both with and without mitigations in place."
+    ]
+  },
+  "details": {
+    "title": "Title: CYBERSECEVAL 3: Advancing the Evaluation of Cybersecurity Risks and Capabilities in Large Language Models",
+    "authors": "Authors: Shengye Wan , Cyrus Nikolaidis , Daniel Song , David Molnar , James Crnkovich , Jayson Grace , Manish Bhatt , Sahana Chennabasappa , Spencer Whitman , Stephanie Ding , Vlad Ionescu , Yue Li , Joshua Saxe",
+    "dateline": "[Submitted on 2 Aug 2024 ( v1 ), last revised 6 Sep 2024 (this version, v2)]"
+  },
+  "bibtex_links": []
+}

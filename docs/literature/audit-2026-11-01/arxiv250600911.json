@@ -1,0 +1,117 @@
+{
+  "key": "arxiv250600911",
+  "entry": {
+    "url": "https://doi.org/10.52202/085713-2364",
+    "doi": "10.52202/085713-2364",
+    "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+    "year": "2025",
+    "pages": "78334--78366",
+    "booktitle": "Advances in Neural Information Processing Systems 38",
+    "title": "{Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models}",
+    "author": "Overman, William and Bayati, Mohsen",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv250600911"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Conformal+Arbitrage%3A+Risk-Controlled+Balancing+of+Competing+Objectives+in+Language+Models",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.52202/085713-2364",
+      "status": 200,
+      "file": "arxiv250600911.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.52202/085713-2364",
+      "type": "proceedings-article",
+      "title": [
+        "Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "William",
+          "family": "Overman",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Stanford University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohsen",
+          "family": "Bayati",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Stanford University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 38"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "78334-78366",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 38",
+        "theme": "39th Conference on Neural Information Processing Systems (NeurIPS 2025)",
+        "location": "San Diego, California, USA and Mexico City, Mexico",
+        "acronym": "NeurIPS 2025",
+        "number": "38",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              30
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              7
+            ]
+          ]
+        }
+      },
+      "similarity": 1.0
+    }
+  ]
+}

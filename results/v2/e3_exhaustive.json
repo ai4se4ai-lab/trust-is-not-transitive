@@ -1,0 +1,38 @@
+[
+ {
+  "accepted": 40,
+  "equation_disagreements": 0,
+  "hierarchies": 76,
+  "model_searches": 76,
+  "nodes": 1,
+  "seconds": 1.6,
+  "semantic_disagreements": 0
+ },
+ {
+  "accepted": 966,
+  "equation_disagreements": 0,
+  "hierarchies": 3040,
+  "model_searches": 3040,
+  "nodes": 2,
+  "seconds": 0.4,
+  "semantic_disagreements": 0
+ },
+ {
+  "accepted": 29419,
+  "equation_disagreements": 0,
+  "hierarchies": 133456,
+  "model_searches": 133456,
+  "nodes": 3,
+  "seconds": 3.9,
+  "semantic_disagreements": 0
+ },
+ {
+  "accepted": 1140434,
+  "equation_disagreements": 0,
+  "hierarchies": 6808384,
+  "model_searches": 106713,
+  "nodes": 4,
+  "seconds": 126.6,
+  "semantic_disagreements": 0
+ }
+]

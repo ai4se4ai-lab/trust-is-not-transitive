@@ -1,0 +1,213 @@
+% =====================================================================
+\section{Wrap-Up: The Whole Argument in One Page}
+\label{ch:wrapup}
+% =====================================================================
+
+\begin{bigidea}
+Guardrails promise conditionally. \emph{Evidence for a promise belongs to one invocation of one stage}; the only way it travels forward is through a \emph{deterministic gate that provides a fact}. From this single design choice the paper derives a composition check that is \emph{sound and complete}, shows the popular transitive argument \emph{unsound}, classifies the problem as \emph{near-linear without facts and coNP-complete in general}, and builds \emph{route-level statistical certificates} on top. What it gives engineers is chiefly a \emph{list of what an assurance argument rests on}.
+\end{bigidea}
+
+\subsection{The chain of ideas}
+
+\begin{center}
+\begin{tikzpicture}[font=\small,node distance=0.5cm,
+  b/.style={draw=tintblue,rounded corners=3pt,fill=tintblue!8,text width=11.2cm,align=left,inner sep=5pt},
+  arr/.style={-{Stealth[length=2.4mm]},thick,gray}]
+\node[b] (a) {\textbf{1. Problem.} Stacked guards; each promise is conditional; a stack can fail though every part keeps its promise (Ch.~1).};
+\node[b,below=of a] (b) {\textbf{2. Model.} Gates, guards, switches, deny; free behaviors constrained only by contracts: conditionality, locality, realization (Ch.~3).};
+\node[b,below=of b] (c) {\textbf{3. Check.} Walk with $(A,B)$; credit only deterministic or well-supported gates. Sound and complete (Ch.~4).};
+\node[b,below=of c] (d) {\textbf{4. Trust is not transitive.} Inheriting evidence is unsound; gates must \emph{provide facts}. Gates before guards (Ch.~5).};
+\node[b,below=of d] (e) {\textbf{5. Algorithm.} Graphs, intersection at joins, exact when no facts flow; coNP-complete with facts (Ch.~6).};
+\node[b,below=of e] (f) {\textbf{6. Engineering facts.} Monotonicity, routes, locality, budget, taint; affected routes; non-interference: a guard promises only what its view distinguishes (Ch.~7).};
+\node[b,below=of f] (g) {\textbf{7. Risk.} Sum over routes; Clopper--Pearson certificates; union bound; fingerprints for incremental recertification (Ch.~8).};
+\node[b,below=of g] (h) {\textbf{8. Evidence.} 66 solver-checked induction goals; millions of differential tests; near-linear scaling; real configs are short statistical chains (Ch.~11--12).};
+\foreach \x/\y in {a/b,b/c,c/d,d/e,e/f,f/g,g/h}{\draw[arr] (\x)--(\y);}
+\end{tikzpicture}
+\end{center}
+
+\subsection{Five lessons for a software engineer}
+
+\begin{enumerate}
+\item \textbf{Write down the assumption next to every guarantee.} A promise without its assumption is a hazard.
+\item \textbf{Make assumptions \emph{established}, not inherited.} If a property must hold downstream, put a mechanism (a deterministic gate) that establishes it, and put that mechanism on the claims list.
+\item \textbf{Prefer deterministic establishment.} Exact gates on typed actions and labels need no statistics and survive adaptive attackers (given complete mediation). Learned guards can only reduce risk, with a bound that depends on the traffic.
+\item \textbf{Keep the guard away from the attacker's text if you can.} Non-interference says a guard that judges content must read content; the lead-lined suitcase is a consequence, not an accident.
+\item \textbf{Count routes, not layers.} Risk adds up across the places an unsafe action can get out; multiplying per-layer rates assumes independence you cannot assume.
+\end{enumerate}
+
+\subsection{What the work does not show}
+
+The paper is explicit, and so should you be when you teach it.
+
+\begin{itemize}
+\item That any real guard satisfies its contract.
+\item That any agent became safer. No LLM was used.
+\item That practitioners find the output useful. No user study.
+\item That the model covers every real stack: rewriting, voting, loops and temporal session properties are outside the language.
+\item That the experiments generalize: the corpus is one framework's examples; designs were modelled by one person.
+\end{itemize}
+
+\subsection{Open problems the paper names}
+
+\begin{itemize}
+\item Port the proofs to a proof assistant (Lean, Coq, Isabelle).
+\item Add \emph{rewriting stages} and \emph{session-level/temporal properties}.
+\item Run the method with practitioners and a second modeller.
+\item \emph{Discharge contracts for real guards} (the biggest gap).
+\item \emph{Learn} obligations instead of declaring them (a direction suggested from related work on learning assumptions).
+\item Characterize order effects beyond the cases of the Order theorem.
+\end{itemize}
+
+\subsection{How this paper relates to others}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\small
+\begin{tabularx}{\textwidth}{@{}p{3.6cm}X@{}}
+\toprule
+\textbf{Line of work} & \textbf{Relation to this paper}\\
+\midrule
+Assume--guarantee reasoning, contract-based design (Misra--Chandy, Jones, Abadi--Lamport; Meyer; Benveniste et al.) & The foundation. The paper uses a \emph{small fragment} and adds adversarial, conditional contracts with evidence scoped to an invocation.\\
+Dataflow analysis (Kildall; Kam--Ullman) & The checker is an available-expressions-style \emph{must} analysis over a DAG.\\
+Information-flow control (Denning) & Taint labels; basis for deterministic gates deciding egress.\\
+Reference monitors, runtime enforcement & Deterministic gates are reference monitors; AgentSpec, ContrAgent, ShieldAgent, VeriGuard handle richer temporal properties on real agents, which this paper does not.\\
+Isolation by design (CaMeL, Fides, dual-LLM pattern) & Guarantees by construction; a provided fact is the analogue of what they achieve. The calculus can express their structure.\\
+Statistical cascades (Trust or Escalate, Conformal Arbitrage, conformal prediction) & Supply evidence for a route; the paper measures routes rather than composing probabilistic guarantees across layers.\\
+Layered probabilistic A/G (position paper) & Closest in spirit. The paper takes a different route: no composed probabilistic guarantee, trading per-layer modularity for avoiding conditional-independence questions.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{A few quotable sentences}
+
+\begin{quote}
+``A stack can accept an unsafe action although every stage meets its contract, because a guarantee was relied on where its assumption had not been established.''
+
+\medskip
+``Evidence for a contract belongs to one invocation of a stage. There is one way for evidence to move forward: a gate whose contract applies can \emph{provide} a fact that later stages may use. A guard's verdict provides nothing.''
+
+\medskip
+``The approach does not show that any guard meets its contract. It lists the claims an assurance argument rests on and tests which are needed.''
+\end{quote}
+
+\clearpage
+
+% =====================================================================
+\appendix
+\section*{Appendix A: Glossary}
+\addcontentsline{toc}{section}{Appendix A: Glossary}
+% =====================================================================
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\small
+\begin{longtable}{@{}p{3.4cm}p{12.4cm}@{}}
+\toprule
+\textbf{Term} & \textbf{Meaning}\\
+\midrule
+\endhead
+Acceptance / route & A proposal is accepted when a guard returns $\acc$; that guard is the route.\\
+Adaptive attacker & An attacker who changes inputs in response to the system's behavior, including to target a guard.\\
+Assume--guarantee contract & A pair (assumption, guarantee): if the assumption holds, the component ensures the guarantee.\\
+Assurance case & A structured argument, with evidence, that a system is acceptably safe.\\
+Calculus & A small formal language with precise semantics, used to prove properties.\\
+Certificate (route) & A tuple with an upper bound $u_r$ on a route's risk, valid for one prefix fingerprint.\\
+Claims & Goals and facts that deterministic gates are trusted to establish.\\
+Clopper--Pearson bound & Exact upper confidence bound for a binomial proportion.\\
+Complete mediation & Every effect of the agent passes through the guard engine.\\
+Completeness & If the check rejects, a concrete contract-respecting attack exists.\\
+Conditionality & A contract applies only if all its obligations hold at that invocation.\\
+coNP-complete & As hard as the hardest problems whose ``no'' answers have short certificates.\\
+Credited (gate) & A gate whose required obligations are all declared or provided.\\
+Deterministic gate & A gate with the empty layer: decides its goal exactly.\\
+Drift ($\eta$) & Total-variation distance between calibration and deployment distributions.\\
+Escalate & A guard's verdict passing the proposal to the continuation.\\
+Evidence ($\Omega$) & Obligations declared to hold at one stage's invocation.\\
+Exact / statistical goals & $\Goals_d$ must hold always; $\Goals_s$ tolerate a failure rate.\\
+Fact ($D$) & Obligation provided by a gate that stays true downstream.\\
+Fail closed & On error, deny.\\
+Fingerprint (prefix) & Merkle hash of everything upstream of a route.\\
+Flow-free & No reachable gate provides a fact.\\
+Gate & Node that can only stop; may establish a goal and provide facts.\\
+Goal ($\Goals$) & Property every accepted proposal must satisfy.\\
+Guard & Node that can accept, block or escalate.\\
+Guardrail hierarchy & A stack of gates, guards and switches protecting an agent's actions.\\
+HSL & The JSON specification language for hierarchies.\\
+Indirect prompt injection & Instructions hidden in data the agent reads.\\
+Joint risk ($R$) & $\Pr[\text{unsafe and accepted}]$.\\
+Layer & Interface (requires, scope) of a learned or human component.\\
+Locality & Evidence at one invocation says nothing about another.\\
+Model $M=(P,V,W,E,S)$ & Complete description of the stages' behavior on one proposal.\\
+Monotone & Enlarging inputs never turns a true result false.\\
+Non-interference & Equal views imply equal decisions.\\
+Obligation & Named assumption a contract may require.\\
+Realization & Declared evidence and provided facts must be true at the invocation.\\
+Residual & (stage, assumed obligation) pairs the verdict depends on.\\
+Route & A guard through which an acceptance can occur.\\
+Scope & Goals a layer covers when it accepts.\\
+Soundness & If the check accepts, the hierarchy is safe.\\
+Switch & Node that routes by a condition; teaches nothing.\\
+Taint & A label that propagates through derivations.\\
+Union bound & $\Pr[\bigcup E_i]\le\sum\Pr[E_i]$.\\
+Unfolding & Tree obtained by copying shared graph nodes along each path.\\
+Veto stage & A learned gate used only to reject.\\
+View & The part of the proposal a stage actually sees.\\
+Witness & A concrete model showing a rejection is a real attack.\\
+\bottomrule
+\end{longtable}
+\end{center}
+
+\section*{Appendix B: Symbol Reference}
+\addcontentsline{toc}{section}{Appendix B: Symbol Reference}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\small
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+\textbf{Symbol} & \textbf{Reads as}\\
+\midrule
+$\Goals$ & the set of goals\\
+$\req(\ell),\ \scope(\ell)$ & obligations a layer assumes; goals it covers\\
+$\epsilon$ & the empty layer (deterministic)\\
+$\deny,\ \gate,\ \guard,\ \switch$ & the four constructors\\
+$\Omega,\ D$ & declared evidence; provided facts\\
+$P,V,W,E,S$ & model components: pass, verdict, branch, true obligations, satisfied goals\\
+$\acc,\blk,\esc$ & guard verdicts\\
+$\sem{H}{M}$ & the decision of $H$ in model $M$\\
+$M\models_FH$ & $M$ respects every contract of $H$ given facts $F$\\
+$\Real(n)$ & $\Omega\cup F\subseteq E(n)$ (realization)\\
+$\ok(\ell,e,A)$ & guard condition\\
+$\chk(H,A,B)$ & the composition check\\
+$\chk^{*}$ & the transitive (unsound) variant\\
+$\uniq(H)$ & no identifier repeats along a path\\
+$R,\ R_r$ & joint risk; risk of route $r$\\
+$Q$ & statistical routes\\
+$u_r,\delta_r,N$ & certificate bound, confidence share, sample count\\
+$\eta$ & drift (total variation)\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section*{Appendix C: An 8-Week Course Schedule}
+\label{app:schedule}
+\addcontentsline{toc}{section}{Appendix C: An 8-Week Course Schedule}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\small
+\begin{tabularx}{\textwidth}{@{}p{1.3cm}p{4cm}X@{}}
+\toprule
+\textbf{Week} & \textbf{Chapters} & \textbf{Class activities}\\
+\midrule
+1 & 1 (problem), 2 (toolkit) & Role-play the lead-lined suitcase; vacuous-truth quiz; induction warm-ups.\\
+2 & 3 (calculus) & Students evaluate $\sem{H}{M}$ and $M\models H$ for hand-made models; write the toy hierarchy in \Hsl{}.\\
+3 & 4 (check, soundness) & The $(A,B)$ walk on DevAgent; proof reading of Soundness in groups.\\
+4 & 4 (completeness), 5 (transitive, order) & Build a witness model by hand; discuss the recommendation-chain story.\\
+5 & 6 (graphs, complexity) & Diamonds and the intersection; SAT reduction exercise; run the Z3 mini-proof.\\
+6 & 7 (structural), 8 first half (risk as a sum over routes) & Fr\'echet bounds with the tutorial lab; non-interference debate.\\
+7 & 8 second half (certificates), 9 (worked) & Compute Clopper--Pearson bounds; DevAgent from end to end.\\
+8 & 10, 11, 12, 13 & Model your own stack (mini-project); discuss threats to validity; present.\\
+\bottomrule
+\end{tabularx}
+\end{center}

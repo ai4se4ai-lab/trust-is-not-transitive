@@ -1,0 +1,334 @@
+{
+  "key": "arxiv260215391",
+  "entry": {
+    "url": "https://arxiv.org/abs/2602.15391",
+    "howpublished": "arXiv:2602.15391",
+    "year": "2026",
+    "author": "Sharma, Ankit and Tapas, Nachiket and Patra, Jyotiprakash",
+    "title": "{Improving LLM Reliability through Hybrid Abstention and Adaptive Detection}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv260215391"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Improving+LLM+Reliability+through+Hybrid+Abstention+and+Adaptive+Detection",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Improving+LLM+Reliability+through+Hybrid+Abstention+and+Adaptive+Detection&rows=3",
+      "status": 200,
+      "file": "arxiv260215391.crossref.json.gz"
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.15391",
+      "status": 200,
+      "file": "arxiv260215391.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1609/aies.v8i1.36543",
+      "type": "journal-article",
+      "title": [
+        "Sacred or Synthetic? Evaluating LLM Reliability and Abstention for Religious Questions"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Farah",
+          "family": "Atif",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nursultan",
+          "family": "Askarbekuly",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kareem",
+          "family": "Darwish",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Monojit",
+          "family": "Choudhury",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society"
+      ],
+      "volume": "8",
+      "issue": "1",
+      "page": "217-226",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            15
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            15
+          ]
+        ]
+      },
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "event": null,
+      "similarity": 0.511
+    },
+    {
+      "DOI": "10.1109/tse.2025.3640641",
+      "type": "journal-article",
+      "title": [
+        "Advancing LLM-Generated Code Reliability: A Hybrid Approach for Hallucination Detection"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1928-7526",
+          "authenticated-orcid": false,
+          "given": "Bo",
+          "family": "Yang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "School of Information Science and Technology, Beijing Forestry University, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2319-8078",
+          "authenticated-orcid": false,
+          "given": "Jiayi",
+          "family": "Dang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Information Science and Technology, Beijing Forestry University, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3125-4399",
+          "authenticated-orcid": false,
+          "given": "Huai",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computing Technologies, Swinburne University of Technology, Hawthorn, VIC, Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1087-226X",
+          "authenticated-orcid": false,
+          "given": "Zhi",
+          "family": "Jin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Computer Science, Wuhan University, Wuhan, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Software Engineering"
+      ],
+      "volume": "52",
+      "issue": "2",
+      "page": "578-594",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            2
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            2
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "event": null,
+      "similarity": 0.549
+    },
+    {
+      "DOI": "10.36227/techrxiv.175393532.27338752/v1",
+      "type": "posted-content",
+      "title": [
+        "Advancing LLM-Generated Code Reliability: A Hybrid Approach for Hallucination Detection"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1928-7526",
+          "authenticated-orcid": false,
+          "given": "Bo",
+          "family": "Yang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiayi",
+          "family": "Dang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Huai",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhi",
+          "family": "Jin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            31
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "event": null,
+      "similarity": 0.549
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "Improving LLM Reliability through Hybrid Abstention and Adaptive Detection"
+    ],
+    "citation_author": [
+      "Sharma, Ankit",
+      "Tapas, Nachiket",
+      "Patra, Jyotiprakash"
+    ],
+    "citation_date": [
+      "2026/02/17"
+    ],
+    "citation_online_date": [
+      "2026/02/17"
+    ],
+    "citation_pdf_url": [
+      "https://arxiv.org/pdf/2602.15391"
+    ],
+    "citation_arxiv_id": [
+      "2602.15391"
+    ],
+    "citation_abstract": [
+      "Large Language Models (LLMs) deployed in production environments face a fundamental safety-utility trade-off either a strict filtering mechanisms prevent harmful outputs but often block benign queries or a relaxed controls risk unsafe content generation. Conventional guardrails based on static rules or fixed confidence thresholds are typically context-insensitive and computationally expensive, resulting in high latency and degraded user experience. To address these limitations, we introduce an adaptive abstention system that dynamically adjusts safety thresholds based on real-time contextual signals such as domain and user history. The proposed framework integrates a multi-dimensional detection architecture composed of five parallel detectors, combined through a hierarchical cascade mechanism to optimize both speed and precision. The cascade design reduces unnecessary computation by progressively filtering queries, achieving substantial latency improvements compared to non-cascaded models and external guardrail systems. Extensive evaluation on mixed and domain-specific workloads demonstrates significant reductions in false positives, particularly in sensitive domains such as medical advice and creative writing. The system maintains high safety precision and near-perfect recall under strict operating modes. Overall, our context-aware abstention framework effectively balances safety and utility while preserving performance, offering a scalable solution for reliable LLM deployment."
+    ]
+  },
+  "details": {
+    "title": "Title: Improving LLM Reliability through Hybrid Abstention and Adaptive Detection",
+    "authors": "Authors: Ankit Sharma , Nachiket Tapas , Jyotiprakash Patra",
+    "dateline": "[Submitted on 17 Feb 2026]"
+  },
+  "bibtex_links": []
+}

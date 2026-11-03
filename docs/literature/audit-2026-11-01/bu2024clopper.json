@@ -1,0 +1,99 @@
+{
+  "key": "bu2024clopper",
+  "entry": {
+    "doi": "10.1109/tse.2024.3392720",
+    "year": "2024",
+    "pages": "1726--1746",
+    "number": "7",
+    "volume": "50",
+    "journal": "IEEE Transactions on Software Engineering",
+    "title": "Clopper-Pearson Algorithms for Efficient Statistical Model Checking Estimation",
+    "author": "Bu, Hao and Sun, Meng",
+    "ENTRYTYPE": "article",
+    "ID": "bu2024clopper"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Clopper-Pearson+Algorithms+for+Efficient+Statistical+Model+Checking+Estimation",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1109/tse.2024.3392720",
+      "status": 200,
+      "file": "bu2024clopper.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/tse.2024.3392720",
+      "type": "journal-article",
+      "title": [
+        "Clopper-Pearson Algorithms for Efficient Statistical Model Checking Estimation"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5209-596X",
+          "authenticated-orcid": false,
+          "given": "Hao",
+          "family": "Bu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "School of Mathematical Sciences, Peking University, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6550-7396",
+          "authenticated-orcid": false,
+          "given": "Meng",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Mathematical Sciences, Peking University, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Software Engineering"
+      ],
+      "volume": "50",
+      "issue": "7",
+      "page": "1726-1746",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            7
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

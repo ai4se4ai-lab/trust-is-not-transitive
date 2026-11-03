@@ -1,0 +1,227 @@
+{
+  "key": "arxiv241107781",
+  "entry": {
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/bfd082c452dffb450d5a5202b0419205-Abstract-Datasets_and_Benchmarks_Track.html",
+    "doi": "10.52202/079017-3369",
+    "publisher": "Curran Associates, Inc.",
+    "year": "2024",
+    "pages": "106190--106236",
+    "volume": "37",
+    "booktitle": "Advances in Neural Information Processing Systems",
+    "title": "{RedCode: Risky Code Execution and Generation Benchmark for Code Agents}",
+    "author": "Guo, Chengquan and Liu, Xun and Xie, Chulin and Zhou, Andy and Zeng, Yi and Lin, Zinan and Song, Dawn and Li, Bo",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv241107781"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=RedCode%3A+Risky+Code+Execution+and+Generation+Benchmark+for+Code+Agents",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.52202/079017-3369",
+      "status": 200,
+      "file": "arxiv241107781.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/bfd082c452dffb450d5a5202b0419205-Abstract-Datasets_and_Benchmarks_Track.html",
+      "status": 200,
+      "file": "arxiv241107781.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.52202/079017-3369",
+      "type": "proceedings-article",
+      "title": [
+        "RedCode: Risky Code Execution and Generation Benchmark for Code Agents"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Chengquan",
+          "family": "Guo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xun",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chulin",
+          "family": "Xie",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andy",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yi",
+          "family": "Zeng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zinan",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dawn",
+          "family": "Song",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bo",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 37"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "106190-106236",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 37",
+        "theme": "38th Conference on Neural Information Processing Systems (NeurIPS 2024)",
+        "location": "Vancouver, BC, Canada",
+        "acronym": "NeurIPS 2024",
+        "number": "37",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              10
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              15
+            ]
+          ]
+        }
+      },
+      "similarity": 1.0
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "RedCode: Risky Code Execution and Generation Benchmark for Code Agents"
+    ],
+    "citation_author": [
+      "Guo, Chengquan",
+      "Liu, Xun",
+      "Xie, Chulin",
+      "Zhou, Andy",
+      "Zeng, Yi",
+      "Lin, Zinan",
+      "Song, Dawn",
+      "Li, Bo"
+    ],
+    "citation_journal_title": [
+      "Advances in Neural Information Processing Systems"
+    ],
+    "citation_volume": [
+      "37"
+    ],
+    "citation_doi": [
+      "10.52202/079017-3369"
+    ],
+    "citation_firstpage": [
+      "106190"
+    ],
+    "citation_lastpage": [
+      "106236"
+    ],
+    "citation_pdf_url": [
+      "https://proceedings.neurips.cc/paper_files/paper/2024/file/bfd082c452dffb450d5a5202b0419205-Paper-Datasets_and_Benchmarks_Track.pdf"
+    ],
+    "citation_publication_date": [
+      "2024-12-16"
+    ]
+  },
+  "details": {},
+  "bibtex_links": [
+    "/paper_files/paper/25350-/bibtex"
+  ]
+}

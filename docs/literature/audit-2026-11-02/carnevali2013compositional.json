@@ -1,0 +1,99 @@
+{
+  "key": "carnevali2013compositional",
+  "entry": {
+    "doi": "10.1109/tse.2012.54",
+    "year": "2013",
+    "pages": "638--657",
+    "number": "5",
+    "volume": "39",
+    "journal": "IEEE Transactions on Software Engineering",
+    "title": "Compositional Verification for Hierarchical Scheduling of Real-Time Systems",
+    "author": "Carnevali, Laura and Pinzuti, Alessandro and Vicario, Enrico",
+    "ENTRYTYPE": "article",
+    "ID": "carnevali2013compositional"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Compositional+Verification+for+Hierarchical+Scheduling+of+Real-Time+Systems",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1109/tse.2012.54",
+      "status": 200,
+      "file": "carnevali2013compositional.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/tse.2012.54",
+      "type": "journal-article",
+      "title": [
+        "Compositional Verification for Hierarchical Scheduling of Real-Time Systems"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Laura",
+          "family": "Carnevali",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alessandro",
+          "family": "Pinzuti",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Enrico",
+          "family": "Vicario",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Software Engineering"
+      ],
+      "volume": "39",
+      "issue": "5",
+      "page": "638-657",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2013,
+            5
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

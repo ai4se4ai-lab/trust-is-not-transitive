@@ -1,0 +1,337 @@
+{
+  "key": "arxiv230610193",
+  "entry": {
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/31421b112e5f7faf4fc577b74e45dab2-Abstract-Conference.html",
+    "year": "2024",
+    "pages": "11654--11681",
+    "volume": "2024",
+    "booktitle": "International Conference on Learning Representations",
+    "title": "{Conformal Language Modeling}",
+    "author": "Quach, Victor and Fisch, Adam and Schuster, Tal and Yala, Adam and Sohn, Jae Ho and Jaakkola, Tommi S. and Barzilay, Regina",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv230610193"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Conformal+Language+Modeling",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Conformal+Language+Modeling&rows=3",
+      "status": 200,
+      "file": "arxiv230610193.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/31421b112e5f7faf4fc577b74e45dab2-Abstract-Conference.html",
+      "status": 200,
+      "file": "arxiv230610193.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1016/s0004-3702(99)00016-8",
+      "type": "journal-article",
+      "title": [
+        "iCTRL: Intensional conformal text representation language"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Gábor",
+          "family": "Rédey",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Artificial Intelligence"
+      ],
+      "volume": "109",
+      "issue": "1-2",
+      "page": "33-70",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1999,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1999,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "event": null,
+      "similarity": 0.447
+    },
+    {
+      "DOI": "10.1101/2023.11.21.568108",
+      "type": "posted-content",
+      "title": [
+        "CPSign - Conformal Prediction for Cheminformatics Modeling"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6709-7116",
+          "authenticated-orcid": false,
+          "given": "Staffan Arvidsson",
+          "family": "McShane",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3107-331X",
+          "authenticated-orcid": false,
+          "given": "Ulf",
+          "family": "Norinder",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8682-7206",
+          "authenticated-orcid": false,
+          "given": "Jonathan",
+          "family": "Alvarsson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2050-9069",
+          "authenticated-orcid": false,
+          "given": "Ernst",
+          "family": "Ahlberg",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Lars",
+          "family": "Carlsson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8083-2864",
+          "authenticated-orcid": false,
+          "given": "Ola",
+          "family": "Spjuth",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            22
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "openRxiv",
+      "event": null,
+      "similarity": 0.474
+    },
+    {
+      "DOI": "10.1186/s13321-024-00870-9",
+      "type": "journal-article",
+      "title": [
+        "CPSign: conformal prediction for cheminformatics modeling"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Staffan",
+          "family": "Arvidsson McShane",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ulf",
+          "family": "Norinder",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jonathan",
+          "family": "Alvarsson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ernst",
+          "family": "Ahlberg",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lars",
+          "family": "Carlsson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ola",
+          "family": "Spjuth",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Cheminformatics"
+      ],
+      "volume": "16",
+      "issue": "1",
+      "page": null,
+      "article-number": "75",
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            28
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            28
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "event": null,
+      "similarity": 0.474
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "Conformal Language Modeling"
+    ],
+    "citation_author": [
+      "Quach, Victor",
+      "Fisch, Adam",
+      "Schuster, Tal",
+      "Yala, Adam",
+      "Sohn, Jae Ho",
+      "Jaakkola, Tommi",
+      "Barzilay, Regina "
+    ],
+    "citation_journal_title": [
+      "International Conference on Learning Representations"
+    ],
+    "citation_volume": [
+      "2024"
+    ],
+    "citation_firstpage": [
+      "11654"
+    ],
+    "citation_lastpage": [
+      "11681"
+    ],
+    "citation_pdf_url": [
+      "https://proceedings.iclr.cc/paper_files/paper/2024/file/31421b112e5f7faf4fc577b74e45dab2-Paper-Conference.pdf"
+    ],
+    "citation_publication_date": [
+      "2024-05-31"
+    ]
+  },
+  "details": {},
+  "bibtex_links": [
+    "/paper_files/paper/3967-/bibtex"
+  ]
+}

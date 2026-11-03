@@ -1,0 +1,241 @@
+{
+  "key": "arxiv250305264",
+  "entry": {
+    "url": "https://arxiv.org/abs/2503.05264",
+    "howpublished": "arXiv:2503.05264",
+    "year": "2025",
+    "author": "Russinovich, Mark and Salem, Ahmed",
+    "title": "{Jailbreaking is (Mostly) Simpler Than You Think}",
+    "ENTRYTYPE": "misc",
+    "ID": "arxiv250305264"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Jailbreaking+is+%28Mostly%29+Simpler+Than+You+Think",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Jailbreaking+is+%28Mostly%29+Simpler+Than+You+Think&rows=3",
+      "status": 200,
+      "file": "arxiv250305264.crossref.json.gz"
+    },
+    {
+      "url": "https://arxiv.org/abs/2503.05264",
+      "status": 200,
+      "file": "arxiv250305264.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.7748/ns2000.04.14.31.61.c2820",
+      "type": "journal-article",
+      "title": [
+        "Simpler than you think"
+      ],
+      "subtitle": [
+        "Studying research articles is daunting, but simple criteria can help you decide whether the research is worth putting into practice"
+      ],
+      "author": [
+        {
+          "given": "Natalie",
+          "family": "Tidy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Nursing Standard"
+      ],
+      "volume": "14",
+      "issue": "31",
+      "page": "61-61",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2000,
+            4,
+            19
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            4,
+            19
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "RCN Publishing Ltd.",
+      "event": null,
+      "similarity": 0.655
+    },
+    {
+      "DOI": "10.5731/pdajpst.2020.012476",
+      "type": "journal-article",
+      "title": [
+        "Recombinant Factor C Validation—Simpler Than You Think!"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Thomas",
+          "family": "Uhlig",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Kevin L.",
+          "family": "Williams",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Brendan",
+          "family": "Tindall",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "PDA Journal of Pharmaceutical Science and Technology"
+      ],
+      "volume": "75",
+      "issue": "4",
+      "page": "391-393",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2021,
+            2,
+            19
+          ]
+        ]
+      },
+      "publisher": "Parenteral Drug Association, Inc.",
+      "event": null,
+      "similarity": 0.581
+    },
+    {
+      "DOI": "10.33321/cdi.2003.27.5",
+      "type": "journal-article",
+      "title": [
+        "Letter to the Editor: Varicella surveillance: simpler than you think?"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Rod",
+          "family": "Givney",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Communicable Diseases Intelligence"
+      ],
+      "volume": "27",
+      "issue": null,
+      "page": "100-101",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2003,
+            3,
+            30
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2003,
+            3,
+            30
+          ]
+        ]
+      },
+      "publisher": "Australian Centre for Disease Control",
+      "event": null,
+      "similarity": 0.479
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "Jailbreaking is (Mostly) Simpler Than You Think"
+    ],
+    "citation_author": [
+      "Russinovich, Mark",
+      "Salem, Ahmed"
+    ],
+    "citation_date": [
+      "2025/03/07"
+    ],
+    "citation_online_date": [
+      "2025/03/07"
+    ],
+    "citation_pdf_url": [
+      "https://arxiv.org/pdf/2503.05264"
+    ],
+    "citation_arxiv_id": [
+      "2503.05264"
+    ],
+    "citation_abstract": [
+      "We introduce the Context Compliance Attack (CCA), a novel, optimization-free method for bypassing AI safety mechanisms. Unlike current approaches -- which rely on complex prompt engineering and computationally intensive optimization -- CCA exploits a fundamental architectural vulnerability inherent in many deployed AI systems. By subtly manipulating conversation history, CCA convinces the model to comply with a fabricated dialogue context, thereby triggering restricted behavior. Our evaluation across a diverse set of open-source and proprietary models demonstrates that this simple attack can circumvent state-of-the-art safety protocols. We discuss the implications of these findings and propose practical mitigation strategies to fortify AI systems against such elementary yet effective adversarial tactics."
+    ]
+  },
+  "details": {
+    "title": "Title: Jailbreaking is (Mostly) Simpler Than You Think",
+    "authors": "Authors: Mark Russinovich , Ahmed Salem",
+    "dateline": "[Submitted on 7 Mar 2025]"
+  },
+  "bibtex_links": []
+}

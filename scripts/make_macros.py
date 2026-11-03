@@ -17,6 +17,163 @@ LABELS={'rules_only':'B1 Gate only','classifier_only':'B2 Scorer only','judge_on
         'checked_uncalibrated':'B6 TINT without certificate','checked_quarantine':'TINT (full)'}
 
 
+def scientific(value):
+    exponent=len(str(value))-1
+    return f'{value/10**exponent:.1f}\\times 10^{{{exponent}}}'
+
+
+def verification(macro,macros,tables):
+    """Macros and tables of the verification study, from results/v2."""
+    def group(name):
+        path=ROOT/'results/v2'/(name+'.json')
+        source,sha='results/v2/'+name+'.json',hashlib.sha256(path.read_bytes()).hexdigest()
+        def put(macro_name,value,pointer,fmt='d'):
+            macro(macro_name,value,pointer,fmt)
+            macros['res'+macro_name].update(source=source,source_sha256=sha)
+        return read_json(path),put
+    proofs,put=group('proofs')
+    rows=proofs['obligations']
+    put('ProofObligations',len(rows),'/obligations#length')
+    put('ProofZthree',sum(r['z3']=='unsat' for r in rows),'/obligations#z3-unsat')
+    put('ProofCvc',sum(r['cvc5']=='unsat' for r in rows),'/obligations#cvc5-unsat')
+    assert not any(r['hypotheses']=='unsat' for r in rows)
+    put('ProofSatisfiable',sum(r['hypotheses']=='sat' for r in rows),'/obligations#premises-sat')
+    put('ProofUnknown',sum(r['hypotheses']=='unknown' for r in rows),'/obligations#premises-unknown')
+    put('ProofNoPremise',sum(r['hypotheses']=='n/a' for r in rows),'/obligations#no-premises')
+    order=[('T1-soundness','Soundness (Thm.~\\ref{thm:sound})'),('T2-completeness','Completeness (Thm.~\\ref{thm:complete})'),('L1','Frame (Lem.~\\ref{lem:frame})'),
+           ('T10-meet','Meet (Lem.~\\ref{lem:meet})'),('T11-transitive','Transitive reasoning (Thm.~\\ref{thm:transitive})'),('T12-order','Order (Thm.~\\ref{thm:order})'),
+           ('T3-monotonicity','Monotonicity'),('T4-routes','Routes'),('T5-prefix-locality','Prefix locality'),('T6-noninterference','Non-interference (Thm.~\\ref{thm:ni})'),
+           ('T7-decision-cost','Decision cost'),('T8-budget','Budget'),('T9-taint','Taint')]
+    proof_rows=[]
+    for key,label in order:
+        chosen=[r for r in rows if r['theorem'].startswith(key)]
+        proof_rows.append(f"{label} & {len(chosen)} & {sum(r['z3']=='unsat' for r in chosen)} & {sum(r['cvc5']=='unsat' for r in chosen)} \\\\")
+    assert sum(sum(r['theorem'].startswith(k) for r in rows) for k,_ in order)==len(rows)
+    tables['proofs']='\n'.join(proof_rows)
+    mutants,put=group('proof_mutants')
+    put('ProofMutants',len(mutants),'#length')
+    put('ProofMutantsKilled',sum(m['killed'] for m in mutants),'#killed')
+    d,put=group('e14_reduction')
+    put('ReductionFormulas',d['formulas'],'/formulas');put('ReductionSatisfiable',d['satisfiable'],'/satisfiable');put('ReductionDisagreements',d['disagreements'],'/disagreements');put('ReductionFalseAlarms',d['false_alarms_of_fast_analysis'],'/false_alarms_of_fast_analysis')
+    exhaustive,put=group('e3_exhaustive')
+    put('ExhaustiveNodes',max(r['nodes'] for r in exhaustive),'#max-nodes')
+    put('ExhaustiveTotal',sum(r['hierarchies'] for r in exhaustive),'#sum-hierarchies')
+    put('ExhaustiveAccepted',sum(r['accepted'] for r in exhaustive),'#sum-accepted')
+    put('ExhaustiveDisagreements',sum(r['equation_disagreements'] for r in exhaustive),'#sum-equation-disagreements')
+    put('ExhaustiveSearches',sum(r['model_searches'] for r in exhaustive),'#sum-searches')
+    put('ExhaustiveSearchDisagreements',sum(r['semantic_disagreements'] for r in exhaustive),'#sum-semantic-disagreements')
+    d,put=group('e4_differential')
+    put('DiffSpecs',d['specs'],'/specs');put('DiffAccepted',d['accepted'],'/accepted');put('DiffRejected',d['rejected'],'/rejected')
+    put('DiffDecisions',d['decisions'],'/decisions');put('DiffWitnesses',d['witnesses'],'/witnesses');put('DiffWitnessFailures',d['witness_failures'],'/witness_failures')
+    put('DiffDisagreements',d['check_disagreements']+d['engine_disagreements']+d['route_disagreements'],'#sum-disagreements')
+    put('DiffSemantic',d['semantic_compared'],'/semantic_compared');put('DiffSemanticDisagreements',d['semantic_disagreements'],'/semantic_disagreements')
+    put('DiffContractRuns',d['contract_runs'],'/contract_runs');put('DiffAcceptingRuns',d['contract_accepting_runs'],'/contract_accepting_runs');put('DiffRejectedFound',d['rejected_with_sampled_violation'],'/rejected_with_sampled_violation');put('DiffResidualDisagreements',d['residual_disagreements'],'/residual_disagreements');put('DiffUnsafeAccepted',d['unsafe_accepted'],'/unsafe_accepted');put('DiffUnsafeRejected',d['unsafe_rejected'],'/unsafe_rejected')
+    put('DiffMeanReachable',d['mean_reachable_nodes'],'/mean_reachable_nodes','.1f')
+    put('AdequacyTerms',d['z3_adequacy']['terms'],'/z3_adequacy/terms');put('AdequacyFailures',sum(d['z3_adequacy']['failures'].values()),'/z3_adequacy/failures#sum')
+    m,put=group('e5_mutation')
+    survived=[r for r in m['rows'] if r['status']=='survived']
+    put('MutationTotal',m['mutants'],'/mutants');put('MutationKilled',m['killed'],'/killed');put('MutationSurvived',len(survived),'/rows#survived')
+    put('MutationEquivalent',sum(r.get('classification')=='equivalent' for r in survived),'/rows#equivalent')
+    put('MutationGaps',sum(r.get('classification')=='gap' for r in survived),'/rows#gap')
+    put('MutationDifferential',m['modes']['differential_only'],'/modes/differential_only');put('MutationCrash',m['modes']['crash_or_timeout'],'/modes/crash_or_timeout');put('MutationUnit',m['modes']['unit_only'],'/modes/unit_only')
+    d,put=group('e7_monolithic')
+    put('MonoZthree',d['z3']['compared'],'/z3/compared');put('MonoPrism',d['prism']['compared'],'/prism/compared')
+    put('MonoDisagreements',d['z3']['disagreements']+d['prism']['disagreements'],'#sum')
+    d,put=group('e8_continuity')
+    put('ContinuityCompared',d['primary']['compared']+d['exploratory']['compared'],'#sum-compared')
+    put('ContinuityDisagreements',d['primary']['disagreements']+d['exploratory']['disagreements'],'#sum-disagreements')
+    d,put=group('timing/e9_scalability')
+    put('SlopeChain',d['slopes']['chain'],'/slopes/chain','.2f');put('SlopeDiamonds',d['slopes']['diamonds'],'/slopes/diamonds','.2f')
+    put('SlopeRejectedDecision',d['slopes']['rejected_decision'],'/slopes/rejected_decision','.2f');put('SlopeRejectedWitness',d['slopes']['rejected_witnesses'],'/slopes/rejected_witnesses','.2f')
+    big=[r for r in d['by_nodes'] if r['nodes']==max(x['nodes'] for x in d['by_nodes'])]
+    put('MillionNodes',big[0]['nodes'],'/by_nodes#max-nodes')
+    put('MillionSeconds',max(r['seconds'] for r in big),'/by_nodes#max-seconds','.1f')
+    rejected=d['rejected'][-1]
+    put('RejectedDecisionNodes',rejected['nodes'],'/rejected/-1/nodes');put('RejectedDecision',rejected['decision_seconds'],'/rejected/-1/decision_seconds','.1f')
+    witnessed=[r for r in d['rejected'] if r['with_witnesses_seconds']][-1]
+    put('RejectedWitnessNodes',witnessed['nodes'],'/rejected#witness-nodes');put('RejectedWitness',witnessed['with_witnesses_seconds'],'/rejected#witness-seconds','.1f')
+    goals=d['by_goals']
+    put('GoalsMax',goals[-1]['goals'],'/by_goals/-1/goals');put('GoalsNodes',goals[-1]['nodes'],'/by_goals/-1/nodes');put('GoalsMaxSeconds',goals[-1]['seconds'],'/by_goals/-1/seconds','.2f')
+    layers=d['many_layers'][-1]
+    put('LayersCount',layers['layers'],'/many_layers/-1/layers');put('LayersGoals',layers['goals'],'/many_layers/-1/goals');put('LayersSeconds',layers['seconds'],'/many_layers/-1/seconds','.2f')
+    flow=d['flow'][-1]
+    put('FlowDepth',flow['depth'],'/flow/-1/depth');put('FlowStates',flow['states'],'/flow/-1/states');put('FlowSeconds',flow['seconds'],'/flow/-1/seconds','.2f')
+    for family,name in [('chain','Chain'),('diamonds','Diamonds')]:
+        put('Plot'+name,' '.join(f"({r['nodes']},{r['seconds']:.4f})" for r in d['by_nodes'] if r['family']==family),'/by_nodes#family='+family)
+    versus=d['versus']
+    solved=lambda key:max(r['depth'] for r in versus if r.get(key) in ('sat','unsat'))
+    put('PathMaxDepth',solved('path_answer'),'/versus#path-max-depth');put('PrismMaxDepth',solved('prism_answer'),'/versus#prism-max-depth')
+    put('VersusMaxDepth',max(r['depth'] for r in versus),'/versus#max-depth')
+    last=[r for r in versus if r['depth']==max(x['depth'] for x in versus)]
+    put('VersusTintMs',1000*max(r['tint_seconds'] for r in last),'/versus#tint-ms','.1f');put('VersusZthreeMs',1000*max(r['z3_seconds'] for r in last),'/versus#z3-ms','.0f')
+    put('VersusPaths',scientific(last[0]['paths']),'/versus#paths')
+    rows=[]
+    for depth in [8,20,64,256]:
+        picked=[r for r in versus if r['depth']==depth]
+        def cell(key):
+            if any(r.get(key+'_answer')=='timeout' for r in picked):return 'timeout'
+            if not any(key+'_seconds' in r for r in picked):return 'skipped'
+            return f"{1000*max(r[key+'_seconds'] for r in picked if key+'_seconds' in r):.1f}"
+        tint=f"{1000*max(r['tint_seconds'] for r in picked):.1f}"
+        rows.append(f"{depth} & {picked[0]['nodes']} & ${scientific(picked[0]['paths'])}$ & {tint} & {cell('z3')} & {cell('path')} & {cell('prism')} \\\\")
+    tables['versus']='\n'.join(rows)
+    d,put=group('timing/e10_overhead')
+    put('StageMicroseconds',d[-1]['per_stage_microseconds'],'/-1/per_stage_microseconds','.1f');put('OverheadDepth',d[-1]['depth'],'/-1/depth')
+    put('DecisionMs',d[-1]['decision_microseconds']/1000,'/-1/decision_microseconds#ms','.1f');put('ConstructorSeconds',d[-1]['constructor_seconds'],'/-1/constructor_seconds','.2f')
+    d,put=group('e11_recertification')
+    put('RecertHierarchies',d['random_hierarchies'],'/random_hierarchies');put('RecertMeanRoutes',d['mean_routes'],'/mean_routes','.1f')
+    put('RecertMeanFraction',100*d['mean_fraction_affected'],'/mean_fraction_affected#percent','.0f')
+    put('LocalityChecks',d['locality_checks'],'/locality_checks');put('LocalityViolations',d['locality_violations'],'/locality_violations')
+    c=d['cascade'][-1]
+    put('CascadeRoutes',c['routes'],'/cascade/-1/routes');put('CascadeLast',100*c['last_layer_fraction'],'/cascade/-1/last_layer_fraction#percent','.1f');put('CascadeMean',100*c['mean_fraction'],'/cascade/-1/mean_fraction#percent','.1f')
+    put('CascadeStale',c['routes']*c['mean_fraction'],'/cascade/-1#mean-stale-routes','.1f')
+    small,large=d['by_size'][0],d['by_size'][-1]
+    put('RecertSmallRoutes',small['mean_routes'],'/by_size/0/mean_routes','.1f');put('RecertSmallStale',small['mean_affected'],'/by_size/0/mean_affected','.1f');put('RecertSmallFraction',100*small['mean_fraction'],'/by_size/0/mean_fraction#percent','.0f')
+    put('RecertLargeRoutes',large['mean_routes'],'/by_size/-1/mean_routes','.1f');put('RecertLargeStale',large['mean_affected'],'/by_size/-1/mean_affected','.1f');put('RecertLargeFraction',100*large['mean_fraction'],'/by_size/-1/mean_fraction#percent','.0f')
+    rows=[f"Random, {b['min_nodes']}--{b['max_nodes']} nodes & {b['hierarchies']:,} & {b['mean_routes']:.1f} & {b['mean_affected']:.1f} & {100*b['mean_fraction']:.0f} \\\\".replace(',','{,}').replace('Random{,}','Random,') for b in d['by_size']]
+    rows+=[f"Cascade & 1 & {b['routes']} & {b['routes']*b['mean_fraction']:.1f} & {100*b['mean_fraction']:.0f} \\\\" for b in d['cascade']]
+    tables['recert']='\n'.join(rows)
+    d,put=group('e12_route_bounds')
+    put('BoundLaws',d['laws'],'/laws')
+    put('BoundCoverageRoutes',d['min_coverage_routes'],'/min_coverage_routes','.3f')
+    put('BoundProductUnder',d['product_understates_laws'],'/product_understates_laws');put('BoundMinUnder',d['min_understates_laws'],'/min_understates_laws')
+    put('BoundSumRatio',d['mean_ratio_sum_to_whole'],'/mean_ratio_sum_to_whole','.2f')
+    put('BoundMaxUnder',max(r['true_risk']/r['product_estimate'] for r in d['rows'] if r['product_estimate']>0),'/rows#max-risk-over-product','.1f')
+    put('BoundBelowNominal',sum(r['coverage_routes_simultaneous']<.95 for r in d['rows']),'/rows#below-nominal')
+    d,put=group('e12b_pipeline')
+    put('PipelineLaws',d['laws'],'/laws');put('PipelineCoverageRoutes',d['min_coverage_routes'],'/min_coverage_routes','.3f');put('PipelineCoverageSum',d['min_coverage_sum'],'/min_coverage_sum','.3f')
+    put('PipelineWilson',d['wilson_upper_of_worst_law'],'/wilson_upper_of_worst_law','.3f')
+    d,put=group('worked_example')
+    put('WorkPrevalence',d['prevalence'],'/prevalence','.3f');put('WorkBudget',d['budget'],'/budget','.2f');put('WorkSamples',d['samples'],'/samples');put('WorkShareTotal',d['share']*2,'/share#times-routes','.2f');put('WorkShare',d['share'],'/share','.3f')
+    put('WorkBlindLosses',d['expected_losses_blind_guard'],'/expected_losses_blind_guard');put('WorkBlindUpper',d['upper_blind_guard'],'/upper_blind_guard','.4f')
+    put('WorkUpperZero',d['upper_by_losses']['0'],'/upper_by_losses/0','.4f');put('WorkUpperTen',d['upper_by_losses']['10'],'/upper_by_losses/10','.4f')
+    d,put=group('e15_corpus')
+    put('CorpusConfigs',d['configurations'],'/configurations');put('CorpusWithRails',d['with_rails'],'/with_rails');put('CorpusFlows',d['distinct_flows'],'/distinct_flows')
+    put('CorpusMedian',d['median_stages'],'/median_stages','.0f');put('CorpusMax',d['max_stages'],'/max_stages')
+    put('CorpusLlm',d['kinds']['llm_prompted'],'/kinds/llm_prompted');put('CorpusService',d['kinds']['model_or_service'],'/kinds/model_or_service')
+    put('CorpusDeterministic',d['kinds']['deterministic'],'/kinds/deterministic');put('CorpusTransforming',d['kinds']['transforming'],'/kinds/transforming')
+    put('CorpusAllDet',d['all_deterministic'],'/all_deterministic');put('CorpusAllStat',d['all_statistical'],'/all_statistical');put('CorpusTool',d['with_tool_rails'],'/with_tool_rails')
+    d,put=group('e13_cases')
+    labels={'devagent':'DevAgent','devagent_exposed_judge':'DevAgent, exposed judge','llamafirewall_composition':'LlamaFirewall',
+            'nemo_rails':'NeMo rails','camel_style':'CaMeL-style','trust_or_escalate':'Trust or Escalate','conformal_arbitrage':'Conformal Arbitrage'}
+    tex=lambda name:'\\ob{'+name.replace('_','\\_')+'}'
+    by={r['case']:r for r in d}
+    rows=[]
+    for key,label in labels.items():
+        r=by[key]
+        adverse=r['adversarial']
+        if adverse['accepted']:
+            text='rests on: '+(', '.join(sorted({tex(x[1]) for x in adverse['necessary']})) or ', '.join(sorted({tex(x[1]) for x in adverse['residual']})) or 'nothing assumed')
+        else:
+            text='supply: '+', '.join(sorted({tex(x[1]) for x in r['repair_adversarial']['supply']}))
+            if r['repair_adversarial']['uncovered']:
+                text+='; goals with no stage: '+', '.join(sorted(tex(x) for x in r['repair_adversarial']['uncovered']))
+        rows.append(f"{label} & {'accepted' if r['benign']['accepted'] else 'rejected'} & {'accepted' if adverse['accepted'] else 'rejected'} & {adverse['routes']} & {text} \\\\")
+    tables['cases']='\n'.join(rows)
+    env,put=group('environment')
+    put('EnvVersionPython',env['python'],'/python');put('EnvCpus',env['cpus'],'/cpus');put('EnvZthree',env['versions']['z3-solver'],'/versions/z3-solver');put('EnvCvc',env['versions']['cvc5'],'/versions/cvc5')
+
+
 def generate():
     summary=read_json(ROOT/'results/processed/summary.json')
     source_hash=hashlib.sha256((ROOT/'results/processed/summary.json').read_bytes()).hexdigest()
@@ -202,6 +359,7 @@ def generate():
         value=summary['design'][key]
         if isinstance(value,list):value=len(value)
         macro(name,value*multiplier,'/design/'+key,fmt)
+    verification(macro,macros,tables)
     out=ROOT/'paper/generated'
     out.mkdir(parents=True,exist_ok=True)
     # Keep one content tex file and a single generated macro include. Tables

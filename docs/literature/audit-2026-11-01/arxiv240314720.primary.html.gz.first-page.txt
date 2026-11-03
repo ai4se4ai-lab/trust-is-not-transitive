@@ -1,0 +1,64 @@
+Defending Against Indirect Prompt Injection Attacks With
+Spotlighting
+Keegan Hines* , Gary Lopez, Matthew Hall, Federico Zarfati, Yonatan Zunger and
+Emre Kıcıman
+Microsoft, 1 Microsoft Way, Redmond, WA 98052, USA
+
+Abstract
+
+Large Language Models (LLMs), while powerful, are built and trained to process a single text input. In common
+applications, multiple inputs can be processed by concatenating them together into a single stream of text.
+However, the LLM is unable to distinguish which sections of prompt belong to various input sources. Indirect
+prompt injection attacks take advantage of this vulnerability by embedding adversarial instructions into untrusted
+data being processed alongside user commands. Often, the LLM will mistake the adversarial instructions as user
+commands to be followed, creating a security vulnerability in the larger system. We introduce spotlighting, a
+family of prompt engineering techniques that can be used to improve LLMs’ ability to distinguish among multiple
+sources of input. The key insight is to utilize transformations of an input to provide a reliable and continuous
+signal of its provenance. We evaluate spotlighting as a defense against indirect prompt injection attacks, and find
+that it is a robust defense that has minimal detrimental impact to underlying NLP tasks. Using GPT-family models,
+we find that spotlighting reduces the attack success rate from greater than 50% to below 2% in our experiments
+with minimal impact on task efficacy.
+
+Keywords
+
+large language models, prompt injection attacks, security
+
+1. Introduction
+Large language models (LLMs) are powerful tools that can perform a variety of natural language
+processing (NLP) tasks [11, 12, 13, 14]. However, the flexibility of LLMs also leaves them vulnerable to
+prompt injection attacks (PIAs). Since LLMs are built to process a single, unstructured or minimallystructured text input, malicious users can inject instructions into the input text that override the
+intended task. PIAs pose a serious threat to the security and integrity of LLMs and their applications.
+A particularly subtle form of prompt injection, known as indirect prompt injection (XPIA) [15, 2],
+occurs when LLMs are tasked with processing external data (such as websites) and a malicious actor
+has injected instruction text inside those data sources. In this scenario, the user of the LLM is likely
+unaware of the attack and is an innocent bystander or even a victim, but the attacker’s instructions
+have run in their session with their credentials. In effect, the attacker has hijacked the user’s session. As
+LLM systems become more flexible with plugins, skills, and capabilities, the dangers of indirect prompt
+injection become more severe.
+The prompt injection problem stems from the LLM’s inability to distinguish between valid system
+instructions and invalid instructions that arrive from external inputs. In security parlance, the LLM is
+not able to distinguish code from data. In this case, code refers to system instructions that the designers
+implement and data refers to any text that we do not control, such as from a user prompt or from
+an external data source. This is a structural limitation of LLMs since they operate on boundary-less
+streams of tokens in order to generate completions.
+Our work delves into a comprehensive examination of various defensive strategies against indirect
+prompt injection attacks. We specifically focus on strategies that are directly applicable to the LLM
+system prompt, making them straightforward for development teams to incorporate. Our key insight
+is to assist the LLM in distinguishing safe blocks of tokens from unsafe ones. We introduce a novel
+CAMLIS’24: Conference on Applied Machine Learning for Information Security, October 24–25, 2024, Arlington, VA
+Corresponding author.
+$ keeganhines@microsoft.com (K. Hines)
+
+*
+
+© 2024 Copyright for this paper by its authors. Use permitted under Creative Commons License Attribution 4.0 International (CC BY 4.0).
+
+CEUR
+
+Workshop
+Proceedings
+
+ceur-ws.org
+ISSN 1613-0073
+
+

@@ -1,0 +1,91 @@
+{
+  "key": "jackson2019alloy",
+  "entry": {
+    "doi": "10.1145/3338843",
+    "year": "2019",
+    "pages": "66--76",
+    "number": "9",
+    "volume": "62",
+    "journal": "Communications of the ACM",
+    "title": "Alloy",
+    "author": "Jackson, Daniel",
+    "ENTRYTYPE": "article",
+    "ID": "jackson2019alloy"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Alloy",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1145/3338843",
+      "status": 200,
+      "file": "jackson2019alloy.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/3338843",
+      "type": "journal-article",
+      "title": [
+        "Alloy"
+      ],
+      "subtitle": [
+        "a language and tool for exploring software designs"
+      ],
+      "author": [
+        {
+          "given": "Daniel",
+          "family": "Jackson",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Massachusetts Institute of Technology, Cambridge, MA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Communications of the ACM"
+      ],
+      "volume": "62",
+      "issue": "9",
+      "page": "66-76",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            21
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            21
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            21
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

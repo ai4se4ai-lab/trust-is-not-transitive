@@ -1,0 +1,158 @@
+% =====================================================================
+% Trust Is Not Transitive -- a tutorial for undergraduate students
+%
+% Student edition:     pdflatex tutorial.tex
+% Instructor edition:  pdflatex -jobname=tutorial-instructor "\def\showanswers{1}\input{tutorial.tex}"
+% (Run each command twice so that the table of contents is complete.)
+% The chapters live in chapters/*.tex and are included below.
+% Trees/recursion/generalization: chapters/02-toolkit.tex.
+% Code-review constructors: chapters/03-calculus.tex; A/B/F proof: 04-check.tex.
+% =====================================================================
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{stmaryrd}
+\usepackage{enumitem}
+\usepackage{booktabs,tabularx,array,longtable}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,calc,shapes.geometric,backgrounds,decorations.pathreplacing}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage[most]{tcolorbox}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+
+% ---------- palette ----------
+\definecolor{tintblue}{HTML}{1F4E79}
+\definecolor{tintteal}{HTML}{0F766E}
+\definecolor{tintorange}{HTML}{C2410C}
+\definecolor{tintpurple}{HTML}{6D28D9}
+\definecolor{tintred}{HTML}{B91C1C}
+\definecolor{tintgreen}{HTML}{15803D}
+\definecolor{tintgold}{HTML}{A16207}
+\definecolor{codebg}{HTML}{F5F7FA}
+
+% ---------- headings ----------
+\titleformat{\section}{\Large\bfseries\color{tintblue}}{Chapter \thesection}{0.7em}{}[\vspace{-0.3em}{\color{tintblue}\titlerule[1.2pt]}]
+\titleformat{\subsection}{\large\bfseries\color{tintteal}}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{tintorange}}{\thesubsubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{2.2ex}{1.2ex}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{gray}Trust Is Not Transitive -- Tutorial}
+\fancyhead[R]{\small\color{gray}\leftmark}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\setlist{itemsep=0.2em,topsep=0.3em}
+
+% ---------- code listings ----------
+\lstdefinestyle{tint}{language=Python,basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{tintblue}\bfseries,commentstyle=\color{tintgreen}\itshape,
+  stringstyle=\color{tintorange},showstringspaces=false,breaklines=true,columns=fullflexible,
+  keepspaces=true,upquote=true}
+\lstset{style=tint}
+
+% ---------- boxes ----------
+\tcbset{tintbase/.style={enhanced,breakable,left=6pt,right=6pt,top=4pt,bottom=4pt,boxrule=0.8pt,arc=3pt,
+  fonttitle=\bfseries,attach boxed title to top left={xshift=8pt,yshift=-2mm}}}
+
+% the big idea of a chapter or section
+\newtcolorbox{bigidea}{tintbase,colback=tintblue!6,colframe=tintblue,title={The big idea},
+  boxed title style={colback=tintblue,arc=2pt}}
+% background knowledge a student needs first
+\newtcolorbox{toolbox}[1]{tintbase,colback=tintteal!6,colframe=tintteal,title={Background: #1},
+  boxed title style={colback=tintteal,arc=2pt}}
+% a plain-language reading of a proof
+\newtcolorbox{plainproof}[1]{tintbase,colback=tintpurple!5,colframe=tintpurple,title={Proof in plain words: #1},
+  boxed title style={colback=tintpurple,arc=2pt}}
+% a formal statement from the paper
+\newtcolorbox{statement}[1]{enhanced,breakable,colback=white,colframe=tintpurple!70,fonttitle=\bfseries,
+  title={#1},left=6pt,right=6pt,top=3pt,bottom=3pt,boxrule=0.6pt,arc=3pt,
+  coltitle=white,colbacktitle=tintpurple!70}
+% definitions
+\newtcolorbox{defbox}[1]{enhanced,breakable,colback=tintblue!3,colframe=tintblue!70,fonttitle=\bfseries,
+  title={Definition: #1},left=6pt,right=6pt,top=3pt,bottom=3pt,boxrule=0.6pt,arc=3pt,
+  coltitle=white,colbacktitle=tintblue!70}
+% worked examples
+\newtcolorbox{example}[1]{tintbase,colback=tintgold!6,colframe=tintgold,title={Example: #1},
+  boxed title style={colback=tintgold,arc=2pt}}
+% warnings and common mistakes
+\newtcolorbox{warning}[1]{tintbase,colback=tintred!5,colframe=tintred,title={#1},
+  boxed title style={colback=tintred,arc=2pt}}
+% a story / analogy
+\newtcolorbox{story}[1]{tintbase,colback=gray!8,colframe=gray!70!black,title={#1},
+  boxed title style={colback=gray!70!black,arc=2pt}}
+% a recap at the end of a chapter
+\newtcolorbox{recap}{tintbase,colback=tintgreen!6,colframe=tintgreen,title={Chapter recap},
+  boxed title style={colback=tintgreen,arc=2pt}}
+\newtcblisting{tryit}[1]{enhanced,breakable,listing only,colback=codebg,colframe=tintgreen,
+  fonttitle=\bfseries,title={Try it: #1},boxrule=0.8pt,arc=3pt,left=6pt,right=6pt,top=3pt,bottom=3pt,
+  listing options={style=tint}}
+\newtcolorbox{pausebox}[1]{enhanced,breakable,colback=tintorange!7,colframe=tintorange,fonttitle=\bfseries,
+  title={#1},left=6pt,right=6pt,top=3pt,bottom=3pt,boxrule=1pt,arc=3pt}
+\newtcolorbox{answerbox}[1]{enhanced,breakable,colback=tintgreen!7,colframe=tintgreen,fonttitle=\bfseries,
+  title={#1},left=6pt,right=6pt,top=3pt,bottom=3pt,boxrule=0.8pt,arc=3pt}
+
+% Pause questions: \pauseq{question}{answer}. The answer prints only in the instructor edition.
+\newcounter{q}
+\newcommand{\pauseq}[2]{\refstepcounter{q}%
+  \begin{pausebox}{Pause and think, Q\theq}#1\end{pausebox}%
+  \ifdefined\showanswers\begin{answerbox}{Instructor answer to Q\theq}#2\end{answerbox}\fi}
+
+% ---------- mathematical shorthands (they follow the paper) ----------
+\newcommand{\Goals}{\Phi}
+\newcommand{\req}{\mathsf{req}}
+\newcommand{\scope}{\mathsf{scope}}
+\newcommand{\deny}{\mathsf{deny}}
+\newcommand{\gate}{\mathsf{gate}}
+\newcommand{\guard}{\mathsf{guard}}
+\newcommand{\switch}{\mathsf{switch}}
+\newcommand{\acc}{\mathsf{acc}}
+\newcommand{\blk}{\mathsf{blk}}
+\newcommand{\esc}{\mathsf{esc}}
+\newcommand{\denied}{\mathsf{denied}}
+\newcommand{\accepted}{\mathsf{accepted}}
+\newcommand{\chk}{\mathsf{check}}
+\newcommand{\ok}{\mathsf{ok}}
+\newcommand{\uniq}{\mathrm{uniq}}
+\newcommand{\Real}{\mathrm{Real}}
+\newcommand{\sem}[2]{\llbracket #1\rrbracket_{#2}}
+\newcommand{\Tstar}{T^{\ast}}
+\newcommand{\Tb}{T_{b}}
+\newcommand{\Tj}{T_{j}}
+\newcommand{\Tjp}{T_{j}^{\mathrm{p}}}
+\newcommand{\tint}{\textsc{Tint}}
+\newcommand{\Hsl}{\textsf{HSL}}
+\newcommand{\ob}[1]{\textsf{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\renewcommand{\Pr}{\mathrm{Pr}}
+\newcommand{\paperref}[1]{\hfill{\small\color{gray}(paper: #1)}}
+
+\begin{document}
+
+\input{chapters/00-front}
+\input{chapters/01-motivation}
+\input{chapters/02-toolkit}
+\input{chapters/03-calculus}
+\input{chapters/04-check}
+\input{chapters/05-transitive-order}
+\input{chapters/06-graphs-complexity}
+\input{chapters/07-structural}
+\input{chapters/08-risk}
+\input{chapters/09-worked}
+\input{chapters/10-practice}
+\input{chapters/11-proofs-impl}
+\input{chapters/12-evaluation}
+\input{chapters/13-wrapup}
+\input{chapters/14-exercises}
+
+\end{document}

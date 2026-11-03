@@ -1,0 +1,128 @@
+% =====================================================================
+\section{Trust Is Not Transitive, and Order Matters}
+\label{ch:transitive}
+% =====================================================================
+
+\begin{bigidea}
+The title theorem. The \emph{natural} argument for a stack, ``each stage was validated, and each trusts the one before'', is unsound, and the calculus pins down exactly why: evidence belongs to \emph{one invocation of one stage}. If a property really persists down the stack, then a deterministic gate must \emph{establish} it, and then the checker can use it. The second theorem of the chapter says how stage \emph{order} affects the guarantee: put gates before guards.
+\end{bigidea}
+
+\subsection{The tempting argument}
+
+Here is an argument you may hear in a design meeting.
+
+\begin{story}{The recommendation chain}
+Alice hires Bob because Carol recommended him. Carol recommended Bob because Dave said Bob is great. Therefore Alice trusts Bob because ``Dave trusts Bob''. But Dave's praise was about Bob's carpentry, and Alice is hiring an accountant! Each link was valid for its own purpose; the chain as a whole proves nothing about accounting. Trust (a relation ``$x$ vouches for $y$ \emph{for purpose $p$}'') is not transitive across purposes and contexts.
+\end{story}
+
+In the guardrail setting, the argument is:
+
+\begin{quote}
+\emph{``The scorer was validated on sanitized input. The judge comes after the scorer. So the judge's input can be taken as sanitized too.''}
+\end{quote}
+
+Notice the slide: ``the scorer's input was sanitized'' is a fact about one stage's view; the judge may read a different view (the raw issue text, not the scorer's summary). Nothing in the stack passes the property along. In the paper's terms: \emph{evidence declared at one stage is taken to hold at later stages}.
+
+\subsection{The theorem}
+
+To compare reasoning styles precisely we define an unsound variant of the checker.
+
+\begin{defbox}{$\chk^{*}$: the transitive checker}
+$\chk^{*}$ is the same as $\chk$, except that at every stage the declared evidence $\Omega$ is also \emph{added to the facts $B$} that all later stages may use. So evidence declared once is inherited downstream.
+\end{defbox}
+
+\begin{statement}{Theorem (Transitive reasoning is unsound) \hfill\normalfont paper: Theorem 3}
+(a)~If $\chk(H,A,B)$, $A\subseteq A_2$ and $B\subseteq B_2$, then $\chk^{*}(H,A_2,B_2)$.\\
+(b)~The converse fails: there are hierarchies accepted by $\chk^{*}$ that have a contract-respecting violating run.
+\end{statement}
+
+Part (a) says the transitive checker is \emph{more permissive}: anything the honest checker accepts, it accepts too. Part (b) says that its extra permissiveness is not harmless; it accepts a hierarchy that can really be broken.
+
+\begin{plainproof}{Part (a)}
+Induction on $H$, generalizing over all four sets $A,B,A_2,B_2$. Whenever $\chk$ credits a gate, $\chk^{*}$ credits it too: the facts $B_2\supseteq B$ and the inherited evidence only make $\req(\ell)\subseteq\Omega\cup B_2\cup\text{(inherited)}$ easier to satisfy. And $\ok$ is monotone: enlarging the goals $A$ or the evidence only helps (the Meet lemma, part (a) below). So credit under $\chk$ implies credit under $\chk^{*}$, the sets stay ordered through the induction, and every guard that passes under $\chk$ passes under $\chk^{*}$. \hfill$\blacksquare$
+\end{plainproof}
+
+\begin{plainproof}{Part (b): the counterexample}
+Build the smallest possible example.
+\[
+H=\guard\bigl(n_1,\ell_1,\{o\},\ \guard(n_2,\ell_2,\emptyset,\deny)\bigr),\qquad \req(\ell_1)=\req(\ell_2)=\{o\},
+\]
+and suppose there is a goal in the scope of both layers (say $\Goals=\{g\}$, $\scope(\ell_1)=\scope(\ell_2)=\{g\}$).
+
+\emph{$\chk^{*}$ accepts.} At $n_1$: the evidence $\{o\}$ makes $\req(\ell_1)\subseteq\{o\}$ true, and $g$ is in scope, so $\ok$ holds. Then $\chk^{*}$ passes $o$ down as an inherited fact. At $n_2$: $\req(\ell_2)=\{o\}\subseteq\emptyset\cup\{o\}$ holds, and $g$ is in scope. Accepted.
+
+\emph{$\chk$ rejects at $n_2$.} There, $A=\emptyset$ and $B=\emptyset$, and $n_2$'s own evidence is empty. $\req(\ell_2)=\{o\}\not\subseteq\emptyset$ and $\Goals\not\subseteq\emptyset$, so $\ok$ fails.
+
+\emph{The attack.} By Completeness applied to the rejected hierarchy, there is a contract-respecting run: $n_1$ escalates (with $o$ true at $n_1$, as declared), $o$ \emph{fails at $n_2$ alone}, and $n_2$ accepts a proposal that violates $g$. Check: $n_2$'s realization demands only its own declared evidence $\emptyset$; its contract is vacuous since $o\notin E(n_2)$. \hfill$\blacksquare$
+\end{plainproof}
+
+Let us read the counterexample as a story. $n_1$ is the scorer and $n_2$ is the judge. $n_1$ \emph{declares} the obligation $o$ (for example, ``the input is sanitized''). The transitive argument carries it to $n_2$. But in the world described by the semantics, $o$ is a statement about the input \emph{as seen by $n_1$}. At $n_2$ the input is different, and $o$ is false there. So $n_2$'s promise is vacuous and it waves through the unsafe proposal.
+
+\begin{center}
+\begin{tikzpicture}[font=\small,
+  st/.style={draw=tintorange,rounded corners=3pt,fill=tintorange!10,minimum width=2.8cm,minimum height=1.0cm,align=center},
+  arr/.style={-{Stealth[length=2.4mm]},thick}]
+\node[st] (a) {$n_1$: scorer\\$o$ holds here};
+\node[st,right=2.8cm of a] (b) {$n_2$: judge\\$o$ \textbf{fails} here};
+\draw[arr] (a)--node[above,font=\scriptsize]{escalate}(b);
+\draw[arr,dashed,tintred] (a.north) to[bend left=25] node[above,font=\scriptsize,text=tintred]{\textbf{no} inheritance of $o$} (b.north);
+\node[below=0.6cm of b,font=\footnotesize,align=center] {judge accepts the unsafe proposal;\\its contract is vacuously kept};
+\end{tikzpicture}
+\end{center}
+
+\begin{warning}{The point of this theorem}
+The result is very close to the definitions, and \emph{that is the point}: once evidence is scoped to an invocation (locality), the transitive argument fails, and the proof of (b) exhibits the run where it does. The theorem also explains \emph{why the calculus has provided facts but no inheritance}. If a property really does persist, there must be a mechanism that makes it persist: a \textbf{gate} must establish it, and then it is a \emph{fact} the checker can credit.
+\end{warning}
+
+\begin{example}{how DevAgent repairs the transitive argument}
+DevAgent needs the judge to see only attacker-free text. It does not argue ``the earlier stages were careful''. Instead, the \emph{deterministic gate} $c$ checks, by looking at provenance labels, that no untrusted text is present. If $c$ passes, it \emph{provides} \ob{safe\_on\_this\_text}. Now the property is credited by a mechanism, and $c$ appears on the \emph{claims list} so that someone reviews whether taint tracking is right.
+\end{example}
+
+\pauseq{A colleague says: ``But my scorer \emph{blocks} anything that looks like an injection, and the judge comes after. So whatever reaches the judge does not look like an injection.'' Which part of the calculus formalizes the colleague's claim, what is the contract of the scorer in that argument, and why does the checker still not credit it?}{The claim would need the scorer to be a gate that \emph{provides} a fact like \ob{safe\_on\_this\_text}. But the scorer is a learned veto stage: its contract is statistical (\ob{miss\_rate\_bounded}), so it misses some injections. A gate provides facts only if its contract applies, and what it can establish is ``the miss rate is bounded'', not ``this particular text contains no attack''. A guard or a veto stage that is merely \emph{probably} right does not establish a per-invocation fact. In the calculus, such a stage can reduce the \emph{statistical risk} (Chapter~\ref{ch:risk}) but cannot discharge another stage's assumption.}
+
+\subsection{When order matters}
+
+\textbf{Motivation.} Real engineers wonder: ``Should I put the cheap deterministic check before the expensive LLM check, or after?'' Cost is an obvious consideration. The paper asks whether order matters for the \emph{guarantee}.
+
+We first need a small monotonicity fact about $\ok$ that we also use elsewhere.
+
+\begin{statement}{Lemma (Meet, part a: $\ok$ is monotone) \hfill\normalfont paper: Lemma 2(a)}
+\
+If $A\subseteq A'$, $e\subseteq e'$ and $\ok(\ell,e,A)$, then $\ok(\ell,e',A')$.
+\end{statement}
+
+\begin{plainproof}{$\ok$ is monotone}
+Immediate from the definition: if $\Goals\subseteq A$ then $\Goals\subseteq A'$. Otherwise $\req(\ell)\subseteq e\subseteq e'$ and $\Goals\subseteq A\cup\scope(\ell)\subseteq A'\cup\scope(\ell)$. \hfill$\blacksquare$
+\end{plainproof}
+
+(Part (b) of the Meet lemma, about \emph{intersections}, is the key to the fast algorithm; it is in Chapter~\ref{ch:graphs}.)
+
+\begin{statement}{Theorem (Order) \hfill\normalfont paper: Theorem 4}
+(a)~\textbf{Gates move forward for free.} Moving a gate before a guard preserves acceptance: if the hierarchy with $\guard(n,\ell,\Omega,\gate(m,\varphi,\ell',\Omega',D,k))$ checks, so does the one with $\gate(m,\varphi,\ell',\Omega',D,\guard(n,\ell,\Omega,k))$.\\
+(b)~Two adjacent deterministic gates that provide nothing commute.\\
+(c)~The converse of (a) fails, and gates do not commute when one provides what the other requires.
+\end{statement}
+
+\begin{plainproof}{Order}
+\textbf{(a)} Compare the two walks. In the first, the guard is checked with $(A,B)$ and then the gate; in the second, the gate is processed first, giving $(A'',B'')\supseteq(A,B)$ whenever it is credited, and \emph{whether the gate is credited depends only on the same $B$} (its evidence and the facts at the entry), so credit is unchanged by the move. The continuation $k$ is checked with the same sets in both orders. The only difference is that the guard is now checked with \emph{larger} sets $(A'',B'')$ rather than $(A,B)$, and $\ok$ is monotone (the Meet lemma, part (a)), so the guard's condition still holds.
+
+\textbf{(b)} Deterministic gates are always credited and provide nothing: the sets reaching the continuation are $A\cup\{\varphi_1\}\cup\{\varphi_2\}$ in both orders, and $B$ is unchanged.
+
+\textbf{(c)} Counterexample for the converse of (a): $\Goals=\{\varphi\}$. Let a guard with empty scope (a ``release'' guard) be followed by a gate establishing $\varphi$. The guard fails $\ok$ (no goal is established and nothing covers $\varphi$): rejected. With the order swapped, the gate has established $\varphi$ before the guard, so $\Goals\subseteq A$ and the guard's acceptance is harmless: accepted. For gates: a gate that requires $o$, placed \emph{before} the gate that provides $o$, is not credited, while in the other order it is. \hfill$\blacksquare$
+\end{plainproof}
+
+\begin{story}{The exit door before the checkpoint}
+Part (c)'s example is a stack where the release guard comes \emph{before} the checkpoint. A passenger can walk out the door without ever meeting the checkpoint behind it. Of course the stack should be reordered. The calculus does not just say ``reorder''; it tells you precisely that the first order is unsafe and the second is not.
+\end{story}
+
+\textbf{Reading the theorem for practice.} A deterministic gate placed earlier never hurts composition, provided the gate's own evidence still holds at the earlier point (evidence belongs to an invocation!). Be careful about what the theorem does \emph{not} say: it concerns the guarantee only. Order also affects \emph{cost} (a cheap rule before an expensive judge saves money) and \emph{what a stage sees}, and neither appears in the check. Beyond these cases the paper has no general characterization of order.
+
+\pauseq{Why can a gate not always be moved before a guard \emph{without} the proviso about its own evidence? Think about what a gate's declared evidence $\Omega'$ promises, and about which invocation it describes.}{$\Omega'$ is a declaration that certain obligations hold at \emph{that gate's invocation}. Moving the gate earlier changes the invocation: what the gate sees at the front of the stack (e.g.\ the raw proposal) might differ from what it saw after other stages (e.g.\ a processed view). The declaration might then be false at the new position. The theorem preserves the \emph{declared} data, so the move is valid for the check only if those declarations stay true at the new place.}
+
+\begin{recap}
+\begin{itemize}
+\item The transitive checker $\chk^{*}$ inherits evidence downstream. It accepts everything $\chk$ does, plus hierarchies with a contract-respecting violating run. The smallest example has two guards and one obligation.
+\item Why: evidence is local to an invocation. The repair is a \emph{gate that provides a fact}.
+\item Order: moving a deterministic gate forward never breaks the check; moving a guard in front of a gate can.
+\end{itemize}
+\end{recap}

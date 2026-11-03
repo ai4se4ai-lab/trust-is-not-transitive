@@ -1,0 +1,365 @@
+{
+  "key": "arxiv240617819",
+  "entry": {
+    "url": "https://proceedings.mlr.press/v258/blot25a.html",
+    "publisher": "PMLR",
+    "year": "2025",
+    "pages": "19--27",
+    "volume": "258",
+    "series": "Proceedings of Machine Learning Research",
+    "booktitle": "Proceedings of The 28th International Conference on Artificial Intelligence and Statistics",
+    "title": "{Automatically Adaptive Conformal Risk Control}",
+    "author": "Blot, Vincent and Angelopoulos, Anastasios N and Jordan, Michael I and Brunel, Nicolas J-B",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv240617819"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Automatically+Adaptive+Conformal+Risk+Control",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=Automatically+Adaptive+Conformal+Risk+Control&rows=3",
+      "status": 200,
+      "file": "arxiv240617819.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v258/blot25a.html",
+      "status": 200,
+      "file": "arxiv240617819.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/isit57864.2024.10619172",
+      "type": "proceedings-article",
+      "title": [
+        "Cross-Validation Conformal Risk Control"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Kfir M.",
+          "family": "Cohen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "King&#x0027;s Communications, Learning, and Information Processing (KCLIP) lab, Centre for Intelligent Information Processing Systems (CIIPS), King&#x0027;s College London,Department of Engineering"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sangwoo",
+          "family": "Park",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "King&#x0027;s Communications, Learning, and Information Processing (KCLIP) lab, Centre for Intelligent Information Processing Systems (CIIPS), King&#x0027;s College London,Department of Engineering"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Osvaldo",
+          "family": "Simeone",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "King&#x0027;s Communications, Learning, and Information Processing (KCLIP) lab, Centre for Intelligent Information Processing Systems (CIIPS), King&#x0027;s College London,Department of Engineering"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shlomo Shamai",
+          "family": "Shitz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Technion-Israel Institute of Technology,Viterbi Faculty of Electrical and Computing Engineering"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2024 IEEE International Symposium on Information Theory (ISIT)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "250-255",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            7
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "event": {
+        "name": "2024 IEEE International Symposium on Information Theory (ISIT)",
+        "location": "Athens, Greece",
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              7
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              12
+            ]
+          ]
+        }
+      },
+      "similarity": 0.632
+    },
+    {
+      "DOI": "10.52202/085713-2355",
+      "type": "proceedings-article",
+      "title": [
+        "Conformal Risk Training: End-to-End Optimization of Conformal Risk Control"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Christopher",
+          "family": "Yeh",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "California Institute of Technology"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nicolas",
+          "family": "Christianson",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Stanford University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adam",
+          "family": "Wierman",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Caltech"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yisong",
+          "family": "Yue",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Caltech, Asari AI"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Neural Information Processing Systems 38"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "78067-78103",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+      "event": {
+        "name": "Advances in Neural Information Processing Systems 38",
+        "theme": "39th Conference on Neural Information Processing Systems (NeurIPS 2025)",
+        "location": "San Diego, California, USA and Mexico City, Mexico",
+        "acronym": "NeurIPS 2025",
+        "number": "38",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              30
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              7
+            ]
+          ]
+        }
+      },
+      "similarity": 0.519
+    },
+    {
+      "DOI": "10.2139/ssrn.6086348",
+      "type": "posted-content",
+      "title": [
+        "Adaptive Tolerance Control for Robust Conformal Mesh Stitching"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7177-1625",
+          "authenticated-orcid": true,
+          "given": "Haridev",
+          "family": "Vaikundamoorthy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "event": null,
+      "similarity": 0.417
+    }
+  ],
+  "meta": {
+    "citation_publisher": [
+      "PMLR"
+    ],
+    "citation_title": [
+      "Automatically Adaptive Conformal Risk Control"
+    ],
+    "citation_language": [
+      "en"
+    ],
+    "citation_abstract_html_url": [
+      "https://proceedings.mlr.press/v258/blot25a.html"
+    ],
+    "citation_pdf_url": [
+      "https://raw.githubusercontent.com/mlresearch/v258/main/assets/blot25a/blot25a.pdf"
+    ],
+    "citation_firstpage": [
+      "19"
+    ],
+    "citation_lastpage": [
+      "27"
+    ],
+    "citation_author": [
+      "Vincent Blot",
+      "Anastasios Nikolas Angelopoulos",
+      "Michael Jordan",
+      "Nicolas J-B. Brunel"
+    ],
+    "citation_publication_date": [
+      "2025/04/23"
+    ],
+    "citation_inbook_title": [
+      "International Conference on Artificial Intelligence and Statistics"
+    ],
+    "citation_conference_title": [
+      "International Conference on Artificial Intelligence and Statistics"
+    ],
+    "citation_issn": [
+      "2640-3498"
+    ]
+  },
+  "details": {
+    "authors": "Vincent Blot, Anastasios Nikolas Angelopoulos, Michael Jordan, Nicolas J-B. Brunel"
+  },
+  "bibtex_links": []
+}

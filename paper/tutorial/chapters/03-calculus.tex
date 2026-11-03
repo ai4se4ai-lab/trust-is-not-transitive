@@ -1,0 +1,528 @@
+% =====================================================================
+\section{A Calculus of Guardrail Hierarchies}
+\label{ch:calculus}
+% =====================================================================
+
+\begin{bigidea}
+To reason about stacks, we need to talk about \emph{any} stack and \emph{any} behavior of its parts. So we invent a tiny language with just four building blocks (\textbf{deny}, \textbf{gate}, \textbf{guard}, \textbf{switch}), and a precise definition of what ``run this stack on one proposal'' and ``every stage keeps its contract'' mean. Then \textbf{safe} becomes a mathematical statement: \emph{for every contract-respecting behavior, an accepted proposal satisfies all the goals.}
+\end{bigidea}
+
+\subsection{Why a ``calculus''?}
+
+A \emph{calculus} here means: a small formal language with a precise meaning, which strips a problem to its essentials so that it can be reasoned about with proofs. The lambda calculus does this for functions. The paper's calculus does this for stacks of safety checks.
+
+We want to throw away everything about how a classifier or an LLM is implemented. We keep only three things: (1) what a stage \emph{can do to the decision} (stop, accept, pass on, route), (2) what it \emph{assumes}, and (3) what it \emph{promises}. If a theorem holds in this stripped-down world, it holds for every implementation of the stages, including adversarial ones.
+
+\subsection{The ingredients}
+
+\begin{defbox}{goals}
+A finite set $\Goals$ of \textbf{goals}: the properties every \emph{accepted} proposal must have. Example: $\Goals=\{\varphi_1,\varphi_2,\varphi_{\mathrm{env}},\varphi_3,\varphi_4\}$ for DevAgent.
+\end{defbox}
+
+\begin{defbox}{obligations}
+A set of names called \textbf{obligations}: assumptions that a stage's contract may depend on. Examples: \ob{miss\_rate\_bounded}, \ob{safe\_on\_this\_text}, \ob{human\_attentive}. They are just names; what each means is given in English next to the specification, and someone has to be responsible for making it true.
+\end{defbox}
+
+\begin{defbox}{layer}
+A \textbf{layer} $\ell$ is the \emph{interface} of a learned or human component. It declares two sets:
+\begin{itemize}
+\item $\req(\ell)\subseteq$ obligations: what its contract \emph{assumes};
+\item $\scope(\ell)\subseteq\Goals$: the goals it \emph{covers} when it accepts.
+\end{itemize}
+There is also a special \textbf{empty layer} $\epsilon$ with $\req(\epsilon)=\emptyset$ and $\scope(\epsilon)=\emptyset$, used for deterministic checks.
+\end{defbox}
+
+Notice that we do not say how a layer decides. That is intentional.
+
+\subsection{The four building blocks}
+
+The calculus represents a stage's effect on a proposal using four building blocks:
+
+\begin{enumerate}
+\item The proposal can be \textbf{denied} (stopped for good). This is the end of any failed path.
+\item A stage can \textbf{check something and stop the proposal if the check fails}, but never accept it by itself. (A rule, or a classifier used as a veto.) We call it a \textbf{gate}.
+\item A stage can \textbf{make the final decision}: accept, reject, or pass it to a later stage (escalate). We call it a \textbf{guard}.
+\item The system can \textbf{route} the proposal one way or the other depending on a condition (``is the input tainted?''). We call it a \textbf{switch}.
+\end{enumerate}
+
+Formally, a hierarchy $H$ is a term of the grammar
+\begin{align*}
+H ::={}& \deny \mid \gate(n,\varphi,\ell,\Omega,D,H)\\
+\mid{}& \guard(n,\ell,\Omega,H) \mid \switch(n,H,H)
+\end{align*}
+Read ``$::=$'' as ``is one of'', and ``$\mid$'' as ``or''. Let us decode each piece.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{@{}p{4.8cm}X@{}}
+\toprule
+\textbf{Piece} & \textbf{Meaning}\\
+\midrule
+$n$ & A \textbf{node identifier}, the stage's name (e.g.\ $g_1$, $n_3$). Used so that a model can describe each stage's behavior separately.\\
+$\ell$ & The stage's \textbf{layer interface}: $\req(\ell)$ gives its assumptions and $\scope(\ell)$ its covered goals.\\
+$\Omega$ & The \textbf{evidence}: the set of obligations that the \emph{specification declares} to hold for this one invocation. A \emph{declaration}, not a fact: nothing in the term makes it true.\\
+$D$ (gates only) & The \textbf{facts a gate provides}: if the gate passes and its contract applies, these obligations hold at later gate and guard invocations on this run.\\
+$\varphi$ (gates only) & The goal the gate \textbf{establishes} if it passes and its contract applies (may be absent, written $\bot$).\\
+the last argument $H$ & The \textbf{continuation}: what comes next.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsubsection{Gate: can only stop}
+
+A gate can only \emph{stop} a proposal. If the proposal passes the gate, \emph{and the gate's contract applies}, then the gate establishes the goal $\varphi$ and provides the facts $D$. ``The contract applies'' means that all of $\req(\ell)$ is available.
+
+\begin{itemize}
+\item If $\ell=\epsilon$ the gate is a \textbf{deterministic gate}: a reference monitor (a small, always-on checker of every action) that decides $\varphi$ \emph{exactly}. Example: ``a secret-labeled file must not go to an external host''.
+\item Otherwise it is a \textbf{veto stage}: a learned component, such as a classifier, used only to reject.
+\end{itemize}
+
+\subsubsection{Guard: can end the decision}
+
+A guard has a verdict of three kinds: $\acc$ (accept: the decision ends, the proposal is executed), $\blk$ (block: denied), or $\esc$ (escalate: pass to the continuation, typically a costlier stage). \textbf{Every acceptance is the act of a named guard.} We call each guard a \textbf{route}: it is a way a proposal can get through. A stack with no semantic final stage is modelled by a final guard with empty scope that simply releases what reaches it.
+
+\begin{warning}{A guard provides nothing}
+When a guard accepts or escalates, \emph{no fact is added} for later stages. A guard's verdict is not evidence. This is the formal version of ``the manager does not learn anything about the lead-lined suitcase from the first operator saying `OK'.'' Only a \emph{gate} whose contract applied can provide facts, and a deterministic gate always applies.
+\end{warning}
+
+\subsubsection{Switch: routes, teaches nothing}
+
+A switch chooses between two sub-hierarchies according to a condition (e.g.\ ``is the input tainted?''). Taking a branch establishes no fact, \emph{even if the condition looks like a test}, because a switch has no contract. To learn something from a condition, one must put a \emph{gate} after it.
+
+\subsubsection{Deny: the only leaf}
+
+Leaving the hierarchy denies. A guard that escalates past the end of the hierarchy has nothing to hand the proposal to, so the proposal is denied. This design (``fail closed'') makes sure that the only way to be accepted is for a guard to say $\acc$.
+
+\subsubsection{Build and run a small code-review hierarchy}
+\label{sec:code-review-constructors}
+
+\begin{example}{a secret scanner, a router, and two reviewers}
+Suppose accepted code changes must satisfy two goals:
+\[
+\Goals=\{s,r\},\quad s=\text{no exposed credentials},\quad
+r=\text{passes the required security review}.
+\]
+Let $t=\ob{trusted\_input}$ and $q=\ob{secrets\_scanned}$ be obligations. Define interfaces by
+\[
+\begin{array}{c|cc}
+ & \req & \scope\\\hline
+L_s & \{t\} & \emptyset\\
+L_a & \{q\} & \{r\}\\
+L_h & \{q,\ob{human\_attentive}\} & \{r\}
+\end{array}
+\]
+Here $L_s$ is a scanner used as a gate; its goal $s$ and provided fact $q$ are written in the gate itself. Set
+\begin{align*}
+K_h &=\guard(h,L_h,\{\ob{human\_attentive}\},\deny),\\
+K_a &=\guard(a,L_a,\emptyset,\deny),\\
+H_{\mathrm{review}}
+ &=\gate(c,s,L_s,\{t\},\{q\},\switch(u,K_a,K_h)).
+\end{align*}
+Read this from the outside inward: scan for secrets; if the scanner passes, route to the AI or human reviewer; if that reviewer escalates, deny. The intended routing policy might send high-risk changes to the human, but the proof must cover either branch.
+
+This term uses all four constructors. Its root is a gate, the gate's child is a switch, the switch has two guard children, and each guard has a \emph{syntactic} $\deny$ leaf. An execution can terminate at a guard before visiting that leaf.
+
+\textbf{Three possible executions.}
+\begin{enumerate}
+\item Scanner fails: immediate denial; no reviewer is invoked.
+\item Scanner passes, router selects AI, AI accepts: immediate acceptance at $a$; the $\deny$ continuation is not run.
+\item Scanner passes, router selects human, human escalates: run its continuation $\deny$, so deny the proposal.
+\end{enumerate}
+These describe control flow. They do not yet establish safety: that also needs the contracts and their assumptions to hold.
+
+\textbf{Now walk the static checker.} Start with $A=B=\emptyset$. The scanner's requirement $\{t\}$ is available from its own declaration $\Omega_c=\{t\}$, so it is credited. At the switch,
+\[
+A=\{s\},\qquad B=\{q\}.
+\]
+Both branches receive these same sets. At the AI reviewer, $\Omega_a=\emptyset$, but $\req(L_a)=\{q\}\subseteq\Omega_a\cup B$; its scope covers the remaining goal $r$. At the human, $q$ comes from $B$ and \ob{human\_attentive} from its local evidence; its scope also covers $r$. Both denial continuations check, so the hierarchy checks.
+
+This verdict is conditional: the scanner's declaration $t$, the human's attention declaration, and the gate's promised goal and provided fact must be justified. The walk has not measured scanner accuracy or guaranteed that any particular reviewer will accept.
+\end{example}
+
+\begin{warning}{Three distinctions to keep visible}
+\textbf{$\varphi$ versus $D$:} the scanner's goal $s$ goes into $A$; its obligation $q$ goes into $B$. A goal already covered and an assumption needed by a later contract have different jobs.
+
+\textbf{$\Omega$ versus $D$:} the scanner declares $t$ only for its own invocation. The fact $q$ is explicitly provided to later invocations after a contract-applicable pass. Nothing automatically copies $t$ to the reviewers.
+
+\textbf{Routing versus evidence:} selecting $K_a$ does not establish ``low risk''. A switch has no contract. If the AI reviewer needs a low-risk obligation, that obligation needs its own justification even on the branch intended for low-risk inputs.
+\end{warning}
+
+\textbf{What if the AI should escalate to a human?} Replace $K_a$ by
+\[
+\guard(a,L_a,\emptyset,
+       \guard(h_a,L_h,\{\ob{human\_attentive}\},\deny)).
+\]
+If $a$ accepts or blocks, $h_a$ never runs. Only escalation reaches $h_a$, with the same $A,B$. The checker must justify acceptance at \emph{both} guards; a human continuation cannot repair an unsafe immediate acceptance by the AI.
+
+\pauseq{In $H_{\mathrm{review}}$, remove the scanner's provided fact $q$ but leave its goal $s$. Do both reviewers still check? Would routing to the human establish that $q$ holds?}{No. The scanner still adds $s$ to $A$, but $B$ remains empty. Both reviewers require $q$, which neither declares locally, and $r$ is still open. Thus both fail the guard check. A switch changes neither $A$ nor $B$; its branch choice establishes no obligation.}
+
+\textbf{Connection to structural induction.} The toy payment language had three agent cases and one sequencing case. This calculus instead has four proof cases: $\deny$ cannot accept; a credited passing gate justifies updated goals and facts for its continuation; a guard must be safe if it accepts and have a safe continuation if it escalates; a switch needs both branches checked because either may run. These are exactly the cases in the soundness proof of Chapter~\ref{ch:check}.
+
+\subsection{DevAgent as a term}
+
+Here is the running example written as a tree. Each node of the tree is one constructor.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[font=\scriptsize,
+  gt/.style={draw=tintblue,rounded corners=2pt,fill=tintblue!8,align=center,minimum height=0.7cm,minimum width=1.7cm},
+  gd/.style={draw=tintorange,rounded corners=2pt,fill=tintorange!12,align=center,minimum height=0.7cm,minimum width=1.7cm},
+  sw/.style={draw=tintpurple,rounded corners=2pt,fill=tintpurple!10,align=center,minimum height=0.7cm,minimum width=1.7cm},
+  dn/.style={draw=gray,rounded corners=2pt,fill=gray!15,align=center,minimum height=0.55cm,minimum width=1.0cm},
+  arr/.style={-{Stealth[length=1.8mm]}}]
+\node[gt] (g1) at (0,0) {gate $g_1$\\establishes $\varphi_1$};
+\node[gt] (g2) at (0,-1.1) {gate $g_2$\\establishes $\varphi_2$};
+\node[gt] (g3) at (0,-2.2) {gate $g_3$\\establishes $\varphi_{\mathrm{env}}$};
+\node[sw] (s) at (0,-3.3) {switch $s$\\``tainted?''};
+\node[gt] (v2) at (-3.3,-4.6) {veto gate $v_2$\\scorer, $\varphi=\bot$};
+\node[gd] (n4) at (-3.3,-5.8) {guard $n_4$ (human)\\scope $\{\varphi_3,\varphi_4\}$};
+\node[dn] (d1) at (-3.3,-6.9) {deny};
+\node[gt] (c) at (3.3,-4.6) {gate $c$ (det.)\\establishes $\varphi_3$\\provides \ob{safe\_on\_this\_text}};
+\node[gd] (n3) at (3.3,-5.9) {guard $n_3$ (judge)\\scope $\{\varphi_4\}$};
+\node[dn] (d2) at (3.3,-7.0) {deny};
+\draw[arr] (g1)--(g2); \draw[arr] (g2)--(g3); \draw[arr] (g3)--(s);
+\draw[arr] (s)--node[above left,font=\tiny]{yes (tainted)}(v2); \draw[arr] (s)--node[above right,font=\tiny]{no}(c);
+\draw[arr] (v2)--(n4); \draw[arr] (n4)--node[left,font=\tiny]{escalate}(d1);
+\draw[arr] (c)--(n3); \draw[arr] (n3)--node[right,font=\tiny]{escalate}(d2);
+\end{tikzpicture}
+\caption{DevAgent as a term. Tainted input (text from outside) goes to a scorer and then a person. Untainted input is checked by a deterministic provenance gate $c$ (which \emph{provides a fact}) and then reaches the raw-text LLM judge. Denial edges for failed gates are omitted.}
+\label{fig:devagent-term}
+\end{figure}
+
+Why this design? Recall the lead-lined suitcase. The judge $n_3$ requires \ob{safe\_on\_this\_text}. Gate $c$ \emph{verifies by provenance} that no untrusted text is present in the input, a purely mechanical property (a label store), and only if it passes does it \emph{provide} \ob{safe\_on\_this\_text} to later stages. The judge never sees tainted text. Tainted text goes to a human.
+
+\pauseq{In Figure~\ref{fig:devagent-term}, which nodes are \emph{routes}? Which nodes are deterministic gates? Which node is a veto stage? How many different paths lead from $g_1$ to an accepting guard?}{Routes (guards): $n_3$ and $n_4$. Deterministic gates: $g_1,g_2,g_3,c$. Veto stage: $v_2$. Two paths reach an accepting guard: $g_1g_2g_3\,s\,v_2\,n_4$ and $g_1g_2g_3\,s\,c\,n_3$.}
+
+\subsection{What ``running'' a hierarchy means: models}
+
+\textbf{Why we need models.} We do not know how the stages behave. So we define a \textbf{model} to be a \emph{complete description of one possible behavior for one proposal}. Nothing is excluded unless a contract excludes it.
+
+\begin{defbox}{model}
+A \textbf{model} $M=(P,V,W,E,S)$ for one proposal consists of
+\begin{itemize}
+\item $P(n)\in\{\text{true},\text{false}\}$: does gate $n$ pass the proposal?
+\item $V(n)\in\{\acc,\blk,\esc\}$: guard $n$'s verdict.
+\item $W(n)\in\{\text{true},\text{false}\}$: which branch does switch $n$ take?
+\item $E(n)$: the set of obligations that \emph{actually hold} at invocation $n$.
+\item $S\subseteq\Goals$: the goals the proposal \emph{actually satisfies}.
+\end{itemize}
+\end{defbox}
+
+All components are \textbf{free}: any combination of values is a possible model unless a contract excludes it (we define that in a moment). An \textbf{attack} is then simply a model: typically one in which some obligation fails at some stage, or in which a goal is not in $S$.
+
+\begin{example}{models for the toy hierarchy}
+Throughout the next chapters we use a very small hierarchy $H_{\mathrm{toy}}$ to try ideas. There are two goals $\Goals=\{a,b\}$, one obligation $o$, and one layer $L$ with $\req(L)=\{o\}$, $\scope(L)=\{b\}$.
+\[
+H_{\mathrm{toy}}=\gate(g,a,\epsilon,\emptyset,\emptyset,\ \guard(j,L,\Omega_j,\deny))
+\]
+A deterministic gate $g$ establishes $a$; then a guard $j$ (say, an LLM judge) with contract $L$ covers $b$. The evidence $\Omega_j$ is a parameter we vary.
+
+A model: $P(g)=\text{true}$, $V(j)=\acc$, $E(j)=\{o\}$, $S=\{a,b\}$. A different model: $P(g)=\text{true}$, $V(j)=\acc$, $E(j)=\emptyset$, $S=\{a\}$. In the second, the obligation $o$ fails at $j$, and the proposal does not satisfy $b$.
+\end{example}
+
+\subsection{The decision semantics}
+\label{sec:reading-semantics}
+
+\begin{toolbox}{reading the double brackets}
+The notation $\sem{H}{M}$ is called the \textbf{semantic interpretation} of $H$ under $M$. The double brackets mean ``interpret this hierarchy''; the subscript says which model supplies the behavior. They are not a multiplication or a new kind of hierarchy.
+
+Think of this as a function $\mathrm{decision}(H,M)$: $H$ supplies the wiring, and $M$ supplies whether each gate passes, each guard's verdict, and each switch's branch. The result is $\denied$ or $\accepted(r)$, naming the guard that accepted. For example, $\accepted(j)$ says \emph{who accepted}, not \emph{which goals hold}.
+\end{toolbox}
+
+Given a model, what is the decision on the proposal? This is defined by recursion on the term (the technique of Chapter~\ref{ch:toolkit}), one equation per constructor. We write $\sem{H}{M}$ for the outcome, which is either $\denied$ or $\accepted(r)$, where $r$ is the guard that accepted.
+
+\begin{align*}
+\sem{\deny}{M}&=\denied\\
+\sem{\gate(n,\varphi,\ell,\Omega,D,k)}{M}&=\sem{k}{M}\ \text{ if }P(n),\ \text{else }\denied\\
+\sem{\guard(n,\ell,\Omega,k)}{M}&=\begin{cases}\accepted(n)&\text{if }V(n)=\acc\\\sem{k}{M}&\text{if }V(n)=\esc\\\denied&\text{if }V(n)=\blk\end{cases}\\
+\sem{\switch(n,a,b)}{M}&=\sem{a}{M}\ \text{ if }W(n),\ \text{else }\sem{b}{M}
+\end{align*}
+
+This is just a program: follow the structure and do what each node says.
+
+Only $P,V,W$ affect this decision. The actual obligations $E(n)$ and actual goals $S$ are used to assess contracts and safety; the decision equations do not consult them. In particular, changing whether a proposal is safe need not change the decision of a guard that accepts it.
+
+\begin{example}{evaluating $H_{\mathrm{toy}}$}
+With the first model above: $P(g)$ true so we continue to the guard; $V(j)=\acc$, so the result is $\accepted(j)$. With a model where $P(g)=\text{false}$, the result is $\denied$ regardless of what $j$ would say.
+
+Expand the recursive calculation for a passing gate and accepting judge:
+\[
+\sem{H_{\mathrm{toy}}}{M}
+ =\sem{\guard(j,L,\Omega_j,\deny)}{M}
+ =\accepted(j).
+\]
+The first equality uses $P(g)=\mathrm{true}$; the second uses $V(j)=\acc$. If instead $V(j)=\esc$, the second expression becomes $\sem{\deny}{M}=\denied$. If $V(j)=\blk$, it is immediately $\denied$. No step asks whether $o\in E(j)$ or $b\in S$.
+\end{example}
+
+\subsection{Contract satisfaction: which models are allowed}
+
+The decision semantics says what \emph{would happen}. But models in which a guard accepts everything are possible, and for those the question ``is it safe?'' would be hopeless. The contracts restrict which models count. We define the relation
+\[
+M\models_F H
+\]
+read: ``this behavior respects every contract on the invocations the proposal reaches, given the facts $F$ so far''.
+The symbol $\models$ is read ``satisfies''; $M\not\models_F H$ means the statement is false. Unlike the decision semantics, this relation returns no verdict and does not choose the behavior. It asks whether the behavior already specified by $M$ meets the contract rules, including realization.
+
+Here $F$ is the set of facts provided so far on this modeled run. The initial safety definition uses $F=\emptyset$; safety from $(A,B)$ uses $F=B$, and the generalized proof allows any $F\supseteq B$. The relation is again defined by one equation per constructor:
+
+\begin{align*}
+M\models_F&\ \deny\quad\text{always}\\
+M\models_F&\ \gate(n,\varphi,\ell,\Omega,D,k)\ \text{ iff, when }P(n):\ \Real(n)\ \wedge\\
+&\quad\text{if }\req(\ell)\subseteq E(n):\ \varphi\in S\ \wedge\ M\models_{F\cup D}k\\
+&\quad\text{otherwise: }\ M\models_F k\\
+M\models_F&\ \guard(n,\ell,\Omega,k)\ \text{ iff }\ \Real(n)\ \wedge\\
+&\quad(V(n)=\acc\ \wedge\ \req(\ell)\subseteq E(n)\Rightarrow\scope(\ell)\subseteq S)\\
+&\quad\wedge\ (V(n)=\esc\Rightarrow M\models_F k)\\
+M\models_F&\ \switch(n,a,b)\ \text{ iff }\ M\models_F a\text{ if }W(n),\ \text{else }M\models_F b
+\end{align*}
+where $\Real(n)\triangleq\Omega\cup F\subseteq E(n)$ is called \textbf{realization}.
+
+This looks dense, so let us read it slowly. There are three ideas, matching the three modelling choices from Chapter~\ref{ch:toolkit}.
+
+\begin{enumerate}
+\item \textbf{Realization.} At each reached guard and each passing gate, the \emph{declared} evidence $\Omega$ and the \emph{provided} facts $F$ must be \emph{true}, i.e.\ belong to $E(n)$. A false declaration there puts the model outside the guarantee: it is not a ``contract-respecting behavior''. A failed gate already denies and its satisfaction rule imposes no further condition. Declared evidence that the checker cannot verify ends up on a list of assumptions: you are asserting that it holds.
+\item \textbf{Conditionality.} Look at the guard line: ``$V(n)=\acc\wedge\req(\ell)\subseteq E(n)\Rightarrow\scope(\ell)\subseteq S$''. The promise (scope is satisfied) is only required when \emph{all} the obligations really hold at this invocation. Otherwise nothing is demanded: the guard can accept something unsafe and still be ``respecting its contract''.
+\item \textbf{Locality.} $E$ is indexed by the node $n$. What holds at the scorer says nothing about what holds at the judge. And a fact in $F$ reaches later stages \emph{only} through a gate whose contract applied. Note the guard line: for $V(n)=\esc$ the rest is checked under the same $F$, not a larger one. A guard adds nothing to $F$.
+\end{enumerate}
+
+\begin{example}{contract satisfaction for $H_{\mathrm{toy}}$}
+Let $\Omega_j=\emptyset$ (the specification does not promise that $o$ holds at $j$). Take the second model above: $P(g)$, $V(j)=\acc$, $E(j)=\emptyset$, $S=\{a\}$.
+\begin{itemize}
+\item Gate $g$ ($\epsilon$ layer): $\req=\emptyset\subseteq E(g)$, so the contract applies; we need $a\in S$ and it is. \checkmark
+\item Guard $j$: realization $\Omega_j\cup F=\emptyset\subseteq E(j)$ \checkmark. Acceptance: is $\req(L)=\{o\}\subseteq E(j)=\emptyset$? No. So the condition is false and the implication is vacuously true. \checkmark
+\end{itemize}
+So $M\models_\emptyset H_{\mathrm{toy}}$: this \emph{is} a contract-respecting behavior. Yet $\sem{H_{\mathrm{toy}}}{M}=\accepted(j)$ and the proposal violates $b$. This is the lead-lined suitcase in miniature. If we instead declared $\Omega_j=\{o\}$, then realization would demand $o\in E(j)$, and this model would be excluded.
+\end{example}
+
+\subsubsection{Same decision, different contract judgments}
+\label{sec:contracts-versus-safety}
+
+Give $o$ a concrete reading: ``the judge's input satisfies the sanitization policy''. The judge promises goal $b$ only when $o$ holds and it accepts. In all four rows below, use the toy hierarchy, let the deterministic gate pass, and let the judge accept. Set $E(g)=\emptyset$; every listed $S$ contains the gate's promised goal $a$. No gate provides facts, so $F=\emptyset$ at $j$.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}llllX@{}}
+\toprule
+$\Omega_j$ & $E(j)$ & $S$ & \textbf{Contracts?} & \textbf{Reason}\\
+\midrule
+$\emptyset$ & $\{o\}$ & $\{a,b\}$ & Respected & The assumption holds and the judge's promised goal $b$ holds.\\
+$\emptyset$ & $\{o\}$ & $\{a\}$ & Violated & The assumption holds, but the accepting judge fails its promise.\\
+$\emptyset$ & $\emptyset$ & $\{a\}$ & Respected & Realization holds; the missing, undeclared assumption makes the judge's promise inapplicable.\\
+$\{o\}$ & $\emptyset$ & $\{a\}$ & Violated & Realization fails: the local declaration says $o$ holds, but it does not.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Every row has the same decision $\sem{H_{\mathrm{toy}}}{M}=\accepted(j)$. The third row is the crucial unsafe, contract-respecting behavior. The fourth row is excluded because its declaration is false, even though the conditional promise alone would be vacuously true. \textbf{A missing assumption and a false evidence declaration are different failures.}
+
+\begin{warning}{Respecting a contract does not mean its assumption held}
+The relation $M\models_F H$ checks both realization and the conditional promises. An obligation absent from $E(n)$ can make a promise inapplicable without breaking the contract, provided realization does not require that obligation. A fact declared in $\Omega$ or carried in $F$ must hold wherever realization is required. This is why ``the contracts are respected'' and ``the accepted proposal is safe'' are separate statements.
+\end{warning}
+
+\pauseq{In the third row, why do acceptance and contract satisfaction both hold even though $b$ fails? What changes if $o$ is added to $\Omega_j$?}{Acceptance follows from $P(g)=\mathrm{true}$ and $V(j)=\acc$, independently of $E$ and $S$. Realization is $\emptyset\subseteq E(j)$, and the judge's conditional promise has a false assumption, so contracts are respected. Adding $o$ to $\Omega_j$ makes realization fail in this same model; it does not sanitize the input or change the actual verdict.}
+
+\begin{warning}{Do not mix up the three things}
+There are three different ``kinds'' of an obligation $o$, and confusing them is the number-one source of errors when reading this paper:
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Kind} & \textbf{Where it lives} & \textbf{Who knows it}\\
+\midrule
+\emph{Declared} ($o\in\Omega$) & the specification (syntax) & the checker\\
+\emph{True} ($o\in E(n)$) & the model (the world) & nobody; this is what must be argued\\
+\emph{Credited} ($o\in B$) & the analysis & the checker\\
+\bottomrule
+\end{tabular}
+\end{center}
+Realization is the bridge between the first two: declaring something makes it a \emph{premise}. Soundness (Chapter~\ref{ch:check}) is the bridge between the last two and the world: whatever the checker credits really is true in every contract-respecting model.
+\end{warning}
+
+\subsection{Safety: the definition everything is about}
+
+\begin{defbox}{safety}
+$H$ is \textbf{safe from} $(A,B)$ if for every model $M$ with $A\subseteq S$ and $M\models_B H$: if $\sem{H}{M}=\accepted(r)$ for some $r$, then $\Goals\subseteq S$. $H$ is \textbf{safe} if it is safe from $(\emptyset,\emptyset)$.
+\end{defbox}
+
+In words: \emph{take any behavior that respects all contracts. If the proposal is accepted, then all the goals really hold.} The extra $(A,B)$ say ``suppose we already know the goals $A$ hold and the facts $B$ have been provided''; they let us talk about the \emph{tail} of a hierarchy after some gates have passed, which is essential for induction.
+
+For the initial state, unpack the definition as
+\[
+\forall M\,\forall r:\quad
+\bigl(M\models_\emptyset H\ \wedge\ \sem{H}{M}=\accepted(r)\bigr)
+\ \Longrightarrow\ \Goals\subseteq S.
+\]
+Read left to right: choose any model and guard; restrict attention to contract-respecting behaviors; if that behavior accepts at the guard, require every goal to hold. The set $S$ belongs to the chosen model $M$. One safe accepted model does not prove this universal claim. The third row above \emph{refutes} safety of the toy hierarchy with $\Omega_j=\emptyset$, because it supplies a single contract-respecting accepted model with $b\notin S$.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}p{3.4cm}XX@{}}
+\toprule
+\textbf{Expression} & \textbf{Question} & \textbf{Input and result}\\
+\midrule
+$\sem{H}{M}$ & What decision happens? & A hierarchy and one model; returns $\denied$ or $\accepted(r)$.\\
+$M\models_F H$ & Does this behavior respect the contract rules? & One model, a hierarchy and starting facts; true or false.\\
+$\chk(H,A,B)$ & Do the declared contracts suffice for safe composition? & A specification and credited sets, without choosing a model; true or false.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+Soundness connects the third row to the first two: if the checker succeeds, every contract-respecting behavior that accepts satisfies the goals. It does not assert that the system will accept a proposal.
+
+Observe four things about this definition.
+
+\begin{enumerate}
+\item It is about \emph{one proposal at a time}, and about \emph{all behaviors} at once. No probabilities yet.
+\item It is \emph{conditional} on the contracts. An attacker who makes a contract false is outside it.
+\item It says nothing about usefulness: $\deny$ is safe (nothing is ever accepted). A hierarchy that rejects everything is vacuously safe, and the calculus would approve it.
+\item It is about \emph{acceptance}: if the proposal is denied, nothing is claimed. This matches our concern: the damage is done by accepted actions.
+\end{enumerate}
+
+\begin{table}[h]
+\caption{What remains against each attacker class (paper, Table~I).}
+\label{tab:attackers-tut}
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}p{3.5cm}XX@{}}
+\toprule
+\textbf{Attacker} & \textbf{Goals set by deterministic gates} & \textbf{Goals resting on learned stages}\\
+\midrule
+None; drift only & hold exactly & certificate degrades by the drift $\eta$\\
+Fixed attacks, present in calibration & hold exactly & certificate holds for that mix\\
+Adaptive & hold, given complete mediation & no guarantee; the contract may be false\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The ``drift'' $\eta$ is the \emph{total-variation distance} between the data distribution used for calibration and the one in deployment (how much the world changed); we meet it in Chapter~\ref{ch:risk}. ``Complete mediation'' means every effect of the agent really passes through the gates; if the agent has a raw shell the gates do not see, nothing here applies.
+
+\subsection{Quick reference: all the sets}
+
+\begin{table}[h]
+\caption{Sets used in the calculus (paper, Table~II).}
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+\textbf{Set} & \textbf{Meaning}\\
+\midrule
+$\Omega$ & obligations \emph{declared} at this stage (syntax)\\
+$D$ & facts a gate \emph{provides} (syntax)\\
+$E(n)$ & obligations \emph{actually true} at invocation $n$ (model)\\
+$S$ & goals the proposal \emph{actually satisfies} (model)\\
+$F$ & facts \emph{actually provided} so far on the run (semantics)\\
+$A,B$ & goals and facts the \emph{checker has credited} so far (analysis)\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The analysis tracks declarations; soundness shows that $A\subseteq S$ and $B\subseteq F$ are preserved along a run. That sentence is the heart of Chapter~\ref{ch:check}.
+
+\subsubsection{Follow the three records through a complete example}
+\label{sec:accounting-example}
+
+\begin{example}{a sanitization validator, a content filter, and a judge}
+Use goals $\Goals=\{c,m,r\}$: the proposal's judge-facing view satisfies the sanitization policy ($c$), it satisfies the content policy ($m$), and it meets the final review goal ($r$). Let $p=\ob{sanitized\_view}$ be an \emph{obligation} needed by later contracts. Its intended meaning is related to $c$, but the calculus does not infer $p$ from the goal name $c$: the validator must explicitly provide it.
+
+The validator checks an already prepared view of the same proposal; it does not rewrite the proposal during this run. Define
+\[
+\begin{array}{c|cc}
+ & \req & \scope\\\hline
+L_m & \{p\} & \emptyset\\
+L_j & \{p\} & \{r\}
+\end{array}
+\]
+and the hierarchy
+\begin{align*}
+K_j&=\guard(j,L_j,\emptyset,\deny),\\
+K_m&=\gate(f,m,L_m,\emptyset,\emptyset,K_j),\\
+H_{\mathrm{san}}&=\gate(v,c,\epsilon,\emptyset,\{p\},K_m).
+\end{align*}
+The deterministic validator $v$ establishes $c$ and provides $p$ if it passes. The content filter $f$ requires $p$, establishes $m$ if it passes with its contract applicable, and provides no new obligations. The judge $j$ requires $p$ and covers $r$ on acceptance.
+
+For comparison with the static walk, take a contract-respecting run in which both gates pass and the judge accepts:
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\linewidth}{@{}lcccX@{}}
+\toprule
+\textbf{Point} & $A$ & $B$ & $F$ & \textbf{What justifies the next step?}\\
+\midrule
+Start & $\emptyset$ & $\emptyset$ & $\emptyset$ & The validator has no required obligations.\\
+After $v$ & $\{c\}$ & $\{p\}$ & $\{p\}$ & $p$ is available to the filter's contract.\\
+After $f$ & $\{c,m\}$ & $\{p\}$ & $\{p\}$ & The filter adds a goal, not a new provided fact.\\
+At $j$ & $\{c,m\}$ & $\{p\}$ & $\{p\}$ & $p$ makes the judge's contract usable; its scope covers $r$.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+The checker credits goals in $A$ and obligations in $B$. The semantic relation carries the corresponding provided obligations in $F$. On acceptance the judge's contract gives $r\in S$; the gates have already given $c,m\in S$, so $\Goals\subseteq S$. The judge's scope does not get added to $A$ for a continuation: acceptance ends the run, and escalation adds nothing.
+
+Passing the validator supports these conclusions only under its promised contract, including the claim that $p$ holds at later invocations. Merely naming an obligation \ob{sanitized\_view} does not implement sanitization or verify that claim.
+\end{example}
+
+\begin{samepage}
+\textbf{The bridge from records to truth.} At a reached guard or a passing gate $n$, the soundness proof uses
+\[
+\underbrace{B\subseteq F}_{\text{credited facts are provided}}
+\quad\text{and}\quad
+\underbrace{\Omega_n\cup F\subseteq E(n)}_{\text{realization}}
+\quad\Longrightarrow\quad
+\Omega_n\cup B\subseteq E(n).
+\]
+\end{samepage}
+Therefore a requirement available in $\Omega_n\cup B$ really holds at that invocation in a contract-respecting model. Separately, $A\subseteq S$ connects credited goals to goals actually satisfied. After a credited passing gate, its contract gives $\varphi\in S$, so $A\cup\{\varphi\}\subseteq S$ remains true; adding the same $D$ to $B$ and $F$ preserves $B\cup D\subseteq F\cup D$.
+
+\begin{warning}{The semantic record is not a runtime measurement}
+$F$ is the parameter carried by $M\models_F H$; it is not an independently observed log or an extra argument to the static checker. $E(n)$ describes the obligations actually holding at a particular invocation; $F$ contains the obligations earlier applicable gates provided, which realization requires to hold there. $E(n)$ can contain more than $F$.
+
+A passing gate adds $D$ to $F$ only when $\req(\ell)\subseteq E(n)$. The static checker adds $D$ to $B$ only when $\req(\ell)\subseteq\Omega\cup B$. These tests use different information. Thus $B$ can be smaller than $F$, as the soundness example in Chapter~\ref{ch:check} shows. If the actual contract is inapplicable, passing alone supplies no new semantic facts.
+\end{warning}
+
+\pauseq{In $H_{\mathrm{san}}$, remove $p$ from the validator's provided set while keeping its goal $c$. May the checker still use the content filter's and judge's contracts?}{No. After $v$, $A=\{c\}$ but $B=\emptyset$. Neither later stage declares $p$, so neither contract can be credited from $\Omega\cup B$. The checker does not convert goal $c$ into obligation $p$. The content filter contributes no credited goal, and the judge cannot cover the open goals. A particular model might still have $p\in E(n)$, but the static checker must justify all contract-respecting behaviors, not just that model.}
+
+\subsection{The concrete language: \Hsl{}}
+
+The calculus is a theory object. The tool works on \Hsl{}, a JSON file format that describes the same thing. Instead of a term it describes a \emph{graph}: nodes may share successors (two branches that rejoin), and the term is the \emph{unfolding} along paths. Chapter~\ref{ch:graphs} explains why this matters for speed. The excerpt below is from the DevAgent file in the repository.
+
+\begin{lstlisting}[language={},basicstyle=\ttfamily\scriptsize]
+"layers": [{"name": "L3", "scope": ["phi4"], "view": "raw",
+  "requires": ["miss_rate_bounded", "config_match"]}, ...],
+"nodes": [ ...,
+ {"type": "switch", "id": "s", "condition": "input_tainted",
+  "then": "v2", "otherwise": "c"},
+ {"type": "gate", "id": "c", "rule": "no_untrusted_input",
+  "establishes": "phi3", "next": "n3",
+  "provides": ["safe_on_this_text"]},
+ {"type": "guard", "id": "n3", "layer": "L3", "next": null,
+  "evidence": ["miss_rate_bounded", "config_match"]}, ...]
+\end{lstlisting}
+
+You can match every field to the calculus: \code{requires} is $\req$, \code{scope} is $\scope$, \code{evidence} is $\Omega$, \code{provides} is $D$, \code{establishes} is $\varphi$, \code{next:\ null} is $\deny$.
+
+\subsubsection*{Three kinds of obligations}
+
+The language labels each obligation with a \emph{kind}, which records how it gets established (it does \emph{not} change the safety check; it changes what is left to argue):
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}lXX@{}}
+\toprule
+\textbf{Kind} & \textbf{Meaning} & \textbf{Example}\\
+\midrule
+\textbf{checked} & has a runtime predicate; failing it denies & \ob{config\_match}: the deployed judge uses the configuration that was certified\\
+\textbf{construction} & true of the code, e.g.\ by how an input is built & \ob{human\_sees\_provenance}: the interface always shows where the text came from\\
+\textbf{assumed} & the deployer's responsibility to justify & \ob{miss\_rate\_bounded}, \ob{human\_attentive}, \ob{safe\_on\_this\_text}\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Obligations may also be tied to a \emph{view} (the input a layer sees, say ``raw'' vs.\ ``structured''); evidence tied to another view than the stage's layer is dropped, with a warning, before the analysis, because it describes a different invocation (locality again).
+
+\begin{recap}
+\begin{itemize}
+\item Four building blocks: $\deny$, gate (can only stop; can establish a goal and provide facts), guard (can accept, block, or escalate; provides nothing), switch (routes; teaches nothing).
+\item A \emph{model} is a free description of one behavior. An attack is a model.
+\item $\sem{H}{M}$ is what happens; $M\models_F H$ says all contracts on the reached stages are respected, with realization, conditionality and locality.
+\item \emph{Safe}: every contract-respecting model that is accepted satisfies all goals.
+\item Distinguish \emph{declared}, \emph{true} and \emph{credited}.
+\end{itemize}
+\end{recap}

@@ -1,0 +1,140 @@
+{
+  "key": "arxiv231010501",
+  "entry": {
+    "url": "https://doi.org/10.18653/v1/2023.emnlp-demo.40",
+    "doi": "10.18653/v1/2023.emnlp-demo.40",
+    "publisher": "Association for Computational Linguistics",
+    "year": "2023",
+    "pages": "431--445",
+    "booktitle": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+    "title": "{NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails}",
+    "author": "Rebedea, Traian and Dinu, Razvan and Sreedhar, Makesh Narsimhan and Parisien, Christopher and Cohen, Jonathan",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv231010501"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=NeMo+Guardrails%3A+A+Toolkit+for+Controllable+and+Safe+LLM+Applications+with+Programmable+Rails",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.18653/v1/2023.emnlp-demo.40",
+      "status": 200,
+      "file": "arxiv231010501.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.18653/v1/2023.emnlp-demo.40",
+      "type": "proceedings-article",
+      "title": [
+        "NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Traian",
+          "family": "Rebedea",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Razvan",
+          "family": "Dinu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Makesh Narsimhan",
+          "family": "Sreedhar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christopher",
+          "family": "Parisien",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jonathan",
+          "family": "Cohen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: System Demonstrations"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "431-445",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "event": {
+        "name": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+        "location": "Singapore",
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              12
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2023,
+              12
+            ]
+          ]
+        }
+      },
+      "similarity": 1.0
+    }
+  ]
+}

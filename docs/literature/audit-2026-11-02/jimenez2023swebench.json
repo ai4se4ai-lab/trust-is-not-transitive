@@ -1,0 +1,417 @@
+{
+  "key": "jimenez2023swebench",
+  "entry": {
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html",
+    "year": "2024",
+    "pages": "54107--54157",
+    "volume": "2024",
+    "booktitle": "International Conference on Learning Representations",
+    "title": "{SWE-bench: Can Language Models Resolve Real-world Github Issues?}",
+    "author": "Jimenez, Carlos E. and Yang, John and Wettig, Alexander and Yao, Shunyu and Pei, Kexin and Press, Ofir and Narasimhan, Karthik",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "jimenez2023swebench"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=SWE-bench%3A+Can+Language+Models+Resolve+Real-world+Github+Issues%3F",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=SWE-bench%3A+Can+Language+Models+Resolve+Real-world+Github+Issues%3F&rows=3",
+      "status": 200,
+      "file": "jimenez2023swebench.crossref.json.gz"
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html",
+      "status": 200,
+      "file": "jimenez2023swebench.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.18653/v1/2025.emnlp-industry.19",
+      "type": "proceedings-article",
+      "title": [
+        "ECom-Bench: Can LLM Agent Resolve Real-World E-commerce Customer Support Issues?"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Haoxin",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xianhan",
+          "family": "Peng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Huang",
+          "family": "Cheng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yizhe",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ming",
+          "family": "Gong",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chenghan",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yang",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiang",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "276-284",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "event": {
+        "name": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+        "location": "Suzhou (China)",
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2025,
+              11
+            ]
+          ]
+        }
+      },
+      "similarity": 0.622
+    },
+    {
+      "DOI": "10.1145/3759425.3763379",
+      "type": "proceedings-article",
+      "title": [
+        "CG-Bench: Can Language Models Assist Call Graph Construction in the Real World?"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0009-2525-4422",
+          "authenticated-orcid": false,
+          "given": "Ting",
+          "family": "Yuan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Huawei Technologies Co., Ltd, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6972-7038",
+          "authenticated-orcid": false,
+          "given": "Wenrui",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Huawei Technologies, Hangzhou, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3751-7997",
+          "authenticated-orcid": false,
+          "given": "Dong",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Huawei Technologies, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0003-9578-883X",
+          "authenticated-orcid": false,
+          "given": "Jie",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Huawei Technologies, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 1st ACM SIGPLAN International Workshop on Language Models and Programming Languages"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "12-20",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            9
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            9
+          ]
+        ]
+      },
+      "publisher": "ACM",
+      "event": {
+        "name": "LMPL '25: 1st ACM SIGPLAN International Workshop on Language Models and Programming Languages",
+        "location": "Singapore Singapore",
+        "acronym": "LMPL '25",
+        "sponsor": [
+          "SIGPLAN ACM Special Interest Group on Programming Languages",
+          "SIGAda ACM Special Interest Group on Ada Programming Language"
+        ]
+      },
+      "similarity": 0.593
+    },
+    {
+      "DOI": "10.1007/978-3-032-31397-3_41",
+      "type": "book-chapter",
+      "title": [
+        "Merge-Bench: Resolve Merge Conflicts with Large Language Models"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-2885-3067",
+          "authenticated-orcid": false,
+          "given": "Benedikt",
+          "family": "Schesch",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9379-277X",
+          "authenticated-orcid": false,
+          "given": "Michael D.",
+          "family": "Ernst",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Pattern Recognition"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "621-635",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2027
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            5
+          ]
+        ]
+      },
+      "publisher": "Springer Nature Switzerland",
+      "event": null,
+      "similarity": 0.411
+    }
+  ],
+  "meta": {
+    "citation_title": [
+      "SWE-bench: Can Language Models Resolve Real-world Github Issues?"
+    ],
+    "citation_author": [
+      "Jimenez, Carlos E",
+      "Yang, John",
+      "Wettig, Alexander",
+      "Yao, Shunyu",
+      "Pei, Kexin",
+      "Press, Ofir",
+      "Narasimhan, Karthik"
+    ],
+    "citation_journal_title": [
+      "International Conference on Learning Representations"
+    ],
+    "citation_volume": [
+      "2024"
+    ],
+    "citation_firstpage": [
+      "54107"
+    ],
+    "citation_lastpage": [
+      "54157"
+    ],
+    "citation_pdf_url": [
+      "https://proceedings.iclr.cc/paper_files/paper/2024/file/edac78c3e300629acfe6cbe9ca88fb84-Paper-Conference.pdf"
+    ],
+    "citation_publication_date": [
+      "2024-05-31"
+    ]
+  },
+  "details": {},
+  "bibtex_links": [
+    "/paper_files/paper/5227-/bibtex"
+  ]
+}

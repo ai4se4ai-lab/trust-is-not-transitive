@@ -1,0 +1,118 @@
+{
+  "key": "chaki2013verification",
+  "entry": {
+    "doi": "10.1145/2430545.2430550",
+    "year": "2013",
+    "pages": "1--12",
+    "number": "2",
+    "volume": "22",
+    "journal": "ACM Transactions on Software Engineering and Methodology",
+    "title": "Verification across Intellectual Property Boundaries",
+    "author": "Chaki, Sagar and Schallhart, Christian and Veith, Helmut",
+    "ENTRYTYPE": "article",
+    "ID": "chaki2013verification"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Verification+across+Intellectual+Property+Boundaries",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1145/2430545.2430550",
+      "status": 200,
+      "file": "chaki2013verification.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1145/2430545.2430550",
+      "type": "journal-article",
+      "title": [
+        "Verification across Intellectual Property Boundaries"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Sagar",
+          "family": "Chaki",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Software Engineering Institute"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Christian",
+          "family": "Schallhart",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Oxford University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Helmut",
+          "family": "Veith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Vienna University of Technology"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ACM Transactions on Software Engineering and Methodology"
+      ],
+      "volume": "22",
+      "issue": "2",
+      "page": "1-12",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            3
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2013,
+            3
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2013,
+            3
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "key": "arxiv210907958",
+  "entry": {
+    "url": "https://doi.org/10.18653/v1/2022.acl-long.229",
+    "doi": "10.18653/v1/2022.acl-long.229",
+    "publisher": "Association for Computational Linguistics",
+    "year": "2022",
+    "pages": "3214--3252",
+    "booktitle": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "title": "{TruthfulQA: Measuring How Models Mimic Human Falsehoods}",
+    "author": "Lin, Stephanie and Hilton, Jacob and Evans, Owain",
+    "ENTRYTYPE": "inproceedings",
+    "ID": "arxiv210907958"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=TruthfulQA%3A+Measuring+How+Models+Mimic+Human+Falsehoods",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.18653/v1/2022.acl-long.229",
+      "status": 200,
+      "file": "arxiv210907958.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.18653/v1/2022.acl-long.229",
+      "type": "proceedings-article",
+      "title": [
+        "TruthfulQA: Measuring How Models Mimic Human Falsehoods"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Stephanie",
+          "family": "Lin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jacob",
+          "family": "Hilton",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Owain",
+          "family": "Evans",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "3214-3252",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Association for Computational Linguistics",
+      "event": {
+        "name": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "location": "Dublin, Ireland",
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              5
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2022,
+              5
+            ]
+          ]
+        }
+      },
+      "similarity": 1.0
+    }
+  ]
+}

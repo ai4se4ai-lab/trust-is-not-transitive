@@ -1,0 +1,315 @@
+{
+  "key": "willison2023dual",
+  "entry": {
+    "url": "https://simonwillison.net/2023/Apr/25/dual-llm-pattern/",
+    "month": "April",
+    "year": "2023",
+    "howpublished": "Blog post",
+    "title": "The Dual {LLM} Pattern for Building {AI} Assistants That Can Resist Prompt Injection",
+    "author": "Willison, Simon",
+    "ENTRYTYPE": "misc",
+    "ID": "willison2023dual"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=The+Dual+LLM+Pattern+for+Building+AI+Assistants+That+Can+Resist+Prompt+Injection",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works?query.title=The+Dual+LLM+Pattern+for+Building+AI+Assistants+That+Can+Resist+Prompt+Injection&rows=3",
+      "status": 200,
+      "file": "willison2023dual.crossref.json.gz"
+    },
+    {
+      "url": "https://simonwillison.net/2023/Apr/25/dual-llm-pattern/",
+      "status": 200,
+      "file": "willison2023dual.primary.html.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.2139/ssrn.7179658",
+      "type": "posted-content",
+      "title": [
+        "LLM-powered SOC Assistants: Prompt Injection Risks in Threat Triage"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-1412-9708",
+          "authenticated-orcid": true,
+          "given": "Tayyeb",
+          "family": "Nadeem Somro",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-0053-3120",
+          "authenticated-orcid": true,
+          "given": "Bilal",
+          "family": "Arshad",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ammara",
+          "family": "Gul",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": null,
+      "publisher": "Elsevier BV",
+      "event": null,
+      "similarity": 0.512
+    },
+    {
+      "DOI": "10.1007/s10015-026-01152-3",
+      "type": "journal-article",
+      "title": [
+        "Bringing the Dual-LLM pattern to practice in Google ADK for deterministic AI agent security against prompt injection"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Shuo",
+          "family": "Huang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shin-Jie",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Artificial Life and Robotics"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            18
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            18
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "event": null,
+      "similarity": 0.527
+    },
+    {
+      "DOI": "10.1109/imns67862.2026.11655283",
+      "type": "proceedings-article",
+      "title": [
+        "Evaluating Prompt Injection Risk and Guardrails in LLM-Enabled Home IoT Assistants"
+      ],
+      "subtitle": null,
+      "author": [
+        {
+          "given": "Shazid Bin",
+          "family": "Zaman",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "East Carolina University",
+              "department": [
+                "Dept. of Technology Systems"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sohan",
+          "family": "Gyawali",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "East Carolina University",
+              "department": [
+                "Dept. of Technology Systems"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ciprian",
+          "family": "Popoviciu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "East Carolina University",
+              "department": [
+                "Dept. of Technology Systems"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yili",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Georgia State University",
+              "department": [
+                "Dept. of Computer Science"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jiaqi",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Central Missouri",
+              "department": [
+                "Dept. of Computer Science and Cybersecurity"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2026 International Conference on Intelligent Multimedia, Networking, and Security (IMNS)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-6",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            8
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "IEEE",
+      "event": {
+        "name": "2026 International Conference on Intelligent Multimedia, Networking, and Security (IMNS)",
+        "location": "Atlanta, GA, USA",
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              3
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              4
+            ]
+          ]
+        }
+      },
+      "similarity": 0.317
+    }
+  ],
+  "meta": {},
+  "details": {},
+  "bibtex_links": []
+}

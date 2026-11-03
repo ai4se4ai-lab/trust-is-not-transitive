@@ -13,13 +13,51 @@ def main():
     assert len(keys)==len(set(keys))
     rows=list(csv.DictReader((ROOT/'paper/refs_verification.csv').open(encoding='utf-8')))
     verified={r['key']:r for r in rows}
+    dates={r['date_checked'] for r in rows}
+    assert len(dates)==1, 'Verification records must refer to one reviewed audit date'
+    audit_date=next(iter(dates))
+    assert re.fullmatch(r'\d{4}-\d{2}-\d{2}',audit_date), 'Invalid audit date'
+    refresh_path=ROOT/f'docs/literature/audit-{audit_date}/audit.json'
+    if refresh_path.exists():
+        refreshed=json.loads(refresh_path.read_text(encoding='utf-8'))
+        reviewed={r['key']:r for r in refreshed}
+        assert len(rows)==len(verified) and len(refreshed)==len(reviewed), 'Duplicate verification records'
+        assert set(keys)==set(verified)==set(reviewed), 'Bibliography/audit/verification keys differ'
+        for key in keys:
+            record=reviewed[key]
+            entry=re.search(r'@\w+\{'+re.escape(key)+r',.*?\n\}',bib,flags=re.S).group()
+            assert hashlib.sha256(entry.encode()).hexdigest()==record['entry_sha256'], ('Entry changed since audit',key)
+            row=verified[key]
+            assert row['verified']=='audited' and row['date_checked']==record['checked'],key
+            assert row['URL']==record['entry'].get('url','https://doi.org/'+record['entry'].get('doi','')),key
+            assert row['evidence_sha256']==hashlib.sha256(json.dumps(record,ensure_ascii=False,sort_keys=True).encode()).hexdigest(),key
+            assert record['sources'] and record['evidence'],key
+            for name,expected in record['evidence'].items():
+                assert Path(name).name==name
+                local=refresh_path.parent/name
+                assert local.is_file() and hashlib.sha256(local.read_bytes()).hexdigest()==expected, ('Evidence differs',key,name)
+            if 'historical_audit' in record:
+                for name,expected in record['historical_audit']['evidence'].items():
+                    local=ROOT/'docs/literature/audit-2026-10-29'/name
+                    assert local.is_file() and hashlib.sha256(local.read_bytes()).hexdigest()==expected, ('Historical evidence differs',key,name)
+        citations=set()
+        for tex in (ROOT/'paper').rglob('*.tex'):
+            text=re.sub(r'(?m)(?<!\\)%.*$','',tex.read_text(encoding='utf-8'))
+            citations.update(k.strip() for group in re.findall(r'\\cite\w*\*?(?:\[[^\]]*\])*\{([^}]+)\}',text) for k in group.split(','))
+        assert citations<=set(keys),citations-set(keys)
+        print(len(keys),f'entries match the {audit_date} reviewed audit and evidence hashes;')
+        print(sum(r['changed'] for r in refreshed),'entries corrected. All citation keys resolve.')
+        print('Source-access and author-version limitations are recorded in REFERENCE_AUDIT.md.')
+        return
     records=json.loads((ROOT/'docs/literature/metadata.json').read_text(encoding='utf-8'))
     by_key={r['key']:r for r in records}
     audit_path=ROOT/'docs/literature/audit-2026-10-29/audit.json'
     audit_records=json.loads(audit_path.read_text(encoding='utf-8')) if audit_path.exists() else []
     audited={r['key']:r for r in audit_records}
     if audited:
-        assert set(keys)==set(audited)==set(verified), 'Bibliography/audit/verification keys differ'
+        assert set(keys)==set(verified) and set(audited)<=set(keys), 'Bibliography/audit/verification keys differ'
+        added=json.loads((ROOT/'docs/literature/audit-2026-10-31/crossref.json').read_text(encoding='utf-8'))
+        assert set(keys)-set(audited)==set(added), 'Entries outside both audits'
     for key in keys:
         if verified[key]['verified']=='primary':
             record=audited[key]

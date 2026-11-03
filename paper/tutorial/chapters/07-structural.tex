@@ -1,0 +1,117 @@
+% =====================================================================
+\section{Structural Properties: What Engineers Can Rely On}
+\label{ch:structural}
+% =====================================================================
+
+\begin{bigidea}
+Beyond ``is it safe?'', engineers ask practical questions: \emph{If I make a stage stricter, can anything new get through? If I change one stage, what must be re-examined? How long does a decision take? Can an agent overspend its budget? Does a secret label survive copying?} The paper answers each with a short theorem, and each is proved by the same technique, structural induction. The last result, \textbf{non-interference}, explains a limit that no guard can escape: a guard can only promise what its \emph{view} of the proposal can distinguish.
+\end{bigidea}
+
+\subsection{Six small properties}
+
+\begin{statement}{Theorem (Structural properties) \hfill\normalfont paper: Theorem 7}
+\textbf{Monotonicity.} If $M'$ has the same switch branches as $M$, $P'(n)\Rightarrow P(n)$, $V'(n)=\acc\Rightarrow V(n)=\acc$ and $V'(n)=\esc\Rightarrow V(n)\in\{\esc,\acc\}$, then $M'$ accepts only if $M$ does.\\
+\textbf{Routes.} If $\sem{H}{M}=\accepted(r)$, then $r$ is a guard of $H$ and $V(r)=\acc$.\\
+\textbf{Prefix locality.} Replacing the continuation of guard $n$ does not change the decision of a proposal that does not escalate past $n$.\\
+\textbf{Decision cost.} A decision visits at most $\mathrm{depth}(H)$ stages.\\
+\textbf{Budget.} Along any sequence of costs, a gate that accepts cost $c$ only if $c\ge0$ and $s+c\le L$, and adds $c$ to $s$ only then, keeps $0\le s\le L$.\\
+\textbf{Taint.} If a derived value takes the union of its sources' labels and its own, a label on any source is on every value derived from it.
+\end{statement}
+
+We take them one at a time. All are induction proofs of a few lines.
+
+\subsubsection{Monotonicity: being stricter never adds acceptances}
+
+\textbf{Motivation.} After a false positive, a team makes a classifier stricter (a lower threshold, a stricter prompt). A natural worry: could this make something \emph{new} get accepted? In a cascade it might at first sight: a stricter first guard escalates more, and a later, weaker guard might accept things the first would have rejected. Monotonicity says what is needed to rule that out.
+
+\textbf{Reading.} $M'$ is ``at least as strict as'' $M$: its gates pass fewer proposals ($P'\Rightarrow P$), its guards accept fewer ($V'=\acc\Rightarrow V=\acc$), and a guard that escalates in $M'$ either escalates or accepts in $M$ (it was at least as ready to accept). Then if $M'$ accepts, so does $M$. Said differently: loosening cannot remove acceptances, so tightening cannot add them.
+
+\begin{plainproof}{Monotonicity}
+Induction on $H$. Assume $M'$ accepts. \emph{Gate:} if $M'$ accepts, the gate passed in $M'$, so $P'(n)$, so $P(n)$, and both continue to the continuation, where the hypothesis applies. \emph{Guard:} in $M'$, either $V'(n)=\acc$ (so $V(n)=\acc$ and $M$ accepts here too), or $V'(n)=\esc$ (so $V(n)$ is $\esc$, in which case continue by the hypothesis, or $\acc$, in which case $M$ accepts right here). \emph{Switch:} same branch in both. \emph{$\deny$:} $M'$ never accepts. \hfill$\blacksquare$
+\end{plainproof}
+
+\subsubsection{Routes: every acceptance is a named guard}
+
+If the outcome is $\accepted(r)$, then $r$ is a guard of $H$ and its verdict was $\acc$. The proof is a one-line induction: the only equation of $\sem{\cdot}{M}$ that produces $\accepted(\cdot)$ is the guard equation with $V(n)=\acc$, and the other equations pass the result of a sub-hierarchy through unchanged. It sounds trivial, but it is what lets the risk theorem of Chapter~\ref{ch:risk} split acceptance into \emph{disjoint events, one per route}.
+
+\subsubsection{Prefix locality}
+
+If a proposal is decided at guard $n$ (it accepts or blocks), what comes after $n$ is never consulted. So replacing the part of the hierarchy after $n$ does not change decisions for such proposals. Proof: the guard equation returns $\accepted(n)$ or $\denied$ without evaluating $k$.
+
+\textbf{Why engineers care.} The first stages of a cascade can be certified independently of what is added behind them, \emph{for the traffic that does not go further}.
+
+\subsubsection{Decision cost}
+
+Each step of the evaluation moves to a continuation, a strictly smaller sub-hierarchy. So at most $\mathrm{depth}(H)$ stages are visited. By induction: $\mathrm{depth}(\deny)=0$, and $\mathrm{depth}(\gate(\ldots,k))=1+\mathrm{depth}(k)$, and similarly for the guard, while a switch takes the maximum of its arms plus one. The paper measures about $0.8\,\mu$s per stage in the prototype (Chapter~\ref{ch:evaluation}).
+
+\subsubsection{Budget}
+
+\textbf{Setting.} An agent has a spending limit $L$ (tokens, dollars, API calls). A budget gate keeps a running total $s$ and accepts a cost $c$ only if $c\ge0$ and $s+c\le L$, and only then does it update $s\leftarrow s+c$.
+
+\begin{plainproof}{Budget}
+We show the invariant $0\le s\le L$ is preserved, by induction on the length of the sequence of costs. At the start $s=0$. Suppose $0\le s\le L$ before a request with cost $c$. If the gate refuses, $s$ is unchanged. If it accepts, then $c\ge0$ gives $s+c\ge s\ge0$, and the test gives $s+c\le L$. \hfill$\blacksquare$
+\end{plainproof}
+
+\begin{warning}{When does this protect an agent?}
+Only if the gate is \emph{on every route} and every cost goes through it. A tool call that bypasses the budget gate, or a route with no gate, breaks the premise. The paper says so: ``the budget property applies to an agent only if the gate is on every route''.
+\end{warning}
+
+\subsubsection{Taint}
+
+\begin{toolbox}{information-flow control (IFC) and taint labels}
+IFC attaches a \emph{label} to each piece of data (``secret'', ``untrusted'', \dots) and defines how labels propagate when data is combined. The classical rule (Denning, 1976): the result of a computation carries \textbf{the union of the labels of its inputs}. So if a secret file is read, trimmed, concatenated into a string and written into a request, the final value is still labeled secret. A gate can then enforce a rule such as ``a request that carries the label \emph{secret} must not go to an external host'' by looking at the label alone; no machine learning needed.
+\end{toolbox}
+
+\begin{plainproof}{Taint}
+Let $v$ be derived from sources $u_1,\dots,u_k$, and label$(v)$ = label$(v)$'s own $\cup\ \bigcup_i$label$(u_i)$. Induction on the \emph{derivation depth} of $v$: a source value trivially carries its own labels. A derived value contains each source's labels, and by the induction hypothesis these contain the labels of the sources' sources. Hence a label on any ancestor appears on every descendant. \hfill$\blacksquare$
+\end{plainproof}
+
+\textbf{The catch.} This holds only if the host \emph{records every derivation}. A computation that happens outside the instrumented environment (for example the agent writes the secret into a file via a raw shell) breaks the chain. This is another form of ``complete mediation''. Notice also that the taint property is what makes the provenance gate $c$ of DevAgent trustworthy: it is why the property ``no untrusted text is present'' is a \emph{deterministic} check on labels, not a guess about content.
+
+\pauseq{A budget gate guards the LLM calls of the judge but not those of the human-approval tool. Which premise of the Budget property fails, and what is the effect on the guarantee?}{The premise ``the gate is on every route'' (and that all costs go through it) fails. The invariant $0\le s\le L$ then holds only for the costs the gate sees; the total real spend can exceed $L$ with no violation of the theorem, since the theorem says nothing about unmediated costs.}
+
+\subsection{Which routes does a change affect?}
+
+\textbf{Motivation.} Retraining a scorer is common. Do we have to re-certify the whole hierarchy? Each statistical route needs evidence, which is expensive (it needs labelled data and sometimes a person's time). If most routes are unaffected, we can save a lot.
+
+\begin{statement}{Corollary (Affected routes) \hfill\normalfont paper: Corollary 2}
+If stage $c$ of a graph changes, the event ``accepted on route $r$'' is unchanged for every route $r$ such that $c$ is neither $r$ nor an ancestor of $r$, in the old and the new graph.
+\end{statement}
+
+\begin{plainproof}{Affected routes}
+A run that ends at $r$ visits only $r$ and its ancestors (the stages on the paths from the entry to $r$). If $c$ is none of these, the run never consults $c$, so the old and new models agree along it, step by step, and the run ends at $r$ in one iff in the other. A run that visits $c$ cannot end at $r$ under either graph (by assumption $c$ is not an ancestor of $r$ in either graph; so a run visiting $c$ would take a path that does not lead to $r$). \hfill$\blacksquare$
+\end{plainproof}
+
+This is the formal basis of \textbf{incremental recertification} (Chapter~\ref{ch:risk}): only routes that the changed stage \emph{precedes} need new evidence.
+
+\subsection{Non-interference: a guard promises only what it can see}
+
+\textbf{Motivation.} A famous idea from computer security (Goguen--Meseguer, 1982) is \emph{non-interference}: the output of a computation does not depend on information it should not see. Here we use it differently. It will tell us what a guard can possibly promise.
+
+Let each stage be a \emph{function of a view of the proposal}. A \textbf{view} is the part of the proposal that the stage receives: a structured summary (say six Booleans and a score), the raw text, the action only, the action plus provenance, and so on. Two proposals with the same view look identical to that stage, so the stage must treat them identically.
+
+\begin{statement}{Theorem (Non-interference) \hfill\normalfont paper: Theorem 8}
+Let each stage be a function of a view of the proposal. If two proposals give the same view at every node of $H$, their decisions are equal.
+\end{statement}
+
+\begin{plainproof}{Non-interference}
+Induction on $H$. At each node, the stage's behavior ($P(n)$, $V(n)$ or $W(n)$) is a function of its view, which is the same for the two proposals. So both proposals pass the gate or both do not, both receive the same guard verdict, both take the same switch branch. They continue to the same sub-hierarchy, where the hypothesis applies. \hfill$\blacksquare$
+\end{plainproof}
+
+\textbf{What this means.} A guard can only promise a property that its view \emph{distinguishes}. Example from the paper: in the artifact the structured view is six Booleans and a score. A judge that reads only that cannot decide $\varphi_3$ (do not act on instructions embedded in untrusted content) on a code patch, because a malicious patch and a benign patch can have equal views, and equal views get equal verdicts. Whatever that judge says about one it says about the other.
+
+\begin{story}{The sealed envelope}
+A clerk is handed sealed envelopes and told to approve only the legitimate ones, but the clerk can only see the envelope's weight and color. Two envelopes of equal weight and color will be treated alike. No amount of cleverness, training or honesty can allow the clerk to approve one and refuse the other. To decide on content, the clerk must \emph{open} the envelope.
+\end{story}
+
+So a guard that must judge content has to \emph{read} the content. But a guard that reads the content can be \emph{addressed} by it (the lead-lined suitcase again). This is the genuine dilemma, and it cannot be dissolved by a smarter guard; it is a consequence of the theorem. DevAgent \emph{resolves the tension by splitting on provenance}: the raw judge sees only input that a deterministic gate has shown to carry no untrusted text, and tainted input goes to a person. Neither arm claims that a guard can read attacker text safely. (The human arm rests on an assumption stated in the open: \ob{human\_attentive}.)
+
+\pauseq{Explain, in terms of non-interference, why a classifier that only sees a ``suspicion score'' of the text cannot by itself guarantee goal $\varphi_4$ (``the change does what the requester asked'').}{Two proposals that produce the same suspicion score give the same view to the classifier, so it must give both the same verdict. One of them may do what the requester asked and the other may not, because the score does not capture the relation between request and change. Hence no classifier of that view can guarantee $\varphi_4$ on its own.}
+
+\begin{recap}
+\begin{itemize}
+\item \textbf{Monotonicity}: stricter stages cannot add acceptances. \textbf{Routes}: every acceptance is a named guard (needed for the route-risk sum). \textbf{Prefix locality}: later stages don't matter for proposals decided earlier. \textbf{Decision cost}: bounded by depth. \textbf{Budget} and \textbf{taint}: invariants, valid only under complete mediation.
+\item \textbf{Affected routes}: a change to $c$ can affect only routes that $c$ precedes (or is). This is why retraining one stage need not stale everything.
+\item \textbf{Non-interference}: equal views $\Rightarrow$ equal decisions, so a guard can promise only what its view distinguishes; judging content means reading it, which exposes the guard.
+\end{itemize}
+\end{recap}

@@ -1,0 +1,120 @@
+{
+  "key": "kroher2022incremental",
+  "entry": {
+    "doi": "10.1007/s10664-021-10090-6",
+    "year": "2022",
+    "pages": "68",
+    "number": "3",
+    "volume": "27",
+    "journal": "Empirical Software Engineering",
+    "title": "Incremental software product line verification - A performance analysis with dead variable code",
+    "author": "Kr{\\\"o}her, Christian and Fl{\\\"o}ter, Moritz and Gerling, Lea and Schmid, Klaus",
+    "ENTRYTYPE": "article",
+    "ID": "kroher2022incremental"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=Incremental+software+product+line+verification%C2%A0-%C2%A0A+performance+analysis+with+dead+variable+code",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1007/s10664-021-10090-6",
+      "status": 200,
+      "file": "kroher2022incremental.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1007/s10664-021-10090-6",
+      "type": "journal-article",
+      "title": [
+        "Incremental software product line verification - A performance analysis with dead variable code"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "given": "Christian",
+          "family": "Kröher",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Moritz",
+          "family": "Flöter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lea",
+          "family": "Gerling",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Klaus",
+          "family": "Schmid",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Empirical Software Engineering"
+      ],
+      "volume": "27",
+      "issue": "3",
+      "page": null,
+      "article-number": "68",
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            17
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            5
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            17
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "key": "wang2023kst",
+  "entry": {
+    "doi": "10.1109/tse.2023.3315292",
+    "year": "2023",
+    "pages": "4796--4813",
+    "number": "10",
+    "volume": "49",
+    "journal": "IEEE Transactions on Software Engineering",
+    "title": "K-ST: A Formal Executable Semantics of the Structured Text Language for PLCs",
+    "author": "Wang, Kun and Wang, Jingyi and Poskitt, Christopher M. and Chen, Xiangxiang and Sun, Jun and Cheng, Peng",
+    "ENTRYTYPE": "article",
+    "ID": "wang2023kst"
+  },
+  "scholar_url": "https://scholar.google.com/scholar?q=K-ST%3A+A+Formal+Executable+Semantics+of+the+Structured+Text+Language+for+PLCs",
+  "sources": [
+    {
+      "url": "https://api.crossref.org/works/10.1109/tse.2023.3315292",
+      "status": 200,
+      "file": "wang2023kst.crossref.json.gz"
+    }
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "DOI": "10.1109/tse.2023.3315292",
+      "type": "journal-article",
+      "title": [
+        "K-ST: A Formal Executable Semantics of the Structured Text Language for PLCs"
+      ],
+      "subtitle": [],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5523-1330",
+          "authenticated-orcid": false,
+          "given": "Kun",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "College of Control Science and Engineering, Zhejiang University, Zhejiang, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7113-7635",
+          "authenticated-orcid": false,
+          "given": "Jingyi",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Control Science and Engineering, Zhejiang University, Zhejiang, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9376-2471",
+          "authenticated-orcid": false,
+          "given": "Christopher M.",
+          "family": "Poskitt",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Computing and Information Systems, Singapore Management University, Singapore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-4482-3430",
+          "authenticated-orcid": false,
+          "given": "Xiangxiang",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Control Science and Engineering, Zhejiang University, Zhejiang, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3545-1392",
+          "authenticated-orcid": false,
+          "given": "Jun",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Computing and Information Systems, Singapore Management University, Singapore"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4453-2274",
+          "authenticated-orcid": false,
+          "given": "Peng",
+          "family": "Cheng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "College of Control Science and Engineering, Zhejiang University, Zhejiang, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Software Engineering"
+      ],
+      "volume": "49",
+      "issue": "10",
+      "page": "4796-4813",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "event": null,
+      "similarity": 1.0
+    }
+  ]
+}
