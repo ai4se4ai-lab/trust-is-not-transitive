@@ -1,0 +1,233 @@
+[
+ {
+  "mutant": "check-ignores-obligations",
+  "expected_theorem": "T1-soundness",
+  "broken": [
+   [
+    "T1-soundness",
+    "guard",
+    "sat"
+   ],
+   [
+    "T11-transitive",
+    "separation",
+    "sat"
+   ]
+  ],
+  "killed": true
+ },
+ {
+  "mutant": "check-ignores-scope",
+  "expected_theorem": "T1-soundness",
+  "broken": [
+   [
+    "T1-soundness",
+    "guard",
+    "sat"
+   ]
+  ],
+  "killed": true
+ },
+ {
+  "mutant": "gate-does-not-establish",
+  "expected_theorem": "T2-completeness",
+  "broken": [
+   [
+    "T2-completeness",
+    "gate-reduction",
+    "sat"
+   ],
+   [
+    "T12-order",
+    "commute",
+    "sat"
+   ]
+  ],
+  "killed": true
+ },
+ {
+  "mutant": "switch-checks-one-branch",
+  "expected_theorem": "T1-soundness",
+  "broken": [
+   [
+    "T1-soundness",
+    "switch",
+    "sat"
+   ],
+   [
+    "T11-transitive",
+    "switch",
+    "sat"
+   ]
+  ],
+  "killed": true
+ },
+ {
+  "mutant": "check-always-needs-obligations",
+  "expected_theorem": "T2-completeness",
+  "broken": [
+   [
+    "T2-completeness",
+    "guard-reduction",
+    "sat"
+   ]
+  ],
+  "killed": true
+ },
+ {
+  "mutant": "contract-ignores-assumption",
+  "expected_theorem": "T2-completeness",
+  "broken": [
+   [
+    "T2-completeness",
+    "guard-obligation",
+    "sat"
+   ]
+  ],
+  "killed": true
+ },
+ {
+  "mutant": "evidence-not-realized",
+  "expected_theorem": "T1-soundness",
+  "broken": [
+   [
+    "T1-soundness",
+    "guard",
+    "sat"
+   ]
+  ],
+  "killed": true
+ },
+ {
+  "mutant": "gate-credits-without-obligations",
+  "expected_theorem": "T1-soundness",
+  "broken": [
+   [
+    "T1-soundness",
+    "gate",
+    "sat"
+   ],
+   [
+    "T2-completeness",
+    "gate-reduction",
+    "sat"
+   ],
+   [
+    "T11-transitive",
+    "gate",
+    "sat"
+   ]
+  ],
+  "killed": true
+ },
+ {
+  "mutant": "gate-fails-open",
+  "expected_theorem": "T1-soundness",
+  "broken": [
+   [
+    "T1-soundness",
+    "gate",
+    "sat"
+   ],
+   [
+    "T2-completeness",
+    "gate-credited",
+    "unsat"
+   ],
+   [
+    "T5-prefix-locality",
+    "gate",
+    "sat"
+   ]
+  ],
+  "killed": true
+ },
+ {
+  "mutant": "block-falls-through",
+  "expected_theorem": "T1-soundness",
+  "broken": [
+   [
+    "T1-soundness",
+    "guard",
+    "sat"
+   ],
+   [
+    "T5-prefix-locality",
+    "guard",
+    "sat"
+   ]
+  ],
+  "killed": true
+ },
+ {
+  "mutant": "evidence-inherited",
+  "expected_theorem": "T1-soundness",
+  "broken": [
+   [
+    "T1-soundness",
+    "guard",
+    "sat"
+   ],
+   [
+    "T2-completeness",
+    "guard-reduction",
+    "sat"
+   ],
+   [
+    "T11-transitive",
+    "guard",
+    "sat"
+   ],
+   [
+    "T11-transitive",
+    "separation",
+    "sat"
+   ],
+   [
+    "T12-order",
+    "hoist",
+    "sat"
+   ]
+  ],
+  "killed": true
+ },
+ {
+  "mutant": "facts-not-realized",
+  "expected_theorem": "T1-soundness",
+  "broken": [
+   [
+    "T1-soundness",
+    "gate",
+    "sat"
+   ],
+   [
+    "T1-soundness",
+    "guard",
+    "sat"
+   ]
+  ],
+  "killed": true
+ },
+ {
+  "mutant": "uniq-allows-repeats",
+  "expected_theorem": "T2-completeness",
+  "broken": [
+   [
+    "T2-completeness",
+    "gate-credited",
+    "sat"
+   ],
+   [
+    "T2-completeness",
+    "gate-uncredited",
+    "unknown"
+   ],
+   [
+    "T2-completeness",
+    "guard-continue",
+    "sat"
+   ]
+  ],
+  "killed": true
+ }
+]

@@ -1,0 +1,94 @@
+{
+ "version": "hsl-1",
+ "goals": [
+  "phi1",
+  "phi2",
+  "env",
+  "phi3"
+ ],
+ "entry": "g1",
+ "obligations": [
+  {
+   "name": "iid_calibration",
+   "kind": "assumed"
+  },
+  {
+   "name": "config_match",
+   "kind": "checked"
+  },
+  {
+   "name": "structured_view",
+   "kind": "construction",
+   "view": "structured"
+  }
+ ],
+ "layers": [
+  {
+   "name": "L2",
+   "scope": [
+    "phi3"
+   ],
+   "requires": [
+    "iid_calibration",
+    "config_match"
+   ],
+   "view": "raw"
+  },
+  {
+   "name": "L3",
+   "scope": [
+    "phi3"
+   ],
+   "requires": [
+    "iid_calibration",
+    "config_match",
+    "structured_view"
+   ],
+   "view": "structured"
+  }
+ ],
+ "nodes": [
+  {
+   "type": "gate",
+   "id": "g1",
+   "rule": "production_approval",
+   "establishes": "phi1",
+   "next": "g2"
+  },
+  {
+   "type": "gate",
+   "id": "g2",
+   "rule": "secret_egress",
+   "establishes": "phi2",
+   "next": "g3"
+  },
+  {
+   "type": "gate",
+   "id": "g3",
+   "rule": "environment",
+   "establishes": "env",
+   "next": "n2"
+  },
+  {
+   "type": "guard",
+   "id": "n2",
+   "layer": "L2",
+   "evidence": [
+    "iid_calibration",
+    "config_match"
+   ],
+   "next": "n3"
+  },
+  {
+   "type": "guard",
+   "id": "n3",
+   "layer": "L3",
+   "evidence": [
+    "iid_calibration",
+    "config_match",
+    "structured_view"
+   ],
+   "next": null
+  }
+ ]
+}

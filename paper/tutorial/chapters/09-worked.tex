@@ -1,0 +1,144 @@
+% =====================================================================
+\section{Worked Example: DevAgent from End to End}
+\label{ch:worked}
+% =====================================================================
+
+\begin{bigidea}
+This chapter ties everything together on one example. We follow the four traces through the stack, run the composition check, look at the concrete attack the checker produces for the \emph{exposed} variant, certify the statistical routes, and see what a change costs. If you can reproduce this chapter by yourself, you understand the paper.
+\end{bigidea}
+
+\subsection{The setting, once more}
+
+Goals: $\varphi_1$ (production approval), $\varphi_2$ (no secret egress), $\varphi_{\mathrm{env}}$ (environment), $\varphi_3$ (do not act on embedded instructions), $\varphi_4$ (the change does what was asked). The first three are decided exactly by deterministic gates $g_1,g_2,g_3$; the last two are semantic. The paper uses the \textbf{adversarial reading}: a stage that reads raw text additionally requires \ob{safe\_on\_this\_text}, meaning ``its contract holds on this input, either because the input carries no attacker text or because the stage resists it''.
+
+\subsection{Trace by trace}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{@{}lXX@{}}
+\toprule
+\textbf{Trace} & \textbf{What happens in DevAgent} & \textbf{Why}\\
+\midrule
+$\Tstar$ (malicious upload) & Gate $g_2$ denies. & A secret-labeled input is going to an external host. Taint labels decide this exactly. No learned stage is consulted.\\
+$\Tj$ (same + ``reviewer must answer SAFE'') & Gate $g_2$ denies. & Same as $\Tstar$. The sentence addressed to the judge is \emph{never read}, because the judge is never reached.\\
+$\Tb$ (benign, public diagnostics) & Tainted, so it goes to the scorer $v_2$ and then to the person, who accepts on route $n_4$. & The issue text came from outside (tainted). The cost of the design: benign work derived from untrusted text needs a person.\\
+$\Tjp$ (patch with embedded sentence) & Also tainted, same path as $\Tb$: reaches the person, \emph{not the judge}. & The patch violates no deterministic rule, so the gates pass; but the taint switch routes it to the human. The sentence for the judge reaches no judge.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Notice how much of the safety comes from \emph{mechanisms that need no judgment}: labels and routing. The learned judge is exposed only to input that a deterministic gate has verified as untainted.
+
+\subsection{Running the check}
+
+We did this walk in Chapter~\ref{ch:check}. In summary, after $g_1,g_2,g_3$: $A=\{\varphi_1,\varphi_2,\varphi_{\mathrm{env}}\}$, $B=\emptyset$. On the untainted arm gate $c$ is deterministic and so credited: $\varphi_3$ joins $A$ and \ob{safe\_on\_this\_text} joins $B$. At $n_3$ only $\varphi_4$ is open and it is in scope; the judge's obligations are met by its evidence and by $B$. On the tainted arm, $v_2$ adds nothing, so $\varphi_3$ and $\varphi_4$ are open at $n_4$, both in its scope; its evidence declares \ob{safe\_on\_this\_text}, an assumption about people.
+
+The specification is accepted with routes $n_3$ and $n_4$. The report:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+\textbf{Output} & \textbf{Content}\\
+\midrule
+Routes & $n_3$, $n_4$\\
+Residual (assumed obligations the verdict rests on) & $(n_3,\ob{miss\_rate\_bounded})$, $(n_4,\ob{human\_attentive})$, $(n_4,\ob{safe\_on\_this\_text})$, all found necessary\\
+Claims (what gates are trusted to establish) & $(g_1,\varphi_1)$, $(g_2,\varphi_2)$, $(g_3,\varphi_{\mathrm{env}})$, $(c,\varphi_3)$, $(c,\ob{safe\_on\_this\_text})$\\
+Checked at runtime & \ob{config\_match} at $n_3$\\
+By construction & \ob{human\_sees\_provenance} at $n_4$\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Three observations.
+
+\begin{enumerate}
+\item The claims list includes $c$'s goal and fact. So \emph{the correctness of taint tracking is on the record}. If the provenance labels are wrong, the whole untainted arm is unjustified, and the report says so in advance.
+\item \ob{config\_match} is a \emph{checked} obligation: the engine verifies at runtime that the deployed judge is the certified one, and denies otherwise.
+\item The scorer contributes nothing to any goal; it exists to reduce the person's workload. The calculus knows this: its gate has $\varphi=\bot$ and no facts.
+\end{enumerate}
+
+\begin{warning}{The assumption about people}
+A person reading a diff is not immune to text addressed to them, and Non-interference rules out a person who decides $\varphi_3$ from a view without the content. So the person reads the content, and the guarantee on this route rests on an assumption stated in the open, \ob{human\_attentive}. Workload, fatigue and automation bias bear directly on it, and the paper has no data on them.
+\end{warning}
+
+\subsection{The exposed variant and its attack}
+
+Remove the switch and the provenance gate: one raw-text judge $n_3$ covers $\varphi_3$ and $\varphi_4$ for all input. The checker rejects:
+
+\begin{lstlisting}[language={},basicstyle=\ttfamily\footnotesize]
+obligation at n3: safe_on_this_text
+  goal: phi3   path: g1 g2 g3 n3
+\end{lstlisting}
+
+And the tool does more than complain; it builds the attack of the Completeness proof:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}p{4.6cm}X@{}}
+\toprule
+\textbf{Component of the model} & \textbf{Value in the witness}\\
+\midrule
+Gates $g_1,g_2,g_3$ & all pass ($P=$ true)\\
+Judge $n_3$ & verdict $\acc$\\
+Obligations true at $n_3$ ($E(n_3)$) & \ob{config\_match}, \ob{miss\_rate\_bounded}, \ob{human\_attentive}, \ob{human\_sees\_provenance}, \emph{everything except} \ob{safe\_on\_this\_text}\\
+Goals satisfied by the proposal ($S$) & $\varphi_1,\varphi_2,\varphi_{\mathrm{env}},\varphi_4$, \emph{everything except} $\varphi_3$\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Every gate passes. At $n_3$ every obligation holds except the one reported, so the contract promises nothing, and $n_3$ accepts. The proposal violates $\varphi_3$. This is $\Tjp$ of Chapter~\ref{ch:motivation}, \emph{reconstructed mechanically}. The artifact verifies that this witness satisfies $\models$ and is accepted by an engine with the check removed.
+
+\begin{tryit}{generate and inspect the attack}
+import sys
+sys.path[:0] = ["src", ".", "experiments/v2", "formal/calculus"]
+import run
+from tint import hsl
+
+h = run.adversarial(hsl.parse(open("experiments/v2/cases/devagent_exposed_judge.json").read()))
+finding = hsl.check(h).findings[0]
+model = hsl.witness_model(h, finding)
+print(model["passes"])               # all gates pass
+print(model["verdict"])              # {'n3': 'acc'}
+print(model["violated"], model["failing_obligation"])  # phi3 safe_on_this_text
+\end{tryit}
+
+\begin{example}{the threat model matters}
+Under a \emph{benign} threat model, where attackers do not target the guard and the obligation \ob{safe\_on\_this\_text} is not required, the same exposed stack is \textbf{accepted}. That is why a threat model must be stated: the same design is justified against accidents and unjustified against an adversary.
+\end{example}
+
+\subsection{Certifying the statistical routes}
+
+Take $\Goals_s=\{\varphi_3,\varphi_4\}$. Route $n_3$ is statistical because of $\varphi_4$ (a learned judge covers it), and so is $n_4$ (the person). So $Q=\{n_3,n_4\}$. With $\delta=0.05$, each route gets $\delta_r=0.025$. Suppose $N=1800$ labelled samples show ten unsafe acceptances on $n_3$: then
+\[
+u_{n_3}=\mathrm{Beta}^{-1}(1-0.025;\,11,\,1790)\approx0.0102.
+\]
+Route $n_4$ is certified in the same way, from decisions recorded in shadow mode so that the person's error rate is measured rather than assumed. That needs labels and a person's time. The total joint risk is bounded by $u_{n_3}+u_{n_4}$ with probability at least $0.95$.
+
+\subsection{What a change costs}
+
+(See the table in Chapter~\ref{ch:risk}.) Changing any of $g_1,g_2,g_3,s$ stales both routes, because every route descends from them. Changing $v_2$ or $n_4$ stales $n_4$ alone; changing $c$ or $n_3$ stales $n_3$ alone. So the question from the introduction, ``which stages must be re-assessed after retraining a scorer?'', has a plain answer: \emph{one route here}.
+
+\subsection{Answers to the four questions of Chapter 1}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{@{}p{5.2cm}X@{}}
+\toprule
+\textbf{Question} & \textbf{Answer from the framework}\\
+\midrule
+If the judge now reads a different input, does the old evaluation still apply? & Only if the new input still satisfies the judge's obligations (\ob{safe\_on\_this\_text}); the checker shows what supplies it (gate $c$) and what happens if it is removed (rejection plus attack).\\
+Which stages must be reassessed after a scorer is retrained? & The routes the scorer precedes: $n_4$ only (Affected routes + fingerprints).\\
+Does the order of two stages matter? & Gates before guards never hurts; a guard before a gate can (Order theorem).\\
+On what does ``this action is safe'' finally rest? & The residual list, the claims list, and the certificates: exactly the entries printed above.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{recap}
+\begin{itemize}
+\item DevAgent keeps attacker-written text away from the judge by a \emph{deterministic provenance gate} that \emph{provides a fact}. The tainted arm goes to a person whose assumption is stated.
+\item The checker accepts it, lists three necessary assumptions and five claims, and (for the exposed variant) produces a concrete attack.
+\item Certificates for the two statistical routes give $R\le u_{n_3}+u_{n_4}$ with confidence $0.95$; a change to one stage stales only the routes it precedes.
+\end{itemize}
+\end{recap}

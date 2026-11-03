@@ -1,0 +1,114 @@
+% =====================================================================
+\section{Machine-Checked Proofs and the Implementation}
+\label{ch:proofs}
+% =====================================================================
+
+\begin{bigidea}
+Paper proofs can hide mistakes, and the authors report finding several in their own earlier drafts. So the inductive proofs of Chapters~\ref{ch:check}--\ref{ch:structural} were also given to two \textbf{SMT solvers}. This chapter explains how a proof by induction becomes a set of questions a solver can answer, what the solvers' answers do and do not mean, how the authors test that their proof setup is not secretly vacuous, and how the Python library maps onto the theory.
+\end{bigidea}
+
+\subsection{Background: SMT solvers in one page}
+
+\begin{toolbox}{SAT, SMT and validity}
+A \textbf{SAT solver} decides whether a Boolean formula has a satisfying assignment (Chapter~\ref{ch:graphs}). An \textbf{SMT solver} (\emph{Satisfiability Modulo Theories}) does the same for formulas over richer structures: integers, arrays, datatypes, uninterpreted functions. The tools used here are \textbf{Z3} and \textbf{cvc5}.
+
+\textbf{Validity vs.\ satisfiability.} A formula is \emph{valid} if it is true under every assignment. A formula $\psi$ is valid iff its negation $\neg\psi$ is \emph{unsatisfiable}. So to prove a claim with a solver, you ask it to find a counterexample, and a proof is the answer \textsf{unsat} (``no counterexample exists''). A \textsf{sat} answer comes with a model: a concrete counterexample, which is a debugging gift.
+\end{toolbox}
+
+Here is a taste. We encode the Meet lemma's part (a), that $\ok$ is monotone, for two goals, with sets as Booleans (``is goal $i$ in $A$?''):
+
+\begin{tryit}{prove a lemma with Z3}
+from z3 import *          # pip install z3-solver
+a1, a2, b1, b2, s1, s2, r, r2 = Bools('a1 a2 b1 b2 s1 s2 r r2')
+# ok(l, e, A) = all goals in A   or   (req(l) within e  and  every goal in A or scope)
+ok = lambda a1, a2, r: Or(And(a1, a2), And(r, Or(a1, s1), Or(a2, s2)))
+premise = And(Implies(a1, b1), Implies(a2, b2),   # A subset of A'
+              Implies(r, r2),                      # e subset of e' (for the req check)
+              ok(a1, a2, r))                       # ok holds for the smaller sets
+claim = ok(b1, b2, r2)
+s = Solver(); s.add(Not(Implies(premise, claim)))
+print(s.check())          # unsat  => the lemma is valid
+\end{tryit}
+
+The same technique \emph{finds} the failure of the false generalization of Chapter~\ref{ch:graphs}: asking whether two ``ok'' situations can have a componentwise meet that is not ok returns \textsf{sat}, with a counterexample in which one situation has all goals and no evidence, and the other has full evidence and partial goals.
+
+\subsection{How a proof by induction becomes solver questions}
+
+The paper states its definitions (the semantics, $\models$, $\chk$) as \emph{first-order equations over an inductive datatype of terms}, one equation per constructor. Sets are arrays from names to Booleans; the components of a model are \emph{unconstrained arrays}, so ``for every model'' is literal.
+
+A structural induction splits into one closed proof goal per constructor:
+
+\begin{itemize}
+\item \textbf{Base} ($\deny$): the claim follows from the equations.
+\item \textbf{Step} (gate, guard, switch): \emph{assume} the claim for the sub-terms (these assumptions are added as premises, the induction hypothesis instantiated for the sub-hierarchy), and prove the claim for the whole term.
+\end{itemize}
+
+Existential witnesses (as in Completeness) appear as explicit \emph{updates} of the model arrays: ``$P$ with $n\mapsto\text{true}$''. A proof goal is valid iff its negation is unsatisfiable; the solver checks this.
+
+\begin{story}{A recipe, not a magic box}
+The solver does not understand ``induction''. The authors' script generates the base and step goals and decides which induction hypotheses to supply. The solver only checks that, \emph{given those premises}, each step follows. That is why the paper lists the induction schema as part of the \emph{trusted base}.
+\end{story}
+
+\subsection{What the results mean, and what they do not}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}lXr@{}}
+\toprule
+\textbf{Item} & \textbf{What was done} & \textbf{Result}\\
+\midrule
+Proof goals (E1) & every obligation sent to Z3 and to cvc5 & 66/66 proved by each\\
+Vacuity check & the premises of each goal tested for satisfiability (a goal with contradictory premises is proved trivially) & 63 satisfiable, 1 unknown, 2 have no premises\\
+Proof mutants (E2) & definitions altered the way a mistaken design would be (e.g.\ making evidence inherited); each should break the proof & 13/13 killed with a countermodel\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Why the extra checks? An SMT proof can succeed for the wrong reason: if the premises are contradictory, \emph{anything} follows (``from falsehood, anything''). The \textbf{vacuity check} guards against that. A \textbf{proof mutant} tests the opposite worry: does the proof really depend on the definitions it claims to? If you change a definition (e.g.\ make the guard inherit evidence, which is exactly the transitive-reasoning error) and the theorem still ``proves'', then the proof was not using what you thought. The paper reports that making evidence inherited breaks soundness \emph{at the guard case}, which ties the title's claim (trust is not transitive) to the actual proof.
+
+\begin{warning}{What is still trusted}
+(1) Z3 or cvc5 themselves. (2) The script that states goals and applies the induction schema, including the case splits connecting the cases of a theorem. (3) The correspondence between the paper's notation and the equations. (4) The correspondence between the equations and the Python code, which is \emph{tested, not proved}. Also: cvc5 reads SMT-LIB printed from the \emph{same} formula, so its independence from Z3 does not extend to the encoding.
+
+Some theorems are \emph{paper proofs only}: Exactness, Complexity, Correlated conditions, Affected routes, Necessary assumptions, Route risk, Certified risk, Veto and cascade. Some mechanized items are close to definitional (Taint and Non-interference among them), and the count of proof goals is no measure of depth. Porting to a proof assistant such as Lean or Coq would remove the unchecked script; the authors list this as future work.
+\end{warning}
+
+\subsection{The implementation}
+
+The library \tint{} is written in Python. Its pieces, in the order a specification travels:
+
+\begin{enumerate}
+\item \textbf{Parser.} Enforces a closed JSON schema: unknown fields and duplicate keys are rejected.
+\item \textbf{Checker} (\code{hsl.check}). Implements the algorithm of Chapter~\ref{ch:graphs} with goal and fact sets as integers (bit vectors). Findings carry a code, a node, the missing name, a witness path and the violated goal; a separate function (\code{hsl.witness\_model}) turns a finding into a complete model. Warnings report evidence dropped because of its view.
+\item \textbf{Engine.} Interprets a checked hierarchy and \textbf{fails closed}: an exception in a stage, a malformed verdict, or a failed checked obligation \emph{denies}. It has one decision path, used for deployment and (with certificates ignored) for calibration, so \emph{the certified function is the deployed one}. Its constructor refuses a rejected specification, a stage without an implementation, and a checked obligation without a predicate. Guard inputs are built in one function, and veto stages with a non-raw view do not receive text.
+\end{enumerate}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\small
+\begin{tabularx}{\textwidth}{@{}p{4.2cm}p{4.6cm}X@{}}
+\toprule
+\textbf{Concept} & \textbf{Code} & \textbf{Evidence}\\
+\midrule
+Terms, semantics, $\models$ & \code{core.py}, \code{Engine.\_run} & proofs; E3, E4\\
+$\chk$, $\ok$ & \code{core.py}, \code{hsl.check} & proofs; E3--E5, E7\\
+Algorithm (graph pass + refinement) & \code{hsl.check}, \code{\_refine} & Exactness theorem; E3, E7, E14\\
+Countermodel & \code{hsl.witness\_model} & Completeness theorem; E6\\
+Certificates & \code{certify}, \code{gated} & Certified risk; E12b\\
+Fingerprints & \code{prefix\_fingerprints} & Affected routes; E11, E12b\\
+Reference interpreter & \code{reference.py} & E3, E4\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+(The ``reference'' is a second, deliberately simple interpreter written directly from the equations, used as an oracle.)
+
+\pauseq{Why does it matter that \emph{calibration} uses the same decision path as \emph{deployment}? What could go wrong if the calibration code were a separate re-implementation?}{The certificate bounds the risk of the function that was calibrated. If calibration ran a different implementation (different thresholds, a different order of stages, different handling of errors), then the bound would describe a function that is not the deployed one: it would be a bound for the wrong system. Using one code path with certificates ignored during calibration ensures that the calibrated function and the deployed function are the same.}
+
+\begin{recap}
+\begin{itemize}
+\item SMT solvers prove by failing to find a counterexample. A structural induction becomes one goal per constructor.
+\item All 66 inductive goals are proved by Z3 and cvc5; premises are checked not to be contradictory (vacuity); 13 deliberately wrong definitions are all caught (mutants).
+\item The trusted base includes the solvers, the induction script, and the notation-to-equation and equation-to-Python correspondences; several theorems are paper proofs only.
+\item The engine fails closed; one decision path serves deployment and calibration.
+\end{itemize}
+\end{recap}

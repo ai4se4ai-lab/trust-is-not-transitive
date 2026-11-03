@@ -1,0 +1,332 @@
+{
+ "delta": 0.05,
+ "laws": 40,
+ "mean_stale_fraction": 0.6325,
+ "min_coverage_routes": 0.9233333333333333,
+ "min_coverage_sum": 0.96,
+ "n": 400,
+ "replications": 300,
+ "rows": [
+  {
+   "coverage_routes": 0.9566666666666667,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.24980324589688205,
+   "routes": 3,
+   "stale": 3,
+   "true_risk": 0.16801751257112585
+  },
+  {
+   "coverage_routes": 0.9866666666666667,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.071435352210047,
+   "routes": 2,
+   "stale": 2,
+   "true_risk": 0.036908582357101045
+  },
+  {
+   "coverage_routes": 0.9666666666666667,
+   "coverage_sum": 0.9666666666666667,
+   "mean_sum_bound": 0.0523389856009754,
+   "routes": 1,
+   "stale": 0,
+   "true_risk": 0.033082951483297644
+  },
+  {
+   "coverage_routes": 0.9833333333333333,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.09790254620053238,
+   "routes": 2,
+   "stale": 2,
+   "true_risk": 0.05638247437467264
+  },
+  {
+   "coverage_routes": 0.96,
+   "coverage_sum": 0.96,
+   "mean_sum_bound": 0.05465849485094237,
+   "routes": 1,
+   "stale": 1,
+   "true_risk": 0.03584916543928394
+  },
+  {
+   "coverage_routes": 0.9733333333333334,
+   "coverage_sum": 0.9966666666666667,
+   "mean_sum_bound": 0.16450951223514282,
+   "routes": 2,
+   "stale": 2,
+   "true_risk": 0.11058334638877942
+  },
+  {
+   "coverage_routes": 0.9733333333333334,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.169094330456423,
+   "routes": 3,
+   "stale": 1,
+   "true_risk": 0.09857832511360953
+  },
+  {
+   "coverage_routes": 0.99,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.10881336797843848,
+   "routes": 2,
+   "stale": 1,
+   "true_risk": 0.06374396198832899
+  },
+  {
+   "coverage_routes": 0.98,
+   "coverage_sum": 0.9966666666666667,
+   "mean_sum_bound": 0.1669327648450887,
+   "routes": 2,
+   "stale": 1,
+   "true_risk": 0.11136910561219338
+  },
+  {
+   "coverage_routes": 0.9866666666666667,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.14913778546343223,
+   "routes": 2,
+   "stale": 2,
+   "true_risk": 0.09813112732764986
+  },
+  {
+   "coverage_routes": 0.9466666666666667,
+   "coverage_sum": 0.9966666666666667,
+   "mean_sum_bound": 0.08844850569627524,
+   "routes": 2,
+   "stale": 0,
+   "true_risk": 0.04885716122156322
+  },
+  {
+   "coverage_routes": 0.98,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.13420661751030674,
+   "routes": 3,
+   "stale": 3,
+   "true_risk": 0.07378508364326403
+  },
+  {
+   "coverage_routes": 0.9633333333333334,
+   "coverage_sum": 0.9633333333333334,
+   "mean_sum_bound": 0.05782981636425265,
+   "routes": 1,
+   "stale": 0,
+   "true_risk": 0.038133103553482185
+  },
+  {
+   "coverage_routes": 0.9633333333333334,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.14141053437570975,
+   "routes": 2,
+   "stale": 0,
+   "true_risk": 0.09018379667280935
+  },
+  {
+   "coverage_routes": 0.99,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.11217032877080385,
+   "routes": 3,
+   "stale": 3,
+   "true_risk": 0.062037971940501854
+  },
+  {
+   "coverage_routes": 0.98,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.2853535283869798,
+   "routes": 5,
+   "stale": 2,
+   "true_risk": 0.16665560902548462
+  },
+  {
+   "coverage_routes": 0.99,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.05005626718847101,
+   "routes": 2,
+   "stale": 1,
+   "true_risk": 0.0215328413203983
+  },
+  {
+   "coverage_routes": 0.98,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.12218957157794477,
+   "routes": 4,
+   "stale": 3,
+   "true_risk": 0.05109895860303596
+  },
+  {
+   "coverage_routes": 0.98,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.11779552789238515,
+   "routes": 3,
+   "stale": 3,
+   "true_risk": 0.06680429532041658
+  },
+  {
+   "coverage_routes": 0.9866666666666667,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.0813711775841561,
+   "routes": 2,
+   "stale": 1,
+   "true_risk": 0.04223463023675445
+  },
+  {
+   "coverage_routes": 0.9933333333333333,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.16147191262891872,
+   "routes": 5,
+   "stale": 2,
+   "true_risk": 0.06862661425070388
+  },
+  {
+   "coverage_routes": 0.96,
+   "coverage_sum": 0.96,
+   "mean_sum_bound": 0.0939188046167441,
+   "routes": 1,
+   "stale": 0,
+   "true_risk": 0.06906294806117173
+  },
+  {
+   "coverage_routes": 0.9666666666666667,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.1439726785728509,
+   "routes": 2,
+   "stale": 0,
+   "true_risk": 0.0929449112231443
+  },
+  {
+   "coverage_routes": 0.9666666666666667,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.08317829055977462,
+   "routes": 2,
+   "stale": 2,
+   "true_risk": 0.043780330081732766
+  },
+  {
+   "coverage_routes": 0.9633333333333334,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.1935231447716487,
+   "routes": 4,
+   "stale": 3,
+   "true_risk": 0.10472404206384413
+  },
+  {
+   "coverage_routes": 0.9866666666666667,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.10220171400352374,
+   "routes": 3,
+   "stale": 1,
+   "true_risk": 0.05208402494565371
+  },
+  {
+   "coverage_routes": 0.96,
+   "coverage_sum": 0.96,
+   "mean_sum_bound": 0.06469447917758751,
+   "routes": 1,
+   "stale": 0,
+   "true_risk": 0.044503988468375104
+  },
+  {
+   "coverage_routes": 0.9733333333333334,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.1504152925882243,
+   "routes": 3,
+   "stale": 3,
+   "true_risk": 0.08578451404133457
+  },
+  {
+   "coverage_routes": 0.98,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.11815137499636244,
+   "routes": 2,
+   "stale": 1,
+   "true_risk": 0.07888974535378677
+  },
+  {
+   "coverage_routes": 0.9566666666666667,
+   "coverage_sum": 0.9966666666666667,
+   "mean_sum_bound": 0.08886179838812532,
+   "routes": 2,
+   "stale": 2,
+   "true_risk": 0.05029420516301547
+  },
+  {
+   "coverage_routes": 0.9233333333333333,
+   "coverage_sum": 0.9966666666666667,
+   "mean_sum_bound": 0.1312466405540081,
+   "routes": 2,
+   "stale": 2,
+   "true_risk": 0.08611037493770288
+  },
+  {
+   "coverage_routes": 0.9766666666666667,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.0896147115120719,
+   "routes": 3,
+   "stale": 3,
+   "true_risk": 0.03771021575805082
+  },
+  {
+   "coverage_routes": 0.9933333333333333,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.2039947658508623,
+   "routes": 4,
+   "stale": 2,
+   "true_risk": 0.12080005190168035
+  },
+  {
+   "coverage_routes": 0.9666666666666667,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.14318694400055132,
+   "routes": 3,
+   "stale": 2,
+   "true_risk": 0.0820109940017868
+  },
+  {
+   "coverage_routes": 0.9866666666666667,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.13204559354390052,
+   "routes": 3,
+   "stale": 2,
+   "true_risk": 0.07290557960189478
+  },
+  {
+   "coverage_routes": 0.9666666666666667,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.09822701231231103,
+   "routes": 2,
+   "stale": 2,
+   "true_risk": 0.057180064998336735
+  },
+  {
+   "coverage_routes": 0.9666666666666667,
+   "coverage_sum": 0.9966666666666667,
+   "mean_sum_bound": 0.11111344874694187,
+   "routes": 2,
+   "stale": 1,
+   "true_risk": 0.06730432292995804
+  },
+  {
+   "coverage_routes": 0.9766666666666667,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.11054947112259171,
+   "routes": 2,
+   "stale": 2,
+   "true_risk": 0.06924575807942453
+  },
+  {
+   "coverage_routes": 0.9866666666666667,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.20370249075373456,
+   "routes": 4,
+   "stale": 4,
+   "true_risk": 0.11048682433721785
+  },
+  {
+   "coverage_routes": 0.9666666666666667,
+   "coverage_sum": 1.0,
+   "mean_sum_bound": 0.10867602046477967,
+   "routes": 2,
+   "stale": 1,
+   "true_risk": 0.06829092740170402
+  }
+ ],
+ "wilson_upper_of_worst_law": 0.9587936436681633
+}

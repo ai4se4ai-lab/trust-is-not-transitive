@@ -16,3 +16,4 @@ build/
 archive/local/
 .tools/
 docs/literature/evidence/*.html
+docs/literature/*

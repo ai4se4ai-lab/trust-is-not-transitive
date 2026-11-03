@@ -1,0 +1,83 @@
+{
+ "version": "hsl-1",
+ "goals": [
+  "injection",
+  "goal_alignment",
+  "no_insecure_code"
+ ],
+ "entry": "pg",
+ "obligations": [
+  {
+   "name": "miss_rate_bounded",
+   "kind": "assumed"
+  }
+ ],
+ "layers": [
+  {
+   "name": "PromptGuard",
+   "scope": [],
+   "requires": [
+    "miss_rate_bounded"
+   ],
+   "view": "raw"
+  },
+  {
+   "name": "AlignmentCheck",
+   "scope": [],
+   "requires": [
+    "miss_rate_bounded"
+   ],
+   "view": "raw"
+  },
+  {
+   "name": "CodeShield",
+   "scope": [],
+   "requires": [
+    "miss_rate_bounded"
+   ],
+   "view": "raw"
+  },
+  {
+   "name": "Accept",
+   "scope": [],
+   "requires": [],
+   "view": "metadata"
+  }
+ ],
+ "nodes": [
+  {
+   "type": "gate",
+   "id": "pg",
+   "rule": "promptguard",
+   "establishes": "injection",
+   "next": "ac",
+   "layer": "PromptGuard",
+   "evidence": []
+  },
+  {
+   "type": "gate",
+   "id": "ac",
+   "rule": "alignmentcheck",
+   "establishes": "goal_alignment",
+   "next": "cs",
+   "layer": "AlignmentCheck",
+   "evidence": []
+  },
+  {
+   "type": "gate",
+   "id": "cs",
+   "rule": "codeshield",
+   "establishes": "no_insecure_code",
+   "next": "done",
+   "layer": "CodeShield",
+   "evidence": []
+  },
+  {
+   "type": "guard",
+   "id": "done",
+   "layer": "Accept",
+   "evidence": [],
+   "next": null
+  }
+ ]
+}

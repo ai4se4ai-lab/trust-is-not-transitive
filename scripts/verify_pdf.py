@@ -15,7 +15,7 @@ def main():
     assert 'Trust Is Not Transitive' in text
     # PDF extraction inserts line/page breaks inside otherwise intact phrases.
     normalized=' '.join(text.lower().split())
-    assert 'exploratory' in normalized and 'zero benign utility' in normalized
+    assert 'soundness' in normalized and 'completeness' in normalized
     log=(ROOT/'paper/main.log').read_text(encoding='utf-8',errors='replace')
     assert not re.search(r'Overfull \\[hv]box',log),'Overfull TeX boxes require layout repair'
     assert 'undefined references' not in log

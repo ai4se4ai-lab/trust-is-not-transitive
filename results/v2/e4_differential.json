@@ -1,0 +1,31 @@
+{
+ "accepted": 18183,
+ "check_disagreements": 0,
+ "contract_accepting_runs": 75844,
+ "contract_runs": 343793,
+ "contract_runs_rejected": 404320,
+ "decisions": 800000,
+ "engine_disagreements": 0,
+ "mean_reachable_nodes": 6.0377,
+ "reachable_nodes": 241508,
+ "refined": 10604,
+ "rejected": 21817,
+ "rejected_with_sampled_violation": 16657,
+ "residual_disagreements": 0,
+ "route_disagreements": 0,
+ "semantic_compared": 15591,
+ "semantic_disagreements": 0,
+ "specs": 40000,
+ "unsafe_accepted": 0,
+ "unsafe_rejected": 50537,
+ "witness_failures": 0,
+ "witnesses": 49482,
+ "z3_adequacy": {
+  "failures": {
+   "check": 0,
+   "eval": 0,
+   "wf": 0
+  },
+  "terms": 600
+ }
+}

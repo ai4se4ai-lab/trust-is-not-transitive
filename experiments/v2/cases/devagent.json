@@ -1,0 +1,138 @@
+{
+ "version": "hsl-1",
+ "goals": [
+  "phi1",
+  "phi2",
+  "env",
+  "phi3",
+  "phi4"
+ ],
+ "entry": "g1",
+ "obligations": [
+  {
+   "name": "miss_rate_bounded",
+   "kind": "assumed"
+  },
+  {
+   "name": "config_match",
+   "kind": "checked"
+  },
+  {
+   "name": "human_sees_provenance",
+   "kind": "construction"
+  },
+  {
+   "name": "human_attentive",
+   "kind": "assumed"
+  },
+  {
+   "name": "safe_on_this_text",
+   "kind": "assumed"
+  }
+ ],
+ "layers": [
+  {
+   "name": "L2",
+   "scope": [],
+   "requires": [
+    "miss_rate_bounded"
+   ],
+   "view": "raw"
+  },
+  {
+   "name": "L3",
+   "scope": [
+    "phi4"
+   ],
+   "requires": [
+    "miss_rate_bounded",
+    "config_match"
+   ],
+   "view": "raw"
+  },
+  {
+   "name": "L4",
+   "scope": [
+    "phi3",
+    "phi4"
+   ],
+   "requires": [
+    "human_sees_provenance",
+    "human_attentive"
+   ],
+   "view": "raw"
+  }
+ ],
+ "nodes": [
+  {
+   "type": "gate",
+   "id": "g1",
+   "rule": "production_approval",
+   "establishes": "phi1",
+   "next": "g2"
+  },
+  {
+   "type": "gate",
+   "id": "g2",
+   "rule": "secret_egress",
+   "establishes": "phi2",
+   "next": "g3"
+  },
+  {
+   "type": "gate",
+   "id": "g3",
+   "rule": "environment",
+   "establishes": "env",
+   "next": "s"
+  },
+  {
+   "type": "switch",
+   "id": "s",
+   "condition": "input_tainted",
+   "then": "v2",
+   "otherwise": "c"
+  },
+  {
+   "type": "gate",
+   "id": "v2",
+   "rule": "scorer",
+   "establishes": null,
+   "next": "n4",
+   "layer": "L2",
+   "evidence": [
+    "miss_rate_bounded"
+   ]
+  },
+  {
+   "type": "guard",
+   "id": "n4",
+   "layer": "L4",
+   "evidence": [
+    "human_sees_provenance",
+    "human_attentive",
+    "safe_on_this_text"
+   ],
+   "next": null
+  },
+  {
+   "type": "gate",
+   "id": "c",
+   "rule": "no_untrusted_input",
+   "establishes": "phi3",
+   "next": "n3",
+   "provides": [
+    "safe_on_this_text"
+   ]
+  },
+  {
+   "type": "guard",
+   "id": "n3",
+   "layer": "L3",
+   "evidence": [
+    "miss_rate_bounded",
+    "config_match"
+   ],
+   "next": null
+  }
+ ]
+}

@@ -6,6 +6,20 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 16
   },
+  "resAdequacyFailures": {
+    "pointer": "/z3_adequacy/failures#sum",
+    "rendered": "0",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 0
+  },
+  "resAdequacyTerms": {
+    "pointer": "/z3_adequacy/terms",
+    "rendered": "600",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 600
+  },
   "resBaselineThreshold": {
     "pointer": "/studies/primary/baseline_threshold",
     "rendered": "0.20",
@@ -19,6 +33,55 @@
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 10000
+  },
+  "resBoundBelowNominal": {
+    "pointer": "/rows#below-nominal",
+    "rendered": "2",
+    "source": "results/v2/e12_route_bounds.json",
+    "source_sha256": "1215ff89fde79b6981148645476dcade5b6aabccece2363106f2084b27010f04",
+    "value": 2
+  },
+  "resBoundCoverageRoutes": {
+    "pointer": "/min_coverage_routes",
+    "rendered": "0.949",
+    "source": "results/v2/e12_route_bounds.json",
+    "source_sha256": "1215ff89fde79b6981148645476dcade5b6aabccece2363106f2084b27010f04",
+    "value": 0.949
+  },
+  "resBoundLaws": {
+    "pointer": "/laws",
+    "rendered": "40",
+    "source": "results/v2/e12_route_bounds.json",
+    "source_sha256": "1215ff89fde79b6981148645476dcade5b6aabccece2363106f2084b27010f04",
+    "value": 40
+  },
+  "resBoundMaxUnder": {
+    "pointer": "/rows#max-risk-over-product",
+    "rendered": "5.7",
+    "source": "results/v2/e12_route_bounds.json",
+    "source_sha256": "1215ff89fde79b6981148645476dcade5b6aabccece2363106f2084b27010f04",
+    "value": 5.691514915571042
+  },
+  "resBoundMinUnder": {
+    "pointer": "/min_understates_laws",
+    "rendered": "4",
+    "source": "results/v2/e12_route_bounds.json",
+    "source_sha256": "1215ff89fde79b6981148645476dcade5b6aabccece2363106f2084b27010f04",
+    "value": 4
+  },
+  "resBoundProductUnder": {
+    "pointer": "/product_understates_laws",
+    "rendered": "18",
+    "source": "results/v2/e12_route_bounds.json",
+    "source_sha256": "1215ff89fde79b6981148645476dcade5b6aabccece2363106f2084b27010f04",
+    "value": 18
+  },
+  "resBoundSumRatio": {
+    "pointer": "/mean_ratio_sum_to_whole",
+    "rendered": "1.25",
+    "source": "results/v2/e12_route_bounds.json",
+    "source_sha256": "1215ff89fde79b6981148645476dcade5b6aabccece2363106f2084b27010f04",
+    "value": 1.254236461089706
   },
   "resCalEquivCompared": {
     "pointer": "/calibration_equivalence/exploratory/compared",
@@ -40,6 +103,34 @@
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 1800
+  },
+  "resCascadeLast": {
+    "pointer": "/cascade/-1/last_layer_fraction#percent",
+    "rendered": "1.6",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 1.5625
+  },
+  "resCascadeMean": {
+    "pointer": "/cascade/-1/mean_fraction#percent",
+    "rendered": "50.8",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 50.78125
+  },
+  "resCascadeRoutes": {
+    "pointer": "/cascade/-1/routes",
+    "rendered": "64",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 64
+  },
+  "resCascadeStale": {
+    "pointer": "/cascade/-1#mean-stale-routes",
+    "rendered": "32.5",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 32.5
   },
   "resCheckerMaxEdges": {
     "pointer": "/studies/primary/checker/scalability#max-edges",
@@ -97,12 +188,117 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 5.0
   },
+  "resConstructorSeconds": {
+    "pointer": "/-1/constructor_seconds",
+    "rendered": "0.25",
+    "source": "results/v2/timing/e10_overhead.json",
+    "source_sha256": "14744067962d37a3328744ed75018516e1dcf70f420906d3093b5379f2fe50b8",
+    "value": 0.25262369999836665
+  },
+  "resContinuityCompared": {
+    "pointer": "#sum-compared",
+    "rendered": "48{,}000",
+    "source": "results/v2/e8_continuity.json",
+    "source_sha256": "8ebb664c6dc7340319e233738391f146d152e204046820b8db36573b657e7a62",
+    "value": 48000
+  },
+  "resContinuityDisagreements": {
+    "pointer": "#sum-disagreements",
+    "rendered": "0",
+    "source": "results/v2/e8_continuity.json",
+    "source_sha256": "8ebb664c6dc7340319e233738391f146d152e204046820b8db36573b657e7a62",
+    "value": 0
+  },
   "resCoreCoverage": {
     "pointer": "/core_coverage",
     "rendered": "99.85",
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 99.85185185185185
+  },
+  "resCorpusAllDet": {
+    "pointer": "/all_deterministic",
+    "rendered": "3",
+    "source": "results/v2/e15_corpus.json",
+    "source_sha256": "9a5224bcce32633a3092f3992779582944f4de8349b8f8190b2e985bf5148d41",
+    "value": 3
+  },
+  "resCorpusAllStat": {
+    "pointer": "/all_statistical",
+    "rendered": "47",
+    "source": "results/v2/e15_corpus.json",
+    "source_sha256": "9a5224bcce32633a3092f3992779582944f4de8349b8f8190b2e985bf5148d41",
+    "value": 47
+  },
+  "resCorpusConfigs": {
+    "pointer": "/configurations",
+    "rendered": "138",
+    "source": "results/v2/e15_corpus.json",
+    "source_sha256": "9a5224bcce32633a3092f3992779582944f4de8349b8f8190b2e985bf5148d41",
+    "value": 138
+  },
+  "resCorpusDeterministic": {
+    "pointer": "/kinds/deterministic",
+    "rendered": "10",
+    "source": "results/v2/e15_corpus.json",
+    "source_sha256": "9a5224bcce32633a3092f3992779582944f4de8349b8f8190b2e985bf5148d41",
+    "value": 10
+  },
+  "resCorpusFlows": {
+    "pointer": "/distinct_flows",
+    "rendered": "78",
+    "source": "results/v2/e15_corpus.json",
+    "source_sha256": "9a5224bcce32633a3092f3992779582944f4de8349b8f8190b2e985bf5148d41",
+    "value": 78
+  },
+  "resCorpusLlm": {
+    "pointer": "/kinds/llm_prompted",
+    "rendered": "42",
+    "source": "results/v2/e15_corpus.json",
+    "source_sha256": "9a5224bcce32633a3092f3992779582944f4de8349b8f8190b2e985bf5148d41",
+    "value": 42
+  },
+  "resCorpusMax": {
+    "pointer": "/max_stages",
+    "rendered": "9",
+    "source": "results/v2/e15_corpus.json",
+    "source_sha256": "9a5224bcce32633a3092f3992779582944f4de8349b8f8190b2e985bf5148d41",
+    "value": 9
+  },
+  "resCorpusMedian": {
+    "pointer": "/median_stages",
+    "rendered": "2",
+    "source": "results/v2/e15_corpus.json",
+    "source_sha256": "9a5224bcce32633a3092f3992779582944f4de8349b8f8190b2e985bf5148d41",
+    "value": 2.0
+  },
+  "resCorpusService": {
+    "pointer": "/kinds/model_or_service",
+    "rendered": "60",
+    "source": "results/v2/e15_corpus.json",
+    "source_sha256": "9a5224bcce32633a3092f3992779582944f4de8349b8f8190b2e985bf5148d41",
+    "value": 60
+  },
+  "resCorpusTool": {
+    "pointer": "/with_tool_rails",
+    "rendered": "4",
+    "source": "results/v2/e15_corpus.json",
+    "source_sha256": "9a5224bcce32633a3092f3992779582944f4de8349b8f8190b2e985bf5148d41",
+    "value": 4
+  },
+  "resCorpusTransforming": {
+    "pointer": "/kinds/transforming",
+    "rendered": "8",
+    "source": "results/v2/e15_corpus.json",
+    "source_sha256": "9a5224bcce32633a3092f3992779582944f4de8349b8f8190b2e985bf5148d41",
+    "value": 8
+  },
+  "resCorpusWithRails": {
+    "pointer": "/with_rails",
+    "rendered": "56",
+    "source": "results/v2/e15_corpus.json",
+    "source_sha256": "9a5224bcce32633a3092f3992779582944f4de8349b8f8190b2e985bf5148d41",
+    "value": 56
   },
   "resCostApproval": {
     "pointer": "/design/layer_costs/L4",
@@ -160,6 +356,13 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 2048
   },
+  "resDecisionMs": {
+    "pointer": "/-1/decision_microseconds#ms",
+    "rendered": "1.7",
+    "source": "results/v2/timing/e10_overhead.json",
+    "source_sha256": "14744067962d37a3328744ed75018516e1dcf70f420906d3093b5379f2fe50b8",
+    "value": 1.7370189999928698
+  },
   "resDependenceFirst": {
     "pointer": "/studies/primary/correlation/conditional_miss_rates/0",
     "rendered": "0.10",
@@ -209,12 +412,138 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 600
   },
+  "resDiffAccepted": {
+    "pointer": "/accepted",
+    "rendered": "18{,}183",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 18183
+  },
+  "resDiffAcceptingRuns": {
+    "pointer": "/contract_accepting_runs",
+    "rendered": "75{,}844",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 75844
+  },
+  "resDiffContractRuns": {
+    "pointer": "/contract_runs",
+    "rendered": "343{,}793",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 343793
+  },
+  "resDiffDecisions": {
+    "pointer": "/decisions",
+    "rendered": "800{,}000",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 800000
+  },
+  "resDiffDisagreements": {
+    "pointer": "#sum-disagreements",
+    "rendered": "0",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 0
+  },
+  "resDiffMeanReachable": {
+    "pointer": "/mean_reachable_nodes",
+    "rendered": "6.0",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 6.0377
+  },
+  "resDiffRejected": {
+    "pointer": "/rejected",
+    "rendered": "21{,}817",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 21817
+  },
+  "resDiffRejectedFound": {
+    "pointer": "/rejected_with_sampled_violation",
+    "rendered": "16{,}657",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 16657
+  },
+  "resDiffResidualDisagreements": {
+    "pointer": "/residual_disagreements",
+    "rendered": "0",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 0
+  },
+  "resDiffSemantic": {
+    "pointer": "/semantic_compared",
+    "rendered": "15{,}591",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 15591
+  },
+  "resDiffSemanticDisagreements": {
+    "pointer": "/semantic_disagreements",
+    "rendered": "0",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 0
+  },
+  "resDiffSpecs": {
+    "pointer": "/specs",
+    "rendered": "40{,}000",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 40000
+  },
+  "resDiffUnsafeAccepted": {
+    "pointer": "/unsafe_accepted",
+    "rendered": "0",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 0
+  },
+  "resDiffUnsafeRejected": {
+    "pointer": "/unsafe_rejected",
+    "rendered": "50{,}537",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 50537
+  },
+  "resDiffWitnessFailures": {
+    "pointer": "/witness_failures",
+    "rendered": "0",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 0
+  },
+  "resDiffWitnesses": {
+    "pointer": "/witnesses",
+    "rendered": "49{,}482",
+    "source": "results/v2/e4_differential.json",
+    "source_sha256": "372ce5ec43b6d88b5e19643898961fa9cbd4e7fe7fcdfb6edbbd5747a61099e3",
+    "value": 49482
+  },
   "resEnvCpuCount": {
     "pointer": "/studies/primary/environment/cpu_count",
     "rendered": "22",
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 22
+  },
+  "resEnvCpus": {
+    "pointer": "/cpus",
+    "rendered": "22",
+    "source": "results/v2/environment.json",
+    "source_sha256": "a20d46dc625bae01e719e493597f94ecd1579be154da668c8da4754f8eb6c3fc",
+    "value": 22
+  },
+  "resEnvCvc": {
+    "pointer": "/versions/cvc5",
+    "rendered": "1.4.2",
+    "source": "results/v2/environment.json",
+    "source_sha256": "a20d46dc625bae01e719e493597f94ecd1579be154da668c8da4754f8eb6c3fc",
+    "value": "1.4.2"
   },
   "resEnvNumpy": {
     "pointer": "/studies/primary/environment/versions/numpy",
@@ -258,6 +587,20 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": "1.16.2"
   },
+  "resEnvVersionPython": {
+    "pointer": "/python",
+    "rendered": "3.13.14",
+    "source": "results/v2/environment.json",
+    "source_sha256": "a20d46dc625bae01e719e493597f94ecd1579be154da668c8da4754f8eb6c3fc",
+    "value": "3.13.14"
+  },
+  "resEnvZthree": {
+    "pointer": "/versions/z3-solver",
+    "rendered": "5.3.3.0",
+    "source": "results/v2/environment.json",
+    "source_sha256": "a20d46dc625bae01e719e493597f94ecd1579be154da668c8da4754f8eb6c3fc",
+    "value": "5.3.3.0"
+  },
   "resExampleBound": {
     "pointer": "/studies/exploratory/selections/0/upper_risk#percent",
     "rendered": "12.34",
@@ -292,6 +635,48 @@
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 0.1
+  },
+  "resExhaustiveAccepted": {
+    "pointer": "#sum-accepted",
+    "rendered": "1{,}170{,}859",
+    "source": "results/v2/e3_exhaustive.json",
+    "source_sha256": "eead3be0adf3159c0e0b71dbfe9956c79f677809f59e90280bbd302b7f70757c",
+    "value": 1170859
+  },
+  "resExhaustiveDisagreements": {
+    "pointer": "#sum-equation-disagreements",
+    "rendered": "0",
+    "source": "results/v2/e3_exhaustive.json",
+    "source_sha256": "eead3be0adf3159c0e0b71dbfe9956c79f677809f59e90280bbd302b7f70757c",
+    "value": 0
+  },
+  "resExhaustiveNodes": {
+    "pointer": "#max-nodes",
+    "rendered": "4",
+    "source": "results/v2/e3_exhaustive.json",
+    "source_sha256": "eead3be0adf3159c0e0b71dbfe9956c79f677809f59e90280bbd302b7f70757c",
+    "value": 4
+  },
+  "resExhaustiveSearchDisagreements": {
+    "pointer": "#sum-semantic-disagreements",
+    "rendered": "0",
+    "source": "results/v2/e3_exhaustive.json",
+    "source_sha256": "eead3be0adf3159c0e0b71dbfe9956c79f677809f59e90280bbd302b7f70757c",
+    "value": 0
+  },
+  "resExhaustiveSearches": {
+    "pointer": "#sum-searches",
+    "rendered": "243{,}285",
+    "source": "results/v2/e3_exhaustive.json",
+    "source_sha256": "eead3be0adf3159c0e0b71dbfe9956c79f677809f59e90280bbd302b7f70757c",
+    "value": 243285
+  },
+  "resExhaustiveTotal": {
+    "pointer": "#sum-hierarchies",
+    "rendered": "6{,}944{,}956",
+    "source": "results/v2/e3_exhaustive.json",
+    "source_sha256": "eead3be0adf3159c0e0b71dbfe9956c79f677809f59e90280bbd302b7f70757c",
+    "value": 6944956
   },
   "resExploratoryAcceptedConditionalRisk": {
     "pointer": "/studies/exploratory/metrics/test/checked_quarantine/accepted_conditional_risk#percent",
@@ -1392,6 +1777,27 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 1176
   },
+  "resFlowDepth": {
+    "pointer": "/flow/-1/depth",
+    "rendered": "16",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 16
+  },
+  "resFlowSeconds": {
+    "pointer": "/flow/-1/seconds",
+    "rendered": "0.30",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 0.300736399993184
+  },
+  "resFlowStates": {
+    "pointer": "/flow/-1/states",
+    "rendered": "262{,}141",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 262141
+  },
   "resFormalInstances": {
     "pointer": "/sanity/instances",
     "rendered": "10{,}000",
@@ -1406,12 +1812,215 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 64
   },
+  "resGoalsMax": {
+    "pointer": "/by_goals/-1/goals",
+    "rendered": "32{,}768",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 32768
+  },
+  "resGoalsMaxSeconds": {
+    "pointer": "/by_goals/-1/seconds",
+    "rendered": "0.89",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 0.891820100005134
+  },
+  "resGoalsNodes": {
+    "pointer": "/by_goals/-1/nodes",
+    "rendered": "100{,}000",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 100000
+  },
+  "resLayersCount": {
+    "pointer": "/many_layers/-1/layers",
+    "rendered": "200",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 200
+  },
+  "resLayersGoals": {
+    "pointer": "/many_layers/-1/goals",
+    "rendered": "262{,}144",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 262144
+  },
+  "resLayersSeconds": {
+    "pointer": "/many_layers/-1/seconds",
+    "rendered": "19.77",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 19.76695550000295
+  },
+  "resLocalityChecks": {
+    "pointer": "/locality_checks",
+    "rendered": "94{,}840",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 94840
+  },
+  "resLocalityViolations": {
+    "pointer": "/locality_violations",
+    "rendered": "0",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 0
+  },
+  "resMillionNodes": {
+    "pointer": "/by_nodes#max-nodes",
+    "rendered": "1{,}000{,}000",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 1000000
+  },
+  "resMillionSeconds": {
+    "pointer": "/by_nodes#max-seconds",
+    "rendered": "7.8",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 7.824376799995662
+  },
+  "resMonoDisagreements": {
+    "pointer": "#sum",
+    "rendered": "0",
+    "source": "results/v2/e7_monolithic.json",
+    "source_sha256": "3d64ec33987a270c0aa5715291c2c88582a4ea15a7ae0429f1ae5e8a6be964b9",
+    "value": 0
+  },
+  "resMonoPrism": {
+    "pointer": "/prism/compared",
+    "rendered": "200",
+    "source": "results/v2/e7_monolithic.json",
+    "source_sha256": "3d64ec33987a270c0aa5715291c2c88582a4ea15a7ae0429f1ae5e8a6be964b9",
+    "value": 200
+  },
+  "resMonoZthree": {
+    "pointer": "/z3/compared",
+    "rendered": "3000",
+    "source": "results/v2/e7_monolithic.json",
+    "source_sha256": "3d64ec33987a270c0aa5715291c2c88582a4ea15a7ae0429f1ae5e8a6be964b9",
+    "value": 3000
+  },
+  "resMutationCrash": {
+    "pointer": "/modes/crash_or_timeout",
+    "rendered": "183",
+    "source": "results/v2/e5_mutation.json",
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
+    "value": 183
+  },
+  "resMutationDifferential": {
+    "pointer": "/modes/differential_only",
+    "rendered": "93",
+    "source": "results/v2/e5_mutation.json",
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
+    "value": 93
+  },
+  "resMutationEquivalent": {
+    "pointer": "/rows#equivalent",
+    "rendered": "28",
+    "source": "results/v2/e5_mutation.json",
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
+    "value": 28
+  },
+  "resMutationGaps": {
+    "pointer": "/rows#gap",
+    "rendered": "4",
+    "source": "results/v2/e5_mutation.json",
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
+    "value": 4
+  },
+  "resMutationKilled": {
+    "pointer": "/killed",
+    "rendered": "396",
+    "source": "results/v2/e5_mutation.json",
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
+    "value": 396
+  },
+  "resMutationSurvived": {
+    "pointer": "/rows#survived",
+    "rendered": "32",
+    "source": "results/v2/e5_mutation.json",
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
+    "value": 32
+  },
+  "resMutationTotal": {
+    "pointer": "/mutants",
+    "rendered": "428",
+    "source": "results/v2/e5_mutation.json",
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
+    "value": 428
+  },
+  "resMutationUnit": {
+    "pointer": "/modes/unit_only",
+    "rendered": "120",
+    "source": "results/v2/e5_mutation.json",
+    "source_sha256": "1951fb7564c6826b7807bb463d101be1472fac2f1a4d6c35a55413459696cfd7",
+    "value": 120
+  },
   "resNominalConfidence": {
     "pointer": "/design/delta#one-minus-percent",
     "rendered": "95",
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 95.0
+  },
+  "resOverheadDepth": {
+    "pointer": "/-1/depth",
+    "rendered": "2048",
+    "source": "results/v2/timing/e10_overhead.json",
+    "source_sha256": "14744067962d37a3328744ed75018516e1dcf70f420906d3093b5379f2fe50b8",
+    "value": 2048
+  },
+  "resPathMaxDepth": {
+    "pointer": "/versus#path-max-depth",
+    "rendered": "24",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 24
+  },
+  "resPipelineCoverageRoutes": {
+    "pointer": "/min_coverage_routes",
+    "rendered": "0.923",
+    "source": "results/v2/e12b_pipeline.json",
+    "source_sha256": "68a7b91dfd48dac9554d89fe66d9368601eba8ab9f995540520aed7de9b510a1",
+    "value": 0.9233333333333333
+  },
+  "resPipelineCoverageSum": {
+    "pointer": "/min_coverage_sum",
+    "rendered": "0.960",
+    "source": "results/v2/e12b_pipeline.json",
+    "source_sha256": "68a7b91dfd48dac9554d89fe66d9368601eba8ab9f995540520aed7de9b510a1",
+    "value": 0.96
+  },
+  "resPipelineLaws": {
+    "pointer": "/laws",
+    "rendered": "40",
+    "source": "results/v2/e12b_pipeline.json",
+    "source_sha256": "68a7b91dfd48dac9554d89fe66d9368601eba8ab9f995540520aed7de9b510a1",
+    "value": 40
+  },
+  "resPipelineWilson": {
+    "pointer": "/wilson_upper_of_worst_law",
+    "rendered": "0.959",
+    "source": "results/v2/e12b_pipeline.json",
+    "source_sha256": "68a7b91dfd48dac9554d89fe66d9368601eba8ab9f995540520aed7de9b510a1",
+    "value": 0.9587936436681633
+  },
+  "resPlotChain": {
+    "pointer": "/by_nodes#family=chain",
+    "rendered": "(1000,0.0043) (3162,0.0133) (10000,0.0407) (31623,0.1412) (100000,0.5437) (316228,2.1555) (1000000,7.8244)",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": "(1000,0.0043) (3162,0.0133) (10000,0.0407) (31623,0.1412) (100000,0.5437) (316228,2.1555) (1000000,7.8244)"
+  },
+  "resPlotDiamonds": {
+    "pointer": "/by_nodes#family=diamonds",
+    "rendered": "(1000,0.0032) (3163,0.0101) (10000,0.0340) (31624,0.1222) (100000,0.4568) (316228,1.9787) (1000000,7.1678)",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": "(1000,0.0032) (3163,0.0101) (10000,0.0340) (31624,0.1222) (100000,0.4568) (316228,1.9787) (1000000,7.1678)"
   },
   "resPolicyClasses": {
     "pointer": "/policy_inventory/policies#length",
@@ -2274,6 +2883,188 @@
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 6
   },
+  "resPrismMaxDepth": {
+    "pointer": "/versus#prism-max-depth",
+    "rendered": "256",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 256
+  },
+  "resProofCvc": {
+    "pointer": "/obligations#cvc5-unsat",
+    "rendered": "66",
+    "source": "results/v2/proofs.json",
+    "source_sha256": "b1e482405fa0c42fe9a8acc0e61729d5b24d2d62d2f236732a2ab26613135919",
+    "value": 66
+  },
+  "resProofMutants": {
+    "pointer": "#length",
+    "rendered": "13",
+    "source": "results/v2/proof_mutants.json",
+    "source_sha256": "0debc6519a40f13686e12bb52f4b62cebef68f575b77cdffc11f1bcafa766855",
+    "value": 13
+  },
+  "resProofMutantsKilled": {
+    "pointer": "#killed",
+    "rendered": "13",
+    "source": "results/v2/proof_mutants.json",
+    "source_sha256": "0debc6519a40f13686e12bb52f4b62cebef68f575b77cdffc11f1bcafa766855",
+    "value": 13
+  },
+  "resProofNoPremise": {
+    "pointer": "/obligations#no-premises",
+    "rendered": "2",
+    "source": "results/v2/proofs.json",
+    "source_sha256": "b1e482405fa0c42fe9a8acc0e61729d5b24d2d62d2f236732a2ab26613135919",
+    "value": 2
+  },
+  "resProofObligations": {
+    "pointer": "/obligations#length",
+    "rendered": "66",
+    "source": "results/v2/proofs.json",
+    "source_sha256": "b1e482405fa0c42fe9a8acc0e61729d5b24d2d62d2f236732a2ab26613135919",
+    "value": 66
+  },
+  "resProofSatisfiable": {
+    "pointer": "/obligations#premises-sat",
+    "rendered": "63",
+    "source": "results/v2/proofs.json",
+    "source_sha256": "b1e482405fa0c42fe9a8acc0e61729d5b24d2d62d2f236732a2ab26613135919",
+    "value": 63
+  },
+  "resProofUnknown": {
+    "pointer": "/obligations#premises-unknown",
+    "rendered": "1",
+    "source": "results/v2/proofs.json",
+    "source_sha256": "b1e482405fa0c42fe9a8acc0e61729d5b24d2d62d2f236732a2ab26613135919",
+    "value": 1
+  },
+  "resProofZthree": {
+    "pointer": "/obligations#z3-unsat",
+    "rendered": "66",
+    "source": "results/v2/proofs.json",
+    "source_sha256": "b1e482405fa0c42fe9a8acc0e61729d5b24d2d62d2f236732a2ab26613135919",
+    "value": 66
+  },
+  "resRecertHierarchies": {
+    "pointer": "/random_hierarchies",
+    "rendered": "2000",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 2000
+  },
+  "resRecertLargeFraction": {
+    "pointer": "/by_size/-1/mean_fraction#percent",
+    "rendered": "19",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 18.85987554112554
+  },
+  "resRecertLargeRoutes": {
+    "pointer": "/by_size/-1/mean_routes",
+    "rendered": "7.2",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 7.2425
+  },
+  "resRecertLargeStale": {
+    "pointer": "/by_size/-1/mean_affected",
+    "rendered": "1.3",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 1.275
+  },
+  "resRecertMeanFraction": {
+    "pointer": "/mean_fraction_affected#percent",
+    "rendered": "33",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 32.797987012987015
+  },
+  "resRecertMeanRoutes": {
+    "pointer": "/mean_routes",
+    "rendered": "4.3",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 4.325
+  },
+  "resRecertSmallFraction": {
+    "pointer": "/by_size/0/mean_fraction#percent",
+    "rendered": "64",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 64.19753086419753
+  },
+  "resRecertSmallRoutes": {
+    "pointer": "/by_size/0/mean_routes",
+    "rendered": "2.1",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 2.0987654320987654
+  },
+  "resRecertSmallStale": {
+    "pointer": "/by_size/0/mean_affected",
+    "rendered": "1.4",
+    "source": "results/v2/e11_recertification.json",
+    "source_sha256": "4d03a1bc69c9a59aa7f24cb8c895c9cce6b9176c4c7625cff57fab6fe5689c81",
+    "value": 1.3580246913580247
+  },
+  "resReductionDisagreements": {
+    "pointer": "/disagreements",
+    "rendered": "0",
+    "source": "results/v2/e14_reduction.json",
+    "source_sha256": "29324a3dc5eea5e73217d662995e8b6fc95af5586d27d96dcedfd93b11f5dce4",
+    "value": 0
+  },
+  "resReductionFalseAlarms": {
+    "pointer": "/false_alarms_of_fast_analysis",
+    "rendered": "740",
+    "source": "results/v2/e14_reduction.json",
+    "source_sha256": "29324a3dc5eea5e73217d662995e8b6fc95af5586d27d96dcedfd93b11f5dce4",
+    "value": 740
+  },
+  "resReductionFormulas": {
+    "pointer": "/formulas",
+    "rendered": "3000",
+    "source": "results/v2/e14_reduction.json",
+    "source_sha256": "29324a3dc5eea5e73217d662995e8b6fc95af5586d27d96dcedfd93b11f5dce4",
+    "value": 3000
+  },
+  "resReductionSatisfiable": {
+    "pointer": "/satisfiable",
+    "rendered": "2260",
+    "source": "results/v2/e14_reduction.json",
+    "source_sha256": "29324a3dc5eea5e73217d662995e8b6fc95af5586d27d96dcedfd93b11f5dce4",
+    "value": 2260
+  },
+  "resRejectedDecision": {
+    "pointer": "/rejected/-1/decision_seconds",
+    "rendered": "9.5",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 9.455047399998875
+  },
+  "resRejectedDecisionNodes": {
+    "pointer": "/rejected/-1/nodes",
+    "rendered": "1{,}000{,}000",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 1000000
+  },
+  "resRejectedWitness": {
+    "pointer": "/rejected#witness-seconds",
+    "rendered": "50.1",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 50.12226419999206
+  },
+  "resRejectedWitnessNodes": {
+    "pointer": "/rejected#witness-nodes",
+    "rendered": "32{,}000",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 32000
+  },
   "resReplayDecisions": {
     "pointer": "/studies/*/decision_records#sum",
     "rendered": "336{,}000",
@@ -2294,6 +3085,41 @@
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 600
+  },
+  "resSlopeChain": {
+    "pointer": "/slopes/chain",
+    "rendered": "1.15",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 1.1504199963863093
+  },
+  "resSlopeDiamonds": {
+    "pointer": "/slopes/diamonds",
+    "rendered": "1.17",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 1.1714700564996259
+  },
+  "resSlopeRejectedDecision": {
+    "pointer": "/slopes/rejected_decision",
+    "rendered": "1.14",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 1.1435899787092547
+  },
+  "resSlopeRejectedWitness": {
+    "pointer": "/slopes/rejected_witnesses",
+    "rendered": "1.97",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 1.9709248037280134
+  },
+  "resStageMicroseconds": {
+    "pointer": "/-1/per_stage_microseconds",
+    "rendered": "0.8",
+    "source": "results/v2/timing/e10_overhead.json",
+    "source_sha256": "14744067962d37a3328744ed75018516e1dcf70f420906d3093b5379f2fe50b8",
+    "value": 0.8481538085902685
   },
   "resSupportedClasses": {
     "pointer": "/policy_inventory/policies#fully-supported",
@@ -2336,5 +3162,96 @@
     "source": "results/processed/summary.json",
     "source_sha256": "d070c41d3da6cba89bb6b39cd57d4574e5d6c6df62398b0bf0f0cfb8984dd4fc",
     "value": 0.1
+  },
+  "resVersusMaxDepth": {
+    "pointer": "/versus#max-depth",
+    "rendered": "256",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 256
+  },
+  "resVersusPaths": {
+    "pointer": "/versus#paths",
+    "rendered": "1.2\\times 10^{77}",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": "1.2\\times 10^{77}"
+  },
+  "resVersusTintMs": {
+    "pointer": "/versus#tint-ms",
+    "rendered": "3.2",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 3.1716000084998086
+  },
+  "resVersusZthreeMs": {
+    "pointer": "/versus#z3-ms",
+    "rendered": "98",
+    "source": "results/v2/timing/e9_scalability.json",
+    "source_sha256": "b8586484a21a45f7d2ee37f971147816df02365120c73314d89713dd4fea01dd",
+    "value": 97.52799999841955
+  },
+  "resWorkBlindLosses": {
+    "pointer": "/expected_losses_blind_guard",
+    "rendered": "2",
+    "source": "results/v2/worked_example.json",
+    "source_sha256": "c14366d92aa710194c0b7afc644b3f4ac7b5db0588887b52f0d7c426c86e0448",
+    "value": 2
+  },
+  "resWorkBlindUpper": {
+    "pointer": "/upper_blind_guard",
+    "rendered": "0.0040",
+    "source": "results/v2/worked_example.json",
+    "source_sha256": "c14366d92aa710194c0b7afc644b3f4ac7b5db0588887b52f0d7c426c86e0448",
+    "value": 0.0040078944793294205
+  },
+  "resWorkBudget": {
+    "pointer": "/budget",
+    "rendered": "0.01",
+    "source": "results/v2/worked_example.json",
+    "source_sha256": "c14366d92aa710194c0b7afc644b3f4ac7b5db0588887b52f0d7c426c86e0448",
+    "value": 0.01
+  },
+  "resWorkPrevalence": {
+    "pointer": "/prevalence",
+    "rendered": "0.001",
+    "source": "results/v2/worked_example.json",
+    "source_sha256": "c14366d92aa710194c0b7afc644b3f4ac7b5db0588887b52f0d7c426c86e0448",
+    "value": 0.001
+  },
+  "resWorkSamples": {
+    "pointer": "/samples",
+    "rendered": "1800",
+    "source": "results/v2/worked_example.json",
+    "source_sha256": "c14366d92aa710194c0b7afc644b3f4ac7b5db0588887b52f0d7c426c86e0448",
+    "value": 1800
+  },
+  "resWorkShare": {
+    "pointer": "/share",
+    "rendered": "0.025",
+    "source": "results/v2/worked_example.json",
+    "source_sha256": "c14366d92aa710194c0b7afc644b3f4ac7b5db0588887b52f0d7c426c86e0448",
+    "value": 0.025
+  },
+  "resWorkShareTotal": {
+    "pointer": "/share#times-routes",
+    "rendered": "0.05",
+    "source": "results/v2/worked_example.json",
+    "source_sha256": "c14366d92aa710194c0b7afc644b3f4ac7b5db0588887b52f0d7c426c86e0448",
+    "value": 0.05
+  },
+  "resWorkUpperTen": {
+    "pointer": "/upper_by_losses/10",
+    "rendered": "0.0102",
+    "source": "results/v2/worked_example.json",
+    "source_sha256": "c14366d92aa710194c0b7afc644b3f4ac7b5db0588887b52f0d7c426c86e0448",
+    "value": 0.010193059003761334
+  },
+  "resWorkUpperZero": {
+    "pointer": "/upper_by_losses/0",
+    "rendered": "0.0020",
+    "source": "results/v2/worked_example.json",
+    "source_sha256": "c14366d92aa710194c0b7afc644b3f4ac7b5db0588887b52f0d7c426c86e0448",
+    "value": 0.0020472789343030334
   }
 }
